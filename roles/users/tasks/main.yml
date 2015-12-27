@@ -1,0 +1,41 @@
+- name: "Load user class variables"
+  include_vars: "{{ class }}.yml"
+  when: class != "local" 
+
+- name: "Import local groups var"
+  set_fact:
+    GROUPS: "{{ LOCAL_GROUPS }}"
+  when: class == "local"
+
+- name: "Import local users var"
+  set_fact:
+    USERS: "{{ LOCAL_USERS }}"
+  when: class == "local"
+
+- name: "Adding grouos"
+  group: name={{ item }} state={{ GROUPS[item] }}
+  with_items: GROUPS|list
+
+- name: "Adding users"
+  user:
+    name={{ item }}
+    state={{ USERS[item].state }}
+    uid={{ USERS[item].uid }}
+    home="/home/{{ item }}"
+    comment="{{ USERS[item].company }} - {{ USERS[item].email }}"
+    shell={{ USERS[item].shell|default( "/bin/bash" ) }}
+    groups={{ USERS[item].groups|join( "," ) }}
+    append=yes
+  with_items: USERS|list
+
+- name: "Add .ssh directories"
+  file:
+    path="/home/{{ item }}/.ssh"
+    state=directory
+    owner={{ item }}
+    group={{ item }} 
+    mode=700
+  with_items: USERS|list
+  when: USERS[item].state == "present"
+
+
