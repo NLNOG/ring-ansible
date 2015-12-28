@@ -1,12 +1,12 @@
 - hosts: all
   sudo: yes
   roles:
-    - ansible
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
 - hosts: ringnode
   sudo: yes
   roles:
+    - ansible
     - { role: users, class: ring-users }
 

@@ -16,3 +16,6 @@
 - name: "Install callback module"
   template: src=ring_callback.py.j2 dest=/usr/share/ansible_plugins/callback_plugins/ring_callback.py
 
+- name: "Add ansible-pull cronjob"
+  cron: name="ansible-pull" minute="{{ 59|random }}" job="ansible-pull -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git -f -i ringnodes playbook.yml"
+
