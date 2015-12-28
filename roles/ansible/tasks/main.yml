@@ -1,3 +1,9 @@
+- name: "Add the ansible ppa key"
+  apt_key: keyserver=keyserver.ubuntu.com id=6125E2A8C77F2818FB7BD15B93C4A3FD7BB9C367
+
+- name: "Add the ansible ppa"
+  apt_repository: repo='deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main' state=present
+
 - name: "Install ansible"
   apt: pkg=ansible state=latest
 
