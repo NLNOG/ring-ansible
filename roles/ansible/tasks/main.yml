@@ -7,9 +7,6 @@
 - name: "Install ansible"
   apt: pkg=ansible state=latest
 
-- name: "Remove default hosts file"
-  file: path=/etc/ansible/hosts state=absent 
-
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
   with_items:
