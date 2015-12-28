@@ -1,0 +1,15 @@
+# Ansible callback module for NLNOG RING
+#
+
+import requests
+
+class CallbackModule(object):
+  def playbook_on_stats(self, stats):
+    for host in stats.processed.keys():
+      data = str(stats.summarize(host))
+      try:
+        requests.post("{{ callback_url }}",data=data)
+      except requests.exceptions.ConnectionError:
+        pass
+  
+

@@ -1,0 +1,9 @@
+- name: "Create callback plugin dir"
+  file: path={{ item }} state=directory
+  with_items:
+    - /usr/share/ansible_plugins
+    - /usr/share/ansible_plugins/callback_plugins
+
+- name: "Install callback module"
+  template: src=ring_callback.py.j2 dest=/usr/share/ansible_plugins/callback_plugins/ring_callback.py
+
