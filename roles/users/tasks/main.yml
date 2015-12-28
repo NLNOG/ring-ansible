@@ -4,12 +4,12 @@
 
 - name: "Import local groups var"
   set_fact:
-    GROUPS: "{{ LOCAL_GROUPS }}"
+    GROUPS: "{{ LOCAL_GROUPS|default(None) }}"
   when: class == "local"
 
 - name: "Import local users var"
   set_fact:
-    USERS: "{{ LOCAL_USERS }}"
+    USERS: "{{ LOCAL_USERS|default(None) }}"
   when: class == "local"
 
 - name: "Adding grouos"
