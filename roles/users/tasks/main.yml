@@ -1,5 +1,6 @@
 - name: "Load user class variables"
   include_vars: "{{ class }}.yml"
+  ignore_errors: yes
   when: class != "local" 
 
 - name: "Import local groups var"
