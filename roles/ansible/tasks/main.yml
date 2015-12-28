@@ -1,3 +1,6 @@
+- name: "Install ansible"
+  apt: pkg=ansible state=latest
+
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
   with_items:
