@@ -10,9 +10,13 @@ ff02::2 ip6-allrouters
 2001:1AF8:4013::24  puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 95.211.149.24   puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 
-{% for host in groups['all'].iteritems() %}
+{% for host in groups['all'] %}
 {% set short_id = host|regex_replace("\..+", "") %}
-{{ hostvars['V4'] }}    {{ short_id }} {{ host }}
-{{ hostvars['V6'] }}    {{ short_id }} {{ host }}
+{% if hostvars[host]['V6']|default(None) %}
+{{ hostvars[host]['V6'] }}    {{ short_id }} {{ host }}
+{% endif %}
+{% if hostvars[host]['V4']|default(None) %}
+{{ hostvars[host]['V4'] }}    {{ short_id }} {{ host }}
+{% endif %}
 {% endfor %}
 
