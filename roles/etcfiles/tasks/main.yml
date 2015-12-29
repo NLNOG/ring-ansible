@@ -1,2 +1,2 @@
-- name: "Generate /etc/hosts (in /tmp for now)"
-  template: src=hosts.j2 dest=/tmp/hosts
+- name: "Generate /etc/hosts"
+  template: src=hosts.j2 dest=/etc/hosts

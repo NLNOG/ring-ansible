@@ -6,6 +6,7 @@
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
+# Some infra nodes have all users
 - hosts: ringnode:lg01.infra.ring.nlnog.net:auth.infra.ring.nlnog.net
   sudo: yes
   roles:
