@@ -1,13 +1,13 @@
 - hosts: all
   sudo: yes
   roles:
+    - ansible
     - etcfiles
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
-- hosts: ringnode
+- hosts: ringnode:lg01.infra.ring.nlnog.net:auth.infra.ring.nlnog.net
   sudo: yes
   roles:
-    - ansible
     - { role: users, class: ring-users }
 
