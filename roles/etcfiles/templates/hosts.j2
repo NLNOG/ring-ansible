@@ -11,7 +11,7 @@ ff02::2 ip6-allrouters
 95.211.149.24   puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 
 {% for host in groups['all'] %}
-{% set short_id = host|regex_replace("\..+", "") %}
+{% set short_id = host|regex_replace("\.ring\.nlnog\.net", "") %}
 {% if hostvars[host]['V6']|default(None) %}
 {{ hostvars[host]['V6'] }}    {{ short_id }} {{ host }}
 {% endif %}
