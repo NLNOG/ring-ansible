@@ -2860,3 +2860,11 @@ USERS:
     groups:
       - ring-users
 
+  pbwcomm:
+    state: present
+    company: 'PBW Communications, LLC'
+    email: 'noc@pbwcomm.com'
+    uid: 5378
+    groups:
+      - ring-users
+
