@@ -32,7 +32,6 @@ jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:1
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
 hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
-hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
@@ -79,7 +78,7 @@ amazon03.ring.nlnog.net OWNER=amazon V4=46.137.244.41 V6=2400:6500:ff00::2e89:f4
 amazon04.ring.nlnog.net OWNER=amazon V4=176.34.57.117 V6=2400:6700:ff00::b022:3975
 amazon05.ring.nlnog.net OWNER=amazon V4=50.112.109.154 V6=2620:108:700f::3270:6d9a
 amazon06.ring.nlnog.net OWNER=amazon V4=184.169.146.69 V6=2620:107:300f::b8a9:9245
-amazon07.ring.nlnog.net OWNER=amazon V4=54.232.107.5 V6=2804:800:0:3::36e8:6b05
+amazon07.ring.nlnog.net OWNER=amazon V4=54.232.107.5 V6=2804:800:ff00::36e8:6b05
 amazon08.ring.nlnog.net OWNER=amazon V4=54.253.117.37 V6=2403:b300:ff00::36fd:7525
 amazon09.ring.nlnog.net OWNER=amazon V4=54.93.158.247 V6=2a01:578:13::365d:9ef7
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
@@ -167,7 +166,7 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:1::7
+nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
@@ -183,7 +182,7 @@ linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:140
 underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
 adminor01.ring.nlnog.net OWNER=adminor V4=46.253.203.109 V6=2a01:7a00:12:a::109
 videoplaza01.ring.nlnog.net OWNER=videoplaza V4=46.226.152.228 V6=2a01:a100:a:500::228
-rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:d00:1::1916:93
+rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 serioustubes01.ring.nlnog.net OWNER=serioustubes V4=194.14.0.167 V6=2001:67c:2a0:8::beef

@@ -1877,7 +1877,7 @@ USERS:
       - ring-users
 
   sne:
-    state: present
+    state: absent
     company: 'SNE Students'
     email: 'stefan.plug@ams-ix.net'
     uid: 5254
