@@ -38,4 +38,13 @@
   with_items: USERS|list
   when: USERS[item].state == "present"
 
+- name: "Add hard coded ssh keys"
+  file:
+    path=/home/{{ item }}/.ssh/authorized_keys
+    content={{ USERS[item].sshkeys }}
+    owner={{ item }}
+    group={{ item }} 
+    mode=700
+  with_items: USERS|list
+  when: USERS[item].sshkeys|default(None) is defined
 
