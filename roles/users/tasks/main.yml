@@ -12,7 +12,7 @@
     USERS: "{{ LOCAL_USERS|default(None) }}"
   when: class == "local"
 
-- name: "Adding grouos"
+- name: "Adding groups"
   group: name={{ item }} state={{ GROUPS[item] }}
   with_items: GROUPS|list
 
