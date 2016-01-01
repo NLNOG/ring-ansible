@@ -3,6 +3,7 @@
   roles:
     - ansible
     - etcfiles
+    - fail2ban
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
