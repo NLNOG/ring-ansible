@@ -23,7 +23,7 @@
     uid={{ USERS[item].uid }}
     home="/home/{{ item }}"
     comment="{{ USERS[item].company }} - {{ USERS[item].email }}"
-    shell={{ USERS[item].shell|default( "/bin/bash" ) }}
+    shell={{ USERS[item].shell|default(user_shell) }}
     groups={{ USERS[item].groups|join( "," ) }}
     append=yes
   with_items: USERS|list
