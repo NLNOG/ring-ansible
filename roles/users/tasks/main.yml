@@ -48,3 +48,13 @@
   with_items: USERS|list
   when: USERS[item].sshkeys is defined
 
+- name: "Add ssh keys from auth host"
+  file:
+    src=keys/{{ item }}.sshkeys
+    dest=/home/{{ item }}/.ssh/authorized_keys
+    owner={{ item }}
+    group={{ item }} 
+    mode=700
+  with_items: USERS|list
+  when: USERS[item].sshkeys is not defined
+
