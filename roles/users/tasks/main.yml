@@ -12,11 +12,11 @@
     USERS: "{{ LOCAL_USERS|default(None) }}"
   when: class == "local"
 
-- name: "Adding groups"
+- name: "Add groups"
   group: name={{ item }} state={{ GROUPS[item] }}
   with_items: GROUPS|list
 
-- name: "Adding users"
+- name: "Add users"
   user:
     name={{ item }}
     state={{ USERS[item].state }}
@@ -74,4 +74,20 @@
   assemble: src=roles/users/files/keys/{{ item.item }} dest=/home/{{ item.item }}/.ssh/authorized_keys
   when: inventory_hostname|match("^{{ item }}\d\d\..*") and keyfiles2.results is defined and item.stat.exists == True
   with_items: keyfiles2.results
+
+- name: "Remove home directories of deleted users"
+  file:
+    path="/home/{{ item }}"
+    state=absent
+    recurse=yes
+  with_items: USERS|list
+  when: USERS[item].state == "absent"
+
+- name: "Clean up old sshkeys on auth host"
+  file:
+    path=/opt/keys/{{ item }}
+    state=absent
+    recurse=yes
+  with_items: USERS|list
+  when: inventory_hostname == "auth.infra.ring.nlnog.net" and USERS[item].state == "absent"
 
