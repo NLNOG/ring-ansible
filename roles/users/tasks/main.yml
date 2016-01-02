@@ -79,7 +79,6 @@
   file:
     path="/home/{{ item }}"
     state=absent
-    recurse=yes
   with_items: USERS|list
   when: USERS[item].state == "absent"
 
@@ -87,7 +86,6 @@
   file:
     path=/opt/keys/{{ item }}
     state=absent
-    recurse=yes
   with_items: USERS|list
   when: inventory_hostname == "auth.infra.ring.nlnog.net" and USERS[item].state == "absent"
 
