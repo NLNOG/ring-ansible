@@ -3,7 +3,7 @@ LOCAL_GROUPS:
   ring-admins: present
 
 LOCAL_USERS:
-  ringadmin:
+  ringforger:
     state: present
     company: 'NLNOG Ring Admins'
     email: ring-admins@nlnog.net
