@@ -7,12 +7,12 @@
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
-- hosts: ringnode:auth.infra.ring.nlnog.net
+- hosts: ringnode:auth.infra.ring.nlnog.net:auth.infra
   sudo: yes
   roles:
     - { role: users, class: ring-users }
 
-- hosts: lg01.infra.ring.nlnog.net
+- hosts: lg01.infra.ring.nlnog.net:lg01.infra
   sudo: yes
   roles:
     - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell }
