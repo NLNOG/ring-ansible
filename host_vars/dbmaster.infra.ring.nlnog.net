@@ -1,0 +1,15 @@
+LOCAL_GROUPS:
+  ring-users: present
+  ring-admins: present
+
+LOCAL_USERS:
+  ringadmin:
+    state: present
+    company: 'NLNOG Ring Admins'
+    email: ring-admins@nlnog.net
+    uid: 62001
+    shell: /bin/bash
+    groups:
+      - ring-users
+      - ring-admins
+
