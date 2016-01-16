@@ -2,8 +2,13 @@
 #
 
 import requests
+from ansible.plugins.callback import CallbackBase
 
 class CallbackModule(object):
+  CALLBACK_VERSION = 2.0
+  CALLBACK_TYPE = 'notification'
+  CALLBACK_NAME = 'ring'
+  CALLBACK_NEEDS_WHITELIST = False
   def playbook_on_stats(self, stats):
     for host in stats.processed.keys():
       data = str(stats.summarize(host))
