@@ -1,5 +1,6 @@
 - hosts: all
-  sudo: yes
+  become: true
+  become_user: root
   roles:
     - ansible
     - etcfiles
@@ -7,13 +8,15 @@
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
-- hosts: ringnode:auth.infra.ring.nlnog.net:auth.infra
-  sudo: yes
+- hosts: ringnode:auth.infra.ring.nlnog.net
+  become: true
+  become_user: root
   roles:
     - { role: users, class: ring-users }
 
-- hosts: lg01.infra.ring.nlnog.net:lg01.infra
-  sudo: yes
+- hosts: lg01.infra.ring.nlnog.net
+  become: true
+  become_user: root
   roles:
     - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell }
 
