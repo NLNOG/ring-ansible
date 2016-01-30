@@ -2868,3 +2868,11 @@ USERS:
     groups:
       - ring-users
 
+  kit:
+    state: present
+    company: 'Karlsruhe Institute of Technology'
+    email: 'netze@scc.kit.edu'
+    uid: 5379
+    groups:
+      - ring-users
+
