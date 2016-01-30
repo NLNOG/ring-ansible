@@ -2876,3 +2876,11 @@ USERS:
     groups:
       - ring-users
 
+  inxza:
+    state: present
+    company: 'INX-ZA'
+    email: 'ops@inx.net.za'
+    uid: 5380
+    groups:
+      - ring-users
+
