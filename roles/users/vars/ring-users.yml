@@ -2884,3 +2884,11 @@ USERS:
     groups:
       - ring-users
 
+  23media:
+    state: present
+    company: '23media GmbH'
+    email: 'support@23media.de'
+    uid: 5381
+    groups:
+      - ring-users
+
