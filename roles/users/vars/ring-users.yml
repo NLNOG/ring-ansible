@@ -2852,14 +2852,6 @@ USERS:
     groups:
       - ring-users
 
-  test:
-    state: present
-    company: 'Test BV'
-    email: 'ring-admins@ring.nlnog.net'
-    uid: 5377
-    groups:
-      - ring-users
-
   pbwcomm:
     state: present
     company: 'PBW Communications, LLC'
