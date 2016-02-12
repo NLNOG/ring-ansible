@@ -2407,7 +2407,7 @@ USERS:
   nicbr:
     state: present
     company: 'Nucelo de Informacao e Coordenacao do Ponto BR'
-    email: 'operador@registro.br'
+    email: 'equipe.projetos@nic.br'
     uid: 5320
     groups:
       - ring-users
