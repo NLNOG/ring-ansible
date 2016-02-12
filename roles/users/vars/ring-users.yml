@@ -2382,7 +2382,7 @@ USERS:
 
   speakup:
     state: present
-    company: 'SpeakUp'
+    company: 'Speakup'
     email: 'noc@speakup.nl'
     uid: 5317
     groups:
