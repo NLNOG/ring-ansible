@@ -20,3 +20,9 @@
   roles:
     - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell }
 
+- hosts: public01.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: haproxy, role: github }
+

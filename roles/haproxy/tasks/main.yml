@@ -1,0 +1,11 @@
+- name: "Install haproxy"
+  apt: pkg=haproxy state=latest
+
+- name: "Install haproxy defaults file"
+  template: src=haproxy.default.j2 dest=/etc/default/haproxy
+
+- name: "Install haproxy.cfg"
+  template: src=haproxy.github.cfg.j2 dest=/etc/haproxy/haproxy.cfg
+  when: profile == "github"
+  notify: restart haproxy
+
