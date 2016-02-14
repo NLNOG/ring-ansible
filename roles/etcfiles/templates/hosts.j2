@@ -20,6 +20,6 @@ ff02::2 ip6-allrouters
 {% endif %}
 {% endfor %}
 
-{% if V4 is none %}
+{% if V4|default(None) is None %}
 {{ hostvars['public01.infra.ring.nlnog.net']['V6'] }} github.com
 {% endif %}
