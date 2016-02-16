@@ -2884,3 +2884,11 @@ USERS:
     groups:
       - ring-users
 
+  anuragbhatia:
+    state: present
+    company: 'Anurag Bhatia R&D Network'
+    email: 'me@anuragbhatia.com'
+    uid: 5382
+    groups:
+      - ring-users
+
