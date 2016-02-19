@@ -2359,7 +2359,7 @@ USERS:
   netnod:
     state: present
     company: 'Netnod'
-    email: 'noc@netnod.se'
+    email: 'ops@netnod.se'
     uid: 5314
     groups:
       - ring-users
