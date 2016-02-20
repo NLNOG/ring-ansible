@@ -2892,3 +2892,11 @@ USERS:
     groups:
       - ring-users
 
+  elite:
+    state: present
+    company: 'Elite Limited'
+    email: 'NLNOG@elite.net.uk'
+    uid: 5383
+    groups:
+      - ring-users
+
