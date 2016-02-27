@@ -62,9 +62,9 @@
   with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "present" and item == OWNER
 
-- name: "Remove home directories of deleted users"
+- name: "Remove sshkeys of inactive users"
   file:
-    path="/home/{{ item }}"
+    path="/home/{{ item }}/.ssh/authorized_keys"
     state=absent
   with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "absent"
