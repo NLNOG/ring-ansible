@@ -8,3 +8,6 @@ LOCAL_USERS:
     email: ring-admins@nlnog.net
     uid: 62002
     shell: /bin/bash
+    groups:
+      - graphite
+
