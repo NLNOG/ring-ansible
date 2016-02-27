@@ -4,7 +4,7 @@
 
   - name: "Add groups for class {{ class }}"
     group: name={{ item }} state={{ GROUPS[item] }}
-    with_items: GROUPS|list
+    with_items: "{{ GROUPS|list }}"
 
   - include: user_tasks.yml ENTRIES={{ USERS }}
   when: class != "local" 
@@ -12,7 +12,7 @@
 - block:
   - name: "Add local groups"
     group: name={{ item }} state={{ GROUPS[item] }}
-    with_items: LOCAL_GROUPS|default([])|list
+    with_items: "{{ LOCAL_GROUPS|default([])|list }}"
 
   - name: "Add local users"
     include: user_tasks.yml ENTRIES={{ LOCAL_USERS }}
