@@ -10,4 +10,5 @@ LOCAL_USERS:
     shell: /bin/bash
     groups:
       - graphite
-
+    sshkeys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjqXw2ElesNjWq+ZbFwWXHYeak4nkpp1iBKtCyhh8wYseGfn0IuX8p/ZNCVsNABMCoQtJ0UfdzFReJds8bri5M+wHbgE4HS0WN63y7QjaNfjlogWFa2Q20waoeqKTLyityXsOwA4tbqU5PLRpCsJWdi+fUL9dH3k7sbSr4rF+JdgmgjlkdvlVlssywjF4VHdSbY8K5fzvGnm0EV+UAHir/SmoRV3nZ7m3gRw+lXjRUOxbAEaBXxC/ZufX9IdNgfIuui7hQV5ysJ/r+LWPyB/R7FGCk1zg6+JQvBilgCBV6RRRAdohSHQWrZTikjR2Dw27eaQq38SIfespEdOC+XAf7 graphite@compute02.infra.ring.nlnog.net"
