@@ -2359,7 +2359,7 @@ USERS:
   netnod:
     state: present
     company: 'Netnod'
-    email: 'noc@netnod.se'
+    email: 'ops@netnod.se'
     uid: 5314
     groups:
       - ring-users
@@ -2881,6 +2881,22 @@ USERS:
     company: '23media GmbH'
     email: 'support@23media.de'
     uid: 5381
+    groups:
+      - ring-users
+
+  anuragbhatia:
+    state: present
+    company: 'Anurag Bhatia R&D Network'
+    email: 'me@anuragbhatia.com'
+    uid: 5382
+    groups:
+      - ring-users
+
+  elite:
+    state: present
+    company: 'Elite Limited'
+    email: 'NLNOG@elite.net.uk'
+    uid: 5383
     groups:
       - ring-users
 
