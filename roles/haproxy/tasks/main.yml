@@ -9,3 +9,6 @@
   when: profile == "github"
   notify: restart haproxy
 
+- name: "Start haproxy"
+  service: name=haproxy state=started
+
