@@ -1023,7 +1023,7 @@ USERS:
   rcsrds:
     state: present
     company: 'S.C. RCS RDS S.A.'
-    email: 'noc@ploiesti.rdsnet.ro'
+    email: 'nmc@rcs-rds.ro'
     uid: 5148
     groups:
       - ring-users
