@@ -1,0 +1,10 @@
+LOCAL_GROUPS:
+  graphite: present
+
+LOCAL_USERS:
+  graphite:
+    state: present
+    company: 'NLNOG Ring Admins'
+    email: ring-admins@nlnog.net
+    uid: 62002
+    shell: /bin/bash
