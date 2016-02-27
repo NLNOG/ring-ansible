@@ -8,7 +8,7 @@
     shell={{ ENTRIES[item].shell|default(user_shell) }}
     groups={{ ENTRIES[item].groups|join( "," ) }}
     append=yes
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
 
 - name: "Add .ssh directories"
   file:
@@ -17,7 +17,7 @@
     owner={{ item }}
     group={{ item }} 
     mode=700
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "present"
 
 - name: "Add hardcoded ssh keys"
@@ -27,13 +27,13 @@
     owner={{ item }}
     group={{ item }} 
     mode=0600
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].sshkeys is defined and ENTRIES[item].state == "present"
 
 - name: "Find local sshkey files to provision"
   local_action: stat path=roles/users/files/keys/{{ item }}/{{ item }}.sshkeys
   register: keyfiles
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].sshkeys is not defined and ENTRIES[item].state == "present"
 
 - name: "Add ssh keys from files"
@@ -43,36 +43,36 @@
     owner={{ item.item }}
     group={{ item.item }}
     mode=700
-  with_items: keyfiles.results
+  with_items: "{{ keyfiles.results }}"
   when: keyfiles.results is defined and item.stat.exists == True
 
 - name: "Find per org local sshkey files to provision"
   local_action: stat path=roles/users/files/keys/{{ item }}/{{ item }}-only.sshkeys
   register: keyfiles2
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].sshkeys is not defined and ENTRIES[item].state == "present"
 
 - name: "Add local org ssh keys from files"
   assemble: src=roles/users/files/keys/{{ item.item }} dest=/home/{{ item.item }}/.ssh/authorized_keys
   when: inventory_hostname|match("^{{ item.item }}\d\d\..*") and keyfiles2.results is defined and item.stat.exists == True
-  with_items: keyfiles2.results
+  with_items: "{{ keyfiles2.results }}"
 
 - name: "Add owner to admin group"
   user: name={{ item }} group={{ item }} groups=admin append=yes
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "present" and item == OWNER
 
 - name: "Remove home directories of deleted users"
   file:
     path="/home/{{ item }}"
     state=absent
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "absent"
 
 - name: "Clean up old sshkeys on auth host"
   file:
     path=/opt/keys/{{ item }}
     state=absent
-  with_items: ENTRIES|list
+  with_items: "{{ ENTRIES|list }}"
   when: inventory_hostname == "auth.infra.ring.nlnog.net" and ENTRIES[item].state == "absent"
 
