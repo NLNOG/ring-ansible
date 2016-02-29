@@ -96,7 +96,7 @@ isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::
 strato01.ring.nlnog.net OWNER=strato V4=85.214.1.147 V6=2a01:238:bd:3002::2
 edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
-spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
+spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.243 V6=2a01:298:f0::e
 occaid01.ring.nlnog.net OWNER=occaid V6=2001:4830:ed::2
 as250net01.ring.nlnog.net OWNER=as250net V4=194.150.168.19 V6=2001:4ce8:c134:1019::1
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
