@@ -2900,3 +2900,19 @@ USERS:
     groups:
       - ring-users
 
+  lbl:
+    state: present
+    company: 'Lawrence Berkeley National Laboratory'
+    email: 'noc@lbl.gov'
+    uid: 5384
+    groups:
+      - ring-users
+
+  keklolwtf:
+    state: present
+    company: 'KEKLOLWTF'
+    email: 'noc@keklolw.tf'
+    uid: 5385
+    groups:
+      - ring-users
+
