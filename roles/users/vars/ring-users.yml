@@ -2916,3 +2916,11 @@ USERS:
     groups:
       - ring-users
 
+  cadence:
+    state: present
+    company: 'Cadence Networks Ltd'
+    email: 'noc@cadence.net.uk'
+    uid: 5386
+    groups:
+      - ring-users
+
