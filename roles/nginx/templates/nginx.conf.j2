@@ -1,0 +1,13 @@
+user www-data;
+worker_processes 4;
+pid /var/run/nginx.pid;
+
+events {
+    worker_connections 768;
+}
+
+http {
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+    return 301 https://ring.nlnog.net/
+}

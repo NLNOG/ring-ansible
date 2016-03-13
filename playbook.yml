@@ -13,6 +13,7 @@
   become_user: root
   roles:
     - { role: users, class: ring-users }
+    - { role: nginx }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
@@ -25,5 +26,3 @@
   become_user: root
   roles:
     - { role: haproxy, profile: github }
-
-

@@ -1,0 +1,9 @@
+- name: "Install nginx"
+  apt: pkg=nginx state=latest
+
+- name: "Install nginx conf file"
+  template: src=nginx.conf.j2 dest=/etc/nginx/nginx.conf
+  notify: restart haproxy
+
+- name: "Start nginx"
+  service: name=nginx state=started
