@@ -10,3 +10,12 @@
 - name: "Start nginx"
   service: name=nginx state=started
   tags: nginx
+
+- name: "Remove apache"
+  apt: name={{item}} state=absent purge=yes
+  with_items:
+    - apache2-mpm-worker
+    - apache2
+    - apache2.2-bin
+    - apache2.2-common
+  tags: nginx
