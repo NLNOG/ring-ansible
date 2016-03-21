@@ -145,8 +145,6 @@ afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 grnet01.ring.nlnog.net OWNER=grnet V4=62.217.125.248 V6=2001:648:2ffc:113:dcdb:eeff:fe35:9c68
-netflix02.ring.nlnog.net OWNER=netflix V4=108.175.35.34 V6=2a00:86c0:7002:32::2
-netflix03.ring.nlnog.net OWNER=netflix V4=198.45.62.34 V6=2a00:86c0:262:32::2
 ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
