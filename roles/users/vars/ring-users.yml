@@ -2916,3 +2916,11 @@ USERS:
     groups:
       - ring-users
 
+  netflix:
+    state: present
+    company: 'Netflix'
+    email: 'cdnetops@netflix.com'
+    uid: 5135
+    groups:
+      - ring-users
+
