@@ -7,6 +7,9 @@
     - python-virtualenv
     - python-pip
 
+- name: "Install IPy"
+  pip: name=IPy
+
 - name: "Install ripe-atlas-tools from git"
   pip:
     name='git+https://github.com/RIPE-NCC/ripe-atlas-tools#egg=ripe-atlas-tools'
