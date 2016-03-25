@@ -1,0 +1,13 @@
+- name: "Install prequisites for ripe-atlas-tools"
+  apt: name={{ item }} state=present
+  with_items:
+    - python-dev
+    - libffi-dev
+    - libssl-dev
+    - python-virtualenv
+    - python-pip
+
+- name: "Install ripe-atlas-tools from git"
+  pip:
+    name='git+https://github.com/RIPE-NCC/ripe-atlas-tools#egg=ripe-atlas-tools'
+

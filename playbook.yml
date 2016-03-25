@@ -13,7 +13,13 @@
   become_user: root
   roles:
     - { role: users, class: ring-users }
+
+- hosts: ringnode
+  become: true
+  become_user: root
+  roles:
     - { role: nginx }
+    - ripe-atlas
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
