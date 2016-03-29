@@ -276,6 +276,7 @@ digitalocean02.ring.nlnog.net OWNER=digitalocean V4=128.199.190.202 V6=2400:6180
 digitalocean03.ring.nlnog.net OWNER=digitalocean V4=178.62.253.214 V6=2A03:B0C0:0002:00D0:0000:0000:0004:E001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.131.59.72 V6=2604:a880:800:10::ed:6001
 bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.48 V6=2404:d900:0:a::48
+blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::1:1
 liquidweb01.ring.nlnog.net OWNER=liquidweb V4=209.59.185.5 V6=2607:fad0:32:a021::4
@@ -322,6 +323,7 @@ peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
+pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.5 V6=2a00:c380:1337:1::5
