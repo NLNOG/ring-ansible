@@ -1,4 +1,4 @@
-- name: "Install prequisites for ripe-atlas-tools"
+- name: "Install deb prequisites for ripe-atlas-tools"
   apt: name={{ item }} state=present
   with_items:
     - python-dev
@@ -7,8 +7,12 @@
     - python-virtualenv
     - python-pip
 
-- name: "Install IPy"
-  pip: name=IPy
+- name: "Install pip prequisites for ripe-atlas-tools"
+  pip: name={{ item }}
+  with_items:
+    - pyOpenSSL
+    - ndg-httpsclient
+    - pyasn1
 
 - name: "Install ripe-atlas-tools from git"
   pip:
