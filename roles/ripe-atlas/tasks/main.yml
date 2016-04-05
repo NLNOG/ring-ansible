@@ -10,6 +10,7 @@
 - name: "Install pip prequisites for ripe-atlas-tools"
   pip: name={{ item }}
   with_items:
+    - IPy
     - pyOpenSSL
     - ndg-httpsclient
     - pyasn1
