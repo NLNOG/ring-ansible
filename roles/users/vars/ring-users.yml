@@ -725,7 +725,7 @@ USERS:
       - ring-users
 
   oneandone:
-    state: present
+    state: absent
     company: '1&1 Internet AG'
     email: 'noc@oneandone.net'
     uid: 5104
