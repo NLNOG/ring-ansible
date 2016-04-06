@@ -186,7 +186,6 @@ onet02.ring.nlnog.net OWNER=onet V4=141.105.16.133 V6=2a02:c10:3f00:7::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 robtex01.ring.nlnog.net OWNER=robtex V4=192.71.253.130 V6=2a00:9c00:1000:130::2
 dyn01.ring.nlnog.net OWNER=dyn V4=103.11.200.254 V6=2001:df0:258:300::beef
-trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 phusion01.ring.nlnog.net OWNER=phusion V4=91.239.87.47 V6=2001:67c:105c:800::2
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
@@ -229,7 +228,6 @@ sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:20
 xconnect01.ring.nlnog.net OWNER=xconnect V4=185.19.100.58 V6=2a04:1120:1::58
 amsio01.ring.nlnog.net OWNER=amsio V4=5.100.229.206 V6=2a02:20b0:165::4
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
-kinber01.ring.nlnog.net OWNER=kinber V4=162.223.16.247 V6=2001:550:501:3::1ce:c01d:bee2
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
@@ -323,6 +321,7 @@ peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
+pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.5 V6=2a00:c380:1337:1::5
