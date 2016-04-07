@@ -2924,3 +2924,11 @@ USERS:
     groups:
       - ring-users
 
+  sigtelecom:
+    state: present
+    company: 'Services Industriels de Geneve'
+    email: 'peering@sig-telecom.net'
+    uid: 5387
+    groups:
+      - ring-users
+
