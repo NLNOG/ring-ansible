@@ -334,6 +334,7 @@ ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 bkkfiber01.ring.nlnog.net OWNER=bkkfiber V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
+worldstream01.ring.nlnog.net OWNER=worldstream V4=217.23.0.6 V6=2a00:7c80:0:44::2
 cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
 veracity01.ring.nlnog.net OWNER=veracity V4=69.169.190.151 V6=2600:7400:e00:1::7
 vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
