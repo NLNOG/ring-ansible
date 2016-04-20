@@ -2932,3 +2932,11 @@ USERS:
     groups:
       - ring-users
 
+  datapath:
+    state: present
+    company: 'Datapath.io'
+    email: 'contact@datapath.io'
+    uid: 5388
+    groups:
+      - ring-users
+
