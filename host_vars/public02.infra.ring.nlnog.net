@@ -6,3 +6,4 @@ LOCAL_USERS:
     uid: 62003
     shell: /bin/bash
     groups:
+      - apt
