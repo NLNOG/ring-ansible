@@ -1,3 +1,6 @@
+LOCAL_GROUPS:
+  - apt
+
 LOCAL_USERS:
   apt:
     state: present
