@@ -1,11 +1,11 @@
 LOCAL_GROUPS:
-  - apt
+  apt: present
 
 LOCAL_USERS:
   apt:
     state: present
     company: 'NLNOG Ring Admins'
-    email: apt@ring.nlnog.net
+    email: apt@public02.infra.ring.nlnog.net
     uid: 62003
     shell: /bin/bash
     groups:
