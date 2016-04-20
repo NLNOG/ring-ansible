@@ -5,3 +5,4 @@ LOCAL_USERS:
     email: apt@ring.nlnog.net
     uid: 62003
     shell: /bin/bash
+    groups:
