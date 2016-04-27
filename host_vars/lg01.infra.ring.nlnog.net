@@ -13,4 +13,15 @@ LOCAL_USERS:
       - admin
     sshkeys:
       - "ssh-dss AAAAB3NzaC1kc3MAAACBANA+2Nq9N9IQfPqgmHhdYl932sxJb45PB/UgE/ATxOiP5Ev9sz6Vi+85WrD3kwYvszbRmdm6nIR6a5O861K8B+DKsYoWuE1tFxWgSszlbYzuTMXfPg+zI2IAen/YtzgsATnJPIKUub5bO18O3qGX5f/Xf21kJUsGdDx/F13Bb1UlAAAAFQC8JQHI/PW8wmZwmJKoLDHjb9W1XQAAAIEAq7/xIeDcg4FYiZeUl7VZxrB7HhMwBePOuBgpVyghYsJIM1wyWULN99aMxVQphZa77Y0I6UeaXoQu4Mt52O7Q8oq8FtxfCxUguFh0O+5qKZ66PjNmu/BC5s/GioxnoZ2baT/ka0xV3pQ01wZknk1Eb0ze750OdDs143Tq9eos2IkAAACBAJxziC4dxXJ6mOKYHdnEWRC57UFYxLwk5fKMemP0xJZk2/2Wahq+2pNoCWZvnUk6jWHMVhIV8BG7Bq37B1Qq/XuiEfkc+E1gCEYjwIhvvKYsR+SMeejCv1Bv7HV39ZPoGUjdYyQgciBrDCG13R1QShWNRcTK5liOTbyCcxI2QzTK david.freedman@uk.clara.net(RING)"
+  martintemp:
+    state: present
+    company: 'NLNOG RING Admins'
+    email: ring-admins@nlnog.net
+    uid: 6125
+    shell: /bin/bash
+    groups:
+      - ring-users
+      - admin
+    sshkeys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEArZl+3qDiBGF4v3fszgwFti5e4xVoY1fbXsqpAZmbZm1pbSlpJBsHc6ObrxepypoRik5JuiuAoLVFBziEq3m+GgMnUHYbdSBeqHJloa3bIdy8byVGowIYwV4zZyRCwEYuvto7xfUScCSgboBoHs+hU58kyYQxwWRZVCIhEMSIYlwHDCR3juHV1Z50XxgZEJgZeyKxGL4oeeLq9zbQDQxhglygia7nPXUVh+4Z2w6S7oS8prJH5saOg5ixtnBP3isQ5/WOwdAJrcu30s+4P6eWvcJQVtRNZDJyNCctkjCPaN2PVNRvhEu6oeWptwb/pek6LSwmKvUETUHz4W4FKHCKPw== martin"
 
