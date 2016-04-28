@@ -2940,3 +2940,11 @@ USERS:
     groups:
       - ring-users
 
+  zerofail:
+    state: present
+    company: 'ZEROFAIL'
+    email: 'NOC@zerofail.com'
+    uid: 5389
+    groups:
+      - ring-users
+

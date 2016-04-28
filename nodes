@@ -414,6 +414,7 @@ keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1:
 cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 sigtelecom01.ring.nlnog.net OWNER=sigtelecom V4=217.169.138.50 V6=2001:41e0:1001:2:2c:29ff:fe2c:86bb
 datapath01.ring.nlnog.net OWNER=datapath V4=185.115.193.38 V6=2a06:7840:beef::a
+zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
