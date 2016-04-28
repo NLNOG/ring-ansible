@@ -8,6 +8,7 @@ USERS:
     company: 'Job Snijders'
     email: job@instituut.net
     uid: 6001
+    shell: /bin/bash
     groups:
       - ring-admins
       - ring-users
@@ -19,6 +20,7 @@ USERS:
     company: 'Martin Pels'
     email: martin@rodecker.nl
     uid: 6002
+    shell: /bin/bash
     groups:
       - ring-admins
       - ring-users
@@ -30,6 +32,7 @@ USERS:
     company: 'Edwin Hermans'
     email: edwin@madtech.cx
     uid: 6003
+    shell: /bin/bash
     groups:
       - ring-admins
       - ring-users
@@ -41,6 +44,7 @@ USERS:
     company: "Peter van Dijk"
     email: peter+ring@7bits.nl
     uid: 6004
+    shell: /bin/bash
     groups:
       - ring-admins
       - ring-users
