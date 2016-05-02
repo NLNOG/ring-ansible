@@ -11,7 +11,6 @@ previder01.ring.nlnog.net OWNER=previder V4=84.241.137.18 V6=2001:1690:2:115::18
 leaseweb01.ring.nlnog.net OWNER=leaseweb V4=85.17.150.181 V6=2001:1af8:4300:a004:8::2
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
-leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 oxilion01.ring.nlnog.net OWNER=oxilion V4=93.186.180.113 V6=2a00:d10:1141:6::5
 is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
