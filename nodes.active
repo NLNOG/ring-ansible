@@ -178,7 +178,6 @@ kaiaglobal01.ring.nlnog.net OWNER=kaiaglobal V4=79.141.172.23 V6=2a02:b0:1048:2:
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
-intellit01.ring.nlnog.net OWNER=intellit V4=62.24.55.66 V6=2a03:1400:21:1703::66
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 onet02.ring.nlnog.net OWNER=onet V4=141.105.16.133 V6=2a02:c10:3f00:7::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
