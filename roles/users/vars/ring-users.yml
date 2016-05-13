@@ -2948,3 +2948,19 @@ USERS:
     groups:
       - ring-users
 
+  fiberby:
+    state: present
+    company: 'Fiberby ApS'
+    email: 'noc@fiberby.net'
+    uid: 5390
+    groups:
+      - ring-users
+
+  serversaustralia:
+    state: present
+    company: 'Servers Australia'
+    email: 'noc@serversaustralia.com.au'
+    uid: 5391
+    groups:
+      - ring-users
+
