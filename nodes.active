@@ -12,6 +12,7 @@ leaseweb01.ring.nlnog.net OWNER=leaseweb V4=85.17.150.181 V6=2001:1af8:4300:a004
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
+nedzone01.ring.nlnog.net OWNER=nedzone V4=178.18.139.54 V6=2a02:990:222::6932:49e9
 oxilion01.ring.nlnog.net OWNER=oxilion V4=93.186.180.113 V6=2a00:d10:1141:6::5
 is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:610:511:123:192:42:123:22
@@ -20,6 +21,7 @@ prolocation01.ring.nlnog.net OWNER=prolocation V4=94.228.136.130 V6=2a00:d00:ff:
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
 netground01.ring.nlnog.net OWNER=netground V4=87.250.146.52 V6=2a02:f18:1:9231:87:250:146:52
 totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
+signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:12::10
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
@@ -370,6 +372,7 @@ gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.185 V6=2620:106:c005:4f85:3816:8fd:
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
 rackcentral01.ring.nlnog.net OWNER=rackcentral V4=45.65.13.65 V6=2400:7180:1::65
 rackcentral02.ring.nlnog.net OWNER=rackcentral V4=163.53.233.70 V6=2400:7180:2:1::70
+widenet01.ring.nlnog.net OWNER=widenet V4=195.46.37.20 V6=2a00:fb20:1:fffc::14
 dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
 comcast01.ring.nlnog.net OWNER=comcast V4=67.161.224.4 V6=2001:558:6018::4
