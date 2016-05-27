@@ -263,7 +263,7 @@ USERS:
   acsystemy:
     state: present
     company: 'AC Systemy'
-    email: 'noc@acsystemy.pl'
+    email: 'swinoujscie.uslugi@multimedia.pl'
     uid: 5039
     groups:
       - ring-users
