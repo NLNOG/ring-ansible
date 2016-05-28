@@ -29,7 +29,7 @@ USERS:
       - ring-users
 
   widexs:
-    state: present
+    state: absent
     company: 'WideXS'
     email: 'noc@widexs.nl'
     uid: 5004
@@ -165,7 +165,7 @@ USERS:
       - ring-users
 
   netground:
-    state: present
+    state: absent
     company: 'NetGround BV'
     email: 'systeembeheer@netground.nl'
     uid: 5025
