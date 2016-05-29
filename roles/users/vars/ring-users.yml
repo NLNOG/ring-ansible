@@ -2972,3 +2972,19 @@ USERS:
     groups:
       - ring-users
 
+  plurimedia:
+    state: present
+    company: 'SdV Plurimedia'
+    email: 'noc@sdv.fr'
+    uid: 5393
+    groups:
+      - ring-users
+
+  clouddk:
+    state: present
+    company: 'Cloud.dk'
+    email: 'noc@cloud.dk'
+    uid: 5394
+    groups:
+      - ring-users
+

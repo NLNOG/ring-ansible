@@ -297,6 +297,7 @@ digitalocean01.ring.nlnog.net OWNER=digitalocean V4=178.62.52.116 V6=2a03:b0c0:1
 digitalocean02.ring.nlnog.net OWNER=digitalocean V4=128.199.190.202 V6=2400:6180:0000:00D0:0000:0000:0147:A001
 digitalocean03.ring.nlnog.net OWNER=digitalocean V4=178.62.253.214 V6=2A03:B0C0:0002:00D0:0000:0000:0004:E001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.131.59.72 V6=2604:a880:800:10::ed:6001
+digitalocean05.ring.nlnog.net OWNER=digitalocean V4=139.59.0.26 V6=2400:6180:100:d0::8:1
 bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.48 V6=2404:d900:0:a::48
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
@@ -416,6 +417,8 @@ zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.153.134 V6=2400:d400:1:1087::a:d
 chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
+plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
+clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
