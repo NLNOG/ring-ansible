@@ -387,5 +387,7 @@ datapath01.ring.nlnog.net OWNER=datapath V4=185.115.193.38 V6=2a06:7840:beef::a
 zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.153.134 V6=2400:d400:1:1087::a:d
+plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
+midcore01.ring.nlnog.net OWNER=midcore V4=194.0.58.58 V6=2001:67c:3e0:c5::58
 
 [infranode]

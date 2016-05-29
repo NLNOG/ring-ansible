@@ -957,7 +957,7 @@ USERS:
       - ring-users
 
   zeronet:
-    state: present
+    state: absent
     company: 'zero.net.uk'
     email: 'noc@zero.net.uk'
     uid: 5141
