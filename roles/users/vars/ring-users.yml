@@ -2988,3 +2988,11 @@ USERS:
     groups:
       - ring-users
 
+  midcore:
+    state: present
+    company: 'Midcore IP Networks Ltd'
+    email: 'noc@midcore.eu'
+    uid: 5395
+    groups:
+      - ring-users
+
