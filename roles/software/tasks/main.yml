@@ -91,3 +91,17 @@
     - whois
     - swaks
     - ruby-json
+
+- name: "Uninstall certain unnecessary packages"
+  apt: name={{ item }} state=purged
+  with_items:
+    - pppoe
+    - ppp
+    - pppconfig
+    - pppoeconfig
+    - resolvconf
+    - ferm
+    - ufw
+    - apparmor
+    - apparmor-utils
+    - molly-guard
