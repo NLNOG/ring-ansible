@@ -5,6 +5,7 @@
     - ansible
     - etcfiles
     - fail2ban
+    - software
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
