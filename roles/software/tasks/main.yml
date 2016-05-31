@@ -93,7 +93,7 @@
     - ruby-json
 
 - name: "Uninstall certain unnecessary packages"
-  apt: name={{ item }} state=purged
+  apt: name={{ item }} state=absent
   with_items:
     - pppoe
     - ppp
