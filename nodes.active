@@ -180,6 +180,7 @@ icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 onet02.ring.nlnog.net OWNER=onet V4=141.105.16.133 V6=2a02:c10:3f00:7::2
+msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 robtex01.ring.nlnog.net OWNER=robtex V4=192.71.253.130 V6=2a00:9c00:1000:130::2
 dyn01.ring.nlnog.net OWNER=dyn V4=103.11.200.254 V6=2001:df0:258:300::beef
 trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
