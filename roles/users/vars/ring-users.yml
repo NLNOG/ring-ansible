@@ -2996,3 +2996,11 @@ USERS:
     groups:
       - ring-users
 
+  deic:
+    state: present
+    company: 'DeIC'
+    email: 'netdrift@deic.dk'
+    uid: 5396
+    groups:
+      - ring-users
+
