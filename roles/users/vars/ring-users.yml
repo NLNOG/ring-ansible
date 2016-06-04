@@ -3004,3 +3004,19 @@ USERS:
     groups:
       - ring-users
 
+  netcup:
+    state: present
+    company: 'netcup GmbH'
+    email: 'noc@netcup.de'
+    uid: 5397
+    groups:
+      - ring-users
+
+  hostwayde:
+    state: present
+    company: 'Hostway Deutschland GmbH'
+    email: 'technik@hostway.de'
+    uid: 5398
+    groups:
+      - ring-users
+
