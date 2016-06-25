@@ -2501,7 +2501,7 @@ USERS:
       - ring-users
 
   worldstream:
-    state: present
+    state: absent
     company: 'WorldStream B.V.'
     email: 'noc@worldstream.nl'
     uid: 5334
@@ -3017,6 +3017,22 @@ USERS:
     company: 'Hostway Deutschland GmbH'
     email: 'technik@hostway.de'
     uid: 5398
+    groups:
+      - ring-users
+
+  dreamheack:
+    state: present
+    company: 'DreamHack'
+    email: 'noc@dreamhack.se'
+    uid: 5399
+    groups:
+      - ring-users
+
+  memset:
+    state: present
+    company: 'Memset Ltd'
+    email: 'support@memset.com'
+    uid: 5400
     groups:
       - ring-users
 
