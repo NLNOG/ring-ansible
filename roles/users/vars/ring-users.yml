@@ -3020,19 +3020,19 @@ USERS:
     groups:
       - ring-users
 
-  dreamheack:
-    state: present
-    company: 'DreamHack'
-    email: 'noc@dreamhack.se'
-    uid: 5399
-    groups:
-      - ring-users
-
   memset:
     state: present
     company: 'Memset Ltd'
     email: 'support@memset.com'
     uid: 5400
+    groups:
+      - ring-users
+
+  dreamhack:
+    state: present
+    company: 'DreamHack'
+    email: 'noc@dreamhack.se'
+    uid: 5401
     groups:
       - ring-users
 
