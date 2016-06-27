@@ -911,7 +911,7 @@ USERS:
   afilias:
     state: present
     company: 'Afilias'
-    email: 'cpr@afilias.info'
+    email: 'dig@afilias.info'
     uid: 5133
     groups:
       - ring-users
