@@ -143,7 +143,6 @@ yellowfiber01.ring.nlnog.net OWNER=yellowfiber V4=67.23.114.2 V6=2607:fd50:1::5a
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:01:1107::2
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
-rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:8000:f::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 fremaks01.ring.nlnog.net OWNER=fremaks V4=46.19.92.60 V6=2a02:2918:0:fc00::a6a0:81d6
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
@@ -364,7 +363,6 @@ tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=176.10.80.18 V6=2A01:300:666:0::2
 switchco01.ring.nlnog.net OWNER=switchco V4=185.91.9.17 V6=2a05:e580:105:1014::2
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=23.92.92.198 V6=2604:4600:b01:6122::2
-quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
 fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=206.123.203.163 V6=2607:6400:700:2::3163
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
 gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.185 V6=2620:106:c005:4f85:3816:8fd:80a4:58b9
