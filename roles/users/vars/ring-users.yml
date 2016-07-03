@@ -3036,3 +3036,19 @@ USERS:
     groups:
       - ring-users
 
+  hkserverworks:
+    state: present
+    company: 'HK Serverworks'
+    email: 'support@hkserverworks.com'
+    uid: 5402
+    groups:
+      - ring-users
+
+  plutex:
+    state: present
+    company: 'PLUTEX GmbH'
+    email: 'nlnog@plutex.de'
+    uid: 5403
+    groups:
+      - ring-users
+

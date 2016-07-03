@@ -39,7 +39,7 @@ acsystemy01.ring.nlnog.net OWNER=acsystemy V4=80.245.176.74 V6=2a03:e800:0:ffff:
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 hosteam01.ring.nlnog.net OWNER=hosteam V4=178.217.185.6 V6=2001:67c:2044:c102::d8c0:be8f
-inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8314::1
+inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
 blix01.ring.nlnog.net OWNER=blix V4=178.255.148.131 V6=2a02:20c8:14::2
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
@@ -423,6 +423,8 @@ netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
 hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
 memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8b3:cf19:9e11
 dreamhack01.ring.nlnog.net OWNER=dreamhack V4=185.69.168.78 V6=2a05:2240:110::78
+hkserverworks01.ring.nlnog.net OWNER=hkserverworks V4=103.16.27.130 V6=2001:df0:465:1130::
+plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2:
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
