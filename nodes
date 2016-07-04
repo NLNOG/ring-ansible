@@ -87,6 +87,9 @@ hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme01.ring.nlnog.net OWNER=pcextreme V4=109.72.80.176 V6=2a00:0f10:0105:0020:0000:0000:0000:0000
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
+pcextreme04.ring.nlnog.net OWNER=pcextreme V4=185.103.241.78 V6=2a05:1500:202:0:402:52ff:fe00:57
+pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
+pcextreme06.ring.nlnog.net OWNER=pcextreme V4=185.103.157.56 V6=2a05:1500:100:2:46f:ceff:fe00:f8
 antagonist01.ring.nlnog.net OWNER=antagonist V4=195.211.72.12 V6=2a03:3c00:a001:4::2
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 multiplay01.ring.nlnog.net OWNER=multiplay V4=85.236.110.143 V6=2001:4DB0:10:7::12
