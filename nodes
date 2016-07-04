@@ -85,6 +85,8 @@ equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:1
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme01.ring.nlnog.net OWNER=pcextreme V4=109.72.80.176 V6=2a00:0f10:0105:0020:0000:0000:0000:0000
+pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
+pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
 antagonist01.ring.nlnog.net OWNER=antagonist V4=195.211.72.12 V6=2a03:3c00:a001:4::2
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 multiplay01.ring.nlnog.net OWNER=multiplay V4=85.236.110.143 V6=2001:4DB0:10:7::12
@@ -152,7 +154,7 @@ yellowfiber01.ring.nlnog.net OWNER=yellowfiber V4=67.23.114.2 V6=2607:fd50:1::5a
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:01:1107::2
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
-rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:8000:f::2
+rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 fremaks01.ring.nlnog.net OWNER=fremaks V4=46.19.92.60 V6=2a02:2918:0:fc00::a6a0:81d6
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
