@@ -3052,3 +3052,11 @@ USERS:
     groups:
       - ring-users
 
+  metapeer:
+    state: present
+    company: 'Metapeer'
+    email: 'noc@metapeer.com'
+    uid: 5404
+    groups:
+      - ring-users
+
