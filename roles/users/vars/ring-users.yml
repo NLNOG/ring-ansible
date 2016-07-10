@@ -3060,3 +3060,11 @@ USERS:
     groups:
       - ring-users
 
+  hextet:
+    state: present
+    company: 'Hextet Systems'
+    email: 'noc@hextet.net'
+    uid: 5405
+    groups:
+      - ring-users
+
