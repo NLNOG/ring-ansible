@@ -331,6 +331,7 @@ nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
 pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
+lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.5 V6=2a00:c380:1337:1::5
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 bkkfiber01.ring.nlnog.net OWNER=bkkfiber V4=85.200.239.110 V6=2a00:14d8:1001:713::2
@@ -358,7 +359,6 @@ altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 call2701.ring.nlnog.net OWNER=call27 V4=91.231.144.121 V6=2a06:2e00::1:0:e0b7:4cda
-iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
