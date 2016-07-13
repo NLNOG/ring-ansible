@@ -29,7 +29,7 @@ USERS:
       - ring-users
 
   widexs:
-    state: present
+    state: absent
     company: 'WideXS'
     email: 'noc@widexs.nl'
     uid: 5004
@@ -165,7 +165,7 @@ USERS:
       - ring-users
 
   netground:
-    state: present
+    state: absent
     company: 'NetGround BV'
     email: 'systeembeheer@netground.nl'
     uid: 5025
@@ -263,7 +263,7 @@ USERS:
   acsystemy:
     state: present
     company: 'AC Systemy'
-    email: 'noc@acsystemy.pl'
+    email: 'swinoujscie.uslugi@multimedia.pl'
     uid: 5039
     groups:
       - ring-users
@@ -911,7 +911,7 @@ USERS:
   afilias:
     state: present
     company: 'Afilias'
-    email: 'cpr@afilias.info'
+    email: 'dig@afilias.info'
     uid: 5133
     groups:
       - ring-users
@@ -957,7 +957,7 @@ USERS:
       - ring-users
 
   zeronet:
-    state: present
+    state: absent
     company: 'zero.net.uk'
     email: 'noc@zero.net.uk'
     uid: 5141
@@ -2501,7 +2501,7 @@ USERS:
       - ring-users
 
   worldstream:
-    state: present
+    state: absent
     company: 'WorldStream B.V.'
     email: 'noc@worldstream.nl'
     uid: 5334
@@ -2945,6 +2945,126 @@ USERS:
     company: 'ZEROFAIL'
     email: 'NOC@zerofail.com'
     uid: 5389
+    groups:
+      - ring-users
+
+  fiberby:
+    state: present
+    company: 'Fiberby ApS'
+    email: 'noc@fiberby.net'
+    uid: 5390
+    groups:
+      - ring-users
+
+  serversaustralia:
+    state: present
+    company: 'Servers Australia'
+    email: 'noc@serversaustralia.com.au'
+    uid: 5391
+    groups:
+      - ring-users
+
+  chaosdarmstadt:
+    state: present
+    company: 'Chaos Darmstadt e.V.'
+    email: 'ops@darmstadt.freifunk.net'
+    uid: 5392
+    groups:
+      - ring-users
+
+  plurimedia:
+    state: present
+    company: 'SdV Plurimedia'
+    email: 'noc@sdv.fr'
+    uid: 5393
+    groups:
+      - ring-users
+
+  clouddk:
+    state: present
+    company: 'Cloud.dk'
+    email: 'noc@cloud.dk'
+    uid: 5394
+    groups:
+      - ring-users
+
+  midcore:
+    state: present
+    company: 'Midcore IP Networks Ltd'
+    email: 'noc@midcore.eu'
+    uid: 5395
+    groups:
+      - ring-users
+
+  deic:
+    state: present
+    company: 'DeIC'
+    email: 'netdrift@deic.dk'
+    uid: 5396
+    groups:
+      - ring-users
+
+  netcup:
+    state: present
+    company: 'netcup GmbH'
+    email: 'noc@netcup.de'
+    uid: 5397
+    groups:
+      - ring-users
+
+  hostwayde:
+    state: present
+    company: 'Hostway Deutschland GmbH'
+    email: 'technik@hostway.de'
+    uid: 5398
+    groups:
+      - ring-users
+
+  memset:
+    state: present
+    company: 'Memset Ltd'
+    email: 'support@memset.com'
+    uid: 5400
+    groups:
+      - ring-users
+
+  dreamhack:
+    state: present
+    company: 'DreamHack'
+    email: 'noc@dreamhack.se'
+    uid: 5401
+    groups:
+      - ring-users
+
+  hkserverworks:
+    state: present
+    company: 'HK Serverworks'
+    email: 'support@hkserverworks.com'
+    uid: 5402
+    groups:
+      - ring-users
+
+  plutex:
+    state: present
+    company: 'PLUTEX GmbH'
+    email: 'nlnog@plutex.de'
+    uid: 5403
+    groups:
+      - ring-users
+
+  metapeer:
+    state: present
+    company: 'Metapeer'
+    email: 'noc@metapeer.com'
+    uid: 5404
+    groups:
+      - ring-users
+
+  hextet:
+    state: present
+    company: 'Hextet Systems'
+    email: 'noc@hextet.net'
+    uid: 5405
     groups:
       - ring-users
 
