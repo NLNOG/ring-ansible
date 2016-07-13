@@ -5,4 +5,9 @@ ignoreip = 37.77.58.0/26
 {{ ' ' }}{{ hostvars[host]['V4'] }}
 {%- endif -%}
 {%- endfor -%}
+{%- if FAIL2BAN_IGNORE|default(None) -%}
+{%- for prefix in FAIL2BAN_IGNORE -%}
+{{ ' ' }}{{ prefix }}
+{%- endfor -%}
+{%- endif -%}
 
