@@ -3068,3 +3068,11 @@ USERS:
     groups:
       - ring-users
 
+  geotr:
+    state: present
+    company: 'SdV Plurimedia'
+    email: 'noc@sdv.fr'
+    uid: 5406
+    groups:
+      - ring-users
+
