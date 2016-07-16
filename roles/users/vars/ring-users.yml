@@ -3073,6 +3073,7 @@ USERS:
     company: 'SdV Plurimedia'
     email: 'noc@sdv.fr'
     uid: 5406
+    shell: '/usr/local/bin/geotrshell'
     groups:
       - ring-users
 
