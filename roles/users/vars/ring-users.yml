@@ -69,7 +69,7 @@ USERS:
       - ring-users
 
   easyhosting:
-    state: present
+    state: absent
     company: 'Easyhosting'
     email: 'systeembeheer@easyhosting.nl'
     uid: 5010
@@ -765,7 +765,7 @@ USERS:
       - ring-users
 
   brendon-wand:
-    state: present
+    state: absent
     company: 'Brendon Jones'
     email: 'brendonj@cs.waikato.ac.nz'
     uid: 5110
@@ -1085,7 +1085,7 @@ USERS:
       - ring-users
 
   rediris:
-    state: present
+    state: absent
     company: 'RedIRIS'
     email: 'cert@rediris.es'
     uid: 5154
@@ -1333,7 +1333,7 @@ USERS:
       - ring-users
 
   teletalk:
-    state: present
+    state: absent
     company: 'Teletalk Communicacoes'
     email: 'noc@teletalk.com.br'
     uid: 5185
@@ -1357,7 +1357,7 @@ USERS:
       - ring-users
 
   g8networks:
-    state: present
+    state: absent
     company: 'G8 Networks'
     email: 'noc@g8.net.br'
     uid: 5189
@@ -1653,7 +1653,7 @@ USERS:
       - ring-users
 
   blacklotus:
-    state: present
+    state: absent
     company: 'Black Lotus Communications'
     email: 'noc@blacklotus.net'
     uid: 5226
