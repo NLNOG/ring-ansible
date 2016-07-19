@@ -98,6 +98,7 @@ gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:
 towardex01.ring.nlnog.net OWNER=towardex V4=216.93.240.179 V6=2001:4830:123:1::d85d:f0b3
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.133 V6=2a02:af8:1:4400::4481
 isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
+strato01.ring.nlnog.net OWNER=strato V4=85.214.1.147 V6=2a01:238:bd:3002::2
 edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
@@ -193,6 +194,7 @@ trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:1
 phusion01.ring.nlnog.net OWNER=phusion V4=91.239.87.47 V6=2001:67c:105c:800::2
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
+es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 world4you01.ring.nlnog.net OWNER=world4you V4=81.19.156.22 V6=2a00:1a68:3:1::5d18:b819
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
