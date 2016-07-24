@@ -20,6 +20,7 @@
   become_user: root
   roles:
     - { role: nginx }
+    - scamper
     - ripe-atlas
     - ring_sqa
 
