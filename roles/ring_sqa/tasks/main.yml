@@ -4,11 +4,26 @@
 - name: Install RING SQA Gem
   gem: name=ring-sqa state=latest executable=/usr/bin/gem1.9.1 user_install=no
 
-- file: path=/etc/ring-sqa state=directory owner=root group=root mode=0755
-- template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0644
-- template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0644
-- template: src=ring-sqa4.conf.j2 dest=/etc/init/ring-sqa4.conf owner=root group=root mode=0644
-- template: src=ring-sqa6.conf.j2 dest=/etc/init/ring-sqa6.conf owner=root group=root mode=0644
+- name: Ensure /etc/ring-sqa exists
+  file: path=/etc/ring-sqa state=directory owner=root group=root mode=0755
+
+- name: create /etc/ring-sqa/main.conf
+  template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0644
+  notify:
+    - restart ring-sqa4
+    - restart ring-sqa6
+
+- name: create /etc/ring-sqa/hosts.conf
+  template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0644
+  notify:
+    - restart ring-sqa4
+    - restart ring-sqa6
+
+- name: create /etc/init/ring-sqa4.conf
+  template: src=ring-sqa4.conf.j2 dest=/etc/init/ring-sqa4.conf owner=root group=root mode=0644
+
+- name: create /etc/init/ring-sqa6.conf
+  template: src=ring-sqa6.conf.j2 dest=/etc/init/ring-sqa6.conf owner=root group=root mode=0644
 
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa4 owner=root group=root state=link
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa6 owner=root group=root state=link

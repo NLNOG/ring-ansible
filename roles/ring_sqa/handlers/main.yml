@@ -1,0 +1,5 @@
+- name: restart ring-sqa4
+  service: name=ring-sqa4 state=restarted
+
+- name: restart ring-sqa6
+  service: name=ring-sqa6 state=restarted
