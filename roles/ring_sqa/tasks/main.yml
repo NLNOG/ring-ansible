@@ -1,0 +1,14 @@
+- name: Install SyslogLogger
+  gem: name=SyslogLogger state=latest executable=/usr/bin/gem1.9.1
+
+- name: Install RING SQA Gem
+  gem: name=ring-sqa state=latest executable=/usr/bin/gem1.9.1
+
+- file: path=/etc/ring-sqa state=directory owner=root group=root mode=0755
+- template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0755
+- template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0755
+- template: src=ring-sqa4.conf.j2 dest=/etc/init/ring-sqa4.conf owner=root group=root mode=0755
+- template: src=ring-sqa6.conf.j2 dest=/etc/init/ring-sqa6.conf owner=root group=root mode=0755
+
+- service: name=ring-sqa4 state=started enabled=yes
+- service: name=ring-sqa6 state=started enabled=yes

@@ -1,0 +1,18 @@
+---
+directory: /etc/ring-sqa
+debug: false
+hosts:
+    load:
+        - ring.nlnog.net
+    ignore:
+        - infra.ring.nlnog.net
+        - worker01.ring.nlnog.net
+        - worker02.ring.nlnog.net
+port: 12838
+analyzer:
+    tolerance: 1.2
+nodes_json: /etc/ring/nodes.json
+mtr:
+    args: -i0.5 -c5 -r -w -n
+    timeout: 15
+ram_database: true

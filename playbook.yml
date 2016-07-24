@@ -21,6 +21,7 @@
   roles:
     - { role: nginx }
     - ripe-atlas
+    - ring_sqa
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
