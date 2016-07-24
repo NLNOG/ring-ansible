@@ -1,0 +1,30 @@
+- name: Install scamper packages
+  package: name={{ item }} state=latest
+  with_items:
+    - libscamperfile0
+    - scamper
+
+- name: Create /home/scamper/traces
+  file: name=/home/scamper/traces state=directory owner=scamper
+
+- name: Create scamper upstart
+  template: src=scamper.conf dest=/etc/init/scamper.conf owner=root group=root mode=0644
+ 
+- name: Create /home/scamper/run-traces.sh
+  template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group=scamper mode=0755
+
+- name: Scamper service
+  service: name=scamper state=started enabled=yes
+
+- name: Scamper cron
+  cron: name=run_scamper
+        job="/home/scamper/run-traces.sh"
+        user="scamper"
+        minute="{{ 60|determrand(ansible_fqdn) }}"
+
+- name: "Scamper cleanup"
+  cron: name="cleanup_scamper"
+        job="find /home/scamper/traces/* -mtime +8 -exec rm {} \;"
+        hour="7,20"
+        minute="00"
+        user="root"
