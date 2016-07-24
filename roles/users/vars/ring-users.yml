@@ -3023,7 +3023,7 @@ USERS:
   memset:
     state: present
     company: 'Memset Ltd'
-    email: 'support@memset.com'
+    email: 'noc@memset.com'
     uid: 5400
     groups:
       - ring-users
