@@ -38,3 +38,5 @@
         minute="00"
         user="root"
         state="absent"
+
+- file: name=/var/spool/cron/crontabs/scamper state=absent
