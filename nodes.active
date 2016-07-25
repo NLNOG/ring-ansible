@@ -284,6 +284,7 @@ digitalocean05.ring.nlnog.net OWNER=digitalocean V4=139.59.0.84 V6=2400:6180:100
 bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.48 V6=2404:d900:0:a::48
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
+dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::1:1
 liquidweb01.ring.nlnog.net OWNER=liquidweb V4=209.59.185.5 V6=2607:fad0:32:a021::4
 riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d6ff:fec2:dcd5
 immense01.ring.nlnog.net OWNER=immense V4=72.194.128.201 V6=2620:8d:4000:1000::10
