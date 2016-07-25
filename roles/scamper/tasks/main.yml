@@ -19,7 +19,7 @@
   template: src=scamper.conf dest=/etc/init/scamper.conf owner=root group=root mode=0644
  
 - name: Create /home/scamper/run-traces.sh
-  template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group=scamper mode=0755
+  template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group="ring-users" mode=0755
 
 - name: Scamper service
   service: name=scamper state=started enabled=yes
