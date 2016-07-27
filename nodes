@@ -135,7 +135,6 @@ claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
-initseven01.ring.nlnog.net OWNER=initseven V4=82.197.163.98 V6=2001:1620:2777:36::98
 hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2

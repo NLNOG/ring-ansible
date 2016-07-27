@@ -877,7 +877,7 @@ USERS:
       - ring-users
 
   initseven:
-    state: present
+    state: absent
     company: 'INIT7'
     email: 'noc@init7.net'
     uid: 5127
