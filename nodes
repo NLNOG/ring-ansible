@@ -33,7 +33,6 @@ cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
-acsystemy01.ring.nlnog.net OWNER=acsystemy V4=80.245.176.74 V6=2a03:e800:0:ffff::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 hosteam01.ring.nlnog.net OWNER=hosteam V4=178.217.185.6 V6=2001:67c:2044:c102::d8c0:be8f

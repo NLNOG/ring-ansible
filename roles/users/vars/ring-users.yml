@@ -261,7 +261,7 @@ USERS:
       - ring-users
 
   acsystemy:
-    state: present
+    state: absent
     company: 'AC Systemy'
     email: 'swinoujscie.uslugi@multimedia.pl'
     uid: 5039
