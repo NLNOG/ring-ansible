@@ -23,6 +23,8 @@
     - scamper
     - ripe-atlas
     - ring_sqa
+      tags: ring_sqa
+
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
