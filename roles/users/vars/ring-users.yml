@@ -3077,3 +3077,11 @@ USERS:
     groups:
       - ring-users
 
+  ekmedia:
+    state: present
+    company: 'EK-Media B.V.'
+    email: 'noc@ek-media.nl'
+    uid: 5407
+    groups:
+      - ring-users
+
