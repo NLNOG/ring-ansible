@@ -3085,3 +3085,11 @@ USERS:
     groups:
       - ring-users
 
+  fundaments:
+    state: present
+    company: 'Fundaments BV'
+    email: 'noc@fundaments.nl'
+    uid: 5408
+    groups:
+      - ring-users
+
