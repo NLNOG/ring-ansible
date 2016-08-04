@@ -1493,7 +1493,7 @@ USERS:
       - ring-users
 
   doruknet:
-    state: absent
+    state: present
     company: 'Doruknet'
     email: 'noc@doruk.net.tr'
     uid: 5206
