@@ -116,14 +116,6 @@ USERS:
     groups:
       - ring-users
 
-  oxilion:
-    state: present
-    company: 'Oxilion'
-    email: 'noc@oxilion.nl'
-    uid: 5018
-    groups:
-      - ring-users
-
   ebayclassifiedsgroup:
     state: present
     company: 'eBay Classifieds Group'
@@ -3090,6 +3082,14 @@ USERS:
     company: 'Fundaments BV'
     email: 'noc@fundaments.nl'
     uid: 5408
+    groups:
+      - ring-users
+
+  oxilion:
+    state: absent
+    company: 'Oxilion'
+    email: 'noc@oxilion.nl'
+    uid: 5018
     groups:
       - ring-users
 
