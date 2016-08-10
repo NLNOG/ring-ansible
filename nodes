@@ -358,7 +358,6 @@ linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe3
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 openimp01.ring.nlnog.net OWNER=openimp V4=94.228.79.60 V6=2a00:1068:ffff:402::1024
-swiftnode01.ring.nlnog.net OWNER=swiftnode V4=104.255.38.130 V6=2605:e980:14:73:7769:6674:6e6f:6465
 fusix01.ring.nlnog.net OWNER=fusix V4=37.139.139.110 V6=2a00:a7c0:1000:1303::1303
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2

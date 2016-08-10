@@ -2581,7 +2581,7 @@ USERS:
       - ring-users
 
   swiftnode:
-    state: present
+    state: absent
     company: 'SwiftNode'
     email: 'networking@swiftnode.com'
     uid: 5345
