@@ -97,7 +97,6 @@ gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:
 towardex01.ring.nlnog.net OWNER=towardex V4=216.93.240.179 V6=2001:4830:123:1::d85d:f0b3
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.133 V6=2a02:af8:1:4400::4481
 isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
-strato01.ring.nlnog.net OWNER=strato V4=85.214.1.147 V6=2a01:238:bd:3002::2
 edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
@@ -244,7 +243,6 @@ flhsi01.ring.nlnog.net OWNER=flhsi V4=208.90.223.6 V6=2606:2400:223:4::6
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
 telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
-selectel01.ring.nlnog.net OWNER=selectel V4=37.200.65.15 V6=2a00:ab00:104:37:200:65:15:0
 infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
 funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
 dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
