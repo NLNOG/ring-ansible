@@ -1916,9 +1916,9 @@ USERS:
     groups:
       - ring-users
 
-  equinixfi:
-    state: present
-    company: 'Equinix FI'
+  telecityfi:
+    state: absent
+    company: 'Telecity Finland'
     email: 'fi.noc@telecity.com'
     uid: 5261
     groups:
@@ -3106,6 +3106,14 @@ USERS:
     company: 'Xantaro'
     email: 'peering@xantaro.net'
     uid: 5410
+    groups:
+      - ring-users
+
+  equinixfi:
+    state: present
+    company: 'Equinix FI'
+    email: 'fi.noc@telecity.com'
+    uid: 5411
     groups:
       - ring-users
 
