@@ -1916,9 +1916,9 @@ USERS:
     groups:
       - ring-users
 
-  telecityfi:
+  equinixfi:
     state: present
-    company: 'TelecityGroup Finland Oy'
+    company: 'Equinix FI'
     email: 'fi.noc@telecity.com'
     uid: 5261
     groups:
