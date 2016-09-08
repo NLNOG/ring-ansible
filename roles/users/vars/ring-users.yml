@@ -3101,3 +3101,11 @@ USERS:
     groups:
       - ring-users
 
+  xantaro:
+    state: present
+    company: 'Xantaro'
+    email: 'peering@xantaro.net'
+    uid: 5410
+    groups:
+      - ring-users
+
