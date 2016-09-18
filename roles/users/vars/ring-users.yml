@@ -3117,3 +3117,11 @@ USERS:
     groups:
       - ring-users
 
+  novoserve:
+    state: present
+    company: 'NovoServe'
+    email: 'noc@as24875.net'
+    uid: 5412
+    groups:
+      - ring-users
+
