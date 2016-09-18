@@ -1285,7 +1285,7 @@ USERS:
       - ring-users
 
   ispservices:
-    state: present
+    state: absent
     company: 'ISP Services'
     email: 'noc@isp-services.nl'
     uid: 5180
