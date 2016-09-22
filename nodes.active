@@ -61,6 +61,7 @@ boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
+zensystems01.ring.nlnog.net OWNER=zensystems V4=109.202.131.110 V6=2a01:4f0:3:8::2
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.98.3 V6=2a02:3d8:0:ffff::3
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=46.234.32.56 V6=2001:4b20:c001::1000
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
@@ -103,11 +104,13 @@ edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
+occaid01.ring.nlnog.net OWNER=occaid V6=2001:4830:ed::2
 as250net01.ring.nlnog.net OWNER=as250net V4=194.150.168.19 V6=2001:4ce8:c134:1019::1
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
 redpilllinpro02.ring.nlnog.net OWNER=redpilllinpro V4=87.238.39.42 V6=2a02:c0:400:108::1
 redpilllinpro03.ring.nlnog.net OWNER=redpilllinpro V4=87.238.57.254 V6=2a02:c0:300:102::1
 nine01.ring.nlnog.net OWNER=nine V4=94.230.210.216 V6=2a02:418:5102::1
+lagis01.ring.nlnog.net OWNER=lagis V4=83.164.133.186 V6=2a00:1860:1:3::186
 fnutt01.ring.nlnog.net OWNER=fnutt V4=193.150.22.68 V6=2001:67c:24e4:64::68
 sidn01.ring.nlnog.net OWNER=sidn V4=193.176.144.164 V6=2a00:d78:0:fd:193:176:144:164
 melbourne01.ring.nlnog.net OWNER=melbourne V4=37.128.187.253 V6=2a03:b200:f::2
@@ -325,6 +328,7 @@ peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
+pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.5 V6=2a00:c380:1337:1::5
