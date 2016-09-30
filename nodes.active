@@ -61,7 +61,6 @@ boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
-zensystems01.ring.nlnog.net OWNER=zensystems V4=109.202.131.110 V6=2a01:4f0:3:8::2
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.98.3 V6=2a02:3d8:0:ffff::3
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=46.234.32.56 V6=2001:4b20:c001::1000
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
@@ -308,7 +307,6 @@ vshn02.ring.nlnog.net OWNER=vshn V4=185.72.236.108 V6=2a05:3d80:8000:208::108
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
-atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
