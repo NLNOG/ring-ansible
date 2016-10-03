@@ -308,6 +308,7 @@ vshn02.ring.nlnog.net OWNER=vshn V4=185.72.236.108 V6=2a05:3d80:8000:208::108
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
+atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
@@ -410,5 +411,8 @@ patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
+cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
+plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
+kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 
 [infranode]
