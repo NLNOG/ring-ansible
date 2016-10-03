@@ -1853,7 +1853,7 @@ USERS:
       - ring-users
 
   selectel:
-    state: present
+    state: absent
     company: 'Selectel Ltd'
     email: 'akme@selectel.ru'
     uid: 5253
