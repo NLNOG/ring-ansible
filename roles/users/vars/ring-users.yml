@@ -3133,3 +3133,11 @@ USERS:
     groups:
       - ring-users
 
+  plusline:
+    state: present
+    company: 'Plus.line AG'
+    email: 'noc@plusline.de'
+    uid: 5414
+    groups:
+      - ring-users
+
