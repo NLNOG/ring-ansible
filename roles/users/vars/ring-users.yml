@@ -3125,3 +3125,11 @@ USERS:
     groups:
       - ring-users
 
+  cvo:
+    state: present
+    company: 'CVO-Technologies'
+    email: 'it@cvo-technologies.com'
+    uid: 5413
+    groups:
+      - ring-users
+
