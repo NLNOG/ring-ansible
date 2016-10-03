@@ -3141,3 +3141,11 @@ USERS:
     groups:
       - ring-users
 
+  kviknet:
+    state: present
+    company: 'Kviknet'
+    email: 'noc@kviknet.dk'
+    uid: 5415
+    groups:
+      - ring-users
+
