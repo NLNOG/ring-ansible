@@ -3149,3 +3149,11 @@ USERS:
     groups:
       - ring-users
 
+  liquidtelecom:
+    state: present
+    company: 'Liquid Telecom'
+    email: 'anthony.somerset@liquidtelecom.com'
+    uid: 5416
+    groups:
+      - ring-users
+
