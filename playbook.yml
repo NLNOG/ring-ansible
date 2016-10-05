@@ -20,7 +20,7 @@
   become_user: root
   roles:
     - { role: nginx }
-    - scamper
+    - { role: scamper, tags: scamper }
     - ripe-atlas
     - { role: ring_sqa, tags: ring_sqa }
 
