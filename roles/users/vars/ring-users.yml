@@ -3157,3 +3157,11 @@ USERS:
     groups:
       - ring-users
 
+  carnet:
+    state: present
+    company: 'CARNet'
+    email: 'muc@carnet.hr'
+    uid: 5417
+    groups:
+      - ring-users
+
