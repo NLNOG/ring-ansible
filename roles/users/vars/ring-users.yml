@@ -2509,7 +2509,7 @@ USERS:
       - ring-users
 
   veracity:
-    state: present
+    state: absent
     company: 'Veracity Networks'
     email: 'nocgroup@veracitynetworks.com'
     uid: 5336
