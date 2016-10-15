@@ -3173,3 +3173,11 @@ USERS:
     groups:
       - ring-users
 
+  depaul:
+    state: present
+    company: 'DePaul University'
+    email: 'networks@depaul.edu'
+    uid: 5419
+    groups:
+      - ring-users
+
