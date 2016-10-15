@@ -3165,3 +3165,11 @@ USERS:
     groups:
       - ring-users
 
+  internode:
+    state: present
+    company: 'Internode'
+    email: 'noc@staff.iinet.net.au'
+    uid: 5418
+    groups:
+      - ring-users
+
