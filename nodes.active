@@ -152,6 +152,7 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 fremaks01.ring.nlnog.net OWNER=fremaks V4=46.19.92.60 V6=2a02:2918:0:fc00::a6a0:81d6
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
+one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
@@ -223,6 +224,7 @@ vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 esgob01.ring.nlnog.net OWNER=esgob V4=195.177.253.162 V6=2001:67c:1b40:162::162
+itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 finecom01.ring.nlnog.net OWNER=finecom V4=212.60.60.202 V6=2001:1a88:10:3:202::1
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 xconnect01.ring.nlnog.net OWNER=xconnect V4=185.19.100.58 V6=2a04:1120:1::58
