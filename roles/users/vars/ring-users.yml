@@ -3181,3 +3181,11 @@ USERS:
     groups:
       - ring-users
 
+  custodian:
+    state: present
+    company: 'Custodian Datacentres LTD.'
+    email: 'support@custodiandc.com'
+    uid: 5420
+    groups:
+      - ring-users
+
