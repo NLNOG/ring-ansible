@@ -423,5 +423,6 @@ carnet01.ring.nlnog.net OWNER=carnet V4=193.198.226.1 V6=2001:b68:8ff:ff:a2b::10
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
+franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 
 [infranode]
