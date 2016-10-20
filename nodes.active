@@ -28,6 +28,7 @@ tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
 hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
+hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24

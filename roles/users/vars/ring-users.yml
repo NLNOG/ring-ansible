@@ -3189,3 +3189,11 @@ USERS:
     groups:
       - ring-users
 
+  franceix:
+    state: present
+    company: 'FranceIX'
+    email: 'l2-support@franceix.net'
+    uid: 5421
+    groups:
+      - ring-users
+
