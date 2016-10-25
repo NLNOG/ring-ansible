@@ -121,6 +121,7 @@ a2binternet01.ring.nlnog.net OWNER=a2binternet V4=178.249.153.39 V6=2a02:1668:a2
 i3d01.ring.nlnog.net OWNER=i3d V4=31.204.129.45 V6=2a00:1630:2:a01::1
 keenondots01.ring.nlnog.net OWNER=keenondots V4=91.218.150.255 V6=2a03:3400:3:2501::150:255
 obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132::2
+infomaniak01.ring.nlnog.net OWNER=infomaniak V4=84.16.92.119 V6=2001:1600:3:5::110
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
 skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
