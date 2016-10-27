@@ -1413,7 +1413,7 @@ USERS:
       - ring-users
 
   dyn:
-    state: present
+    state: absent
     company: 'Dyn'
     email: 'noc@dyn.com'
     uid: 5197
