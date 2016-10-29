@@ -1405,7 +1405,7 @@ USERS:
       - ring-users
 
   robtex:
-    state: present
+    state: absent
     company: 'Robtex.com'
     email: 'team@robtex.com'
     uid: 5196
@@ -3194,6 +3194,14 @@ USERS:
     company: 'FranceIX'
     email: 'l2-support@franceix.net'
     uid: 5421
+    groups:
+      - ring-users
+
+  netrouting:
+    state: present
+    company: 'Netrouting'
+    email: 'noc@netrouting.com'
+    uid: 5422
     groups:
       - ring-users
 
