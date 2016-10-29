@@ -3205,3 +3205,11 @@ USERS:
     groups:
       - ring-users
 
+  liteserver:
+    state: present
+    company: 'LiteServer'
+    email: 'support@liteserver.nl'
+    uid: 5423
+    groups:
+      - ring-users
+
