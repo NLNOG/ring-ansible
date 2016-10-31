@@ -3213,3 +3213,11 @@ USERS:
     groups:
       - ring-users
 
+  20c:
+    state: present
+    company: '20C'
+    email: 'neteng@20c.com'
+    uid: 5424
+    groups:
+      - ring-users
+
