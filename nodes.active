@@ -105,6 +105,7 @@ edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
+occaid01.ring.nlnog.net OWNER=occaid V6=2001:4830:ed::2
 as250net01.ring.nlnog.net OWNER=as250net V4=194.150.168.19 V6=2001:4ce8:c134:1019::1
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
 redpilllinpro02.ring.nlnog.net OWNER=redpilllinpro V4=87.238.39.42 V6=2a02:c0:400:108::1
