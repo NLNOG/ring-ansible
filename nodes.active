@@ -90,9 +90,6 @@ pcextreme06.ring.nlnog.net OWNER=pcextreme V4=185.103.157.56 V6=2a05:1500:100:2:
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 softlayer01.ring.nlnog.net OWNER=softlayer V4=174.36.33.50 V6=2607:f0d0:1004:d3::2
 softlayer02.ring.nlnog.net OWNER=softlayer V4=173.193.70.99 V6=2607:f0d0:1201:30:225:90ff:fe0c:b7c3
-softlayer03.ring.nlnog.net OWNER=softlayer V4=174.37.230.130 V6=2607:f0d0:3003:a9::2
-softlayer04.ring.nlnog.net OWNER=softlayer V4=50.23.64.60 V6=2607:f0d0:2101:a::3
-softlayer05.ring.nlnog.net OWNER=softlayer V4=50.23.130.226 V6=2607:f0d0:2002:6e::2
 imagine01.ring.nlnog.net OWNER=imagine V4=89.127.199.164 V6=2001:4d68:4::a
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
@@ -356,7 +353,6 @@ gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
-iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
