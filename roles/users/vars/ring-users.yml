@@ -3221,3 +3221,11 @@ USERS:
     groups:
       - ring-users
 
+  connectria:
+    state: present
+    company: 'Connectria Hosting'
+    email: 'olivenoc@connectria.com'
+    uid: 5425
+    groups:
+      - ring-users
+
