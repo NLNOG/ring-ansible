@@ -3229,3 +3229,11 @@ USERS:
     groups:
       - ring-users
 
+  freifunkrl:
+    state: present
+    company: 'Freifunk Rheinland e.V.'
+    email: 'noc@freifunk-rheinland.net'
+    uid: 5426
+    groups:
+      - ring-users
+
