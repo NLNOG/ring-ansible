@@ -377,6 +377,7 @@ vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
 comcast01.ring.nlnog.net OWNER=comcast V4=67.161.224.4 V6=2001:558:6018::4
 seltimil01.ring.nlnog.net OWNER=seltimil V4=91.190.195.206 V6=2a00:ac00::132
 intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
+pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=38.103.8.242 V6=2001:550:102:ff::a0a
 kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
@@ -386,7 +387,6 @@ lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1::2
 cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 sigtelecom01.ring.nlnog.net OWNER=sigtelecom V4=217.169.138.50 V6=2001:41e0:1001:2:2c:29ff:fe2c:86bb
-datapath01.ring.nlnog.net OWNER=datapath V4=185.115.193.38 V6=2a06:7840:beef::a
 zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.153.134 V6=2400:d400:1:1087::a:d
