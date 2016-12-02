@@ -3245,3 +3245,11 @@ USERS:
     groups:
       - ring-users
 
+  kampde:
+    state: present
+    company: 'Kamp Netzwerkdienste GmbH'
+    email: 'noc@kamp.de'
+    uid: 5428
+    groups:
+      - ring-users
+
