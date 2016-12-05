@@ -6,6 +6,7 @@
     - etcfiles
     - fail2ban
     - software
+    - { role: ntp, tags: ntp }
     - { role: users, class: ring-admins }
     - { role: users, class: local }
 
@@ -19,9 +20,9 @@
   become: true
   become_user: root
   roles:
-    - { role: nginx }
+    - { role: nginx, tags: nginx }
     - { role: scamper, tags: scamper }
-    - ripe-atlas
+    - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
 
 
@@ -36,3 +37,4 @@
   become_user: root
   roles:
     - { role: haproxy, profile: github }
+
