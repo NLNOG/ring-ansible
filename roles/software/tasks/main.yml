@@ -21,6 +21,7 @@
     - gnupg
     - gnutls-bin
     - graphviz
+    - hping3
     - htop
     - httping
     - iotop
@@ -36,6 +37,7 @@
     - lftp
     - libcache-cache-perl
     - libnet-ssh2-ruby1.8
+    - libpcap2-bin
     - libxml2-dev
     - lsof
     - ltrace
@@ -49,6 +51,7 @@
     - netcat-openbsd
     - netsed
     - ngrep
+    - nmap
     - pastebinit
     - php5-cli
     - psmisc
@@ -78,9 +81,12 @@
     - sshfp
     - strace
     - sysstat
+    - tcpdump
     - tcptraceroute
     - telnet
     - tmux
+    - traceroute
+    - tshark
     - ucspi-tcp
     - unattended-upgrades
     - update-manager-core
@@ -103,11 +109,22 @@
     - /bin/ping6
     - /usr/sbin/lft
 
+- name: "Allow ring-users to do wire capturing"
+  file: path={{ item }} mode=0754 owner=root group=ring-users
+  with_items:
+    - /usr/sbin/tcpdump
+    - /usr/bin/dumpcap
+
 - name: "Get network capabilities for some tools"
   shell: /sbin/getcap {{ item }}
   register: cap
   with_items:
     - /usr/sbin/hping3
+    - /usr/bin/nmap
+    - /usr/bin/nping
+    - /usr/bin/traceroute.db
+    - /usr/sbin/tcpdump
+    - /usr/bin/dumpcap
 
 - name: "Set new capabilities"
   shell: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
