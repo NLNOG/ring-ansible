@@ -1,4 +1,4 @@
-- name: "Install network debugging tools"
+- name: "Install various software packages"
   apt: name={{ item }} state=latest
   with_items:
     - apache2-utils
@@ -37,13 +37,14 @@
     - lftp
     - libcache-cache-perl
     - libnet-ssh2-ruby1.8
-    - libpcap2-bin
+    - libsqlite3-dev
     - libxml2-dev
     - lsof
     - ltrace
     - lynx
     - man-db
     - markdown
+    - members
     - mercurial
     - moreutils
     - mtr-tiny
@@ -73,7 +74,9 @@
     - python-virtualenv
     - ringfpingd
     - rsync
+    - ruby
     - ruby1.9.1-dev
+    - ruby1.9.3
     - screen
     - sipcalc
     - snmp
