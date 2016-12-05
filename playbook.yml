@@ -2,19 +2,20 @@
   become: true
   become_user: root
   roles:
-    - ansible
-    - etcfiles
-    - fail2ban
+    - { role: ansible, tags: ansible }
+    - { role: etcfiles, tags: etcfiles }
+    - { role: fail2ban, tags: fail2ban }
     - { role: software, tags: software }
     - { role: ntp, tags: ntp }
-    - { role: users, class: ring-admins }
-    - { role: users, class: local }
+    - { role: motd, tags: motd }
+    - { role: users, class: ring-admins, tags: ring-admins }
+    - { role: users, class: local, tags: local-users }
 
 - hosts: ringnode:auth.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
-    - { role: users, class: ring-users }
+    - { role: users, class: ring-users, tags: ring-users }
 
 - hosts: ringnode
   become: true
@@ -30,11 +31,11 @@
   become: true
   become_user: root
   roles:
-    - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell }
+    - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell, tags: ring-users }
 
 - hosts: public02.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
-    - { role: haproxy, profile: github }
+    - { role: haproxy, profile: github, tags: haproxy }
 
