@@ -1,0 +1,23 @@
+- name: "Install dhcp3-client"
+  apt: name={{ item }} state=latest
+  with_items:
+    - dhcp3-client
+    - dhcp3-common
+  when: dhcp_client == "enabled"
+
+- name: "Purge dhcp3-client"
+  apt: name={{ item }} state=absent purge=yes
+  with_items:
+    - dhcp3-client
+    - dhcp3-common
+  when: dhcp_client != "enabled"
+
+- name: "Copy dhclient.conf"
+  copy:
+    src=dhclient.conf
+    dest=/etc/dhcp3/dhclient.conf
+    mode=0644
+    owner=root
+    group=root
+  when: dhcp_client == "enabled"
+
