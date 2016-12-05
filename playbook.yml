@@ -5,7 +5,7 @@
     - ansible
     - etcfiles
     - fail2ban
-    - software
+    - { role: software, tags: software }
     - { role: ntp, tags: ntp }
     - { role: users, class: ring-admins }
     - { role: users, class: local }
