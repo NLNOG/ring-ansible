@@ -116,14 +116,6 @@ USERS:
     groups:
       - ring-users
 
-  oxilion:
-    state: present
-    company: 'Oxilion'
-    email: 'noc@oxilion.nl'
-    uid: 5018
-    groups:
-      - ring-users
-
   ebayclassifiedsgroup:
     state: present
     company: 'eBay Classifieds Group'
@@ -261,7 +253,7 @@ USERS:
       - ring-users
 
   acsystemy:
-    state: present
+    state: absent
     company: 'AC Systemy'
     email: 'swinoujscie.uslugi@multimedia.pl'
     uid: 5039
@@ -1293,7 +1285,7 @@ USERS:
       - ring-users
 
   ispservices:
-    state: present
+    state: absent
     company: 'ISP Services'
     email: 'noc@isp-services.nl'
     uid: 5180
@@ -1413,7 +1405,7 @@ USERS:
       - ring-users
 
   robtex:
-    state: present
+    state: absent
     company: 'Robtex.com'
     email: 'team@robtex.com'
     uid: 5196
@@ -1421,7 +1413,7 @@ USERS:
       - ring-users
 
   dyn:
-    state: present
+    state: absent
     company: 'Dyn'
     email: 'noc@dyn.com'
     uid: 5197
@@ -1493,7 +1485,7 @@ USERS:
       - ring-users
 
   doruknet:
-    state: absent
+    state: present
     company: 'Doruknet'
     email: 'noc@doruk.net.tr'
     uid: 5206
@@ -1861,7 +1853,7 @@ USERS:
       - ring-users
 
   selectel:
-    state: present
+    state: absent
     company: 'Selectel Ltd'
     email: 'akme@selectel.ru'
     uid: 5253
@@ -1925,8 +1917,8 @@ USERS:
       - ring-users
 
   telecityfi:
-    state: present
-    company: 'TelecityGroup Finland Oy'
+    state: absent
+    company: 'Telecity Finland'
     email: 'fi.noc@telecity.com'
     uid: 5261
     groups:
@@ -2511,13 +2503,13 @@ USERS:
   cloudvps:
     state: present
     company: 'CloudVPS'
-    email: 'noc@cloudvps.com'
+    email: 'nmc@signet.nl'
     uid: 5335
     groups:
       - ring-users
 
   veracity:
-    state: present
+    state: absent
     company: 'Veracity Networks'
     email: 'nocgroup@veracitynetworks.com'
     uid: 5336
@@ -2589,7 +2581,7 @@ USERS:
       - ring-users
 
   swiftnode:
-    state: present
+    state: absent
     company: 'SwiftNode'
     email: 'networking@swiftnode.com'
     uid: 5345
@@ -3074,6 +3066,190 @@ USERS:
     email: 'noc@sdv.fr'
     uid: 5406
     shell: /usr/local/bin/geotrshell
+    groups:
+      - ring-users
+
+  ekmedia:
+    state: present
+    company: 'EK-Media B.V.'
+    email: 'noc@ek-media.nl'
+    uid: 5407
+    groups:
+      - ring-users
+
+  fundaments:
+    state: present
+    company: 'Fundaments BV'
+    email: 'noc@fundaments.nl'
+    uid: 5408
+    groups:
+      - ring-users
+
+  oxilion:
+    state: absent
+    company: 'Oxilion'
+    email: 'noc@oxilion.nl'
+    uid: 5018
+    groups:
+      - ring-users
+
+  patientsky:
+    state: present
+    company: 'Patientsky Hosting AS'
+    email: 'noc@patientsky.com'
+    uid: 5409
+    groups:
+      - ring-users
+
+  xantaro:
+    state: present
+    company: 'Xantaro'
+    email: 'peering@xantaro.net'
+    uid: 5410
+    groups:
+      - ring-users
+
+  equinixfi:
+    state: present
+    company: 'Equinix FI'
+    email: 'fi.noc@telecity.com'
+    uid: 5411
+    groups:
+      - ring-users
+
+  novoserve:
+    state: present
+    company: 'NovoServe'
+    email: 'noc@as24875.net'
+    uid: 5412
+    groups:
+      - ring-users
+
+  cvo:
+    state: present
+    company: 'CVO-Technologies'
+    email: 'it@cvo-technologies.com'
+    uid: 5413
+    groups:
+      - ring-users
+
+  plusline:
+    state: present
+    company: 'Plus.line AG'
+    email: 'noc@plusline.de'
+    uid: 5414
+    groups:
+      - ring-users
+
+  kviknet:
+    state: present
+    company: 'Kviknet'
+    email: 'noc@kviknet.dk'
+    uid: 5415
+    groups:
+      - ring-users
+
+  liquidtelecom:
+    state: present
+    company: 'Liquid Telecom'
+    email: 'anthony.somerset@liquidtelecom.com'
+    uid: 5416
+    groups:
+      - ring-users
+
+  carnet:
+    state: present
+    company: 'CARNet'
+    email: 'muc@carnet.hr'
+    uid: 5417
+    groups:
+      - ring-users
+
+  internode:
+    state: present
+    company: 'Internode'
+    email: 'noc@staff.iinet.net.au'
+    uid: 5418
+    groups:
+      - ring-users
+
+  depaul:
+    state: present
+    company: 'DePaul University'
+    email: 'networks@depaul.edu'
+    uid: 5419
+    groups:
+      - ring-users
+
+  custodian:
+    state: present
+    company: 'Custodian Datacentres LTD.'
+    email: 'support@custodiandc.com'
+    uid: 5420
+    groups:
+      - ring-users
+
+  franceix:
+    state: present
+    company: 'FranceIX'
+    email: 'l2-support@franceix.net'
+    uid: 5421
+    groups:
+      - ring-users
+
+  netrouting:
+    state: present
+    company: 'Netrouting'
+    email: 'noc@netrouting.com'
+    uid: 5422
+    groups:
+      - ring-users
+
+  liteserver:
+    state: present
+    company: 'LiteServer'
+    email: 'support@liteserver.nl'
+    uid: 5423
+    groups:
+      - ring-users
+
+  20c:
+    state: present
+    company: '20C'
+    email: 'neteng@20c.com'
+    uid: 5424
+    groups:
+      - ring-users
+
+  connectria:
+    state: present
+    company: 'Connectria Hosting'
+    email: 'olivenoc@connectria.com'
+    uid: 5425
+    groups:
+      - ring-users
+
+  freifunkrl:
+    state: present
+    company: 'Freifunk Rheinland e.V.'
+    email: 'noc@freifunk-rheinland.net'
+    uid: 5426
+    groups:
+      - ring-users
+
+  svwh:
+    state: present
+    company: 'Silicon Valley Web Hosting LLC'
+    email: 'support@svwh.net'
+    uid: 5427
+    groups:
+      - ring-users
+
+  kampde:
+    state: present
+    company: 'Kamp Netzwerkdienste GmbH'
+    email: 'noc@kamp.de'
+    uid: 5428
     groups:
       - ring-users
 

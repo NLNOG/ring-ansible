@@ -20,9 +20,10 @@
   become_user: root
   roles:
     - { role: nginx }
-    - scamper
+    - { role: scamper, tags: scamper }
     - ripe-atlas
-    - ring_sqa
+    - { role: ring_sqa, tags: ring_sqa }
+
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true

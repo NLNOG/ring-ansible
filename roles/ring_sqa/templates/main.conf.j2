@@ -10,7 +10,11 @@ hosts:
         - worker02.ring.nlnog.net
 port: 12838
 analyzer:
-    tolerance: 1.2
+    tolerance:
+        relative: 1.2
+        absolute: 10
+    size: 30
+    median_of: 27
 nodes_json: /etc/ring/nodes.json
 mtr:
     args: -i0.5 -c5 -r -w -n
