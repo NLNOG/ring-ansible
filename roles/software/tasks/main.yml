@@ -32,6 +32,7 @@
     - landscape-common
     - language-pack-en-base
     - ldnsutils
+    - lft
     - lftp
     - libcache-cache-perl
     - libnet-ssh2-ruby1.8
@@ -92,16 +93,29 @@
     - swaks
     - ruby-json
 
+- name: "Create symlink for lft"
+  file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
+
+- name: "Apply setuid root to some tools"
+  file: path={{ item }} mode=4755
+  with_items:
+    - /bin/ping
+    - /bin/ping6
+    - /usr/sbin/lft
+
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
   with_items:
+    - apparmor
+    - apparmor-utils
+    - ferm
+    - molly-guard
+    - mtr
     - pppoe
     - ppp
     - pppconfig
     - pppoeconfig
     - resolvconf
-    - ferm
+    - sl
     - ufw
-    - apparmor
-    - apparmor-utils
-    - molly-guard
+

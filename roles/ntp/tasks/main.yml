@@ -1,0 +1,10 @@
+- name: "Remove openntpd"
+  apt: name=openntpd state=absent
+
+- name: "Install ntp"
+  apt: name=ntp state=latest
+
+- name: "Create ntp.conf"
+  template: src=ntp.conf.j2 dest=/etc/ntp.conf mode=644 owner=root group=root
+  notify: restart ntp
+
