@@ -1,0 +1,31 @@
+- name: "Install library dependencies"
+  apt: name={{ item }} state=latest
+  with_items:
+    - libdpkg-perl
+    - libgetopt-simple-perl
+    - purgekernels
+
+- name: "Install purgekernels apt.conf"
+  copy:
+    src=88purgekernels
+    dest=/etc/apt/apt.conf.d/88purgekernels
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install ring-fetch-nodes-json"
+  copy:
+    src=ring-fetch-nodes-json
+    dest=/usr/local/bin/ring-fetch-nodes-json
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install geotrshell"
+  copy:
+    src=geotrshell
+    dest=/usr/local/bin/geotrshell
+    owner=root
+    group=root
+    mode=0755
+

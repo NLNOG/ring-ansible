@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+# Written by Job Snijders <job@snijders-it.nl>
+# based on ring-ping by Sten Spans <sten@blinkenlights.nl>
+#
+# TODO
+# - fix that it understands full URLs like http://ring.nlnog.net/bla
+# - fix that it understands 2a02:898:52:ffff::48 as a valid url
+# - fix that it understands http://[2a02:898:52:ffff::48]:80/ as valid
+# - make sure nobody can slip in dirty commands by shell escaping 
+# - since http is less black/white then ping, maybe differenciate 
+#   between various things that could happen: 302, 404, 200, connection refused
+
+
+
+curl="curl -4"
+
+while getopts "6vh" flag; do
+    case $flag in
+	6)
+	    curl="curl -6"
+	    ;;
+	v)
+	    verbose=1
+	    ;;
+	*)
+	    echo "Usage: $(basename $0) [-6v] <http URL>"
+	    exit 1
+	    ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+if [ $# -lt 1 ]; then
+	echo "Usage: $(basename $0) [-6v] <http URL>"
+    exit 1
+fi
+
+if ! ssh-add -l &>/dev/null && ! find ~/.ssh/id_* &>/dev/null; then
+   echo $(basename $0) requires an ssh-agent with a valid key
+   exit 1
+fi
+
+if ! which curl &>/dev/null ; then
+   echo $(basename $0) requires the curl programm 
+   exit 1
+fi
+
+
+# I am very unsure whether this sanity filter is compliant with what we what
+# it to accept
+
+host=$(echo "$1" | sed -re 's/[^[:alnum:]:.-]+//g')
+
+if ! dig +short $host &> /dev/null; then
+    echo invalid hostname
+    exit 1
+fi
+
+echo ${host} | egrep -q ':.*:' && curl="curl -6"
+
+### end of garbage ###
+
+curl_cmd="echo '\$(hostname -s)': '\$(${curl} -m 3 -f -s -S -o /dev/zero \"$host\" 2>&1 && echo OK)'"
+ssh_cmd="ssh -q -o ConnectTimeout=4 -o StrictHostKeyChecking=yes {}.ring.nlnog.net ${curl_cmd}" 
+
+SERVERS=$(dig -t txt +tcp +short ring.nlnog.net | tr -d '"' | tr ' ' '\n')
+
+declare -a results
+declare -a replies
+declare -a timeouts
+
+while read line; do
+    server=${line%%:*}
+    output=${line#*:}
+
+    results=( ${results[@]} ${server} )
+
+    if [[ ${output} =~ .*OK$ ]]; then
+	    replies=( ${replies[@]} $server )
+	    [ -n "${verbose}" ] && printf "%-30s %s\n" ${server}: ${output}
+    else
+	    timeouts=( ${timeouts[@]} $server )
+	    [ -n "${verbose}" ] && printf "%-20s ${output}\n" ${server}: 
+    fi
+
+done < <(echo "$SERVERS" | xargs -P10 -n1 -I{} sh -c "${ssh_cmd}||:")
+
+if [ "${replies[*]}" ]; then
+    echo ${#replies[@]} servers: OK 
+fi
+
+[ -z "${timeouts[*]}" ] || echo unreachable via: ${timeouts[@]}
+
+connect=$(comm -23 <(echo "${SERVERS}" | sort) \
+    <(echo ${results[@]} | tr ' ' '\n' | sort))
+[ -z "${connect[*]}" ] || echo ssh connection failed: ${connect[@]}
+

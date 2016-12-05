@@ -8,6 +8,9 @@
     - { role: software, tags: software }
     - { role: ntp, tags: ntp }
     - { role: motd, tags: motd }
+    - { role: dhcp, tags: dhcp }
+    - { role: userscripts, tags: userscripts }
+    - { role: adminscripts, tags: adminscripts }
     - { role: users, class: ring-admins, tags: ring-admins }
     - { role: users, class: local, tags: local-users }
 

@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Shell for https://geotraceroute.com/
+# Contact salim@sdv.fr for details
+#
+
+target=$2
+mtr=/usr/bin/mtr
+
+if [[ $target =~ ^[0-9\.]+$ ]]; then
+    $mtr -4 -c 1 --raw $target
+elif [[ $target =~ ^[A-Za-z0-9:]+$ ]]; then
+    $mtr -6 -c 1 --raw $target
+else
+    echo "IP address required"
+    exit 2
+fi
+
+exit 0
+

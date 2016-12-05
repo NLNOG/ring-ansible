@@ -1,0 +1,32 @@
+- name: "Install library dependencies"
+  apt: name={{ item }} state=latest
+  with_items:
+    - libjson-perl
+    - libwww-curl-perl
+
+- name: "Install ring.rb"
+  copy:
+    src=ring.rb
+    dest=/usr/local/lib/site_ruby/ring.rb
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install ring userscripts"
+  copy:
+    src={{ item }}
+    dest=/usr/local/bin/{{ item }}
+    owner=root
+    group=root
+    mode=0755
+  with_items:
+    - generate-hosts.py
+    - ring-all
+    - ring-all-serial
+    - ring-curl
+    - ring-http
+    - ring-ping
+    - ring-rsync-ssh-keys
+    - ring-trace
+    - ring-uping
+

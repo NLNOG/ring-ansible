@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+
+if [ ! -d "/etc/ring" ]; then
+    mkdir /etc/ring
+fi
+
+cd /etc/ring
+wget -q https://ring.nlnog.net/api/1.0/nodes -O nodes.json.tmp
+/usr/bin/jsonlint nodes.json.tmp
+mv nodes.json.tmp nodes.json
+

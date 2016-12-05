@@ -1,0 +1,157 @@
+#!/usr/bin/env ruby
+
+# ytti@iki.fi
+
+$VERBOSE = false # SSH is noisy
+module Ring
+require 'ring'
+require 'thread'
+require 'yaml'
+
+# runs ssh to each node in parallel, returns hash with nodes as keys and array of output and end time
+class All
+  Timeout   = 10
+  NodeLimit = 50
+  StartTime = Time.now
+  TTY       = $stdout.tty?
+  Colours   = {
+    :end    => "\e[0;39m",
+    :err    => "\e[1;31m",
+    :ok     => "\e[1;32m",
+    :hl     => "\e[0;36m",
+  }
+  Thread.abort_on_exception = true
+
+  def self.run cmd, cfg, machine=false
+    ssh_all = {
+      :output      => {},
+      :end_time    => {},
+      :exit_status => {},
+      :unfinished  => [],
+    }
+    timeout    = (cfg[:timeout]    or Ring::All::Timeout)
+    node_count = (cfg[:node_count] or Ring::All::NodeLimit)
+    threads = []
+    nodes = Ring.nodes(cfg[:country]).shuffle
+    nodes = nodes.pop(node_count) if node_count.to_i > 0
+    nodes.each do |node|
+      ssh_all[:output][node] = []
+        threads << [Thread.new do 
+          begin
+            ssh_all[:exit_status][node], ssh_all[:end_time][node] = Ring::SSH.run [node, Domain].join('.'), cmd, ssh_all[:output][node]
+          rescue Exception
+            ssh_all[:unfinished] << node
+          end
+        end, node]
+        #threads << [Thread.new { ssh_all[:exit_status][node], ssh_all[:end_time][node] = Ring::Open.ssh node, cmd, ssh_all[:output][node] }, node]
+    end
+    if timeout == 0
+      sleep 0.1 while threads.any? { |t| t.first.alive? }
+    else
+      start = Time.now
+      sleep 0.1 while threads.any? { |t| t.first.alive? } and start+timeout > Time.now
+    end
+    threads.each { |t| ssh_all[:unfinished] << t.last if t.first.alive? }
+    machine ? ssh_all : all_to_string(cmd, ssh_all)
+  end
+
+# runs command in each node, reporting if command was success and latency of node
+def self.health cfg
+  out = ''
+  data = run 'echo xyzzy42', cfg, true
+  data[:output].each do |node, output|
+    stop = data[:end_time][node] ? "%3fs" % (data[:end_time][node]-Ring::All::StartTime) : 'NaN'
+    out << "%23s %s %s\n" % [node, output.first==["xyzzy42\n", :stdout] ? 'ACK' : 'NAK', stop]
+  end
+  out
+end
+
+# return formatted string of ssh command of each node
+def self.all_to_string cmd, data
+  out = ''
+  output, end_time, unfinished, exit_status = data[:output], data[:end_time], data[:unfinished], data[:exit_status]
+  mu = Ring::All::TTY ? Ring::All::Colours : {}
+
+  out << str = 'RING report - ' + cmd + "\n"
+  out << "%s%s%s\n" % [mu[:hl], '=' * (str.size-1), mu[:end]]
+  out << '* Executed on behalf of: ' + Ring::User + "\n"
+  out << '* Date: ' + Ring::Date + "\n"
+  out << "* Executed on: #{output.size} nodes"
+  out << if unfinished.size == 0
+           "\n"
+         elsif unfinished.size == 1
+           "; one node timed out or was unreachable\n"
+         else
+           "; #{unfinished.size} nodes timed out or were unreachable\n"
+         end
+  out << "* For more information about the RING, visit <http://ring.nlnog.net>\n"
+  output.sort_by{|e|e[0]}.each do |node, output|
+    unfinished.push node if not exit_status[node]
+    out << "\n"
+    if unfinished.index(node) or exit_status[node].to_i != 0 or not exit_status[node]
+      out << '%s' % mu[:err]
+    else
+      out << '%s' % mu[:ok]
+    end
+    delay = unfinished.index(node) ? 'timeout' : '%.3f' % (end_time[node]-Ring::All::StartTime) + 's'
+    status = exit_status[node].to_i != 0 ? ' => ' + exit_status[node].to_s : ''
+    cc = Ring.countrycode(node)
+    out << str = "%s [%s] (%s) - \'%s\'%s\n" % [node, cc, delay, cmd, status]
+    out << '%s' % mu[:end]
+    out << "%s%s%s\n" % [mu[:hl], '-' * (str.size-1), mu[:end]]
+    output.each do |line|
+      out << ' ' * 4
+      if line.last == :stderr
+        out << (Ring::All::TTY ? "%s%s%s\n" % [mu[:err], line.first.chomp, mu[:rst]] : "%s%s%s\n" % ['***', line.first.chomp, '***'])
+      else
+        out << line.first
+      end
+    end
+  end
+  out 
+end
+end
+
+# I really didn't intend this to be CLI, but library, but silly front-end included
+class CLI
+  def initialize
+    require 'optparse'
+    cfg = {
+     :timeout => Ring::All::Timeout,
+    }
+    args = nil
+    begin
+      cfg, args = parseOptions cfg
+    rescue => e
+      puts "Error: " + e.to_s
+      exit 
+    end
+    if cfg[:mode]
+      puts Ring::All.health cfg
+    elsif cfg[:machine]
+      puts YAML.dump Ring::All.run args.join(' '), cfg, true
+    else
+      Ring.pager if Ring::All::TTY
+      puts Ring::All.run args.join(' '), cfg
+    end
+  end
+
+  def parseOptions cfg
+    opts = OptionParser.new do |opt|
+      opt.banner = 'Usage: ' + $0 + " [options] <cmd>"
+      opt.on('-c', '--country [COUNTRY]', 'only use nodes in COUNTRY') { |v| cfg[:country] = v }
+      opt.on('-t', '--timeout [TIMEOUT]', 'set timeout, default is ' + Ring::All::Timeout.to_s) { |v| cfg[:timeout] = v.to_i }
+      opt.on('-m', '--machine', 'use machine output, instead of markdown') { cfg[:machine] = true }
+      opt.on('-s', '--status', 'report health') { cfg[:mode] = 'health' }
+      opt.on('-n', '--nodes [COUNT]', 'from how many nodes, 0 for all') { |v| cfg[:node_count] = v.to_i }
+      opt.on_tail('-h', '--help', 'show this message') { puts opt; exit }
+    end
+    args = opts.order!
+    raise ArgumentError, 'parameter missing, try --help' if args.size < 1 and not cfg[:mode]
+    [cfg, args]
+  end
+end
+
+end
+
+Ring::CLI.new if __FILE__ == $0
