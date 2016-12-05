@@ -110,8 +110,8 @@
     - /usr/sbin/hping3
 
 - name: "Set new capabilities"
-  shell: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item }}
-  when: item.stdout != "{{ item }} = cap_net_admin,cap_net_raw+eip"
+  shell: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
+  when: item.stdout != "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   with_items: "{{ cap.results }}"
 
 - name: "Uninstall certain unnecessary packages"
