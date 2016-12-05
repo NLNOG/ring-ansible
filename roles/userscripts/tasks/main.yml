@@ -26,7 +26,6 @@
     - ring-curl
     - ring-http
     - ring-ping
-    - ring-rsync-ssh-keys
     - ring-trace
     - ring-uping
 
