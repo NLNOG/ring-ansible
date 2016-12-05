@@ -1,0 +1,30 @@
+- name: "Install update-motd"
+  apt: name=update-motd state=latest
+
+- name: "Remove uninteresting motd items"
+  file: path={{ item }} state=absent
+  with_items:
+    - /etc/update-motd.d/20-cpu-checker
+    - /etc/update-motd.d/91-release-upgrade
+
+- name: "Add motd scripts"
+  copy:
+    src={{ item }}
+    dest=/etc/update-motd.d/{{ item }}
+    owner=root
+    group=root
+    mode=0755
+  with_items:
+    - 50-landscape-sysinfo
+    - 60-node-information
+
+- name: "Add other motd files"
+  copy:
+    src={{ item }}
+    dest=/etc/update-motd.d/{{ item }}
+    owner=root
+    group=root
+    mode=0644
+  with_items:
+    - ring.nlnog.net-logo
+
