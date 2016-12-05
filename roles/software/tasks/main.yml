@@ -103,7 +103,7 @@
     - /bin/ping6
     - /usr/sbin/lft
 
-block:
+- block:
   - name: "Get network capabilities for some tools"
     shell: /usr/bin/test "`/sbin/getcap {{ item }}`" != "{{ item }} = cap_net_admin,cap_net_raw+eip"
     register: cap
