@@ -31,3 +31,30 @@
     group=root
     mode=0755
 
+- name: "Disable multiarch"
+  file:
+    path: /etc/dpkg/dpkg.cfg.d/multiarch
+    state: absent
+
+- name: "Update /etc/bash.bashrc"
+  copy:
+    src=bash.bashrc
+    dest=/etc/bash.bashrc
+    owner=root
+    group=root
+    mode=0644
+
+- name: "Update pam configuration"
+  copy:
+    src=pam_{{ item }}
+    dest=/etc/pam.d/{{ item }}
+    owner=root
+    group=root
+    mode=0644
+  with_items:
+    - atd
+    - cron
+    - login
+    - sshd
+    - su
+

@@ -1,0 +1,9 @@
+#
+# The PAM configuration file for the at daemon
+#
+
+auth	required	pam_env.so
+@include common-auth
+@include common-account
+@include common-session-noninteractive
+session    required   pam_limits.so
