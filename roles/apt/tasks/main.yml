@@ -22,3 +22,13 @@
     state: present
     filename: 'ansible_repo'
 
+- name: "Add apt configuration files"
+  copy:
+    src={{ item }}
+    dest=/etc/apt/apt.conf.d/{{ item }}
+    owner=root
+    group=root
+    mode=0644
+  with_items:
+    - 10periodic
+    - 50unattended-upgrades
