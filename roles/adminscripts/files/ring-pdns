@@ -1,0 +1,669 @@
+#!/usr/bin/env python
+import MySQLdb as mdb
+import sys, inspect, re, time, simplejson, urllib, math
+from subprocess import call
+from itertools import tee
+
+PDNSCONF='/etc/powerdns/pdns.conf'
+DBHOST='localhost'
+DBUSER='pdns'
+DB='pdns'
+ZONE='ring.nlnog.net'
+SOA='ns01.infra.ring.nlnog.net. ring-admins.ring.nlnog.net. %.0f 7200 3600 1209600 900' % time.time()
+ELEVATION='http://maps.googleapis.com/maps/api/elevation/json'
+
+RINGDBHOST='dbmaster.infra.ring.nlnog.net'
+RINGDBUSER='ring'
+RINGDBPASS=''
+RINGDB='ring'
+
+SCHEMA='''
+create table domains (
+ id              INT auto_increment,
+ name            VARCHAR(255) NOT NULL,
+ master          VARCHAR(128) DEFAULT NULL,
+ last_check      INT DEFAULT NULL,
+ type            VARCHAR(6) NOT NULL,
+ notified_serial INT DEFAULT NULL,
+ account         VARCHAR(40) DEFAULT NULL,
+ primary key (id)
+) Engine=InnoDB;
+
+CREATE UNIQUE INDEX name_index ON domains(name);
+
+CREATE TABLE records (
+  id              INT auto_increment,
+  domain_id       INT DEFAULT NULL,
+  name            VARCHAR(255) DEFAULT NULL,
+  type            VARCHAR(10) DEFAULT NULL,
+  content         VARCHAR(64000) DEFAULT NULL,
+  ttl             INT DEFAULT NULL,
+  prio            INT DEFAULT NULL,
+  change_date     INT DEFAULT NULL,
+  primary key(id)
+) Engine=InnoDB;
+
+CREATE INDEX rec_name_index ON records(name);
+CREATE INDEX nametype_index ON records(name,type);
+CREATE INDEX domain_id ON records(domain_id);
+
+create table supermasters (
+  ip VARCHAR(25) NOT NULL,
+  nameserver VARCHAR(255) NOT NULL,
+  account VARCHAR(40) DEFAULT NULL
+) Engine=InnoDB;
+
+create table domainmetadata (
+ id              INT auto_increment,
+ domain_id       INT NOT NULL,
+ kind            VARCHAR(16),
+ content        TEXT,
+ primary key(id)
+);
+
+create index domainmetaidindex on domainmetadata(domain_id);
+
+
+create table cryptokeys (
+ id             INT auto_increment,
+ domain_id      INT NOT NULL,
+ flags          INT NOT NULL,
+ active         BOOL,
+ content        TEXT,
+ primary key(id)
+);
+
+create index domainidindex on cryptokeys(domain_id);
+
+alter table records add ordername      VARCHAR(255) BINARY;
+alter table records add auth bool;
+create index recordorder on records (domain_id, ordername);
+
+create table tsigkeys (
+ id             INT auto_increment,
+ name           VARCHAR(255),
+ algorithm      VARCHAR(50),
+ secret         VARCHAR(255),
+ primary key(id)
+);
+
+create unique index namealgoindex on tsigkeys(name, algorithm);
+alter table records change column type type VARCHAR(10);
+
+GRANT SELECT ON supermasters TO pdns;
+GRANT ALL ON domains TO pdns;
+GRANT ALL ON records TO pdns;
+GRANT ALL ON domainmetadata TO pdns;
+GRANT ALL ON cryptokeys TO pdns;
+'''
+
+class commands(object):
+    def __init__(self):
+        super(commands, self).__init__()
+
+    def run(self, argv):
+        func = None
+        for i in reversed(range(len(argv))):
+            try:
+                func = getattr(self, 'cmd_'+'_'.join(argv[0:i+1]))
+
+                args, kwargs = self.splitargv(argv[i+1:])
+                break
+            except AttributeError:
+                pass
+
+        if not func:
+            return self.usage()
+
+        spec = inspect.getargspec(func)
+        reqcount = len(spec.args)-1
+        if spec.defaults:
+            reqcount = reqcount - len(spec.defaults)
+        if reqcount and not len(args) and not len(kwargs):
+            kwargs=self.ask(func)
+        return func(*args, **kwargs)
+    
+    def ask(self, func):
+        spec = inspect.getargspec(func)
+        d=dict()
+        for i,k in enumerate(spec.args[1:]):
+            print "%s:" % k,
+            if i >= (len(spec.args)-len(spec.defaults)-1):
+                print "(optional)",
+            v=raw_input()
+            d[k]=v
+        return d
+
+    def splitargv(self, argv):
+        args = list()
+        kwargs = dict()
+        for arg in argv:
+            if '=' in arg:
+                k,v = arg.split('=',1)
+                kwargs[k]=v
+            else:
+                if kwargs:
+                    raise SyntaxError
+                args.append(arg)
+        
+        return args, kwargs
+
+    def usage(self):
+        cmds = []
+        for k, v in sorted(inspect.getmembers(self)):
+            if k.startswith('cmd_'):
+                cmd = k[4:].replace('_',' ')
+                argspec = inspect.getargspec(v)
+                args = []
+                if argspec.defaults:
+                    defcount = len(argspec.defaults)
+                    for arg in argspec.args[1:-defcount]:
+                        args.append('<%s>' % arg)
+                    for arg in argspec.args[-defcount:]:
+                        args.append('[%s]' % arg)
+                else:
+                    for arg in argspec.args[1:]:
+                        args.append('<%s>' % arg)
+                doc=v.__doc__
+                if not doc:
+                    doc=''
+                cmds.append(('%s %s' % (cmd, ' '.join(args)), doc))
+
+        maxcmdlen = max(len(cmd[0]) for cmd in cmds)
+        for cmd, doc in cmds:
+            print '%-*s %s' % (maxcmdlen+2, cmd, doc)
+        return 1
+    
+    def dbdo(self, q, v=None, script=False):
+        conn = mdb.connect(DBHOST,DBUSER,self.get_dbpass(PDNSCONF),DB)
+        cur = conn.cursor()
+        if v:
+            cur.execute(q, v)
+        else:
+            cur.execute(q)
+        if not script:
+            conn.commit()
+        conn.close()
+        return cur.rowcount, cur.lastrowid
+    
+    def dbquery(self, q, v=None):
+        conn = mdb.connect(DBHOST,DBUSER,self.get_dbpass(PDNSCONF),DB)
+        cur = conn.cursor(mdb.cursors.DictCursor)
+        if v:
+            cur.execute(q, v)
+        else:
+            cur.execute(q)
+        for row in cur.fetchall():
+            yield row
+        conn.close()
+
+    def dbselect(self, table, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'SELECT * FROM %s WHERE %s' % (table, ' '.join('%s=%%s AND' % col for col in cols))
+        query=re.sub(' AND$','',query)
+        return self.dbquery(query, vals)
+
+    def dbselectone(self, table, **kwargs):
+        res = list(self.dbselect(table, **kwargs))
+        if len(res)>1:
+            raise KeyError
+        elif res:
+            return res[0]
+        else:
+            return None
+
+    def dbdelete(self, table, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'DELETE FROM %s WHERE %s' % (table, ' '.join('%s=%%s' % col for col in cols))
+        self.dbdo(query, vals)
+        
+    def dblist(self, table):
+        query = 'SELECT * FROM %s' % table
+        result = self.dbquery(query)
+        for row in result:
+            print row
+
+    def ring_dbquery(self, q, v=None):
+        conn = mdb.connect(RINGDBHOST,RINGDBUSER,RINGDBPASS,RINGDB)
+        if not conn:
+            sys.stderr.write("could not connect to db\n")
+            sys.exit(1)
+        cur = conn.cursor(mdb.cursors.DictCursor)
+        if v:
+            cur.execute(q, v)
+        else:
+            cur.execute(q)
+        for row in cur.fetchall():
+            yield row
+        conn.close()
+
+    def ring_getnodeattr(self,name,attr):
+        query ="select %s from machines where hostname='%s'" % (attr,name)
+        result=list(self.ring_dbquery(query))
+        for r in result:
+            return r[attr]
+        return None
+    
+    def add_domain(self,zone=ZONE):
+        query="INSERT INTO domains (name, type) values ('%s', 'NATIVE')" % (zone)
+        _, rowid = self.dbdo(query)
+        return rowid
+        
+    def del_domain(self,pid):
+        query = "delete from domains where id=%s" % (pid)
+        self.dbdo(query)
+
+    def add_record(self,name,rtype,content,ttl,prio,zone=ZONE):
+        rtype = rtype.upper()
+        query = "insert into records (domain_id, name,type,content,ttl,prio) select id ,'%s', '%s', '%s', %s, %s " \
+                "from domains where name='%s'" % (name,rtype,content,ttl,prio,zone)
+        _, rowid = self.dbdo(query)
+        return rowid
+    
+    def del_record(self,pid):
+        query = "delete from records where id=%s" % (pid)
+        self.dbdo(query)
+    
+    def update_record(self,id,content):
+        query = "update records set content='%s' where id=%s" % (content,id)
+        _, rowid = self.dbdo(query)
+        return rowid
+    
+    def update_rtype(self,name,rtype,content):
+        query = "update records set content='%s' where name='%s' AND type='%s'" % (content,name,rtype)
+        _, rowid = self.dbdo(query)
+        return rowid
+
+    def add_to_txt(self,name,subzone=None,zone=ZONE):
+        name=re.sub('.' + ZONE,'',name)
+        recordname=zone
+        if subzone:
+            recordname=subzone+'.'+recordname
+
+        result = self.dbselect('records',name=recordname,type='TXT')
+        update = None
+        newtxt = None
+
+        result, result2 = tee(result)
+        for row in result:
+            id= row['id']
+            txt = row['content']
+            txt=re.sub('\"','',txt)
+            if (re.search(r'(^|\s+)%s($|\s+)' % name,txt)):
+                print "%s already in txt (record %s)" % (name,id)
+                return
+
+        for row in result2:
+            id= row['id']
+            txt = row['content']
+            txt=re.sub('\"','',txt)
+            newtxt=txt + " " + name
+            if (len(newtxt) <= 255):
+                update=id
+                break
+
+        result = None
+        if update is not None:
+            self.update_record(update,newtxt)
+            print "record %s updated" % id
+        else:
+            recid = self.add_record(recordname,'TXT',name,600,0);
+            print 'record %s added' % (recid)
+ 
+    def del_from_txt(self,name,subzone=None,zone=ZONE):
+        name=re.sub('.' + ZONE,'',name)
+        recordname=zone
+        if subzone:
+            recordname=subzone+'.'+recordname
+
+        result = self.dbselect('records',name=recordname,type='TXT')
+        update = None
+        newtxt = None
+        for row in result:
+            id= row['id']
+            txt = row['content']
+            txt=re.sub('\"','',txt)
+            if (re.search(r'(^|\s+)%s($|\s+)' % name,txt)):
+                newtxt=re.sub(r'^%s\s?' % name,'',txt)
+                newtxt=re.sub(r'\s%s$' % name,'',newtxt)
+                newtxt=re.sub(r'\s%s\s' % name,' ',newtxt)
+                update=id
+                break
+
+        result = None
+        if update is not None:
+            if (len(newtxt) > 0):
+                self.update_record(update,newtxt)
+                print "record %s updated" % id
+            else:
+                self.del_record(update);
+                print 'record %s deleted' % (update)
+
+    def destroy_txt(self,subzone=None,zone=ZONE):
+        recordname=zone
+        if subzone:
+            recordname=subzone+'.'+recordname
+        
+        result = self.dbselect('records',name=recordname,type='TXT')
+        for row in result:
+            id= row['id']
+            self.del_record(id);
+            print 'record %s deleted' % (id)
+
+    def destroy_sshfp(self,subzone=None,zone=ZONE):
+        recordname=zone
+        if subzone:
+            recordname=subzone+'.'+recordname
+
+        result = self.dbselect('records',type='SSHFP')
+        for row in result:
+            id= row['id']
+            self.del_record(id);
+            print 'record %s deleted' % (id)
+
+    def regenerate_txt(self,zone=ZONE):
+        query ="select hostname,country,active from machines where active=1"
+        ringresult=list(self.ring_dbquery(query))
+        if len(ringresult) < 1:
+            sys.exit("unable to retrieve node status information")
+
+        result = self.dbselect('records',name='countries.'+ZONE,type='TXT')
+        for row in result:
+            id= row['id']
+            txt = row['content']
+            txt=re.sub('\"','',txt)
+            countries=txt.split()
+            for c in countries:
+                self.destroy_txt(c)
+            self.destroy_txt("countries")
+        self.destroy_txt()
+
+        for row in ringresult:
+            name = row['hostname']
+            country = row['country']
+            if country:
+                self.add_to_txt(name,country.lower());
+                self.add_to_txt(country.lower(),"countries");
+            self.add_to_txt(name);
+            print 'node %s (%s) activated' % (name,country.lower())
+    
+    def rectify_zone(self,zone=ZONE):
+        call(["pdnssec", "rectify-zone", zone])
+
+    def update_soa(self,zone=ZONE):
+        query = "update records set content='%s' where name='%s' and type='SOA'" % (SOA,zone);
+        self.dbdo(query)
+        self.rectify_zone(zone)
+        print 'soa updated (%s)' % (SOA)
+
+    def get_dbpass(self,pdnsconf):
+        f = open(pdnsconf)
+        for line in f:
+            if (re.match(r'^gmysql-password=',line)):
+                dbpass=re.sub('gmysql-password=','',line)
+                return dbpass.rstrip()
+
+    def cmd_add_record(self,name,rtype,content,ttl=600,prio=0,zone=ZONE):
+        """add a record"""
+        if not (re.match(r'.*%s$' % zone,name)):
+            name=name + "." + zone
+        recid=self.add_record(name=name,rtype=rtype,content=content,ttl=ttl,prio=prio,zone=zone)
+        print 'record %s added' % (recid)
+        self.update_soa(zone)
+    
+    def cmd_del_record(self,pid,zone=ZONE):
+        """delete a record"""
+        self.del_record(pid)
+        print 'record %s deleted' % (pid)
+        self.update_soa(zone)
+
+    def cmd_list_records(self,name=None,zone=ZONE):
+        """list records"""
+        if name:
+            if not (re.match(r'.*%s$' % zone,name)):
+                name=name + "." + zone
+            result=self.dbselect('records', name=name)
+            for row in result:
+                print row
+        else:
+            self.dblist('records')
+    
+    def cmd_add_node(self,name,zone=ZONE):
+        """add records for a node"""
+        if not (re.match(r'.*%s$' % zone,name)):
+            name=name + "." + zone
+
+        v4=self.ring_getnodeattr(name,"v4")
+        if v4:
+            recid=self.add_record(name=name,rtype='A',content=v4,
+                                  ttl=600,prio=0,zone=zone)
+            print 'record %s added' % (recid)
+        else:
+            print >> sys.stderr, "Unable to retrieve IPv4 address from ring db"
+            
+        v6=self.ring_getnodeattr(name,"v6")
+        if v6:
+            recid=self.add_record(name=name,rtype='AAAA',content=v6,
+                                  ttl=600,prio=0,zone=zone)
+            print 'record %s added' % (recid)
+        else:
+            print >> sys.stderr, "Unable to retrieve IPv6 address from ring db"
+        geo=self.ring_getnodeattr(name,"geo")
+        if geo:
+            recid=self.add_record(name=name,rtype='LOC',content=self.getgeo(geo),
+                                  ttl=600,prio=0,zone=zone)
+            print 'record %s added' % (recid)
+        else:
+            print >> sys.stderr, "Unable to retrieve geo information from ring db"
+        print 'node %s added' % (name)
+        self.update_soa(zone)
+        
+    def cmd_update_node(self,name,attribute,value,zone=ZONE):
+        """update record for a node"""
+        rtype=None
+        if not (re.match(r'.*%s$' % zone,name)):
+            name=name + "." + zone
+        if attribute=='v4':
+            rtype='A'
+        elif attribute=='v6':
+            rtype='AAAA'
+        elif attribute=='geo':
+            rtype='LOC'
+            value=self.getgeo(value)
+        else:
+            sys.exit('unknown attribute %s' % attribute)
+        
+        result = self.dbselect('records',name=name,type=rtype)
+        update=False
+        for row in result:
+            update=True
+            break
+
+        if update:
+            self.update_rtype(name=name,rtype=rtype,content=value)
+        else:    
+            recid=self.add_record(name=name,rtype=rtype,content=value,
+                                  ttl=600,prio=0,zone=zone)
+            print 'record %s added' % (recid)
+        print 'node %s updated' % (name)
+        self.update_soa(zone)
+
+    def cmd_del_node(self,name,zone=ZONE):
+        """del records for a node"""
+        fullname=name
+        if not (re.match(r'.*%s$' % zone,fullname)):
+            fullname=fullname + "." + zone
+        
+        country=self.ring_getnodeattr(name,"country")
+        if country:
+            self.del_from_txt(name,country.lower());
+        else:
+            print >> sys.stderr, "Unable to retrieve country code from ring db"
+        self.del_from_txt(name);
+        print 'node %s deactivated' % (name)
+        self.dbdelete('records',name=fullname);
+        print 'node %s deleted' % (name)
+        self.update_soa(zone)
+
+    def cmd_activate_node(self,name,zone=ZONE):
+        """add the TXT entry for a node"""
+        fullname=name
+        if not (re.match(r'.*%s$' % zone,fullname)):
+            fullname=fullname + "." + zone
+
+        country=self.ring_getnodeattr(fullname,"country")
+        if country:
+            self.add_to_txt(name,country.lower());
+            self.add_to_txt(country.lower(),"countries");
+        else:
+            print >> sys.stderr, "Unable to retrieve country code from ring db"
+
+        self.add_to_txt(name);
+        print 'node %s activated' % (name)
+        self.update_soa(zone)
+    
+    def cmd_deactivate_node(self,name,zone=ZONE):
+        """remove the TXT entry for a node"""
+        fullname=name
+        if not (re.match(r'.*%s$' % zone,fullname)):
+            fullname=fullname + "." + zone
+
+        country=self.ring_getnodeattr(fullname,"country")
+        if country:
+            self.del_from_txt(name,country.lower());
+        else:
+            print >> sys.stderr, "Unable to retrieve country code from ring db"
+
+        self.del_from_txt(name);
+        print 'node %s deactivated' % (name)
+        self.update_soa(zone)
+
+    def cmd_update_sshfp(self,filename=None,zone=ZONE):
+        """update SSHFP records"""
+        rtype="SSHFP"
+
+        f = None
+        if filename:
+            f = open(filename,"r")
+        else:
+            f = sys.stdin
+
+        self.destroy_sshfp()
+        for line in f:
+            if (re.search(r'^#',line)):
+                continue
+            vals = line.split()
+            if len(vals) < 6 or vals[1] != "IN" or vals[2] != rtype:
+                print >> sys.stderr, "Skipping invalid entry"
+                continue
+
+            name=vals[0]
+            if not (re.match(r'.*%s$' % zone,name)):
+                name=name + "." + zone
+            value=vals[3]+" "+vals[4]+" "+vals[5]
+        
+            result = self.dbselect('records',name=name,type="CNAME")
+            cname=False
+            for row in result:
+                cname=True
+                break
+            
+            if cname:
+                print 'cname found. skipping %s' % (name)
+            else:
+                recid=self.add_record(name=name,rtype=rtype,
+                                    content=value,ttl=600,prio=0,zone=zone)
+                print 'record %s added for %s' % (recid,name)
+        f.close()
+        self.update_soa(zone)
+
+    def cmd_add_domain(self,zone=ZONE):
+        """add a domain"""
+        domainid=self.add_domain(zone)
+        print 'domain %s added' % (domainid)
+    
+    def cmd_list_domains(self,pid=None):
+        """list domains"""
+        if pid:
+            print self.dbselectone('domains', id=pid)
+        else:
+            self.dblist('domains')
+    
+    def cmd_del_domain(self,pid):
+        """delete a domain"""
+        domainid=self.del_domain(pid)
+        print 'domain %s deleted' % (pid)
+
+    def cmd_add_soa(self,zone=ZONE):
+        """add the SOA for a domain"""
+        recid=self.add_record(zone,'SOA',SOA,3600,0,zone=zone)
+        print 'record %s added' % (recid)
+    
+    def cmd_update_soa(self,zone=ZONE):
+        """update the SOA for a domain"""
+        self.update_soa(zone)
+
+    def cmd_regenerate_txt(self,zone=ZONE):
+        print 'regenerating txt records... '
+        self.regenerate_txt(zone)
+        self.update_soa(zone)
+        print 'done.'
+
+    def cmd_initdb(self):
+        """initialize database"""
+        self.dbdo(SCHEMA, None, script=True)
+
+    def getgeo(self,geo):
+        url=ELEVATION+"?locations="+geo+"&sensor=false"
+        response = simplejson.load(urllib.urlopen(url))
+        resultset = response['results'][0]
+        #print "lat:"+str(resultset['location']['lat'])
+        #print "lng:"+str(resultset['location']['lng'])
+        #print "elev:"+str(resultset['elevation'])
+        #print "res:"+str(resultset['resolution'])
+
+        lat=self.dd2dms(resultset['location']['lat'],"lat")
+        lng=self.dd2dms(resultset['location']['lng'],"lng")
+        elv="%.2f" % (round(resultset['elevation'],2))
+
+        return "%s %s %sm" % (lat,lng,elv)
+
+    def dd2dms(self,dd,type):
+        value=float(dd)
+        isneg=0
+        if (value<0):
+            isneg=1
+            value=-value
+
+        d=int(math.floor(value))
+        frac=value-d
+        frac=frac*60
+        m=int(math.floor(frac))
+        frac=frac-m
+        s=round(frac*60,3)
+
+        dir = None
+        if (type == "lat"):
+            if (isneg):
+                d=abs(d)
+                dir = "S"
+            else:
+                dir = "N"
+        elif (type == "lng"):
+            if (isneg):
+                d=abs(d)
+                dir = "W"
+            else:
+                dir = "E"
+        else:
+            sys.exit("invalid degree type")
+
+        return str(d)+" "+str(m)+" "+str(s)+" "+dir
+        
+def run(args):
+    c = commands()
+    c.run(args)
+
+if __name__ == "__main__":
+    c = commands()
+    sys.exit(c.run(sys.argv[1:]))

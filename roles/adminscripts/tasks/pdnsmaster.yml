@@ -1,0 +1,8 @@
+- name: "Install ring-pdns"
+  copy:
+    src=ring-pdns
+    dest=/usr/local/bin/ring-pdns
+    owner=root
+    group=root
+    mode=0755
+

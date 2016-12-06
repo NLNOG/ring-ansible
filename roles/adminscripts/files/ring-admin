@@ -1,0 +1,1465 @@
+#!/usr/bin/env python
+
+import getpass
+from string import Template
+import MySQLdb as mdb
+import inspect
+import os
+import pycountry
+import re
+import simplejson
+import smtplib
+import string
+import sys
+import time
+import urllib
+
+DBHOST = 'localhost'
+DBUSER = 'ring-admins'
+DBPASS = ''
+DB = 'ring'
+ZONE = 'ring.nlnog.net'
+
+GEOCODE = \
+    "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&latlng="
+
+ANSIBLEDIR = '/var/ring/ring-ansible'
+ANSIBLE_HOSTFILE = 'nodes'
+ANSIBLE_HOSTKEYFILE = 'roles/etcfiles/files/ssh_known_hosts'
+ANSIBLE_USERFILE = 'roles/users/vars/ring-users.yml'
+ANSIBLE_KEYORIGIN = 'auth.infra.ring.nlnog.net:/opt/keys'
+ANSIBLE_KEYBASE = 'roles/users/files'
+ANSIBLE_KEYDIR = ANSIBLE_KEYBASE + '/keys'
+
+SCHEMA = '''
+CREATE TABLE participants
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    company VARCHAR(255) UNIQUE NOT NULL,
+    url VARCHAR(255),
+    contact VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    nocemail VARCHAR(255) NOT NULL,
+    companydesc VARCHAR(64000),
+    public INTEGER,
+    tstamp INTEGER
+);
+CREATE TABLE users
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) UNIQUE,
+    userid INTEGER,
+    shell VARCHAR(255),
+    active INTEGER,
+    participant INTEGER NOT NULL,
+    admin INTEGER,
+    FOREIGN KEY(participant) REFERENCES participants(id)
+);
+CREATE TABLE machines
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    hostname VARCHAR(255) UNIQUE NOT NULL,
+    v4 VARCHAR(255) UNIQUE,
+    v6 VARCHAR(255) UNIQUE,
+    autnum INTEGER NOT NULL,
+    country VARCHAR(2),
+    state VARCHAR(2),
+    dc VARCHAR(2048),
+    geo VARCHAR(255),
+    owner INTEGER NOT NULL,
+    tstamp INTEGER,
+    active BOOLEAN,
+    last_active INTEGER,
+    FOREIGN KEY(owner) REFERENCES users(id)
+);
+CREATE TABLE sshkeys
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    keytype VARCHAR(255) NOT NULL,
+    sshkey VARCHAR(16384) NOT NULL,
+    keyid VARCHAR(255),
+    user INTEGER NOT NULL,
+    FOREIGN KEY(user) REFERENCES users(id)
+);
+CREATE TABLE sshhostkeys
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    keytype VARCHAR(255) NOT NULL,
+    sshkey VARCHAR(16384) NOT NULL,
+    keyid VARCHAR(255),
+    machine INTEGER NOT NULL,
+    FOREIGN KEY(machine) REFERENCES machines(id)
+);
+CREATE TABLE premarks
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    remark VARCHAR(64000),
+    tstamp INTEGER,
+    participant INTEGER NOT NULL,
+    FOREIGN KEY(participant) REFERENCES participants(id)
+);
+CREATE TABLE mremarks
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    remark VARCHAR(64000),
+    tstamp INTEGER,
+    machine INTEGER NOT NULL,
+    FOREIGN KEY(machine) REFERENCES machines(id)
+);
+'''
+
+WEBSITETEXT = '''
+Title: $company ($countrycode) joined the RING
+
+$company - AS $autnum - joined the RING today.
+
+<blockquote>$companydesc</blockquote>
+
+Users can connect to $hostname, which is located in $country.
+'''
+
+ADMINEMAIL='ring-admins@nlnog.net'
+RINGUSERSEMAIL='ring-users@nlnog.net'
+WELCOMEMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: Welcome to the RING, $company
+
+Dear $company
+
+The machine you provided is part of the ring now!
+
+The following information is vital:
+
+    - Your company's username is "$username"
+    - The user "$username" has sudo rights on $hostname (please don't break puppet :-)
+
+If you want to add additional SSH keys, update the 'ssh-keys' file located on
+'manage.ring.nlnog.net' in your home directory. Please contact a RING Admin if
+you cannot login to manage.ring.nlnog.net. If you update the 'ssh-keys' file
+the changes are usually propagated within 30 to 60 minutes.
+
+For further instruction on how to use the ring, see: https://ring.nlnog.net/user-guide/
+
+You are welcome to join the ring-users mailinglist, which is used for
+announcements and discussions among RING users. You can find the list at
+http://mailman.nlnog.net/mailman/listinfo/ring-users
+
+We also operate an IRC channel: #ring on IRCnet.
+
+Finally, you are invited to peer with our looking glass. The looking glass
+service is available for all RING members via ssh on lg01.infra.ring.nlnog.net,
+and web on http://lg.ring.nlnog.net/.  Peering with this Looking Glass is
+optional for ring users. If you want to peer with NLNOG RING, send us your
+details and setup a session with the following information:
+
+    AS: 199036
+    IPv4: 82.94.230.130
+    IPv6: 2001:888:2001::130
+    Type: eBGP Multi-Hop
+    Policy: import NONE from AS199036, export ANY
+
+Kind regards,
+
+NLNOG RING Admins
+
+ps. An example ~/.ssh/config for on your workstation:
+
+Host *.ring.nlnog.net
+    ForwardAgent yes
+    User $username
+    IdentityFile /Users/username/.ssh/id_rsa_nlnogring
+    IdentitiesOnly yes
+'''
+
+ANNOUNCEMAIL = '''From: $adminemail
+To: $ringusers
+Subject: $company ($countrycode) joined the RING
+
+Dear All,
+
+$company - AS $autnum - joined the RING today.
+
+    "$companydesc"
+
+Users can connect to $hostname, which is located in $country.
+
+Your ssh keys have been distributed to the new ring node, and the ssh host
+keys of $hostname have been added to /etc/ssh/ssh_known_hosts on all RING
+nodes.
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
+DOWNMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: Problem with NLNOG RING node for $company
+
+Dear $company
+
+It appears the node you made available to the NLNOG RING project is no longer
+online. Can you please investigate and let us know whether you could remedy
+this situation?
+
+This concerns the machine with hostname "$hostname"
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
+REMOVEMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: NLNOG RING node for $company removed
+
+Dear $company
+
+Please be informed that the node with hostname "$hostname" is no longer
+part of the NLNOG RING. The machine can be shut down or used for other purposes.
+
+All references to the machine have been removed from our database. If you
+have no additional nodes that are part of the RING your user account(s) will
+be deactivated.
+
+This email notification is part of an automated cleanup process to remove
+RING nodes which have been unreachable for an extended period of time.
+
+If you'd like a machine to rejoin the NLNOG RING please contact the ring-admins
+or fill in the form at https://ring.nlnog.net/contact/application-form/
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
+ANSIBLEREPORTEMAIL = '''From: $adminemail
+To: $adminemail
+Subject: NLNOG RING Ansible report
+
+$contents
+
+Please investigate new missing nodes and failed ansible runs.
+Use "ring-admin send downmail <node>" to request assistance from the node owner.
+
+Kind regards,
+
+NLNOG RING dbmaster
+'''
+
+MAILHOST='localhost'
+INACTIVE_DAYS=90
+
+class commands(object):
+    def __init__(self):
+        super(commands, self).__init__()
+
+    def run(self, argv):
+        func = None
+        for i in reversed(range(len(argv))):
+            try:
+                func = getattr(self, 'cmd_' + '_'.join(argv[0:i + 1]))
+
+                args, kwargs = self.splitargv(argv[i + 1:])
+                break
+            except AttributeError:
+                pass
+            except UnicodeEncodeError:
+                pass
+
+        if not func:
+            return self.usage()
+
+        spec = inspect.getargspec(func)
+        reqcount = len(spec.args) - 1
+        if spec.defaults:
+            reqcount = reqcount - len(spec.defaults)
+        if reqcount and not len(args) and not len(kwargs):
+            kwargs = self.ask(func)
+        return func(*args, **kwargs)
+
+    def ask(self, func):
+        spec = inspect.getargspec(func)
+        d = dict()
+        for i, k in enumerate(spec.args[1:]):
+            print "%s:" % k,
+            if i >= (len(spec.args) - len(spec.defaults) - 1):
+                print "(optional)",
+            v = raw_input()
+            d[k] = v
+        return d
+
+    def splitargv(self, argv):
+        args = list()
+        kwargs = dict()
+        for arg in argv:
+            if '=' in arg:
+                k, v = arg.split('=', 1)
+                kwargs[k] = v
+            else:
+                if kwargs:
+                    raise SyntaxError
+                args.append(arg)
+
+        return args, kwargs
+
+    def usage(self):
+        cmds = []
+        for k, v in sorted(inspect.getmembers(self)):
+            if k.startswith('cmd_'):
+                cmd = k[4:].replace('_', ' ')
+                argspec = inspect.getargspec(v)
+                args = []
+                if argspec.defaults:
+                    defcount = len(argspec.defaults)
+                    for arg in argspec.args[1:-defcount]:
+                        args.append('<%s>' % arg)
+                    for arg in argspec.args[-defcount:]:
+                        args.append('[%s]' % arg)
+                else:
+                    for arg in argspec.args[1:]:
+                        args.append('<%s>' % arg)
+                doc = v.__doc__
+                if not doc:
+                    doc = ''
+                cmds.append(('%s %s' % (cmd, ' '.join(args)), doc))
+
+        maxcmdlen = max(len(cmd[0]) for cmd in cmds)
+        for cmd, doc in cmds:
+            print '%-*s %s' % (maxcmdlen + 2, cmd, doc)
+        return 1
+
+    def dbdo(self, q, v=None, script=False):
+        conn = mdb.connect(DBHOST, DBUSER, DBPASS, DB)
+        cur = conn.cursor()
+        if v:
+            vlist = list(v)
+            for index, s in enumerate(vlist):
+                if isinstance(s, basestring):
+                    vlist[index] = s.encode('utf8')
+            v = tuple(vlist)
+            cur.execute(q, v)
+        else:
+            cur.execute(q.encode('utf8'))
+        if not script:
+            conn.commit()
+            conn.close()
+        return cur.rowcount, cur.lastrowid
+
+    def dbquery(self, q, v=None):
+        conn = mdb.connect(DBHOST, DBUSER, DBPASS, DB)
+        cur = conn.cursor(mdb.cursors.DictCursor)
+        if v:
+            cur.execute(q, v)
+        else:
+            cur.execute(q)
+        for row in cur.fetchall():
+            yield row
+        conn.close()
+
+    def dbget(self, q, v=None):
+        conn = mdb.connect(DBHOST, DBUSER, DBPASS, DB)
+        cur = conn.cursor(mdb.cursors.DictCursor)
+        if v:
+            cur.execute(q, v)
+        else:
+            cur.execute(q)
+        result = cur.fetchall()
+        conn.close()
+        return result
+
+    def dbselect(self, table, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'SELECT * FROM %s WHERE %s' % \
+            (table, ' '.join('%s=%%s AND' % col for col in cols))
+        query = re.sub(' AND$', '', query)
+        return self.dbquery(query, vals)
+
+    def dbselectmax(self, table, counter, where):
+        query = 'SELECT MAX(%s) FROM %s WHERE %s' % (counter, table, where)
+        res = list(self.dbquery(query))
+        if len(res) > 1:
+            raise KeyError
+        elif res:
+            return res[0]['MAX(%s)' % (counter)]
+        else:
+            return None
+
+    def dbselectone(self, table, **kwargs):
+        res = list(self.dbselect(table, **kwargs))
+        if len(res) > 1:
+            raise KeyError
+        elif res:
+            return res[0]
+        else:
+            return None
+
+    def dbinsert(self, table, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'INSERT INTO %s (%s) VALUES(%s)' % \
+            (table, ','.join(cols), ','.join(['%s'] * len(vals)))
+        print vals
+        _, rowid = self.dbdo(query, vals)
+        return rowid
+
+    def dbinsertlist(self, table, cols, vals):
+        query = 'INSERT INTO %s (%s) VALUES(%s)' % \
+            (table, ','.join(cols), ','.join(['%s'] * len(vals)))
+        _, rowid = self.dbdo(query, vals)
+        return rowid
+
+    def dbdelete(self, table, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'DELETE FROM %s WHERE %s' % \
+            (table, ' '.join('%s=%%s' % col for col in cols))
+        self.dbdo(query, vals)
+
+    def dbupdate(self, table, id, **kwargs):
+        cols, vals = zip(*kwargs.items())
+        query = 'UPDATE %s SET %s WHERE id=%s' % \
+            (table, ' '.join('%s=%%s' % col for col in cols), id)
+        self.dbdo(query, vals)
+
+    def dblist(self, table):
+        query = 'SELECT * FROM %s' % table
+        result = self.dbquery(query)
+        for row in result:
+            print row
+
+    def sendmail(self,sender,recipients,message):
+        server = smtplib.SMTP(MAILHOST)
+        server.sendmail(sender, recipients, message)
+        server.quit()
+
+    def ansible_checkout(self):
+        ret = os.system("cd " + ANSIBLEDIR + " && git checkout")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+        ret = os.system("cd " + ANSIBLEDIR + " && git pull")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+
+    def ansible_getsshkeys(self):
+        ret = os.system("rsync -r --delete --chmod=g+w " + ANSIBLE_KEYORIGIN + " " + ANSIBLEDIR + "/" + ANSIBLE_KEYBASE)
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+        ret = os.system("cd " + ANSIBLEDIR + " && git add " + ANSIBLEDIR + "/" + ANSIBLE_KEYDIR)
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+
+    def ansible_generate_hostfile(self):
+        f = open(ANSIBLEDIR + '/' + ANSIBLE_HOSTFILE,'w')
+        f2 = open(ANSIBLEDIR + '/' + ANSIBLE_HOSTFILE + '.active','w')
+        f.write("# Generated by ringadmin\n\n")
+        f2.write("# Generated by ringadmin\n\n")
+        q = 'SELECT * FROM users'
+
+        f.write("[ringnode]\n")
+        f2.write("[ringnode]\n")
+        users = self.dbquery(q)
+        for u in users:
+            if u['admin'] == 1:
+                continue
+            q2 = 'SELECT * from machines WHERE owner=' + str(u['id'])
+            machines = self.dbquery(q2)
+            for m in machines:
+                line = m['hostname'] + ' OWNER=' + u['username']
+                if m['v4']:
+                    line = line + ' V4=' + m['v4']
+                if m['v6']:
+                    line = line + ' V6=' + m['v6']
+                f.write(line + "\n")
+                if m['active'] != 0:
+                    f2.write(line + "\n")
+
+        f.write("\n[infranode]\n")
+        f2.write("\n[infranode]\n")
+        users = self.dbquery(q)
+        for u in users:
+            if not u['admin']:
+                continue
+            q2 = 'SELECT * from machines WHERE owner=' + str(u['id'])
+            machines = self.dbquery(q2)
+            for m in machines:
+                line = m['hostname'] + ' OWNER=' + u['username']
+                if m['v4']:
+                    line = line + ' V4=' + m['v4']
+                if m['v6']:
+                    line = line + ' V6=' + m['v6']
+                f.write(line + "\n")
+                if m['active'] != 0:
+                    f2.write(line + "\n")
+
+        users = self.dbquery(q)
+        for u in users:
+            if u['admin'] == 1:
+                continue
+            f.write("\n[" + u['username'] + "]\n")
+            f2.write("\n[" + u['username'] + "]\n")
+            q2 = 'SELECT * from machines WHERE owner=' + str(u['id'])
+            machines = self.dbquery(q2)
+            for m in machines:
+                line = m['hostname'] + ' OWNER=' + u['username']
+                if m['v4']:
+                    line = line + ' V4=' + m['v4']
+                if m['v6']:
+                    line = line + ' V6=' + m['v6']
+                f.write(line + "\n")
+                if m['active'] != 0:
+                    f2.write(line + "\n")
+
+        f.close()
+        f2.close()
+
+    def ansible_generate_hostkeyfile(self):
+        f = open(ANSIBLEDIR + '/' + ANSIBLE_HOSTKEYFILE,'w')
+        f.write("# Generated by ringadmin\n\n")
+        q = 'SELECT * FROM users'
+        users = self.dbquery(q)
+        for u in users:
+            q2 = 'SELECT * from machines WHERE owner=' + str(u['id'])
+            machines = self.dbquery(q2)
+            for m in machines:
+                namestr = m['hostname']
+                if m['v4']:
+                    namestr = namestr + ',' + m['v4']
+                if m['v6']:
+                    namestr = namestr + ',' + m['v6']
+                q3 = 'SELECT * from sshhostkeys WHERE machine=' + str(m['id'])
+                hostkeys = self.dbquery(q3)
+                for k in hostkeys:
+                    f.write('%s %s %s %s\n' % (namestr,k['keytype'],k['sshkey'],
+                                                                    k['keyid']))
+        f.close()
+
+    def ansible_generate_userfile(self):
+        f = open(ANSIBLEDIR + '/' + ANSIBLE_USERFILE,'w')
+        f.write("# Generated by ringadmin\n\n")
+        f.write("GROUPS:\n")
+        f.write("  ring-users:\n");
+        f.write("    gid: 5000\n\n");
+        f.write("USERS:\n")
+
+        q = 'SELECT * FROM users WHERE admin IS NULL or admin != 1'
+        users = self.dbquery(q)
+        for u in users:
+            q2 = 'SELECT * from participants WHERE id=' + str(u['participant'])
+            participants = list(self.dbquery(q2))
+            p = participants[0]
+            f.write('  ' + u['username'] + ':\n')
+            if (u['active'] == 0):
+                f.write('    state: absent\n')
+            else:
+                f.write('    state: present\n')
+            f.write('    company: \'' + p['company'] + '\'\n')
+            f.write('    email: \'' + p['nocemail'] + '\'\n')
+            f.write('    uid: ' + str(u['userid']) + '\n')
+            if u['shell']:
+                f.write('    shell: ' + u['shell'] + '\n')
+            f.write('    groups:\n')
+            f.write('      - ring-users\n\n')
+        f.close()
+
+    def ansible_push(self):
+        username=getpass.getuser()
+        ret = os.system("cd " + ANSIBLEDIR + " && git commit -am 'dbmaster commit by " + username + "'")
+        ret = os.system("cd " + ANSIBLEDIR + " && git push")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+
+    def ansible_process(self,send=None):
+        q = "select machines.*, users.username,users.admin from machines,users where machines.owner = users.id"
+        machines = self.dbget(q)
+        for m in machines:
+            hostname = re.sub('.' + ZONE, '', m['hostname'])
+            m['seen'] = 0
+            m['failed'] = 0
+            q = "select * from ansible where hostname='%s' and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
+            ansible_run = self.dbquery(q)
+            for run in ansible_run:
+                m['seen'] = 1
+                if run['unreachable'] > 0 or run['failures'] > 0:
+                    m['failed'] = 1
+
+        total = 0
+        active = 0
+        inactive = 0
+        activate = []
+        deactivate = []
+        failed = []
+        # Hardcoded ignore list
+        exceptions = {}
+        #exceptions['hostname'] = 1
+
+        for m in machines:
+            if m['admin'] == 1:
+                continue
+            total = total + 1
+            if m['failed'] == 1:
+                    failed.append(m['hostname'])
+            if m['active'] != 1:
+                inactive = inactive + 1
+                if m['seen'] == 1 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                    activate.append(m['hostname'])
+            if m['active'] == 1:
+                active = active + 1
+                if m['seen'] == 0 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                    deactivate.append(m['hostname'])
+
+        report = ""
+        report = report + "Nodes:\t\t%d\n" % (total)
+        report = report + "Active:\t\t%d (%d new)\n" % (active+len(activate)-len(deactivate),len(activate))
+        report = report + "Inactive:\t%d (%d new)\n" % (inactive+len(deactivate)-len(activate),len(deactivate))
+        report = report + "Failed:\t\t%d\n" % (len(failed))
+        if len(exceptions) > 0:
+            report = report + "Ignored:\t%d\n" % (len(exceptions))
+
+        report = report + "\nNew nodes seen:\n"
+        for a in activate:
+          report = report + "  - %s\n" % (a)
+        report = report + "\nNew missing nodes:\n"
+        for d in deactivate:
+          report = report + "  - %s\n" % (d)
+        report = report + "\nFailed ansible runs:\n"
+        for f in failed:
+          report = report + "  - %s\n" % (f)
+        report = report + "\n"
+
+        for a in activate:
+            machid = self.hostname2mid(a)
+            if not machid:
+                sys.stderr.write('could not active machine %s: not found\n' % a)
+            self.activate_machine(machid)
+            print 'machine %s marked as active' % (a)
+        report = report + "%d nodes activated.\n" % len(activate)
+
+        if len(deactivate) > 10:
+            report = report + "More than 10 missing nodes since last run. Automatic deactivation skipped.\n"
+        else:
+            for d in deactivate:
+                machid = self.hostname2mid(d)
+                if not machid:
+                    sys.stderr.write('could not deactive machine %s: not found\n' % a)
+                self.deactivate_machine(machid)
+                print 'machine %s marked as inactive' % (d)
+            report = report + "%d nodes deactivated.\n" % len(deactivate)
+
+        text = Template(ANSIBLEREPORTEMAIL)
+        mailbody = text.substitute(adminemail=ADMINEMAIL,contents=report)
+        print mailbody
+
+        if send and (len(activate) > 0 or len(deactivate) > 0):
+            print "Sending mail... "
+            self.sendmail(ADMINEMAIL,ADMINEMAIL,mailbody)
+            print "Done."
+
+    def generate_welcomemail(self, username, send=None):
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        u = self.dbselectone('users', participant=partid)
+        m = self.dbselect('machines', owner=u['id'])
+        if not m:
+            sys.exit('no machines found for %s' % username)
+        hostname = ''
+        try:
+            mfirst = m.next()
+            hostname = mfirst['hostname']
+        except StopIteration:
+            pass
+        text = Template(WELCOMEMAIL)
+        mailbody = text.substitute(company=p['company'], nocemail=p['nocemail'],
+                                   email=p['email'],
+                                   hostname=hostname, username=u['username'],
+                                   adminemail=ADMINEMAIL)
+        print mailbody
+
+        if send:
+            print "Sending mail... "
+            self.sendmail(ADMINEMAIL,
+                          [p['nocemail'],p['email'],ADMINEMAIL],
+                          mailbody)
+            print "Done."
+
+    def generate_announcemail(self, username, send=None):
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        u = self.dbselectone('users', participant=partid)
+        m = self.dbselect('machines', owner=u['id'])
+        if not m:
+            sys.exit('no machines found for %s' % username)
+        hostname = ''
+        autnum = ''
+        dc = ''
+        state = ''
+        country = ''
+        try:
+            mfirst = m.next()
+            hostname = mfirst['hostname']
+            autnum = str(mfirst['autnum'])
+            dc = mfirst['dc']
+            state = mfirst['state']
+            countrycode = mfirst['country']
+        except StopIteration:
+            pass
+        country = self.countryname(countrycode, state)
+        text = Template(ANNOUNCEMAIL)
+        mailbody = text.substitute(company=p['company'],
+                                   companydesc=p['companydesc'],
+                                   hostname=hostname, autnum=autnum, dc=dc,
+                                   state=state, country=country,
+                                   countrycode=countrycode,
+                                   adminemail=ADMINEMAIL,ringusers=RINGUSERSEMAIL)
+        print mailbody
+
+        if send:
+            print "Sending mail... "
+            self.sendmail(ADMINEMAIL,RINGUSERSEMAIL,mailbody)
+            print "Done."
+
+    def generate_downmail(self, hostname, send=None):
+        uid = self.hostname2uid(hostname)
+        if not uid:
+            sys.exit('machine %s not found' % hostname)
+        partid = self.uid2pid(uid)
+        if not partid:
+            sys.exit('user %s not found' % uid)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        text = Template(DOWNMAIL)
+        mailbody = text.substitute(company=p['company'], nocemail=p['nocemail'],
+                                   email=p['email'],
+                                   hostname=hostname,
+                                   adminemail=ADMINEMAIL)
+        print mailbody
+
+        if send:
+            print "Sending mail... "
+            self.sendmail(ADMINEMAIL,
+                          [p['nocemail'],p['email'],ADMINEMAIL],
+                          mailbody)
+            print "Done."
+
+    def generate_removemail(self, hostname, send=None):
+        uid = self.hostname2uid(hostname)
+        if not uid:
+            sys.exit('machine %s not found' % hostname)
+        partid = self.uid2pid(uid)
+        if not partid:
+            sys.exit('user %s not found' % uid)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        text = Template(REMOVEMAIL)
+        mailbody = text.substitute(company=p['company'], nocemail=p['nocemail'],
+                                   email=p['email'],
+                                   hostname=hostname,
+                                   adminemail=ADMINEMAIL)
+        print mailbody
+
+        if send:
+            print "Sending mail... "
+            self.sendmail(ADMINEMAIL,
+                          [p['nocemail'],p['email'],ADMINEMAIL],
+                          mailbody)
+            print "Done."
+
+    def generate_downreminders(self, send=None):
+        reminders = []
+        machines = self.dbselect('machines', active=0)
+        for m in machines:
+            hostname = m['hostname']
+            owner = self.dbselectone('users', id=m['owner'])
+            if owner['active'] == 0:
+                continue
+            if owner['admin'] == 1:
+                continue
+            reminders.append(hostname)
+        print "Inactive machines with active owners:"
+        for host in sorted(reminders):
+            print "- %s" % (host)
+        print ""
+        print "Total: %d" % (len(reminders))
+
+        if send:
+            print "Sending mail"
+            for host in sorted(reminders):
+                print "...%s" % (host)
+                self.generate_downmail(host,1)
+                time.sleep(1)
+            print "Done."
+
+    def purge_inactive_machines(self):
+        tstamp = time.time()
+        machine_delete = []
+        participant_deactivate = []
+        q = "select machines.*, users.username,users.admin as admin " + \
+            "from machines,users where machines.active = 0 and " + \
+            "machines.owner = users.id"
+        machines = self.dbget(q)
+        for m in machines:
+            if m['admin'] == 1:
+                continue
+            if m['last_active']:
+                if (tstamp - m['last_active']) < (INACTIVE_DAYS * 86400):
+                    print "Not yet deleting %s" % (m['hostname'])
+                    continue
+            else:
+                print "Not deleting %s (no last_active date)" % (m['hostname'])
+                continue
+
+            machine_delete.append(m['hostname'])
+            print "Deleting machine %s" % (m['hostname'])
+            self.generate_removemail(m['hostname'],1)
+            self.dbdelete('mremarks', machine=m['id'])
+            print 'remarks for machine %s deleted' % (m['hostname'])
+            self.dbdelete('machines', hostname=m['hostname'])
+            print 'machine %s deleted' % (m['hostname'])
+
+            q = "select participants.id as id, participants.company as " + \
+                "company from participants left join " + \
+                "users on participants.id = users.participant " + \
+                "where users.id = %s" % (m['owner'])
+            participant = self.dbget(q)
+            for p in participant:
+                q = "select users.participant,count(machines.id) as count " + \
+                    "from machines left join users on machines.owner = " + \
+                    "users.id group by users.participant having " + \
+                    "users.participant = %s" % (p['id'])
+                machines = self.dbget(q)
+                if not machines:
+                    participant_deactivate.append(p['company'])
+                    print "Deactivating users for participant %s" % (p['company'])
+                    self.deactivate_participant(p['id'])
+
+    def activate_machine(self, machid):
+        tstamp = time.time()
+        self.dbupdate('machines', machid, **{'active': 1})
+        self.dbupdate('machines', machid, **{'last_active': tstamp})
+
+    def deactivate_machine(self, machid):
+        tstamp = time.time()
+        self.dbupdate('machines', machid, **{'active': 0})
+        self.dbupdate('machines', machid, **{'last_active': tstamp})
+
+    def activate_participant(self, partid):
+        users = self.dbselect('users', participant=partid)
+        for u in users:
+            self.dbupdate('users', u['id'], **{'active': 1})
+            print "Activated user %s" % (u['username'])
+
+    def deactivate_participant(self, partid):
+        users = self.dbselect('users', participant=partid)
+        for u in users:
+            self.dbupdate('users', u['id'], **{'active': 0})
+            print "Deactivated user %s" % (u['username'])
+
+    def username2uid(self, username):
+        user = self.dbselectone('users', username=username)
+        uid = None
+        if user:
+            uid = user['id']
+        return uid
+
+    def username2pid(self, username):
+        user = self.dbselectone('users', username=username)
+        pid = None
+        if user:
+            pid = user['participant']
+        return pid
+
+    def uid2pid(self, uid):
+        user = self.dbselectone('users', id=uid)
+        pid = None
+        if user:
+            pid = user['participant']
+        return pid
+
+    def hostname2mid(self, hostname):
+        machine = self.dbselectone('machines', hostname=hostname)
+        mid = None
+        if machine:
+            mid = machine['id']
+        return mid
+
+    def hostname2uid(self, hostname):
+        machine = self.dbselectone('machines', hostname=hostname)
+        owner = None
+        if machine:
+            owner = machine['owner']
+        return owner
+
+    def countryname(self, country, state):
+        cname = ''
+        try:
+            c = pycountry.countries.get(alpha2=country)
+            cname = c.name
+        except KeyError:
+            cname = 'Unknown'
+        if state:
+            try:
+                s = pycountry.subdivisions.get(code=country + '-' + state)
+                cname = s.name + ', ' + cname
+            except KeyError:
+                cname = 'Unknown, ' + cname
+        return cname
+
+    def cityname(self, geo):
+        city = None
+        city_opts = {}
+        url = GEOCODE + geo
+        try:
+            response = simplejson.load(urllib.urlopen(url))
+            rcode = response['status']
+            if (rcode == "OK"):
+                resultset = response['results']
+                for result in resultset:
+                    addr = result['address_components']
+                    for part in addr:
+                        if (part['types'][0] == 'administrative_area_level_1'):
+                            city_opts['administrative_area_level_1'] = part['long_name']
+                        elif (part['types'][0] == 'locality'):
+                            city_opts['locality'] = part['long_name']
+                        elif (part['types'][0] == 'postal_town'):
+                            city_opts['postal_town'] = part['long_name']
+                        elif (part['types'][0] == 'administrative_area_level_2'):
+                            city_opts['administrative_area_level_2'] = part['long_name']
+                        elif (part['types'][0] == 'administrative_area_level_3'):
+                            city_opts['administrative_area_level_3'] = part['long_name']
+        except:
+            sys.stderr.write('unable to retrieve city geocoding info\n')
+            return ""
+
+        # Figure out the best value to use for city
+        if ('locality' in city_opts):
+            city = city_opts['locality']
+        elif ('postal_town' in city_opts):
+            city = city_opts['postal_town']
+        elif ('administrative_area_level_3' in city_opts):
+            city = city_opts['administrative_area_level_3']
+        elif ('administrative_area_level_2' in city_opts):
+            city = city_opts['administrative_area_level_2']
+        elif ('administrative_area_level_1' in city_opts):
+            city = city_opts['administrative_area_level_1']
+
+        if city:
+            return city
+        else:
+            return ""
+
+    def cmd_add_participant(self,
+                            company, contact, email, nocemail, username,
+                            companydesc=None, url=None):
+        """add a participant"""
+        tstamp = time.time()
+        partid = self.dbinsert('participants', company=company, url=url,
+                               contact=contact, email=email,
+                               nocemail=nocemail, companydesc=companydesc,
+                               tstamp=tstamp)
+        print 'participant %s added' % (partid)
+        userid = self.dbselectmax('users', 'userid',
+                                  'admin IS NULL OR admin=0')
+        if not userid:
+            userid = 5000
+        userid = userid + 1
+        uid = self.dbinsert('users', username=username,
+                            participant=partid, userid=userid, active=1)
+        print 'user %s added for participant %s' % (uid, partid)
+
+    def cmd_update_participant(self, username, attribute, value):
+        """update participant data"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        self.dbupdate('participants', partid, **{attribute: value})
+        print 'attribute %s for participant %s updated' % (attribute, partid)
+
+    def cmd_delete_participant(self, pid):
+        """delete a participant"""
+        result = self.dbselect('users', participant=pid)
+        for row in result:
+            sys.exit('participant %s still has users' % pid)
+
+        self.dbdelete('premarks', participant=pid)
+        print 'remarks for participant %s deleted' % (pid)
+        self.dbdelete('participants', id=pid)
+        print 'participant %s deleted' % (pid)
+
+    def cmd_list_participants(self):
+        """list participants"""
+        self.dblist('participants')
+
+    def cmd_list_participant(self,username):
+        """list participant info"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        print self.dbselectone('participants', id=partid)
+
+    def cmd_activate_participant(self,username):
+        """activate all user for participant"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        self.activate_participant(partid)
+
+    def cmd_deactivate_participant(self,username):
+        """deactivate all user for participant"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        self.deactivate_participant(partid)
+
+    def cmd_add_user(self, pid, username, userid):
+        """add a user"""
+        participant = self.dbselectone('participants', id=pid)
+        if not participant:
+            sys.exit('participant %s not found' % pid)
+        uid = self.dbinsert('users', username=username,
+                            userid=userid, participant=pid, active=1)
+        print 'user %s added' % (uid)
+
+    def cmd_update_user(self, username, attribute, value):
+        """update user data"""
+        uid = self.username2uid(username)
+        if not uid:
+            sys.exit('user %s not found' % username)
+        self.dbupdate('users', uid, **{attribute: value})
+        print 'attribute %s for user %s updated' % (attribute, username)
+
+    def cmd_delete_user(self, username):
+        """delete a user"""
+        uid = self.username2uid(username)
+        if not uid:
+            sys.exit('user %s not found' % username)
+        result = self.dbselect('machines', owner=uid)
+        for row in result:
+            sys.exit('user %s still has machines' % username)
+
+        self.dbdelete('sshkeys', user=uid)
+        print 'sshkeys for user %s deleted' % (username)
+        self.dbdelete('users', username=username)
+        print 'user %s deleted' % (username)
+
+    def cmd_list_users(self, pid=None):
+        """list users"""
+        if pid:
+            result = self.dbselect('users', participant=pid)
+            for row in result:
+                print row
+        else:
+            self.dblist('users')
+
+    def cmd_add_machine(self, username, hostname, autnum, country, geo,
+                        dc=None, v4=None, v6=None, state=None):
+        """add a machine"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        uid = self.username2uid(username)
+        if not uid:
+            sys.exit('user %s not found' % username)
+        tstamp = time.time()
+        city = self.cityname(geo)
+        machineid = self.dbinsert('machines', owner=uid, hostname=hostname,
+                                  autnum=autnum, country=country, state=state,
+                                  city=city, geo=geo, dc=dc, v4=v4, v6=v6,
+                                  tstamp=tstamp, active=0)
+        print "Added machine %s ('%s' at '%s') for user %s" % \
+            (machineid, hostname, country, username)
+
+    def cmd_delete_machine(self, hostname):
+        """delete a machine"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.dbdelete('sshhostkeys', machine=machid)
+        print 'ssh hostkeys for machine %s deleted' % (hostname)
+        self.dbdelete('mremarks', machine=machid)
+        print 'remarks for machine %s deleted' % (hostname)
+        self.dbdelete('machines', hostname=hostname)
+        print 'machine %s deleted' % (hostname)
+
+    def cmd_update_machine(self, hostname, attribute, value):
+        """update machine data"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.dbupdate('machines', machid, **{attribute: value})
+        print 'attribute %s for machine %s updated' % (attribute, hostname)
+        if (attribute == "geo"):
+            city = self.cityname(value)
+            self.dbupdate('machines', machid, **{'city': city})
+            print 'attribute city for machine %s updated' % (hostname)
+
+    def cmd_activate_machine(self, hostname):
+        """mark machine as active"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.activate_machine(machid)
+        print 'machine %s marked as active' % (hostname)
+
+    def cmd_deactivate_machine(self, hostname):
+        """mark machine as inactive"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.deactivate_machine(machid)
+        print 'machine %s marked as inactive' % (hostname)
+
+    def cmd_list_machines(self, username=None):
+        """list machines"""
+        if username:
+            uid = self.username2uid(username)
+            if not uid:
+                sys.exit('user %s not found' % username)
+            result = self.dbselect('machines', owner=uid)
+            for row in result:
+                print row
+        else:
+            self.dblist('machines')
+
+    def cmd_add_sshkeys(self, username, filename=None):
+        print >> sys.stderr, \
+            "DEPRECATED: Update the ssh-keys file on manage.ring.nlnog.net"
+        return
+
+    def cmd_replace_sshkeys(self, username, filename=None):
+        """replace sshkeys"""
+        uid = self.username2uid(username)
+        if not uid:
+            sys.exit('user %s not found' % username)
+        self.dbdelete('sshkeys', user=uid)
+        print 'sshkeys for user %s deleted' % (username)
+        self.cmd_add_sshkeys(username, filename)
+
+    def cmd_delete_sshkey(self, id):
+        """delete an sshkey"""
+        self.dbdelete('sshkeys', id=id)
+        print 'key %s deleted' % (id)
+
+    def cmd_list_sshkeys(self, username):
+        """list sshkeys"""
+        uid = self.username2uid(username)
+        if not uid:
+            sys.exit('user %s not found' % username)
+        result = self.dbselect('sshkeys', user=uid)
+        for row in result:
+            print row
+
+    def cmd_add_hostkeys(self, hostname, filename=None):
+        """add ssh hostkeys"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+
+        file = None
+        if filename:
+            file = open(filename, "r")
+        else:
+            file = sys.stdin
+        cols = ['keytype', 'sshkey', 'keyid', 'machine']
+        for line in file:
+            if (re.search(r'^#', line)):
+                continue
+            vals = line.split()
+            insert = []
+            if len(vals) < 2:
+                print >> sys.stderr, "Skipping invalid entry"
+                continue
+            insert.append(vals[0])
+            insert.append(vals[1])
+            if len(vals) == 2:
+                insert.append(None)
+            elif len(vals) > 3:
+                keyid = "\"" + string.join(vals[2:]) + "\""
+                insert.append(keyid)
+            else:
+                insert.append(vals[2])
+            insert.append(machid)
+            kid = self.dbinsertlist('sshhostkeys', cols, insert)
+            print "Added key %s for machine %s" % (kid, hostname)
+        file.close()
+
+    def cmd_replace_hostkeys(self, hostname, filename=None):
+        """replace ssh hostkeys"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.dbdelete('sshhostkeys', machine=machid)
+        print 'sshkeys for machine %s deleted' % (hostname)
+        self.cmd_add_sshhostkeys(hostname, filename)
+
+    def cmd_delete_hostkey(self, id):
+        """delete an ssh hostkey"""
+        self.dbdelete('sshhostkeys', id=id)
+        print 'key %s deleted' % (id)
+
+    def cmd_list_hostkeys(self, hostname):
+        """list ssh hostkeys"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        result = self.dbselect('sshhostkeys', machine=machid)
+        for row in result:
+            print row
+
+    def cmd_add_premark(self, username, remark):
+        """add a participant remark"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        participant = self.dbselectone('participants', id=partid)
+        if not participant:
+            sys.exit('participant %s not found' % partid)
+        tstamp = time.time()
+        rid = self.dbinsert('premarks', participant=partid, remark=remark,
+                            tstamp=tstamp)
+        print "Added remark %s for participant '%s'" % \
+            (rid, participant['company'])
+
+    def cmd_delete_premark(self, id):
+        """delete a participant remark"""
+        self.dbdelete('premarks', id=id)
+        print 'remark %s deleted' % (id)
+
+    def cmd_list_premarks(self, username):
+        """list participant remarks"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        result = self.dbselect('premarks', participant=partid)
+        for row in result:
+            print row
+
+    def cmd_add_mremark(self, hostname, remark):
+        """add a machine remark"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        tstamp = time.time()
+        rid = self.dbinsert('mremarks', machine=machid, remark=remark,
+                            tstamp=tstamp)
+        print "Added remark %s for machine %s" % (rid, hostname)
+
+    def cmd_delete_mremark(self, id):
+        """delete a machine remark"""
+        self.dbdelete('mremarks', id=id)
+        print 'remark %s deleted' % (id)
+
+    def cmd_list_mremarks(self, hostname):
+        """list machine remarks"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        result = self.dbselect('mremarks', machine=machid)
+        for row in result:
+            print row
+
+    def cmd_initdb(self):
+        """initialize database"""
+        self.dbdo(SCHEMA, None, script=True)
+
+    def cmd_generate_puppet_node(self, hostname):
+        """generate puppet node config"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        name = re.sub('.' + ZONE, '', hostname)
+        m = self.dbselectone('machines', hostname=hostname)
+        if not m:
+            sys.exit('machine %s not found' % hostname)
+        u = self.dbselectone('users', id=m['owner'])
+        if not u:
+            sys.exit('user %s not found' % m['owner'])
+
+        print "node '" + name + "' inherits ringnode {"
+        print "    $owner = \"" + u['username'] + "\""
+        print "    $location = \"" + m['geo'] + "\""
+        print "    include set_local_settings"
+        print "    include users"
+        print "}"
+
+    def cmd_generate_hostsfile(self, hostname):
+        """generate hostsfile config"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        name = re.sub('.' + ZONE, '', hostname)
+        m = self.dbselectone('machines', hostname=hostname)
+        if not m:
+            sys.exit('machine %s not found' % hostname)
+
+        print m['v6'] + "  " + name + " " + m['hostname']
+        if m['v4']:
+            print m['v4'] + "    " + name + " " + m['hostname']
+
+    def cmd_ansible_deploy(self):
+        """update ansible repository"""
+        self.ansible_checkout()
+        self.ansible_getsshkeys()
+        self.ansible_generate_hostfile()
+        self.ansible_generate_hostkeyfile()
+        self.ansible_generate_userfile()
+        self.ansible_push()
+
+    def cmd_ansible_process(self):
+        """process ansible run data"""
+        self.ansible_process()
+
+    def cmd_ansible_report(self):
+        """process ansible run data and send report"""
+        self.ansible_process(1)
+
+    def cmd_ansible_log(self,hostname=None):
+        """show completed ansible runs"""
+        runs = None
+        if hostname:
+            if (re.match(r'.*%s$' % ZONE, hostname)):
+                hostname = re.sub('.' + ZONE, '', hostname)
+            runs = self.dbselect('ansible', hostname=hostname)
+        else:
+            q = "select * from ansible where timestamp >= now() - INTERVAL 1 DAY"
+            runs = self.dbquery(q)
+        for run in runs:
+            print "%20s %s :\tok=%d\tchanged=%d\tunreachable=%d\tfailed=%d" % \
+                  (run['hostname'],run['timestamp'],run['ok'],run['changed'], \
+                   run['unreachable'],run['failures'])
+
+    def cmd_dnscommands(self, hostname):
+        """generate dns commands"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        m = self.dbselectone('machines', hostname=hostname)
+        if not m:
+            sys.exit('machine %s not found' % hostname)
+        print "ring-pdns add node " + m['hostname'] + " " + m['v4'] + " " + \
+            m['v6'] + " " + m['geo']
+        print "ring-pdns activate node " + m['hostname'] + " " + m['country']
+
+    def cmd_generate_webpost(self, username):
+        """generate text for website post"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        u = self.dbselectone('users', participant=partid)
+        m = self.dbselect('machines', owner=u['id'])
+        if not m:
+            sys.exit('no machines found for %s' % username)
+        hostname = ''
+        autnum = ''
+        dc = ''
+        state = ''
+        country = ''
+        try:
+            mfirst = m.next()
+            hostname = mfirst['hostname']
+            autnum = str(mfirst['autnum'])
+            dc = mfirst['dc']
+            state = mfirst['state']
+            countrycode = mfirst['country']
+        except StopIteration:
+            pass
+        country = self.countryname(countrycode, state)
+        text = Template(WEBSITETEXT)
+        print text.substitute(company=p['company'],
+                              companydesc=p['companydesc'], hostname=hostname,
+                              autnum=autnum, dc=dc, country=country,
+                              countrycode=countrycode)
+
+    def cmd_generate_welcomemail(self, username):
+        """generate text for welcome email"""
+        self.generate_welcomemail(username)
+
+    def cmd_send_welcomemail(self, username):
+        """send welcome email"""
+        self.generate_welcomemail(username,1)
+
+    def cmd_generate_announcemail(self, username):
+        """generate text for anounce email"""
+        self.generate_announcemail(username)
+
+    def cmd_send_announcemail(self, username):
+        """send anounce email"""
+        self.generate_announcemail(username,1)
+
+    def cmd_generate_downmail(self, hostname):
+        """generate text for node down notification"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_downmail(hostname)
+
+    def cmd_send_downmail(self, hostname):
+        """send node down notification"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_downmail(hostname,1)
+
+    def cmd_generate_downreminders(self):
+        """show node down reminders to be sent"""
+        self.generate_downreminders()
+
+    def cmd_send_downreminders(self):
+        """send node down reminders"""
+        self.generate_downreminders(1)
+
+    def cmd_generate_removemail(self, hostname):
+        """generate text for node removal email"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_removemail(hostname)
+
+    def cmd_send_removemail(self, hostname):
+        """send text for node removal email"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_removemail(hostname,1)
+
+    def cmd_purge_machines(self):
+        """purge machines inactive for a long time"""
+        self.purge_inactive_machines()
+
+def run(args):
+    c = commands()
+    c.run(args)
+
+if __name__ == "__main__":
+    c = commands()
+    lctype = None
+    if len(os.environ.get('LC_CTYPE', '.').split('.', 1)) > 1:
+        lctype = os.environ.get('LC_CTYPE', '.').split('.', 1)[1]
+    sys.exit(
+        c.run(
+            [s.decode(sys.stdout.encoding or lctype or 'utf-8')
+                      for s in sys.argv[1:]]))
+

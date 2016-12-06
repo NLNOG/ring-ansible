@@ -1,0 +1,8 @@
+- name: "Install ring-admin"
+  copy:
+    src=ring-admin
+    dest=/usr/local/bin/ring-admin
+    owner=root
+    group=root
+    mode=0755
+
