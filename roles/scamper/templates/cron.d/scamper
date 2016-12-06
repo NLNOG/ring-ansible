@@ -1,0 +1,4 @@
+# run scamper
+{{ 60|determrand(ansible_fqdn) }} * * * * scamper /home/scamper/run-traces.sh
+# clean up scamper traces
+00 7,20 * * * scamper find /home/scamper/traces/* -mtime +8 -exec rm {} \;

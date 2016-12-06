@@ -119,7 +119,7 @@
     - /usr/bin/dumpcap
 
 - name: "Get network capabilities for some tools"
-  shell: /sbin/getcap {{ item }}
+  command: /sbin/getcap {{ item }}
   register: cap
   with_items:
     - /usr/sbin/hping3
@@ -128,9 +128,11 @@
     - /usr/bin/traceroute.db
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
+  always_run: yes
+  changed_when: false
 
 - name: "Set new capabilities"
-  shell: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
+  command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   with_items: "{{ cap.results }}"
 

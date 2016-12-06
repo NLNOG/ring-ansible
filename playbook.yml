@@ -8,6 +8,7 @@
     - { role: software, tags: software }
     - { role: ntp, tags: ntp }
     - { role: motd, tags: motd }
+    - { role: munin-node, tags: munin-node }
     - { role: dhcp, tags: dhcp }
     - { role: fail2ban, tags: fail2ban }
     - { role: userscripts, tags: userscripts }
@@ -30,6 +31,11 @@
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
 
+- hosts: compute01.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: munin-master, tags: munin-master }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true

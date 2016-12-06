@@ -1,0 +1,30 @@
+
+- block:
+  - name: Install packages
+    package:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+      - munin-node
+      - munin-common
+      - munin-plugins-core
+      - munin-plugins-extra
+
+  - name: Create /etc/munin/munin-node.conf
+    template:
+      src: munin-node.conf
+      dest: /etc/munin/
+      owner: root
+      group: root
+      mode: 0644
+    notify: munin-node reload service
+
+  - name: enable service
+    service:
+      name: munin-node
+      enabled: yes
+      state: started
+
+  tags:
+    - munin-node
+    - munin
