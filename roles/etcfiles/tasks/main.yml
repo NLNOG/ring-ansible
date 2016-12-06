@@ -58,3 +58,17 @@
     - sshd
     - su
 
+- name: "Set localtime"
+  file:
+    src: /usr/share/zoneinfo/UTC
+    dest: /etc/localtime
+    state: link
+
+- name: "Update timezone file"
+  copy:
+    src=timezone
+    dest=/etc/timezone
+    owner=root
+    group=root
+    mode=0644
+
