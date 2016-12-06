@@ -1,6 +1,14 @@
 - name: "Generate /etc/hosts"
   template: src=hosts.j2 dest=/etc/hosts
 
+- name: "Update /etc/ssh/ssh_known_hosts"
+  copy:
+    src=ssh_known_hosts
+    dest=/etc/ssh/ssh_known_hosts
+    owner=root
+    group=root
+    mode=0644
+
 - name: "Add upstart-job"
   copy:
     src=upstart-job
