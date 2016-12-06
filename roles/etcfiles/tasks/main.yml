@@ -72,3 +72,11 @@
     group=root
     mode=0644
 
+- name: update /etc/aliases
+  lineinfile:
+    dest: /etc/aliases
+    regexp: '^{{ item.key }}\s*:'
+    line: '{{ item.key }}: {{ item.value }}'
+  notify: running newaliases
+  with_dict: "{{ etc_aliases }}"
+
