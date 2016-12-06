@@ -1,0 +1,23 @@
+- hosts: ringnode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+    - name: Add the vault password
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ ringnode_vault_pw }}"
+
+- hosts: infranode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+    - name: Add the vault password
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ infranode_vault_pw }}"

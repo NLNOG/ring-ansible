@@ -1,3 +1,11 @@
+- hosts: ringnode
+  tasks:
+    include_vars: "vault/ringnode.yml"
+
+- hosts: infranode
+  tasks:
+    include_vars: "vault/infranode.yml"
+
 - hosts: all
   become: true
   become_user: root
