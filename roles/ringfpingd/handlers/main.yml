@@ -1,0 +1,3 @@
+- name: restart ringfpingd
+  service: name=ringfpingd state=restarted enabled=yes
+

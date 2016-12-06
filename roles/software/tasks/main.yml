@@ -72,7 +72,6 @@
     - python-simplejson
     - python-software-properties
     - python-virtualenv
-    - ringfpingd
     - rsync
     - ruby
     - ruby1.9.1-dev
