@@ -1,3 +1,11 @@
+- name: "Clean sources.list"
+  copy:
+    src=sources.list
+    dest=/etc/apt/sources.list
+    owner=root
+    group=root
+    mode=0644
+
 - name: "Add ubuntu precise repository"
   apt_repository:
     repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse'
