@@ -1,6 +1,3 @@
-LOCAL_GROUPS:
-  ring-users: present
-
 LOCAL_USERS:
   dave:
     state: present

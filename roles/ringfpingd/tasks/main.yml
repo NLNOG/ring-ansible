@@ -1,0 +1,13 @@
+- name: "Update ringfpingd.conf"
+  template:
+    src: ringfpingd.conf.j2
+    dest: /etc/ringfpingd.conf
+    owner: root
+    group: root
+    mode: 0600
+  notify: restart ringfpingd
+
+- name: "Install ringfpingd package"
+  apt: name=ringfpingd state=latest
+  notify: restart ringfpingd
+

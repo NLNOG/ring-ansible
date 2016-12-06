@@ -57,8 +57,8 @@
   when: inventory_hostname|match("^{{ item.item }}\d\d\..*") and keyfiles2.results is defined and item.stat.exists == True
   with_items: "{{ keyfiles2.results }}"
 
-- name: "Add owner to admin group"
-  user: name={{ item }} group={{ item }} groups=admin append=yes
+- name: "Add owner to sudo group"
+  user: name={{ item }} group={{ item }} groups=sudo append=yes
   with_items: "{{ ENTRIES|list }}"
   when: ENTRIES[item].state == "present" and item == OWNER
 

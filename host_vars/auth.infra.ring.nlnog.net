@@ -1,7 +1,3 @@
-LOCAL_GROUPS:
-  ring-users: present
-  ring-admins: present
-
 LOCAL_USERS:
   ringforger:
     state: present
