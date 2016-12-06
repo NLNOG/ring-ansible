@@ -3,8 +3,17 @@
 GROUPS:
   ring-users:
     gid: 5000
+  admin:
+    gid: 99
 
 USERS:
+  ubuntu:
+    state: absent
+  nlnog:
+    state: absent
+  ring:
+    state: absent
+
   intouch:
     state: present
     company: 'InTouch NV'
