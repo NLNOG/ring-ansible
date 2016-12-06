@@ -1,0 +1,24 @@
+- name: "Install nlnog repo key"
+  apt_key:
+    id: 37B0CA14
+    url: "https://ring.nlnog.net/nlnogrepopublic.key"
+    state: present
+
+- name: "Add nlnog apt repository"
+  apt_repository:
+    repo: 'deb http://apt.ring.nlnog.net/deb/ maverick main'
+    state: present
+    filename: 'nlnog_ring_repo'
+
+- name: "Install ansible repo key"
+  apt_key:
+    id: 7BB9C367
+    url: "https://ring.nlnog.net/ansiblerepopublic.key"
+    state: present
+
+- name: "Add ansible repository"
+  apt_repository:
+    repo: 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main'
+    state: present
+    filename: 'ansible_repo'
+

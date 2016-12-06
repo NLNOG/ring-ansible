@@ -2,13 +2,14 @@
   become: true
   become_user: root
   roles:
-    - { role: ansible, tags: ansible }
     - { role: etcfiles, tags: etcfiles }
-    - { role: fail2ban, tags: fail2ban }
+    - { role: apt, tags: apt }
+    - { role: ansible, tags: ansible }
     - { role: software, tags: software }
     - { role: ntp, tags: ntp }
     - { role: motd, tags: motd }
     - { role: dhcp, tags: dhcp }
+    - { role: fail2ban, tags: fail2ban }
     - { role: userscripts, tags: userscripts }
     - { role: adminscripts, tags: adminscripts }
     - { role: users, class: ring-admins, tags: ring-admins }

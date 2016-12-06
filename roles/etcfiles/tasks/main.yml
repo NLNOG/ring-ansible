@@ -1,2 +1,11 @@
 - name: "Generate /etc/hosts"
   template: src=hosts.j2 dest=/etc/hosts
+
+- name: "Add upstart-job"
+  copy:
+    src=upstart-job
+    dest=/lib/init/upstart-job
+    owner=root
+    group=root
+    mode=0755
+
