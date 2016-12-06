@@ -1,0 +1,2 @@
+- name: munin-node reload service
+  service: name=munin-node state=reloaded

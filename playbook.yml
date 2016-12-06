@@ -28,7 +28,7 @@
     - { role: scamper, tags: scamper }
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
-
+    - { role: munin-node, tags: munin-node }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
