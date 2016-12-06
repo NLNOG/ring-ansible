@@ -7,6 +7,11 @@
   hostname:
     name: "{{ ansible_nodename }}"
 
+- name: "Add /etc/rc.local"
+  template:
+    src: rc.local.j2
+    dest: /etc/rc.local
+
 - name: "Generate /etc/hosts"
   template: src=hosts.j2 dest=/etc/hosts
 
