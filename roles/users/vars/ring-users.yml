@@ -3263,3 +3263,11 @@ USERS:
     groups:
       - ring-users
 
+  mnetworks:
+    state: present
+    company: 'M-Networks Sp. z o.o.'
+    email: 'noc@m-networks.pl'
+    uid: 5429
+    groups:
+      - ring-users
+
