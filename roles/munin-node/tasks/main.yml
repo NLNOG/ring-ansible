@@ -1,6 +1,6 @@
 
 - block:
-  - name: Install extra packages
+  - name: Install packages
     package:
       name: "{{ item }}"
       state: latest

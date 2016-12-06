@@ -1,0 +1,48 @@
+
+- block:
+  - name: Install packages
+    package:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+      - munin
+
+  - name: Create config files
+    template:
+      src: "{{ item }}"
+      dest: /etc/munin/
+      owner: root
+      group: root
+      mode: 0644
+#    notify: 
+    with_items:
+      - munin-master.conf
+      - apache.conf
+
+  - name: set apache config symlink
+    file:
+      src: /etc/munin/apache.conf
+      dest: /etc/apache2/conf.d/munin.conf
+      state: link
+      force: yes
+
+  - name: chown cgi-tmp
+    file:
+      path: /var/lib/munin/cgi-tmp
+      state: directory
+      owner: www-data
+      group: www-data
+      recurse: yes
+
+  - name: enable services
+    service:
+      name: "{{ item }}"
+      enabled: yes
+      state: started
+    with_items:
+      - apache2
+#      - munin
+
+  tags:
+    - munin-master
+    - munin

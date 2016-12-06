@@ -30,6 +30,12 @@
     - { role: ring_sqa, tags: ring_sqa }
     - { role: munin-node, tags: munin-node }
 
+- hosts: compute01.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: munin-master, tags: munin-master }
+
 - hosts: lg01.infra.ring.nlnog.net
   become: true
   become_user: root
