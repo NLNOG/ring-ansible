@@ -26,7 +26,7 @@
     with_items: "{{ LOCAL_GROUPS|default([])|list }}"
 
   - name: "Add local users"
-    include: user_tasks.yml ENTRIES={{ LOCAL_USERS }}
+    include: user_tasks.yml ENTRIES={{ LOCAL_USERS|default([]) }}
     when: LOCAL_USERS is defined
   when: class == "local"
 
