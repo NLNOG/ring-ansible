@@ -8,6 +8,7 @@
     - { role: software, tags: software }
     - { role: ntp, tags: ntp }
     - { role: motd, tags: motd }
+    - { role: munin-node, tags: munin-node }
     - { role: dhcp, tags: dhcp }
     - { role: userscripts, tags: userscripts }
     - { role: adminscripts, tags: adminscripts }
@@ -28,7 +29,6 @@
     - { role: scamper, tags: scamper }
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
-    - { role: munin-node, tags: munin-node }
 
 - hosts: compute01.infra.ring.nlnog.net
   become: true
