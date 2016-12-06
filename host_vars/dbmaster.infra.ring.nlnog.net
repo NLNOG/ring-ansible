@@ -1,3 +1,5 @@
+dbmaster: true
+
 LOCAL_USERS:
   ringforger:
     state: present
