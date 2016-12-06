@@ -1,0 +1,2 @@
+# run ansible-pull
+{{ 60|determrand(ansible_nodename) }} */2 * * * ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git -i nodes -l {{ ansible_nodename }} -c local playbook.yml >/dev/null 2>/dev/null
