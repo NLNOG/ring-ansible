@@ -1,0 +1,24 @@
+
+- name: install postfix packages
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - "{{ postfix_packages }}"
+
+- name: create postfix config
+  template:
+    src: "{{ item }}"
+    dest: /etc/postfix/
+  notify: postfix reload service
+  with_items:
+    - main.cf
+    - master.cf
+    - smtp_reply_filter
+
+- name: enable postfix service
+  service:
+    name: postfix
+    enabled: yes
+    state: started
+

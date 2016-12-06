@@ -1,0 +1,5 @@
+postfix_smtp_listen: 127.0.0.1
+postfix_smtp_address_preference: ipv4
+postfix_packages:
+  - postfix
+  - postfix-pcre

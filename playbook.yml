@@ -27,6 +27,7 @@
   become_user: root
   roles:
     - { role: nginx, tags: nginx }
+    - { role: postfix, tags: postfix }
     - { role: scamper, tags: scamper }
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
