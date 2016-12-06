@@ -1,6 +1,9 @@
 GROUPS:
-  ring-admins: present
-  ring-users: present
+  ring-admins:
+    gid: 6000
+    sudo: true
+  ring-users:
+    gid: 5000
 
 USERS:
   job:

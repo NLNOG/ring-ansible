@@ -3,8 +3,19 @@
     include_vars: "{{ class }}.yml"
 
   - name: "Add groups for class {{ class }}"
-    group: name={{ item }} state={{ GROUPS[item] }}
-    with_items: "{{ GROUPS|list }}"
+    group:
+      name: "{{ item.key }}"
+      state: "{{ item.value.state | default('present') }}"
+      gid: "{{ item.value.gid }}"
+    with_dict: "{{ GROUPS }}"
+
+  - name: "Set up sudo access"
+    lineinfile:
+      dest: /etc/sudoers
+      regexp: '^%{{ item.key }}'
+      line: '%{{ item.key }} ALL=(ALL) NOPASSWD: ALL'
+      state: "{% if item.value.sudo | default(False) | bool() %}present{% else %}absent{% endif %}"
+    with_dict: "{{ GROUPS }}"
 
   - include: user_tasks.yml ENTRIES={{ USERS }}
   when: class != "local" 
