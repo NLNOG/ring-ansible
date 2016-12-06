@@ -3,6 +3,7 @@
   become_user: root
   roles:
     - { role: etcfiles, tags: etcfiles }
+    - { role: lang, tags: lang }
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible }
     - { role: software, tags: software }
