@@ -3,6 +3,8 @@
 GROUPS:
   ring-users:
     gid: 5000
+  admin:
+    gid: 99
 
 USERS:
   intouch:
