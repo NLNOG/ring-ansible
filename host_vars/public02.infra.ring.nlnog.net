@@ -12,3 +12,4 @@ LOCAL_USERS:
       - apt
 
 postfix_smtp_listen: all
+postfix_home_mailbox: Maildir/
