@@ -1,0 +1,21 @@
+- name: "Install locales"
+  apt: name=locales state=latest
+
+- name: "Add default locale"
+  copy:
+    src=default_locale
+    dest=/etc/default_locale
+    owner=root
+    group=root
+    mode=0644
+  notify: update-locale
+
+- name: "Add supported locales"
+  copy:
+    src=supported
+    dest=/var/lib/locales/supported.d/local
+    owner=root
+    group=root
+    mode=0644
+  notify: update-locale
+

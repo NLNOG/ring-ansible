@@ -28,7 +28,10 @@
 - name: Ensure Ansible cronjob exists
   template:
     src: cron.d/ansible.j2
-    dest: /etc/cron.d/ansible.j2
+    dest: /etc/cron.d/ansible
+
+- name: "Delete ansible.j2 (temp)"
+  file: path=/etc/cron.d/ansible.j2 state=absent
 
 - name: Remove any old ansible crontab entries
   lineinfile:

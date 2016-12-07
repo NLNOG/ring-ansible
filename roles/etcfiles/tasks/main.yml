@@ -63,6 +63,7 @@
     src: /usr/share/zoneinfo/UTC
     dest: /etc/localtime
     state: link
+    force: true
 
 - name: "Update timezone file"
   copy:

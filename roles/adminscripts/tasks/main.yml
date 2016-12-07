@@ -30,8 +30,8 @@
     mode=0755
 
 - include: dbmaster.yml
-  when: dbmaster == "true"
+  when: dbmaster == true
 
 - include: pdnsmaster.yml
-  when: pdnsmaster == "true"
+  when: pdnsmaster == true
 

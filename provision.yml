@@ -1,0 +1,49 @@
+- hosts: all
+  tasks:
+    - name: Check if /etc/ansible/ring exists
+      stat:
+        path: /etc/ansible/ring
+      register: etc_ansible_ring
+    - name: Ensure an existing host is not provisioned
+      fail:
+        msg: This host is already provisioned!
+      when: etc_ansible_ring.stat.exists
+
+- hosts: ringnode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+    - name: Add the vault password
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ ringnode_vault_pw }}"
+
+- hosts: infranode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+    - name: Add the vault password
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ infranode_vault_pw }}"
+
+- hosts: all
+  become: true
+  become_user: root
+  roles:
+    - { role: etcfiles, tags: etcfiles }
+    - { role: apt, tags: apt }
+    - { role: ansible, tags: ansible }
+    - { role: users, class: ring-admins, tags: ring-admins }
+  tasks:
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+    - name: Reboot
+      command: /sbin/reboot

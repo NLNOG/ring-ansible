@@ -3,8 +3,17 @@
 GROUPS:
   ring-users:
     gid: 5000
+  admin:
+    gid: 99
 
 USERS:
+  ubuntu:
+    state: absent
+  nlnog:
+    state: absent
+  ring:
+    state: absent
+
   intouch:
     state: present
     company: 'InTouch NV'
@@ -3251,6 +3260,14 @@ USERS:
     company: 'Kamp Netzwerkdienste GmbH'
     email: 'noc@kamp.de'
     uid: 5428
+    groups:
+      - ring-users
+
+  mnetworks:
+    state: present
+    company: 'M-Networks Sp. z o.o.'
+    email: 'noc@m-networks.pl'
+    uid: 5429
     groups:
       - ring-users
 

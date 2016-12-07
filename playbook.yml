@@ -1,8 +1,17 @@
+- hosts: ringnode
+  tasks:
+    include_vars: "vault/ringnode.yml"
+
+- hosts: infranode
+  tasks:
+    include_vars: "vault/infranode.yml"
+
 - hosts: all
   become: true
   become_user: root
   roles:
     - { role: etcfiles, tags: etcfiles }
+    - { role: lang, tags: lang }
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible }
     - { role: software, tags: software }
