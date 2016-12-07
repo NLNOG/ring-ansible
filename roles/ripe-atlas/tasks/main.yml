@@ -7,15 +7,32 @@
     - python-virtualenv
     - python-pip
 
-- name: "Install pip prequisites for ripe-atlas-tools"
-  pip: name={{ item }}
+- name: "Install ripe-atlas-tools"
+  pip:
+    name: "{{ item }}"
+    state: present
+    virtualenv: "{{ ripe_atlas_venv_dir }}"
+    virtualenv_python: python2.7
   with_items:
     - IPy
     - pyOpenSSL
     - ndg-httpsclient
     - pyasn1
+    - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
 
-- name: "Install ripe-atlas-tools from git"
-  pip:
-    name='git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
-
+- name: "create symlinks for ripe-atlas-tools"
+  file:
+    state: link
+    force: true
+    src: "{{ ripe_atlas_venv_dir }}/bin/{{ item }}"
+    path: "/usr/local/bin/{{ item }}"
+  with_items:
+    - adig
+    - ahttp
+    - antp
+    - aping
+    - asslcert
+    - atraceroute
+    - ndg_httpclient
+    - ripe-atlas
+    - wsdump.py
