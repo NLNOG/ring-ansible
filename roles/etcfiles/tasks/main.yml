@@ -1,3 +1,11 @@
+- name: Ensure /etc/ring exists
+  file:
+    name: /etc/ring
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+
 - name: "Ensure the hostname is set in /etc/hostname"
   copy:
     dest: /etc/hostname
@@ -89,3 +97,13 @@
   notify: running newaliases
   with_dict: "{{ etc_aliases }}"
 
+- name: Add cronjob to update /etc/ring/ring-nodes.txt
+  template:
+    src: cron.d/list_ring_nodes.j2
+    dest: /etc/cron.d/list_ring_nodes
+
+- name: Remove old cronjob for list_ring_nodes (temp)
+  lineinfile:
+    regexp: "list_of_nodes|/etc/ring/node-list.txt"
+    state: absent
+    dest: /var/spool/cron/crontabs/root
