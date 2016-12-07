@@ -10,3 +10,5 @@ LOCAL_USERS:
     shell: /bin/bash
     groups:
       - apt
+
+postfix_smtp_listen: all

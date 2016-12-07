@@ -1,0 +1,106 @@
+#!/usr/bin/perl -w
+#
+# ring-aptsummary: Summarize unattended upgrade results
+#
+# Author: Martin Pels <martin@rodecker.nl>
+#
+
+use warnings;
+use strict;
+
+my $maildir = '/home/apt/Maildir/new';
+
+our $sendmail = 0;
+our %upgrade_result;
+our %mail_log;
+
+# Find files
+my @processed;
+opendir(DIR, $maildir) || die("Could not read directory $maildir");
+foreach my $file (readdir(DIR)) {
+    next if ($file =~ m/^\.+$/);
+    my $filename = "$maildir/$file";
+    process_file($filename);
+    push @processed,$filename;
+}
+closedir(DIR);
+
+# Send out results if needed
+if ($sendmail) {
+    send_mail();
+}
+
+# Delete processed files
+foreach my $f (@processed) {
+    unlink($f);
+}
+
+sub process_file {
+    my $filename = shift;
+
+    open(FILE,$filename) || warn("Could not open file $filename");
+    my @lines = <FILE>; 
+    close(FILE);
+
+    my $host;
+    foreach my $line (@lines) {
+
+        if ($line =~ m/^Subject:\s+(\[reboot required\])?\s*unattended-upgrades result for '(.+)'/) {
+            $host   = $2;
+        }
+        if ($line =~ m/^Unattended upgrade returned: (.+)/) {
+            return unless ($host);
+            $upgrade_result{$host} = $1;
+            if ($upgrade_result{$host}  ne 'True') {
+                $sendmail = 1;
+                $mail_log{$host} = \@lines;
+            }
+        }
+        if ($line =~ m/^Warning: A reboot is required/) {
+            return unless ($host);
+            if ($upgrade_result{$host} eq 'True') {
+                $upgrade_result{$host} = 'Reboot';
+            }
+        }
+    }
+}
+
+sub send_mail {
+    my $body = "Summary of unattended upgrades\n";
+    $body   .= "------------------------------\n\n";
+
+    $body   .= "Failed:\n";
+    foreach my $host (sort keys %upgrade_result) {
+        if ($upgrade_result{$host} eq 'False') {
+            $body .= "\t$host\n";
+        }
+    }
+    $body   .= "Succeeded:\n";
+    foreach my $host (sort keys %upgrade_result) {
+        if ($upgrade_result{$host} eq 'True') {
+            $body .= "\t$host\n";
+        } elsif ($upgrade_result{$host} eq 'Reboot') {
+            $body .= "\t$host (R)\n";
+        } elsif ($upgrade_result{$host} ne 'False') {
+            $body .= "\t$host (U)\n";
+        }
+    }
+    $body   .= "\n\n";
+    $body   .= "Details\n";
+    $body   .= "-------\n\n";
+
+    foreach my $host (sort keys %mail_log) {
+        $body .= "[$host]\n\n";
+        my @log = @{$mail_log{$host}};
+        foreach my $logline (@log) {
+            $body .= $logline;
+        }
+    }
+
+    open (MAIL, "|/usr/sbin/sendmail -t") || die "Unable to send mail";
+    print MAIL "From: ring-admins\@nlnog.net\n";
+    print MAIL "To: ring-admins\@nlnog.net\n";
+    print MAIL "Subject: Unattended upgrade failure report\n\n";
+    print MAIL "$body";
+    close(MAIL);
+}
