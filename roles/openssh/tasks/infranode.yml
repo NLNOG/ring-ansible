@@ -1,0 +1,8 @@
+- name: "Install sshd_config"
+  copy:
+    src=sshd_config.infranode
+    dest=/etc/ssh/sshd_config
+    owner=root
+    group=root
+    mode=0644
+  notify: restart openssh
