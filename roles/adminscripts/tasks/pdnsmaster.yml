@@ -6,3 +6,13 @@
     group=root
     mode=0755
 
+- name: "Add cronjob for update-sshfp"
+  template:
+    src: "cron.d/update-sshfp.j2"
+    dest: /etc/cron.d/update-sshfp
+
+- name: "Add cronjob for regenerate-txt"
+  template:
+    src: "cron.d/regenerate-txt.j2"
+    dest: /etc/cron.d/regenerate-txt
+

@@ -6,3 +6,13 @@
     group=root
     mode=0755
 
+- name: "Add cronjob for node_down_reminders"
+  template:
+    src: "cron.d/node_down_reminders.j2"
+    dest: /etc/cron.d/node_down_reminders
+
+- name: "Add cronjob for node_down_deactivation"
+  template:
+    src: "cron.d/node_down_deactivation.j2"
+    dest: /etc/cron.d/node_down_deactivation
+
