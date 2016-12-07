@@ -73,3 +73,11 @@
     group=root
     mode=0644
 
+- name: "Update /opt/root-anchor"
+  copy:
+    src=root-anchor
+    dest=/opt/root-anchor
+    owner=root
+    group=root
+    mode=0644
+
