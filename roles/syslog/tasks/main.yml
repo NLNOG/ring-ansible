@@ -44,3 +44,34 @@
     name: syslog-ng
     enabled: yes
     state: started
+
+- name: set syslog file permissions
+  file:
+    name: "{{ item }}"
+    owner: root
+    group: adm
+  with_items:
+    - /var/log/syslog
+    - /var/log/messages
+    - /var/log/user.log
+    - /var/log/secure
+    - /var/log/mail.log
+    - /var/log/mail.err
+    - /var/log/mail.info
+    - /var/log/kern.log
+    - /var/log/error
+    - /var/log/dmesg
+    - /var/log/debug.log
+    - /var/log/daemon.log
+    - /var/log/cron
+    - /var/log/auth.log
+
+- name: install if-up.d script on ringnodes
+  copy:
+    src=if-up.d/syslog-ng
+    dest=/etc/network/if-up.d/syslog-ng
+    owner=root
+    group=root
+    mode=0755
+  when: "'ringnode' in group_names"
+

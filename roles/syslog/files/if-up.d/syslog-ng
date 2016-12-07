@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+# Workaround so syslog-ng does not source packets from ::1
+if [ "$ADDRFAM" = "inet6" ] && [ "$PHASE" = "post-up" ]; then
+	sleep 5 && /etc/init.d/syslog-ng restart
+fi
+
