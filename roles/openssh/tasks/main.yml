@@ -10,8 +10,8 @@
     mode=0644
 
 - include: ringnode.yml
-  when: 'ringnode' in group_names
+  when: "'ringnode' in group_names"
 
 - include: infranode.yml
-  when: 'infranode' in group_names
+  when: "'infranode' in group_names"
 

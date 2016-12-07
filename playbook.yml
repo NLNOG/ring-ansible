@@ -30,6 +30,7 @@
     - { role: adminscripts, tags: adminscripts }
     - { role: users, class: ring-admins, tags: ring-admins }
     - { role: users, class: local, tags: local-users }
+    - { role: openssh, tags: openssh }
 
 - hosts: ringnode:auth.infra.ring.nlnog.net
   become: true
