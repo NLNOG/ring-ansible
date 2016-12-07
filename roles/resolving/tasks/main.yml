@@ -1,0 +1,32 @@
+---
+- name: Ensure other nameservers are not installed
+  apt:
+    name: "{{ item }}"
+    state: absent
+    purge: true
+  with_items:
+    - bind9
+    - pdns-recursor
+
+- name: Install unbound
+  apt:
+    name: unbound
+    state: installed
+
+- name: Configure unbound
+  template:
+    src: "unbound.conf.j2"
+    dest: /etc/unbound/unbound.conf
+  notify: reload unbound
+
+- name: Start and enable unbound
+  service:
+    name: unbound
+    state: started
+    enabled: true
+    pattern: "unbound"
+
+- name: Add /etc/resolv.conf
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf
