@@ -1,4 +1,4 @@
-- name: "Install sshd_config"
+- name: "Install infranode sshd_config"
   copy:
     src=sshd_config.infranode
     dest=/etc/ssh/sshd_config

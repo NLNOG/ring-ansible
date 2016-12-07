@@ -1,4 +1,4 @@
-- name: "Install sshd_config"
+- name: "Install ringnode sshd_config"
   copy:
     src=sshd_config.ringnode
     dest=/etc/ssh/sshd_config
