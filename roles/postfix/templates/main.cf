@@ -1,0 +1,8 @@
+# {{ ansible_managed }}
+smtp_address_preference = {{ postfix_smtp_address_preference }}
+myorigin = {{ inventory_hostname }}
+alias_maps = hash:/etc/aliases
+smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter
+{% if postfix_home_mailbox | d() %}
+home_mailbox = {{ postfix_home_mailbox }}
+{% endif %}

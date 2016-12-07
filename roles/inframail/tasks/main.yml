@@ -1,0 +1,26 @@
+- name: add aptsummary script
+  template:
+    src: "{{ item }}"
+    dest: /usr/local/bin/
+    owner: root
+    group: root
+    mode: 0755
+  with_items:
+    - ring-aptsummary
+
+- name: create /etc/cron.d/ring-aptsummary
+  template:
+    src: cron.d/ring-aptsummary
+    dest: /etc/cron.d/
+    owner: root
+    group: root
+    mode: 0644
+
+- name: clean up old cron entries
+  lineinfile:
+    dest: "{{ item }}"
+    regexp: "(ring-aptsummary)"
+    state: absent
+  with_items:
+    - /var/spool/cron/crontabs/apt
+    - /var/spool/cron/crontabs/root

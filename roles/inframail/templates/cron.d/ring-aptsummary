@@ -1,0 +1,1 @@
+01 10 * * * apt /usr/local/bin/ring-aptsummary
