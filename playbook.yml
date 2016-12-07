@@ -26,6 +26,7 @@
     - { role: munin-node, tags: munin-node }
     - { role: dhcp, tags: dhcp }
     - { role: fail2ban, tags: fail2ban }
+    - { role: postfix, tags: postfix }
 #    - { role: ringfpingd, tags: ringfpingd }
     - { role: userscripts, tags: userscripts }
     - { role: adminscripts, tags: adminscripts }
@@ -65,4 +66,4 @@
   become_user: root
   roles:
     - { role: haproxy, profile: github, tags: haproxy }
-
+    - { role: inframail, tags: inframail }
