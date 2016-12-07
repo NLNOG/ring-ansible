@@ -1743,7 +1743,7 @@ USERS:
       - ring-users
 
   finecom:
-    state: present
+    state: absent
     company: 'Finecom Telecommunications AG'
     email: 'engineering@finecom.ch'
     uid: 5238
