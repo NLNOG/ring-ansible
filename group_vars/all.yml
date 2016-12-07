@@ -3,3 +3,6 @@ etc_aliases:
   postmaster: root
   root: ring-admins@ring.nlnog.net
 
+syslog_servers:
+  - master01.infra.ring.nlnog.net
+
