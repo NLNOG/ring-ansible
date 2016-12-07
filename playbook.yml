@@ -1,10 +1,14 @@
 - hosts: ringnode
   tasks:
     - include_vars: "vault/ringnode.yml"
+  tags:
+    - always
 
 - hosts: infranode
   tasks:
     - include_vars: "vault/infranode.yml"
+  tags:
+    - always
 
 - hosts: all
   become: true
@@ -20,6 +24,7 @@
     - { role: munin-node, tags: munin-node }
     - { role: dhcp, tags: dhcp }
     - { role: fail2ban, tags: fail2ban }
+    - { role: ringfpingd, tags: ringfpingd }
     - { role: userscripts, tags: userscripts }
     - { role: adminscripts, tags: adminscripts }
     - { role: users, class: ring-admins, tags: ring-admins }
