@@ -1,0 +1,46 @@
+
+- name: install packages
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - syslog-ng
+
+- name: create directories
+  file:
+    name: "{{ item }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  with_items:
+    - /etc/syslog-ng
+
+- name: create config files
+  template:
+    src: "{{ item }}"
+    dest: "/{{ item }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: syslog reload service
+  with_items:
+    - etc/default/syslog-ng
+    - etc/syslog-ng/syslog-ng.conf
+    - etc/logrotate.d/syslog-ng
+
+- name: create scripts
+  template:
+    src: "{{ item }}"
+    dest: "/{{ item }}"
+    owner: root
+    group: root
+    mode: 0755
+  with_items:
+    - etc/init.d/syslog-ng
+
+- name: enable service
+  service:
+    name: syslog-ng
+    enabled: yes
+    state: started
