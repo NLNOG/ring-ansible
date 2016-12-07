@@ -1,2 +1,4 @@
 ---
 ansible_pin_version: 2.1.1.0-1ppa~precise
+ansible_pip_version: 2.1.1.0
+ansible_venv_dir: /usr/share/ansible-venv
