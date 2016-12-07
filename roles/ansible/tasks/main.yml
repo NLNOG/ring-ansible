@@ -1,5 +1,7 @@
 ---
 
+#### Ansible from pkgs
+
 - name: Apt-pin ansible
   template:
     src: ansible.pref.j2
@@ -24,6 +26,47 @@
 
 - name: "Install callback module"
   template: src=ring_callback.py.j2 dest=/usr/share/ansible/plugins/callback/ring.py
+
+#### END Ansible from pkgs
+
+#### Ansible in a venv
+
+- name: Install Ansible build-deps
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - 'libffi-dev'
+
+- name: Ensure Ansible is installed
+  pip:
+    name: "ansible"
+    version: "{{ ansible_pip_version }}"
+    state: present
+    virtualenv: "{{ ansible_venv_dir }}"
+    virtualenv_python: python2.7
+
+- name: Install Ansible deps
+  pip:
+    name: "{{ item }}"
+    state: present
+    virtualenv: "{{ ansible_venv_dir }}"
+    virtualenv_python: python2.7
+  with_items:
+    - 'requests'
+
+- name: "Create callback plugin dir"
+  file: path={{ item }} state=directory
+  with_items:
+    - "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins"
+    - "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins/callback"
+
+- name: "Install callback module"
+  template:
+    src: ring_callback.py.j2
+    dest: "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins/callback/ring.py"
+
+#### END Ansible in a venv
 
 - name: Ensure Ansible cronjob exists
   template:
