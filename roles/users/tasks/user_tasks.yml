@@ -9,6 +9,7 @@
     groups={{ ENTRIES[item].groups|join( "," ) }}
     append=yes
   with_items: "{{ ENTRIES|list }}"
+  when: ENTRIES[item].state == "present"
 
 - name: "Add .ssh directories"
   file:
