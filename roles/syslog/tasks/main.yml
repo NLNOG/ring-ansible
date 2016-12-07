@@ -45,11 +45,9 @@
     enabled: yes
     state: started
 
-- name: set syslog file permissions
-  file:
-    name: "{{ item }}"
-    owner: root
-    group: adm
+- name: check logfile existence
+  stat: path={{ item }}
+  register: logfile
   with_items:
     - /var/log/syslog
     - /var/log/messages
@@ -65,6 +63,14 @@
     - /var/log/daemon.log
     - /var/log/cron
     - /var/log/auth.log
+
+- name: set logfile permissions
+  file:
+    name: "{{ item.item }}"
+    owner: root
+    group: adm
+  when: item.stat.exists == True
+  with_items: "{{ logfile.results }}"
 
 - name: install if-up.d script on ringnodes
   copy:
