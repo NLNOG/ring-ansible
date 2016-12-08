@@ -1219,7 +1219,7 @@ class commands(object):
             sys.exit('machine %s not found' % hostname)
         self.dbdelete('sshhostkeys', machine=machid)
         print 'sshkeys for machine %s deleted' % (hostname)
-        self.cmd_add_sshhostkeys(hostname, filename)
+        self.cmd_add_hostkeys(hostname, filename)
 
     def cmd_delete_hostkey(self, id):
         """delete an ssh hostkey"""
