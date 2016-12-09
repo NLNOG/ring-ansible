@@ -93,7 +93,7 @@
     - /etc/aliases
 
 - name: create /etc/aliases
-  file: path=/etc/nologin
+  file: path=/etc/aliases
 		owner=root
 		group=root
 		mode=0644
