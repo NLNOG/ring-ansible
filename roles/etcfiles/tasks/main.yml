@@ -86,12 +86,19 @@
     path=/opt/root-anchor
     state=absent
 
+- name: "check /etc/aliases existance"
+  stat: path={{ item }}
+  register: etc_aliases
+  with_items:
+    - /etc/aliases
+
 - name: "Update /etc/aliases"
   lineinfile:
     dest: /etc/aliases
     regexp: '^{{ item.key }}\s*:'
     line: '{{ item.key }}: {{ item.value }}'
   notify: running newaliases
+  when: etc_aliases.stat.exists == True
   with_dict: "{{ etc_aliases }}"
 
 - name: Add cronjob to update /etc/ring/ring-nodes.txt
