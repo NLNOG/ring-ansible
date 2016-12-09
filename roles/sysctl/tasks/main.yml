@@ -46,16 +46,16 @@
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
-- name: "Disable autoconf (eth0)"
+- name: "Disable autoconf (primary)"
   sysctl:
-    name: net.ipv6.conf.eth0.autoconf
+    name: net.ipv6.conf.{{ ansible_default_ipv6.interface }}.autoconf
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
-- name: "Disable autoconf (eth1)"
+- name: "remove old autoconf line (eth1)"
   sysctl:
     name: net.ipv6.conf.eth1.autoconf
-    value: 0
+    state: absent
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
 - name: "Disable autoconf (all)"
