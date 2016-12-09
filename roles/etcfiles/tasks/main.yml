@@ -86,11 +86,19 @@
     path=/opt/root-anchor
     state=absent
 
-- name: "check /etc/aliases existance"
+- name: "check /etc/aliases existence"
   stat: path={{ item }}
   register: etc_aliases
   with_items:
     - /etc/aliases
+
+- name: create /etc/aliases
+  file: path=/etc/nologin
+		owner=root
+		group=root
+		mode=0644
+		state={{ "file" if etc_aliases.stat.exists else "touch"}}
+  notify: running newaliases
 
 - name: "Update /etc/aliases"
   lineinfile:
