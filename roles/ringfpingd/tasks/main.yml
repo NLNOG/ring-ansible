@@ -11,3 +11,8 @@
   apt: name=ringfpingd state=latest
   notify: restart ringfpingd
 
+- name: "Make sure ringfpingd is running"
+  service:
+    name: ringfpingd
+    state: started
+
