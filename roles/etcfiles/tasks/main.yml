@@ -117,3 +117,12 @@
     regexp: "list_of_nodes|/etc/ring/node-list.txt"
     state: absent
     dest: /var/spool/cron/crontabs/root
+
+- name: "Update /etc/adduser.conf"
+  copy:
+    src=adduser.conf
+    dest=/etc/adduser.conf
+    owner=root
+    group=root
+    mode=0644
+
