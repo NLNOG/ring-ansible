@@ -25,7 +25,6 @@ tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:12::1
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
-hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
 hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
@@ -506,7 +505,6 @@ tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
 
 [hibernia]
-hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
 hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 
