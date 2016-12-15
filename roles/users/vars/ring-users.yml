@@ -1039,7 +1039,7 @@ USERS:
       - ring-users
 
   fremaks:
-    state: present
+    state: absent
     company: 'Fremaks GmbH'
     email: 'noc@fremaks.de'
     uid: 5045
