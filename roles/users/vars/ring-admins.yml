@@ -43,7 +43,7 @@ USERS:
       - ring-admins
       - ring-users
     sshkeys:
-      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEc5iUiV2t1SVE1gI8MxT5y4+jvIWoxYGQG/1nig+hnG peter@marconi.local"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDji9oyRQ0EU3F8UkEtfnrn5R2kv/yBOpDUUirfcgMFvyyffT7yagX4hG6DM15LDFYLsG41Jz7AlHyEOVmmh2/4dY3117yCYwAb99UlGOThJFXhYpzeXNmEK4JH/jqV1CreNu30X2gVD1JqTqn3kK/XkgD66AABBIDHZ3bdbikgj/FlNiS7TPJOpoOfotCDL+E/QA25v21zJJXmp69r3laNr4QYvE4VDK/IjiNVY6fb3lhGQJ6rLla2O9E7v0ooIL5tuYnC13pZK0wDVjBo1MSqQNc+QNG849XssXGo3MrGN7syU6CEiMsXlB0bnuJFNykf4AoDZUah6mLYrnNngmZf peter@marconi.local"
 
   lieter:
     state: present
