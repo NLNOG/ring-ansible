@@ -25,6 +25,7 @@ tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:12::1
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
+hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
 hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
@@ -346,7 +347,6 @@ linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:
 openimp01.ring.nlnog.net OWNER=openimp V4=94.228.79.60 V6=2a00:1068:ffff:402::1024
 fusix01.ring.nlnog.net OWNER=fusix V4=37.139.139.110 V6=2a00:a7c0:1000:1303::1303
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
-gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
@@ -505,6 +505,7 @@ tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
 
 [hibernia]
+hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
 hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 
@@ -1426,7 +1427,6 @@ fusix01.ring.nlnog.net OWNER=fusix V4=37.139.139.110 V6=2a00:a7c0:1000:1303::130
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 
 [gigabit]
-gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
 
 [altibox]
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
