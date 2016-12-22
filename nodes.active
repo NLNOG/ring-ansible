@@ -391,7 +391,6 @@ chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
 clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 midcore01.ring.nlnog.net OWNER=midcore V4=194.0.58.58 V6=2001:67c:3e0:c5::58
-deic01.ring.nlnog.net OWNER=deic V4=130.226.249.126 V6=2001:878:0:e000:82:e2:f9:7e
 netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
 hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
 memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8b3:cf19:9e11
@@ -1564,7 +1563,6 @@ clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 midcore01.ring.nlnog.net OWNER=midcore V4=194.0.58.58 V6=2001:67c:3e0:c5::58
 
 [deic]
-deic01.ring.nlnog.net OWNER=deic V4=130.226.249.126 V6=2001:878:0:e000:82:e2:f9:7e
 
 [netcup]
 netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
