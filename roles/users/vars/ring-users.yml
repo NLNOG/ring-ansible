@@ -5,6 +5,7 @@ GROUPS:
     gid: 5000
   admin:
     gid: 99
+    sudo: true
 
 USERS:
   ubuntu:
@@ -1351,7 +1352,7 @@ USERS:
       - ring-users
 
   kaiaglobal:
-    state: present
+    state: absent
     company: 'Kaia Global Networks Ltd.'
     email: 'supplier.noc@nmc.kaiaglobal.com'
     uid: 5187
