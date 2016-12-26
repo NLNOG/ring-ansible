@@ -132,7 +132,7 @@ The machine you provided is part of the ring now!
 The following information is vital:
 
     - Your company's username is "$username"
-    - The user "$username" has sudo rights on $hostname (please don't break puppet :-)
+    - The user "$username" has sudo rights on $hostname (please don't break ansible :-))
 
 If you want to add additional SSH keys, update the 'ssh-keys' file located on
 'manage.ring.nlnog.net' in your home directory. Please contact a RING Admin if
@@ -542,7 +542,8 @@ class commands(object):
         f.write("  ring-users:\n");
         f.write("    gid: 5000\n");
         f.write("  admin:\n");
-        f.write("    gid: 99\n\n");
+        f.write("    gid: 99\n");
+        f.write("    sudo: true\n\n");
         f.write("USERS:\n")
         f.write("  ubuntu:\n");
         f.write("    state: absent\n");
