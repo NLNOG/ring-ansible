@@ -2,6 +2,7 @@
 
 import getpass
 from string import Template
+from subprocess import check_output
 import MySQLdb as mdb
 import inspect
 import os
@@ -1086,6 +1087,7 @@ class commands(object):
                                   tstamp=tstamp, active=0)
         print "Added machine %s ('%s' at '%s') for user %s" % \
             (machineid, hostname, country, username)
+        self.cmd_scan_hostkeys(hostname)
 
     def cmd_delete_machine(self, hostname):
         """delete a machine"""
@@ -1211,8 +1213,13 @@ class commands(object):
             print "Added key %s for machine %s" % (kid, hostname)
         file.close()
 
-    def cmd_replace_hostkeys(self, hostname, filename=None):
-        """replace ssh hostkeys"""
+    def cmd_delete_hostkey(self, id):
+        """delete an ssh hostkey"""
+        self.dbdelete('sshhostkeys', id=id)
+        print 'key %s deleted' % (id)
+
+    def cmd_delete_hostkeys(self, hostname):
+        """delete ssh hostkeys for a machine"""
         if not (re.match(r'.*%s$' % ZONE, hostname)):
             hostname = hostname + "." + ZONE
         machid = self.hostname2mid(hostname)
@@ -1220,12 +1227,16 @@ class commands(object):
             sys.exit('machine %s not found' % hostname)
         self.dbdelete('sshhostkeys', machine=machid)
         print 'sshkeys for machine %s deleted' % (hostname)
-        self.cmd_add_hostkeys(hostname, filename)
 
-    def cmd_delete_hostkey(self, id):
-        """delete an ssh hostkey"""
-        self.dbdelete('sshhostkeys', id=id)
-        print 'key %s deleted' % (id)
+    def cmd_replace_hostkeys(self, hostname, filename=None):
+        """replace ssh hostkeys"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.cmd_delete_hostkeys(hostname)
+        self.cmd_add_hostkeys(hostname, filename)
 
     def cmd_list_hostkeys(self, hostname):
         """list ssh hostkeys"""
@@ -1237,6 +1248,58 @@ class commands(object):
         result = self.dbselect('sshhostkeys', machine=machid)
         for row in result:
             print row
+
+    def cmd_scan_hostkeys(self, hostname=None):
+        """scan one or all hosts for ssh hostkeys"""
+        if hostname:
+            if not (re.match(r'.*%s$' % ZONE, hostname)):
+                hostname = hostname + "." + ZONE
+            machid = self.hostname2mid(hostname)
+            if not machid:
+                sys.exit('machine %s not found' % hostname)
+        else:
+            machines = self.dbselect('machines', active=1)
+            for m in machines:
+                self.cmd_scan_hostkeys(m['hostname'])
+
+        FNULL = open(os.devnull, 'w')
+        result = check_output(["ssh-keyscan", "-t","ecdsa,rsa,dsa",hostname],
+                               stderr=FNULL)
+        if result:
+            oldkeys = list(self.dbselect('sshhostkeys', machine=machid))
+            newkeys = []
+            for line in result.splitlines():
+                key = dict()
+                if (re.search(r'^#', line)):
+                    continue
+                vals = line.split()
+                if len(vals) < 3:
+                    continue
+                key['keytype'] = vals[1]
+                key['sshkey'] = vals[2]
+                key['machine'] = machid
+                newkeys.append(key)
+
+            seen = []
+            for old in oldkeys:
+                for new in newkeys:
+                    if old['keytype'] == new['keytype']:
+                        seen.append(old['keytype'])
+                        if old['sshkey'] != new['sshkey']:
+                            self.dbupdate('sshhostkeys',
+                                          old['id'],
+                                          **{'sshkey': new['sshkey']})
+                            print "Replaced key %s for %s" % (old['id'],
+                                                              hostname)
+                if not old['keytype'] in seen:
+                    self.dbdelete('sshhostkeys', id=old['id'])
+                    print "Deleted key %s for %s" % (old['id'],hostname)
+            for new in newkeys:
+                if not new['keytype'] in seen:
+                    kid = self.dbinsertlist('sshhostkeys',
+                            ['machine','keytype','sshkey'],
+                            [machid,new['keytype'],new['sshkey']])
+                    print "Added key %s for machine %s" % (kid, hostname)
 
     def cmd_add_premark(self, username, remark):
         """add a participant remark"""

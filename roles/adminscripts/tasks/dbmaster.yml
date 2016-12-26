@@ -16,3 +16,8 @@
     src: "cron.d/node_down_deactivation.j2"
     dest: /etc/cron.d/node_down_deactivation
 
+- name: "Add cronjob for ssh hostkey scanning"
+  template:
+    src: "cron.d/ssh_keyscan.j2"
+    dest: /etc/cron.d/ssh_keyscan
+
