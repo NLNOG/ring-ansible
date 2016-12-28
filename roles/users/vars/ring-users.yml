@@ -1648,7 +1648,7 @@ USERS:
       - ring-users
 
   infostrada:
-    state: present
+    state: absent
     company: 'Infostrada'
     email: 'noc@infostrada.com'
     uid: 5225
