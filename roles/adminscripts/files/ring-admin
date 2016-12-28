@@ -832,6 +832,8 @@ class commands(object):
             machine_delete.append(m['hostname'])
             print "Deleting machine %s" % (m['hostname'])
             self.generate_removemail(m['hostname'],1)
+            self.dbdelete('sshhostkeys', machine=machid)
+            print 'ssh hostkeys for machine %s deleted' % (hostname)
             self.dbdelete('mremarks', machine=m['id'])
             print 'remarks for machine %s deleted' % (m['hostname'])
             self.dbdelete('machines', hostname=m['hostname'])
@@ -1261,6 +1263,7 @@ class commands(object):
             machines = self.dbselect('machines', active=1)
             for m in machines:
                 self.cmd_scan_hostkeys(m['hostname'])
+            return
 
         FNULL = open(os.devnull, 'w')
         result = check_output(["ssh-keyscan", "-t","ecdsa,rsa,dsa",hostname],
@@ -1289,17 +1292,19 @@ class commands(object):
                             self.dbupdate('sshhostkeys',
                                           old['id'],
                                           **{'sshkey': new['sshkey']})
-                            print "Replaced key %s for %s" % (old['id'],
-                                                              hostname)
+                            print "Replaced %s key %s for %s" % (old['keytype'],
+                                                             old['id'],hostname)
                 if not old['keytype'] in seen:
                     self.dbdelete('sshhostkeys', id=old['id'])
-                    print "Deleted key %s for %s" % (old['id'],hostname)
+                    print "Deleted %s key %s for %s" % (old['keytype'],
+                                                        old['id'],hostname)
             for new in newkeys:
                 if not new['keytype'] in seen:
                     kid = self.dbinsertlist('sshhostkeys',
                             ['machine','keytype','sshkey'],
                             [machid,new['keytype'],new['sshkey']])
-                    print "Added key %s for machine %s" % (kid, hostname)
+                    print "Added %s key %s for machine %s" % (new['keytype'],
+                                                              kid, hostname)
 
     def cmd_add_premark(self, username, remark):
         """add a participant remark"""
