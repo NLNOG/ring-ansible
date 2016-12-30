@@ -356,7 +356,6 @@ ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 coreinternet01.ring.nlnog.net OWNER=coreinternet V4=185.86.20.92 V6=2a05:b480:300::2
-teleweb01.ring.nlnog.net OWNER=teleweb V4=185.77.198.16 V6=2a03:1980:d0ff:0:185:77:198:16
 tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=176.10.80.18 V6=2A01:300:666:0::2
 switchco01.ring.nlnog.net OWNER=switchco V4=185.91.9.17 V6=2a05:e580:105:1014::2
@@ -1457,7 +1456,6 @@ sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 coreinternet01.ring.nlnog.net OWNER=coreinternet V4=185.86.20.92 V6=2a05:b480:300::2
 
 [teleweb]
-teleweb01.ring.nlnog.net OWNER=teleweb V4=185.77.198.16 V6=2a03:1980:d0ff:0:185:77:198:16
 
 [tfskok]
 tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
