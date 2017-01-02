@@ -1089,7 +1089,6 @@ class commands(object):
                                   tstamp=tstamp, active=0)
         print "Added machine %s ('%s' at '%s') for user %s" % \
             (machineid, hostname, country, username)
-        self.cmd_scan_hostkeys(hostname)
 
     def cmd_delete_machine(self, hostname):
         """delete a machine"""
@@ -1128,6 +1127,7 @@ class commands(object):
             sys.exit('machine %s not found' % hostname)
         self.activate_machine(machid)
         print 'machine %s marked as active' % (hostname)
+        self.cmd_scan_hostkeys(hostname)
 
     def cmd_deactivate_machine(self, hostname):
         """mark machine as inactive"""
@@ -1266,8 +1266,13 @@ class commands(object):
             return
 
         FNULL = open(os.devnull, 'w')
-        result = check_output(["ssh-keyscan", "-t","ecdsa,rsa,dsa",hostname],
-                               stderr=FNULL)
+        result = ""
+        for ktype in "ecdsa","rsa","dsa":
+                r = check_output(["ssh-keyscan", "-t",ktype,hostname],
+                                 stderr=FNULL)
+                if r:
+                    result = result + r
+        print(result)
         if result:
             oldkeys = list(self.dbselect('sshhostkeys', machine=machid))
             newkeys = []
