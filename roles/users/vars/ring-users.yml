@@ -3280,3 +3280,11 @@ USERS:
     groups:
       - ring-users
 
+  ntppool:
+    state: present
+    company: 'NTP Pool Project'
+    email: 'ask@ntppool.org'
+    uid: 5431
+    groups:
+      - ring-users
+
