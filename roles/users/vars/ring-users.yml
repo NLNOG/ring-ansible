@@ -3272,3 +3272,11 @@ USERS:
     groups:
       - ring-users
 
+  ebox:
+    state: present
+    company: 'EBOX'
+    email: 'noc@ebox.ca'
+    uid: 5430
+    groups:
+      - ring-users
+
