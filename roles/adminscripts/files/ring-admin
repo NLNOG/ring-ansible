@@ -1272,7 +1272,7 @@ class commands(object):
                                  stderr=FNULL)
                 if r:
                     result = result + r
-        print(result)
+
         if result:
             oldkeys = list(self.dbselect('sshhostkeys', machine=machid))
             newkeys = []
