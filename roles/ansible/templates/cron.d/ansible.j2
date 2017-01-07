@@ -1,3 +1,3 @@
 # run ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-{{ 60|determrand(ansible_nodename) }} */2 * * * root {{ ansible_venv_dir }}/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local playbook.yml >/dev/null 2>/dev/null
+{{ 60|determrand(ansible_nodename) }} */2 * * * root /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local playbook.yml >/dev/null 2>/dev/null

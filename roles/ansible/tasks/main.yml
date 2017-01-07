@@ -6,6 +6,11 @@
   template:
     src: ansible.pref.j2
     dest: /etc/apt/preferences.d/ansible.pref
+  when: ansible_distribution_release == "precise"
+
+- name: "Delete apt-pin for ansible"
+  file: path=/etc/apt/preferences.d/ansible.pref state=absent
+  when: ansible_distribution_release != "precise"
 
 - name: Ensure Ansible is installed
   apt:
@@ -37,6 +42,7 @@
     state: present
   with_items:
     - 'libffi-dev'
+  when: ansible_distribution_release == "precise"
 
 - name: Ensure Ansible is installed
   pip:
@@ -45,6 +51,7 @@
     state: present
     virtualenv: "{{ ansible_venv_dir }}"
     virtualenv_python: python2.7
+  when: ansible_distribution_release == "precise"
 
 - name: Install Ansible deps
   pip:
@@ -54,24 +61,34 @@
     virtualenv_python: python2.7
   with_items:
     - 'requests'
+  when: ansible_distribution_release == "precise"
 
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
   with_items:
     - "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins"
     - "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins/callback"
+  when: ansible_distribution_release == "precise"
 
 - name: "Install callback module"
   template:
     src: ring_callback.py.j2
     dest: "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins/callback/ring.py"
+  when: ansible_distribution_release == "precise"
 
 #### END Ansible in a venv
+
+- name: Ensure Ansible cronjob exists (venv)
+  template:
+    src: cron.d/ansible_virtualenv.j2
+    dest: /etc/cron.d/ansible
+  when: ansible_distribution_release == "precise"
 
 - name: Ensure Ansible cronjob exists
   template:
     src: cron.d/ansible.j2
     dest: /etc/cron.d/ansible
+  when: ansible_distribution_release != "precise"
 
 - name: "Delete ansible.j2 (temp)"
   file: path=/etc/cron.d/ansible.j2 state=absent

@@ -41,12 +41,28 @@
     id: 7BB9C367
     url: "https://ring.nlnog.net/ansiblerepopublic.key"
     state: present
+  when: ansible_distribution_release == "precise"
+
+- name: "Remove ansible repo key"
+  apt_key:
+    id: 7BB9C367
+    url: "https://ring.nlnog.net/ansiblerepopublic.key"
+    state: absent
+  when: ansible_distribution_release != "precise"
 
 - name: "Add ansible repository"
   apt_repository:
     repo: 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main'
     state: present
     filename: 'ansible_repo'
+  when: ansible_distribution_release == "precise"
+
+- name: "Remove ansible repository"
+  apt_repository:
+    repo: 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main'
+    state: absent
+    filename: 'ansible_repo'
+  when: ansible_distribution_release != "precise"
 
 - name: "Add apt configuration files"
   copy:
