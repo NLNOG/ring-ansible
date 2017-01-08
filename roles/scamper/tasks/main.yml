@@ -2,7 +2,9 @@
   user: name=scamper comment="Scamper measurements" uid=2001 group="ring-users"
 
 - name: Set up authorized_keys for the scamper user
-  authorized_key: user=scamper key="../keys/scamper.pub" state=present
+  authorized_key: user=scamper key="{{ item }}" state=present
+  with_file:
+    - ../keys/scamper.pub
 
 - name: Install scamper packages
   package: name={{ item }} state=latest
