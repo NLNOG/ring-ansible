@@ -10,6 +10,7 @@
         dest: /etc/apt/apt.conf.d/local
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
+      when: ansible_distribution_release != "xenial"
   tags:
     - prepare
 
@@ -28,30 +29,35 @@
         dest: /etc/apt/apt.conf.d/local
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
+      when: ansible_distribution_release != "xenial"
 
     - name: "Remove automatic update files"
       file: name={{ item }} state=absent
       with_items:
         - /etc/apt/apt.conf.d/50unattended-upgrades
         - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
+      when: ansible_distribution_release != "xenial"
 
     - name: "Add ubuntu trusty repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty'
+      when: ansible_distribution_release == "precise"
 
     - name: "Add ubuntu trusty updates repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty-updates'
+      when: ansible_distribution_release == "precise"
 
     - name: "Add ubuntu trusty security repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty-security'
+      when: ansible_distribution_release == "precise"
 
     - name: "Remove ubuntu precise repository"
       apt_repository:
@@ -77,6 +83,7 @@
 
     - name: "Perform release upgrade (precise -> trusty)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
+      when: ansible_distribution_release == "precise"
   tags:
     - trusty
 
@@ -88,24 +95,28 @@
       apt: name={{ item }} state=absent
       with_items:
         - daemontools-run
+      when: ansible_distribution_release == "trusty"
 
     - name: "Add ubuntu xenial repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_xenial'
+      when: ansible_distribution_release == "trusty"
 
     - name: "Add ubuntu xenial updates repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_xenial-updates'
+      when: ansible_distribution_release == "trusty"
 
     - name: "Add ubuntu xenial security repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_xenial-security'
+      when: ansible_distribution_release == "trusty"
 
     - name: "Remove ubuntu trusty repository"
       apt_repository:
@@ -131,6 +142,7 @@
 
     - name: "Perform release upgrade (trusty -> xenial)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
+      when: ansible_distribution_release == "trusty"
   tags:
     - xenial
 
