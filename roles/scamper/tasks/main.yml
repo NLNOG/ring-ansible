@@ -2,9 +2,7 @@
   user: name=scamper comment="Scamper measurements" uid=2001 group="ring-users"
 
 - name: Set up authorized_keys for the scamper user
-  authorized_key: user=scamper key="{{ item }}" state=present
-  with_file:
-    - ../keys/scamper.pub
+  authorized_key: user=scamper key="../keys/scamper.pub" state=present
 
 - name: Install scamper packages
   package: name={{ item }} state=latest
@@ -19,7 +17,7 @@
   template: src=scamper.conf dest=/etc/init/scamper.conf owner=root group=root mode=0644
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'precise'
 
-- name: Create scamper systemd
+- name: "Create scamper systemd"
   template: src=scamper-sysd.conf dest=/lib/systemd/system/scamper.conf conf owner=root group=root mode=0644
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'xenial'
 
