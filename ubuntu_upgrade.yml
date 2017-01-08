@@ -12,10 +12,10 @@
         content: 'DPkg::options { "--force-confold"; }'
 
     - name: "Disable ansible cron"
-        file:
-          name=/etc/cron.d/ansible
-          state=absent
-        when: ansible_distribution_release != "xenial"
+      file:
+        name=/etc/cron.d/ansible
+        state=absent
+      when: ansible_distribution_release != "xenial"
   tags:
     - prepare
 
