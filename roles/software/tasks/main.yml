@@ -111,7 +111,7 @@
   apt: name={{ item }} state=latest
   with_items:
     - jsonlint
-    - php7-cli
+    - php7.0-cli
   when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
