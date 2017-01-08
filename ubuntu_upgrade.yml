@@ -4,6 +4,14 @@
   roles:
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible }
+  tasks:
+    - name: "Configure temporary dpkg options" 
+      copy:
+        dest: /etc/apt/apt.conf.d/local
+        mode: 0644
+        content: 'DPkg::options { "--force-confold"; }'
+  tags:
+    - prepare
 
 - hosts: all
   become: true
@@ -14,12 +22,6 @@
       with_items:
         - puppet-common
         - puppet
-
-    - name: "Configure temporary dpkg options" 
-      copy:
-        dest: /etc/apt/apt.conf.d/local
-        mode: 0644
-        content: 'DPkg::options { "--force-confold"; }'
 
     - name: "Add ubuntu trusty repository"
       apt_repository:
@@ -63,7 +65,13 @@
 
     - name: "Perform release upgrade (precise -> trusty)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
+  tags:
+    - trusty
 
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
     - name: "Remove daemontools-run"
       apt: name={{ item }} state=absent
       with_items:
@@ -111,11 +119,8 @@
 
     - name: "Perform release upgrade (trusty -> xenial)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
-
-    - name: "Remove temporary dpkg configuration" 
-      file:
-        name: /etc/apt/apt.conf.d/local
-        state: absent
+  tags:
+    - xenial
 
 - hosts: all
   become: true
@@ -123,4 +128,11 @@
   roles:
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible }
+  tasks:
+    - name: "Remove temporary dpkg configuration" 
+      file:
+        name: /etc/apt/apt.conf.d/local
+        state: absent
+  tags:
+    - cleanup
 
