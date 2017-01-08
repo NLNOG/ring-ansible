@@ -10,6 +10,14 @@
         dest: /etc/apt/apt.conf.d/local
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
+    - name: "Disable automatic updates"
+      file:
+        name=/etc/apt/apt.conf.d/50unattended-upgrades
+        state=absent
+    - name: "Disable ansible cron"
+      file:
+        name=/etc/cron.d/ansible
+        state=absent
   tags:
     - prepare
 
@@ -131,8 +139,8 @@
   tasks:
     - name: "Remove temporary dpkg configuration" 
       file:
-        name: /etc/apt/apt.conf.d/local
-        state: absent
+        name=/etc/apt/apt.conf.d/local
+        state=absent
   tags:
     - cleanup
 
