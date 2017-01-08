@@ -10,10 +10,7 @@
         dest: /etc/apt/apt.conf.d/local
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
-    - name: "Disable automatic updates"
-      file:
-        name=/etc/apt/apt.conf.d/50unattended-upgrades
-        state=absent
+
     - name: "Disable ansible cron"
       file:
         name=/etc/cron.d/ansible
@@ -30,12 +27,6 @@
       with_items:
         - puppet-common
         - puppet
-
-    - name: "Configure temporary dpkg options" 
-      copy:
-        dest: /etc/apt/apt.conf.d/local
-        mode: 0644
-        content: 'DPkg::options { "--force-confold"; }'
 
     - name: "Remove automatic update files"
       file: name={{ item }} state=absent
@@ -97,6 +88,12 @@
       with_items:
         - daemontools-run
 
+    - name: "Remove automatic update files"
+      file: name={{ item }} state=absent
+      with_items:
+        - /etc/apt/apt.conf.d/50unattended-upgrades
+        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
+
     - name: "Add ubuntu xenial repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse'
@@ -153,6 +150,11 @@
       file:
         name=/etc/apt/apt.conf.d/local
         state=absent
+
+    - name: "Remove spurious automatic update file"
+      file: name={{ item }} state=absent
+      with_items:
+        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
   tags:
     - cleanup
 
