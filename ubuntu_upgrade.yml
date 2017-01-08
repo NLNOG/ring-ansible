@@ -21,6 +21,12 @@
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
 
+    - name: "Remove automatic update files"
+      file: name={{ item }} state=absent
+      with_items:
+        - /etc/apt/apt.conf.d/50unattended-upgrades
+        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
+
     - name: "Add ubuntu trusty repository"
       apt_repository:
         repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
