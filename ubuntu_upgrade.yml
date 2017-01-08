@@ -12,9 +12,10 @@
         content: 'DPkg::options { "--force-confold"; }'
 
     - name: "Disable ansible cron"
-      file:
-        name=/etc/cron.d/ansible
-        state=absent
+        file:
+          name=/etc/cron.d/ansible
+          state=absent
+        when: ansible_distribution_release != "xenial"
   tags:
     - prepare
 
@@ -87,7 +88,7 @@
       apt: name={{ item }} state=absent
       with_items:
         - daemontools-run
-
+    
     - name: "Remove automatic update files"
       file: name={{ item }} state=absent
       with_items:
@@ -148,8 +149,8 @@
   tasks:
     - name: "Remove temporary dpkg configuration" 
       file:
-        name=/etc/apt/apt.conf.d/local
-        state=absent
+        name: /etc/apt/apt.conf.d/local
+        state: absent
 
     - name: "Remove spurious automatic update file"
       file: name={{ item }} state=absent
