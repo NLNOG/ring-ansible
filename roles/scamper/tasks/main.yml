@@ -22,14 +22,17 @@
 - name: "Create scamper systemd"
   template:
     src: scamper-sysd.conf
-    dest: /lib/systemd/system/scamper.conf
+    dest: /lib/systemd/system/scamper.service
     owner: root
     group: root
     mode: 0644
   when: ansible_distribution_release == 'xenial'
 
-- name: "Delete scamper upstart file"
-  file: name=/etc/init/scamper.conf state=absent
+- name: "Delete old scamper files"
+  file: name="{{ item }}" state=absent
+  with_items:
+    - /etc/init/scamper.conf
+    - /lib/systemd/system/scamper.conf
   when: ansible_distribution_release == 'xenial'
 
 - name: Create /home/scamper/run-traces.sh
