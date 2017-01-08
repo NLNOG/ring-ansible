@@ -36,7 +36,6 @@
     - lft
     - lftp
     - libcache-cache-perl
-    - libnet-ssh2-ruby1.8
     - libsqlite3-dev
     - libxml2-dev
     - lsof
@@ -100,6 +99,7 @@
     - whois
     - swaks
     - ruby-json
+#    - libnet-ssh2-ruby1.8 (unsure if still needed?)
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
