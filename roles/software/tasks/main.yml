@@ -99,7 +99,18 @@
     - whois
     - swaks
     - ruby-json
-#    - libnet-ssh2-ruby1.8 (unsure if still needed?)
+
+- name: "Install various software packages (precise)"
+  apt: name={{ item }} state=latest
+  with_items:
+    - libnet-ssh2-ruby1.8
+  when: ansible_distribution_release == "precise"
+
+- name: "Install various software packages (xenial)"
+  apt: name={{ item }} state=latest
+  with_items:
+    - jsonlint
+  when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
