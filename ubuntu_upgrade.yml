@@ -1,0 +1,126 @@
+- hosts: all
+  become: true
+  become_user: root
+  roles:
+    - { role: apt, tags: apt }
+    - { role: ansible, tags: ansible }
+
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: "Make sure puppet is gone"
+      apt: name={{ item }} state=absent
+      with_items:
+        - puppet-common
+        - puppet
+
+    - name: "Configure temporary dpkg options" 
+      copy:
+        dest: /etc/apt/apt.conf.d/local
+        mode: 0644
+        content: 'DPkg::options { "--force-confold"; }'
+
+    - name: "Add ubuntu trusty repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_trusty'
+
+    - name: "Add ubuntu trusty updates repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_trusty-updates'
+
+    - name: "Add ubuntu trusty security repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_trusty-security'
+
+    - name: "Remove ubuntu precise repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_precise'
+
+    - name: "Remove ubuntu precise updates repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_precise-updates'
+
+    - name: "Remove ubuntu precise security repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_precise-security'
+
+    - name: "apt-get update (trusty repos)"
+      apt:
+        update_cache: yes
+
+    - name: "Perform release upgrade (precise -> trusty)"
+      command: do-release-upgrade -f DistUpgradeViewNonInteractive
+
+    - name: "Remove daemontools-run"
+      apt: name={{ item }} state=absent
+      with_items:
+        - daemontools-run
+
+    - name: "Add ubuntu xenial repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_xenial'
+
+    - name: "Add ubuntu xenial updates repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_xenial-updates'
+
+    - name: "Add ubuntu xenial security repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_xenial-security'
+
+    - name: "Remove ubuntu trusty repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_trusty'
+
+    - name: "Remove ubuntu trusty updates repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_trusty-updates'
+
+    - name: "Remove ubuntu trusty security repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse'
+        state: absent
+        filename: 'ubuntu_archiv_trusty-security'
+
+    - name: "apt-get update (xenial repos)"
+      apt:
+        update_cache: yes
+
+    - name: "Perform release upgrade (trusty -> xenial)"
+      command: do-release-upgrade -f DistUpgradeViewNonInteractive
+
+    - name: "Remove temporary dpkg configuration" 
+      file:
+        name: /etc/apt/apt.conf.d/local
+        state: absent
+
+- hosts: all
+  become: true
+  become_user: root
+  roles:
+    - { role: apt, tags: apt }
+    - { role: ansible, tags: ansible }
+
