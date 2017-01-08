@@ -15,15 +15,20 @@
 
 - name: Create scamper upstart
   template: src=scamper.conf dest=/etc/init/scamper.conf owner=root group=root mode=0644
-  when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'precise'
+  when: ansible_distribution_release == 'precise'
 
 - name: "Create scamper systemd"
-  template: src=scamper-sysd.conf dest=/lib/systemd/system/scamper.conf conf owner=root group=root mode=0644
-  when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'xenial'
+  template:
+    src: scamper-sysd.conf
+    dest: /lib/systemd/system/scamper.conf
+    owner: root
+    group: root
+    mode: 0644
+  when: ansible_distribution_release == 'xenial'
 
 - name: "Delete scamper upstart file"
   file: name=/etc/init/scamper.conf state=absent
-  when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial'
 
 - name: Create /home/scamper/run-traces.sh
   template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group="ring-users" mode=0755
