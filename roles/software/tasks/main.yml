@@ -104,12 +104,14 @@
   apt: name={{ item }} state=latest
   with_items:
     - libnet-ssh2-ruby1.8
+    - php5-cli
   when: ansible_distribution_release == "precise"
 
 - name: "Install various software packages (xenial)"
   apt: name={{ item }} state=latest
   with_items:
     - jsonlint
+    - php7-cli
   when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
