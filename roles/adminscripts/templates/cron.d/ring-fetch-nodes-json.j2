@@ -1,1 +1,1 @@
-{{ (30 | determrand(ansible_nodename)) + 30 }} * * * * root /usr/local/bin/ring-fetch-nodes-json
+{{ (30 | determrand(ansible_nodename)) + 30 }} * * * * root /usr/local/bin/ring-fetch-nodes-json >/dev/null
