@@ -1268,7 +1268,7 @@ class commands(object):
         FNULL = open(os.devnull, 'w')
         result = ""
         for ktype in "ecdsa","rsa","dsa":
-                r = check_output(["ssh-keyscan", "-t",ktype,hostname],
+                r = check_output(["ssh-keyscan","-T","30","-t",ktype,hostname],
                                  stderr=FNULL)
                 if r:
                     result = result + r
