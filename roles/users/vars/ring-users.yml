@@ -3281,7 +3281,7 @@ USERS:
       - ring-users
 
   ntppool:
-    state: present
+    state: absent
     company: 'NTP Pool Project'
     email: 'ask@ntppool.org'
     uid: 5431
