@@ -388,7 +388,7 @@ class commands(object):
             print 'node %s (%s) activated' % (name,country.lower())
     
     def rectify_zone(self,zone=ZONE):
-        call(["pdnssec", "rectify-zone", zone])
+        call(["pdnsutil", "rectify-zone", zone])
 
     def update_soa(self,zone=ZONE):
         query = "update records set content='%s' where name='%s' and type='SOA'" % (SOA,zone);
