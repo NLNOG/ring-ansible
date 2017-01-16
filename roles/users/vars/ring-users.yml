@@ -2712,7 +2712,7 @@ USERS:
       - ring-users
 
   teleweb:
-    state: present
+    state: absent
     company: 'Teleweb'
     email: 'tech@teleweb.be'
     uid: 5360
