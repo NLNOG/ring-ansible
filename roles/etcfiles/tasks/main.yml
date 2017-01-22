@@ -9,11 +9,11 @@
 - name: "Ensure the hostname is set in /etc/hostname"
   copy:
     dest: /etc/hostname
-    content: "{{ ansible_nodename }}"
+    content: "{{ inventory_hostname }}"
 
 - name: "Ensure the hostname is set"
   hostname:
-    name: "{{ ansible_nodename }}"
+    name: "{{ inventory_hostname }}"
 
 - name: "Add /etc/rc.local"
   template:
