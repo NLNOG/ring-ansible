@@ -4,6 +4,12 @@
     - libjson-perl
     - libwww-curl-perl
 
+- name: "Make sure site_ruby directory exists (for ring.rb)"
+  file:
+    path: /usr/local/lib/site_ruby
+    state: directory
+    mode: 0755
+
 - name: "Install ring.rb"
   copy:
     src=ring.rb
