@@ -1659,3 +1659,5 @@ ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 [ntppool]
 
 [ashgoal]
+
+[unithost]

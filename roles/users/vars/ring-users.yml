@@ -3296,3 +3296,11 @@ USERS:
     groups:
       - ring-users
 
+  unithost:
+    state: present
+    company: 'Unithost Internet B.V.'
+    email: 'noc@unithost.nl'
+    uid: 5433
+    groups:
+      - ring-users
+
