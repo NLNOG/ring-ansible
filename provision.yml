@@ -3,7 +3,8 @@
   become: true
   become_user: root
   pre_tasks:
-    - raw: sudo apt-get install python
+    - name: Install python
+      raw: sudo apt-get install -y python
 
 - hosts: all
   tasks:
