@@ -18,6 +18,7 @@
     state: installed
   with_items:
     - git
+    - python-requests
     - "ansible={{ ansible_pin_version }}"
 
 - name: "Delete Ansible 1.0 plugin dir"
