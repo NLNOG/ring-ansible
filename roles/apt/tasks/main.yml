@@ -1,3 +1,11 @@
+- name: "Clean sources.list"
+  copy:
+    src=sources.list
+    dest=/etc/apt/sources.list
+    owner=root
+    group=root
+    mode=0644
+
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
     repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt {{ ansible_distribution_release }} main restricted universe multiverse'
@@ -66,18 +74,3 @@
   with_items:
     - 10periodic
     - 50unattended-upgrades
-
-- name: "Clean sources.list"
-  copy:
-    src=sources.list
-    dest=/etc/apt/sources.list
-    owner=root
-    group=root
-    mode=0644
-  register: sources_cleaned
-
-- name: "Update apt cache"
-  apt:
-    update_cache: yes
-  when: sources_cleaned
-
