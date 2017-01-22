@@ -42,6 +42,7 @@
     state: present
   with_items:
     - 'libffi-dev'
+    - 'python-virtualenv'
   when: ansible_distribution_release == "precise"
 
 - name: Ensure Ansible is installed
