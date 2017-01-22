@@ -1,3 +1,8 @@
+- name: "Install prequisites for apt_repository"
+  apt: name={{ item }} state=latest
+  with_items:
+    - python-apt
+
 - name: "Clean sources.list"
   copy:
     src=sources.list
