@@ -3288,3 +3288,11 @@ USERS:
     groups:
       - ring-users
 
+  ashgoal:
+    state: present
+    company: 'Ashgoal'
+    email: 'noc@connectbit.io'
+    uid: 5432
+    groups:
+      - ring-users
+
