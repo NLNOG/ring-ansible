@@ -72,7 +72,6 @@
     - python-virtualenv
     - rsync
     - ruby
-    - ruby1.9.3
     - screen
     - sipcalc
     - snmp
@@ -101,6 +100,7 @@
 - name: "Install various software packages (precise)"
   apt: name={{ item }} state=latest
   with_items:
+    - ruby1.9.3
     - ruby1.9.1-dev
     - libnet-ssh2-ruby1.8
     - php5-cli
