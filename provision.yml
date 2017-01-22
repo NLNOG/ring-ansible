@@ -1,4 +1,11 @@
 - hosts: all
+  gather_facts: false
+  become: true
+  become_user: root
+  pre_tasks:
+    - raw: sudo apt-get install python
+
+- hosts: all
   tasks:
     - name: Check if /etc/ansible/ring exists
       stat:
