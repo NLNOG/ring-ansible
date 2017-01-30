@@ -236,7 +236,6 @@ kinber01.ring.nlnog.net OWNER=kinber V4=162.223.16.247 V6=2001:550:501:3::1ce:c0
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
-maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 flhsi01.ring.nlnog.net OWNER=flhsi V4=208.90.223.6 V6=2606:2400:223:4::6
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
@@ -1144,7 +1143,6 @@ suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
 
 [maxitel]
-maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 
 [flhsi]
 flhsi01.ring.nlnog.net OWNER=flhsi V4=208.90.223.6 V6=2606:2400:223:4::6
