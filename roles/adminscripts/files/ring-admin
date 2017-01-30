@@ -832,7 +832,7 @@ class commands(object):
             machine_delete.append(m['hostname'])
             print "Deleting machine %s" % (m['hostname'])
             self.generate_removemail(m['hostname'],1)
-            self.dbdelete('sshhostkeys', machine=machid)
+            self.dbdelete('sshhostkeys', machine=m['id'])
             print 'ssh hostkeys for machine %s deleted' % (hostname)
             self.dbdelete('mremarks', machine=m['id'])
             print 'remarks for machine %s deleted' % (m['hostname'])
