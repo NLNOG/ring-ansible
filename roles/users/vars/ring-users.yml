@@ -3328,3 +3328,11 @@ USERS:
     groups:
       - ring-users
 
+  feldsam:
+    state: present
+    company: 'FELDSAM s.r.o.'
+    email: 'info@feldsam.cz'
+    uid: 5437
+    groups:
+      - ring-users
+
