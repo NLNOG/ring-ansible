@@ -153,6 +153,7 @@ ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::1
 nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
+xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8782:7473::a
 xing02.ring.nlnog.net OWNER=xing V4=109.233.156.243 V6=2a01:8781:7473::7269:6e67
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000::1:2
 bredband201.ring.nlnog.net OWNER=bredband2 V4=82.209.169.88 V6=2a00:1598:bb2::666
@@ -867,6 +868,7 @@ wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::1
 nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
 
 [xing]
+xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8782:7473::a
 xing02.ring.nlnog.net OWNER=xing V4=109.233.156.243 V6=2a01:8781:7473::7269:6e67
 
 [serverchoice]
@@ -1665,3 +1667,5 @@ ashgoal01.ring.nlnog.net OWNER=ashgoal V4=185.100.248.81 V6=2a00:9da0:300:1::1
 
 [unithost]
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
+
+[kracon]

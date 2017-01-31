@@ -3304,3 +3304,11 @@ USERS:
     groups:
       - ring-users
 
+  kracon:
+    state: present
+    company: 'Kracon Aps'
+    email: 'noc@kracon.dk'
+    uid: 5434
+    groups:
+      - ring-users
+
