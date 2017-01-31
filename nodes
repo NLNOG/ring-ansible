@@ -435,6 +435,7 @@ ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ashgoal01.ring.nlnog.net OWNER=ashgoal V4=185.100.248.81 V6=2a00:9da0:300:1::1
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
+elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:9a00:1::13
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1713,3 +1714,6 @@ unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 
 [kracon]
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
+
+[elvisru]
+elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:9a00:1::13

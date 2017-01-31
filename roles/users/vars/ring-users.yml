@@ -3312,3 +3312,11 @@ USERS:
     groups:
       - ring-users
 
+  elvisru:
+    state: present
+    company: 'Elvis-Telecom, Ltd.'
+    email: 'noc@telekom.ru'
+    uid: 5435
+    groups:
+      - ring-users
+
