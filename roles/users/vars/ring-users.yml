@@ -3320,3 +3320,11 @@ USERS:
     groups:
       - ring-users
 
+  grifon:
+    state: present
+    company: 'grifon'
+    email: 'adminsys@grifon.fr'
+    uid: 5436
+    groups:
+      - ring-users
+
