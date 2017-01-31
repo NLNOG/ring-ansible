@@ -36,13 +36,10 @@
       tags: check_v6
       when: check_v6.rc != 0
     - name: Check CPU architecture
-      tags: check_cpu
-      shell: lscpu | grep -qe 'Architecture:\s*x86_64'
-      register: check_arch
-    - fail:
+      fail:
         msg: Host is not an x86_64 system
       tags: check_cpu
-      when: check_arch.rc != 0
+      when: ansible_architecture != "x86_64"
 
 - hosts: ringnode
   become: true
