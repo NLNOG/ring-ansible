@@ -11,6 +11,12 @@
     dest: /etc/hostname
     content: "{{ inventory_hostname }}"
 
+- name: "Install dbus for systemd hostname changes"
+  apt: name={{ item }} state=latest
+  with_items:
+    - dbus
+  when: ansible_distribution_release != "precise"
+
 - name: "Ensure the hostname is set"
   hostname:
     name: "{{ inventory_hostname }}"
