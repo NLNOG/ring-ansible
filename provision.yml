@@ -17,6 +17,27 @@
         msg: This host is already provisioned!
       when: etc_ansible_ring.stat.exists
 
+- hosts: all
+  tasks:
+    - name: Check IPv4 connectivity
+      command: ping -c 4 ring.nlnog.net
+      register: check_v4
+    - fail:
+        msg: Could not ping ring.nlnog.net (IPv4)
+      when: check_v4.rc != 0
+    - name: Check IPv6 connectivity
+      command: ping -c 4 ring.nlnog.net
+      register: check_v6
+    - fail:
+        msg: Could not ping ring.nlnog.net (IPv6)
+      when: check_v6.rc != 0
+    - name: Check CPU architecture
+      shell: lscpu | grep -qe 'Architecture:\s*x86_64'
+      register: check_arch
+    - fail:
+        msg: Host is not an x86_64 system
+      when: check_arch.rc != 0
+
 - hosts: ringnode
   become: true
   become_user: root
