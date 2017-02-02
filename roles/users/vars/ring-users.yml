@@ -1728,7 +1728,7 @@ USERS:
       - ring-users
 
   esgob:
-    state: present
+    state: absent
     company: 'Esgob Ltd'
     email: 'noc@esgob.com'
     uid: 5236
