@@ -111,6 +111,7 @@
   with_items:
     - jsonlint
     - php7.0-cli
+    - iperf3
   when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
