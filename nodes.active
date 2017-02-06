@@ -143,6 +143,7 @@ glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
+openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
@@ -154,6 +155,7 @@ hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::1
 nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
 xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8782:7473::a
+xing02.ring.nlnog.net OWNER=xing V4=109.233.156.243 V6=2a01:8781:7473::7269:6e67
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000::1:2
 bredband201.ring.nlnog.net OWNER=bredband2 V4=82.209.169.88 V6=2a00:1598:bb2::666
 cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
@@ -333,6 +335,7 @@ linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
+linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
 openimp01.ring.nlnog.net OWNER=openimp V4=94.228.79.60 V6=2a00:1068:ffff:402::1024
 fusix01.ring.nlnog.net OWNER=fusix V4=37.139.139.110 V6=2a00:a7c0:1000:1303::1303
@@ -419,7 +422,6 @@ ashgoal01.ring.nlnog.net OWNER=ashgoal V4=185.100.248.81 V6=2a00:9da0:300:1::1
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:9a00:1::13
-grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.168.84 V6=2a0b:a900::400:b9ff:feae:a854
 
 [infranode]
@@ -831,6 +833,7 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 
 [openminds]
+openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 
 [one]
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
@@ -868,6 +871,7 @@ nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
 
 [xing]
 xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8782:7473::a
+xing02.ring.nlnog.net OWNER=xing V4=109.233.156.243 V6=2a01:8781:7473::7269:6e67
 
 [serverchoice]
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000::1:2
@@ -1397,6 +1401,7 @@ linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
+linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
 
 [openimp]
@@ -1669,7 +1674,6 @@ kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:9a00:1::13
 
 [grifon]
-grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 
 [feldsam]
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.168.84 V6=2a0b:a900::400:b9ff:feae:a854
