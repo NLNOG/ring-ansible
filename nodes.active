@@ -143,7 +143,6 @@ glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
-openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
@@ -834,7 +833,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 
 [openminds]
-openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 
 [one]
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
