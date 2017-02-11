@@ -2992,7 +2992,7 @@ USERS:
       - ring-users
 
   midcore:
-    state: present
+    state: absent
     company: 'Midcore IP Networks Ltd'
     email: 'noc@midcore.eu'
     uid: 5395
