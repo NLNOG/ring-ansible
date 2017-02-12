@@ -3344,3 +3344,11 @@ USERS:
     groups:
       - ring-users
 
+  cologuard:
+    state: present
+    company: 'Cologuard Enterprise Solutions'
+    email: 'andy@cologuard.com'
+    uid: 5439
+    groups:
+      - ring-users
+

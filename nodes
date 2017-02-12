@@ -437,6 +437,7 @@ elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:9a00:1::13
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.168.84 V6=2a0b:a900::400:b9ff:feae:a854
 ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
+cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1725,3 +1726,6 @@ feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.168.84 V6=2a0b:a900::400:b9ff:
 
 [ragefour]
 ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
+
+[cologuard]
+cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
