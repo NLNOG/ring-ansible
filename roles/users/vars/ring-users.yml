@@ -3336,3 +3336,11 @@ USERS:
     groups:
       - ring-users
 
+  ragefour:
+    state: present
+    company: 'Rage4 Networks Limited'
+    email: 'office@gbshouse.com'
+    uid: 5438
+    groups:
+      - ring-users
+
