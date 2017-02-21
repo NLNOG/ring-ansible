@@ -10,6 +10,12 @@
     value: 0
     sysctl_file: /etc/sysctl.d/10-ipv6-privacy.conf
 
+- name: "Enable unprivileged ICMP sockets"
+  sysctl:
+    name: net.ipv4.ping_group_range
+    value: "100	2147483647"
+    sysctl_file: /etc/sysctl.d/20-enable-unprivileged-icmp.conf
+
 - name: "Disable router_solicitations"
   sysctl:
     name: net.ipv6.conf.default.router_solicitations
@@ -75,4 +81,3 @@
     name: net.ipv6.conf.default.max_addresses
     value: 1
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
-
