@@ -69,7 +69,6 @@ amazon04.ring.nlnog.net OWNER=amazon V4=176.34.57.117 V6=2400:6700:ff00::b022:39
 amazon06.ring.nlnog.net OWNER=amazon V4=184.169.146.69 V6=2620:107:300f::b8a9:9245
 amazon07.ring.nlnog.net OWNER=amazon V4=54.232.107.5 V6=2804:800:ff00::36e8:6b05
 amazon08.ring.nlnog.net OWNER=amazon V4=54.253.117.37 V6=2403:b300:ff00::36fd:7525
-amazon09.ring.nlnog.net OWNER=amazon V4=54.93.158.247 V6=2a01:578:13::365d:9ef7
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.51.117 V6=2406:da00:a000::3442:3375
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
@@ -331,7 +330,6 @@ gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
-iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
@@ -612,7 +610,6 @@ amazon04.ring.nlnog.net OWNER=amazon V4=176.34.57.117 V6=2400:6700:ff00::b022:39
 amazon06.ring.nlnog.net OWNER=amazon V4=184.169.146.69 V6=2620:107:300f::b8a9:9245
 amazon07.ring.nlnog.net OWNER=amazon V4=54.232.107.5 V6=2804:800:ff00::36e8:6b05
 amazon08.ring.nlnog.net OWNER=amazon V4=54.253.117.37 V6=2403:b300:ff00::36fd:7525
-amazon09.ring.nlnog.net OWNER=amazon V4=54.93.158.247 V6=2a01:578:13::365d:9ef7
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.51.117 V6=2406:da00:a000::3442:3375
 
@@ -1406,7 +1403,6 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 [call27]
 
 [iptron]
-iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 
 [euronet]
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
