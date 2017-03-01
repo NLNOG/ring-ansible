@@ -114,6 +114,7 @@ skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
 claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
+claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
@@ -139,7 +140,6 @@ glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
-openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
@@ -303,7 +303,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
 pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -744,6 +743,7 @@ solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52
 [claranet]
 claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
+claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
@@ -823,7 +823,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 
 [openminds]
-openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 
 [one]
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
@@ -1325,7 +1324,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [nianet]
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
