@@ -2296,7 +2296,7 @@ USERS:
       - ring-users
 
   queryfoundry:
-    state: present
+    state: absent
     company: 'Query Foundry, LLC'
     email: 'noc@queryfoundry.com'
     uid: 5307
