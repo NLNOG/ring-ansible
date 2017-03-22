@@ -3384,3 +3384,11 @@ USERS:
     groups:
       - ring-users
 
+  korbank:
+    state: present
+    company: 'Korbank S\A'
+    email: 'noc@korbank.pl'
+    uid: 5444
+    groups:
+      - ring-users
+
