@@ -3392,3 +3392,11 @@ USERS:
     groups:
       - ring-users
 
+  arcadiz:
+    state: present
+    company: 'Arcadiz Telecom NV'
+    email: 'support@arcadiz.com'
+    uid: 5445
+    groups:
+      - ring-users
+
