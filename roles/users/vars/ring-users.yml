@@ -3352,3 +3352,11 @@ USERS:
     groups:
       - ring-users
 
+  vpsfree:
+    state: present
+    company: 'vpsFree.cz z.s.'
+    email: 'tomas.srnka@vpsfree.cz'
+    uid: 5440
+    groups:
+      - ring-users
+

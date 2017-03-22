@@ -1727,3 +1727,5 @@ ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
 
 [cologuard]
 cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
+
+[vpsfree]
