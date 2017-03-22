@@ -3360,3 +3360,27 @@ USERS:
     groups:
       - ring-users
 
+  protectedca:
+    state: present
+    company: 'Protected.CA Inc.'
+    email: 'noc@protected.ca'
+    uid: 5441
+    groups:
+      - ring-users
+
+  casablanca:
+    state: present
+    company: 'Casablanca INT s.r.o.'
+    email: 'tech@casablanca.cz'
+    uid: 5442
+    groups:
+      - ring-users
+
+  tktelecom:
+    state: present
+    company: 'TK-Telecom, LLC'
+    email: 'noc@tk-telecom.ru'
+    uid: 5443
+    groups:
+      - ring-users
+
