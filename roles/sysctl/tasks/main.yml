@@ -13,7 +13,7 @@
 - name: "Enable unprivileged ICMP sockets"
   sysctl:
     name: net.ipv4.ping_group_range
-    value: "100	2147483647"
+    value: "5000	6000"
     sysctl_file: /etc/sysctl.d/20-enable-unprivileged-icmp.conf
 
 - name: "Disable router_solicitations"
