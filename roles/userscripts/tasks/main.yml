@@ -18,6 +18,10 @@
     group=root
     mode=0755
 
+- name: "Install net-ssh gem"
+  gem: name=net-ssh state=latest executable=/usr/bin/gem user_install=no
+  when: ansible_distribution_release == "xenial"
+
 - name: "Install ring userscripts"
   copy:
     src={{ item }}
