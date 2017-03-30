@@ -112,6 +112,7 @@
     - jsonlint
     - php7.0-cli
     - iperf3
+    - ruby-dev
   when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
