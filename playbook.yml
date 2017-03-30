@@ -45,10 +45,10 @@
   become_user: root
   roles:
     - { role: nginx, tags: nginx }
-    - { role: ringfpingd, tags: ringfpingd }
     - { role: scamper, tags: scamper }
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
+    - { role: ringfpingd, tags: ringfpingd }
 
 - hosts: compute01.infra.ring.nlnog.net
   become: true
