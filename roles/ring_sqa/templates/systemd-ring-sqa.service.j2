@@ -1,5 +1,5 @@
 [Unit]
-Description=RING SQA (IPv{% "6" if afi == "ipv6" else "4" %}
+Description=RING SQA (IPv{{ "6" if afi == "ipv6" else "4" }}
 
 [Service]
-ExecStart=/usr/local/bin/ring-sqad {% "-6" if afi == "ipv6" %}
+ExecStart=/usr/local/bin/ring-sqad {{ "-6" if afi == "ipv6" }}
