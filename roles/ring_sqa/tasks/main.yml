@@ -17,18 +17,6 @@
 - name: Ensure /etc/ring-sqa exists
   file: path=/etc/ring-sqa state=directory owner=root group=root mode=0755
 
-- name: create /etc/ring-sqa/main.conf
-  template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0644
-  notify:
-    - restart ring-sqa4
-    - restart ring-sqa6
-
-- name: create /etc/ring-sqa/hosts.conf
-  template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0644
-  notify:
-    - restart ring-sqa4
-    - restart ring-sqa6
-
 - name: create /etc/init/ring-sqa4.conf
   template: src=ring-sqa4.conf.j2 dest=/etc/init/ring-sqa4.conf owner=root group=root mode=0644
   when: ansible_distribution_release == 'precise'
@@ -58,7 +46,22 @@
     afi: "ipv6"
 
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa4 owner=root group=root state=link
+  when: ansible_distribution_release == 'precise'
+
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa6 owner=root group=root state=link
+  when: ansible_distribution_release == 'precise'
+
+- name: create /etc/ring-sqa/main.conf
+  template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0644
+  notify:
+    - restart ring-sqa4
+    - restart ring-sqa6
+
+- name: create /etc/ring-sqa/hosts.conf
+  template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0644
+  notify:
+    - restart ring-sqa4
+    - restart ring-sqa6
 
 - service: name=ring-sqa4 state=started enabled=yes
 - service: name=ring-sqa6 state=started enabled=yes
