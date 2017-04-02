@@ -41,6 +41,8 @@
   with_items:
     - "/etc/init/ring-sqa4.conf"
     - "/etc/init/ring-sqa6.conf"
+    - "/etc/init.d/ring-sqa4"
+    - "/etc/init.d/ring-sqa6"
   when: ansible_distribution_release == 'xenial'
 
 - name: create /lib/systemd/system/ring-sqa4.service
