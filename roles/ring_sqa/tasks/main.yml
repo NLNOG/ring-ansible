@@ -31,9 +31,23 @@
 
 - name: create /etc/init/ring-sqa4.conf
   template: src=ring-sqa4.conf.j2 dest=/etc/init/ring-sqa4.conf owner=root group=root mode=0644
+  when: ansible_distribution_release == 'precise'
 
 - name: create /etc/init/ring-sqa6.conf
   template: src=ring-sqa6.conf.j2 dest=/etc/init/ring-sqa6.conf owner=root group=root mode=0644
+  when: ansible_distribution_release == 'precise'
+
+- name: create /lib/systemd/system/ring-sqa4.service
+  template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa4.service owner=root group=root mode=0644
+  when: ansible_distribution_release == 'xenial'
+  vars:
+    afi: "ipv6"
+
+- name: create /lib/systemd/system/ring-sqa6.service
+  template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa6.service owner=root group=root mode=0644
+  when: ansible_distribution_release == 'xenial'
+  vars:
+    afi: "ipv6"
 
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa4 owner=root group=root state=link
 - file: src=/lib/init/upstart-job dest=/etc/init.d/ring-sqa6 owner=root group=root state=link
