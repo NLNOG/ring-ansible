@@ -56,5 +56,8 @@
     - /var/spool/cron/crontabs/scamper
     - /var/spool/cron/crontabs/root
 
+- name: reload systemd if needed
+  meta: flush_handlers
+
 - name: Scamper service
   service: name=scamper state=started enabled=yes
