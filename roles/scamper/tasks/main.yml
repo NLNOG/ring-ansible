@@ -26,6 +26,7 @@
     owner: root
     group: root
     mode: 0644
+  notify: reload systemd
   when: ansible_distribution_release == 'xenial'
 
 - name: "Delete old scamper files"
