@@ -65,5 +65,10 @@
     - restart ring-sqa4
     - restart ring-sqa6
 
+- name: reload systemd (temp)
+  sudo: yes
+  command: systemctl daemon-reload
+
 - service: name=ring-sqa4 state=started enabled=yes
 - service: name=ring-sqa6 state=started enabled=yes
+
