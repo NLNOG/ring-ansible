@@ -1663,3 +1663,5 @@ korbank01.ring.nlnog.net OWNER=korbank V4=79.110.197.36 V6=2001:1a68:9:88::2
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 
 [nexthop]
+
+[aquilenet]

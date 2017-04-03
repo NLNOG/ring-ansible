@@ -3408,3 +3408,11 @@ USERS:
     groups:
       - ring-users
 
+  aquilenet:
+    state: present
+    company: 'Aquilenet'
+    email: 'admin@aquilenet.fr'
+    uid: 5447
+    groups:
+      - ring-users
+
