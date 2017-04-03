@@ -3400,3 +3400,11 @@ USERS:
     groups:
       - ring-users
 
+  nexthop:
+    state: present
+    company: 'Nexthop AS'
+    email: 'noc@nexthop.no'
+    uid: 5446
+    groups:
+      - ring-users
+
