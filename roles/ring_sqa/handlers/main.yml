@@ -3,3 +3,7 @@
 
 - name: restart ring-sqa6
   service: name=ring-sqa6 state=restarted
+
+- name: reload systemd
+  sudo: yes
+  command: systemctl daemon-reload

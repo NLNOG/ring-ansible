@@ -36,12 +36,14 @@
 - name: create /lib/systemd/system/ring-sqa4.service
   template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa4.service owner=root group=root mode=0644
   when: ansible_distribution_release == 'xenial'
+  notify: reload systemd
   vars:
     afi: "ipv4"
 
 - name: create /lib/systemd/system/ring-sqa6.service
   template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa6.service owner=root group=root mode=0644
   when: ansible_distribution_release == 'xenial'
+  notify: reload systemd
   vars:
     afi: "ipv6"
 
