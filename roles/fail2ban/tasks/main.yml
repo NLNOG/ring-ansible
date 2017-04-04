@@ -4,13 +4,25 @@
 - name: "Install jail.local"
   template: src=jail.local.j2 dest=/etc/fail2ban/jail.local
   notify:
-    - reload systemd
     - restart fail2ban
 
-- name: reload systemd if needed
-  meta: flush_handlers
+- file: name={{ item }} state=absent
+  with_items:
+    - /etc/fail2ban/jail.d/defaults-debian.conf
+  when: ansible_distribution_release == 'xenial'
 
-- name: enable fail2ban service
+- name: "Install sshd.conf"
+  copy:
+    src=sshd.conf
+    dest=/etc/fail2ban/jail.d/sshd.conf
+    owner=root
+    group=root
+    mode=0644
+  notify:
+    - restart fail2ban
+  when: ansible_distribution_release == 'xenial'
+
+- name: "Enable fail2ban service"
   service:
     name: fail2ban
     enabled: yes
