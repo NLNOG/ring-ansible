@@ -10,7 +10,9 @@
   template:
     src: "{{ item }}"
     dest: /etc/postfix/
-  notify: postfix reload service
+  notify:
+    - reload systemd
+    - postfix reload service
   with_items:
     - main.cf
     - master.cf
