@@ -132,3 +132,11 @@
     group=root
     mode=0644
 
+- name: "Ensure symlink to dynamic motd exists"
+  file:
+    src: /var/run/motd
+    dest: /etc/motd
+    owner: root
+    group: root
+    state: link
+
