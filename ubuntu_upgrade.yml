@@ -28,6 +28,7 @@
       with_items:
         - puppet-common
         - puppet
+        - libsodium13
 
     - name: "Remove automatic update files"
       file: name={{ item }} state=absent
