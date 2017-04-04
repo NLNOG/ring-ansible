@@ -16,6 +16,9 @@
     - master.cf
     - smtp_reply_filter
 
+- name: reload systemd if needed
+  meta: flush_handlers
+
 - name: enable postfix service
   service:
     name: postfix
