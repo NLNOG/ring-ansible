@@ -16,6 +16,16 @@
     - master.cf
     - smtp_reply_filter
 
+- name: stat /etc/postfix/postfix-files
+  stat: path=/etc/postfix/postfix-files
+  register: etc_postfix_postfix_files
+
+- name: move /etc/postfix/postfix-files.dpkg-dist /etc/postfix/postfix-files
+  command: mv /etc/postfix/postfix-files.dpkg-dist /etc/postfix/postfix-files
+  when:
+    - etc_postfix_postfix-files.exists == False
+    - ansible_distribution_release == 'xenial'
+
 - name: reload systemd if needed
   meta: flush_handlers
 
