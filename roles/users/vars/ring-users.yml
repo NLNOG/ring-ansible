@@ -1306,7 +1306,7 @@ USERS:
   ausregistry:
     state: present
     company: 'AusRegistry'
-    email: 'netadmin@ausregistry.com.au'
+    email: 'AUnetadmin@neustar.biz'
     uid: 5181
     groups:
       - ring-users
