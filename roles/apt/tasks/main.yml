@@ -2,6 +2,7 @@
   apt: name={{ item }} state=latest
   with_items:
     - python-apt
+    - ca-certificates
 
 - name: "Clean sources.list"
   copy:
