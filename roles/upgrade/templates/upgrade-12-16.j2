@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -ev
+
+/etc/init.d/nginx stop
+/etc/init.d/munin-node stop
+/etc/init.d/ringfpingd stop
+stop ring-sqa4
+stop ring-sqa6
+
+/usr/share/ansible-venv/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ inventory_hostname }} -c local ubuntu_upgrade.yml

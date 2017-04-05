@@ -49,6 +49,7 @@
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
     - { role: ringfpingd, tags: ringfpingd }
+    - { role: upgrade, tags: upgrade, when: ansible_distribution_release == 'precise'}
 
 - hosts: compute01.infra.ring.nlnog.net
   become: true
