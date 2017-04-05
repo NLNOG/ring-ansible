@@ -1,3 +1,8 @@
 # run ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 {{ 60|determrand(ansible_nodename) }} */2 * * * root {{ ansible_venv_dir }}/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local playbook.yml >/dev/null 2>/dev/null
+
+# disable RING SQA on 09-04-2017T23:59Z
+
+59 23 * * 0 /sbin/stop ring-sqa4
+59 23 * * 0 /sbin/stop ring-sqa6
