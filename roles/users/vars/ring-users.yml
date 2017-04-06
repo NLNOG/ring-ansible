@@ -128,7 +128,7 @@ USERS:
       - ring-users
 
   ebayclassifiedsgroup:
-    state: present
+    state: absent
     company: 'eBay Classifieds Group'
     email: 'DL-eBay-Classifieds-Networking@ebay.com'
     uid: 5019
