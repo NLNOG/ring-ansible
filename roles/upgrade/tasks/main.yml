@@ -4,5 +4,5 @@
     src: upgrade-12-16.j2
     dest: /root/upgrade-12-16
     mode: 0755
-    user: root
+    owner: root
     group: root
