@@ -16,7 +16,7 @@
       mode: 0644
 #    notify: 
     with_items:
-      - munin-master.conf
+      - munin.conf
       - apache.conf
 
   - name: set apache config symlink
