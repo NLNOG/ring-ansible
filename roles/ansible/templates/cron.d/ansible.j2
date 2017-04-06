@@ -4,7 +4,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # disables RING SQA at 09-04-2017T23:59Z
 
-59 23 * * 0 systemctl stop ring-sqa4
-59 23 * * 0 systemctl stop ring-sqa6
-59 23 * * 0 systemctl disable ring-sqa4
-59 23 * * 0 systemctl disable ring-sqa6
+59 23 * * 0 root systemctl stop ring-sqa4
+59 23 * * 0 root systemctl stop ring-sqa6
+59 23 * * 0 root systemctl disable ring-sqa4
+59 23 * * 0 root systemctl disable ring-sqa6
