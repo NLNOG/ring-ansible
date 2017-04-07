@@ -7,6 +7,14 @@
     with_items:
       - munin
 
+  - name: copy munin-cron
+    copy:
+      src=munin-cron
+      dst=/usr/bin/munin-cron
+      owner=root
+      group=root
+      mode=0755
+
   - name: Create config files
     template:
       src: "{{ item }}"
