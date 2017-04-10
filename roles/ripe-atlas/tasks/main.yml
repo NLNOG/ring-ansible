@@ -1,3 +1,9 @@
+- name: "Remove old virtual environment (temp)"
+  file: name={{ item }} state=absent
+  with_items:
+    - /usr/share/ripe-atlas-venv
+  when: ansible_distribution_release == "xenial"
+
 - name: "Install deb prequisites for ripe-atlas-tools"
   apt: name={{ item }} state=present
   with_items:
