@@ -33,11 +33,16 @@
 - name: "Install callback module"
   template: src=ring_callback.py.j2 dest=/usr/share/ansible/plugins/callback/ring.py
 
+- name: "Check for virtual env (temp)"
+  stat:
+    path: /usr/share/ansible-venv
+  register: stat_ansible
+
 - name: "Remove old virtual environment (temp)"
   file: name={{ item }} state=absent
   with_items:
     - /usr/share/ansible-venv
-  when: ansible_distribution_release == "xenial"
+  when: ansible_distribution_release == "xenial" and stat_ansible.stat.exists == True
 
 #### END Ansible from pkgs
 
