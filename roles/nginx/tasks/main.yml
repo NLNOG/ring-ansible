@@ -6,7 +6,7 @@
   notify: restart nginx
 
 - name: "Start nginx"
-  service: name=nginx state=started
+  service: name=nginx state=stopped
 
 - name: "Remove apache"
   apt: name={{item}} state=absent purge=yes
