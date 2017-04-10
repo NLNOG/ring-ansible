@@ -23,12 +23,17 @@
   become: true
   become_user: root
   tasks:
-    - name: "Make sure puppet is gone"
+    - name: "Make sure unupgradable packages are gone"
       apt: name={{ item }} state=absent
       with_items:
         - puppet-common
         - puppet
         - libsodium13
+        - keyboard-configuration
+        - daemontools-run
+        - console-setup-linux
+        - console-setup
+        - kbd
 
     - name: "Remove automatic update files"
       file: name={{ item }} state=absent

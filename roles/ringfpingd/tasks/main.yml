@@ -14,5 +14,5 @@
 - name: "Make sure ringfpingd is running"
   service:
     name: ringfpingd
-    state: started
+    state: stopped
 
