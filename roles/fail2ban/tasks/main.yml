@@ -22,6 +22,17 @@
     - restart fail2ban
   when: ansible_distribution_release == 'xenial'
 
+- name: "Install jail.conf"
+  copy:
+    src=jail.conf
+    dest=/etc/fail2ban/jail.conf
+    owner=root
+    group=root
+    mode=0644
+  notify:
+    - restart fail2ban
+  when: ansible_distribution_release == 'xenial'
+
 - name: "Enable fail2ban service"
   service:
     name: fail2ban
