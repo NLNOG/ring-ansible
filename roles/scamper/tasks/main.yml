@@ -60,4 +60,4 @@
   meta: flush_handlers
 
 - name: Scamper service
-  service: name=scamper state=stopped enabled=no
+  service: name=scamper state=stopped enabled=yes
