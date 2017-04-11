@@ -172,7 +172,6 @@
     - name: "Remove old virtual environments"
       file: name={{ item }} state=absent
       with_items:
-        - /usr/share/ansible-venv
         - /usr/share/ripe-atlas-venv
   tags:
     - cleanup
