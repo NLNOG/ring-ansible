@@ -172,8 +172,15 @@
     - name: "Remove old virtual environments"
       file: name={{ item }} state=absent
       with_items:
-        - /usr/share/ansible-venv
         - /usr/share/ripe-atlas-venv
   tags:
     - cleanup
 
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: "Reboot"
+      command: /sbin/reboot
+  tags:
+    - reboot
