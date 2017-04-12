@@ -43,21 +43,21 @@
 
     - name: "Add ubuntu trusty repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu trusty main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty'
       when: ansible_distribution_release == "precise"
 
     - name: "Add ubuntu trusty updates repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu trusty-updates main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty-updates'
       when: ansible_distribution_release == "precise"
 
     - name: "Add ubuntu trusty security repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu trusty-security main restricted universe multiverse'
         state: present
         filename: 'ubuntu_archiv_trusty-security'
       when: ansible_distribution_release == "precise"
