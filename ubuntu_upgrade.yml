@@ -62,23 +62,12 @@
         filename: 'ubuntu_archiv_trusty-security'
       when: ansible_distribution_release == "precise"
 
-    - name: "Remove ubuntu precise repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_precise'
-
-    - name: "Remove ubuntu precise updates repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_precise-updates'
-
-    - name: "Remove ubuntu precise security repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_precise-security'
+    - name: "Remove ubuntu precise repositories"
+      file: name={{ item }} state=absent
+      with_items:
+        - '/etc/apt/sources.list.d/ubuntu_archiv_precise-security.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_precise-updates.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_precise.list'
 
     - name: "apt-get update (trusty repos)"
       apt:
@@ -124,23 +113,12 @@
         state: present
         filename: 'ubuntu_archiv_xenial-security'
 
-    - name: "Remove ubuntu trusty repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_trusty'
-
-    - name: "Remove ubuntu trusty updates repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_trusty-updates'
-
-    - name: "Remove ubuntu trusty security repository"
-      apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse'
-        state: absent
-        filename: 'ubuntu_archiv_trusty-security'
+    - name: "Remove ubuntu trusty repositories"
+      file: name={{ item }} state=absent
+      with_items:
+        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-updates.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-security.list'
 
     - name: "apt-get update (xenial repos)"
       apt:
