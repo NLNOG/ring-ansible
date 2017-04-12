@@ -103,6 +103,12 @@
     dest: /etc/cron.d/ansible
   when: ansible_distribution_release != "precise"
 
+- name: Ensure run-ansible script exists
+  template:
+    src: run-ansible.j2
+    dest: /usr/local/sbin/run-ansible
+  when: ansible_distribution_release != "precise"
+
 - name: "Delete ansible.j2 (temp)"
   file: path=/etc/cron.d/ansible.j2 state=absent
 
