@@ -10,10 +10,8 @@
 #  tags:
 #    - always
 
-#- hosts: ringnode
-#  tasks:
-#    - include: ubuntu_upgrade.yml
-#      when: ansible_distribution_release != "xenial"
+- include: ubuntu_upgrade.yml
+  when: '"ringnode" in group_names and ansible_distribution_release != "xenial"'
 
 - hosts: all
   become: true

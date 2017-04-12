@@ -176,11 +176,3 @@
   tags:
     - cleanup
 
-- hosts: all
-  become: true
-  become_user: root
-  tasks:
-    - name: "Reboot"
-      command: /sbin/reboot
-  tags:
-    - reboot
