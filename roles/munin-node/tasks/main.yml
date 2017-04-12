@@ -23,7 +23,7 @@
     service:
       name: munin-node
       enabled: yes
-      state: stopped
+      state: started
 
   tags:
     - munin-node
