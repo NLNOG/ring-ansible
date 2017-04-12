@@ -12,23 +12,36 @@
     group=root
     mode=0644
 
+- name: "Remove old repo files"
+  file: name={{ item }} state=absent
+  with_items:
+    - 'ubuntu_archiv_precise.list'
+    - 'ubuntu_archiv_precise-updates.list'
+    - 'ubuntu_archiv_precise-security.list'
+    - 'ubuntu_archiv_trusty.list'
+    - 'ubuntu_archiv_trusty-updates.list'
+    - 'ubuntu_archiv_trusty-security.list'
+    - 'ubuntu_archiv_xenial.list'
+    - 'ubuntu_archiv_xenial-updates.list'
+    - 'ubuntu_archiv_xenial-security.list'
+
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
     repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }} main restricted universe multiverse'
     state: present
-    filename: 'ubuntu_archiv_{{ ansible_distribution_release }}'
+    filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} updates repository"
   apt_repository:
     repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }}-updates main restricted universe multiverse'
     state: present
-    filename: 'ubuntu_archiv_{{ ansible_distribution_release }}-updates'
+    filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-updates'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} security repository"
   apt_repository:
     repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }}-security main restricted universe multiverse'
     state: present
-    filename: 'ubuntu_archiv_{{ ansible_distribution_release }}-security'
+    filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-security'
 
 - name: "Install nlnog repo key"
   apt_key:
