@@ -16,6 +16,7 @@
     - libffi-dev
     - libssl-dev
     - python-virtualenv
+    - virtualenv
     - python-pip
 
 - name: "Install ripe-atlas-tools"
