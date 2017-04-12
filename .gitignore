@@ -1,2 +1,3 @@
 *.retry
 filter_plugins/*.pyc
+.ringvaultpw
