@@ -15,15 +15,15 @@
 - name: "Remove old repo files"
   file: name={{ item }} state=absent
   with_items:
-    - 'ubuntu_archiv_precise.list'
-    - 'ubuntu_archiv_precise-updates.list'
-    - 'ubuntu_archiv_precise-security.list'
-    - 'ubuntu_archiv_trusty.list'
-    - 'ubuntu_archiv_trusty-updates.list'
-    - 'ubuntu_archiv_trusty-security.list'
-    - 'ubuntu_archiv_xenial.list'
-    - 'ubuntu_archiv_xenial-updates.list'
-    - 'ubuntu_archiv_xenial-security.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_precise.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_precise-updates.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_precise-security.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-updates.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-security.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
