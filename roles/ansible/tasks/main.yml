@@ -107,6 +107,9 @@
   template:
     src: run-ansible.j2
     dest: /usr/local/sbin/run-ansible
+    owner: root
+    group: root
+    mode: 0755
   when: ansible_distribution_release != "precise"
 
 - name: "Delete ansible.j2 (temp)"
