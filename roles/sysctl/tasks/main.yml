@@ -16,6 +16,9 @@
     value: "5000	6000"
     sysctl_file: /etc/sysctl.d/20-enable-unprivileged-icmp.conf
 
+- name: "Clear out existing info in 30-disable-accepting-ipv6-ra.conf"
+  file: name=/etc/sysctl.d/30-disable-accepting-ipv6-ra.conf state=absent
+
 - name: "Disable router_solicitations"
   sysctl:
     name: net.ipv6.conf.default.router_solicitations
