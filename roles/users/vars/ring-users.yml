@@ -12,8 +12,6 @@ USERS:
     state: absent
   nlnog:
     state: absent
-  nlnogring:
-    state: absent
   ring:
     state: absent
 
