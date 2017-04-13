@@ -2514,7 +2514,7 @@ USERS:
   cloudvps:
     state: present
     company: 'CloudVPS'
-    email: 'nmc@signet.nl'
+    email: 'noc@cloudvps.com'
     uid: 5335
     groups:
       - ring-users
