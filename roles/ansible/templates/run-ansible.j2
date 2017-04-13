@@ -1,3 +1,16 @@
 # run ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-/usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local $@ playbook.yml
+
+q=""
+
+for i in "$@" do
+    case $i in
+        -q=*|--quick=*)
+            q="--skip-tags ring-users"
+        ;;
+        *)
+        ;;
+    esac
+done
+
+/usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ${q} $@ playbook.yml
