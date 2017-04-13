@@ -62,7 +62,7 @@
 
 - name: "Disable autoconf (primary)"
   sysctl:
-    name: net.ipv6.conf.{{ ansible_default_ipv6.interface|default(ansible_default_ipv4.interface) }}.autoconf
+    name: net.ipv6.conf.{{ ansible_default_ipv6.interface|default(ansible_default_ipv4.interface)|regex_replace('\.','/') }}.autoconf
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
