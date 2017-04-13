@@ -4,3 +4,4 @@
 
 - name: reload systemd
   command: systemctl daemon-reload
+  when: ansible_distribution_release != "precise"
