@@ -66,12 +66,6 @@
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
-- name: "remove old autoconf line (eth1)"
-  sysctl:
-    name: net.ipv6.conf.eth1.autoconf
-    state: absent
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
-
 - name: "Disable autoconf (all)"
   sysctl:
     name: net.ipv6.conf.all.autoconf
