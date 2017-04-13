@@ -25,11 +25,16 @@
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
+- name: "Stat accept_ra_rtr_pref"
+  stat: path=/proc/sys/net/ipv6/conf/default/accept_ra_rtr_pref
+  register: accept_ra_rtr_pref
+
 - name: "Disable accept_ra_rtr_pref"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_rtr_pref
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+  when: accept_ra_rtr_pref.stat.exists
 
 - name: "Disable accept_ra_pinfo"
   sysctl:
