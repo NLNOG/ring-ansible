@@ -2,7 +2,7 @@
 
 #### Ansible from pkgs
 
-- name: Apt-pin ansible
+- name: "Apt-pin ansible"
   template:
     src: ansible.pref.j2
     dest: /etc/apt/preferences.d/ansible.pref
@@ -12,7 +12,7 @@
   file: path=/etc/apt/preferences.d/ansible.pref state=absent
   when: ansible_distribution_release != "precise"
 
-- name: Ensure Ansible is installed
+- name: "Ensure Ansible is installed"
   apt:
     name: "{{ item }}"
     state: installed
@@ -57,7 +57,7 @@
     - 'python-virtualenv'
   when: ansible_distribution_release == "precise"
 
-- name: Ensure Ansible is installed
+- name: "Ensure Ansible is installed"
   pip:
     name: "ansible"
     version: "{{ ansible_pip_version }}"
@@ -91,19 +91,25 @@
 
 #### END Ansible in a venv
 
-- name: Ensure Ansible cronjob exists (venv)
+- name: "Ensure Ansible cronjob exists (venv)"
   template:
     src: cron.d/ansible_virtualenv.j2
     dest: /etc/cron.d/ansible
   when: ansible_distribution_release == "precise"
 
-- name: Ensure Ansible cronjob exists
+- name: "Ensure Ansible cronjob exists"
   template:
     src: cron.d/ansible.j2
     dest: /etc/cron.d/ansible
   when: ansible_distribution_release != "precise"
 
-- name: Ensure run-ansible script exists
+- name: "Create /usr/local/sbin if needed"
+  file:
+    path: /usr/local/sbin
+    state: directory
+    mode: 0755
+
+- name: "Ensure run-ansible script exists"
   template:
     src: run-ansible.j2
     dest: /usr/local/sbin/run-ansible
@@ -115,26 +121,26 @@
 - name: "Delete ansible.j2 (temp)"
   file: path=/etc/cron.d/ansible.j2 state=absent
 
-- name: Remove any old ansible crontab entries
+- name: "Remove any old ansible crontab entries"
   lineinfile:
     dest: /var/spool/cron/crontabs/root
     regexp: 'ansible(-|_)pull'
     state: absent
 
-- name: Remove any old salt crontab entries
+- name: "Remove any old salt crontab entries"
   lineinfile:
     dest: /var/spool/cron/crontabs/root
     regexp: 'salt-call'
     state: absent
 
-- name: Remove old Puppet crontab entries
+- name: "Remove old Puppet crontab entries"
   lineinfile:
     dest: /var/spool/cron/crontabs/root
     regexp: "puppetagent|puppetd|zombiekiller|puppet_zombiecleanup|ring-puppet-repo-sync|pull_from_repo"
     state: absent
   when: remove_puppet is defined and remove_puppet
 
-- name: Remove puppet
+- name: "Remove puppet"
   apt:
     name: "{{ item }}"
     state: absent
@@ -150,7 +156,7 @@
     - facter
   when: remove_puppet is defined and remove_puppet
 
-- name: Remove puppet 'helper' files
+- name: "Remove puppet 'helper' files"
   file:
     name: "{{ item }}"
     state: absent
