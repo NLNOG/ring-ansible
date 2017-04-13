@@ -1,16 +1,19 @@
 # run ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-q=""
+OPTIND=1
+quick=0
 
-for i in "$@" do
-    case $i in
-        -q=*|--quick=*)
-            q="--skip-tags ring-users"
-        ;;
-        *)
+while getopts "q" opt; do
+    case "$opt" in
+    q)
+        quick="--skip-tags ring-users"
         ;;
     esac
 done
 
-/usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ${q} $@ playbook.yml
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+/usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ${quick} $@ playbook.yml
