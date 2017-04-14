@@ -2488,7 +2488,7 @@ USERS:
       - ring-users
 
   bkkfiber:
-    state: present
+    state: absent
     company: 'BKK Fiber AS'
     email: 'noc@bkk.no'
     uid: 5332
