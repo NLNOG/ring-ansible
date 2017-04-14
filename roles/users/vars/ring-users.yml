@@ -3416,3 +3416,11 @@ USERS:
     groups:
       - ring-users
 
+  bkk:
+    state: present
+    company: 'BKK AS'
+    email: 'noc@bkk.no'
+    uid: 5448
+    groups:
+      - ring-users
+

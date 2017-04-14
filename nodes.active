@@ -1569,3 +1569,5 @@ nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 
 [aquilenet]
 aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
+
+[bkk]

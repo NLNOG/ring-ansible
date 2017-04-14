@@ -327,7 +327,6 @@ transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7:
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.226 V6=2a00:c380:8000:2::2
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
-bkkfiber01.ring.nlnog.net OWNER=bkkfiber V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
 cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
 vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
@@ -450,6 +449,7 @@ korbank01.ring.nlnog.net OWNER=korbank V4=79.110.197.36 V6=2001:1a68:9:88::2
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
+bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1416,7 +1416,6 @@ ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 
 [bkkfiber]
-bkkfiber01.ring.nlnog.net OWNER=bkkfiber V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 
 [cloudcenter]
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
@@ -1769,3 +1768,6 @@ nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 
 [aquilenet]
 aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
+
+[bkk]
+bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
