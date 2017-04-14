@@ -3424,3 +3424,11 @@ USERS:
     groups:
       - ring-users
 
+  poprs:
+    state: present
+    company: 'Ponto de Presença da RNP no Rio Grande do Sul'
+    email: 'suporte@pop-rs.rnp.br'
+    uid: 5449
+    groups:
+      - ring-users
+
