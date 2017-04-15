@@ -1,0 +1,13 @@
+- name: "Create /var/ring"
+  file:
+    path: /var/ring
+    state: directory
+    owner: root
+    group: ring-admins
+    mode: 2775
+
+- name: "Create Ansible master cronjob"
+  template:
+    src: cron.d/ansible_master.j2
+    dest: /etc/cron.d/ansible_master
+

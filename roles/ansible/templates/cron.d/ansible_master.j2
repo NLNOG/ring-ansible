@@ -1,0 +1,6 @@
+# run ansible deploy
+42 * * * * ringforger chronic /usr/local/bin/ring-admin ansible deploy >/dev/null 2>/dev/null
+
+# run ansible report
+22 10 * * * ringforger /usr/local/bin/ring-admin ansible report >/dev/null
+

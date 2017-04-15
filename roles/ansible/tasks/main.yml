@@ -165,3 +165,7 @@
     - /usr/local/bin/ring-convert-ssh-keys
     - /usr/local/bin/ring-puppet-repo-sync
     - /var/lib/puppet
+
+- include: master.yml
+  when: ansible_master == true
+

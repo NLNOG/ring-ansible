@@ -1,4 +1,5 @@
 dbmaster: true
+ansible_master: true
 
 LOCAL_USERS:
   ringforger:
