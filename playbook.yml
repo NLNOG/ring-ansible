@@ -73,7 +73,7 @@
     - { role: haproxy, profile: github, tags: haproxy }
     - { role: inframail, tags: inframail }
 
-- hosts: dbmaster.infra.ring.nlnog.net
+- hosts: infranode:!backup.infra.ring.nlnog.net:!storage01.infra.ring.nlnog.net:!staging.ring.nlnog.net
   become: true
   become_user: root
   roles:
