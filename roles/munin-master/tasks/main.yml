@@ -10,7 +10,7 @@
   - name: copy munin-cron
     copy:
       src=munin-cron
-      dst=/usr/bin/munin-cron
+      dest=/usr/bin/munin-cron
       owner=root
       group=root
       mode=0755
