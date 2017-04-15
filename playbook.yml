@@ -72,3 +72,10 @@
   roles:
     - { role: haproxy, profile: github, tags: haproxy }
     - { role: inframail, tags: inframail }
+
+- hosts: dbmaster.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: backup-client, tags: backup-client }
+
