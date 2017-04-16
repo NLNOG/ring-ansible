@@ -1,0 +1,5 @@
+{% for host in groups['infranode'] %}
+{% if hostvars[host]['backups']|default('enabled') != 'disabled' %}
+{{ host }}
+{% endif %}
+{% endfor %}    

@@ -1,0 +1,27 @@
+- name: "Install required packages"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - linux-headers-virtual
+    - ubuntu-zfs
+
+- name: "Create required directories"
+  file:
+    path: {{ item }}
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  with_items:
+    - /var/lib/syslog-ng
+    - /backups
+
+- name: "Populate backup-hosts file"
+  template:
+    src: backup-hosts.j2
+    dest: "/backups/backup-hosts"
+    owner: root
+    group: root
+    mode: 0644
+
