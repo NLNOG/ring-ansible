@@ -1,0 +1,21 @@
+- name: "Create sync directory"
+  file:
+    path: /opt/keys
+    state: directory
+    owner: root
+    group: ring-admins
+    mode: 0755
+
+- name: "Install key sync script"
+  copy:
+    src=auth-copy-keys-to-opt-keys
+    dest=/usr/local/bin/auth-copy-keys-to-opt-keys
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Add cronjob for auth-copy-keys-to-opt-keys"
+  template:
+    src: "cron.d/auth-copy-keys-to-opt-keys.j2"
+    dest: /etc/cron.d/auth-copy-keys-to-opt-keys
+

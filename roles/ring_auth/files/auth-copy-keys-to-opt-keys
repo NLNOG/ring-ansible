@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+cd /home
+for username in $(members ring-users); do
+    keyfile=/home/${username}/ssh-keys
+    keyfile2=/home/${username}/ssh-keys-only-${username}
+    if [ -d $keyfile ]; then
+        >&2 echo "$keyfile is a directory"
+    fi
+    if [ ! -d /opt/keys/${username} ]; then
+        mkdir /opt/keys/${username}
+    fi
+    if [ -f $keyfile ]; then
+        /usr/bin/install -m 0444 $keyfile /opt/keys/${username}.sshkeys
+        /usr/bin/install -m 0444 $keyfile /opt/keys/${username}/${username}.sshkeys
+    fi
+    if [ -f $keyfile2 ]; then
+        /usr/bin/install -m 0444 $keyfile2 /opt/keys/${username}-only.sshkeys
+        /usr/bin/install -m 0444 $keyfile2 /opt/keys/${username}/${username}-only.sshkeys
+    fi
+done
