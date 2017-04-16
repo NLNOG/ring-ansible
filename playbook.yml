@@ -54,6 +54,12 @@
     - { role: ringfpingd, tags: ringfpingd }
     - { role: upgrade, tags: upgrade, when: ansible_distribution_release == 'precise'}
 
+- hosts: infranode
+  become: true
+  become_user: root
+  roles:
+    - { role: backup-client, tags: backup-client }
+
 - hosts: compute01.infra.ring.nlnog.net
   become: true
   become_user: root
@@ -73,15 +79,15 @@
     - { role: haproxy, profile: github, tags: haproxy }
     - { role: inframail, tags: inframail }
 
-- hosts: infranode
-  become: true
-  become_user: root
-  roles:
-    - { role: backup-client, tags: backup-client }
-
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
     - { role: backup-server, tags: backup-server }
+
+- hosts: auth.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: ring_auth, tags: ring_auth }
 
