@@ -13,8 +13,8 @@
 
 - name: "Install user sync script"
   copy:
-    src=auth_sync_graphite_credentials
-    dest=/usr/local/bin/auth_sync_graphite_credentials
+    src=auth-copy-graphite-credentials
+    dest=/usr/local/bin/auth-copy-graphite-credentials
     owner=root
     group=root
     mode=0755
@@ -22,5 +22,5 @@
 - name: "Add cronjob for auth_sync_graphite_credentials"
   template:
     src: "cron.d/auth_sync_graphite_credentials.j2"
-    dest: /etc/cron.d/auth_sync_graphite_credentials
+    dest: /etc/cron.d/auth-copy-graphite-credentials
 
