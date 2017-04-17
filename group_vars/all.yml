@@ -1,3 +1,4 @@
+ansible_master: false
 
 etc_aliases:
   postmaster: root
