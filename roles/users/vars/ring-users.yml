@@ -785,8 +785,8 @@ USERS:
 
   siminn:
     state: present
-    company: 'Siminn Danmark'
-    email: 'drift@siminn.dk'
+    company: 'Webpartner'
+    email: 'cis-drift@dk.telia.net'
     uid: 5112
     groups:
       - ring-users
@@ -1769,8 +1769,8 @@ USERS:
 
   xconnect:
     state: present
-    company: 'Xconnect24'
-    email: 'noc@xconnect24.net'
+    company: 'Custom Connect'
+    email: 'gsc@custom-connect.com'
     uid: 5241
     groups:
       - ring-users
@@ -3429,6 +3429,14 @@ USERS:
     company: 'Ponto de Presença da RNP no Rio Grande do Sul'
     email: 'suporte@pop-rs.rnp.br'
     uid: 5449
+    groups:
+      - ring-users
+
+  limestone:
+    state: present
+    company: 'Limestone Networks'
+    email: 'netops@limestonenetworks.com'
+    uid: 5450
     groups:
       - ring-users
 
