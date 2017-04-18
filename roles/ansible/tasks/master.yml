@@ -4,7 +4,7 @@
     state: directory
     owner: root
     group: ring-admins
-    mode: 2775
+    mode: 02775
 
 - name: "Create Ansible master cronjob"
   template:
