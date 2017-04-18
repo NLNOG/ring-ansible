@@ -167,5 +167,5 @@
     - /var/lib/puppet
 
 - include: master.yml
-  when: ansible_master == true
+  when: ansible_master|default(None) == true
 

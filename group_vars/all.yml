@@ -1,5 +1,3 @@
-ansible_master: false
-
 etc_aliases:
   postmaster: root
   root: ring-admins@ring.nlnog.net
