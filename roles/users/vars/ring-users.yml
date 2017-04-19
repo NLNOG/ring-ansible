@@ -14,8 +14,6 @@ USERS:
     state: absent
   ring:
     state: absent
-  nlnogadmin:
-    state: absent
 
   intouch:
     state: present
