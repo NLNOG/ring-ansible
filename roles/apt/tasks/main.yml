@@ -24,6 +24,12 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial.list'
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list'
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-security.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-updates.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list.distUpgrade'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
