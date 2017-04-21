@@ -784,7 +784,7 @@ USERS:
       - ring-users
 
   siminn:
-    state: present
+    state: absent
     company: 'Webpartner'
     email: 'cis-drift@dk.telia.net'
     uid: 5112
