@@ -3440,3 +3440,11 @@ USERS:
     groups:
       - ring-users
 
+  compudyne:
+    state: present
+    company: 'Compudyne Inc'
+    email: 'nspsupport@compudyne.com'
+    uid: 5451
+    groups:
+      - ring-users
+

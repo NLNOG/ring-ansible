@@ -1653,3 +1653,5 @@ poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 
 [limestone]
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
+
+[compudyne]
