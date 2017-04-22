@@ -30,14 +30,13 @@ maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
+portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
 digmia01.ring.nlnog.net OWNER=digmia V4=91.210.181.185 V6=2a01:5200:100::7269:6b67:3031
 rootlu01.ring.nlnog.net OWNER=rootlu V4=94.242.192.13 V6=2a01:608:f::13
 nebula01.ring.nlnog.net OWNER=nebula V4=188.117.58.137 V6=2001:1bc8:200:f::2
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
-voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
-voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 concepts-ict01.ring.nlnog.net OWNER=concepts-ict V4=85.113.233.194 V6=2001:838:76:20::2
 dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
@@ -396,7 +395,6 @@ tktelecom01.ring.nlnog.net OWNER=tktelecom V4=185.174.193.26 V6=2a0b:b500:f800:0
 korbank01.ring.nlnog.net OWNER=korbank V4=79.110.197.36 V6=2001:1a68:9:88::2
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
-aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
@@ -507,6 +505,7 @@ hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0
 [blix]
 
 [portlane]
+portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 
 [solido]
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
@@ -529,8 +528,6 @@ tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:45
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
 
 [voxel]
-voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
-voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
 
 [apnic]
 
@@ -1647,7 +1644,6 @@ arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 
 [aquilenet]
-aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 
 [bkk]
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
