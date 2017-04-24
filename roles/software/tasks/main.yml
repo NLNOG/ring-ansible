@@ -152,8 +152,6 @@
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
   with_items:
-    - apparmor
-    - apparmor-utils
     - ferm
     - molly-guard
     - mtr
@@ -165,3 +163,9 @@
     - sl
     - ufw
 
+- name: "Uninstall certain unnecessary packages - except on pdnsmaster"
+  apt: name={{ item }} state=absent
+  with_items:
+    - apparmor
+    - apparmor-utils
+  when: pdnsmaster|default(None) != true
