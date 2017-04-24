@@ -282,6 +282,7 @@ peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
+pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.226 V6=2a00:c380:8000:2::2
@@ -289,6 +290,7 @@ ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
 vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
+elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
 upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
@@ -1290,6 +1292,7 @@ peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56
 [nianet]
 
 [pix]
+pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2A03:87A0:125:134::1
 
 [utwente]
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -1323,6 +1326,7 @@ vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
 
 [elisa]
+elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 
 [corebackbone]
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
