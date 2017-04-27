@@ -696,7 +696,7 @@ USERS:
       - ring-users
 
   occaid:
-    state: present
+    state: absent
     company: 'OCCAID, Inc'
     email: 'noc@occaid.org'
     uid: 5100
@@ -2656,7 +2656,7 @@ USERS:
       - ring-users
 
   call27:
-    state: present
+    state: absent
     company: 'Call27'
     email: 'noc@call27.net'
     uid: 5353
