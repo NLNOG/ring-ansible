@@ -3448,3 +3448,11 @@ USERS:
     groups:
       - ring-users
 
+  nefos:
+    state: present
+    company: 'Nefos IT bv'
+    email: 'support@nefos.nl'
+    uid: 5452
+    groups:
+      - ring-users
+
