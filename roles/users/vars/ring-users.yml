@@ -3456,3 +3456,11 @@ USERS:
     groups:
       - ring-users
 
+  arnfai:
+    state: present
+    company: 'Alsace Reseau Neutre (ARN)'
+    email: 'admins@arn-fai.net'
+    uid: 5453
+    groups:
+      - ring-users
+

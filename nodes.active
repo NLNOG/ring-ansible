@@ -183,6 +183,7 @@ citynetwork02.ring.nlnog.net OWNER=citynetwork V4=185.2.152.103 V6=2001:67c:174c
 citynetwork03.ring.nlnog.net OWNER=citynetwork V4=185.52.156.103 V6=2a03:b000:1:1::103
 iplan01.ring.nlnog.net OWNER=iplan V4=190.210.175.57 V6=2800:40:c06::0001
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
+combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
 etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
@@ -993,6 +994,7 @@ iplan01.ring.nlnog.net OWNER=iplan V4=190.210.175.57 V6=2800:40:c06::0001
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 
 [combell]
+combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 
 [infostrada]
 
@@ -1663,3 +1665,5 @@ compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004:
 
 [nefos]
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
+
+[arnfai]
