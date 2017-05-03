@@ -1186,7 +1186,7 @@ USERS:
   serverchoice:
     state: present
     company: 'ServerChoice Ltd'
-    email: 'noc@serverchoice.com'
+    email: 'noc@ai.co.uk'
     uid: 5166
     groups:
       - ring-users
