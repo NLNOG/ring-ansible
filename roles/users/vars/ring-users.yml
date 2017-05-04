@@ -3472,3 +3472,11 @@ USERS:
     groups:
       - ring-users
 
+  netgroup:
+    state: present
+    company: 'Netgroup A/S'
+    email: 'support@netgroup.dk'
+    uid: 5455
+    groups:
+      - ring-users
+
