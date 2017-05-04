@@ -3464,3 +3464,11 @@ USERS:
     groups:
       - ring-users
 
+  mosaic:
+    state: present
+    company: 'Mosaic Data Services, Inc.'
+    email: 'noc@mosaicdataservices.com'
+    uid: 5454
+    groups:
+      - ring-users
+
