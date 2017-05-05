@@ -66,6 +66,7 @@ equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:1
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme01.ring.nlnog.net OWNER=pcextreme V4=109.72.80.176 V6=2a00:0f10:0105:0020:0000:0000:0000:0000
+pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
 pcextreme04.ring.nlnog.net OWNER=pcextreme V4=185.103.241.78 V6=2a05:1500:202:0:402:52ff:fe00:57
 pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
@@ -228,7 +229,6 @@ cloudnl01.ring.nlnog.net OWNER=cloudnl V4=185.23.24.149 V6=2a00:6960:1:1::24:149
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
-atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 mainloop01.ring.nlnog.net OWNER=mainloop V4=185.9.166.9 V6=2a01:298:f001:a700::10
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
@@ -611,6 +611,7 @@ hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 
 [pcextreme]
 pcextreme01.ring.nlnog.net OWNER=pcextreme V4=109.72.80.176 V6=2a00:0f10:0105:0020:0000:0000:0000:0000
+pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
 pcextreme04.ring.nlnog.net OWNER=pcextreme V4=185.103.241.78 V6=2a05:1500:202:0:402:52ff:fe00:57
 pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
@@ -1147,7 +1148,6 @@ networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 
 [atw]
-atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 
 [onlinesas]
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
