@@ -3480,3 +3480,19 @@ USERS:
     groups:
       - ring-users
 
+  rogerscapital:
+    state: present
+    company: 'Rogers Capital Technology Services'
+    email: 'noc@rogerscapital.mu'
+    uid: 5456
+    groups:
+      - ring-users
+
+  lgi:
+    state: present
+    company: 'Liberty Global'
+    email: 'ip-noc@upctechnology.com'
+    uid: 5457
+    groups:
+      - ring-users
+
