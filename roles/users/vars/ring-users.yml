@@ -3465,7 +3465,7 @@ USERS:
       - ring-users
 
   mosaic:
-    state: present
+    state: absent
     company: 'Mosaic Data Services, Inc.'
     email: 'noc@mosaicdataservices.com'
     uid: 5454
