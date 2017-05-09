@@ -164,10 +164,9 @@ Kind regards,
 
 NLNOG RING Admins
 
-ps. An example ~/.ssh/config for on your workstation:
+ps. An example ~/.ssh/config for usage on your workstation:
 
 Host *.ring.nlnog.net
-    ForwardAgent yes
     User $username
     IdentityFile /Users/username/.ssh/id_rsa_nlnogring
     IdentitiesOnly yes
