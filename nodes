@@ -448,6 +448,7 @@ limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a:
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
+mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:1000:1000:20c:29ff:fe4b:e93b
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
@@ -1782,6 +1783,7 @@ nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3ef
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
 
 [mosaic]
+mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
 
 [netgroup]
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
