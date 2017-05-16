@@ -3496,3 +3496,11 @@ USERS:
     groups:
       - ring-users
 
+  westnetz:
+    state: present
+    company: 'Westnetz w.V.'
+    email: 'tech@westnetz.org'
+    uid: 5458
+    groups:
+      - ring-users
+
