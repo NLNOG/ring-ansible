@@ -382,6 +382,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
+connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 svwh01.ring.nlnog.net OWNER=svwh V4=72.5.72.35 V6=2606:c680:1:17:6c02:c1ff:fea3:d427
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
@@ -413,6 +414,7 @@ mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fa
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:1000:1000:20c:29ff:fe4b:e93b
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
+westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
 
 [infranode]
 
@@ -1602,6 +1604,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 [connectria]
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
+connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 
 [freifunkrl]
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
@@ -1699,3 +1702,4 @@ rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 
 [westnetz]
+westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
