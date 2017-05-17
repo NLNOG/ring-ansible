@@ -1624,7 +1624,7 @@ USERS:
       - ring-users
 
   magyar:
-    state: present
+    state: absent
     company: 'Magyar Telekom'
     email: 'noc.fix@telekom.hu'
     uid: 5222
@@ -3501,6 +3501,14 @@ USERS:
     company: 'Westnetz w.V.'
     email: 'tech@westnetz.org'
     uid: 5458
+    groups:
+      - ring-users
+
+  multim:
+    state: present
+    company: 'Multim Oy'
+    email: 'noc@multim.fi'
+    uid: 5459
     groups:
       - ring-users
 
