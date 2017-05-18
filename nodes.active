@@ -207,7 +207,6 @@ flhsi01.ring.nlnog.net OWNER=flhsi V4=208.90.223.6 V6=2606:2400:223:4::6
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
 telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
-infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
 funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
 dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
@@ -244,7 +243,6 @@ digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:
 digitalocean05.ring.nlnog.net OWNER=digitalocean V4=139.59.43.142 V6=2400:6180:100:d0::cf4:b001
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
-dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
 riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d6ff:fec2:dcd5
 immense01.ring.nlnog.net OWNER=immense V4=72.194.128.201 V6=2620:8d:4000:1000::10
 bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a01:70:ffff:3::2
@@ -414,6 +412,7 @@ netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250
 rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:1000:1000:20c:29ff:fe4b:e93b
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
+multim01.ring.nlnog.net OWNER=multim V4=185.87.111.13 V6=2a05:b9c0::1:0:19
 
 [infranode]
 
@@ -1090,7 +1089,6 @@ telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
 [sne]
 
 [infowest]
-infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
 
 [funet]
 funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
@@ -1191,7 +1189,6 @@ blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 
 [dfn]
-dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
 
 [liquidweb]
 
@@ -1703,3 +1700,4 @@ lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
 
 [multim]
+multim01.ring.nlnog.net OWNER=multim V4=185.87.111.13 V6=2a05:b9c0::1:0:19
