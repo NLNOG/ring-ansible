@@ -194,7 +194,6 @@ vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 hostvirtual01.ring.nlnog.net OWNER=hostvirtual V4=103.6.87.36 V6=2403:2500:4000::d77
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
 mozilla01.ring.nlnog.net OWNER=mozilla V4=63.245.223.37 V6=2620:101:8016:20::1:37
-lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d8:11::3:0:1
 iccn01.ring.nlnog.net OWNER=iccn V4=72.36.126.205 V6=2620:0:e10:400a::5
 popsc01.ring.nlnog.net OWNER=popsc V4=200.237.196.2 V6=2801:80:a88:4017::2
 sargasso01.ring.nlnog.net OWNER=sargasso V4=78.158.81.4 V6=2a05:e200:1:69::1
@@ -1048,7 +1047,6 @@ hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000
 mozilla01.ring.nlnog.net OWNER=mozilla V4=63.245.223.37 V6=2620:101:8016:20::1:37
 
 [lightstorm]
-lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d8:11::3:0:1
 
 [iccn]
 iccn01.ring.nlnog.net OWNER=iccn V4=72.36.126.205 V6=2620:0:e10:400a::5
