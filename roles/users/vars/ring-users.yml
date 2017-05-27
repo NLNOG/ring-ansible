@@ -496,7 +496,7 @@ USERS:
       - ring-users
 
   zensystems:
-    state: present
+    state: absent
     company: 'Zen Systems'
     email: 'noc@zensystems.dk'
     uid: 5074
