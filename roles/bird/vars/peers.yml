@@ -253,6 +253,8 @@ lg_peers:
   MAINSTREAMHOSTING1:
     asn: 30893
     ipv4: 185.9.166.34
+  MAINSTREAMHOSTING2:
+    asn: 30893
     ipv6: 185.9.166.35
   MNETWORKS1:
     asn: 198611
