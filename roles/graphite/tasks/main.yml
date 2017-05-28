@@ -36,7 +36,7 @@
     state: directory
     owner: root
     group: graphite
-    mode: 0664
+    mode: 0774
 
 - name: "Set graphite.db permissions"
   file:
@@ -51,7 +51,7 @@
     state: directory
     owner: root
     group: graphite
-    mode: 0664
+    mode: 0774
     recurse: yes
 
 - name: "Install carbon aggregation-rules.conf"
