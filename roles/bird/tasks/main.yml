@@ -1,3 +1,6 @@
+- name: "Load peer list"
+  include_vars: peers.yml
+
 - name: "Add bird apt repository"
   apt_repository:
     repo: 'deb http://ppa.launchpad.net/cz.nic-labs/bird/ubuntu precise main'
