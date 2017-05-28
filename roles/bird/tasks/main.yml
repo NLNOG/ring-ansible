@@ -34,3 +34,9 @@
     name: /etc/shells
     line: /usr/local/bin/birdshell
 
+- name: "Start bird"
+  service: name=bird state=started
+
+- name: "Start bird6"
+  service: name=bird6 state=started
+

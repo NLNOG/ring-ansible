@@ -34,3 +34,6 @@
   template: src=lg-proxy.cfg.j2 dest=/usr/local/bird-lg/lg-proxy.cfg
   notify: restart bird-lg-proxy
 
+- name: "Start bird-lg-proxy"
+  service: name=bird-lg-proxy state=started
+

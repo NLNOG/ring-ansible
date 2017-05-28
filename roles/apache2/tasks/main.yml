@@ -1,0 +1,14 @@
+- name: "Install apache2 and friends"
+  apt: name={{ item }} state=latest
+  with_items:
+    - apache2-mpm-prefork
+    - libapache2-mod-wsgi
+
+- name: "Remove apache2 placeholder site"
+  file:
+    path: /etc/apache2/sites-enabled/000-default
+    state: absent
+
+- name: "Start apache2"
+  service: name=apache2 state=started
+
