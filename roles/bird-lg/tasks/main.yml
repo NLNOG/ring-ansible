@@ -1,0 +1,36 @@
+- name: "Create bird-lg directory"
+  file:
+    path: /usr/local/bird-lg
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: "Install lg-proxy.py"
+  copy:
+    src=lg-proxy.py
+    dest=/usr/local/bird-lg/lg-proxy.py
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install bird.py"
+  copy:
+    src=bird.py
+    dest=/usr/local/bird-lg/bird.py
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install bird-lg-proxy upstart config"
+  copy:
+    src=upstart-bird-lg-proxy.conf
+    dest=/etc/init/bird-lg-proxy.conf
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install lg-proxy.cfg"
+  template: src=lg-proxy.cfg.j2 dest=/usr/local/bird-lg/lg-proxy.cfg
+  notify: restart bird-lg-proxy
+
