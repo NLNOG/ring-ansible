@@ -1,2 +1,2 @@
 - name: reload pdns
-  service: name=pdns state=reloaded enabled=yes
+  service: name=pdns state=restarted enabled=yes
