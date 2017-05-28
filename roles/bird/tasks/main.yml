@@ -31,6 +31,6 @@
 
 - name: "Add birdshell to shells"
   lineinfile:
-    path: /etc/shells
+    name: /etc/shells
     line: /usr/local/bin/birdshell
 
