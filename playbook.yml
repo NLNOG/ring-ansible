@@ -70,6 +70,7 @@
   become: true
   become_user: root
   roles:
+    - { role: bird, tags: bird }
     - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell, tags: ring-users }
 
 - hosts: public02.infra.ring.nlnog.net

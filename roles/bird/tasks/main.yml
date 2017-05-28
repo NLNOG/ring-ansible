@@ -1,0 +1,33 @@
+- name: "Add bird apt repository"
+  apt_repository:
+    repo: 'deb http://ppa.launchpad.net/cz.nic-labs/bird/ubuntu precise main'
+    state: present
+    filename: 'cz_nic-labs-bird-precise.list'
+
+- name: "Install bird and friends"
+  apt: name={{ item }} state=latest
+  with_items:
+    - bird
+    - dialog
+
+- name: "Install bird.conf"
+  template: src=bird.conf.j2 dest=/etc/bird/bird.conf.new
+  notify: reload bird
+
+- name: "Install bird6.conf"
+  template: src=bird6.conf.j2 dest=/etc/bird/bird6.conf.new
+  notify: reload bird
+
+- name: "Install birdshell"
+  copy:
+    src=birdshell
+    dest=/usr/local/bin/birdshell
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Add birdshell to shells"
+  lineinfile:
+    path: /etc/shells
+    line: /usr/local/bin/birdshell
+
