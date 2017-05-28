@@ -4,11 +4,11 @@
   tags:
     - always
 
-#- hosts: infranode
-#  tasks:
-#    - include_vars: "vault/infranode.yml"
-#  tags:
-#    - always
+- hosts: infranode
+  tasks:
+    - include_vars: "vault/infranode.yml"
+  tags:
+    - always
 
 - include: ubuntu_upgrade.yml
   when: '"ringnode" in group_names and ansible_distribution_release != "xenial"'
@@ -71,6 +71,12 @@
   become_user: root
   roles:
     - { role: munin-master, tags: munin-master }
+
+- hosts: compute02.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: graphite, tags: graphite }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
