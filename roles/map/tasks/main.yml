@@ -10,7 +10,6 @@
   git:
     repo: 'https://github.com/NLNOG/ring-map.git'
     dest: /var/www/map.ring.nlnog.net/HTML
-    update: no
 
 - name: "Install map apache vhost"
   copy:
