@@ -1,0 +1,5 @@
+- name: reload apache2
+  service: name=apache2 state=reloaded enabled=yes
+
+- name: reload carbon
+  service: name=apache2 state=reloaded enabled=yes

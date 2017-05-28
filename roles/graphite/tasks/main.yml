@@ -165,7 +165,7 @@
   notify: reload apache2
 
 - name: "Start carbon"
-  service: name=carbon state=startede
+  service: name=carbon state=started
 
 - name: "Install ring-graphite admin tool"
   copy:
