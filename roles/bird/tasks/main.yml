@@ -14,7 +14,7 @@
     - dialog
 
 - name: "Install bird.conf"
-  template: src=bird.conf.j2 dest=/etc/bird/bird.conf.new
+  template: src=bird.conf.j2 dest=/etc/bird/bird.conf
   notify: reload bird
 
 - name: "Install bird6.conf"
