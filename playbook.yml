@@ -97,6 +97,7 @@
   become: true
   become_user: root
   roles:
+    - { role: pdns-server, tags: pdns-server }
     - { role: map, tags: map }
 
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net

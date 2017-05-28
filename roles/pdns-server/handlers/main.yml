@@ -1,0 +1,2 @@
+- name: reload pdns
+  service: name=pdns state=reloaded enabled=yes
