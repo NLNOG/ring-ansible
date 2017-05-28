@@ -39,11 +39,12 @@ template bgp peers {
 }
 
 {% for peer in lg_peers %}
-{% if peer.ipv4|default(None) %}
+{% if lg_peers[peer].ipv4|default(None) %}
 protocol bgp {{ peer }} from peers {
     description "{{ peer }}";
-    neighbor {{ peer.ipv4 }} as {{ peer.asn }};
+    neighbor {{ lg_peers[peer].ipv4 }} as {{ lg_peers[peer].asn }};
 }
+
 {% endif %}
 {% endfor %}
 

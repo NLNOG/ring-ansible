@@ -43,6 +43,7 @@ protocol bgp {{ peer }} from peers {
     description "{{ peer }}";
     neighbor {{ lg_peers[peer].ipv6 }} as {{ lg_peers[peer].asn }};
 }
+
 {% endif %}
 {% endfor %}
 
