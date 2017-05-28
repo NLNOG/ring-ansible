@@ -93,6 +93,12 @@
     - { role: haproxy, profile: github, tags: haproxy }
     - { role: inframail, tags: inframail }
 
+- hosts: public03.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: map, tags: map }
+
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true
   become_user: root

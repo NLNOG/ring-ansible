@@ -1,0 +1,21 @@
+- name: "Create map vhost directory"
+  file:
+    path: /var/www/map.ring.nlnog.net
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: "Check out ring-map git repository"
+  git:
+    repo: 'https://github.com/NLNOG/ring-map.git'
+    dest: /var/www/map.ring.nlnog.net/HTML
+
+- name: "Install map apache vhost"
+  copy:
+    src=map-vhost.conf
+    dest=/etc/apache2/sites-available/map.ring.nlnog.net
+    owner=root
+    group=root
+    mode=0644
+
