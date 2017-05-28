@@ -3,7 +3,7 @@
 #log stderr all;
 #log "tmp" all;
 
-router id {{ ansible_default_ipv6['address'] }}; 
+router id {{ ansible_default_ipv4['address'] }};
 
 #mrtdump "/var/run/mrtdump6";
 #mrtdump protocols all;
