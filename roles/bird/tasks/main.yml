@@ -16,7 +16,7 @@
 
 - name: "Install bird6.conf"
   template: src=bird6.conf.j2 dest=/etc/bird/bird6.conf.new
-  notify: reload bird
+  notify: reload bird6
 
 - name: "Install birdshell"
   copy:
