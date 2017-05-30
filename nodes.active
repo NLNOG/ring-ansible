@@ -345,6 +345,7 @@ inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
+anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1::2
@@ -372,7 +373,6 @@ equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:1
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
-kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.191.229.177 V6=2c0f:fe40:9fef:2:41:191:229:177
 carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
@@ -1485,6 +1485,7 @@ inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
 
 [anuragbhatia]
+anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 
 [elite]
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
@@ -1580,7 +1581,6 @@ cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 
 [kviknet]
-kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 
 [liquidtelecom]
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
