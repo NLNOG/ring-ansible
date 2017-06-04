@@ -29,6 +29,7 @@ StrictModes yes
 
 RSAAuthentication yes
 PubkeyAuthentication yes
+PubkeyAcceptedKeyTypes= +ssh-dss
 #AuthorizedKeysFile	%h/.ssh/authorized_keys
 
 # Don't read the user's ~/.rhosts and ~/.shosts files
