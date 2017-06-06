@@ -3520,3 +3520,11 @@ USERS:
     groups:
       - ring-users
 
+  anexia:
+    state: present
+    company: 'ANEXIA Internetdienstleistungs GmbH'
+    email: 'noc@anexia-it.com'
+    uid: 5461
+    groups:
+      - ring-users
+
