@@ -1,14 +1,6 @@
 - name: "Install openssh-server"
   apt: name=openssh-server state=latest
 
-- name: "Install ssh_config"
-  copy:
-    src=ssh_config
-    dest=/etc/ssh/ssh_config
-    owner=root
-    group=root
-    mode=0644
-
 - include: ringnode.yml
   when: "'ringnode' in group_names"
 

@@ -6,3 +6,12 @@
     group=root
     mode=0644
   notify: restart openssh
+
+- name: "Install ringnode ssh_config"
+  copy:
+    src=ssh_config.ringnode
+    dest=/etc/ssh/ssh_config
+    owner=root
+    group=root
+    mode=0644
+
