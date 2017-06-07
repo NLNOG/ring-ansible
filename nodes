@@ -137,7 +137,7 @@ bluezonejordan01.ring.nlnog.net OWNER=bluezonejordan V4=31.222.236.6 V6=2a01:8e4
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 yellowfiber01.ring.nlnog.net OWNER=yellowfiber V4=67.23.114.2 V6=2607:fd50:1::5a
-bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:01:1107::2
+bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:1:1107::2
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
@@ -855,7 +855,7 @@ ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 yellowfiber01.ring.nlnog.net OWNER=yellowfiber V4=67.23.114.2 V6=2607:fd50:1::5a
 
 [bahnhof]
-bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:01:1107::2
+bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:1:1107::2
 
 [nicchile]
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
