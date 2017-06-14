@@ -2401,7 +2401,7 @@ USERS:
 
   nicbr:
     state: present
-    company: 'Nucelo de Informacao e Coordenacao do Ponto BR'
+    company: 'Nucleo de Informacao e Coordenacao do Ponto BR'
     email: 'equipe.projetos@nic.br'
     uid: 5320
     groups:
