@@ -3528,3 +3528,11 @@ USERS:
     groups:
       - ring-users
 
+  supplyframe:
+    state: present
+    company: 'SupplyFrame Inc'
+    email: 'sfops@supplyframe.com'
+    uid: 5462
+    groups:
+      - ring-users
+
