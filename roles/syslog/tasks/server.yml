@@ -9,5 +9,5 @@
 
 - name: create log compression cron
   template:
-    src: cron.d/ansible_master.j2
-    dest: /etc/cron.d/ansible_master
+    src: cron.d/syslog-server.j2
+    dest: /etc/cron.d/syslog-server

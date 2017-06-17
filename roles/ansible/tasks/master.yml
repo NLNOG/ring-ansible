@@ -6,8 +6,7 @@
     group: ring-admins
     mode: 02775
 
-- name: "Create syslog server cronjob"
+- name: "Create Ansible master cronjob"
   template:
-    src: cron.d/syslog-server.j2
-    dest: /etc/cron.d/syslog-server
-
+    src: cron.d/ansible_master.j2
+    dest: /etc/cron.d/ansible_master
