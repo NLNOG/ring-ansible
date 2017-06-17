@@ -26,8 +26,13 @@
   notify: syslog reload service
   with_items:
     - etc/default/syslog-ng
-    - etc/syslog-ng/syslog-ng.conf
     - etc/logrotate.d/syslog-ng
+
+- include: client.yml
+  when: syslog_server|default(None) != true
+
+- include: server.yml
+  when: syslog_server|default(None) == true
 
 - name: create scripts
   template:

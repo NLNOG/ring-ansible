@@ -1,0 +1,10 @@
+- name: create syslog-ng.conf
+  template:
+    src: etc/syslog-ng/syslog-ng.conf.server
+    dest: /etc/syslog-ng/syslog-ng.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: syslog reload service
+
+- name: create log compression cron

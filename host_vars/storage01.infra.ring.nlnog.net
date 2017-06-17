@@ -1,1 +1,2 @@
 backups: disabled
+syslog_server: true

@@ -1,0 +1,18 @@
+- name: create syslog-ng.conf
+  template:
+    src: etc/syslog-ng/syslog-ng.conf
+    dest: /etc/syslog-ng/syslog-ng.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: syslog reload service
+
+- name: install if-up.d script on ringnodes
+  copy:
+    src=if-up.d/syslog-ng
+    dest=/etc/network/if-up.d/syslog-ng
+    owner=root
+    group=root
+    mode=0755
+  when: "'ringnode' in group_names"
+
