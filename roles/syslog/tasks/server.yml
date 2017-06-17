@@ -8,3 +8,6 @@
   notify: syslog reload service
 
 - name: create log compression cron
+  template:
+    src: cron.d/ansible_master.j2
+    dest: /etc/cron.d/ansible_master
