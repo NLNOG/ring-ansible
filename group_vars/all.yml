@@ -4,4 +4,4 @@ etc_aliases:
 
 syslog_servers:
   - master01.infra.ring.nlnog.net
-  - storage01.infra.ring.nlnog.net
+#  - storage01.infra.ring.nlnog.net
