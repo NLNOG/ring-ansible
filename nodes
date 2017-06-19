@@ -46,7 +46,7 @@ tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:45
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
 voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
 voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
-apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.22 V6=2401:2000:6660::22
+apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:ace3:9ff:fe10:e812
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 concepts-ict01.ring.nlnog.net OWNER=concepts-ict V4=85.113.233.194 V6=2001:838:76:20::2
@@ -615,7 +615,7 @@ voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
 voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
 
 [apnic]
-apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.22 V6=2401:2000:6660::22
+apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 
 [man-da]
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:ace3:9ff:fe10:e812
