@@ -157,7 +157,6 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.98 V6=2607:f140:ffff:ff07
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
-proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
@@ -354,6 +353,7 @@ anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1::2
+cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 sigtelecom01.ring.nlnog.net OWNER=sigtelecom V4=217.169.138.50 V6=2001:41e0:1001:2:2c:29ff:fe2c:86bb
 zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
@@ -913,7 +913,6 @@ switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 
 [proserve]
-proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 
 [teletalk]
 
@@ -1506,6 +1505,7 @@ lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1::2
 
 [cadence]
+cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 
 [netflix]
 
