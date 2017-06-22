@@ -3536,3 +3536,11 @@ USERS:
     groups:
       - ring-users
 
+  utelecom:
+    state: present
+    company: 'Ukrainian Telecommunication Group'
+    email: 'noc@utelecom.com.ua'
+    uid: 5463
+    groups:
+      - ring-users
+
