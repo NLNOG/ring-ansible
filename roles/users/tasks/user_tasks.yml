@@ -55,7 +55,7 @@
     group={{ item.item }}
     mode=700
   with_items: "{{ keyfiles.results }}"
-  when: keyfiles.results is defined and item.stat.exists == True
+  when: keyfiles.results is defined and item.stat is defined and item.stat.exists == True
 
 - name: "Find per org local sshkey files to provision"
   local_action: stat path=roles/users/files/keys/{{ item }}/{{ item }}-only.sshkeys
