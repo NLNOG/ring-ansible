@@ -1767,14 +1767,6 @@ USERS:
     groups:
       - ring-users
 
-  xconnect:
-    state: present
-    company: 'Custom Connect'
-    email: 'gsc@custom-connect.com'
-    uid: 5241
-    groups:
-      - ring-users
-
   amsio:
     state: present
     company: 'Amsio B.V.'
@@ -3541,6 +3533,14 @@ USERS:
     company: 'Ukrainian Telecommunication Group'
     email: 'noc@utelecom.com.ua'
     uid: 5463
+    groups:
+      - ring-users
+
+  customconnect:
+    state: present
+    company: 'Custom Connect'
+    email: 'gsc@custom-connect.com'
+    uid: 5241
     groups:
       - ring-users
 
