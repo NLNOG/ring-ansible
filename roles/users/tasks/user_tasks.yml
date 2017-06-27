@@ -1,3 +1,9 @@
+- name: "Temporary hack by Fluor, remove xconnect user"
+  user:
+    name=xconnect
+    state=absent
+    remove=yes
+
 - name: "Add users"
   user:
     name={{ item }}
