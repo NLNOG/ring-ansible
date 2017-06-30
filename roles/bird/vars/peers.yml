@@ -238,7 +238,10 @@ lg_peers:
     asn: 8758
     ipv4: 212.25.27.39
     ipv6: 2001:8e0:0:ffff::2
-  KAIAGLOBAL:
+  KUDELSKI1:
+    asn: 200584
+    ipv4: 85.184.255.154
+  KAIAGLOBAL1:
     asn: 251
     ipv4: 79.141.173.1
     ipv6: 2a02:b0:1072::1
