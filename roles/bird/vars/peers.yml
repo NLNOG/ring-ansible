@@ -420,6 +420,6 @@ readonly_peers:
     NAGRAFEED1:
       asn: 200584
       ipv4: 213.244.194.101
-    NAGRAFEED1:
+    NAGRAFEED2:
       asn: 200584
       ipv4: 85.184.255.154
