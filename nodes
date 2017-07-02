@@ -457,6 +457,7 @@ supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1
 customconnect01.ring.nlnog.net OWNER=customconnect V4=185.78.161.52 V6=2a04:1123::1
+jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1815,3 +1816,6 @@ utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 [customconnect]
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1
 customconnect01.ring.nlnog.net OWNER=customconnect V4=185.78.161.52 V6=2a04:1123::1
+
+[jpbe]
+jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
