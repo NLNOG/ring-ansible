@@ -48,9 +48,10 @@ protocol bgp {{ peer }} from peers {
 {% endif %}
 {% endfor %}
 
-
-protocol bgp nagrafeed1 {
-    neighbor 213.244.194.101 as 200584;
+{% for peer in readonly_peers %}
+{% if readonly_peers [peer].ipv4|default(None) %}
+protocol bgp {{ peer }} {
+    neighbor {{ readonly_peers[peer].ipv4 }} as {{ readonly_peers[peer].asn }};
     add paths;
     multihop;
     local as 199036;
@@ -63,3 +64,5 @@ protocol bgp nagrafeed1 {
     import none;
     export all;
 }
+{% endif %}
+{% endfor %}

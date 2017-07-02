@@ -47,3 +47,21 @@ protocol bgp {{ peer }} from peers {
 {% endif %}
 {% endfor %}
 
+{% for peer in readonly_peers %}
+{% if readonly_peers [peer].ipv6|default(None) %}
+protocol bgp {{ peer }} {
+    neighbor {{ readonly_peers[peer].ipv6 }} as {{ readonly_peers[peer].asn }};
+    add paths;
+    multihop;
+    local as 199036;
+    hold time 240;
+    startup hold time 240;
+    connect retry time 120;
+    start delay time 5;
+    error forget time 0;
+    source address {{ ansible_default_ipv6['address'] }};
+    import none;
+    export all;
+}
+{% endif %}
+{% endfor %}

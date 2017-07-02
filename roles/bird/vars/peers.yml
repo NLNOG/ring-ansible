@@ -415,3 +415,11 @@ lg_peers:
     asn: 40191
     ipv4: 216.221.157.162
     ipv6: 2001:668:0:3::8000:1712
+
+readonly_peers:
+    NAGRAFEED1:
+      asn: 200584
+      ipv4: 213.244.194.101
+    NAGRAFEED1:
+      asn: 200584
+      ipv4: 85.184.255.154
