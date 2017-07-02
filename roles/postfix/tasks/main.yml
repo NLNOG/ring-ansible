@@ -26,6 +26,27 @@
   command: /bin/mv /etc/postfix/postfix-files.dpkg-dist /etc/postfix/postfix-files
   when: etc_postfix_postfix_files.stat.exists == False and ansible_distribution_release == 'xenial'
 
+- name: check /etc/aliases existence
+  stat: path=/etc/aliases
+  register: etc_aliases_file
+
+- name: create /etc/aliases
+  file: path=/etc/aliases
+    owner=root
+    group=root
+    mode=0644
+    state={{ "file" if etc_aliases_file.stat.exists else "touch"}}
+  notify: running newaliases
+
+- name: update /etc/aliases
+  lineinfile:
+    dest: /etc/aliases
+    regexp: '^{{ item.key }}\s*:'
+    line: '{{ item.key }}: {{ item.value }}'
+  notify: running newaliases
+  when: etc_aliases_file.stat.exists == True
+  with_dict: "{{ etc_aliases }}"
+
 - name: reload systemd if needed
   meta: flush_handlers
 
