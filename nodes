@@ -26,8 +26,6 @@ jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:1
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:fe7e:8ea4
 hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
-hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
-hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
@@ -44,8 +42,6 @@ rootlu01.ring.nlnog.net OWNER=rootlu V4=94.242.192.13 V6=2a01:608:f::13
 nebula01.ring.nlnog.net OWNER=nebula V4=188.117.58.137 V6=2001:1bc8:200:f::2
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
-voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
-voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:ace3:9ff:fe10:e812
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
@@ -557,8 +553,6 @@ tenet01.ring.nlnog.net OWNER=tenet V4=155.232.10.18 V6=2001:4200:fffb::20c:29ff:
 
 [hibernia]
 hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
-hibernia03.ring.nlnog.net OWNER=hibernia V4=78.152.54.74 V6=2a02:d28:5580:e:1000::416
-hibernia02.ring.nlnog.net OWNER=hibernia V4=78.152.60.251 V6=2a02:d28:600:5::251
 
 [cyso]
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
@@ -613,8 +607,6 @@ tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:45
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
 
 [voxel]
-voxel01.ring.nlnog.net OWNER=voxel V4=107.6.72.20 V6=2001:48c8:3:2::2
-voxel02.ring.nlnog.net OWNER=voxel V4=103.22.129.2 V6=2404:1200:0:5::2
 
 [apnic]
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
