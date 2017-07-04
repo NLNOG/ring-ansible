@@ -630,6 +630,43 @@ def traceroutes(hosts, destination, user, proto, udp, timeout, sshcommand):
     return result
 
 
+def cymru_origins(addr):
+    reverseaddr = reversename.from_address(addr).to_text()
+    reverseaddr = reverseaddr.replace('.in-addr.arpa.','.{0}')
+    reverseaddr = reverseaddr.replace('.ip6.arpa.','.{1}')
+    originquery = reverseaddr.format('origin.asn.cymru.com.','origin6.asn.cymru.com')
+    try:
+        origins = query(originquery,'TXT')
+    except:
+        return []
+    return origins
+
+
+def cymru_paths(addr):
+    reverseaddr = reversename.from_address(addr).to_text()
+    reverseaddr = reverseaddr.replace('.in-addr.arpa.','.{}')
+    reverseaddr = reverseaddr.replace('.ip6.arpa.','.{}')
+    peerquery   = reverseaddr.format('peer.asn.cymru.com.')
+    try:
+        paths = query(peerquery,'TXT')
+    except:
+        return []
+    return paths
+
+
+def cymru_descr(asn):
+    asnquery    = "as{}.asn.cymru.com".format(asn.strip())
+    try:
+        descrs = query(asnquery,'TXT')
+        descr=""
+        for d in descrs:
+            (dasn,dcountry,dregion,ddate,ddescr)=d.to_text().lstrip('"').rstrip('"').split('|')
+            descr+=ddescr.strip()
+    except:
+        return "unknown"
+    return descr
+
+
 def analyse(traceroutes, resolve):
     """Analyse results, build a map with data for each IP found
     """
@@ -659,45 +696,20 @@ def analyse(traceroutes, resolve):
     # prevent crashes for unknown stuff
     iplist[""] = iplist["???"]
 
+    debug("Talking to Cymru using DNS.")
     # bulk whois query at Cymru for lookups
-    lookups = []
-    try:
-        result = ""
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(("whois.cymru.com", 43))
-        s.sendall("begin\ncountrycode\nnoheader\nasname\n%s\nend\n" % "\n".join(lst.keys()))
-# 12:04:06     Kralian | "This month (June 2017), our IP to ASN mapping service will undergo its first major overhaul since first released to the public nearly 10 years ago!"
-# 12:04:14     Kralian | from http://www.team-cymru.org/IP-ASN-mapping.html
-# 12:06:46     Kralian | hmm
-# 12:06:50     Kralian | so it works with netcat ..
-# 12:07:59        teun | ah, that could explain it
-# 12:07:59        teun | although they claim everything should be even better now
-# 12:08:01     Kralian | oh
-# 12:08:17     Kralian | found a quick fix ..
-# 12:08:48        teun | do tell
-# 12:08:49     Kralian | if you take out line 669 s.shutdown(socket.SHUT_WR)  it works again
-#
-#        s.shutdown(socket.SHUT_WR)
-        while 1:
-            data = s.recv(1024)
-            if not data:
-                break
-            result += data
-        s.close()
-        lookups = result.strip().split("\n")[1:]
-    except:
-        print "Failed to lookup ASNs at cymru.com."
-        return iplist
-    for line in lookups:
-        try:
-            (asn, ip, country, desc) = [item.strip() for item in line.split("|")]
-            iplist[ip]["fqdn"] =  ""
-            iplist[ip]["asn"] =  "unknown" if asn == "NA" else asn
-            iplist[ip]["country"] =  country
-            iplist[ip]["desc"] =  "unknown" if desc == "NA" else desc
-            iplist[ip]["ix"] =  False
-        except:
-            debug("Failed to parse ASN lookup line: %s" % line)
+    for addr in lst.keys():
+        origins = cymru_origins(addr)
+        for origin in origins:
+            try:
+                (asnr,prefix,country,ncc,date)=[item.strip() for item in origin.to_text().lstrip('"').rstrip('"').split('|')]
+                iplist[addr]["fqdn"] = ""
+                iplist[addr]["asn"] = asnr
+                iplist[addr]["country"] =  country
+                iplist[addr]["desc"] =  cymru_descr(asnr)
+                iplist[addr]["ix"] =  False
+            except:
+                debug("Failed to parse response: {}".format(origin.to_text()))
 
     # DNS lookups of fqdns
     debug("Looking up DNS entries.")
