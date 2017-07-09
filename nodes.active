@@ -1743,3 +1743,5 @@ customconnect01.ring.nlnog.net OWNER=customconnect V4=185.78.161.52 V6=2a04:1123
 
 [jpbe]
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
+
+[ampath]

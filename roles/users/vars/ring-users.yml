@@ -3552,3 +3552,11 @@ USERS:
     groups:
       - ring-users
 
+  ampath:
+    state: present
+    company: 'AMPATH'
+    email: 'bgp@ampath.net'
+    uid: 5465
+    groups:
+      - ring-users
+
