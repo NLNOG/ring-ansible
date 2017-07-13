@@ -62,6 +62,7 @@ amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
+amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
@@ -624,6 +625,7 @@ amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
+amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 
 [equinixnl]
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
