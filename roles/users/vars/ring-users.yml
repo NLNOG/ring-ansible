@@ -376,7 +376,7 @@ USERS:
       - ring-users
 
   voxel:
-    state: present
+    state: absent
     company: 'Voxel dot Net, Inc.'
     email: 'noc@internap.com'
     uid: 5055
@@ -3549,6 +3549,14 @@ USERS:
     company: 'JPBE Network'
     email: 'noc@as206479.net'
     uid: 5464
+    groups:
+      - ring-users
+
+  ampath:
+    state: present
+    company: 'AMPATH'
+    email: 'bgp@ampath.net'
+    uid: 5465
     groups:
       - ring-users
 
