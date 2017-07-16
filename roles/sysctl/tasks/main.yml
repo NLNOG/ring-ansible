@@ -43,7 +43,7 @@
   sysctl:
     name: net.ipv6.conf.default.accept_ra_pinfo
     value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Enable accept_ra_defrtr"
   sysctl:
@@ -86,4 +86,5 @@
     name: net.ipv6.conf.default.max_addresses
     value: 1
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
+
 
