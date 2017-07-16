@@ -19,21 +19,24 @@
 - name: "Clear out existing info in 30-disable-accepting-ipv6-ra.conf"
   file: name=/etc/sysctl.d/30-disable-accepting-ipv6-ra.conf state=absent
 
-- name: "Disable router_solicitations"
+- name: "Clear out existing info in 30-ipv6.conf"
+  file: name=/etc/sysctl.d/30-ipv6.conf state=absent
+
+- name: "Enable router_solicitations"
   sysctl:
     name: net.ipv6.conf.default.router_solicitations
-    value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    value: 1
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Stat accept_ra_rtr_pref"
   stat: path=/proc/sys/net/ipv6/conf/default/accept_ra_rtr_pref
   register: accept_ra_rtr_pref
 
-- name: "Disable accept_ra_rtr_pref"
+- name: "Enable accept_ra_rtr_pref"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_rtr_pref
-    value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    value: 1
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
   when: accept_ra_rtr_pref.stat.exists
 
 - name: "Disable accept_ra_pinfo"
@@ -42,44 +45,45 @@
     value: 0
     sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
 
-- name: "Disable accept_ra_defrtr"
+- name: "Enable accept_ra_defrtr"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_defrtr
-    value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    value: 1
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
-- name: "Disable accept_ra"
+- name: "Enable accept_ra"
   sysctl:
     name: net.ipv6.conf.all.accept_ra
-    value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    value: 1
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (default)"
   sysctl:
     name: net.ipv6.conf.default.autoconf
     value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (primary)"
   sysctl:
     name: net.ipv6.conf.{{ ansible_default_ipv6.interface|default(ansible_default_ipv4.interface)|regex_replace('\.','/') }}.autoconf
     value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (all)"
   sysctl:
     name: net.ipv6.conf.all.autoconf
     value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable dad_transmits"
   sysctl:
     name: net.ipv6.conf.default.dad_transmits
     value: 0
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Set max_addresses"
   sysctl:
     name: net.ipv6.conf.default.max_addresses
     value: 1
-    sysctl_file: /etc/sysctl.d/30-disable-accepting-ipv6-ra.conf
+    sysctl_file: /etc/sysctl.d/30-ipv6.conf
+
