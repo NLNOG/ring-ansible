@@ -214,7 +214,6 @@ goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 kinber01.ring.nlnog.net OWNER=kinber V4=162.223.16.247 V6=2001:550:501:3::1ce:c01d:bee2
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
-kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
 flhsi01.ring.nlnog.net OWNER=flhsi V4=208.90.223.6 V6=2606:2400:223:4::6
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
@@ -389,6 +388,7 @@ kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.191.229.177 V6=2c0f:fe40:9fef:2:41:191:229:177
 carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
+internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
@@ -398,6 +398,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
+connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 svwh01.ring.nlnog.net OWNER=svwh V4=72.5.72.35 V6=2606:c680:1:17:6c02:c1ff:fea3:d427
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
@@ -1103,7 +1104,6 @@ nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 
 [kpn]
-kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
 
 [maxitel]
 
@@ -1618,6 +1618,7 @@ liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.191.229.177 V6=2c0f:fe4
 carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
 
 [internode]
+internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 
 [depaul]
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
@@ -1641,6 +1642,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 [connectria]
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
+connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 
 [freifunkrl]
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
