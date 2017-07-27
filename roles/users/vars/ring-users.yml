@@ -16,7 +16,7 @@ USERS:
     state: absent
 
   intouch:
-    state: present
+    state: absent
     company: 'InTouch NV'
     email: 'tech@intouch.eu'
     uid: 5001
@@ -216,7 +216,7 @@ USERS:
       - ring-users
 
   tenet:
-    state: present
+    state: absent
     company: 'TENET'
     email: 'noc@tenet.ac.za'
     uid: 5031
@@ -304,7 +304,7 @@ USERS:
       - ring-users
 
   blix:
-    state: present
+    state: absent
     company: 'Blix Solutions'
     email: 'support@blixsolutions.no'
     uid: 5046
@@ -1192,7 +1192,7 @@ USERS:
       - ring-users
 
   bredband2:
-    state: present
+    state: absent
     company: 'Bredband2 AB'
     email: 'noc@bredband2.se'
     uid: 5167
@@ -1392,7 +1392,7 @@ USERS:
       - ring-users
 
   intellit:
-    state: present
+    state: absent
     company: 'INTELLIT AS'
     email: 'noc@intellit.no'
     uid: 5193
@@ -1440,7 +1440,7 @@ USERS:
       - ring-users
 
   phusion:
-    state: present
+    state: absent
     company: 'Phusion'
     email: 'noc@phusionim.com'
     uid: 5199
@@ -2040,7 +2040,7 @@ USERS:
       - ring-users
 
   blizoo:
-    state: present
+    state: absent
     company: 'Blizoo Media and Broadband'
     email: 'noc@blizoo.bg'
     uid: 5276
@@ -2104,7 +2104,7 @@ USERS:
       - ring-users
 
   bdhub:
-    state: present
+    state: absent
     company: 'bdHUB Limited'
     email: 'noc@bdhub.com'
     uid: 5284
@@ -2136,7 +2136,7 @@ USERS:
       - ring-users
 
   liquidweb:
-    state: present
+    state: absent
     company: 'Liquid Web'
     email: 'noc@liquidweb.com'
     uid: 5288
@@ -2424,7 +2424,7 @@ USERS:
       - ring-users
 
   nianet:
-    state: present
+    state: absent
     company: 'Nianet A/S'
     email: '3level@nianet.dk'
     uid: 5324
@@ -2504,7 +2504,7 @@ USERS:
       - ring-users
 
   cloudvps:
-    state: present
+    state: absent
     company: 'CloudVPS'
     email: 'noc@cloudvps.com'
     uid: 5335
@@ -2784,7 +2784,7 @@ USERS:
       - ring-users
 
   rackcentral:
-    state: present
+    state: absent
     company: 'RackCentral'
     email: 'noc@rackcentral.com'
     uid: 5370
@@ -2792,7 +2792,7 @@ USERS:
       - ring-users
 
   widenet:
-    state: present
+    state: absent
     company: 'Wide-Net Sp. z o.o.'
     email: 'noc@wide-net.pl'
     uid: 5371
@@ -2824,7 +2824,7 @@ USERS:
       - ring-users
 
   seltimil:
-    state: present
+    state: absent
     company: 'Seltimil Oy'
     email: 'noc@seltimil.fi'
     uid: 5375
@@ -2928,7 +2928,7 @@ USERS:
       - ring-users
 
   datapath:
-    state: present
+    state: absent
     company: 'Datapath.io'
     email: 'contact@datapath.io'
     uid: 5388
