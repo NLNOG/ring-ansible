@@ -2728,7 +2728,7 @@ USERS:
       - ring-users
 
   switchco:
-    state: present
+    state: absent
     company: 'Switch.co'
     email: 'noc@switch.co'
     uid: 5363
