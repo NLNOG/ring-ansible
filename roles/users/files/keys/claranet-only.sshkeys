@@ -1,1 +1,1 @@
-command="perl -e 'system ($ENV{\"SSH_ORIGINAL_COMMAND\"}) if ($ENV{\"SSH_ORIGINAL_COMMAND\"}=~m/^(ping|traceroute)[6]* [0-9a-zA-Z:\.\- ]+$/);'" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFiUx+FT3/9kWRdtG275YUjZxunq+EW46vdIev+KDqBn www-data@noc.eu.clara.net
+command="perl -e 'system ($ENV{\"SSH_ORIGINAL_COMMAND\"}) if ($ENV{\"SSH_ORIGINAL_COMMAND\"}=~m/^(ping|traceroute)[6]* [0-9a-zA-Z:\.\- ]+$/);'" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEIVH2K8GW3HsNEYXtnoaux4VCjn58K1NHSEA72+XO4Y www-data@noc.eu.clara.net
