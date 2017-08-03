@@ -18,9 +18,17 @@
     group=root
     mode=0755
 
-- name: "Install net-ssh gem"
-  gem: name=net-ssh state=latest executable=/usr/bin/gem user_install=no
+- name: "Install rbnacl with ed22519 support (for ring-all)"
+  gem: name=rbnacl version=4.0.2 executable=/usr/bin/gem user_install=no
   when: ansible_distribution_release == "xenial"
+
+- name: "Install various gems for ring-all"
+  gem: name={{ item }} state=latest executable=/usr/bin/gem user_install=no
+  when: ansible_distribution_release == "xenial"
+  with_items:
+    - net-ssh
+    - rbnacl-libsodium
+    - bcrypt_pbkdf
 
 - name: "Install ring userscripts"
   copy:
