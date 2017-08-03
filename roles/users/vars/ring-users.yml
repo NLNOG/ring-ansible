@@ -3560,3 +3560,11 @@ USERS:
     groups:
       - ring-users
 
+  dialpad:
+    state: present
+    company: 'Dialpad'
+    email: 'neteng@dialpad.com'
+    uid: 5466
+    groups:
+      - ring-users
+
