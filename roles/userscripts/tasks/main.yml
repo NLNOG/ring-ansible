@@ -18,11 +18,11 @@
     group=root
     mode=0755
 
-- name: "Install rbnacl with ed22519 support (for ring-all)"
+- name: "Install rbnacl with ed22519 support (for ring.rb)"
   gem: name=rbnacl version=4.0.2 executable=/usr/bin/gem user_install=no
   when: ansible_distribution_release == "xenial"
 
-- name: "Install various gems for ring-all"
+- name: "Install various gems for ring.rb"
   gem: name={{ item }} state=latest executable=/usr/bin/gem user_install=no
   when: ansible_distribution_release == "xenial"
   with_items:
