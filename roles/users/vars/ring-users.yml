@@ -3568,3 +3568,11 @@ USERS:
     groups:
       - ring-users
 
+  kanren:
+    state: present
+    company: 'KanREN'
+    email: 'noc@kanren.net'
+    uid: 5467
+    groups:
+      - ring-users
+
