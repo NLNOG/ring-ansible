@@ -3576,3 +3576,11 @@ USERS:
     groups:
       - ring-users
 
+  proxsys:
+    state: present
+    company: 'PROXSYS'
+    email: 'noc@proxsys.nl'
+    uid: 5468
+    groups:
+      - ring-users
+
