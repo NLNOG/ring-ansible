@@ -3584,3 +3584,11 @@ USERS:
     groups:
       - ring-users
 
+  teleag:
+    state: present
+    company: 'Tele AG'
+    email: 'support@tele-ag.de'
+    uid: 5469
+    groups:
+      - ring-users
+
