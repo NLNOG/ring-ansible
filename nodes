@@ -456,7 +456,6 @@ container02.infra.ring.nlnog.net OWNER=job V4=85.17.27.45 V6=2001:1af8:4010::2
 container03.infra.ring.nlnog.net OWNER=job V4=78.152.42.3 V6=2a02:d28:5580:666::b
 container05.infra.ring.nlnog.net OWNER=job V4=108.168.156.210 V6=2607:f0d0:1103:e5::2
 container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
-container07.infra.ring.nlnog.net OWNER=job V4=82.94.249.164 V6=2001:888:2000:3e::1339
 dbmaster.infra.ring.nlnog.net OWNER=job V4=95.211.149.25 V6=2001:1AF8:4013::25
 public01.infra.ring.nlnog.net OWNER=job V4=165.254.255.18 V6=2001:728:1808::18
 public02.infra.ring.nlnog.net OWNER=job V4=95.211.149.18 V6=2001:1AF8:4013::18
@@ -467,6 +466,7 @@ compute01.infra.ring.nlnog.net OWNER=job V4=52.17.9.249 V6=2a05:d018:9f2:ed01::2
 compute02.infra.ring.nlnog.net OWNER=job V4=54.173.241.225 V6=2600:1f18:415a:7301::102
 storage01.infra.ring.nlnog.net OWNER=job V4=52.18.186.201 V6=2a05:d018:9f2:ed01::3:1
 public03.infra.ring.nlnog.net OWNER=job V4=185.107.224.27 V6=2a00:f10:400:2:4b3:4aff:fe00:707
+container07.infra.ring.nlnog.net OWNER=job V4=82.94.249.164 V6=2001:888:2000:3e::1339
 staging01.ring.nlnog.net OWNER=test V4=82.94.230.133 V6=2001:888:2001::133
 
 [intouch]
