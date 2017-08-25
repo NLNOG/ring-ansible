@@ -3600,3 +3600,11 @@ USERS:
     groups:
       - ring-users
 
+  mdex:
+    state: present
+    company: 'mdex AG'
+    email: 'admin@mdex.de'
+    uid: 5471
+    groups:
+      - ring-users
+
