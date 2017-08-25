@@ -1777,3 +1777,5 @@ proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa1
 
 [teleag]
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
+
+[nextpertise]

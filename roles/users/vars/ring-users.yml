@@ -3592,3 +3592,11 @@ USERS:
     groups:
       - ring-users
 
+  nextpertise:
+    state: present
+    company: 'Nextpertise B.V.'
+    email: 'noc@nextpertise.nl'
+    uid: 5470
+    groups:
+      - ring-users
+
