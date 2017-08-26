@@ -3131,7 +3131,7 @@ USERS:
   cvo:
     state: present
     company: 'CVO-Technologies'
-    email: 'it@cvo-technologies.com'
+    email: 'noc@cvo-technologies.com'
     uid: 5413
     groups:
       - ring-users
