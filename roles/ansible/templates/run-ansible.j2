@@ -16,4 +16,4 @@ shift $((OPTIND-1))
 
 [ "$1" = "--" ] && shift
 
-/usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ${quick} $@ playbook.yml
+/usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ${quick} $@ playbook.yml
