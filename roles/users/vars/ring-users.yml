@@ -2432,7 +2432,7 @@ USERS:
       - ring-users
 
   pix:
-    state: absent
+    state: present
     company: 'Palestine Internet Exchange Point - PIX'
     email: 'smansour@palestineix.com'
     uid: 5325
