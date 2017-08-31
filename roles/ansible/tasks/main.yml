@@ -89,19 +89,13 @@
     dest: "{{ ansible_venv_dir }}/lib/python2.7/site-packages/ansible/plugins/callback/ring.py"
   when: ansible_distribution_release == "precise"
 
-#### END Ansible in a venv
-
 - name: "Ensure Ansible cronjob exists (venv)"
   template:
     src: cron.d/ansible_virtualenv.j2
     dest: /etc/cron.d/ansible
   when: ansible_distribution_release == "precise"
 
-- name: "Ensure Ansible cronjob exists"
-  template:
-    src: cron.d/ansible.j2
-    dest: /etc/cron.d/ansible
-  when: ansible_distribution_release != "precise"
+#### END Ansible in a venv
 
 - name: "Create /usr/local/sbin if needed"
   file:
@@ -116,6 +110,21 @@
     owner: root
     group: root
     mode: 0755
+  when: ansible_distribution_release != "precise"
+
+- name: "Ensure ansible-cron script exists"
+  template:
+    src: ansible-cron.j2
+    dest: /usr/local/sbin/ansible-cron
+    owner: root
+    group: root
+    mode: 0755
+  when: ansible_distribution_release != "precise"
+
+- name: "Ensure Ansible cronjob exists"
+  template:
+    src: cron.d/ansible.j2
+    dest: /etc/cron.d/ansible
   when: ansible_distribution_release != "precise"
 
 - name: "Delete ansible.j2 (temp)"
