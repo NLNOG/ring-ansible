@@ -22,7 +22,6 @@ signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
-hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
@@ -308,7 +307,6 @@ vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
-upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
 upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
@@ -522,7 +520,6 @@ tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 [tenet]
 
 [hibernia]
-hibernia01.ring.nlnog.net OWNER=hibernia V4=78.152.62.134 V6=2a02:d28:600:25::134
 
 [cyso]
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
@@ -1390,7 +1387,6 @@ elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
 
 [upcloud]
-upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
 upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
