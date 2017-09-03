@@ -60,6 +60,12 @@
   roles:
     - { role: backup-client, tags: backup-client }
 
+- hosts: ~container[0-9]*\.infra\.ring\.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: container, tags: container }
+
 - hosts: master01.infra.ring.nlnog.net:public02.infra.ring.nlnog.net:public03.infra.ring.nlnog.net:compute02.infra.ring.nlnog.net
   become: true
   become_user: root
