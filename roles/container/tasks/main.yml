@@ -1,4 +1,4 @@
-- name: "Install various software packages"
+- name: "Install KVM software packages"
   apt: name={{ item }} state=latest
   with_items:
     - qemu-kvm
