@@ -224,7 +224,7 @@ USERS:
       - ring-users
 
   hibernia:
-    state: present
+    state: absent
     company: 'Hibernia Networks'
     email: 'nmc@atratoip.net'
     uid: 5033
