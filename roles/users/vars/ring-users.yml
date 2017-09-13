@@ -3608,3 +3608,11 @@ USERS:
     groups:
       - ring-users
 
+  vimexx:
+    state: present
+    company: 'Vimexx'
+    email: 'noc@vimexx.nl'
+    uid: 5472
+    groups:
+      - ring-users
+
