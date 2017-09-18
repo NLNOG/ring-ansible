@@ -101,7 +101,6 @@ melbourne01.ring.nlnog.net OWNER=melbourne V4=37.128.187.253 V6=2a03:b200:f::24
 go6lab01.ring.nlnog.net OWNER=go6lab V4=91.239.97.26 V6=2001:67c:27e4:15::26
 a2binternet01.ring.nlnog.net OWNER=a2binternet V4=178.249.153.39 V6=2a02:1668:a2b:1011::39
 i3d01.ring.nlnog.net OWNER=i3d V4=31.204.129.45 V6=2a00:1630:2:a01::1
-keenondots01.ring.nlnog.net OWNER=keenondots V4=91.218.150.255 V6=2a03:3400:3:2501::150:255
 obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132::2
 infomaniak01.ring.nlnog.net OWNER=infomaniak V4=83.166.136.173 V6=2001:1600:4:8:f816:3eff:fe6d:bc56
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
@@ -140,8 +139,8 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
+ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::1
 nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
@@ -311,7 +310,6 @@ upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8
 choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
-linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
@@ -321,7 +319,6 @@ openimp01.ring.nlnog.net OWNER=openimp V4=94.228.79.60 V6=2a00:1068:ffff:402::10
 fusix01.ring.nlnog.net OWNER=fusix V4=37.139.139.110 V6=2a00:a7c0:1000:1303::1303
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
-altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
@@ -373,7 +370,9 @@ hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2605:e200:d00d:300::1
 ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
+xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
@@ -409,7 +408,6 @@ tktelecom01.ring.nlnog.net OWNER=tktelecom V4=185.174.193.26 V6=2a0b:b500:f800:0
 korbank01.ring.nlnog.net OWNER=korbank V4=79.110.197.36 V6=2001:1a68:9:88::2
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
-aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
@@ -435,7 +433,6 @@ kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 
 [infranode]
@@ -739,7 +736,6 @@ a2binternet01.ring.nlnog.net OWNER=a2binternet V4=178.249.153.39 V6=2a02:1668:a2
 i3d01.ring.nlnog.net OWNER=i3d V4=31.204.129.45 V6=2a00:1630:2:a01::1
 
 [keenondots]
-keenondots01.ring.nlnog.net OWNER=keenondots V4=91.218.150.255 V6=2a03:3400:3:2501::150:255
 
 [obenetwork]
 obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132::2
@@ -856,12 +852,12 @@ algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 
 [ripe]
+ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 
 [hosteurope]
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
@@ -1389,7 +1385,6 @@ choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:
 [linode]
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
-linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
@@ -1413,7 +1408,6 @@ exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1:
 gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
 
 [altibox]
-altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 
 [zitcom]
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
@@ -1585,11 +1579,13 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 
 [xantaro]
+xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 
 [equinixfi]
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 
 [novoserve]
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
 
 [cvo]
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
@@ -1695,7 +1691,6 @@ arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 
 [aquilenet]
-aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 
 [bkk]
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
@@ -1771,7 +1766,6 @@ teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 
 [mdex]
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 
 [vimexx]
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
