@@ -3624,3 +3624,11 @@ USERS:
     groups:
       - ring-users
 
+  ahdde:
+    state: present
+    company: 'ahd GmbH & Co. KG'
+    email: 'cloud-ncc@ahd.de'
+    uid: 5474
+    groups:
+      - ring-users
+
