@@ -3616,3 +3616,11 @@ USERS:
     groups:
       - ring-users
 
+  myloc:
+    state: present
+    company: 'myLoc managed IT AG'
+    email: 'noc@myloc.de'
+    uid: 5473
+    groups:
+      - ring-users
+
