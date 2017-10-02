@@ -1810,7 +1810,7 @@ USERS:
   kpn:
     state: present
     company: 'KPN International'
-    email: 'noc-international@kpn.com'
+    email: 'peering@kpn-international.com'
     uid: 5247
     groups:
       - ring-users
