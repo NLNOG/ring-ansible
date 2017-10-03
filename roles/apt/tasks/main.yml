@@ -99,3 +99,8 @@
   with_items:
     - 10periodic
     - 50unattended-upgrades
+
+- name: "Run apt-get update"
+  apt:
+    update_cache: yes
+
