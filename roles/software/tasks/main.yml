@@ -97,6 +97,7 @@
     - swaks
     - ruby-json
     - libldns-dev
+    - parallel
 
 - name: "Install various software packages (precise)"
   apt: name={{ item }} state=latest
