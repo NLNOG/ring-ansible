@@ -21,6 +21,8 @@ prefix set roas;
 
 function complies_with_roa()
 {
+    return false;
+{#
 {%- for prefix in pfx_dict %}
 {%- if pfx_dict[prefix]["prefixlen"] == pfx_dict[prefix]["maxlength"] %}
     if net = {{ prefix }} then {
@@ -28,19 +30,18 @@ function complies_with_roa()
     if net ~ [ {{ prefix }}{{ "{" }}{{ pfx_dict[prefix]["prefixlen"] }},{{ pfx_dict[prefix]["maxlength"] }}{{ "}" }} ] then {
 {%- endif %}
 {%- for origin in pfx_dict[prefix]["origins"]|sort(reverse=True) %}
-{%- if origin == 0 %}
-        return false;
-{%- else %}
         if bgp_path.last = {{ origin }} then return true;
-{%- endif %}
 {%- endfor %}
      }
 {%- endfor %}
      return false;
+#}
 }
 
 function flag_rpki_state()
 {
+    return true;
+
     if is_roa_covered_prefix() then {
         if complies_with_roa() then {
             /* add marker to routes for which a valid matching ROA exists */
