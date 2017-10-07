@@ -13,6 +13,26 @@
     - bird
     - dialog
 
+- pip:
+    name: rtrsub
+
+- pip:
+    name: requests
+
+- name: "Install rtrsub rpki template"
+  copy:
+    src=bird-rtrsub-template.j2
+    dest=/etc/bird/rpki.j2
+    owner=root
+    group=root
+    mode=0444
+
+- name: "refresh ipv4 rtrsub configuration"
+  command: "rtrsub --afi ipv4 -t /etc/bird/rpki.j2 -o /etc/bird/rpki-ipv4.conf"
+
+- name: "refresh ipv6 rtrsub configuration"
+  command: "rtrsub --afi ipv6 -t /etc/bird/rpki.j2 -o /etc/bird/rpki-ipv6.conf"
+
 - name: "Install bird.conf"
   template: src=bird.conf.j2 dest=/etc/bird/bird.conf
   notify: reload bird

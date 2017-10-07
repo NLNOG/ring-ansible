@@ -1,0 +1,51 @@
+function is_roa_covered_prefix()
+prefix set roas;
+{
+     roas = [
+        {% for prefix in pfx_dict -%}
+{{ prefix }}+
+{%- if not loop.last -%},{%- endif -%}
+{{ "\n        " }}
+{%- endfor %}
+    ];
+
+    if net ~ roas then {
+        return true;
+    }
+    else return false;
+}
+
+function complies_with_roa()
+{
+{%- for prefix in pfx_dict %}
+{%- if pfx_dict[prefix]["prefixlen"] == pfx_dict[prefix]["maxlength"] %}
+    if net = {{ prefix }} then {
+{%- else %}
+    if net ~ [ {{ prefix }}{{ "{" }}{{ pfx_dict[prefix]["prefixlen"] }},{{ pfx_dict[prefix]["maxlength"] }}{{ "}" }} ] then {
+{%- endif %}
+{%- for origin in pfx_dict[prefix]["origins"]|sort(reverse=True) %}
+{%- if origin == 0 %}
+        return false;
+{%- else %}
+        if bgp_path.last = {{ origin }} then return true;
+{%- endif %}
+{%- endfor %}
+     }
+{%- endfor %}
+     return false;
+}
+
+function flag_rpki_state()
+{
+    if is_roa_covered_prefix() then {
+        if complies_with_roa() then {
+            /* add marker to routes for which a valid matching ROA exists */
+            bgp_ext_community.add((unknown 0x4300, 0, 0));
+        }
+        else {
+            bgp_ext_community.add((unknown 0x4300, 0, 2));
+        }
+    } else {
+        bgp_ext_community.add((unknown 0x4300, 0, 1));
+    }
+}
