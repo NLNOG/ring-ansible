@@ -51,14 +51,6 @@
     group=root
     mode=0755
 
-- name: "Install rtrsub rpki template"
-  copy:
-    src=bird-rtrsub-template.j2
-    dest=/etc/bird/rpki.j2
-    owner=root
-    group=root
-    mode=0444
-
 - name: "Add birdshell to shells"
   lineinfile:
     name: /etc/shells
