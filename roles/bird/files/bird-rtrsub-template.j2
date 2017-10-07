@@ -33,7 +33,7 @@ function complies_with_roa()
 {{ prefix }}{{ "{" }}{{ origin_dict[origin][prefix]["length"] }},{{ origin_dict[origin][prefix]["maxlength"] }}{{ "}" }}
 {%- endif %}
 {%- if not loop.last -%},{%- endif -%}
-{%- if loop.index % 4 == 0 -%}
+{%- if loop.index % 4 == 0 and not loop.last -%}
 {{ "\n                " }}
 {%- else -%}
 {{ " " }}
