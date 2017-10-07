@@ -1,7 +1,4 @@
-function is_roa_covered_prefix()
-prefix set roas;
-{
-     roas = [
+define ROAS = [
         {% for prefix in aggregated_pfx_list -%}
 {{ prefix }}+
 {%- if not loop.last -%},{%- endif -%}
@@ -13,6 +10,10 @@ prefix set roas;
 {%- endfor %}
     ];
 
+function is_roa_covered_prefix()
+prefix set roas;
+{
+    roas = ROAS;
     if net ~ roas then {
         return true;
     }
@@ -21,27 +22,23 @@ prefix set roas;
 
 function complies_with_roa()
 {
-    return false;
-{#
+    case net {
 {%- for prefix in pfx_dict %}
 {%- if pfx_dict[prefix]["prefixlen"] == pfx_dict[prefix]["maxlength"] %}
-    if net = {{ prefix }} then {
+    {{ prefix }}:
 {%- else %}
-    if net ~ [ {{ prefix }}{{ "{" }}{{ pfx_dict[prefix]["prefixlen"] }},{{ pfx_dict[prefix]["maxlength"] }}{{ "}" }} ] then {
+    {{ prefix }}{{ "{" }}{{ pfx_dict[prefix]["prefixlen"] }},{{ pfx_dict[prefix]["maxlength"] }}{{ "}" }}:
 {%- endif %}
 {%- for origin in pfx_dict[prefix]["origins"]|sort(reverse=True) %}
-        if bgp_path.last = {{ origin }} then return true;
+            if bgp_path.last = {{ origin }} then return true;
 {%- endfor %}
-     }
 {%- endfor %}
-     return false;
-#}
+    else:
+        return false;
 }
 
 function flag_rpki_state()
 {
-    return true;
-
     if is_roa_covered_prefix() then {
         if complies_with_roa() then {
             /* add marker to routes for which a valid matching ROA exists */
