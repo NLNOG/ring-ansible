@@ -15,9 +15,11 @@
 
 - pip:
     name: rtrsub
+    state: latest
 
 - pip:
     name: requests
+    state: latest
 
 - name: "Install rtrsub rpki template"
   copy:

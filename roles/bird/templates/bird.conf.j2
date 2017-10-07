@@ -10,7 +10,7 @@ router id {{ ansible_default_ipv4['address'] }};
 
 timeformat protocol iso long;
 
-include "/etc/bird/rpki-ipv4.conf";
+# include "/etc/bird/rpki-ipv4.conf";
 
 filter lookingglass_in {
     # prefer to expose non-AS23456 paths as primary path when available
@@ -29,7 +29,7 @@ filter lookingglass_in {
     bgp_ext_community.delete((unknown 0x4300, 0, 2));
 
     # set RPKI Origin Validation State Extended Community
-    flag_rpki_state();
+ #   flag_rpki_state();
 
     # accept rest
     accept;
