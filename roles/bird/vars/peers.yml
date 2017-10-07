@@ -1,8 +1,4 @@
 lg_peers:
-  AFILIAS_HKG1:
-    asn: 13810
-    ipv4: 199.19.51.66
-    ipv6: 2001:500:9::66
   AFILIAS_IAD1:
     asn: 393246
     ipv4: 199.115.158.251
@@ -11,10 +7,6 @@ lg_peers:
     asn: 33280
     ipv4: 65.22.12.251
     ipv6: 2A01:8840:C::251
-  AFILIAS_SEA1:
-    asn: 13714
-    ipv4: 199.19.50.66
-    ipv6: 2001:500:8::66
   AFILIAS_TKY1:
     asn: 13901
     ipv4: 199.19.52.251
@@ -23,10 +15,6 @@ lg_peers:
     asn: 13901
     ipv4: 199.19.52.252
     ipv6: 2001:500:a::252
-  AFILIAS_YYZ1:
-    asn: 40490
-    ipv4: 199.19.49.66
-    ipv6: 2001:500:7::66
   ALTIBOX1:
     asn: 29695
     ipv4: 79.160.115.253
@@ -126,10 +114,6 @@ lg_peers:
     asn: 200130
     ipv4: 95.85.0.2
     ipv6: 2a03:b0c0::2
-  DIGITALOCEAN7:
-    asn: 202018
-    ipv4: 5.101.110.2
-    ipv6: 2a03:b0c0:2::2
   DNA1:
     asn: 16086
     ipv4: 62.78.96.146
@@ -178,14 +162,6 @@ lg_peers:
     asn: 201701
     ipv4: 185.66.194.0
     ipv6: 2a03:2260::0
-  GBXS1:
-    asn: 9009
-    ipv4: 193.27.64.13
-    ipv6: 2a01:300::13
-  GIGABIT:
-    asn: 60876
-    ipv4: 185.24.168.254
-    ipv6: 2a00:7660::254
   GO6LAB1:
     asn: 198644
     ipv4: 91.239.96.218
@@ -198,10 +174,6 @@ lg_peers:
     asn: 395089
     ipv4: 192.160.102.255
     ipv6: 2605:e200:d000:ffff::ffff
-  HIBERNIA01:
-    asn: 5580
-    ipv4: 80.94.64.18
-    ipv6: 2a02:d28:5580::12
   HIBERNIA02:
     asn: 5580
     ipv4: 80.94.64.124
@@ -257,14 +229,6 @@ lg_peers:
   KUDELSKI1:
     asn: 200584
     ipv4: 85.184.255.154
-  KAIAGLOBAL1:
-    asn: 251
-    ipv4: 79.141.173.1
-    ipv6: 2a02:b0:1072::1
-  LEASEWEB1:
-    asn: 16265
-    ipv4: 62.212.80.80
-    ipv6: 2001:1af8::62:212:80:80
   LEASEWEB2:
     asn: 16265
     ipv4: 85.17.100.100
@@ -272,9 +236,6 @@ lg_peers:
   MAINSTREAMHOSTING1:
     asn: 30893
     ipv4: 185.9.166.34
-  MAINSTREAMHOSTING2:
-    asn: 30893
-    ipv4: 185.9.166.35
   MNETWORKS1:
     asn: 198611
     ipv4: 149.14.96.82
@@ -316,14 +277,6 @@ lg_peers:
     asn: 41497
     ipv4: 212.183.160.2
     ipv6: 2001:4bb0:100::2
-  QUADRANET1:
-    asn: 8100
-    ipv4: 69.12.69.101
-    ipv6: 2607:fcd0::aaaa:1
-  QUADRANET2:
-    asn: 8100
-    ipv4: 69.12.69.102
-    ipv6: 2607:fcd0::aaaa:2
   QUADRANET3:
     asn: 8100
     ipv4: 96.44.143.30
@@ -332,21 +285,6 @@ lg_peers:
     asn: 8100
     ipv4: 173.44.32.245
     ipv6: 2607:ff48:aa81:400::1
-  QUERYFOUNDRY:
-    asn: 62638
-    ipv4: 104.152.212.1
-    ipv6: 2602:ffe8:300::1
-  RACKCENTRAL01:
-    asn: 58443
-    ipv4: 103.255.249.22
-    ipv6: 2400:7180:a::2
-  RNPBR1:
-    asn: 1916
-    ipv4: 200.143.254.233
-  ROBTEX1:
-    asn: 48285
-    ipv4: 192.71.253.1
-    ipv6: 2a00:9c00:1000::1
   SBTAP1:
     asn: 59715
     ipv4: 185.5.200.255
@@ -355,14 +293,6 @@ lg_peers:
     asn: 1140
     ipv4: 193.176.144.93
     ipv6: 2a00:d78::193:176:144:93
-  SOFTLAYER1:
-    asn: 36351
-    ipv4: 50.97.16.40
-    ipv6: 2607:F0D0:2:3::1A
-  SPACEDUMP1:
-    asn: 30880
-    ipv4: 212.63.222.254
-    ipv6: 2A01:298:FFFF:5::1
   SVWH1:
     asn: 394738
     ipv4: 162.213.3.255
@@ -371,10 +301,6 @@ lg_peers:
     asn: 394738
     ipv4: 162.213.3.252
     ipv6: 2606:c680::fffc
-  SWIFTNODE1:
-    asn: 63294
-    ipv4: 104.255.32.141
-    ipv6: 2605:e980:d::d
   TEAMIX1:
     asn: 33988
     ipv4: 194.150.191.249
@@ -395,18 +321,10 @@ lg_peers:
     asn: 196752
     ipv4: 164.138.24.4
     ipv6: 2a02:2770:1::4
-  TUXIS1:
-    asn: 197731
-    ipv4: 31.3.104.1
-    ipv6: 2a03:7900::1
   TWOCONNECT1:
     asn: 35236
     ipv4: 109.205.72.24
     ipv6: 2a00:1238:0:22::24
-  WIDENET01:
-    asn: 199036
-    ipv4: 82.94.230.130
-    ipv6: 2001:888:2001::130
   WIREHIVE1:
     asn: 56730
     ipv4: 134.0.17.140
