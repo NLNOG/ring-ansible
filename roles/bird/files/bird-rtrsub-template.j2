@@ -2,10 +2,14 @@ function is_roa_covered_prefix()
 prefix set roas;
 {
      roas = [
-        {% for prefix in pfx_dict -%}
+        {% for prefix in aggregated_pfx_list -%}
 {{ prefix }}+
 {%- if not loop.last -%},{%- endif -%}
+{%- if loop.index % 4 == 0 -%}
 {{ "\n        " }}
+{%- else -%}
+{{ " " }}
+{%- endif -%}
 {%- endfor %}
     ];
 
