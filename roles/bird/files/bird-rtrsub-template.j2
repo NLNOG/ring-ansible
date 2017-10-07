@@ -22,19 +22,29 @@ prefix set roas;
 
 function complies_with_roa()
 {
-    case net {
-{%- for prefix in pfx_dict %}
-{%- if pfx_dict[prefix]["prefixlen"] == pfx_dict[prefix]["maxlength"] %}
-    {{ prefix }}:
-{%- else %}
-    {{ prefix }}{{ "{" }}{{ pfx_dict[prefix]["prefixlen"] }},{{ pfx_dict[prefix]["maxlength"] }}{{ "}" }}:
+    case bgp_path.last {
+{%- for origin in origin_dict|sort() if not origin == 0 %}
+        {{ origin }}:
+            if net ~ [
+                {% for prefix in origin_dict[origin].keys() -%}
+{%- if origin_dict[origin][prefix]["length"] == origin_dict[origin][prefix]["maxlength"] -%}
+{{ prefix }}
+{%- else -%}
+{{ prefix }}{{ "{" }}{{ origin_dict[origin][prefix]["length"] }},{{ origin_dict[origin][prefix]["maxlength"] }}{{ "}" }}
 {%- endif %}
-{%- for origin in pfx_dict[prefix]["origins"]|sort(reverse=True) %}
-            if bgp_path.last = {{ origin }} then return true;
+{%- if not loop.last -%},{%- endif -%}
+{%- if loop.index % 4 == 0 -%}
+{{ "\n                " }}
+{%- else -%}
+{{ " " }}
+{%- endif -%}
 {%- endfor %}
+            ] then return true;
+            else return false;
 {%- endfor %}
-    else:
-        return false;
+        else:
+            return false;
+    }
 }
 
 function flag_rpki_state()
