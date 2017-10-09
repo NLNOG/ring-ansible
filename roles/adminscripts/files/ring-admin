@@ -149,7 +149,7 @@ http://mailman.nlnog.net/mailman/listinfo/ring-users
 We also operate an IRC channel: #ring on IRCnet.
 
 Finally, you are invited to peer with our looking glass. The looking glass
-service is available for all RING members via ssh on lg02.infra.ring.nlnog.net,
+service is available for all RING members via ssh on lg01.infra.ring.nlnog.net,
 and web on http://lg.ring.nlnog.net/.  Peering with this Looking Glass is
 optional for ring users. If you want to peer with NLNOG RING, send us your
 details and setup a session with the following information:

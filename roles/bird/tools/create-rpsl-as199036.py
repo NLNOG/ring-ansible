@@ -34,8 +34,8 @@ def loop_through_bird_puppet_config():
             print "mp-import: afi ipv6.unicast from AS%s %s at 2001:888:2001::130 accept ANY; # %s" % (asn, ip, name)
             print "mp-export: afi ipv6.unicast to AS%s %s at 2001:888:2001::130 announce NOT ANY; # %s" % (asn, ip, name)
 
-print """inet-rtr: lg02.infra.ring.nlnog.net
-descr: NLNOG RING Looking Glass lg02
+print """inet-rtr: lg01.infra.ring.nlnog.net
+descr: NLNOG RING Looking Glass lg01
 local-as: AS199036
 interface: 82.94.230.130 masklen 28
 interface: 2001:888:2001::130 masklen 64
