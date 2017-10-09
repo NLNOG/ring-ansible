@@ -471,6 +471,7 @@ compute02.infra.ring.nlnog.net OWNER=job V4=54.173.241.225 V6=2600:1f18:415a:730
 storage01.infra.ring.nlnog.net OWNER=job V4=52.18.186.201 V6=2a05:d018:9f2:ed01::3:1
 public03.infra.ring.nlnog.net OWNER=job V4=185.107.224.27 V6=2a00:f10:400:2:4b3:4aff:fe00:707
 container07.infra.ring.nlnog.net OWNER=job V4=82.94.249.164 V6=2001:888:2000:3e::1339
+lg02.infra.ring.nlnog.net OWNER=job V4=82.94.249.166 V6=::4
 staging01.ring.nlnog.net OWNER=test V4=82.94.230.133 V6=2001:888:2001::133
 
 [intouch]
