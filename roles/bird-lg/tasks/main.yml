@@ -22,13 +22,17 @@
     group=root
     mode=0755
 
-- name: "Install bird-lg-proxy upstart config"
+- name: "Install bird-lg-proxy systemd config"
   copy:
-    src=upstart-bird-lg-proxy.conf
-    dest=/etc/init/bird-lg-proxy.conf
+    src=bird-lg-proxy.service
+    dest=/lib/systemd/system/bird-lg-proxy.service
     owner=root
     group=root
     mode=0755
+  notify: reload systemd
+
+- name: reload systemd if needed
+  meta: flush_handlers
 
 - name: "Install lg-proxy.cfg"
   template: src=lg-proxy.cfg.j2 dest=/usr/local/bird-lg/lg-proxy.cfg

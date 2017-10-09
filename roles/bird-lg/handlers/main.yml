@@ -1,3 +1,5 @@
 - name: restart bird-lg-proxy
   service: name=bird-lg-proxy state=restarted enabled=yes
 
+- name: reload systemd
+  command: systemctl daemon-reload

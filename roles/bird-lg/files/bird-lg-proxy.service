@@ -1,0 +1,10 @@
+[Unit]
+Description=BIRD LG Proxy script
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /usr/bin/python /usr/local/bird-lg/lg-proxy.py
+
+[Install]
+WantedBy=multi-user.target
