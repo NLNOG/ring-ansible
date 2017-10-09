@@ -1,9 +1,14 @@
 - name: "Load peer list"
   include_vars: peers.yml
 
+- name: "Add bird apt repo key"
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 52463488670E69A092007C24F2331238F9C59A45 
+
 - name: "Add bird apt repository"
   apt_repository:
-    repo: 'deb http://ppa.launchpad.net/cz.nic-labs/bird/ubuntu precise main'
+    repo: 'deb http://ppa.launchpad.net/cz.nic-labs/bird/ubuntu xenial main'
     state: present
     filename: 'cz_nic-labs-bird-precise.list'
 
