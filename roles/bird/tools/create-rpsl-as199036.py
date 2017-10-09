@@ -7,7 +7,7 @@ import sys,re,netaddr,ipaddr
 raw_data = []
 scrubbed_data = []
 
-def loop_through_bird_puppet_config(): 
+def loop_through_bird_puppet_config():
     with open('../manifests/init.pp') as input_data:
         for line in input_data:
             raw_data.append(line.strip()[1:-2])
@@ -34,8 +34,8 @@ def loop_through_bird_puppet_config():
             print "mp-import: afi ipv6.unicast from AS%s %s at 2001:888:2001::130 accept ANY; # %s" % (asn, ip, name)
             print "mp-export: afi ipv6.unicast to AS%s %s at 2001:888:2001::130 announce NOT ANY; # %s" % (asn, ip, name)
 
-print """inet-rtr: lg01.infra.ring.nlnog.net
-descr: NLNOG RING Looking Glass lg01
+print """inet-rtr: lg02.infra.ring.nlnog.net
+descr: NLNOG RING Looking Glass lg02
 local-as: AS199036
 interface: 82.94.230.130 masklen 28
 interface: 2001:888:2001::130 masklen 64
@@ -55,12 +55,12 @@ aut-num: AS199036
 as-name: NLNOG-RING-AS
 descr: Job Snijders
 remarks: ====================================================
-remarks: This is ASN facilitates looking glass servers 
-remarks: operated by the NLNOG RING. 
-remarks: 
-remarks: A web interface is available here: 
+remarks: This is ASN facilitates looking glass servers
+remarks: operated by the NLNOG RING.
+remarks:
+remarks: A web interface is available here:
 remarks:          lg.ring.nlnog.net
-remarks: 
+remarks:
 remarks: Visit https://ring.nlnog.net/ for more information.
 remarks: ====================================================
 remarks:"""
