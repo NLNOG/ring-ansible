@@ -3632,3 +3632,11 @@ USERS:
     groups:
       - ring-users
 
+  interhost:
+    state: present
+    company: 'Interhost Networks Ltd'
+    email: 'dmitry@interhost.net'
+    uid: 5475
+    groups:
+      - ring-users
+
