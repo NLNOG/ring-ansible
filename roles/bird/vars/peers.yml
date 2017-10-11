@@ -331,6 +331,9 @@ lg_peers:
     asn: 40191
     ipv4: 216.221.157.162
     ipv6: 2001:668:0:3::8000:1712
+  INTERHOST01:
+    asn: 61102
+    ipv4: 185.37.148.232
 
 readonly_peers:
     NAGRAFEED2:
