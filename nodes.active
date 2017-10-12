@@ -19,6 +19,7 @@ surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
 totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
+tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
@@ -78,6 +79,7 @@ pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e
 pcextreme06.ring.nlnog.net OWNER=pcextreme V4=185.103.157.56 V6=2a05:1500:100:2:46f:ceff:fe00:f8
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 softlayer01.ring.nlnog.net OWNER=softlayer V4=174.36.33.50 V6=2607:f0d0:1004:d3::2
+imagine01.ring.nlnog.net OWNER=imagine V4=89.127.199.164 V6=2001:4d68:4::a
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
 towardex01.ring.nlnog.net OWNER=towardex V4=216.93.240.179 V6=2001:4830:123:1::d85d:f0b3
@@ -205,6 +207,7 @@ kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
+amsio01.ring.nlnog.net OWNER=amsio V4=85.222.196.125 V6=2a02:20b0:4018::4
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 kinber01.ring.nlnog.net OWNER=kinber V4=162.223.16.247 V6=2001:550:501:3::1ce:c01d:bee2
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
@@ -257,6 +260,7 @@ immense01.ring.nlnog.net OWNER=immense V4=72.194.128.201 V6=2620:8d:4000:1000::1
 bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a01:70:ffff:3::2
 cesnet01.ring.nlnog.net OWNER=cesnet V4=78.128.211.50 V6=2001:718:1:1f:50:56ff:feee:50
 adix01.ring.nlnog.net OWNER=adix V4=89.200.203.138 V6=2001:67C:6B8:100::138
+sasag01.ring.nlnog.net OWNER=sasag V4=87.245.64.187 V6=2a00:d80::1:185
 ovh01.ring.nlnog.net OWNER=ovh V4=37.187.111.58 V6=2001:41d0:a:643a::137
 ovh02.ring.nlnog.net OWNER=ovh V4=37.187.50.166 V6=2001:41d0:52:400:0:0:0:53b
 ovh03.ring.nlnog.net OWNER=ovh V4=5.196.13.221 V6=2001:41d0:52:600:0:0:0:671
@@ -303,6 +307,7 @@ cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
+upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
@@ -416,6 +421,7 @@ compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004:
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
 mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
+netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:1000:1000:20c:29ff:fe4b:e93b
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
@@ -502,6 +508,7 @@ totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:
 signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 
 [tripleit]
+tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 
 [jaguarnetwork]
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
@@ -665,6 +672,7 @@ nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 softlayer01.ring.nlnog.net OWNER=softlayer V4=174.36.33.50 V6=2607:f0d0:1004:d3::2
 
 [imagine]
+imagine01.ring.nlnog.net OWNER=imagine V4=89.127.199.164 V6=2001:4d68:4::a
 
 [speedpartner]
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
@@ -1082,6 +1090,7 @@ sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:20
 [spotify]
 
 [amsio]
+amsio01.ring.nlnog.net OWNER=amsio V4=85.222.196.125 V6=2a02:20b0:4018::4
 
 [goscomb]
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
@@ -1238,6 +1247,7 @@ cesnet01.ring.nlnog.net OWNER=cesnet V4=78.128.211.50 V6=2001:718:1:1f:50:56ff:f
 adix01.ring.nlnog.net OWNER=adix V4=89.200.203.138 V6=2001:67C:6B8:100::138
 
 [sasag]
+sasag01.ring.nlnog.net OWNER=sasag V4=87.245.64.187 V6=2a00:d80::1:185
 
 [ovh]
 ovh01.ring.nlnog.net OWNER=ovh V4=37.187.111.58 V6=2001:41d0:a:643a::137
@@ -1376,6 +1386,7 @@ corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:6
 
 [upcloud]
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
+upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
@@ -1717,6 +1728,7 @@ arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
 mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
 
 [netgroup]
+netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 
 [rogerscapital]
 rogerscapital01.ring.nlnog.net OWNER=rogerscapital V4=196.46.39.49 V6=2c0f:fe68:1000:1000:20c:29ff:fe4b:e93b
