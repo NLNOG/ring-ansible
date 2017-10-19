@@ -3640,3 +3640,11 @@ USERS:
     groups:
       - ring-users
 
+  pinse:
+    state: present
+    company: 'PIN Sweden AB'
+    email: 'noc@pin.se'
+    uid: 5476
+    groups:
+      - ring-users
+
