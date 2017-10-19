@@ -2792,7 +2792,7 @@ USERS:
       - ring-users
 
   widenet:
-    state: absent
+    state: present
     company: 'Wide-Net Sp. z o.o.'
     email: 'noc@wide-net.pl'
     uid: 5371
