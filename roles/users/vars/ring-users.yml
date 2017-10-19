@@ -137,8 +137,8 @@ USERS:
 
   is:
     state: present
-    company: 'IS'
-    email: 'netwerk@is.nl'
+    company: 'KPN Internedservices'
+    email: 'netwerk@internedservices.nl'
     uid: 5021
     groups:
       - ring-users
