@@ -2424,7 +2424,7 @@ USERS:
       - ring-users
 
   nianet:
-    state: absent
+    state: present
     company: 'Nianet A/S'
     email: '3level@nianet.dk'
     uid: 5324
