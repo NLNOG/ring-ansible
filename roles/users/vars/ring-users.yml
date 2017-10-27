@@ -1808,7 +1808,7 @@ USERS:
       - ring-users
 
   kpn:
-    state: present
+    state: absent
     company: 'KPN International'
     email: 'peering@kpn-international.com'
     uid: 5247
@@ -3281,7 +3281,7 @@ USERS:
       - ring-users
 
   ashgoal:
-    state: present
+    state: absent
     company: 'Ashgoal'
     email: 'noc@connectbit.io'
     uid: 5432
