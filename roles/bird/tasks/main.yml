@@ -84,3 +84,12 @@
 - name: "Start bird6"
   service: name=bird6 state=started
 
+- name: "Set bird socket ownership"
+  file:
+    path: /var/run/bird/{{ item }}
+    owner: bird
+    group: ring-users
+    with_items:
+      - bird.ctl
+      - bird6.ctl
+
