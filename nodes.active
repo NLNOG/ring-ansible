@@ -139,7 +139,6 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
@@ -414,7 +413,6 @@ nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
-limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
@@ -860,7 +858,6 @@ algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -1711,7 +1708,6 @@ bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 
 [limestone]
-limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 
 [compudyne]
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
