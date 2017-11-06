@@ -2504,7 +2504,7 @@ USERS:
       - ring-users
 
   cloudvps:
-    state: absent
+    state: present
     company: 'CloudVPS'
     email: 'noc@cloudvps.com'
     uid: 5335
