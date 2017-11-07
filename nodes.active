@@ -140,7 +140,6 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
@@ -299,6 +298,7 @@ lwlcom01.ring.nlnog.net OWNER=lwlcom V4=185.55.116.226 V6=2a00:c380:8000:2::2
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.3 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
+cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
 vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
@@ -444,6 +444,7 @@ myloc01.ring.nlnog.net OWNER=myloc V4=89.163.234.146 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
 
 [infranode]
 
@@ -863,7 +864,6 @@ algar01.ring.nlnog.net OWNER=algar V4=187.72.248.26 V6=2001:1291:400:e::b
 qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -1368,6 +1368,7 @@ cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20
 [worldstream]
 
 [cloudvps]
+cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
 
 [veracity]
 
@@ -1799,3 +1800,4 @@ interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:c
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
