@@ -27,7 +27,6 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
@@ -416,7 +415,6 @@ nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 aquilenet01.ring.nlnog.net OWNER=aquilenet V4=141.255.128.38 V6=2a01:474::38
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
-limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
@@ -543,7 +541,6 @@ netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 
 [hosteam]
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 
 [inotel]
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
@@ -1716,7 +1713,6 @@ bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 
 [limestone]
-limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 
 [compudyne]
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
