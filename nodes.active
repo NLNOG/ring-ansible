@@ -1799,3 +1799,5 @@ pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
+
+[github]

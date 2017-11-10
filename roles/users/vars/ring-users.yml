@@ -3656,3 +3656,11 @@ USERS:
     groups:
       - ring-users
 
+  github:
+    state: present
+    company: 'GitHub Inc.'
+    email: 'noc@github.com'
+    uid: 5478
+    groups:
+      - ring-users
+

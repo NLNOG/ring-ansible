@@ -455,6 +455,7 @@ ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
+github01.ring.nlnog.net OWNER=github V4=192.30.252.225 V6=2620:112:3000::100:2
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1839,3 +1840,6 @@ pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
+
+[github]
+github01.ring.nlnog.net OWNER=github V4=192.30.252.225 V6=2620:112:3000::100:2
