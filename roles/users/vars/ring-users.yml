@@ -2280,7 +2280,7 @@ USERS:
       - ring-users
 
   datacentred:
-    state: present
+    state: absent
     company: 'DataCentred'
     email: 'support@datacentred.co.uk'
     uid: 5306
