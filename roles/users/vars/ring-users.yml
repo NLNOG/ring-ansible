@@ -3664,3 +3664,11 @@ USERS:
     groups:
       - ring-users
 
+  vmhaus:
+    state: present
+    company: 'VMHaus Enterprises'
+    email: 'jack@vmhaus.com'
+    uid: 5479
+    groups:
+      - ring-users
+
