@@ -3672,3 +3672,11 @@ USERS:
     groups:
       - ring-users
 
+  comhem:
+    state: present
+    company: 'Com Hem AB'
+    email: 'noc@comhem.com'
+    uid: 5480
+    groups:
+      - ring-users
+
