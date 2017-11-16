@@ -187,6 +187,9 @@ lg_peers:
     asn: 11071
     ipv4: 209.33.215.64
     ipv6: 2604:2c00::ff:2
+  INTERHOST1:
+    asn: 61102
+    ipv4: 185.37.148.232
   IPMAX1:
     asn: 25091
     ipv4: 46.20.255.5
@@ -307,6 +310,10 @@ lg_peers:
     asn: 35236
     ipv4: 109.205.72.24
     ipv6: 2a00:1238:0:22::24
+  VMHAUS1:
+    asn: 136620
+    ipv4: 185.214.69.1
+    ipv6: 2a06:82c2::1
   WIREHIVE1:
     asn: 56730
     ipv4: 134.0.17.140
@@ -331,9 +338,6 @@ lg_peers:
     asn: 40191
     ipv4: 216.221.157.162
     ipv6: 2001:668:0:3::8000:1712
-  INTERHOST01:
-    asn: 61102
-    ipv4: 185.37.148.232
 
 readonly_peers:
     NAGRAFEED2:
