@@ -3680,3 +3680,35 @@ USERS:
     groups:
       - ring-users
 
+  quxlabs:
+    state: present
+    company: 'QuxLabs UG'
+    email: 'noc@as203038.net'
+    uid: 5481
+    groups:
+      - ring-users
+
+  elastx:
+    state: present
+    company: 'ELASTX'
+    email: 'noc@elastx.se'
+    uid: 5482
+    groups:
+      - ring-users
+
+  automattic:
+    state: present
+    company: 'Automattic'
+    email: 'noc@automattic.com'
+    uid: 5483
+    groups:
+      - ring-users
+
+  retarus:
+    state: present
+    company: 'retarus GmbH'
+    email: 'noc@retarus.com'
+    uid: 5484
+    groups:
+      - ring-users
+
