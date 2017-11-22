@@ -3712,3 +3712,11 @@ USERS:
     groups:
       - ring-users
 
+  web2objects:
+    state: present
+    company: 'web2objects GmbH'
+    email: 'support@web2objects.com'
+    uid: 5485
+    groups:
+      - ring-users
+
