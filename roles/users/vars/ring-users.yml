@@ -152,7 +152,7 @@ USERS:
       - ring-users
 
   prolocation:
-    state: present
+    state: absent
     company: 'Prolocation'
     email: 'cedric@prolocation.net'
     uid: 5023
