@@ -4,7 +4,7 @@
   become_user: root
   pre_tasks:
     - name: Run apt-get update
-      raw: sudp apt-get update -y
+      raw: sudo apt-get update -y
     - name: Install python
       raw: sudo apt-get install -y python
 
