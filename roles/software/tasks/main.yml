@@ -70,6 +70,7 @@
     - python-simplejson
     - python-software-properties
     - python-virtualenv
+    - python3-pip
     - rsync
     - ruby
     - screen
