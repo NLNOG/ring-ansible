@@ -280,7 +280,6 @@ atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2:
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
-xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.127 V6=2607:f350:1:ffff::1:3
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.254 V6=2a03:2c60:0:8000::42
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
@@ -1329,7 +1328,6 @@ netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
 
 [xfernet]
-xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.127 V6=2607:f350:1:ffff::1:3
 
 [speakup]
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.254 V6=2a03:2c60:0:8000::42
