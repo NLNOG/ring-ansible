@@ -331,6 +331,7 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
+sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 coreinternet01.ring.nlnog.net OWNER=coreinternet V4=185.86.20.92 V6=2a05:b480:300::2
 tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
@@ -1458,6 +1459,7 @@ euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::
 ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 
 [sonic]
+sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 
 [sabay]
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
