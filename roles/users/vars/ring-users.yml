@@ -3720,3 +3720,11 @@ USERS:
     groups:
       - ring-users
 
+  joeynetwork:
+    state: present
+    company: 'Joey-Network'
+    email: 'noc@joey-network.de'
+    uid: 5486
+    groups:
+      - ring-users
+
