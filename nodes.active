@@ -21,7 +21,6 @@ totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:
 signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
-tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 netability01.ring.nlnog.net OWNER=netability V4=46.182.9.20 V6=2a03:8900:100:711::20
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
@@ -220,6 +219,7 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel02.ring.nlnog.net OWNER=viatel V4=46.183.108.2 V6=2a01:8aa0:7f00:0:20c:29ff:fe60:bfac
@@ -352,7 +352,6 @@ kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
-inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
 anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
@@ -448,6 +447,7 @@ ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
+github01.ring.nlnog.net OWNER=github V4=192.30.252.225 V6=2620:112:3000::100:2
 vmhaus01.ring.nlnog.net OWNER=vmhaus V4=185.214.69.134 V6=2a06:82c2:0:de::1
 comhem01.ring.nlnog.net OWNER=comhem V4=193.150.194.129 V6=2a04:ae39:300:100::1
 quxlabs01.ring.nlnog.net OWNER=quxlabs V4=193.182.61.51 V6=2a0a:3507:1:3001::3e04
@@ -530,7 +530,6 @@ tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::1
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 
 [tuxis]
-tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 
 [tenet]
 
@@ -1159,6 +1158,7 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [telecityfi]
 
 [itps]
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 
 [cyberverse]
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
@@ -1523,7 +1523,6 @@ kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 [inxza]
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
-inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
 [23media]
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
@@ -1819,6 +1818,7 @@ pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
 
 [github]
+github01.ring.nlnog.net OWNER=github V4=192.30.252.225 V6=2620:112:3000::100:2
 
 [vmhaus]
 vmhaus01.ring.nlnog.net OWNER=vmhaus V4=185.214.69.134 V6=2a06:82c2:0:de::1
