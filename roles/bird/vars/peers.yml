@@ -162,7 +162,7 @@ lg_peers:
   HEXTET1:
     asn: 395089
     ipv4: 192.160.102.255
-    ipv6: 2605:e200:d000:ffff::ffff
+    ipv6: 2620:132:3001:1::1
   HIBERNIA02:
     asn: 5580
     ipv4: 80.94.64.124
