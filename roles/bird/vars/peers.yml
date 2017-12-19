@@ -342,6 +342,10 @@ lg_peers:
     asn: 6830
     ipv4: 84.116.128.36
     ipv6: 2001:730:2200::5474:8024
+  KIT1:
+    asn: 34878
+    ipv4: 129.13.96.0
+    ipv6: 2a00:1398:0:179::1
 
 readonly_peers:
     NAGRAFEED2:
