@@ -53,9 +53,11 @@
 
 - name: "refresh ipv4 rtrsub configuration"
   command: "rtrsub --afi ipv4 -t /etc/bird/rpki.j2 -o /etc/bird/rpki-ipv4.conf"
+  notify: reload bird
 
 - name: "refresh ipv6 rtrsub configuration"
   command: "rtrsub --afi ipv6 -t /etc/bird/rpki.j2 -o /etc/bird/rpki-ipv6.conf"
+  notify: reload bird6
 
 - name: "Install bird.conf"
   template: src=bird.conf.j2 dest=/etc/bird/bird.conf
