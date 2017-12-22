@@ -1073,7 +1073,7 @@ class commands(object):
             self.dblist('users')
 
     def cmd_add_machine(self, username, hostname, autnum, country, geo,
-                        dc=None, v4=None, v6=None, state=None):
+                        dc=None, v6=None, v4=None, state=None):
         """add a machine"""
         if not (re.match(r'.*%s$' % ZONE, hostname)):
             hostname = hostname + "." + ZONE
