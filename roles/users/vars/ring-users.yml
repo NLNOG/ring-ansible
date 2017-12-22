@@ -3728,3 +3728,11 @@ USERS:
     groups:
       - ring-users
 
+  emeriaud:
+    state: present
+    company: 'Pierre Emeriaud'
+    email: 'abuse@emeriaud.fr'
+    uid: 5487
+    groups:
+      - ring-users
+
