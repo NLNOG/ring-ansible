@@ -1,10 +1,10 @@
 - name: "Install ring-pdns"
-  copy:
-    src=ring-pdns
-    dest=/usr/local/bin/ring-pdns
-    owner=root
-    group=root
-    mode=0755
+  template:
+    src: "ring-pdns.j2"
+    dest: /usr/local/bin/ring-pdns
+    owner: root
+    group: root
+    mode: 0755
 
 - name: "Add cronjob for update-sshfp"
   template:

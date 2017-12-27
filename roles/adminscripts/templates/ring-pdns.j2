@@ -11,6 +11,7 @@ DB='pdns'
 ZONE='ring.nlnog.net'
 SOA='ns01.infra.ring.nlnog.net. ring-admins.ring.nlnog.net. %.0f 7200 3600 1209600 900' % time.time()
 ELEVATION='https://maps.googleapis.com/maps/api/elevation/json'
+ELEVATION_KEY={{ elevation_key }}
 
 RINGDBHOST='dbmaster.infra.ring.nlnog.net'
 RINGDBUSER='ring'
@@ -614,7 +615,7 @@ class commands(object):
         self.dbdo(SCHEMA, None, script=True)
 
     def getgeo(self,geo):
-        url=ELEVATION+"?locations="+geo+"&sensor=false"
+        url=ELEVATION+"?locations="+geo+"&sensor=false&key="+ELEVATION_KEY
         response = simplejson.load(urllib.urlopen(url))
         resultset = response['results'][0]
         #print "lat:"+str(resultset['location']['lat'])
