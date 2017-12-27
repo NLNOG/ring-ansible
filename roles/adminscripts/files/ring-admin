@@ -1268,10 +1268,13 @@ class commands(object):
         result = ""
         for family in "-4","-6":
             for ktype in "ecdsa","rsa","dsa":
-                r = check_output(["ssh-keyscan",family,"-T","30","-t",
-                                  ktype,hostname],stderr=FNULL)
-                if r:
-                    result = result + r
+                try:
+                    r = check_output(["ssh-keyscan",family,"-T","30","-t",
+                                      ktype,hostname],stderr=FNULL)
+                    if r:
+                        result = result + r
+                except:
+                    sys.stderr.write('could not scan keys for %s (%s)\n' % (hostname,family))
 
         if result:
             oldkeys = list(self.dbselect('sshhostkeys', machine=machid))
