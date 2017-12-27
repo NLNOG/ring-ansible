@@ -21,14 +21,6 @@
 
 - hosts: all
   tasks:
-    - name: Check IPv4 connectivity
-      tags: check_v4
-      command: ping -c 1 ring.nlnog.net
-      register: check_v4
-    - fail:
-        msg: Could not ping ring.nlnog.net (IPv4)
-      tags: check_v4
-      when: check_v4.rc != 0
     - name: Check IPv6 connectivity
       tags: check_v6
       command: ping6 -c 1 ring.nlnog.net
