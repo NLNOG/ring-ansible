@@ -3736,3 +3736,11 @@ USERS:
     groups:
       - ring-users
 
+  bellmts:
+    state: present
+    company: 'BellMTS DataCentres'
+    email: 'noc@bellmtsdatacentres.com'
+    uid: 5488
+    groups:
+      - ring-users
+
