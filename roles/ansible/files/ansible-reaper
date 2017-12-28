@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILENAME=/tmp/.ansible.run
+MAXAGE=43200
+CURDATE=`date +%s`
+
+if [ -r $FILENAME ]; then
+    STARTDATE=`date -r $FILENAME +%s`
+    if (( $STARTDATE + $MAXAGE < $CURDATE ));
+    then
+        PGID=`head -1 $FILENAME`
+        pkill -KILL -P $PGID
+        rm $FILENAME
+    fi
+fi

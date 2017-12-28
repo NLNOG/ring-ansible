@@ -1,3 +1,6 @@
 # run ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+6 6,18 * * * root /usr/local/sbin/ansible-reaper >dev/null
+
 {{ 60|determrand(ansible_nodename) }} */2 * * * root /usr/local/sbin/ansible-cron >/dev/null 2>/dev/null
