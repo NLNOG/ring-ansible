@@ -599,24 +599,30 @@ class commands(object):
         activate = []
         deactivate = []
         failed = []
+        failed_admin = []
+        missing_admin = []
         # Hardcoded ignore list
         exceptions = {}
         #exceptions['hostname'] = 1
 
         for m in machines:
             if m['admin'] == 1:
-                continue
-            total = total + 1
-            if m['failed'] == 1:
-                    failed.append(m['hostname'])
-            if m['active'] != 1:
-                inactive = inactive + 1
-                if m['seen'] == 1 and m['failed'] != 1 and not m['hostname'] in exceptions:
-                    activate.append(m['hostname'])
-            if m['active'] == 1:
-                active = active + 1
-                if m['seen'] == 0 and m['failed'] != 1 and not m['hostname'] in exceptions:
-                    deactivate.append(m['hostname'])
+                if m['failed'] == 1:
+                    failed_admin.append(m['hostname'])
+                elif m['seen'] == 0:
+                    missing_admin.append(m['hostname'])
+            else:
+                total = total + 1
+                if m['failed'] == 1:
+                        failed.append(m['hostname'])
+                if m['active'] != 1:
+                    inactive = inactive + 1
+                    if m['seen'] == 1 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                        activate.append(m['hostname'])
+                if m['active'] == 1:
+                    active = active + 1
+                    if m['seen'] == 0 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                        deactivate.append(m['hostname'])
 
         report = ""
         report = report + "Nodes:\t\t%d\n" % (total)
@@ -634,6 +640,13 @@ class commands(object):
           report = report + "  - %s\n" % (d)
         report = report + "\nFailed ansible runs:\n"
         for f in failed:
+          report = report + "  - %s\n" % (f)
+        report = report + "\n"
+        report = report + "\nMissing admin nodes:\n"
+        for m in missing_admin:
+          report = report + "  - %s\n" % (m)
+        report = report + "\nFailed runs on admin nodes:\n"
+        for f in failed_admin:
           report = report + "  - %s\n" % (f)
         report = report + "\n"
 
