@@ -13,8 +13,7 @@ class CallbackModule(CallbackBase):
     for host in stats.processed.keys():
       data = str(stats.summarize(host))
       try:
-        requests.post("{{ callback_url }}",data=data)
+        requests.post("{{ callback_url }}", data=data, timeout=122)
       except requests.exceptions.ConnectionError:
         pass
   
-
