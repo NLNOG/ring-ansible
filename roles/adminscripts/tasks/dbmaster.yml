@@ -1,3 +1,6 @@
+- name: "Install mysql-server"
+  apt: name="mysql-server" state=latest
+
 - name: "Install ring-admin"
   copy:
     src=ring-admin

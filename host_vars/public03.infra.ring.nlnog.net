@@ -1,1 +1,2 @@
 pdnsmaster: true
+need_mysql_server: true

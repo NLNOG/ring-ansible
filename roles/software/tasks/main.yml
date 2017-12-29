@@ -166,9 +166,9 @@
     - sl
     - ufw
 
-- name: "Uninstall certain unnecessary packages - except on pdnsmaster"
+- name: "Uninstall certain unnecessary packages - except where mysql is needed"
   apt: name={{ item }} state=absent
   with_items:
     - apparmor
     - apparmor-utils
-  when: pdnsmaster|default(None) != true
+  when: need_mysql_server|default(None) != true
