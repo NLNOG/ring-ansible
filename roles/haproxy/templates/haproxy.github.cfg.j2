@@ -16,11 +16,12 @@ defaults
 	retries	3
 	option redispatch
 	maxconn	2000
-	contimeout	5000
-	clitimeout	50000
-	srvtimeout	50000
+	timeout connect 5000
+	timeout client 50000
+	timeout server 50000
 
-listen	github-ssl-relay :::443
-    mode tcp
+listen github-ssl-relay
+    bind    :::443
+    mode    tcp
     option	ssl-hello-chk
     server  github github.com:443
