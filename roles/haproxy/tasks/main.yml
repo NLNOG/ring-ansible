@@ -5,8 +5,8 @@
   template: src=haproxy.default.j2 dest=/etc/default/haproxy
 
 - name: "Install haproxy.cfg"
-  template: src=haproxy.github.cfg.j2 dest=/etc/haproxy/haproxy.cfg
-  when: profile == "github"
+  template: src=haproxy.relay.cfg.j2 dest=/etc/haproxy/haproxy.cfg
+  when: profile == "relay"
   notify: restart haproxy
 
 - name: "Start haproxy"
