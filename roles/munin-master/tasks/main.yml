@@ -1,4 +1,3 @@
-
 - block:
   - name: Install packages
     package:
@@ -22,17 +21,21 @@
       owner: root
       group: root
       mode: 0644
-#    notify: 
     with_items:
       - munin.conf
       - apache.conf
+      - apache24.conf
+    notify:
+      - restart apache2
 
   - name: set apache config symlink
     file:
-      src: /etc/munin/apache.conf
+      src: /etc/munin/apache24.conf
       dest: /etc/apache2/conf.d/munin.conf
       state: link
       force: yes
+    notify:
+      - restart apache2
 
   - name: chown cgi-tmp
     file:
@@ -49,8 +52,6 @@
       state: started
     with_items:
       - apache2
-#      - munin
-
   tags:
     - munin-master
     - munin

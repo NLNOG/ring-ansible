@@ -96,7 +96,7 @@
   become: true
   become_user: root
   roles:
-    - { role: haproxy, profile: github, tags: haproxy }
+    - { role: haproxy, profile: relay, tags: haproxy }
     - { role: inframail, tags: inframail }
 
 - hosts: public03.infra.ring.nlnog.net

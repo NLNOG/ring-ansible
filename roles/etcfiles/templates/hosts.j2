@@ -21,5 +21,7 @@ ff02::2 ip6-allrouters
 {% endfor %}
 
 {% if V4|default(None) == None %}
-{{ hostvars['public02.infra.ring.nlnog.net']['V6'] }} github.com
+{{ proxy_github }} github.com
+{{ proxy_pypi }} pypi.python.org
+{{ proxy_rubygems }} api.rubygems.org
 {% endif %}

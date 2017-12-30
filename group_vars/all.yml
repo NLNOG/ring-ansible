@@ -5,3 +5,7 @@ etc_aliases:
 syslog_servers:
   - master01.infra.ring.nlnog.net
   - storage01.infra.ring.nlnog.net
+
+proxy_github: 2001:1af8:4013::101
+proxy_pypi: 2001:1af8:4013::102
+proxy_rubygems: 2001:1af8:4013::103
