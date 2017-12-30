@@ -6,6 +6,11 @@
     group: root
     mode: 0700
 
+- name: "Ensure /root/.ssh/authorized_keys exists"
+  command: install -m 0600 /dev/null /root/.ssh/authorized_keys
+  args:
+    creates: /root/.ssh/authorized_keys
+
 - name: "Install rsync validation script"
   copy:
     src=validate-rsync-backup
