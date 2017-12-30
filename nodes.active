@@ -330,7 +330,6 @@ zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
-ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 coreinternet01.ring.nlnog.net OWNER=coreinternet V4=185.86.20.92 V6=2a05:b480:300::2
@@ -407,7 +406,6 @@ kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::400:b9ff:feae:aa73
-ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
 cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
 vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
@@ -1456,7 +1454,6 @@ iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 
 [ism]
-ism01.ring.nlnog.net OWNER=ism V4=178.248.168.142 V6=2a02:bd0:2:2::2
 
 [sonic]
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
@@ -1697,7 +1694,6 @@ grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::400:b9ff:feae:aa73
 
 [ragefour]
-ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
 
 [cologuard]
 cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
