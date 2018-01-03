@@ -3744,3 +3744,11 @@ USERS:
     groups:
       - ring-users
 
+  itgate:
+    state: present
+    company: 'IT.Gate S.p.A.'
+    email: 'noc@ncc.itgate.net'
+    uid: 5489
+    groups:
+      - ring-users
+
