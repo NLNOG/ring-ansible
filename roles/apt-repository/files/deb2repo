@@ -1,0 +1,12 @@
+#!/bin/bash
+# Add package to local debian repository
+
+repodir=/var/www/apt.ring.nlnog.net/HTML/deb
+repo=ring
+deb=$1
+
+gpg=/root/.gnupg
+cd $repodir
+reprepro --gnupghome $gpg -b . -V includedeb $repo $deb
+reprepro --gnupghome $gpg -b . -V export
+

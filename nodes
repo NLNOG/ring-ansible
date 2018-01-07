@@ -2,7 +2,7 @@
 
 [ringnode]
 intouch01.ring.nlnog.net OWNER=intouch V4=212.19.220.58 V6=2001:6e0:100:4001:250:56ff:fea5:f7fd
-bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
+bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:1:400:d4ff:fe72:714
 coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
@@ -491,7 +491,7 @@ staging01.ring.nlnog.net OWNER=test V4=82.94.230.133 V6=2001:888:2001::133
 intouch01.ring.nlnog.net OWNER=intouch V4=212.19.220.58 V6=2001:6e0:100:4001:250:56ff:fea5:f7fd
 
 [bit]
-bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
+bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:1:400:d4ff:fe72:714
 
 [coloclue]
 coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2

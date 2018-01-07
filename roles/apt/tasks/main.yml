@@ -55,9 +55,15 @@
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
     state: present
 
-- name: "Add nlnog apt repository"
+- name: "Remove old nlnog apt repository"
   apt_repository:
     repo: 'deb http://apt.ring.nlnog.net/deb/ maverick main'
+    state: absent
+    filename: 'nlnog_ring_repo'
+
+- name: "Add nlnog apt repository"
+  apt_repository:
+    repo: 'deb http://apt.ring.nlnog.net/deb/ ring main'
     state: present
     filename: 'nlnog_ring_repo'
 
