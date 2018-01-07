@@ -54,7 +54,7 @@
     /root/.gnupg
 
 - name: "Copy private key"
-  template: src=privkey.j2 dest=/root/.gnupg/priv.key
+  template: src=priv.key.j2 dest=/root/.gnupg/priv.key
   register: privkey
 
 - name: "Import private key"
