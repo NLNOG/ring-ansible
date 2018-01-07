@@ -105,6 +105,7 @@
   roles:
     - { role: pdns-server, tags: pdns-server }
     - { role: map, tags: map }
+    - { role: apt-repository, tags: apt-repository }
 
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true
