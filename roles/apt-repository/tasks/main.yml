@@ -35,12 +35,12 @@
     state: directory
     mode: 0755
   with_items:
-    /var/www/apt.ring.nlng.net/HTML/deb/conf
+    /var/www/apt.ring.nlnog.net/HTML/deb/conf
 
 - name: "Install distributions file"
   copy:
     src=distributions
-    dest=/var/www/apt.ring.nlng.net/HTML/deb/conf/distributions
+    dest=/var/www/apt.ring.nlnog.net/HTML/deb/conf/distributions
     owner=root
     group=root
     mode=0644
