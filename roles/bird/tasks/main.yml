@@ -22,6 +22,7 @@
 - pip:
     name: rtrsub
     state: latest
+    executable: pip3
 
 - pip:
     name: requests
