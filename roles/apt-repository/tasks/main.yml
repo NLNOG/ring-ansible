@@ -18,7 +18,7 @@
 - name: "Enable apt vhost"
   file:
     src: /etc/apache2/sites-available/apt.ring.nlnog.net
-    dest: /etc/apache2/sites-enabled/apt.ring.nlnog.net
+    dest: /etc/apache2/sites-enabled/apt.ring.nlnog.net.conf
     owner: root
     group: root
     state: link

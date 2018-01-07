@@ -50,3 +50,21 @@
 - name: "Start bird-lg-proxy"
   service: name=bird-lg-proxy state=started
 
+- name: "Install lg apache vhost"
+  copy:
+    src=lg-vhost.conf
+    dest=/etc/apache2/sites-available/lg.ring.nlnog.net
+    owner=root
+    group=root
+    mode=0644
+  notify: restart apache2
+
+- name: "Enable lg vhost"
+  file:
+    src: /etc/apache2/sites-available/lg.ring.nlnog.net
+    dest: /etc/apache2/sites-enabled/lg.ring.nlnog.net.conf
+    owner: root
+    group: root
+    state: link
+  notify: restart apache2
+

@@ -23,7 +23,7 @@
 - name: "Enable map vhost"
   file:
     src: /etc/apache2/sites-available/map.ring.nlnog.net
-    dest: /etc/apache2/sites-enabled/map.ring.nlnog.net
+    dest: /etc/apache2/sites-enabled/map.ring.nlnog.net.conf
     owner: root
     group: root
     state: link
