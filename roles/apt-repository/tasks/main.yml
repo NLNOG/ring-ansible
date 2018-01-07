@@ -58,6 +58,6 @@
   register: privkey
 
 - name: "Import private key"
-  command: "gpg --import /root/.gnupg/priv.key"
+  command: "gpg --homedir /root --import /root/.gnupg/priv.key"
   when: privkey.changed
 
