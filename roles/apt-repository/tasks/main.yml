@@ -31,7 +31,7 @@
 
 - name: "Setup repository directories"
   file:
-    path: {{ item }}
+    path: "{{ item }}"
     state: directory
     mode: 0755
   with_items:
@@ -47,7 +47,7 @@
 
 - name: "Create .gnupg directory for user root"
   file:
-    path: {{ item }}
+    path: "{{ item }}"
     state: directory
     mode: 0700
   with_items:
