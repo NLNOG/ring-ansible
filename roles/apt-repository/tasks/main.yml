@@ -1,0 +1,63 @@
+- name: "Create apt vhost directory"
+  file:
+    path: /var/www/apt.ring.nlnog.net
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: "Install apt apache vhost"
+  copy:
+    src=apt-vhost.conf
+    dest=/etc/apache2/sites-available/apt.ring.nlnog.net
+    owner=root
+    group=root
+    mode=0644
+  notify: restart apache2
+
+- name: "Enable apt vhost"
+  file:
+    src: /etc/apache2/sites-available/apt.ring.nlnog.net
+    dest: /etc/apache2/sites-enabled/apt.ring.nlnog.net
+    owner: root
+    group: root
+    state: link
+  notify: restart apache2
+
+- name: "Install reprepro"
+  apt: name={{ item }} state=latest
+  with_items:
+   - reprepro
+
+- name: "Setup repository directories"
+  file:
+    path: {{ item }}
+    state: directory
+    mode: 0755
+  with_items:
+    /var/www/apt.ring.nlng.net/HTML/deb/conf
+
+- name: "Install distributions file"
+  copy:
+    src=distributions
+    dest=/var/www/apt.ring.nlng.net/HTML/deb/conf/distributions
+    owner=root
+    group=root
+    mode=0644
+
+- name: "Create .gnupg directory for user root"
+  file:
+    path: {{ item }}
+    state: directory
+    mode: 0700
+  with_items:
+    /root/.gnupg
+
+- name: "Copy private key"
+  template: src=privkey.j2 dest=/root/.gnupg/priv.key
+  register: privkey
+
+- name: "Import private key"
+  command: "gpg --import /root/.gnupg/priv.key"
+  when: privkey.changed
+

@@ -18,4 +18,13 @@
     owner=root
     group=root
     mode=0644
+  notify: restart apache2
 
+- name: "Enable map vhost"
+  file:
+    src: /etc/apache2/sites-available/map.ring.nlnog.net
+    dest: /etc/apache2/sites-enabled/map.ring.nlnog.net
+    owner: root
+    group: root
+    state: link
+  notify: restart apache2
