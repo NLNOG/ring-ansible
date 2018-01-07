@@ -61,3 +61,10 @@
   command: "gpg --homedir /root/.gnupg --import /root/.gnupg/priv.key"
   when: privkey.changed
 
+- name: "Install deb2repo"
+  copy:
+    src=deb2repo
+    dest=/usr/local/sbin/deb2repo
+    owner=root
+    group=root
+    mode=0755
