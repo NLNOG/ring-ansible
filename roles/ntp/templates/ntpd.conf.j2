@@ -5,6 +5,8 @@
 servers {{ server }}
 {% endfor %}
 
-{% for constraint in ntp_constraints %}
-constraint from {{ constraint }}
-{% endfor %}
+# constraints don't work in debian's openntpd-portable, see
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=791534
+# {% for constraint in ntp_constraints %}
+# constraint from {{ constraint }}
+# {% endfor %}
