@@ -1,5 +1,5 @@
-- name: "Remove ntp"
-  apt: name=ntp state=absent
+- name: "Remove ntpd"
+  apt: name=ntp state=absent purge=yes
 
 - name: "Install openntpd"
   apt: name=openntpd state=latest
