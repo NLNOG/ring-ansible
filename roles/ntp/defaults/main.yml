@@ -6,4 +6,8 @@ ntp_servers:
  - ntp1.tdc.fi
  - ntp3.tdc.fi
  - ntp0.nl.net
-
+ntp_constraints:
+ - nlnog.net
+ - www.bit.nl
+ - www.nist.gov
+ - ietf.org

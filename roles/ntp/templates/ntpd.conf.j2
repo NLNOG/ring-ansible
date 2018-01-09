@@ -4,3 +4,7 @@
 {% for server in ntp_servers %}
 servers {{ server }}
 {% endfor %}
+
+{% for constraint in ntp_constraints %}
+constraint from {{ constraint }}
+{% endfor %}
