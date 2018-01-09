@@ -143,27 +143,6 @@
     dest=/opt/graphite/webapp/graphite/local_settings.py
     mode=0644
 
-- name: "Enable apache2 headers module"
-  file:
-    src: /etc/apache2/mods-available/headers.load
-    dest: /etc/apache2/mods-enabled/headers.load
-    state: link
-  notify: reload apache2
-
-- name: "Install graphiteweb vhost"
-  template:
-    src=graphite-vhost.conf.j2
-    dest=/etc/apache2/sites-available/graphite
-    mode=0644
-  notify: reload apache2
-
-- name: "Enable graphiteweb vhost"
-  file:
-    src: /etc/apache2/sites-available/graphite
-    dest: /etc/apache2/sites-enabled/graphite
-    state: link
-  notify: reload apache2
-
 - name: "Start carbon"
   service: name=carbon state=started
 

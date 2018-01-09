@@ -1,2 +1,6 @@
 pdnsmaster: true
 need_mysql_server: true
+apache_vhosts:
+  - apt
+  - lg
+  - map

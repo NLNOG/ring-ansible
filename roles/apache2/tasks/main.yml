@@ -9,6 +9,42 @@
     path: /etc/apache2/sites-enabled/000-default
     state: absent
 
+- name: "Enable apache2 headers module"
+  file:
+    src: /etc/apache2/mods-available/headers.load
+    dest: /etc/apache2/mods-enabled/headers.load
+    state: link
+  notify: restart apache2
+
+- name: "Create vhost directories"
+  file:
+    path: "/var/www/{{ item }}.ring.nlnog.net"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  with_items: "{{ apache_vhosts|default([]) }}"
+
+- name: "Install vhosts"
+  copy:
+    src="{{ item }}-vhost.conf"
+    dest="/etc/apache2/sites-available/{{ item }}.ring.nlnog.net"
+    owner=root
+    group=root
+    mode=0644
+  with_items: "{{ apache_vhosts|default([]) }}"
+  notify: restart apache2
+
+- name: "Enable vhosts"
+  file:
+    src: "/etc/apache2/sites-available/{{ item }}.ring.nlnog.net"
+    dest: "/etc/apache2/sites-enabled/{{ item }}.ring.nlnog.net.conf"
+    owner: root
+    group: root
+    state: link
+  with_items: "{{ apache_vhosts|default([]) }}"
+  notify: restart apache2
+
 - name: "Start apache2"
   service: name=apache2 state=started
 

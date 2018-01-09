@@ -1,29 +1,3 @@
-- name: "Create apt vhost directory"
-  file:
-    path: /var/www/apt.ring.nlnog.net
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
-
-- name: "Install apt apache vhost"
-  copy:
-    src=apt-vhost.conf
-    dest=/etc/apache2/sites-available/apt.ring.nlnog.net
-    owner=root
-    group=root
-    mode=0644
-  notify: restart apache2
-
-- name: "Enable apt vhost"
-  file:
-    src: /etc/apache2/sites-available/apt.ring.nlnog.net
-    dest: /etc/apache2/sites-enabled/apt.ring.nlnog.net.conf
-    owner: root
-    group: root
-    state: link
-  notify: restart apache2
-
 - name: "Install reprepro"
   apt: name={{ item }} state=latest
   with_items:

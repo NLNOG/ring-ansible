@@ -1,5 +1,3 @@
-- include: ../apache2/handlers/main.yml
-
 - name: restart bird-lg-proxy
   service: name=bird-lg-proxy state=restarted enabled=yes
 
