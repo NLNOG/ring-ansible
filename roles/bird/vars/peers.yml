@@ -350,6 +350,10 @@ lg_peers:
     asn: 394255
     ipv4: 216.55.208.166
     ipv6: 2606:5c80:2:8::1
+  NTT1:
+    asn: 2914
+    ipv4: 129.250.0.153
+    ipv6: 2001:728:0:1000::2
 
 readonly_peers:
     NAGRAFEED2:
