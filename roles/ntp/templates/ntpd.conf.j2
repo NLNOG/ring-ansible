@@ -1,0 +1,6 @@
+# {{ ansible_managed }}
+# ntpd configuration file, see ntpd.conf(5)
+
+{% for server in ntp_servers %}
+servers {{ server }}
+{% endfor %}
