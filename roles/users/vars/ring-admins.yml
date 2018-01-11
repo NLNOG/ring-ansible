@@ -85,4 +85,15 @@ USERS:
     sshkeys:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKeXDbFKwc1yIC/8zqhZATAfy55kNUzXEWpVPyiD224b sanders@fdi-20170319'
       - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCxSzhxF83AgQaIXvQW17thTrMcmHFMeL0dRfWips7KeEujYSW+ts3ihYoi5ygtj3FT1MD7ZVXP8uJZh08FWkw77qMEv5FL2Wsb7cY4SkXCMAkZ2Xu2Iz9tV3uPDfDzLFANt/KyfTgN2mJNjGczdjUJ8nJYJlGY1zE44ZkibucZKw39zgPMFuOK9rT7efbnGtry0RfujL7plEccLVLAFEIowiKcikk9BSuJgj1EYGggKQyuN/q60lQ6ZWf1Y/6prWe7nTyamCd05ycM3emJWehl5f9TrDMMMqmwaimoHbZEsLmCAHjXuaKM7bbny1C/wPj+tuJn+rDUgrKnjpSPomig3NKV7PQjB2HY3CQoymdgiAE3+W11GemKSMqackckdTzh7/kSvIKtlbYBQ4l7PY4sZZkE+avVL3kzVNHG0Y94bAwn2Xu6c4z0738drd6lBpSGzUnYIMu6vEB+Zl4tSWO4B2a89Fe5tO2OIW+E4hXlawC+ujUBKLfn+M3A7O/x+2rddU8B0srdSkRmRYOm5o9/zxW+T8Tl3dJJ6nxl0RqzjNjPwV8FSQC8C2JmMkZlzdpeRZUNN+5cCHN10eOOTBv0/OudOCgkNO/Br04gD4dtlzCrUDVpiYOIBmSVyXlVdS9dNMzxVmpV4q8a4aGsKue4VceK0FxdwYmahY8IiWdHQ== sanders@haze'
-      
+
+  arjen:
+    state: present
+    company: "Arjen Zonneveld"
+    email: arjen@bz2.nl
+    uid: 6008
+    shell: /bin/bash
+    groups:
+      - ring-admins
+      - ring-users
+    sshkeys:
+      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN6hHF8fy+vZ2wcxndGsX48wVWiKuYP2S17B6dloZywe sunfield@caprica.local'
