@@ -97,12 +97,6 @@
     src: cron.d/list_ring_nodes.j2
     dest: /etc/cron.d/list_ring_nodes
 
-- name: Remove old cronjob for list_ring_nodes (temp)
-  lineinfile:
-    regexp: "list_of_nodes|/etc/ring/node-list.txt"
-    state: absent
-    dest: /var/spool/cron/crontabs/root
-
 - name: "Update /etc/adduser.conf"
   copy:
     src=adduser.conf
