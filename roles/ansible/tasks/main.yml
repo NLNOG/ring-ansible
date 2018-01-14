@@ -33,17 +33,6 @@
 - name: "Install callback module"
   template: src=ring_callback.py.j2 dest=/usr/share/ansible/plugins/callback/ring.py
 
-- name: "Check for virtual env (temp)"
-  stat:
-    path: /usr/share/ansible-venv
-  register: stat_ansible
-
-- name: "Remove old virtual environment (temp)"
-  file: name={{ item }} state=absent
-  with_items:
-    - /usr/share/ansible-venv
-  when: ansible_distribution_release == "xenial" and stat_ansible.stat.exists == True
-
 #### END Ansible from pkgs
 
 #### Ansible in a venv
@@ -135,9 +124,6 @@
     src: cron.d/ansible.j2
     dest: /etc/cron.d/ansible
   when: ansible_distribution_release != "precise"
-
-- name: "Delete ansible.j2 (temp)"
-  file: path=/etc/cron.d/ansible.j2 state=absent
 
 - name: "Remove any old ansible crontab entries"
   lineinfile:

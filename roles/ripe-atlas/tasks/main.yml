@@ -1,14 +1,3 @@
-- name: "Check for virtual env (temp)"
-  stat:
-    path: /usr/share/ripe-atlas-venv
-  register: stat_atlas
-
-- name: "Remove old virtual environment (temp)"
-  file: name={{ item }} state=absent
-  with_items:
-    - /usr/share/ripe-atlas-venv
-  when: ansible_distribution_release == "xenial" and stat_atlas.stat.exists == True
-
 - name: "Install deb prequisites for ripe-atlas-tools"
   apt: name={{ item }} state=present
   with_items:
@@ -32,7 +21,7 @@
     - pyasn1
     - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
 
-- name: "create symlinks for ripe-atlas-tools"
+- name: "Create symlinks for ripe-atlas-tools"
   file:
     state: link
     force: true

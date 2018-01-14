@@ -35,12 +35,6 @@
     src: "cron.d/ring-fetch-nodes-json.j2"
     dest: /etc/cron.d/ring-fetch-nodes-json
 
-- name: Remove old ring-fetch-nodes-json cronjob (temp)
-  lineinfile:
-    regexp: "ring-fetch-nodes-json|nodesjsonfetcher"
-    state: absent
-    dest: /var/spool/cron/crontabs/root
-
 - name: "Install geotrshell"
   copy:
     src=geotrshell
