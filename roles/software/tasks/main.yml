@@ -144,7 +144,7 @@
     - /usr/bin/traceroute.db
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
-  always_run: yes
+  check_mode: no
   changed_when: false
 
 - name: "Set new capabilities"
