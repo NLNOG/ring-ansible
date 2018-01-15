@@ -6,7 +6,10 @@
 
 - hosts: infranode
   tasks:
-    - include_vars: "vault/infranode.yml"
+    - include_vars:
+      with_first_found:
+        - "vault/{{ inventory_hostname}}.yml"
+        - "vault/infranode.yml"
   tags:
     - always
 

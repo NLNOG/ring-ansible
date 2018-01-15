@@ -41,11 +41,13 @@
   tasks:
     - name: Load the vault passwords
       include_vars: "vault/vault.yml"
+      tags: vault_pw
     - name: Add the vault password
       copy:
         dest: /root/.vaultpw
         mode: 0400
         content: "{{ ringnode_vault_pw }}"
+      tags: vault_pw
 
 - hosts: infranode
   become: true
@@ -53,11 +55,21 @@
   tasks:
     - name: Load the vault passwords
       include_vars: "vault/vault.yml"
-    - name: Add the vault password
+      tags: vault_pw
+    - name: Add the vault password (host-specific)
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ vars['host_vaults'][inventory_hostname] }}"
+      when: vars['host_vaults'][inventory_hostname] is defined
+      tags: vault_pw
+    - name: Add the vault password (generic)
       copy:
         dest: /root/.vaultpw
         mode: 0400
         content: "{{ infranode_vault_pw }}"
+      when: vars['host_vaults'][inventory_hostname] is not defined
+      tags: vault_pw
 
 - hosts: all
   become: true
