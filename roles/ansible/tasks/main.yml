@@ -21,9 +21,6 @@
     - python-requests
     - "ansible={{ ansible_pin_version }}"
 
-- name: "Delete Ansible 1.0 plugin dir"
-  file: path=/usr/share/ansible_plugins state=absent
-
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
   with_items:
