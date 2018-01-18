@@ -106,6 +106,9 @@
     - 10periodic
     - 50unattended-upgrades
 
+- name: "Randomise apt upgrade and reboot activities across 23 hours"
+  lineinfile: dest=/lib/systemd/system/apt-daily-upgrade.timer regexp='^RandomizedDelaySec=' line='RandomizedDelaySec=23h'
+
 - name: "Run apt-get update"
   apt:
     update_cache: yes
