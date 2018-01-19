@@ -106,8 +106,29 @@
     - 10periodic
     - 50unattended-upgrades
 
+- name: "Create /etc/systemd/system/apt-daily-upgrade.timer.d if needed"
+  file:
+    path: /etc/systemd/system/apt-daily-upgrade.timer.d
+    state: directory
+    mode: 0755
+
 - name: "Randomise apt upgrade and reboot activities across 23 hours"
-  lineinfile: dest=/lib/systemd/system/apt-daily-upgrade.timer regexp='^RandomizedDelaySec=' line='RandomizedDelaySec=23h'
+  copy:
+    src=apt-daily-upgrade.timer
+    dest=/etc/systemd/system/apt-daily-upgrade.timer.d/override.conf
+    owner=root
+    group=root
+    mode=0644
+  notify: reload systemd
+
+
+- name: "Reset system default splay back to 1h"
+  lineinfile: dest=/lib/systemd/system/apt-daily-upgrade.timer regexp='^RandomizedDelaySec=' line='RandomizedDelaySec=1h'
+  notify: reload systemd
+
+
+- name: reload systemd if needed
+  meta: flush_handlers
 
 - name: "Run apt-get update"
   apt:
