@@ -362,3 +362,7 @@ readonly_peers:
     NAGRAFEED2:
       asn: 200584
       ipv4: 85.184.255.154
+    ISOLARIO1:
+      asn: 2598
+      ipv4: 192.65.131.201
+      ipv6: 2001:67c:1b08:2:192:65:131:201
