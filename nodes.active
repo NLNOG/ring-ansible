@@ -32,6 +32,7 @@ portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
 digmia01.ring.nlnog.net OWNER=digmia V4=91.210.181.185 V6=2a01:5200:100::7269:6b67:3031
 rootlu01.ring.nlnog.net OWNER=rootlu V4=94.242.192.13 V6=2a01:608:f::13
+nebula01.ring.nlnog.net OWNER=nebula V4=188.117.58.137 V6=2001:1bc8:200:f::2
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=115.126.160.143 V6=2404:e400:998:0:216:3eff:fe7e:a08f
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
@@ -108,6 +109,7 @@ solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
+claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
@@ -569,6 +571,7 @@ rootlu01.ring.nlnog.net OWNER=rootlu V4=94.242.192.13 V6=2a01:608:f::13
 [globalaxs]
 
 [nebula]
+nebula01.ring.nlnog.net OWNER=nebula V4=188.117.58.137 V6=2001:1bc8:200:f::2
 
 [tilaa]
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
@@ -771,6 +774,7 @@ solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
+claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 
 [arpnetworks]
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
