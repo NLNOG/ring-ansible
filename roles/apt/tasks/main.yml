@@ -125,10 +125,12 @@
 - name: "Reset system default splay back to 1h"
   lineinfile: dest=/lib/systemd/system/apt-daily-upgrade.timer regexp='^RandomizedDelaySec=' line='RandomizedDelaySec=1h'
   notify: reload systemd
+  when: ansible_distribution_release != "precise"
 
 
 - name: reload systemd if needed
   meta: flush_handlers
+  when: ansible_distribution_release != "precise"
 
 - name: "Run apt-get update"
   apt:
