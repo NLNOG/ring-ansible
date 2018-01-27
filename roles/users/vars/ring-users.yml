@@ -1520,7 +1520,7 @@ USERS:
       - ring-users
 
   mozilla:
-    state: present
+    state: absent
     company: 'Mozilla'
     email: 'netops@mozilla.com'
     uid: 5209
