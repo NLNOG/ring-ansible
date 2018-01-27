@@ -3752,3 +3752,11 @@ USERS:
     groups:
       - ring-users
 
+  gitoyen:
+    state: present
+    company: 'Gitoyen'
+    email: 'noc@gitoyen.net'
+    uid: 5490
+    groups:
+      - ring-users
+
