@@ -3768,3 +3768,11 @@ USERS:
     groups:
       - ring-users
 
+  xenosite:
+    state: present
+    company: 'Xenosite BV'
+    email: 'noc@xenosite.net'
+    uid: 5492
+    groups:
+      - ring-users
+

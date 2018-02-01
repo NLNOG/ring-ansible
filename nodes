@@ -468,6 +468,7 @@ bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
+xenosite01.ring.nlnog.net OWNER=xenosite V4=62.212.130.213 V6=2a03:1a00:130::213
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1889,3 +1890,6 @@ gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 
 [centralnic]
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
+
+[xenosite]
+xenosite01.ring.nlnog.net OWNER=xenosite V4=62.212.130.213 V6=2a03:1a00:130::213
