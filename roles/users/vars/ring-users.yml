@@ -3760,3 +3760,11 @@ USERS:
     groups:
       - ring-users
 
+  centralnic:
+    state: present
+    company: 'CentralNic Group PLC'
+    email: 'ops@centralnic.com'
+    uid: 5491
+    groups:
+      - ring-users
+

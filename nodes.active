@@ -1839,3 +1839,5 @@ itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 
 [gitoyen]
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
+
+[centralnic]
