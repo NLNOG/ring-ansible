@@ -18,6 +18,12 @@
     group=root
     mode=0755
 
+- name: "Install software dependencies for rbnacl"
+  apt: name={{ item }} state=latest
+  with_items:
+    - libffi-dev
+  when: ansible_distribution_release == "xenial"
+
 - name: "Install rbnacl with ed22519 support (for ring.rb)"
   gem: name=rbnacl version=4.0.2 executable=/usr/bin/gem user_install=no
   when: ansible_distribution_release == "xenial"
