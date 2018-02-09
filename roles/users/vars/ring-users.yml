@@ -3784,3 +3784,19 @@ USERS:
     groups:
       - ring-users
 
+  internetag:
+    state: present
+    company: 'Internet AG'
+    email: 'support@inet.de'
+    uid: 5494
+    groups:
+      - ring-users
+
+  torix:
+    state: present
+    company: 'Toronto Internet Exchange'
+    email: 'admin@torix.ca'
+    uid: 5495
+    groups:
+      - ring-users
+
