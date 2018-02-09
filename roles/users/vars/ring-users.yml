@@ -3776,3 +3776,11 @@ USERS:
     groups:
       - ring-users
 
+  unet:
+    state: present
+    company: 'UNET'
+    email: 'noc@unet.nl'
+    uid: 5493
+    groups:
+      - ring-users
+
