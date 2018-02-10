@@ -1,2 +1,5 @@
 - name: reload systemd
   command: systemctl daemon-reload
+
+- name: restart unattended-upgrades
+  service: name=unattended-upgrades state=restarted enabled=yes

@@ -14,6 +14,11 @@ Unattended-Upgrade::Package-Blacklist {
 //	"libc6-i686";
 };
 
+// This option allows you to control if on a unclean dpkg exit
+// unattended-upgrades will automatically run
+//   dpkg --force-confold --configure -a
+Unattended-Upgrade::AutoFixInterruptedDpkg "true";
+
 // Send email to this address for problems or packages upgrades
 // If empty or unset then no email is sent, make sure that you
 // have a working mail setup on your system. The package 'mailx'

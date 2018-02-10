@@ -105,6 +105,7 @@
   with_items:
     - 10periodic
     - 50unattended-upgrades
+  notify: restart unattended-upgrades
 
 - name: "Create /etc/systemd/system/apt-daily-upgrade.timer.d if needed"
   file:
