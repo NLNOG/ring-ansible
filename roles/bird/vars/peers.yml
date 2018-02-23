@@ -357,6 +357,10 @@ lg_peers:
     asn: 2914
     ipv4: 129.250.1.96
     ipv6: 2001:728:0:1000::f00f
+  FREIFUNKFFM1:
+    asn: 64475
+    ipv4: 185.206.209.0
+    ipv6: 2a06:8187:fb10::1
 
 readonly_peers:
     NAGRAFEED2:
