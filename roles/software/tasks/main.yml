@@ -70,7 +70,6 @@
     - python-simplejson
     - python-software-properties
     - python-virtualenv
-    - python3-pip
     - rsync
     - ruby
     - screen
@@ -116,6 +115,7 @@
     - iperf3
     - ruby-dev
     - parallel
+    - python3-pip
   when: ansible_distribution_release != "precise"
 
 - name: "Create symlink for lft"
