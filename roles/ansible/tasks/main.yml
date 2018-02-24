@@ -20,6 +20,7 @@
     - git
     - python-requests
     - "ansible={{ ansible_pin_version }}"
+  when: ansible_distribution_release != "precise"
 
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
