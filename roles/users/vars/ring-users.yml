@@ -3808,3 +3808,11 @@ USERS:
     groups:
       - ring-users
 
+  mlab:
+    state: present
+    company: 'MLaB'
+    email: 'hostmaster@mlab.company'
+    uid: 5497
+    groups:
+      - ring-users
+
