@@ -1849,3 +1849,5 @@ internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:
 
 [torix]
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
+
+[internetport]

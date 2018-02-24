@@ -3800,3 +3800,11 @@ USERS:
     groups:
       - ring-users
 
+  internetport:
+    state: present
+    company: 'Internetport Sweden AB'
+    email: 'support@internetport.se'
+    uid: 5496
+    groups:
+      - ring-users
+

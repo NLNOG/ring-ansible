@@ -471,6 +471,7 @@ xenosite01.ring.nlnog.net OWNER=xenosite V4=62.212.130.213 V6=2a03:1a00:130::213
 unet01.ring.nlnog.net OWNER=unet V4=82.148.223.107 V6=2a02:120::107
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
+internetport01.ring.nlnog.net OWNER=internetport V4=95.143.193.43 V6=2a03:d780:0:193::d666
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1903,3 +1904,6 @@ internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:
 
 [torix]
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
+
+[internetport]
+internetport01.ring.nlnog.net OWNER=internetport V4=95.143.193.43 V6=2a03:d780:0:193::d666
