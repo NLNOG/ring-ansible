@@ -1,4 +1,4 @@
-- name: Ensure /etc/ring exists
+- name: "Ensure /etc/ring exists"
   file:
     name: /etc/ring
     state: directory
@@ -15,6 +15,25 @@
   apt: name={{ item }} state=latest
   with_items:
     - dbus
+  when: ansible_distribution_release != "precise"
+
+- name: "Ensure systemd-hostnamed.service.d exists"
+  file:
+    name: /etc/systemd/system/systemd-hostnamed.service.d
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+  when: ansible_distribution_release != "precise"
+
+- name: "Install hostnamed override.conf"
+  copy:
+    src=hostnamed_override.conf
+    dest=/etc/systemd/system/systemd-hostnamed.service.d/override.conf
+    owner=root
+    group=root
+    mode=0644
+  notify: reload systemd
   when: ansible_distribution_release != "precise"
 
 - name: "Ensure the hostname is set"
