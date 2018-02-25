@@ -1,2 +1,5 @@
 - name: reload systemd
   command: systemctl daemon-reload
+
+- name: restart smartmontools
+  service: name=smartmontools state=restarted

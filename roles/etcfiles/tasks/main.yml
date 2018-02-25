@@ -136,3 +136,12 @@
     state: link
     force: yes
 
+- name: "Update /etc/smartd.conf"
+  copy:
+    src=smartd.conf
+    dest=/etc/smartd.conf
+    owner=root
+    group=root
+    mode=0644
+  notify: restart smartmontools
+
