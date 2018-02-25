@@ -103,10 +103,13 @@ infomaniak01.ring.nlnog.net OWNER=infomaniak V4=83.166.136.173 V6=2001:1600:4:8:
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
 skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
+claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
+claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
@@ -336,6 +339,7 @@ intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
 pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=38.103.8.242 V6=2001:550:102:ff::a0a
 kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
+inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
@@ -448,6 +452,8 @@ xenosite01.ring.nlnog.net OWNER=xenosite V4=62.212.130.213 V6=2a03:1a00:130::213
 unet01.ring.nlnog.net OWNER=unet V4=82.148.223.107 V6=2a02:120::107
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
+internetport01.ring.nlnog.net OWNER=internetport V4=95.143.193.43 V6=2a03:d780:0:193::d666
+mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:131:254
 
 [infranode]
 
@@ -764,10 +770,13 @@ skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
 
 [claranet]
+claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
+claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 
 [arpnetworks]
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
@@ -1497,6 +1506,7 @@ kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 
 [inxza]
+inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
@@ -1845,5 +1855,7 @@ internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
 
 [internetport]
+internetport01.ring.nlnog.net OWNER=internetport V4=95.143.193.43 V6=2a03:d780:0:193::d666
 
 [mlab]
+mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:131:254
