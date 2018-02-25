@@ -36,6 +36,9 @@
   notify: reload systemd
   when: ansible_distribution_release != "precise"
 
+- name: "Reload systemd if needed"
+  meta: flush_handlers
+
 - name: "Ensure the hostname is set"
   hostname:
     name: "{{ inventory_hostname }}"
