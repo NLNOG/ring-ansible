@@ -361,6 +361,10 @@ lg_peers:
     asn: 64475
     ipv4: 185.206.209.0
     ipv6: 2a06:8187:fb10::1
+  UNILOGIC1:
+    asn: 28788
+    ipv4: 62.133.192.15
+    ipv6: 2001:4128:6135:210:250:56ff:feb6:3e 
 
 readonly_peers:
     NAGRAFEED2:
