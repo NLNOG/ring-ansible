@@ -1112,7 +1112,7 @@ USERS:
       - ring-users
 
   qbranch:
-    state: present
+    state: absent
     company: 'Qbranch Services AB'
     email: 'networking@qbranch.se'
     uid: 5157
@@ -3813,6 +3813,14 @@ USERS:
     company: 'MLaB'
     email: 'hostmaster@mlab.company'
     uid: 5497
+    groups:
+      - ring-users
+
+  axians:
+    state: present
+    company: 'Axians IT AB'
+    email: 'networking@axians.se'
+    uid: 5498
     groups:
       - ring-users
 

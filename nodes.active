@@ -134,7 +134,6 @@ itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::
 openminds01.ring.nlnog.net OWNER=openminds V4=37.72.162.102 V6=2a02:d08:1002:321:370:7216:2102:1
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
-qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -863,7 +862,6 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [algar]
 
 [qbranch]
-qbranch01.ring.nlnog.net OWNER=qbranch V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 
 [nlnetlabs]
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
@@ -1855,3 +1853,5 @@ internetport01.ring.nlnog.net OWNER=internetport V4=95.143.193.43 V6=2a03:d780:0
 
 [mlab]
 mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:131:254
+
+[axians]
