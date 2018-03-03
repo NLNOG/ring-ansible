@@ -5,6 +5,11 @@
     filename: 'certbot_repo'
   register: certbot_installed
 
+- name: "Add certbot repository key"
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 7BF576066ADA65728FC7E70A8C47BE8E75BCA694
+
 - name: "Run apt-get update"
   apt:
     update_cache: yes
