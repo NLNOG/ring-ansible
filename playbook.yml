@@ -128,3 +128,4 @@
   roles:
     - { role: apache2, tags: apache2 }
     - { role: letsencrypt, tags: letsencrypt }
+    - { role: ring_api, tags: ring_api }
