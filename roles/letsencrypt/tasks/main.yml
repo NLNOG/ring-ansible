@@ -21,3 +21,12 @@
   with_items:
     - python-certbot-apache
 
+- name: "Check for existing certificates"
+  stat: path=/etc/letsencrypt/live/{{ item }}.ring.nlnog.net/cert.pem
+  register: certs_installed
+  with_items: "{{ letsencrypt_certs|default([]) }}"
+
+- name: "Generate certificates"
+  command: echo /usr/bin/certbot run -a webroot -i apache -w /var/www/html -n -d {{ item.item }}.ring.nlnog.net --agree-tos -m ring-admins@nlnog.net
+  with_items: "{{ certs_installed.results }}"
+  when: certs_installed.results is defined and item.stat is defined and item.stat.exists == False

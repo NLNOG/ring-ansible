@@ -1,6 +1,8 @@
 dbmaster: true
 need_mysql_server: true
 ansible_master: true
+letsencrypt_certs:
+  - api
 
 LOCAL_USERS:
   ringforger:
