@@ -31,7 +31,7 @@
 - name: "Add update-motd cronjob"
   cron:
     name: update_motd
-    job: run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd
+    job: run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd 2>/dev/null
     hour: 7
     minute: 15
     user: root
