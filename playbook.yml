@@ -122,3 +122,9 @@
   roles:
     - { role: ring_auth, tags: ring_auth }
 
+- hosts: dbmaster.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: apache2, tags: apache2 }
+    - { role: letsencrypt, tags: letsencrypt }
