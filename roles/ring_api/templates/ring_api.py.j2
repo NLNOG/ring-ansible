@@ -8,7 +8,7 @@ import socket
 from flask import Flask, jsonify, request
 from string import Template
 
-DBHOST='{{ inventory_hostname }}'
+DBHOST='localhost'
 DBUSER='ansible_master'
 DBPASS='{{ api_dbpassword }}'
 DB='ring'
