@@ -5,7 +5,7 @@ import json
 import sys, re, string, os, tempfile, random
 import MySQLdb as mdb
 import socket
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from string import Template
 
 DBHOST='localhost'
@@ -231,7 +231,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return redirect("/1.0", code=302)
 
 @app.route('/1.0', methods = ['GET'])
 def get_api_1_0():
