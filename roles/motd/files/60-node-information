@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os, re, socket, sys, simplejson, time, urllib2, pycountry
 
-API='https://ring.nlnog.net/api/1.0'
+API='https://api.ring.nlnog.net/1.0'
 HOSTNAME=socket.gethostname()
 BANNER='/etc/update-motd.d/ring.nlnog.net-logo'
 CACHE='/var/run/motd.cached'

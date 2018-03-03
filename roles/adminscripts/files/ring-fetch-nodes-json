@@ -6,7 +6,7 @@ if [ ! -d "/etc/ring" ]; then
 fi
 
 cd /etc/ring
-wget -q https://ring.nlnog.net/api/1.0/nodes -O nodes.json.tmp
+wget -q https://api.ring.nlnog.net/1.0/nodes -O nodes.json.tmp
 /usr/bin/jsonlint nodes.json.tmp
 mv nodes.json.tmp nodes.json
 
