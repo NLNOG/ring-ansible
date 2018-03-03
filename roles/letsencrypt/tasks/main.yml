@@ -1,0 +1,17 @@
+- name: "Add certbot repository"
+  apt_repository:
+    repo: 'deb http://ppa.launchpad.net/certbot/certbot/ubuntu xenial main'
+    state: present
+    filename: 'certbot_repo'
+  register: certbot_installed
+
+- name: "Run apt-get update"
+  apt:
+    update_cache: yes
+  when: certbot_installed.changed
+
+- name: "Install certbot"
+  apt: name={{ item }} state=latest
+  with_items:
+    - python-certbot-apache
+
