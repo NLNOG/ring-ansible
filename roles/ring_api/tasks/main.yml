@@ -1,13 +1,13 @@
 - name: "Install api.wsgi"
   copy:
     src=api.wsgi
-    dest=/var/www/api.ring.nlnog.net/HTML/api.wsgi
+    dest=/var/www/api.ring.nlnog.net/api.wsgi
     owner=root
     group=root
     mode=0644
   notify: reload apache2
 
 - name: "Install ring_api.py"
-  template: src=ring_api.py.j2 dest=/var/www/api.ring.nlnog.net/HTML/ring_api.py
+  template: src=ring_api.py.j2 dest=/var/www/api.ring.nlnog.net/ring_api.py
   notify: reload apache2
 
