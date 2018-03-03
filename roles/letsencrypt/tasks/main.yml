@@ -27,6 +27,6 @@
   with_items: "{{ letsencrypt_certs|default([]) }}"
 
 - name: "Generate certificates"
-  command: /usr/bin/certbot run -a webroot -i apache -w /var/www/html -n -d {{ item.item }}.ring.nlnog.net --agree-tos -m ring-admins@nlnog.net
+  command: /usr/bin/certbot certonly --apache -n -d {{ item.item }}.ring.nlnog.net --agree-tos -m ring-admins@nlnog.net
   with_items: "{{ certs_installed.results }}"
   when: certs_installed.results is defined and item.stat is defined and item.stat.exists == False
