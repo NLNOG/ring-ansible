@@ -1,1 +1,1 @@
-callback_url: https://ring.nlnog.net/api/1.0/ansible_run
+callback_url: https://api.ring.nlnog.net/1.0/ansible_run
