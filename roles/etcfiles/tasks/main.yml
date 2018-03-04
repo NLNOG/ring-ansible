@@ -153,3 +153,10 @@
   notify: restart smartmontools
   when: not smartmontools_installed.changed
 
+- name: "Update /etc/cron.weekly/fstrim"
+  copy:
+    src=fstrim
+    dest=/etc/cron.weekly/fstrim
+    owner=root
+    group=root
+    mode=0755
