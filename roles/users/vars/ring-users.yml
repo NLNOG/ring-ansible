@@ -408,7 +408,7 @@ USERS:
       - ring-users
 
   concepts-ict:
-    state: present
+    state: absent
     company: 'Concepts ICT'
     email: 'noc@concepts.nl'
     uid: 5060
