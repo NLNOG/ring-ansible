@@ -141,7 +141,6 @@
     name: smartmontools
     state: present
   check_mode: true
-  changed_when: False
   register: smartmontools_installed
 
 - name: "Update /etc/smartd.conf"
