@@ -136,13 +136,6 @@
     state: link
     force: yes
 
-- name: "Check if smartmontools is installed"
-  package:
-    name: smartmontools
-    state: present
-  check_mode: true
-  register: smartmontools_installed
-
 - name: "Update /etc/smartd.conf"
   copy:
     src=smartd.conf
@@ -150,8 +143,20 @@
     owner=root
     group=root
     mode=0644
+  register: smartd_conf
+
+- name: "Check if smartmontools is installed"
+  package:
+    name: smartmontools
+    state: present
+  check_mode: true
+  register: smartmontools_installed
+  when: smartd_conf.changed
+
+- name: "Restart smartmontools if needed"
+  command: /bin/true
   notify: restart smartmontools
-  when: not smartmontools_installed.changed
+  when: smartmontools_installed.changed
 
 - name: "Update /etc/cron.weekly/fstrim"
   copy:
