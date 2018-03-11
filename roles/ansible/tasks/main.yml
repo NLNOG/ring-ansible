@@ -31,6 +31,27 @@
 - name: "Install callback module"
   template: src=ring_callback.py.j2 dest=/usr/share/ansible/plugins/callback/ring.py
 
+- name: "Install mitogen"
+  git:
+    repo: 'https://github.com/dw/mitogen.git'
+    dest: /opt/mitogen
+    update: no
+  when: ansible_distribution_release != "precise"
+
+- name: "Check for mitogen ansible plugin installation"
+  stat:
+    path: /opt/mitogen/ansible_mitogen/plugins/strategy/mitogen.py
+  register: mitogen
+
+- name: "Update ansible.cfg (mitogen)"
+  copy:
+    src=ansible.cfg
+    dest=/etc/ansible/ansible.cfg
+    owner=root
+    group=root
+    mode=0644
+  when: mitogen.stat.exists == True
+
 #### END Ansible from pkgs
 
 #### Ansible in a venv
