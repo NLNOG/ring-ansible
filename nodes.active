@@ -120,7 +120,6 @@ grnet01.ring.nlnog.net OWNER=grnet V4=62.217.125.248 V6=2001:648:2ffc:113:dcdb:e
 ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
-bluezonejordan01.ring.nlnog.net OWNER=bluezonejordan V4=31.222.236.6 V6=2a01:8e40:1:12::2
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 yellowfiber01.ring.nlnog.net OWNER=yellowfiber V4=67.23.114.2 V6=2607:fd50:1::5a
@@ -813,7 +812,6 @@ merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 
 [bluezonejordan]
-bluezonejordan01.ring.nlnog.net OWNER=bluezonejordan V4=31.222.236.6 V6=2a01:8e40:1:12::2
 
 [zeronet]
 
