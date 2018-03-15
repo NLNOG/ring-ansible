@@ -3824,3 +3824,11 @@ USERS:
     groups:
       - ring-users
 
+  freethought:
+    state: present
+    company: 'Freethought Internet Limited'
+    email: 'noc@freethought-internet.co.uk'
+    uid: 5499
+    groups:
+      - ring-users
+
