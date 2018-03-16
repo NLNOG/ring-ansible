@@ -156,7 +156,7 @@
 - name: "Restart smartmontools if needed"
   command: /bin/true
   notify: restart smartmontools
-  when: not smartmontools_installed.changed
+  when: smartd_conf.changed and not smartmontools_installed.changed
 
 - name: "Update /etc/cron.weekly/fstrim"
   copy:
