@@ -10,6 +10,8 @@ if [ -r $FILENAME ]; then
     then
         PGID=`head -1 $FILENAME`
         pkill -KILL -P $PGID
+        pkill -KILL -f ansible-pull
+        pkill -KILL -f ansible-playbook
         rm $FILENAME
     fi
 fi
