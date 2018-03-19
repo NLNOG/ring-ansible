@@ -3832,3 +3832,11 @@ USERS:
     groups:
       - ring-users
 
+  itafdelingen:
+    state: present
+    company: 'It-afdelingen A/S'
+    email: 'noc@itafdelingen.dk'
+    uid: 5500
+    groups:
+      - ring-users
+
