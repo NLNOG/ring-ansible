@@ -5,13 +5,16 @@ MAXAGE=43200
 CURDATE=`date +%s`
 
 if [ -r $FILENAME ]; then
-    STARTDATE=`date -r $FILENAME +%s`
-    if (( $STARTDATE + $MAXAGE < $CURDATE ));
-    then
-        PGID=`head -1 $FILENAME`
-        pkill -KILL -P $PGID
-        pkill -KILL -f ansible-pull
-        pkill -KILL -f ansible-playbook
-        rm $FILENAME
+    OWNER=`stat -c %U $FILENAME`
+    if [ "$OWNER" == "root" ]; then
+        STARTDATE=`date -r $FILENAME +%s`
+        if (( $STARTDATE + $MAXAGE < $CURDATE ));
+        then
+            PGID=`head -1 $FILENAME`
+            pkill -KILL -P $PGID
+            pkill -KILL -f ansible-pull
+            pkill -KILL -f ansible-playbook
+            rm $FILENAME
+        fi
     fi
 fi
