@@ -14,7 +14,7 @@ if [ -r $FILENAME ]; then
             pkill -KILL -P $PGID
             pkill -KILL -f ansible-pull
             pkill -KILL -f ansible-playbook
-            rm $FILENAME
+            rm $FILENAME 2>/dev/null
         fi
     fi
 fi
