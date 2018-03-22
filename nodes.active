@@ -226,7 +226,6 @@ businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
 suretec01.ring.nlnog.net OWNER=suretec V4=185.8.92.17 V6=2a02:d540::b908:5c11
-cloudnl01.ring.nlnog.net OWNER=cloudnl V4=185.23.24.149 V6=2a00:6960:1:1::24:149:1
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
@@ -1182,7 +1181,6 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 suretec01.ring.nlnog.net OWNER=suretec V4=185.8.92.17 V6=2a02:d540::b908:5c11
 
 [cloudnl]
-cloudnl01.ring.nlnog.net OWNER=cloudnl V4=185.23.24.149 V6=2a00:6960:1:1::24:149:1
 
 [dacor]
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
