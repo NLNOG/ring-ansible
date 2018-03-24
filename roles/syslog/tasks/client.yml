@@ -5,7 +5,7 @@
     owner: root
     group: root
     mode: 0644
-  notify: syslog reload service
+  notify: syslog restart service
 
 - name: install if-up.d script on ringnodes
   copy:

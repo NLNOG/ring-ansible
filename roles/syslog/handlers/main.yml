@@ -1,3 +1,5 @@
-
 - name: syslog reload service
   service: name=syslog-ng state=reloaded
+
+- name: syslog restart service
+  service: name=syslog-ng state=restarted

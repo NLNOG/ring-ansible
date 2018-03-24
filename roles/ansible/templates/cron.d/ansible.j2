@@ -3,4 +3,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 6 6,18 * * * root /usr/local/sbin/ansible-reaper >/dev/null
 
-{{ 60|determrand(ansible_nodename) }} */2 * * * root /usr/local/sbin/ansible-cron 2>&1 | /usr/bin/logger -t ansible_cron
+{{ 60|determrand(ansible_nodename) }} */2 * * * root /usr/local/sbin/ansible-cron 2>&1 | /usr/bin/logger -t ansible_cron -p local6.info
