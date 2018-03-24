@@ -10,6 +10,7 @@ if [ -r $FILENAME ]; then
         STARTDATE=`date -r $FILENAME +%s`
         if (( $STARTDATE + $MAXAGE < $CURDATE ));
         then
+            >&2 echo "Killing stale ansible processes..."
             PGID=`head -1 $FILENAME`
             pkill -KILL -P $PGID
             pkill -KILL -f ansible-pull

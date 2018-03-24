@@ -152,3 +152,12 @@
    compress
    delaycompress
 }
+
+/var/log/ansible/ansible_reaper.log {
+   rotate 4
+   missingok
+   notifempty
+   weekly
+   compress
+   delaycompress
+}
