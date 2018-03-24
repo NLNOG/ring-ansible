@@ -105,6 +105,14 @@
 
 #### END Ansible in a venv
 
+- name: "Create /var/log/ansible if needed"
+  file:
+    path: /var/log/ansible
+    state: directory
+    owner: root
+    group: adm
+    mode: 0750
+
 - name: "Create /usr/local/sbin if needed"
   file:
     path: /usr/local/sbin
