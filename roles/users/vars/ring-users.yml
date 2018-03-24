@@ -833,7 +833,7 @@ USERS:
 
   teamix:
     state: present
-    company: 'teamix GmbH'
+    company: 'Proact Deutschland GmbH'
     email: 'rg@teamix.de'
     uid: 5120
     groups:
