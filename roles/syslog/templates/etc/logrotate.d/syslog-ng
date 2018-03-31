@@ -136,28 +136,28 @@
 }
 
 /var/log/ansible/ansible.log {
-   rotate 4
+   rotate 14
    missingok
    notifempty
-   weekly
+   daily
    compress
    delaycompress
 }
 
 /var/log/ansible/ansible_cron.log {
-   rotate 4
+   rotate 14
    missingok
    notifempty
-   weekly
+   daily
    compress
    delaycompress
 }
 
 /var/log/ansible/ansible_reaper.log {
-   rotate 4
+   rotate 14
    missingok
    notifempty
-   weekly
+   daily
    compress
    delaycompress
 }
