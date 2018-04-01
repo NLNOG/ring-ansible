@@ -478,6 +478,7 @@ mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:13
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
+cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.175.245 V6=2a0c:eb00:0:f7:185:233:175:245
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1927,3 +1928,6 @@ freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4:
 
 [itafdelingen]
 itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
+
+[cyberfusion]
+cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.175.245 V6=2a0c:eb00:0:f7:185:233:175:245

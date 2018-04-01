@@ -3840,3 +3840,11 @@ USERS:
     groups:
       - ring-users
 
+  cyberfusion:
+    state: present
+    company: 'Cyberfusion'
+    email: 'wedwards@cyberfusion.nl'
+    uid: 5501
+    groups:
+      - ring-users
+
