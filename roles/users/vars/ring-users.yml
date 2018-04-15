@@ -3864,3 +3864,11 @@ USERS:
     groups:
       - ring-users
 
+  vangulik:
+    state: present
+    company: 'VAN_GULIK'
+    email: 'noc@as2613.net'
+    uid: 5504
+    groups:
+      - ring-users
+
