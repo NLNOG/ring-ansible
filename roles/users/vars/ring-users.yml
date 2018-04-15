@@ -3848,3 +3848,11 @@ USERS:
     groups:
       - ring-users
 
+  qix:
+    state: present
+    company: 'Qix'
+    email: 'noc@qix.ca'
+    uid: 5502
+    groups:
+      - ring-users
+
