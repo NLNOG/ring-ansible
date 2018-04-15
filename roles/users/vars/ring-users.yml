@@ -3856,3 +3856,11 @@ USERS:
     groups:
       - ring-users
 
+  comvive:
+    state: present
+    company: 'Comvive Servidores'
+    email: 'noc@comvive.com'
+    uid: 5503
+    groups:
+      - ring-users
+
