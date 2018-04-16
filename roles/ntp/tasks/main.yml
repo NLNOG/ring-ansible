@@ -1,6 +1,9 @@
 - name: "Remove ntpd"
   apt: name=ntp state=absent purge=yes
 
+- name: "Install openntpd"
+  apt: name=openntpd state=latest
+
 - name: "Create /etc/default/openntpd"
   copy:
     content: 'DAEMON_OPTS="-s -f /etc/openntpd/ntpd.conf"'
@@ -13,6 +16,3 @@
 - name: "Create openntpd/ntpd.conf"
   template: src=ntpd.conf.j2 dest=/etc/openntpd/ntpd.conf mode=644 owner=root group=root
   notify: restart openntpd
-
-- name: "Install openntpd"
-  apt: name=openntpd state=latest
