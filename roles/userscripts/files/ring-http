@@ -50,7 +50,7 @@ fi
 # I am very unsure whether this sanity filter is compliant with what we what
 # it to accept
 
-host=$(echo "$1" | sed -re 's/[^[:alnum:]:.-]+//g')
+host=$(echo "$1" | sed -re 's/[^[:alnum:]:.-]+//g' | cut -d ':' -f 2)
 
 if ! dig +short $host &> /dev/null; then
     echo invalid hostname
