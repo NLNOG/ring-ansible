@@ -16,12 +16,6 @@
     value: "5000	6000"
     sysctl_file: /etc/sysctl.d/20-enable-unprivileged-icmp.conf
 
-- name: "Enable router_solicitations"
-  sysctl:
-    name: net.ipv6.conf.default.router_solicitations
-    value: 1
-    sysctl_file: /etc/sysctl.d/30-ipv6.conf
-
 - name: "Stat accept_ra_rtr_pref"
   stat: path=/proc/sys/net/ipv6/conf/default/accept_ra_rtr_pref
   register: accept_ra_rtr_pref
@@ -42,12 +36,6 @@
 - name: "Enable accept_ra_defrtr"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_defrtr
-    value: 1
-    sysctl_file: /etc/sysctl.d/30-ipv6.conf
-
-- name: "Enable accept_ra"
-  sysctl:
-    name: net.ipv6.conf.all.accept_ra
     value: 1
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
