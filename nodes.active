@@ -52,7 +52,6 @@ kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=46.234.32.56 V6=2001
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
-amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -413,7 +412,6 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1::58
-jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:105:1014::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
@@ -640,7 +638,6 @@ nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 
 [amazon]
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
-amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -1753,7 +1750,6 @@ utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1::58
 
 [jpbe]
-jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 
 [ampath]
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
