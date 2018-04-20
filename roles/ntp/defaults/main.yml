@@ -1,11 +1,9 @@
 ntp_servers:
  - time.nist.gov
- - ntp.ring.nlnog.net
- - ntp2.ring.nlnog.net
- - ntp3.ring.nlnog.net
  - ntp1.tdc.fi
  - ntp3.tdc.fi
  - ntp0.nl.net
+ - pool.ntp.org
 ntp_constraints:
  - nlnog.net
  - www.bit.nl
