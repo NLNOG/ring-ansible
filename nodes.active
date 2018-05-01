@@ -1877,3 +1877,7 @@ vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000:
 
 [noack]
 noack01.ring.nlnog.net OWNER=noack V4=185.231.103.50 V6=2a0c:5700:3133:651:250:56ff:fea3:1c06
+
+[gandi]
+
+[ipbde]

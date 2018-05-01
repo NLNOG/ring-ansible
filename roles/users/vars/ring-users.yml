@@ -2072,7 +2072,7 @@ USERS:
       - ring-users
 
   mainloop:
-    state: present
+    state: absent
     company: 'Mainloop Solutions AB'
     email: 'support@mainstreamhosting.se'
     uid: 5280
@@ -3877,6 +3877,22 @@ USERS:
     company: 'No ack hosting AB'
     email: 'noc@no-ack.se'
     uid: 5505
+    groups:
+      - ring-users
+
+  gandi:
+    state: present
+    company: 'Gandi'
+    email: 'ipnoc@gandi.net'
+    uid: 5506
+    groups:
+      - ring-users
+
+  ipbde:
+    state: present
+    company: 'I/P/B/ Internet Provider in Berlin GmbH'
+    email: 'noc@ipb.de'
+    uid: 5507
     groups:
       - ring-users
 
