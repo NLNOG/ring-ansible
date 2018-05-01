@@ -3872,3 +3872,11 @@ USERS:
     groups:
       - ring-users
 
+  noack:
+    state: present
+    company: 'No ack hosting AB'
+    email: 'noc@no-ack.se'
+    uid: 5505
+    groups:
+      - ring-users
+
