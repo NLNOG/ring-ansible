@@ -1,6 +1,6 @@
 [DEFAULT]
 ignoreip = 37.77.58.0/26 
-{%- for host in groups['all'] -%}
+{%- for host in groups['all']|sort -%}
 {%- if hostvars[host]['V4']|default(None) -%}
 {{ ' ' }}{{ hostvars[host]['V4'] }}
 {%- endif -%}

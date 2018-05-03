@@ -10,7 +10,7 @@ ff02::2 ip6-allrouters
 2001:1AF8:4013::24  puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 95.211.149.24   puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 
-{% for host in groups['all'] %}
+{% for host in groups['all']|sort %}
 {% set short_id = host|regex_replace("\.ring\.nlnog\.net", "") %}
 {% if hostvars[host]['V6']|default(None) %}
 {{ hostvars[host]['V6'] }}    {{ short_id }} {{ host }}

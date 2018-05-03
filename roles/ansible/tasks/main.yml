@@ -12,15 +12,30 @@
   file: path=/etc/apt/preferences.d/ansible.pref state=absent
   when: ansible_distribution_release != "precise"
 
-- name: "Ensure Ansible is installed"
+- name: "Ensure Ansible prequisites are installed"
   apt:
     name: "{{ item }}"
     state: installed
   with_items:
     - git
     - python-requests
-    - "ansible={{ ansible_pin_version }}"
   when: ansible_distribution_release != "precise"
+
+- name: "Ensure Ansible is installed (xenial)"
+  apt:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - "ansible={{ ansible_pin_version_xenial }}"
+  when: ansible_distribution_release == "xenial"
+
+- name: "Ensure Ansible is installed (bionic)"
+  apt:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - "ansible={{ ansible_pin_version_bionic }}"
+  when: ansible_distribution_release == "bionic"
 
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
@@ -35,7 +50,7 @@
   git:
     repo: 'https://github.com/dw/mitogen.git'
     dest: /opt/mitogen
-    update: no
+    update: "{{ mitogen_update }}"
   when: ansible_distribution_release != "precise"
 
 - name: "Check for mitogen ansible plugin installation"

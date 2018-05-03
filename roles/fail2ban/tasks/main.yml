@@ -9,7 +9,7 @@
 - file: name={{ item }} state=absent
   with_items:
     - /etc/fail2ban/jail.d/defaults-debian.conf
-  when: ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
 
 - name: "Install sshd.conf"
   copy:
@@ -20,7 +20,7 @@
     mode=0644
   notify:
     - restart fail2ban
-  when: ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
 
 - name: "Install jail.conf"
   copy:
@@ -31,7 +31,7 @@
     mode=0644
   notify:
     - restart fail2ban
-  when: ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
 
 - name: "Enable fail2ban service"
   service:

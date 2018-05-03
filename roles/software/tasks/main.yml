@@ -11,13 +11,11 @@
     - command-not-found
     - curl
     - cvs
-    - dbndns
     - dnsutils
     - dsniff
     - flex
     - fpdns
     - fping
-    - git-core
     - gnupg
     - gnutls-bin
     - graphviz
@@ -68,7 +66,6 @@
     - python-pycountry
     - python-setuptools
     - python-simplejson
-    - python-software-properties
     - python-virtualenv
     - rsync
     - ruby
@@ -101,6 +98,7 @@
 - name: "Install various software packages (precise)"
   apt: name={{ item }} state=latest
   with_items:
+    - git-core
     - ruby1.9.3
     - ruby1.9.1-dev
     - libnet-ssh2-ruby1.8
@@ -110,6 +108,15 @@
 - name: "Install various software packages (xenial)"
   apt: name={{ item }} state=latest
   with_items:
+    - git-core
+    - python-software-properties
+    - dbndns
+  when: ansible_distribution_release == "xenial"
+
+- name: "Install various software packages (>= xenial)"
+  apt: name={{ item }} state=latest
+  with_items:
+    - git
     - jsonlint
     - php7.0-cli
     - iperf3
@@ -125,8 +132,13 @@
   file: path={{ item }} mode=4755
   with_items:
     - /bin/ping
-    - /bin/ping6
     - /usr/sbin/lft
+
+- name: "Apply setuid root to some tools (< bionic)"
+  file: path={{ item }} mode=4755
+  with_items:
+    - /bin/ping6
+  when: ansible_distribution_release != "bionic"
 
 - name: "Allow ring-users to do wire capturing"
   file: path={{ item }} mode=0754 owner=root group=ring-users

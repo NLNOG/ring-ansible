@@ -31,6 +31,21 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list.distUpgrade'
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list.distUpgrade'
 
+- name: "Remove old repo files (bionic)"
+  file: name={{ item }} state=absent
+  with_items:
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial.list'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-security.list'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-updates.list'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial.list.distUpgrade'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-security.list.distUpgrade'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-updates.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_bionic.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_bionic-security.list.distUpgrade'
+    - '/etc/apt/sources.list.d/ubuntu_archiv_bionic-updates.list.distUpgrade'
+    - '/etc/apt/sources.list.d/nlnog_ring_repo.list.distUpgrade'
+  when: ansible_distribution_release == "bionic"
+
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
     repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }} main restricted universe multiverse'

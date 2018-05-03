@@ -27,14 +27,14 @@
     group: root
     mode: 0644
   notify: reload systemd
-  when: ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == 'bionic'
 
 - name: "Delete old scamper files"
   file: name="{{ item }}" state=absent
   with_items:
     - /etc/init/scamper.conf
     - /lib/systemd/system/scamper.conf
-  when: ansible_distribution_release == 'xenial'
+  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == 'bionic'
 
 - name: Create /home/scamper/run-traces.sh
   template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group="ring-users" mode=0755

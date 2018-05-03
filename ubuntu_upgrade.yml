@@ -3,7 +3,7 @@
   become_user: root
   roles:
     - { role: apt, tags: apt }
-    - { role: ansible, tags: ansible }
+    - { role: ansible, tags: ansible, mitogen_update: yes }
   tasks:
     - name: "Configure temporary dpkg options" 
       copy:
@@ -129,6 +129,56 @@
       when: ansible_distribution_release != "xenial"
   tags:
     - xenial
+
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: "Remove automatic update files"
+      file: name={{ item }} state=absent
+      with_items:
+        - /etc/apt/apt.conf.d/50unattended-upgrades
+        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
+
+    - name: "Add ubuntu bionic repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_bionic'
+
+    - name: "Add ubuntu bionic updates repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-updates main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_bionic-updates'
+
+    - name: "Add ubuntu bionic security repository"
+      apt_repository:
+        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse'
+        state: present
+        filename: 'ubuntu_archiv_bionic-security'
+
+    - name: "Remove ubuntu xenial repositories"
+      file: name={{ item }} state=absent
+      with_items:
+        - '/etc/apt/sources.list.d/ubuntu_archiv_xenial.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list'
+        - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list'
+
+    - name: "apt-get update (bionic repos)"
+      apt:
+        update_cache: yes
+
+    - name: "Perform release upgrade (xenial -> bionic)"
+      command: do-release-upgrade -d -f DistUpgradeViewNonInteractive
+      when: ansible_distribution_release != "bionic"
+
+    - name: "Remove daemontools"
+      apt: name={{ item }} state=absent
+      with_items:
+        - daemontools
+  tags:
+    - bionic
 
 - hosts: all
   become: true
