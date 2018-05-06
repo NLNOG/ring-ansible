@@ -14,6 +14,7 @@ import string
 import sys
 import time
 import urllib
+import unicodedata
 
 DBHOST = 'localhost'
 DBUSER = 'ring-admins'
@@ -978,7 +979,9 @@ class commands(object):
             city = city_opts['administrative_area_level_1']
 
         if city:
-            return city
+            if isinstance(city,str):
+                return city
+            return str(unicodedata.normalize('NFD', city).encode('ascii', 'ignore'))
         else:
             return ""
 
