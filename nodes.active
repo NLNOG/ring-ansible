@@ -1881,3 +1881,5 @@ gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 
 [cloudscale]
+
+[sernet]
