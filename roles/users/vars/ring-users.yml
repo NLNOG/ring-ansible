@@ -3904,3 +3904,11 @@ USERS:
     groups:
       - ring-users
 
+  sernet:
+    state: present
+    company: 'SerNet Service Network GmbH'
+    email: 'noc@sernet.de'
+    uid: 5509
+    groups:
+      - ring-users
+
