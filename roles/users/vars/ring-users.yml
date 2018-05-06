@@ -3896,3 +3896,11 @@ USERS:
     groups:
       - ring-users
 
+  cloudscale:
+    state: present
+    company: 'cloudscale.ch AG'
+    email: 'noc@cloudscale.ch'
+    uid: 5508
+    groups:
+      - ring-users
+
