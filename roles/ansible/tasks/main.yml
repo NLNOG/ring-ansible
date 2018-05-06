@@ -143,6 +143,15 @@
     mode: 0755
   when: ansible_distribution_release != "precise"
 
+- name: "Ensure ansible-distupgrade script exists"
+  template:
+    src: ansible-distupgrade.j2
+    dest: /usr/local/sbin/ansible-distupgrade
+    owner: root
+    group: root
+    mode: 0755
+  when: ansible_distribution_release != "precise"
+
 - name: "Ensure ansible-cron script exists"
   template:
     src: ansible-cron.j2
