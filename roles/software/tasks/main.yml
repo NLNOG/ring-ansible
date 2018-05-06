@@ -111,6 +111,7 @@
     - git-core
     - python-software-properties
     - dbndns
+    - php7.0-cli
   when: ansible_distribution_release == "xenial"
 
 - name: "Install various software packages (>= xenial)"
@@ -118,12 +119,17 @@
   with_items:
     - git
     - jsonlint
-    - php7.0-cli
     - iperf3
     - ruby-dev
     - parallel
     - python3-pip
   when: ansible_distribution_release != "precise"
+
+- name: "Install various software packages (bionic)"
+  apt: name={{ item }} state=latest
+  with_items:
+    - php7.2-cli
+  when: ansible_distribution_release == "bionic"
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
