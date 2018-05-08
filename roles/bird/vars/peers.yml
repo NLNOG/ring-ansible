@@ -326,6 +326,10 @@ lg_peers:
     asn: 47692
     ipv4: 77.244.255.5
     ipv6: 2a02:1b8::5
+  SERNET1:
+    asn: 41955
+    ipv4: 185.199.216.3
+    ipv6: 2a0a:a3c0::2:1
 
 readonly_peers:
     ISOLARIO1:
