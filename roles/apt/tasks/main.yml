@@ -44,6 +44,7 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_bionic-security.list.distUpgrade'
     - '/etc/apt/sources.list.d/ubuntu_archiv_bionic-updates.list.distUpgrade'
     - '/etc/apt/sources.list.d/nlnog_ring_repo.list.distUpgrade'
+    - '/etc/apt/sources.list.distUpgrade'
   when: ansible_distribution_release == "bionic"
 
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
