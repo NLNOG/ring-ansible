@@ -97,21 +97,21 @@
 
     - name: "Add ubuntu xenial repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu xenial main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_xenial'
+        filename: 'bit_ubuntu_archiv_xenial'
 
     - name: "Add ubuntu xenial updates repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu xenial-updates main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_xenial-updates'
+        filename: 'bit_ubuntu_archiv_xenial-updates'
 
     - name: "Add ubuntu xenial security repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu xenial-security main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_xenial-security'
+        filename: 'bit_ubuntu_archiv_xenial-security'
 
     - name: "Remove ubuntu trusty repositories"
       file: name={{ item }} state=absent
@@ -142,21 +142,21 @@
 
     - name: "Add ubuntu bionic repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu bionic main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_bionic'
+        filename: 'bit_ubuntu_archiv_bionic'
 
     - name: "Add ubuntu bionic updates repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-updates main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu bionic-updates main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_bionic-updates'
+        filename: 'bit_ubuntu_archiv_bionic-updates'
 
     - name: "Add ubuntu bionic security repository"
       apt_repository:
-        repo: 'deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse'
+        repo: 'deb http://ftp.bit.nl/ubuntu bionic-security main restricted universe multiverse'
         state: present
-        filename: 'ubuntu_archiv_bionic-security'
+        filename: 'bit_ubuntu_archiv_bionic-security'
 
     - name: "Remove ubuntu xenial repositories"
       file: name={{ item }} state=absent
