@@ -10,8 +10,7 @@ DBUSER='pdns'
 DB='pdns'
 ZONE='ring.nlnog.net'
 SOA='ns01.infra.ring.nlnog.net. ring-admins.ring.nlnog.net. %.0f 7200 3600 1209600 900' % time.time()
-ELEVATION='https://maps.googleapis.com/maps/api/elevation/json'
-ELEVATION_KEY='{{ elevation_key }}'
+ELEVATION='https://api.open-elevation.com/api/v1/lookup?locations='
 
 RINGDBHOST='dbmaster.infra.ring.nlnog.net'
 RINGDBUSER='ring'
@@ -615,19 +614,17 @@ class commands(object):
         self.dbdo(SCHEMA, None, script=True)
 
     def getgeo(self,geo):
-        url=ELEVATION+"?locations="+geo+"&sensor=false&key="+ELEVATION_KEY
-        response = simplejson.load(urllib.urlopen(url))
-        resultset = response['results'][0]
-        #print "lat:"+str(resultset['location']['lat'])
-        #print "lng:"+str(resultset['location']['lng'])
-        #print "elev:"+str(resultset['elevation'])
-        #print "res:"+str(resultset['resolution'])
+        url=ELEVATION+geo
+        try:
+            response = simplejson.load(urllib.urlopen(url))
+            resultset = response['results'][0]
 
-        lat=self.dd2dms(resultset['location']['lat'],"lat")
-        lng=self.dd2dms(resultset['location']['lng'],"lng")
-        elv="%.2f" % (round(resultset['elevation'],2))
-
-        return "%s %s %sm" % (lat,lng,elv)
+            lat=self.dd2dms(resultset['latitude'],"lat")
+            lng=self.dd2dms(resultset['longitude'],"lng")
+            elv="%.2f" % (round(resultset['elevation'],2))
+            return "%s %s %sm" % (lat,lng,elv)
+        except:
+            sys.stderr.write('unable to retrieve elevation info\n')
 
     def dd2dms(self,dd,type):
         value=float(dd)

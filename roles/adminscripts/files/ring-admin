@@ -23,7 +23,7 @@ DB = 'ring'
 ZONE = 'ring.nlnog.net'
 
 GEOCODE = \
-    "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&latlng="
+    "https://nominatim.openstreetmap.org/reverse?format=json&addressdetails=1&"
 
 ANSIBLEDIR = '/var/ring/ring-ansible'
 ANSIBLE_HOSTFILE = 'nodes'
@@ -942,41 +942,18 @@ class commands(object):
 
     def cityname(self, geo):
         city = None
-        city_opts = {}
-        url = GEOCODE + geo
+        lat,lon = geo.split(',')
+        url = GEOCODE + 'lat=' + lat + '&lon=' + lon
         try:
             response = simplejson.load(urllib.urlopen(url))
-            rcode = response['status']
-            if (rcode == "OK"):
-                resultset = response['results']
-                for result in resultset:
-                    addr = result['address_components']
-                    for part in addr:
-                        if (part['types'][0] == 'administrative_area_level_1'):
-                            city_opts['administrative_area_level_1'] = part['long_name']
-                        elif (part['types'][0] == 'locality'):
-                            city_opts['locality'] = part['long_name']
-                        elif (part['types'][0] == 'postal_town'):
-                            city_opts['postal_town'] = part['long_name']
-                        elif (part['types'][0] == 'administrative_area_level_2'):
-                            city_opts['administrative_area_level_2'] = part['long_name']
-                        elif (part['types'][0] == 'administrative_area_level_3'):
-                            city_opts['administrative_area_level_3'] = part['long_name']
+            address = response['address']
+            if 'city' in address:
+                city = address['city']
+            elif 'village' in address:
+                city = address['village']
         except:
             sys.stderr.write('unable to retrieve city geocoding info\n')
             return ""
-
-        # Figure out the best value to use for city
-        if ('locality' in city_opts):
-            city = city_opts['locality']
-        elif ('postal_town' in city_opts):
-            city = city_opts['postal_town']
-        elif ('administrative_area_level_3' in city_opts):
-            city = city_opts['administrative_area_level_3']
-        elif ('administrative_area_level_2' in city_opts):
-            city = city_opts['administrative_area_level_2']
-        elif ('administrative_area_level_1' in city_opts):
-            city = city_opts['administrative_area_level_1']
 
         if city:
             if isinstance(city,str):
