@@ -3912,3 +3912,11 @@ USERS:
     groups:
       - ring-users
 
+  ffam:
+    state: present
+    company: 'Freifunk Frankfurt am Main e.V.'
+    email: 'noc@ffm.freifunk.net'
+    uid: 5510
+    groups:
+      - ring-users
+

@@ -1885,3 +1885,5 @@ cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104
 
 [sernet]
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
+
+[ffam]
