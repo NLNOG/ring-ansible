@@ -1072,7 +1072,7 @@ USERS:
       - ring-users
 
   openminds:
-    state: present
+    state: absent
     company: 'Openminds bvba'
     email: 'tech@openminds.be'
     uid: 5151
