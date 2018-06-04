@@ -1897,3 +1897,5 @@ ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
 [rise]
 
 [datagrouptransit]
+
+[grenode]

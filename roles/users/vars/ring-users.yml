@@ -3936,3 +3936,11 @@ USERS:
     groups:
       - ring-users
 
+  grenode:
+    state: present
+    company: 'Grenode'
+    email: 'noc@grenode.net'
+    uid: 5513
+    groups:
+      - ring-users
+
