@@ -336,7 +336,11 @@ lg_peers:
     ipv6: 2a02:f28::233
 
 readonly_peers:
-    ISOLARIO1:
-      asn: 2598
-      ipv4: 192.65.131.25
-      ipv6: 2001:67c:1b08:a:192:65:131:25
+  ISOLARIO1:
+    asn: 2598
+    ipv4: 192.65.131.25
+    ipv6: 2001:67c:1b08:a:192:65:131:25
+  SERNET2:
+    asn: 41955
+    ipv4: 185.199.217.227
+    ipv6: 2a0a:a3c0:0:d2ca::217:227
