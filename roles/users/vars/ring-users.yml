@@ -3928,3 +3928,11 @@ USERS:
     groups:
       - ring-users
 
+  datagrouptransit:
+    state: present
+    company: 'AS3326 (Datagroup transit AS)'
+    email: 'noc@datagroup.ua'
+    uid: 5512
+    groups:
+      - ring-users
+
