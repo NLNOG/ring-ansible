@@ -3920,3 +3920,11 @@ USERS:
     groups:
       - ring-users
 
+  rise:
+    state: present
+    company: 'RISE'
+    email: 'noc@rise.ph'
+    uid: 5511
+    groups:
+      - ring-users
+
