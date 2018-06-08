@@ -49,7 +49,7 @@
     name: fetchtables
     job: /usr/local/bin/fetchtables.sh
     hour: '*'
-    minute: '*/5'
+    minute: '*/10'
     user: root
 
 - name: "refresh ipv4 rtrsub configuration"
