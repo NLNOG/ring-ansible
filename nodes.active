@@ -55,7 +55,6 @@ amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
-amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
 amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
@@ -109,6 +108,7 @@ claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
@@ -411,12 +411,14 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1::58
+jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:105:1014::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
+mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=89.163.234.146 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
@@ -433,6 +435,7 @@ automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff
 retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
+joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:f00::1
 emeriaud01.ring.nlnog.net OWNER=emeriaud V6=2001:678:3cc:2102::2
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
@@ -647,7 +650,6 @@ amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
-amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
 amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236
@@ -781,6 +783,7 @@ claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 
 [arpnetworks]
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
@@ -1755,6 +1758,7 @@ utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 customconnect02.ring.nlnog.net OWNER=customconnect V4=185.19.100.58 V6=2a04:1120:1::58
 
 [jpbe]
+jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 
 [ampath]
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
@@ -1775,6 +1779,7 @@ teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 
 [mdex]
+mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 
 [vimexx]
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
@@ -1821,6 +1826,7 @@ web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 
 [joeynetwork]
+joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:f00::1
 
 [emeriaud]
 emeriaud01.ring.nlnog.net OWNER=emeriaud V6=2001:678:3cc:2102::2
