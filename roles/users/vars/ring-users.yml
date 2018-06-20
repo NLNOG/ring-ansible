@@ -1824,7 +1824,7 @@ USERS:
       - ring-users
 
   flhsi:
-    state: present
+    state: absent
     company: 'Florida High Speed Internet'
     email: 'noc@flhsi.com'
     uid: 5249
@@ -3941,6 +3941,14 @@ USERS:
     company: 'Grenode'
     email: 'noc@grenode.net'
     uid: 5513
+    groups:
+      - ring-users
+
+  adista:
+    state: present
+    company: 'Adista'
+    email: 'architecture_tsr@adista.fr'
+    uid: 5514
     groups:
       - ring-users
 
