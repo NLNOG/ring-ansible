@@ -64,6 +64,7 @@ amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
+amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.0 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
@@ -85,6 +86,7 @@ edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
+as250net01.ring.nlnog.net OWNER=as250net V4=194.150.168.19 V6=2001:4ce8:c134:1019::1
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
 redpilllinpro02.ring.nlnog.net OWNER=redpilllinpro V4=87.238.39.42 V6=2a02:c0:400:108::1
 redpilllinpro03.ring.nlnog.net OWNER=redpilllinpro V4=87.238.57.254 V6=2a02:c0:300:102::1
@@ -141,8 +143,10 @@ xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8780:7473::a
 xing02.ring.nlnog.net OWNER=xing V4=185.169.113.43 V6=2a01:8781:7473::a
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000::1:2
 cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
+linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:1400:1000::2
 underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
+iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 direcpath01.ring.nlnog.net OWNER=direcpath V4=65.50.1.70 V6=2607:f1e8:f0f0:b:528a:1948:db90:ec59
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
@@ -265,6 +269,7 @@ cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
 xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.61 V6=2607:f350:1:1000::3
+speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.254 V6=2a03:2c60:0:8000::42
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
@@ -439,7 +444,6 @@ retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:f00::1
-emeriaud01.ring.nlnog.net OWNER=emeriaud V6=2001:678:3cc:2102::2
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
@@ -465,6 +469,7 @@ ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
 rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=77.88.255.201 V6=2a01:758:fff4:1::c9
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
+adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
 
 [infranode]
 
@@ -662,6 +667,7 @@ amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
+amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.0 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 
 [equinixnl]
@@ -725,6 +731,7 @@ yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319
 [occaid]
 
 [as250net]
+as250net01.ring.nlnog.net OWNER=as250net V4=194.150.168.19 V6=2001:4ce8:c134:1019::1
 
 [redpilllinpro]
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
@@ -907,6 +914,7 @@ serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000:
 cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
 
 [linxtelecom]
+linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:1400:1000::2
 
 [underworld]
 underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
@@ -919,6 +927,7 @@ underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::9
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 
 [iij]
+iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 
 [beanfield]
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
@@ -1321,6 +1330,7 @@ quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
 xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.61 V6=2607:f350:1:1000::3
 
 [speakup]
+speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.254 V6=2a03:2c60:0:8000::42
 
 [dna]
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
@@ -1835,7 +1845,6 @@ web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411
 joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:f00::1
 
 [emeriaud]
-emeriaud01.ring.nlnog.net OWNER=emeriaud V6=2001:678:3cc:2102::2
 
 [bellmts]
 
@@ -1915,3 +1924,4 @@ datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=77.88.255.201 V6=2a0
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 
 [adista]
+adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
