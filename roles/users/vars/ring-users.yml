@@ -2208,7 +2208,7 @@ USERS:
       - ring-users
 
   larsendata:
-    state: present
+    state: absent
     company: 'Larsen Data ApS'
     email: 'noc@larsendata.dk'
     uid: 5297
