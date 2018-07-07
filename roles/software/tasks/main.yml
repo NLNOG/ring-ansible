@@ -1,3 +1,10 @@
+- name: "Uninstall certain unnecessary packages - except where mysql is needed"
+  apt: name={{ item }} state=absent
+  with_items:
+    - apparmor
+    - apparmor-utils
+  when: need_mysql_server|default(None) != true
+
 - name: "Install various software packages"
   apt: name={{ item }} state=latest
   with_items:
@@ -184,9 +191,3 @@
     - sl
     - ufw
 
-- name: "Uninstall certain unnecessary packages - except where mysql is needed"
-  apt: name={{ item }} state=absent
-  with_items:
-    - apparmor
-    - apparmor-utils
-  when: need_mysql_server|default(None) != true
