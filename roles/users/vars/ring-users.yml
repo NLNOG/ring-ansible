@@ -3952,3 +3952,19 @@ USERS:
     groups:
       - ring-users
 
+  mfiles:
+    state: present
+    company: 'M-Files'
+    email: 'it@m-files.com'
+    uid: 5515
+    groups:
+      - ring-users
+
+  profitbricks:
+    state: present
+    company: 'ProfitBricks GmbH'
+    email: 'noc@profitbricks.com'
+    uid: 5516
+    groups:
+      - ring-users
+

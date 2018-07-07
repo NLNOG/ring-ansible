@@ -489,6 +489,8 @@ rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=77.88.255.201 V6=2a01:758:fff4:1::c9
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
+mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::beef
+profitbricks01.ring.nlnog.net OWNER=profitbricks V4=46.16.72.7 V6=2a02:2478::666
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1977,3 +1979,9 @@ grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 
 [adista]
 adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
+
+[mfiles]
+mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::beef
+
+[profitbricks]
+profitbricks01.ring.nlnog.net OWNER=profitbricks V4=46.16.72.7 V6=2a02:2478::666
