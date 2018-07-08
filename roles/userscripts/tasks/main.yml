@@ -35,6 +35,7 @@
     - net-ssh
     - rbnacl-libsodium
     - bcrypt_pbkdf
+    - ed25519
 
 - name: "Install ring userscripts"
   copy:
