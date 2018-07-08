@@ -3968,3 +3968,11 @@ USERS:
     groups:
       - ring-users
 
+  ionswitch:
+    state: present
+    company: 'IonSwitch, LLC'
+    email: 'noc@ionswitch.com'
+    uid: 5517
+    groups:
+      - ring-users
+
