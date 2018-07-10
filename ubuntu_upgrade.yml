@@ -126,7 +126,7 @@
 
     - name: "Perform release upgrade (trusty -> xenial)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release != "xenial"
+      when: ansible_distribution_release != "xenial" and ansible_distribution_release != "bionic"
   tags:
     - xenial
 
