@@ -300,6 +300,7 @@ upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
+linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
@@ -1414,6 +1415,7 @@ choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:
 
 [linode]
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
+linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
 linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
