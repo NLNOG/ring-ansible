@@ -68,3 +68,13 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found ]; then
 	}
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    echo ""
+    echo "***[ No SSH_AUTH_SOCK environment detected ]**********************"
+    echo "**                                                              **"
+    echo "** It seems like you're not using SSH Agent Forwarding          **"
+    echo "** Which is fine in itself, but will make ring-tools misbehave! **"
+    echo "**                                                              **"
+    echo "******************************************************************"
+    echo ""
+fi

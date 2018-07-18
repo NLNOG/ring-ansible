@@ -1,4 +1,8 @@
 lg_peers:
+  ADISTA1:
+    asn: 16347
+    ipv4: 212.51.161.36
+    ipv6: 2a01:728::6
   AFILIAS_IAD1:
     asn: 393246
     ipv4: 199.115.158.251
