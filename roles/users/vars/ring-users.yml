@@ -560,7 +560,7 @@ USERS:
       - ring-users
 
   hostway:
-    state: absent
+    state: present
     company: 'Hostway'
     email: 'noc@netnation.com'
     uid: 5082
