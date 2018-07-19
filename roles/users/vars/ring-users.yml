@@ -3976,3 +3976,11 @@ USERS:
     groups:
       - ring-users
 
+  equinixbr:
+    state: present
+    company: 'Equinix Brazil'
+    email: 'br-noc@equinix.com'
+    uid: 5518
+    groups:
+      - ring-users
+
