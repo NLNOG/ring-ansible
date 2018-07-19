@@ -189,6 +189,7 @@ dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14::2
+vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
@@ -292,6 +293,7 @@ cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:2398::9166
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
+upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
@@ -349,7 +351,6 @@ fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.140.194 V6=2400:d400:1:1088:1:1000:0:1054
 chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
-clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 deic01.ring.nlnog.net OWNER=deic V4=130.226.249.126 V6=2001:878:0:e000:82:e2:f9:7e
 netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
 hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
@@ -1086,6 +1087,7 @@ syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13
 syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14::2
 
 [vertixo]
+vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 
 [kwaoo]
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
@@ -1401,6 +1403,7 @@ corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:6
 
 [upcloud]
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
+upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
 upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
@@ -1564,7 +1567,6 @@ chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
 
 [clouddk]
-clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 
 [midcore]
 
