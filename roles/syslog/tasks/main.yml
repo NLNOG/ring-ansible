@@ -5,6 +5,7 @@
     state: latest
   with_items:
     - syslog-ng
+    - logrotate
 
 - name: create directories
   file:
