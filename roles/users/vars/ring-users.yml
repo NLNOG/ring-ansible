@@ -3984,3 +3984,19 @@ USERS:
     groups:
       - ring-users
 
+  pccw:
+    state: present
+    company: 'PCCW Global'
+    email: 'usnoc@pccwglobal.com'
+    uid: 5519
+    groups:
+      - ring-users
+
+  wilhelmtel:
+    state: present
+    company: 'wilhelm.tel GmbH'
+    email: 'ispbb@wtnet.de'
+    uid: 5520
+    groups:
+      - ring-users
+
