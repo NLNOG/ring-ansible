@@ -48,6 +48,11 @@
         mode: 0400
         content: "{{ ringnode_vault_pw }}"
       tags: vault_pw
+    - name: Remove apparmor
+      apt: name={{ item }} state=absent
+      with_items:
+        - apparmor
+        - apparmor-utils
 
 - hosts: infranode
   become: true
