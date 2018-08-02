@@ -111,6 +111,9 @@
     filename: 'ansible_repo'
   when: ansible_distribution_release != "precise"
 
+- name: "Install unattended-upgrades"
+  apt: name=unattended-upgrades state=latest
+
 - name: "Add apt configuration files"
   copy:
     src={{ item }}
