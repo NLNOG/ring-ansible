@@ -11,7 +11,7 @@
 - name: Install unbound
   apt:
     name: unbound
-    state: installed
+    state: present
 
 - name: Configure unbound
   template:

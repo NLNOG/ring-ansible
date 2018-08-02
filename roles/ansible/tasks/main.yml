@@ -15,7 +15,7 @@
 - name: "Ensure Ansible prequisites are installed"
   apt:
     name: "{{ item }}"
-    state: installed
+    state: present
   with_items:
     - git
     - python-requests
@@ -24,7 +24,7 @@
 - name: "Ensure Ansible is installed (xenial)"
   apt:
     name: "{{ item }}"
-    state: installed
+    state: present 
   with_items:
     - "ansible={{ ansible_pin_version_xenial }}"
   when: ansible_distribution_release == "xenial"
@@ -32,7 +32,7 @@
 - name: "Ensure Ansible is installed (bionic)"
   apt:
     name: "{{ item }}"
-    state: installed
+    state: present
   with_items:
     - "ansible={{ ansible_pin_version_bionic }}"
   when: ansible_distribution_release == "bionic"
