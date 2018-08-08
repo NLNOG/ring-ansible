@@ -152,14 +152,18 @@ We also operate an IRC channel: #ring on IRCnet.
 Finally, you are invited to peer with our looking glass. The looking glass
 service is available for all RING members via ssh on lg01.infra.ring.nlnog.net,
 and web on http://lg.ring.nlnog.net/.  Peering with this Looking Glass is
-optional for ring users. If you want to peer with NLNOG RING, send us your
-details and setup a session with the following information:
+optional for ring users. If you want to peer with NLNOG RING, configure a 
+session with the following information:
 
     AS: 199036
     IPv4: 82.94.230.130
     IPv6: 2001:888:2001::130
     Type: eBGP Multi-Hop
     Policy: import NONE from AS199036, export ANY
+
+To configure the NLNOG RING side, submit a pull request for:
+
+    https://github.com/NLNOG/ring-ansible/blob/master/roles/bird/vars/peers.yml
 
 Kind regards,
 
