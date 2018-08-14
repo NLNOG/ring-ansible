@@ -151,7 +151,6 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
-proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
@@ -294,6 +293,7 @@ corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:6
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
 upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
+upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
@@ -422,6 +422,7 @@ ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:105:1014::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
+teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
@@ -463,6 +464,7 @@ gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104::9389:137
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
+ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
 rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=77.88.255.201 V6=2a01:758:fff4:1::c9
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
@@ -955,7 +957,6 @@ switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 
 [proserve]
-proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 
 [teletalk]
 
@@ -1404,6 +1405,7 @@ corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:6
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
 upcloud02.ring.nlnog.net OWNER=upcloud V4=94.237.24.27 V6=2a04:3542:1000:910:a8aa:aaff:fea0:4c3a
 upcloud03.ring.nlnog.net OWNER=upcloud V4=83.136.252.93 V6=2a04:3541:1000:500:a8aa:aaff:fea0:6ffe
+upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a8aa:aaff:fea0:23a4
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a8aa:aaff:fea0:4472
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 
@@ -1790,6 +1792,7 @@ kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 
 [teleag]
+teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 
 [nextpertise]
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
@@ -1913,6 +1916,7 @@ cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
 
 [ffam]
+ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
 
 [rise]
 rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
