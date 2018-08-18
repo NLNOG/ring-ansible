@@ -1625,7 +1625,7 @@ USERS:
 
   magyar:
     state: absent
-    company: 'Magyar Telekom'
+    company: 'Magyar'
     email: 'noc.fix@telekom.hu'
     uid: 5222
     groups:
@@ -3997,6 +3997,14 @@ USERS:
     company: 'wilhelm.tel GmbH'
     email: 'ispbb@wtnet.de'
     uid: 5520
+    groups:
+      - ring-users
+
+  telekomhu:
+    state: present
+    company: 'Magyar Telekom Nyrt'
+    email: 'barany.denes@telekom.hu'
+    uid: 5521
     groups:
       - ring-users
 
