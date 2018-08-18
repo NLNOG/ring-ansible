@@ -4008,3 +4008,11 @@ USERS:
     groups:
       - ring-users
 
+  marbis:
+    state: present
+    company: 'marbis GmbH'
+    email: 'noc@marbis.net'
+    uid: 5522
+    groups:
+      - ring-users
+
