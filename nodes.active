@@ -140,7 +140,6 @@ xing02.ring.nlnog.net OWNER=xing V4=185.169.113.43 V6=2a01:8781:7473::a
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000::1:2
 cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
 linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:1400:1000::2
-underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
@@ -150,6 +149,7 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
+proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
@@ -207,6 +207,7 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel02.ring.nlnog.net OWNER=viatel V4=46.183.108.2 V6=2a01:8aa0:7f00:0:20c:29ff:fe60:bfac
@@ -318,7 +319,6 @@ tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven02.ring.nlnog.net OWNER=mtwentyfourseven V4=194.79.31.55 V6=2001:ac8:21:2::e0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
-nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=23.92.92.198 V6=2604:4600:b01:6122::2
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
 fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=206.123.203.163 V6=2607:6400:700:2::3163
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
@@ -421,7 +421,6 @@ kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=89.163.234.146 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
@@ -917,7 +916,6 @@ cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
 linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:1400:1000::2
 
 [underworld]
-underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
 
 [adminor]
 
@@ -955,6 +953,7 @@ switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 
 [proserve]
+proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 
 [teletalk]
 
@@ -1162,6 +1161,7 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [telecityfi]
 
 [itps]
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 
 [cyberverse]
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
@@ -1475,7 +1475,6 @@ mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a
 [switchco]
 
 [nodesdirect]
-nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=23.92.92.198 V6=2604:4600:b01:6122::2
 
 [quanza]
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
@@ -1794,7 +1793,6 @@ teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 
 [mdex]
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 
 [vimexx]
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
