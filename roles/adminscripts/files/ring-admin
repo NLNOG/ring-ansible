@@ -1077,6 +1077,10 @@ class commands(object):
         uid = self.username2uid(username)
         if not uid:
             sys.exit('user %s not found' % username)
+        if re.search(':',v4):
+            sys.exit('%s is not an IPv4 address' % v4)
+        if re.search('\.',v6):
+            sys.exit('%s is not an IPv6 address' % v6)
         tstamp = time.time()
         city = self.cityname(geo)
         machineid = self.dbinsert('machines', owner=uid, hostname=hostname,
