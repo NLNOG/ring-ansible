@@ -129,7 +129,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.4.179 V6=2001:7c0:701:23::2
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 hosteurope01.ring.nlnog.net OWNER=hosteurope V4=217.115.140.61 V6=2a01:488:ded::d973:8c3d
@@ -368,7 +367,6 @@ plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101:
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.191.229.177 V6=2c0f:fe40:9fef:2:41:191:229:177
-carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
@@ -884,7 +882,6 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [qbranch]
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -1633,7 +1630,6 @@ liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.191.229.177 V6=2c0f:fe40:9fef:2:41:191:229:177
 
 [carnet]
-carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
 
 [internode]
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
