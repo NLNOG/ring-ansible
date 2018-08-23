@@ -4016,3 +4016,11 @@ USERS:
     groups:
       - ring-users
 
+  globaledc:
+    state: present
+    company: 'Global-e Datacenter'
+    email: 'noc@global-datacenter.nl'
+    uid: 5523
+    groups:
+      - ring-users
+
