@@ -3657,7 +3657,7 @@ USERS:
       - ring-users
 
   github:
-    state: present
+    state: absent
     company: 'GitHub Inc.'
     email: 'noc@github.com'
     uid: 5478
