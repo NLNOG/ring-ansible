@@ -354,6 +354,10 @@ lg_peers:
     asn: 3491
     ipv4: 63.218.164.14
     ipv6: 2400:8800:1e02::14
+  EBOX1:
+    asn: 1403
+    ipv4: 198.58.198.255
+    ipv6: 2606:6d00:eb0::255
 
 readonly_peers:
   ISOLARIO1:
