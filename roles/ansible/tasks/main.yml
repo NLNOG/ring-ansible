@@ -50,6 +50,7 @@
   git:
     repo: 'https://github.com/dw/mitogen.git'
     dest: /opt/mitogen
+    version: stable
     update: "{{ mitogen_update }}"
   when: ansible_distribution_release != "precise"
 
