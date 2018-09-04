@@ -53,7 +53,7 @@
     dest=/home/{{ item.item }}/.ssh/authorized_keys
     owner={{ item.item }}
     group={{ item.item }}
-    mode=700
+    mode=0600
   with_items: "{{ keyfiles.results }}"
   when: keyfiles.results is defined and item.stat is defined and item.stat.exists == True
 
