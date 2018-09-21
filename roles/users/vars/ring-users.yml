@@ -1144,7 +1144,7 @@ USERS:
       - ring-users
 
   hosteurope:
-    state: present
+    state: absent
     company: 'Host Europe GmbH'
     email: 'noc@hosteurope.de'
     uid: 5161
