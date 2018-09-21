@@ -4024,3 +4024,11 @@ USERS:
     groups:
       - ring-users
 
+  godaddy:
+    state: present
+    company: 'GoDaddy'
+    email: 'core-net@heg.com'
+    uid: 5524
+    groups:
+      - ring-users
+
