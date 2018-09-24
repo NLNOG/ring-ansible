@@ -984,7 +984,7 @@ USERS:
       - ring-users
 
   yellowfiber:
-    state: present
+    state: absent
     company: 'Yellow Fiber Networks'
     email: 'support@yellowfiber.net'
     uid: 5144
