@@ -257,7 +257,7 @@ ovh01.ring.nlnog.net OWNER=ovh V4=37.187.111.58 V6=2001:41d0:a:643a::137
 ovh02.ring.nlnog.net OWNER=ovh V4=37.187.50.166 V6=2001:41d0:52:400:0:0:0:53b
 ovh03.ring.nlnog.net OWNER=ovh V4=5.196.13.221 V6=2001:41d0:52:600:0:0:0:671
 ovh04.ring.nlnog.net OWNER=ovh V4=192.99.153.129 V6=2607:5300:101:0:0:0:0:599
-btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.212 V6=2001:7c8:1000:5::1
+btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::2
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 tumuenchen01.ring.nlnog.net OWNER=tumuenchen V4=188.95.233.9 V6=2a00:4700::2:2e0:81ff:fe2f:fde3
 kudelski01.ring.nlnog.net OWNER=kudelski V4=185.35.63.208 V6=2a04:5c85:1000::28
@@ -1313,7 +1313,7 @@ ovh03.ring.nlnog.net OWNER=ovh V4=5.196.13.221 V6=2001:41d0:52:600:0:0:0:671
 ovh04.ring.nlnog.net OWNER=ovh V4=192.99.153.129 V6=2607:5300:101:0:0:0:0:599
 
 [btireland]
-btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.212 V6=2001:7c8:1000:5::1
+btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::2
 
 [larsendata]
 
