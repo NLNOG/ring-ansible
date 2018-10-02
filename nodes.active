@@ -1957,3 +1957,5 @@ globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78
 
 [godaddy]
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
+
+[mitsol]

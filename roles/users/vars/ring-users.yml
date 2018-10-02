@@ -4032,3 +4032,11 @@ USERS:
     groups:
       - ring-users
 
+  mitsol:
+    state: present
+    company: 'Mitsol'
+    email: 'peering@mitsol.net'
+    uid: 5525
+    groups:
+      - ring-users
+
