@@ -26,7 +26,7 @@ USERS:
   bit:
     state: present
     company: 'BIT'
-    email: 'teun@teun.tv'
+    email: 'support@bit.nl'
     uid: 5002
     groups:
       - ring-users
