@@ -81,7 +81,6 @@ towardex01.ring.nlnog.net OWNER=towardex V4=216.93.240.179 V6=2001:4830:123:1::d
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
 isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
-edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 spacedump01.ring.nlnog.net OWNER=spacedump V4=212.63.210.241 V6=2a01:298:f0::f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
@@ -476,7 +475,6 @@ telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:2
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
-mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [infranode]
 
@@ -723,7 +721,6 @@ isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
 
 [edutel]
-edutel01.ring.nlnog.net OWNER=edutel V4=88.159.8.253 V6=2a01:670:300:2::253
 
 [sixdegrees]
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
@@ -1960,4 +1957,3 @@ globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 
 [mitsol]
-mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
