@@ -664,7 +664,7 @@ USERS:
       - ring-users
 
   edutel:
-    state: present
+    state: absent
     company: 'Edutel B.V.'
     email: 'noc@edutel.nl'
     uid: 5095
@@ -3473,7 +3473,7 @@ USERS:
       - ring-users
 
   rogerscapital:
-    state: present
+    state: absent
     company: 'Rogers Capital Technology Services'
     email: 'noc@rogerscapital.mu'
     uid: 5456
