@@ -4040,3 +4040,11 @@ USERS:
     groups:
       - ring-users
 
+  ovhde:
+    state: present
+    company: 'OVH GmbH'
+    email: 'peering@ovh.net'
+    uid: 5526
+    groups:
+      - ring-users
+
