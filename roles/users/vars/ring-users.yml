@@ -4048,3 +4048,11 @@ USERS:
     groups:
       - ring-users
 
+  rootnl:
+    state: present
+    company: 'ROOT'
+    email: 'operators@root.nl'
+    uid: 5527
+    groups:
+      - ring-users
+

@@ -1957,3 +1957,5 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
+
+[rootnl]

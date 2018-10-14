@@ -493,6 +493,7 @@ globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=147.135.146.239 V6=2001:41d0:a:7e18::110
+rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2009,3 +2010,6 @@ mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
 ovhde01.ring.nlnog.net OWNER=ovhde V4=147.135.146.239 V6=2001:41d0:a:7e18::110
+
+[rootnl]
+rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
