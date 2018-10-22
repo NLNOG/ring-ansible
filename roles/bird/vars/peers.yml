@@ -358,6 +358,10 @@ lg_peers:
     asn: 1403
     ipv4: 198.58.198.255
     ipv6: 2606:6d00:eb0::255
+  NETSHELTER1:
+    asn: 49697
+    ipv4: 89.46.125.1
+    ipv6: 2a06:8187:fe01::1
 
 readonly_peers:
   ISOLARIO1:
