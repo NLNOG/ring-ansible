@@ -3722,7 +3722,7 @@ USERS:
 
   joeynetwork:
     state: present
-    company: 'Joey-Network'
+    company: 'netShelter'
     email: 'noc@joey-network.de'
     uid: 5486
     groups:
