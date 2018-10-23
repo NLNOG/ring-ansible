@@ -187,6 +187,7 @@ syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14:
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
+itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 amsio01.ring.nlnog.net OWNER=amsio V4=85.222.193.228 V6=2a02:20b0:165::100
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
@@ -387,6 +388,7 @@ elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::400:b9ff:feae:aa73
 ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
+vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
 casablanca01.ring.nlnog.net OWNER=casablanca V4=109.123.197.83 V6=2001:1528:1:2100:250:56ff:fea1:1b69
 korbank01.ring.nlnog.net OWNER=korbank V4=79.110.197.36 V6=2001:1a68:9:88::2
@@ -471,6 +473,7 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
+ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [infranode]
@@ -1092,6 +1095,7 @@ atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980
 [esgob]
 
 [itsbrasil]
+itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 
 [finecom]
 
@@ -1694,6 +1698,7 @@ ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
 [cologuard]
 
 [vpsfree]
+vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
 
 [protectedca]
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
@@ -1952,6 +1957,7 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
+ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 
 [rootnl]
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
