@@ -157,6 +157,7 @@ msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
+es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 world4you01.ring.nlnog.net OWNER=world4you V4=81.19.156.22 V6=2a00:1a68:3:1::5d18:b819
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
@@ -337,7 +338,6 @@ elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.30.136 V6=2a02:4260:1004:1::2
 cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
-sigtelecom01.ring.nlnog.net OWNER=sigtelecom V4=217.169.138.50 V6=2001:41e0:1001:2:2c:29ff:fe2c:86bb
 zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.140.194 V6=2400:d400:1:1088:1:1000:0:1054
@@ -997,6 +997,7 @@ nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 
 [es]
+es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 
 [world4you]
 world4you01.ring.nlnog.net OWNER=world4you V4=81.19.156.22 V6=2a00:1a68:3:1::5d18:b819
@@ -1541,7 +1542,6 @@ cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::16
 [netflix]
 
 [sigtelecom]
-sigtelecom01.ring.nlnog.net OWNER=sigtelecom V4=217.169.138.50 V6=2001:41e0:1001:2:2c:29ff:fe2c:86bb
 
 [datapath]
 
