@@ -495,6 +495,7 @@ mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
+nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2017,3 +2018,6 @@ rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [nero]
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
+
+[nexril]
+nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000

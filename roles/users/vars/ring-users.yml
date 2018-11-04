@@ -4064,3 +4064,11 @@ USERS:
     groups:
       - ring-users
 
+  nexril:
+    state: present
+    company: 'Nexril'
+    email: 'noc@nexril.net'
+    uid: 5529
+    groups:
+      - ring-users
+
