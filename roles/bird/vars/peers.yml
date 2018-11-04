@@ -362,6 +362,10 @@ lg_peers:
     asn: 49697
     ipv4: 89.46.125.1
     ipv6: 2a06:8187:fe01::1
+  NEXRIL1:
+    asn: 13830
+    ipv4: 104.149.232.242
+    ipv6: 2604:6600:2000:27::2
 
 readonly_peers:
   ISOLARIO1:
