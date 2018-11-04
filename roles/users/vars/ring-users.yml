@@ -4056,3 +4056,11 @@ USERS:
     groups:
       - ring-users
 
+  nero:
+    state: present
+    company: 'NERO Network'
+    email: 'noc@nero.net'
+    uid: 5528
+    groups:
+      - ring-users
+
