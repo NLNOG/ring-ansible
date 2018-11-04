@@ -416,7 +416,6 @@ kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=89.163.234.146 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
@@ -474,6 +473,8 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
+nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
+nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
 
 [infranode]
 
@@ -1789,7 +1790,6 @@ teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 
 [mdex]
-mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 
 [vimexx]
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
@@ -1961,5 +1961,7 @@ ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [nero]
+nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 
 [nexril]
+nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
