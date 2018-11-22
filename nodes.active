@@ -27,7 +27,6 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
@@ -113,6 +112,7 @@ hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
+afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 grnet01.ring.nlnog.net OWNER=grnet V4=62.217.125.248 V6=2001:648:2ffc:113:dcdb:eeff:fe35:9c68
 ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
@@ -574,7 +574,6 @@ netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 
 [hosteam]
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 
 [inotel]
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
@@ -816,6 +815,7 @@ nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:
 
 [afilias]
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
+afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 
 [grnet]
 grnet01.ring.nlnog.net OWNER=grnet V4=62.217.125.248 V6=2001:648:2ffc:113:dcdb:eeff:fe35:9c68
