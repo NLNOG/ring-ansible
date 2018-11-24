@@ -138,7 +138,6 @@ serverchoice01.ring.nlnog.net OWNER=serverchoice V4=178.18.123.233 V6=2a01:8000:
 cdw01.ring.nlnog.net OWNER=cdw V4=64.73.41.115 V6=2607:fee0:8008:1::10
 linxtelecom01.ring.nlnog.net OWNER=linxtelecom V4=195.222.12.126 V6=2001:ad0:1400:1000::2
 underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::91
-rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 direcpath01.ring.nlnog.net OWNER=direcpath V4=65.50.1.70 V6=2607:f1e8:f0f0:b:528a:1948:db90:ec59
@@ -921,7 +920,6 @@ underworld01.ring.nlnog.net OWNER=underworld V4=91.213.203.91 V6=2001:67c:398::9
 [videoplaza]
 
 [rnp]
-rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 
 [iij]
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
