@@ -313,6 +313,7 @@ sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
+mtwentyfourseven02.ring.nlnog.net OWNER=mtwentyfourseven V4=194.79.31.55 V6=2001:ac8:21:2::e0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=23.92.92.198 V6=2604:4600:b01:6122::2
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
@@ -1465,6 +1466,7 @@ tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 
 [mtwentyfourseven]
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
+mtwentyfourseven02.ring.nlnog.net OWNER=mtwentyfourseven V4=194.79.31.55 V6=2001:ac8:21:2::e0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 
 [switchco]
