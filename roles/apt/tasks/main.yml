@@ -158,3 +158,8 @@
   apt:
     update_cache: yes
   changed_when: false
+
+- name: "Fix half-configured packages"
+  command: dpkg --configure -a
+  changed_when: false
+
