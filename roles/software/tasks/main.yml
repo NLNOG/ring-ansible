@@ -57,6 +57,7 @@
     - netsed
     - ngrep
     - nmap
+    - paris-traceroute
     - pastebinit
     - psmisc
     - pv
@@ -166,6 +167,7 @@
     - /usr/sbin/hping3
     - /usr/bin/nmap
     - /usr/bin/nping
+    - /usr/sbin/paris-traceroute
     - /usr/bin/traceroute.db
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
