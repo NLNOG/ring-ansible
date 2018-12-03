@@ -366,6 +366,10 @@ lg_peers:
     asn: 13830
     ipv4: 104.149.232.242
     ipv6: 2604:6600:2000:27::2
+  NETACTUATE1:
+    asn: 36236
+    ipv4: 208.111.38.185
+    ipv6: 2607:f740:0:7::f79
 
 readonly_peers:
   ISOLARIO1:
