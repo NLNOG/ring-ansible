@@ -1,20 +1,20 @@
 roa table ROAS {
-{%- for roa in roa_list|sort(attribute='o') %}
-    roa {{ roa['p'] }} max {{ roa['m'] }} as {{ roa['o'] }};
-{%- endfor %}
+{% for roa in roa_list|sort(attribute='origin') -%}
+{{ "    " }}roa {{ roa['prefix'] }} max {{ roa['maxlen'] }} as {{ roa['origin'] }};
+{% endfor -%}
 }
 
 function flag_rpki_state()
 {
-    if (roa_check(ROAS, net, bgp_path.last_nonaggregated) = ROA_VALID) then {
+    case roa_check(ROAS, net, bgp_path.last_nonaggregated) {
+    ROA_VALID:
         /* add rfc8097 marker to routes for which a valid matching ROA exists */
         bgp_ext_community.add((unknown 0x4300, 0, 0));
-    }
-    else if (roa_check(ROAS, net, bgp_path.last_nonaggregated) = ROA_INVALID) then {
+    ROA_INVALID:
         print "Reject: RPKI ROA check failed for ", net, " ", bgp_path, " protocol: ", proto;
         bgp_ext_community.add((unknown 0x4300, 0, 2));
-    }
-    else {
+        reject;
+    else:
         /* add rfc8097 marker to routes for which no covering ROA exists */
         bgp_ext_community.add((unknown 0x4300, 0, 1));
     }
