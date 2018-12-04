@@ -1,63 +1,21 @@
-define ROAS = [
-        {% for prefix in aggregated_pfx_list -%}
-{{ prefix }}+
-{%- if not loop.last -%},{%- endif -%}
-{%- if loop.index % 4 == 0 -%}
-{{ "\n        " }}
-{%- else -%}
-{{ " " }}
-{%- endif -%}
+roa table ROAS {
+{%- for roa in roa_list|sort(attribute='o') %}
+    roa {{ roa['p'] }} max {{ roa['m'] }} as {{ roa['o'] }};
 {%- endfor %}
-    ];
-
-function is_roa_covered_prefix()
-prefix set roas;
-{
-    roas = ROAS;
-    if net ~ roas then {
-        return true;
-    }
-    else return false;
-}
-
-function complies_with_roa()
-{
-    case bgp_path.last {
-{%- for origin in origin_dict|sort() if not origin == 0 %}
-        {{ origin }}:
-            if net ~ [
-                {% for prefix in origin_dict[origin].keys() -%}
-{%- if origin_dict[origin][prefix]["length"] == origin_dict[origin][prefix]["maxlength"] -%}
-{{ prefix }}
-{%- else -%}
-{{ prefix }}{{ "{" }}{{ origin_dict[origin][prefix]["length"] }},{{ origin_dict[origin][prefix]["maxlength"] }}{{ "}" }}
-{%- endif %}
-{%- if not loop.last -%},{%- endif -%}
-{%- if loop.index % 4 == 0 and not loop.last -%}
-{{ "\n                " }}
-{%- else -%}
-{{ " " }}
-{%- endif -%}
-{%- endfor %}
-            ] then return true;
-            else return false;
-{%- endfor %}
-        else:
-            return false;
-    }
 }
 
 function flag_rpki_state()
 {
-    if is_roa_covered_prefix() then {
-        if complies_with_roa() then {
-            /* add marker to routes for which a valid matching ROA exists */
-            bgp_ext_community.add((unknown 0x4300, 0, 0));
-        }
-        else {
-            bgp_ext_community.add((unknown 0x4300, 0, 2));
-        }
-    } else {
+    if (roa_check(ROAS, net, bgp_path.last_nonaggregated) = ROA_VALID) then {
+        /* add rfc8097 marker to routes for which a valid matching ROA exists */
+        bgp_ext_community.add((unknown 0x4300, 0, 0));
+    }
+    else if (roa_check(ROAS, net, bgp_path.last_nonaggregated) = ROA_INVALID) then {
+        print "Reject: RPKI ROA check failed for ", net, " ", bgp_path, " protocol: ", proto;
+        bgp_ext_community.add((unknown 0x4300, 0, 2));
+    }
+    else {
+        /* add rfc8097 marker to routes for which no covering ROA exists */
         bgp_ext_community.add((unknown 0x4300, 0, 1));
     }
 }
