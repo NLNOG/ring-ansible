@@ -4072,3 +4072,11 @@ USERS:
     groups:
       - ring-users
 
+  hosting4real:
+    state: present
+    company: 'Hosting4Real'
+    email: 'noc@hosting4real.net'
+    uid: 5530
+    groups:
+      - ring-users
+
