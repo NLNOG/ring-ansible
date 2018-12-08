@@ -4080,3 +4080,35 @@ USERS:
     groups:
       - ring-users
 
+  overthewire:
+    state: present
+    company: 'Over the Wire'
+    email: 'engineering@overthewire.com.au'
+    uid: 5531
+    groups:
+      - ring-users
+
+  greenmini:
+    state: present
+    company: 'Green Mini host BV'
+    email: 'noc@greenmini.nl'
+    uid: 5532
+    groups:
+      - ring-users
+
+  sedmiodjel:
+    state: present
+    company: 'Sedmi Odjel d.o.o.'
+    email: 'boris@sedmiodjel.com'
+    uid: 5533
+    groups:
+      - ring-users
+
+  breedbandnl:
+    state: present
+    company: 'Breeband B.V.'
+    email: 'support@breedband.nl'
+    uid: 5534
+    groups:
+      - ring-users
+
