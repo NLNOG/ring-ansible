@@ -4106,7 +4106,7 @@ USERS:
 
   breedbandnl:
     state: present
-    company: 'Breeband B.V.'
+    company: 'Breedband B.V.'
     email: 'support@breedband.nl'
     uid: 5534
     groups:
