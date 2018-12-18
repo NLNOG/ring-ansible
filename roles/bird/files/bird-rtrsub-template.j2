@@ -12,7 +12,6 @@ function flag_rpki_state()
         bgp_ext_community.add((unknown 0x4300, 0, 0));
     ROA_INVALID:
         bgp_ext_community.add((unknown 0x4300, 0, 2));
-        reject;
     else:
         /* add rfc8097 marker to routes for which no covering ROA exists */
         bgp_ext_community.add((unknown 0x4300, 0, 1));
