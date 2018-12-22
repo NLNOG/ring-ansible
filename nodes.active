@@ -106,7 +106,6 @@ claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
-hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
@@ -202,7 +201,6 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
-itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel02.ring.nlnog.net OWNER=viatel V4=46.183.108.2 V6=2a01:8aa0:7f00:0:20c:29ff:fe60:bfac
@@ -375,7 +373,6 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
-connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 svwh01.ring.nlnog.net OWNER=svwh V4=72.5.72.35 V6=2606:c680:1:17:6c02:c1ff:fea3:d427
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
@@ -807,7 +804,6 @@ iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 [initseven]
 
 [hosting90systems]
-hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 
 [kordia]
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
@@ -1163,7 +1159,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [telecityfi]
 
 [itps]
-itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 
 [cyberverse]
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
@@ -1660,7 +1655,6 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20
 [connectria]
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
-connectria03.ring.nlnog.net OWNER=connectria V4=208.91.48.4 V6=2607:f148:3000::4
 
 [freifunkrl]
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
