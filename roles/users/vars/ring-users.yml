@@ -3729,7 +3729,7 @@ USERS:
       - ring-users
 
   emeriaud:
-    state: present
+    state: absent
     company: 'Pierre Emeriaud'
     email: 'abuse@emeriaud.fr'
     uid: 5487
