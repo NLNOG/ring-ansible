@@ -1,0 +1,23 @@
+# {{ ansible_managed }}
+
+clientPortAddress={{ kafka_zk_listen_addr }}
+
+dataDir={{ kafka_zk_data_dir }}
+{% if kafka_zk_data_dir != kafka_zk_data_log_dir %}
+dataLogDir={{ kafka_zk_data_log_dir }}
+{% endif %}
+
+# the port at which the clients will connect
+clientPort={{ kafka_zk_client_port }}
+
+maxClientCnxns={{ kafka_zk_max_connections }}
+
+tickTime={{ kafka_zk_ticktime }}
+initLimit={{ kafka_zk_initlimit }}
+syncLimit={{ kafka_zk_synclimit }}
+
+{% if kafka_zk_nodes|length > 1 %}
+{% for node in kafka_zk_nodes %}
+server.{{ loop.index0 }}={{ node }}:{{ kafka_zk_quorum_port }}:{{ kafka_zk_election_port }}
+{% endfor %}
+{% endif %}

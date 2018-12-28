@@ -1,0 +1,7 @@
+# {{ ansible_managed }}
+
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+PATH=$PATH:{{ kafka_path }}/bin

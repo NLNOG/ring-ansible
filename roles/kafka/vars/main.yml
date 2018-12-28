@@ -1,0 +1,8 @@
+---
+
+kafka_version: 2.1.0
+kafka_scala: 2.12
+kafka_binary_url: https://www-eu.apache.org/dist/kafka/{{ kafka_version }}/kafka_{{ kafka_scala }}-{{ kafka_version }}.tgz
+kafka_binary_checksum: sha256:a70b44a682f5082f5c69182d4596e7ded2df38629f09b50a629070ddb1ef4f86
+
+kafka_path: "{{ kafka_root }}/kafka_{{ kafka_scala }}-{{ kafka_version }}"

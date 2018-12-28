@@ -1,0 +1,80 @@
+---
+
+# Kafka brokers
+kafka_configure_broker: no
+
+# Kafka zookeeper
+kafka_configure_zookeeper: no
+
+# -----------------------------------------------------------
+# Broker config (all brokers)
+
+kafka_root: /opt/kafka
+
+kafka_data_dir: /data/kafka_logs
+kafka_log_dir: /var/log/kafka
+
+kafka_port_plain: 9092
+
+kafka_port_public: "{{ kafka_port_plain }}"
+
+kafka_allow_delete: no
+
+kafka_enable_acls: yes
+
+# -----------------------------------------------------------
+# Cluster config
+
+# List of all brokers (override in global config)
+
+kafka_brokers:
+  - "{{ inventory_hostname }}:{{ kafka_port_plain }}"
+
+# List of all ZooKeeper nodes (override in global config)
+
+kafka_zk_nodes:
+  - localhost
+
+
+# -----------------------------------------------------------
+# ZooKeeper (all ZK nodes)
+
+# ZK client port
+kafka_zk_client_port: 2181
+
+# ZK quorum port (intra-zk-cluster)
+kafka_zk_quorum_port: 2888
+
+# ZK leader election port (intra-zk-cluster)
+kafka_zk_election_port: 3888
+
+# High IOPS warning!
+kafka_zk_data_dir: /data/zookeeper
+kafka_zk_data_log_dir: "{{ kafka_zk_data_dir }}"
+
+# Maximum connections per client
+kafka_zk_max_connections: 6000
+
+# ms per tick
+kafka_zk_ticktime: 2000
+
+# how many ticks a follower may take to connect and sync
+kafka_zk_initlimit: 10
+
+# how many ticks for sync (follower is dropped otherwise)
+kafka_zk_synclimit: 5
+
+# These values are safe default and not necessarily suitable
+# for production! Read ZK docs.
+
+# Global setting (not limited to Graphite)
+kafka_metrics_interval: 10
+
+# Listen address
+kafka_zk_listen_addr: 127.0.0.1
+
+# -----------------------------------------------------------
+# Per-broker config
+
+# !! broker ID must be unique in a cluster
+kafka_broker_id: 0

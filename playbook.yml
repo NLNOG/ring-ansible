@@ -85,7 +85,7 @@
   become: true
   become_user: root
   roles:
-    - { role: graphite, tags: graphite }
+    - { role: kafka, tags: kafka }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true

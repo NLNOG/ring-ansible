@@ -38,3 +38,10 @@ LOCAL_USERS:
 apache_vhosts:
   - graphite
 
+kafka_configure_broker: yes
+kafka_configure_zookeeper: yes
+
+kafka_data_dir: /data/kafka/data
+kafka_zk_data_dir: /data/kafka/zk
+
+backups: disabled
