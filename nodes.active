@@ -47,6 +47,7 @@ boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
+westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=46.234.32.56 V6=2001:4b20:c001::1000
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
@@ -213,6 +214,7 @@ ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
 ntt01.ring.nlnog.net OWNER=ntt V4=165.254.21.124 V6=2001:418:1456:b0a::2
 iucc01.ring.nlnog.net OWNER=iucc V4=128.139.197.81 V6=2001:bf8:900:1::808b:c551
 nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
+businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
 suretec01.ring.nlnog.net OWNER=suretec V4=185.8.92.17 V6=2a02:d540::b908:5c11
@@ -339,7 +341,6 @@ cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::16
 zerofail01.ring.nlnog.net OWNER=zerofail V4=173.243.192.38 V6=2607:5e00:0:38::2
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.140.194 V6=2400:d400:1:1088:1:1000:0:1054
-chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
 clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 deic01.ring.nlnog.net OWNER=deic V4=130.226.249.126 V6=2001:878:0:e000:82:e2:f9:7e
@@ -648,6 +649,7 @@ seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 [zensystems]
 
 [westnet]
+westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 
 [kantonsschulezug]
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=46.234.32.56 V6=2001:4b20:c001::1000
@@ -1184,6 +1186,7 @@ iucc01.ring.nlnog.net OWNER=iucc V4=128.139.197.81 V6=2001:bf8:900:1::808b:c551
 nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
 
 [businessconnect]
+businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 
 [noris]
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
@@ -1554,7 +1557,6 @@ fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.140.194 V6=2400:d400:1:1088:1:1000:0:1054
 
 [chaosdarmstadt]
-chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
 
 [plurimedia]
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
