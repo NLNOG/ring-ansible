@@ -162,13 +162,10 @@
     mode: 0755
   when: ansible_distribution_release != "precise"
 
-- name: "Install ansible-reaper"
-  copy:
-    src=ansible-reaper
-    dest=/usr/local/sbin/ansible-reaper
-    owner=root
-    group=root
-    mode=0755
+- name: "Remove ansible-reaper"
+  file:
+    dest: /usr/local/sbin/ansible-reaper
+    state: absent
   when: ansible_distribution_release != "precise"
 
 - name: "Ensure Ansible cronjob exists"
