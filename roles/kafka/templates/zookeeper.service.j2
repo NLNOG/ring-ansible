@@ -7,6 +7,7 @@ User=kafka
 Group=kafka
 ExecStart={{ kafka_path }}/bin/zookeeper-server-start.sh \
     {{ kafka_path }}/config/zookeeper.properties
+Environment='KAFKA_JMX_OPTS= '
 
 [Install]
 WantedBy=multi-user.target
