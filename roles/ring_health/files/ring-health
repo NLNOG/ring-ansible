@@ -140,9 +140,13 @@ def check_ipv6_gw():
         if not re.search('default', line) and not re.search('nexthop', line):
             continue
         route_vars = line.split()
+        # Unnumbered gateway
+        if route_vars[1] == 'dev':
+            return True
         gw = route_vars[2]
         iface = route_vars[4]
-        if gw == 'ra':
+        # Multiple next-hops
+        if gw == 'ra' or gw == 'static':
             continue
         ping_result = subprocess.run(['ping6', '-c', '3', '-I', iface, gw],
                                      stdout=subprocess.PIPE)
@@ -183,6 +187,9 @@ def check_ipv4_gw():
         if not re.search('default', line):
             continue
         route_vars = line.split()
+        # Unnumbered gateway
+        if route_vars[1] == 'dev':
+            return True
         gw = route_vars[2]
         ping_result = subprocess.run(['ping', '-c', '3', gw],
                                      stdout=subprocess.PIPE)
