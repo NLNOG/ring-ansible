@@ -13,6 +13,14 @@ http {
         listen [::]:80 ipv6only=off;
         access_log /var/log/nginx/access.log;
         error_log /var/log/nginx/error.log;
-        return 301 https://ring.nlnog.net/;
+
+        # ring-health output
+        location ~ ^/status.json$ {
+            root /var/www/ring;
+        }
+
+        location / {
+            return 301 https://ring.nlnog.net/;
+        }
     }
 }

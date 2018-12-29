@@ -1,0 +1,4 @@
+# run ring-health
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+{{ 60|determrand(ansible_nodename) }} * * * * root /usr/local/sbin/ring-health

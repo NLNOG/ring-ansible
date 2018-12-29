@@ -1,0 +1,247 @@
+#!/usr/bin/env python3
+#
+# Check health of NLNOG Ring node
+#
+# Author: Martin Pels <martin@rodecker.nl>
+#
+
+import datetime
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+
+NODES='/etc/ansible/ring/nodes'
+DOMAIN='ring.nlnog.net'
+CRONPATH='/etc/cron.d/ansible'
+LOGPATH='/var/log/ansible/ansible.log'
+WEBPATH='/var/www/ring'
+
+def main(argv):
+    result = dict()
+    result['info'] = dict()
+    health = dict()
+    try:
+        infranodes = get_infranodes()
+
+        health['mountstatus_root'] = check_mountstatus()
+        health['diskspace_root'] = check_diskspace()
+
+        health['ipv6_addresses'] = check_ipv6_addr()
+        health['ipv6_gateway'] = check_ipv6_gw()
+        health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+        health['ipv4_addresses'] = check_ipv4_addr()
+        health['ipv4_gateway'] = check_ipv4_gw()
+        health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+
+        health['dns_config'] = check_dnsconfig()
+        health['dns_resolvers'] = check_resolvers()
+
+        health['ansible_cron'] = check_ansible_cron()
+        health['ansible_run'] = check_ansible_run()
+
+        result['info']['success'] = True
+    except:
+        result['info']['success'] = False
+
+    result['info']['date'] = datetime.datetime.now().isoformat()
+    result['health'] = health
+    with open(WEBPATH + '/status.json', 'w') as of:
+        json.dump(result, of, indent=2)
+    of.close()
+
+def get_infranodes(nodes_file=NODES):
+    infranodes = dict()
+    infranodes['V4'] = []
+    infranodes['V6'] = []
+    f = open(nodes_file,'r')
+    for line in f:
+        vars = line.split()
+        if len(vars) < 3:
+            continue
+        if re.match('^.+\.infra\.' + DOMAIN + '$',vars[0]):
+            for var in vars:
+                if re.match('V[46]=.+', var):
+                    (k, v) = var.split('=')
+                    infranodes[k].append(v)
+    f.close()
+    return infranodes
+
+def check_mountstatus(partition='/'):
+    '''Partition is in read/write state'''
+    f = open('/proc/mounts','r')
+    for line in f:
+        (fs,mp,fstype,optstr,dmp,ps) = line.split(' ')
+        opts = optstr.split(',')
+        if mp == partition and 'rw' in opts:
+            return True
+    return False
+
+def check_diskspace(partition='/', maximum=99, imaximum=99):
+    '''Percentage of used disk space on a partition'''
+    space_free = False
+    result = subprocess.run(['df', '-h'], stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        df = line.split()
+        if len(df) < 6:
+            continue
+        percentage = df[4][:-1]
+        if df[5] == partition and int(percentage) <= maximum:
+            space_free = True
+
+    inode_free = False
+    result = subprocess.run(['df', '-i'], stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        df = line.split()
+        if len(df) < 6:
+            continue
+        percentage = df[4][:-1]
+        if df[5] == partition and int(percentage) <= imaximum:
+            inode_free = True
+
+    if space_free and inode_free:
+        return True
+    return False
+
+def check_ipv6_addr():
+    '''System must have a single, globally reachable IPv6 address'''
+    address_count = 0
+    result = subprocess.run(['ip', '-6', 'addr', 'list'],
+                            stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        if not re.search('scope global', line):
+            continue
+        address_count = address_count + 1
+    if address_count == 1:
+        return True
+    return False
+
+def check_ipv6_gw():
+    '''IPv6 gateway is reachable'''
+    result = subprocess.run(['ip', '-6', 'route'],
+                            stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        if not re.search('default', line):
+            continue
+        route_vars = line.split()
+        gw = route_vars[2]
+        ping_result = subprocess.run(['ping6', '-c', '3', gw],
+                                     stdout=subprocess.PIPE)
+        if ping_result.returncode != 1:
+            return True
+    return False
+
+def check_ipv6_hosts(addresses,minimum=1):
+    '''IPv6 addresses are pingable'''
+    pingable = 0
+    for address in addresses:
+        ping_result = subprocess.run(['ping6', '-c', '3', address],
+                                     stdout=subprocess.PIPE)
+        if ping_result.returncode != 1:
+            pingable = pingable + 1
+    if pingable >= minimum:
+        return True
+    return False
+
+def check_ipv4_addr():
+    '''System must have a single, globally reachable IPv4 address'''
+    address_count = 0
+    result = subprocess.run(['ip', '-4', 'addr', 'list'],
+                            stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        if not re.search('scope global', line):
+            continue
+        address_count = address_count + 1
+    if address_count == 1:
+        return True
+    return False
+
+def check_ipv4_gw():
+    '''IPv4 gateway is reachable'''
+    result = subprocess.run(['ip', '-4', 'route'],
+                            stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        if not re.search('default', line):
+            continue
+        route_vars = line.split()
+        gw = route_vars[2]
+        ping_result = subprocess.run(['ping', '-c', '3', gw],
+                                     stdout=subprocess.PIPE)
+        if ping_result.returncode != 1:
+            return True
+    return False
+
+def check_ipv4_hosts(addresses,minimum=1):
+    '''IPv4 addresses are pingable'''
+    pingable = 0
+    for address in addresses:
+        ping_result = subprocess.run(['ping', '-c', '3', address],
+                                     stdout=subprocess.PIPE)
+        if ping_result.returncode != 1:
+            pingable = pingable + 1
+    if pingable >= minimum:
+        return True
+    return False
+
+def get_nameservers():
+    nameservers = []
+    f = open('/etc/resolv.conf','r')
+    for line in f:
+        if not re.match('^nameserver\s.+',line):
+            continue
+        vars = line.split()
+        if len(vars) < 2:
+            continue
+        nameservers.append(vars[1])
+    return nameservers
+
+def check_dnsconfig():
+    '''Resolver points to localhost'''
+    nameservers = get_nameservers()
+    if len(nameservers) == 2 \
+      and '127.0.0.1' in nameservers \
+      and '::1' in nameservers:
+        return True
+    return False
+
+def check_resolvers():
+    '''Responsiveness of resolvers'''
+    nameservers = get_nameservers()
+    if len(nameservers) < 1:
+        return False
+    for ns in nameservers:
+        dig_result = subprocess.run(['dig', '+short', '@' + ns,
+                                     'ring.nlnog.net', 'AAAA'],
+                                    stdout=subprocess.PIPE)
+        if dig_result.returncode != 0:
+            return False
+        if len(dig_result.stdout.decode('utf-8')) < 1:
+            return False
+    return True
+
+def check_https(hostname):
+    '''HTTPS website reachability'''
+    return False
+
+def check_ansible_cron():
+    '''Ansible cron status'''
+    f = open(CRONPATH, 'r')
+    for line in f:
+        if re.match('^([*0-9/,]+\s){5}root\s/usr/local/sbin/ansible-cron\s.+$', line):
+            return True
+    return False
+
+def check_ansible_run(age=21600):
+    '''Time since last ansible run'''
+    try:
+        mtime = os.path.getmtime(LOGPATH)
+    except OSError:
+        return False
+    if (time.time() - mtime) < age:
+        return True
+    return False
+
+if __name__ == "__main__":
+        main(sys.argv)
