@@ -46,7 +46,7 @@
   roles:
     - { role: users, class: ring-users, tags: ring-users }
 
-- hosts: ringnode
+- hosts: ringnode:~staging[0-9]*\.ring\.nlnog\.net
   become: true
   become_user: root
   roles:
