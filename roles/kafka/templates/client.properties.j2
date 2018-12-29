@@ -1,2 +1,11 @@
 # {{ ansible_managed }}
 # Client configuration file for console consumer and producer
+
+{% if kafka_sasl_plain %}
+sasl.mechanism=PLAIN
+security.protocol=SASL_PLAINTEXT
+
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+  username="{{ kafka_sasl_plain_client_username }}" \
+  password="{{ kafka_sasl_plain_users[kafka_sasl_plain_client_username].password }}";
+{% endif %}

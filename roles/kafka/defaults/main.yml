@@ -40,6 +40,9 @@ kafka_zk_nodes:
 
 kafka_sasl_plain: yes
 
+# Username to use in client.properties (needs to be in the users array)
+kafka_sasl_plain_client_username: admin
+
 #kafka_sasl_plain_users:
 #  admin:  # admin needs to exist! (used for inter-broker comms)
 #    password: changeme

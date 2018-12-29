@@ -4,4 +4,24 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Kafka shorthand variables. You end up typing them a lot, so they're abbreviated.
+
+# kafkacat parameters
+KC="-b {{ ansible_default_ipv4.address }}:{{ kafka_port_public }}{% if kafka_sasl_plain -%} \
+    -X security.protocol=SASL_PLAINTEXT \
+    -X sasl.mechanisms=PLAIN \
+    -X sasl.username={{ kafka_sasl_plain_client_username }} \
+    -X sasl.password={{ kafka_sasl_plain_users[kafka_sasl_plain_client_username].password }}{% endif %}"
+
+# zookeeper parameters for topic management scripts
+ZP="--zookeeper {{ kafka_zk_listen_addr }}"
+
+# Kafka Java consumer properties
+KP="--bootstrap-server {{ ansible_default_ipv4.address }}:{{ kafka_port_public }} --consumer.config {{ kafka_path }}/config/client.properties"
+
+# Kafka Java producer properties
+KB="--broker-list {{ ansible_default_ipv4.address }}:{{ kafka_port_public }} --producer.config {{ kafka_path }}/config/client.properties"
+
+alias kafkacat="kafkacat ${KC}"
+
 PATH=$PATH:{{ kafka_path }}/bin
