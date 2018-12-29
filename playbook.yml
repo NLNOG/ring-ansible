@@ -51,6 +51,7 @@
   become_user: root
   roles:
     - { role: nginx, tags: nginx }
+    - { role: ring_health, tags: ring_health }
     - { role: scamper, tags: scamper }
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
