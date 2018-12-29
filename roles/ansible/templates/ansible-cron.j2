@@ -1,19 +1,17 @@
 #!/bin/bash
 # Run Ansible from cron. Do not start a new run until existing runs are finished
 
-# Check for existing lockfile
-LOCKFILE=/tmp/.ansible.run
-if [ -f $LOCKFILE ]; then
-    >&2 echo "Not spawning Ansible. $LOCKFILE still exists."
+LOCKFILE=/var/run/ring-ansible.lock
+
+# Open a file descriptor using the current shell, and then flock(2) it.
+# This ensures that the lock is held until this script runs to completion,
+# and cleaned up if it crashes.
+
+exec 200<> ${LOCKFILE}
+if ! flock -x -w 1 200; then
+    echo "Failed to acquire Ansible lock"
     exit 1
 fi
 
-# Create the lockfile
-echo >$LOCKFILE $$
-
 # Launch Ansible
-/usr/local/sbin/run-ansible
-
-# Remove lockfile
-rm -f $LOCKFILE
-
+timeout -s KILL 21600 /usr/local/sbin/run-ansible
