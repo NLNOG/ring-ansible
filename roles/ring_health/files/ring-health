@@ -32,14 +32,20 @@ def main(argv):
         health['ipv6_addresses'] = check_ipv6_addr()
         if health['ipv6_addresses']:
             health['ipv6_gateway'] = check_ipv6_gw()
-            health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+            if health['ipv6_gateway']:
+                health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+            else:
+                health['ipv6_reachability'] = False
         else:
             health['ipv6_gateway'] = False
             health['ipv6_reachability'] = False
         health['ipv4_addresses'] = check_ipv4_addr()
         if health['ipv4_addresses']:
             health['ipv4_gateway'] = check_ipv4_gw()
-            health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+            if health['ipv4_gateway']:
+                health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+            else:
+                health['ipv4_reachability'] = False
         else:
             health['ipv4_gateway'] = False
             health['ipv4_reachability'] = False
