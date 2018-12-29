@@ -138,7 +138,7 @@ def check_ipv6_gw():
         iface = route_vars[4]
         if gw == 'ra':
             continue
-        ping_result = subprocess.run(['ping6', '-c', '3', '-I', iface, gw]
+        ping_result = subprocess.run(['ping6', '-c', '3', '-I', iface, gw],
                                      stdout=subprocess.PIPE)
         if ping_result.returncode != 1:
             return True
