@@ -30,11 +30,19 @@ def main(argv):
         health['diskspace_root'] = check_diskspace()
 
         health['ipv6_addresses'] = check_ipv6_addr()
-        health['ipv6_gateway'] = check_ipv6_gw()
-        health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+        if health['ipv6_addresses']:
+            health['ipv6_gateway'] = check_ipv6_gw()
+            health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+        else:
+            health['ipv6_gateway'] = False
+            health['ipv6_reachability'] = False
         health['ipv4_addresses'] = check_ipv4_addr()
-        health['ipv4_gateway'] = check_ipv4_gw()
-        health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+        if health['ipv4_addresses']:
+            health['ipv4_gateway'] = check_ipv4_gw()
+            health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+        else:
+            health['ipv4_gateway'] = False
+            health['ipv4_reachability'] = False
 
         health['dns_config'] = check_dnsconfig()
         health['dns_resolvers'] = check_resolvers()
