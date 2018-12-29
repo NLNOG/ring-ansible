@@ -13,7 +13,15 @@ delete.topic.enable=true
 
 ############################# Socket Server Settings #############################
 
+{% if kafka_sasl_plain %}
+listeners=SASL_PLAINTEXT://{{ ansible_default_ipv4.address }}:{{ kafka_port_plain }}
+security.inter.broker.protocol=SASL_PLAINTEXT
+
+sasl.mechanism.inter.broker.protocol=PLAIN
+sasl.enabled.mechanisms=PLAIN
+{% else %}
 listeners=PLAINTEXT://{{ ansible_default_ipv4.address }}:{{ kafka_port_plain }}
+{% endif %}
 
 # Hostname and port the broker will advertise to producers and consumers. If not set,
 # it uses the value for "listeners" if configured.  Otherwise, it will use the value

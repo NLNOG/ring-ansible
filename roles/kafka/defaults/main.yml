@@ -35,6 +35,16 @@ kafka_brokers:
 kafka_zk_nodes:
   - localhost
 
+# -----------------------------------------------------------
+# SASL authentication
+
+kafka_sasl_plain: yes
+
+#kafka_sasl_plain_users:
+#  admin:  # admin needs to exist! (used for inter-broker comms)
+#    password: changeme
+#  alice:
+#    password: changeme
 
 # -----------------------------------------------------------
 # ZooKeeper (all ZK nodes)

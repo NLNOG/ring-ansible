@@ -31,6 +31,12 @@
     owner: root
     group: kafka
 
+- name: Template kafka_server_jaas.conf config
+  template:
+    src: kafka_server_jaas.conf.j2
+    dest: "{{ kafka_path }}/config/kafka_server_jaas.conf"
+  when: kafka_sasl_plain
+
 # Service configuration
 
 - name: kafka environment file

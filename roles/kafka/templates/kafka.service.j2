@@ -13,6 +13,7 @@ ExecStart=/usr/bin/java -cp \
     $KAFKA_JVM_PERFORMANCE_OPTS \
     $KAFKA_GC_LOG_OPTS \
     $KAFKA_JMX_OPTS \
+    $KAFKA_SASL_AUTH_OPTS \
     kafka.Kafka \
     $KAFKA_SERVER_CONFIG
 LimitNOFILE=49152
