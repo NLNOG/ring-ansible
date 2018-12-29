@@ -952,7 +952,7 @@ USERS:
       - ring-users
 
   bluezonejordan:
-    state: present
+    state: absent
     company: 'Bluezone Jordan'
     email: 'noc@bluezonejordan.com'
     uid: 5140
