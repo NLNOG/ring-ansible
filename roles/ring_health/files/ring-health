@@ -131,11 +131,14 @@ def check_ipv6_gw():
     result = subprocess.run(['ip', '-6', 'route'],
                             stdout=subprocess.PIPE)
     for line in result.stdout.decode('utf-8').split('\n'):
-        if not re.search('default', line):
+        if not re.search('default', line) and not re.search('nexthop', line):
             continue
         route_vars = line.split()
         gw = route_vars[2]
-        ping_result = subprocess.run(['ping6', '-c', '3', gw],
+        iface = route_vars[4]
+        if gw == 'ra':
+            continue
+        ping_result = subprocess.run(['ping6', '-c', '3', '-I', iface, gw]
                                      stdout=subprocess.PIPE)
         if ping_result.returncode != 1:
             return True
