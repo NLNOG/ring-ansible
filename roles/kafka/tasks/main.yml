@@ -1,0 +1,16 @@
+---
+# local service user
+- import_tasks: user.yml
+  when: kafka_configure_broker or kafka_configure_zookeeper
+
+# download + unpack kafka
+- import_tasks: install.yml
+  when: kafka_configure_broker or kafka_configure_zookeeper
+
+# Kafka configs
+- import_tasks: kafka.yml
+  when: kafka_configure_broker
+
+- import_tasks: zookeeper.yml
+  when: kafka_configure_zookeeper
+

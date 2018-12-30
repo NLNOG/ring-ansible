@@ -1,0 +1,19 @@
+---
+
+- name: Create kafka group
+  group:
+    name: kafka
+
+- name: Create kafka user
+  user:
+    name: kafka
+    shell: /bin/bash
+    group: kafka
+    createhome: yes
+
+- name: Kafka user bashrc
+  template:
+    src: bashrc.sh.j2
+    dest: ~/.bashrc
+    mode: 0755
+  become_user: kafka

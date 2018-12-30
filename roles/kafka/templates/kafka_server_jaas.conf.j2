@@ -1,0 +1,10 @@
+// {{ ansible_managed }}
+
+KafkaServer {
+   org.apache.kafka.common.security.plain.PlainLoginModule required
+   username="admin"
+   password="{{ kafka_sasl_plain_users.admin.password }}"
+{% for name, user in kafka_sasl_plain_users.items() %}
+   user_{{ name }}="{{ user.password }}"
+{% endfor %};
+};

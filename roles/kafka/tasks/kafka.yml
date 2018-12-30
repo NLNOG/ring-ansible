@@ -1,0 +1,74 @@
+---
+
+- name: kafka data dir
+  file:
+    state: directory
+    path: "{{ kafka_data_dir }}"
+    owner: kafka
+    group: kafka
+    mode: 0770
+
+- name: Template server.properties config
+  template:
+    src: server.properties.j2
+    dest: "{{ kafka_path }}/config/server.properties"
+    owner: root
+    group: kafka
+    mode: 0640
+  no_log: yes
+
+- name: Template producer.properties config
+  template:
+    src: producer.properties.j2
+    dest: "{{ kafka_path }}/config/producer.properties"
+    owner: root
+    group: kafka
+
+- name: Template client.properties config
+  template:
+    src: client.properties.j2
+    dest: "{{ kafka_path }}/config/client.properties"
+    owner: root
+    group: kafka
+
+- name: Template kafka_server_jaas.conf config
+  template:
+    src: kafka_server_jaas.conf.j2
+    dest: "{{ kafka_path }}/config/kafka_server_jaas.conf"
+  when: kafka_sasl_plain
+
+# Service configuration
+
+- name: kafka environment file
+  template:
+    src: kafka.env.j2
+    dest: "{{ kafka_path }}/kafka.env"
+
+- name: kafka.service
+  template:
+    src: kafka.service.j2
+    dest: /etc/systemd/system/kafka.service
+
+- name: kafka.service enable
+  systemd:
+    name: kafka.service
+    daemon_reload: yes
+    enabled: yes
+    state: started
+
+# Logging
+
+- name: kafka logs dir
+  file:
+    state: directory
+    path: "{{ kafka_log_dir }}"
+    owner: kafka
+    group: kafka
+    mode: 0770
+
+- name: log4j config
+  lineinfile:
+    dest: "{{ kafka_path }}/config/log4j.properties"
+    line: "kafka.logs.dir={{ kafka_log_dir }}"
+    regexp: ^kafka.logs.dir=
+    insertbefore: ^log4j.rootLogger

@@ -1,0 +1,31 @@
+---
+
+- name: zookeeper data dir
+  file:
+    state: directory
+    path: "{{ kafka_zk_data_dir }}"
+    owner: kafka
+    group: kafka
+    mode: 0770
+
+- name: Template zookeeper.properties
+  template:
+    src: zookeeper.properties.j2
+    dest: "{{ kafka_path }}/config/zookeeper.properties"
+
+- name: Write myid file
+  copy:
+    dest: "{{ kafka_zk_data_dir }}/myid"
+    content: "{{ kafka_broker_id }}"
+
+- name: zookeeper.service
+  template:
+    src: zookeeper.service.j2
+    dest: /etc/systemd/system/zookeeper.service
+
+- name: zookeeper.service enable
+  systemd:
+    name: zookeeper.service
+    daemon_reload: yes
+    enabled: yes
+    state: started

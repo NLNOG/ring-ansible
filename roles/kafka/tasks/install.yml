@@ -1,0 +1,29 @@
+---
+- name: root dir
+  file:
+    state: directory
+    path: "{{ kafka_root }}"
+
+- name: zookeeper root dir
+  file:
+    state: directory
+    path: "{{ kafka_root }}"
+
+- name: Download kafka source code
+  get_url:
+    url: "{{ kafka_binary_url }}"
+    dest: "{{ kafka_root }}/{{ kafka_version }}.tgz"
+    checksum: "{{ kafka_binary_checksum }}"
+
+- name: Unpack
+  unarchive:
+    src: "{{ kafka_root }}/{{ kafka_version }}.tgz"
+    remote_src: yes
+    dest: "{{ kafka_root }}"
+    creates: "{{ kafka_path }}"
+
+- name: Kafka dependencies
+  package:
+    name:
+      - openjdk-8-jdk-headless
+      - kafkacat
