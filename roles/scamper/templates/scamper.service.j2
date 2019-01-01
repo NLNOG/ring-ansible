@@ -1,0 +1,10 @@
+# {{ ansible_managed }}
+
+[Unit]
+Description=Scamper
+
+[Service]
+ExecStart=/usr/bin/scamper -P 23456 -M "{{ ansible_nodename }}" -p {{ scamper_pps }}
+
+[Install]
+WantedBy=multi-user.target
