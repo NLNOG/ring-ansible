@@ -1,5 +1,11 @@
+
 - name: Create scamper user
-  user: name=scamper comment="Scamper measurements" uid=2001 group="ring-users"
+  user:
+    name: scamper
+    comment: Scamper measurements
+    uid: 2001
+    group: ring-users
+    shell: /bin/bash
 
 - name: Set up authorized_keys for the scamper user
   authorized_key: user=scamper key="{{ item }}" state=present
