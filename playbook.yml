@@ -82,11 +82,11 @@
   roles:
     - { role: munin-master, tags: munin-master }
 
-#- hosts: compute02.infra.ring.nlnog.net
-#  become: true
-#  become_user: root
-#  roles:
-#    - { role: kafka, tags: kafka }
+- hosts: compute02.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: kafka, tags: kafka }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
