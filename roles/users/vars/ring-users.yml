@@ -1104,7 +1104,7 @@ USERS:
       - ring-users
 
   algar:
-    state: present
+    state: absent
     company: 'Algar Telecom'
     email: 'cordados@ctbc.com.br'
     uid: 5156
