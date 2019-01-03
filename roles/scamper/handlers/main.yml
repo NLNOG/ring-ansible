@@ -1,5 +1,6 @@
-- name: restart scamper
-  service: name=scamper state=restarted
+---
 
-- name: reload systemd
-  command: systemctl daemon-reload
+- name: Restart scamper.service
+  systemd:
+    name: scamper
+    state: restarted

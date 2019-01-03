@@ -1,47 +1,64 @@
+
 - name: Create scamper user
-  user: name=scamper comment="Scamper measurements" uid=2001 group="ring-users"
+  user:
+    name: scamper
+    comment: Scamper measurements
+    uid: 2001
+    group: ring-users
+    shell: /bin/bash
 
 - name: Set up authorized_keys for the scamper user
-  authorized_key: user=scamper key="{{ item }}" state=present
+  authorized_key:
+    user: scamper
+    key: "{{ item }}"
+    state: present
   with_file:
     - ../keys/scamper.pub
 
 - name: Install scamper packages
-  package: name={{ item }} state=latest
+  package:
+    name: "{{ item }}"
+    state: latest
   with_items:
     - libscamperfile0
     - scamper
 
 - name: Create /home/scamper/traces
-  file: name=/home/scamper/traces state=directory owner=scamper
+  file:
+    name: /home/scamper/traces
+    state: directory
+    owner: scamper
 
-- name: Create scamper upstart
-  template: src=scamper.conf dest=/etc/init/scamper.conf owner=root group=root mode=0644
-  when: ansible_distribution_release == 'precise'
-
-- name: "Create scamper systemd"
+- name: scamper systemd service
   template:
-    src: scamper-sysd.conf
-    dest: /lib/systemd/system/scamper.service
+    src: scamper.service.j2
+    dest: /etc/systemd/system/scamper.service
     owner: root
     group: root
     mode: 0644
-  notify: reload systemd
-  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == 'bionic'
+  notify:
+    - Restart scamper.service
 
-- name: "Delete old scamper files"
-  file: name="{{ item }}" state=absent
+- name: Delete old scamper files
+  file:
+    name: "{{ item }}"
+    state: absent
   with_items:
     - /etc/init/scamper.conf
     - /lib/systemd/system/scamper.conf
-  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == 'bionic'
+    - /lib/systemd/system/scamper.service
 
 - name: Create /home/scamper/run-traces.sh
-  template: src=run-traces.sh dest=/home/scamper/run-traces.sh owner=scamper group="ring-users" mode=0755
+  copy:
+    src: run-traces.sh
+    dest: /home/scamper/run-traces.sh
+    owner: scamper
+    group: ring-users
+    mode: 0755
 
 - name: Create /etc/cron.d/scamper
   template:
-    src: cron.d/scamper
+    src: cron.d/scamper.j2
     dest: /etc/cron.d/scamper
     owner: root
     group: root
@@ -56,8 +73,9 @@
     - /var/spool/cron/crontabs/scamper
     - /var/spool/cron/crontabs/root
 
-- name: reload systemd if needed
-  meta: flush_handlers
-
-- name: Scamper service
-  service: name=scamper state=started enabled=yes
+- name: scamper systemd service
+  systemd:
+    name: scamper
+    state: started
+    enabled: yes
+    daemon_reload: yes
