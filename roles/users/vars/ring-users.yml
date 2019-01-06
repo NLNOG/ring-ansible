@@ -4112,3 +4112,11 @@ USERS:
     groups:
       - ring-users
 
+  misaka:
+    state: present
+    company: 'Misaka Network, Inc.'
+    email: 'noc@misaka.io'
+    uid: 5535
+    groups:
+      - ring-users
+
