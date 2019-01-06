@@ -449,8 +449,11 @@ class commands(object):
         else:
             print >> sys.stderr, "Unable to retrieve IPv6 address from ring db"
         geo=self.ring_getnodeattr(name,"geo")
+        geocontent = None
         if geo:
-            recid=self.add_record(name=name,rtype='LOC',content=self.getgeo(geo),
+            geocontent = self.getgeo(geo)
+        if geocontent:
+            recid=self.add_record(name=name,rtype='LOC',content=geocontent,
                                   ttl=600,prio=0,zone=zone)
             print 'record %s added' % (recid)
         else:
@@ -470,6 +473,8 @@ class commands(object):
         elif attribute=='geo':
             rtype='LOC'
             value=self.getgeo(value)
+            if not value:
+                return None
         else:
             sys.exit('unknown attribute %s' % attribute)
         
