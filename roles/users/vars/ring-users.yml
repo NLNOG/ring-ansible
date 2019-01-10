@@ -4120,3 +4120,11 @@ USERS:
     groups:
       - ring-users
 
+  c3noc:
+    state: present
+    company: 'C3NOC'
+    email: 'hello@c3noc.net'
+    uid: 5536
+    groups:
+      - ring-users
+
