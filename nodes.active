@@ -204,7 +204,6 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
-itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel02.ring.nlnog.net OWNER=viatel V4=46.183.108.2 V6=2a01:8aa0:7f00:0:20c:29ff:fe60:bfac
@@ -346,7 +345,6 @@ fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=221.121.140.194 V6=2400:d400:1:1088:1:1000:0:1054
 chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
-clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 deic01.ring.nlnog.net OWNER=deic V4=130.226.249.126 V6=2001:878:0:e000:82:e2:f9:7e
 netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
 hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
@@ -1169,7 +1167,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [telecityfi]
 
 [itps]
-itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 
 [cyberverse]
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
@@ -1573,7 +1570,6 @@ chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c
 plurimedia01.ring.nlnog.net OWNER=plurimedia V4=213.225.160.175 V6=2001:810:0:14::175
 
 [clouddk]
-clouddk01.ring.nlnog.net OWNER=clouddk V4=185.134.31.241 V6=2a06:eac0:3000::3
 
 [midcore]
 
