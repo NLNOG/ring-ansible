@@ -469,6 +469,7 @@ equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
+godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
@@ -1955,6 +1956,7 @@ telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:2
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 
 [godaddy]
+godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 
 [mitsol]
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
