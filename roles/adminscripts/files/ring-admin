@@ -1439,6 +1439,31 @@ class commands(object):
                   (run['hostname'],run['timestamp'],run['ok'],run['changed'], \
                    run['unreachable'],run['failures'])
 
+    def cmd_health_log(self,hostname=None,family=None):
+        """show health reports from nodes"""
+        runs = None
+        if hostname:
+            if (re.match(r'.*%s$' % ZONE, hostname)):
+                hostname = re.sub('.' + ZONE, '', hostname)
+            if family:
+                runs = self.dbselect('health', hostname=hostname, family=family)
+            else:
+                runs = self.dbselect('health', hostname=hostname)
+        else:
+            q = "select * from health where timestamp >= now() - INTERVAL 1 DAY"
+            runs = self.dbquery(q)
+        for run in runs:
+            summary = simplejson.loads(run['summary'])
+            failed = []
+            for item in summary:
+                if summary[item] == False:
+                    failed.append(item)
+            failedstr = 'none'
+            if len(failed) > 0:
+                failedstr = ','.join(failed)
+            print "%20s %s :\tfamily=%d\tfailed=%s" % \
+                  (run['hostname'],run['timestamp'],run['family'],failedstr)
+
     def cmd_dnscommands(self, hostname):
         """generate dns commands"""
         if not (re.match(r'.*%s$' % ZONE, hostname)):
