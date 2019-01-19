@@ -237,7 +237,7 @@ globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
 riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d6ff:fec2:dcd5
 immense01.ring.nlnog.net OWNER=immense V4=72.194.128.201 V6=2620:8d:4000:1000::10
-bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a01:70:ffff:3::2
+bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a05:7300:0:201::2
 cesnet01.ring.nlnog.net OWNER=cesnet V4=78.128.211.50 V6=2001:718:1:1f:50:56ff:feee:50
 adix01.ring.nlnog.net OWNER=adix V4=89.200.203.138 V6=2001:67C:6B8:100::138
 sasag01.ring.nlnog.net OWNER=sasag V4=87.245.64.185 V6=2a00:d80::1:184
@@ -1258,7 +1258,7 @@ riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d
 immense01.ring.nlnog.net OWNER=immense V4=72.194.128.201 V6=2620:8d:4000:1000::10
 
 [bchnetwork]
-bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a01:70:ffff:3::2
+bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a05:7300:0:201::2
 
 [cesnet]
 cesnet01.ring.nlnog.net OWNER=cesnet V4=78.128.211.50 V6=2001:718:1:1f:50:56ff:feee:50
