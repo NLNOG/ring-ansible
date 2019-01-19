@@ -16,6 +16,24 @@
     state: link
   notify: restart apache2
 
+- name: "Install apache2 main config"
+  copy:
+    src="apache2.conf"
+    dest="/etc/apache2/apache2.conf"
+    owner=root
+    group=root
+    mode=0644
+  notify: restart apache2
+
+- name: "Install wsgi daemon config"
+  copy:
+    src="wsgi_daemons.conf"
+    dest="/etc/apache2/wsgi_daemons.conf"
+    owner=root
+    group=root
+    mode=0644
+  notify: restart apache2
+
 - name: "Create vhost directories"
   file:
     path: "/var/www/{{ item }}.ring.nlnog.net"
