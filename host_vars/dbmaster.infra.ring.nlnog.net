@@ -3,8 +3,12 @@ need_mysql_server: true
 ansible_master: true
 apache_vhosts:
   - api
+  - api4
+  - api6
 letsencrypt_certs:
   - api
+  - api4
+  - api6
 
 LOCAL_USERS:
   ringforger:
