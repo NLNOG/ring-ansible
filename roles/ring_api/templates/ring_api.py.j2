@@ -216,6 +216,10 @@ def dbinsert_ansible_result(hostname,results):
                   skipped=results['skipped'],
                   failures=results['failures'])
 
+def dbinsert_health_report(hostname,family,results):
+    dbinsert('health', hostname=hostname, family=family,
+             summary=results)
+
 def mk_json(results=None,count=None,errormsg=None):
     if not results:
         if not errormsg:
@@ -474,10 +478,29 @@ def register_ansible_run():
     except socket.herror:
         pass
     if hostname and run_result:
-        #print run_result
         dbinsert_ansible_result(hostname,ast.literal_eval(run_result))
         return jsonify({'hostname':hostname,'results':run_result})
-    return '.'
+    return jsonify({})
+
+@app.route('/1.0/health_report', methods = ['POST'])
+def register_health_report():
+    run_result = request.data
+    client = request.remote_addr
+
+    hostname = None
+    family = None
+    try:
+        hostname = socket.gethostbyaddr(client)[0]
+        if re.search(':',hostname):
+            family = 6
+        else:
+            family = 4
+    except socket.herror:
+        pass
+    if hostname and run_result:
+        dbinsert_health_report(hostname,family,run_result)
+        return jsonify({'info':{'success':1}})
+    return jsonify({})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True)
