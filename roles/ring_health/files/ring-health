@@ -9,6 +9,7 @@ import datetime
 import json
 import os
 import re
+import requests
 import subprocess
 import sys
 import time
@@ -18,6 +19,9 @@ DOMAIN='ring.nlnog.net'
 CRONPATH='/etc/cron.d/ansible'
 LOGPATH='/var/log/ansible/ansible.log'
 WEBPATH='/var/www/ring'
+API4='api4.ring.nlnog.net'
+API6='api6.ring.nlnog.net'
+APIPATH='/1.0/health_report'
 
 def main(argv):
     result = dict()
@@ -26,9 +30,11 @@ def main(argv):
     try:
         infranodes = get_infranodes()
 
+        # Filesystem checks
         health['mountstatus_root'] = check_mountstatus()
         health['diskspace_root'] = check_diskspace()
 
+        # L3 connectivity checks
         health['ipv6_addresses'] = check_ipv6_addr()
         if health['ipv6_addresses']:
             health['ipv6_gateway'] = check_ipv6_gw()
@@ -50,9 +56,16 @@ def main(argv):
             health['ipv4_gateway'] = False
             health['ipv4_reachability'] = False
 
+        # DNS checks
         health['dns_config'] = check_dnsconfig()
         health['dns_resolvers'] = check_resolvers()
 
+        # HTTP/HTTPS checks
+        health['https_github'] = check_weburl('https://github.com/')
+        health['http_bitrepo'] = check_weburl('http://ftp.bit.nl/ubuntu')
+        health['http_ringrepo'] = check_weburl('http://apt.ring.nlnog.net/deb/dists/ring/Release')
+
+        # Ansible checks
         health['ansible_cron'] = check_ansible_cron()
         health['ansible_run'] = check_ansible_run()
 
@@ -60,6 +73,13 @@ def main(argv):
     except:
         result['info']['success'] = False
 
+    # Post results to RING API
+    health_api4 = report_health(4,health)
+    health_api6 = report_health(6,health)
+    health['ipv4_ringapi'] = health_api4
+    health['ipv6_ringapi'] = health_api6
+
+    # Store results on disk
     result['info']['date'] = datetime.datetime.now().isoformat()
     result['health'] = health
     with open(WEBPATH + '/status.json', 'w') as of:
@@ -245,8 +265,14 @@ def check_resolvers():
             return False
     return True
 
-def check_https(hostname):
-    '''HTTPS website reachability'''
+def check_weburl(uri):
+    '''Check HTTP/HTTPS reachability'''
+    try:
+        r = requests.get(uri)
+        if r.status_code == 200:
+            return True
+    except requests.exceptions.ConnectionError:
+        pass
     return False
 
 def check_ansible_cron():
@@ -266,6 +292,20 @@ def check_ansible_run(age=21600):
     if (time.time() - mtime) < age:
         return True
     return False
+
+def report_health(family,health):
+    '''Report health to RING API'''
+    hostname = API4
+    if family == 6:
+        hostname = API6
+    summary = json.dumps(health)
+    try:
+        requests.post('https://' + hostname + APIPATH, data=summary, timeout=122)
+        return True
+    except requests.exceptions.ConnectionError:
+        pass
+    return False
+
 
 if __name__ == "__main__":
         main(sys.argv)
