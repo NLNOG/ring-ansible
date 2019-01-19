@@ -491,7 +491,7 @@ def register_health_report():
     family = None
     try:
         hostname = socket.gethostbyaddr(client)[0]
-        if re.search(':',hostname):
+        if re.search(':',client):
             family = 6
         else:
             family = 4
