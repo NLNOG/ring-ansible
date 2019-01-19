@@ -62,8 +62,8 @@ def main(argv):
 
         # HTTP/HTTPS checks
         health['https_github'] = check_weburl('https://github.com/')
-        health['http_bitrepo'] = check_weburl('http://ftp.bit.nl/ubuntu')
-        health['http_ringrepo'] = check_weburl('http://apt.ring.nlnog.net/deb/dists/ring/Release')
+        health['http_aptrepo_bit'] = check_weburl('http://ftp.bit.nl/ubuntu')
+        health['http_aptrepo_ring'] = check_weburl('http://apt.ring.nlnog.net/deb/dists/ring/Release')
 
         # Ansible checks
         health['ansible_cron'] = check_ansible_cron()
