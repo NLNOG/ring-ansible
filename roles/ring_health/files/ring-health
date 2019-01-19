@@ -187,7 +187,7 @@ def check_ipv6_hosts(addresses,minimum=1):
     return False
 
 def check_ipv4_addr():
-    '''System must have a single, globally reachable IPv4 address'''
+    '''System must have a globally reachable IPv4 address'''
     address_count = 0
     result = subprocess.run(['ip', '-4', 'addr', 'list'],
                             stdout=subprocess.PIPE)
@@ -195,7 +195,7 @@ def check_ipv4_addr():
         if not re.search('scope global', line):
             continue
         address_count = address_count + 1
-    if address_count == 1:
+    if address_count >= 1:
         return True
     return False
 
