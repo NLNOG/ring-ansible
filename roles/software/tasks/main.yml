@@ -75,6 +75,7 @@
     - python-setuptools
     - python-simplejson
     - python-virtualenv
+    - python3-requests
     - rsync
     - ruby
     - screen
