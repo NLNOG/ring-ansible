@@ -406,8 +406,9 @@ def get_nodes_active():
     return mk_json(results={'nodes':nodelist},count=len(nodelist))
 
 @app.route('/1.0/nodes/active/protocol/<string:protocol>', methods = ['GET'])
-def get_nodes_active_protocol():
+def get_nodes_active_protocol(protocol):
     reset_error()
+    protocol = protocol.lower()
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
