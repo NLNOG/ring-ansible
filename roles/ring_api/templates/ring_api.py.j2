@@ -149,6 +149,8 @@ def dbget_nodes(dbconn=None):
                        'datacenter':n['dc'],
                        'geo':n['geo'],
                        'active':n['active'],
+                       'alive_ipv4':n['alive_v4'],
+                       'alive_ipv6':n['alive_v6'],
                        'participant':participant
                       })
     except KeyError as err:
@@ -248,6 +250,7 @@ def get_api_1_0():
         'nodes/country/[countrycode]':'Nodes by country',
         'nodes/country/[countrycode]/state/[statecode]':'Nodes by country/state',
         'nodes/active':'Active nodes',
+        'nodes/active/protocol/[ipv4|ipv6]':'Active nodes by IP protocol',
         'nodes/active/country/[countrycode]':'Active nodes by country',
         'nodes/active/country/[countrycode]/state/[statecode]':'Active nodes by country/state',
         'participants/[id]/nodes':'Nodes by participant id',
@@ -393,6 +396,22 @@ def get_nodes_active():
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
+    except TypeError:
+        pass
+    except KeyError as err:
+        set_error("Filter key %s not found" % err)
+
+    if get_error():
+        return mk_json(errormsg=set_error())
+    return mk_json(results={'nodes':nodelist},count=len(nodelist))
+
+@app.route('/1.0/nodes/active/protocol/<string:protocol>', methods = ['GET'])
+def get_nodes_active():
+    reset_error()
+    nodelist = dbget_nodes()
+    try:
+        nodelist = filter(lambda n: n['active'] == 1, nodelist)
+        nodelist = filter(lambda n: n['alive_' + protocol] == 1, nodelist)
     except TypeError:
         pass
     except KeyError as err:
