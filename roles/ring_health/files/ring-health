@@ -36,25 +36,11 @@ def main(argv):
 
         # L3 connectivity checks
         health['ipv6_addresses'] = check_ipv6_addr()
-        if health['ipv6_addresses']:
-            health['ipv6_gateway'] = check_ipv6_gw()
-            if health['ipv6_gateway']:
-                health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
-            else:
-                health['ipv6_reachability'] = False
-        else:
-            health['ipv6_gateway'] = False
-            health['ipv6_reachability'] = False
+        health['ipv6_gateway'] = check_ipv6_gw()
+        health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
         health['ipv4_addresses'] = check_ipv4_addr()
-        if health['ipv4_addresses']:
-            health['ipv4_gateway'] = check_ipv4_gw()
-            if health['ipv4_gateway']:
-                health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
-            else:
-                health['ipv4_reachability'] = False
-        else:
-            health['ipv4_gateway'] = False
-            health['ipv4_reachability'] = False
+        health['ipv4_gateway'] = check_ipv4_gw()
+        health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
 
         # DNS checks
         health['dns_config'] = check_dnsconfig()
@@ -170,7 +156,7 @@ def check_ipv6_gw():
             continue
         ping_result = subprocess.run(['ping6', '-c', '3', '-I', iface, gw],
                                      stdout=subprocess.PIPE)
-        if ping_result.returncode != 1:
+        if ping_result.returncode == 0:
             return True
     return False
 
@@ -180,7 +166,7 @@ def check_ipv6_hosts(addresses,minimum=1):
     for address in addresses:
         ping_result = subprocess.run(['ping6', '-c', '3', address],
                                      stdout=subprocess.PIPE)
-        if ping_result.returncode != 1:
+        if ping_result.returncode == 0:
             pingable = pingable + 1
     if pingable >= minimum:
         return True
@@ -213,7 +199,7 @@ def check_ipv4_gw():
         gw = route_vars[2]
         ping_result = subprocess.run(['ping', '-c', '3', gw],
                                      stdout=subprocess.PIPE)
-        if ping_result.returncode != 1:
+        if ping_result.returncode == 0:
             return True
     return False
 
@@ -223,7 +209,7 @@ def check_ipv4_hosts(addresses,minimum=1):
     for address in addresses:
         ping_result = subprocess.run(['ping', '-c', '3', address],
                                      stdout=subprocess.PIPE)
-        if ping_result.returncode != 1:
+        if ping_result.returncode == 0:
             pingable = pingable + 1
     if pingable >= minimum:
         return True
