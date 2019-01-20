@@ -406,7 +406,7 @@ def get_nodes_active():
     return mk_json(results={'nodes':nodelist},count=len(nodelist))
 
 @app.route('/1.0/nodes/active/protocol/<string:protocol>', methods = ['GET'])
-def get_nodes_active():
+def get_nodes_active_protocol():
     reset_error()
     nodelist = dbget_nodes()
     try:
