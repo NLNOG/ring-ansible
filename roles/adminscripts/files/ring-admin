@@ -589,6 +589,8 @@ class commands(object):
         machines = self.dbget(q)
         for m in machines:
             hostname = re.sub('.' + ZONE, '', m['hostname'])
+
+            # Process ansible runs
             m['seen'] = 0
             m['failed'] = 0
             q = "select * from ansible where hostname='%s' and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
@@ -598,6 +600,18 @@ class commands(object):
                 if run['unreachable'] > 0 or run['failures'] > 0:
                     m['failed'] = 1
 
+            # Process health reports
+            q = "select * from health where hostname='%s' and family=4 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
+            health_v4 = self.dbquery(q)
+            m['seen_v4'] = 0
+            for h in health_v4:
+                m['seen_v4'] = 1
+            m['seen_v6'] = 0
+            q = "select * from health where hostname='%s' and family=6 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
+            health_v6 = self.dbquery(q)
+            for h in health_v6:
+                m['seen_v6'] = 1
+
         total = 0
         active = 0
         inactive = 0
@@ -606,11 +620,24 @@ class commands(object):
         failed = []
         failed_admin = []
         missing_admin = []
+        alive_v4 = []
+        dead_v4 = []
+        alive_v6 = []
+        dead_v6 = []
         # Hardcoded ignore list
         exceptions = {}
         #exceptions['hostname'] = 1
 
         for m in machines:
+            if m['seen_v4'] == 1 and m['alive_v4'] != 1:
+                alive_v4.append(m['hostname'])
+            if m['seen_v4'] == 0 and m['alive_v4'] != 0:
+                dead_v4.append(m['hostname'])
+            if m['seen_v6'] == 1 and m['alive_v6'] != 1:
+                alive_v6.append(m['hostname'])
+            if m['seen_v6'] == 0 and m['alive_v6'] != 0:
+                dead_v6.append(m['hostname'])
+
             if m['admin'] == 1:
                 if m['failed'] == 1:
                     failed_admin.append(m['hostname'])
@@ -655,6 +682,7 @@ class commands(object):
           report = report + "  - %s\n" % (f)
         report = report + "\n"
 
+        # Run activate/deactive changes
         for a in activate:
             machid = self.hostname2mid(a)
             if not machid:
@@ -673,6 +701,34 @@ class commands(object):
                 self.deactivate_machine(machid)
                 print 'machine %s marked as inactive' % (d)
             report = report + "%d nodes deactivated.\n" % len(deactivate)
+
+        # Update alive/dead status
+        for a in alive_v4:
+            machid = self.hostname2mid(a)
+            if not machid:
+                pass
+            self.dbupdate('machines', machid, **{'alive_v4': 1})
+        for a in alive_v6:
+            machid = self.hostname2mid(a)
+            if not machid:
+                pass
+            self.dbupdate('machines', machid, **{'alive_v6': 1})
+        if len(dead_v4) > 10:
+            report = report + "More than 10 missing nodes on ipv4 since last run. Health update skipped.\n"
+        else:
+            for d in dead_v4:
+                machid = self.hostname2mid(a)
+                if not machid:
+                    continue
+                self.dbupdate('machines', machid, **{'alive_v4': 0})
+        if len(dead_v6) > 10:
+            report = report + "More than 10 missing nodes on ipv6 since last run. Health update skipped.\n"
+        else:
+            for d in dead_v6:
+                machid = self.hostname2mid(a)
+                if not machid:
+                    continue
+                self.dbupdate('machines', machid, **{'alive_v6': 0})
 
         text = Template(ANSIBLEREPORTEMAIL)
         mailbody = text.substitute(adminemail=ADMINEMAIL,contents=report)
