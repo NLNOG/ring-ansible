@@ -717,7 +717,7 @@ class commands(object):
             report = report + "More than 10 missing nodes on ipv4 since last run. Health update skipped.\n"
         else:
             for d in dead_v4:
-                machid = self.hostname2mid(a)
+                machid = self.hostname2mid(d)
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v4': 0})
@@ -725,7 +725,7 @@ class commands(object):
             report = report + "More than 10 missing nodes on ipv6 since last run. Health update skipped.\n"
         else:
             for d in dead_v6:
-                machid = self.hostname2mid(a)
+                machid = self.hostname2mid(d)
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v6': 0})
