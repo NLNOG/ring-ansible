@@ -1995,3 +1995,5 @@ misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 
 [c3noc]
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
+
+[level66network]
