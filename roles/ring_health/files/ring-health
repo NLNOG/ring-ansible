@@ -254,7 +254,7 @@ def check_resolvers():
 def check_weburl(uri):
     '''Check HTTP/HTTPS reachability'''
     try:
-        r = requests.get(uri)
+        r = requests.get(uri,timeout=122)
         if r.status_code == 200:
             return True
     except requests.exceptions.ConnectionError:
