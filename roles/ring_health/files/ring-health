@@ -22,6 +22,7 @@ WEBPATH='/var/www/ring'
 API4='api4.ring.nlnog.net'
 API6='api6.ring.nlnog.net'
 APIPATH='/1.0/health_report'
+WEBTIMEOUT=122
 
 def main(argv):
     result = dict()
@@ -254,10 +255,10 @@ def check_resolvers():
 def check_weburl(uri):
     '''Check HTTP/HTTPS reachability'''
     try:
-        r = requests.get(uri,timeout=122)
+        r = requests.get(uri,timeout=WEBTIMEOUT)
         if r.status_code == 200:
             return True
-    except requests.exceptions.ConnectionError:
+    except Exception:
         pass
     return False
 
@@ -286,9 +287,11 @@ def report_health(family,health):
         hostname = API6
     summary = json.dumps(health)
     try:
-        requests.post('https://' + hostname + APIPATH, data=summary, timeout=122)
-        return True
-    except requests.exceptions.ConnectionError:
+        r = requests.post('https://' + hostname + APIPATH, data=summary, timeout=WEBTIMEOUT)
+        j = json.loads(r.text)
+        if j['info']['success'] == 1:
+            return True
+    except Exception:
         pass
     return False
 
