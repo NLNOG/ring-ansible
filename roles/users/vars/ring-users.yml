@@ -4136,3 +4136,11 @@ USERS:
     groups:
       - ring-users
 
+  technoserv:
+    state: present
+    company: 'Technoserv'
+    email: 'OAlexeenko@technoserv.com'
+    uid: 5538
+    groups:
+      - ring-users
+

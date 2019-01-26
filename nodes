@@ -2047,3 +2047,5 @@ c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 
 [level66network]
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
+
+[technoserv]

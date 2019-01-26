@@ -359,7 +359,6 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
-novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
@@ -483,7 +482,6 @@ sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
-level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
 
 [infranode]
 
@@ -1622,7 +1620,6 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 
 [novoserve]
-novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
 
 [cvo]
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
@@ -1998,4 +1995,5 @@ misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 
 [level66network]
-level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
+
+[technoserv]
