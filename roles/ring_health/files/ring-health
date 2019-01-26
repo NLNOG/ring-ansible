@@ -28,33 +28,49 @@ def main(argv):
     result = dict()
     result['info'] = dict()
     health = dict()
+    descriptions = dict()
     try:
         infranodes = get_infranodes()
 
         # Filesystem checks
         health['mountstatus_root'] = check_mountstatus()
+        descriptions['mountstatus_root'] = "The root filesystem is in read/write status"
         health['diskspace_root'] = check_diskspace()
+        descriptions['diskspace_root'] = "The root filesystem has enough free disk space"
 
         # L3 connectivity checks
         health['ipv6_addresses'] = check_ipv6_addr()
+        descriptions['ipv6_addresses'] = "The IPv6 address of the node matches the ring database"
         health['ipv6_gateway'] = check_ipv6_gw()
+        descriptions['ipv6_gateway'] = "The IPv6 gateway is reachable"
         health['ipv6_reachability'] = check_ipv6_hosts(infranodes['V6'])
+        descriptions['ipv6_reachability'] = "There is IPv6 connectivity beyond the gateway"
         health['ipv4_addresses'] = check_ipv4_addr()
+        descriptions['ipv4_addresses'] = "The IPv4 address of the node matches the ring database"
         health['ipv4_gateway'] = check_ipv4_gw()
+        descriptions['ipv4_gateway'] = "The IPv4 gateway is reachable"
         health['ipv4_reachability'] = check_ipv4_hosts(infranodes['V4'])
+        descriptions['ipv4_reachability'] = "There is IPv4 connectivity beyond the gateway"
 
         # DNS checks
         health['dns_config'] = check_dnsconfig()
+        descriptions['dns_config'] = "The local host is configured as DNS resolver"
         health['dns_resolvers'] = check_resolvers()
+        descriptions['dns_resolvers'] = "The configured DNS resolvers are functioning"
 
         # HTTP/HTTPS checks
         health['https_github'] = check_weburl('https://github.com/')
+        descriptions['https_github'] = "A webrequest for 'https://github.com/' succeeded"
         health['http_aptrepo_bit'] = check_weburl('http://ftp.bit.nl/ubuntu')
+        descriptions['http_aptrepo_bit'] = "A webrequest for 'http://ftp.bit.nl/ubuntu' succeeded"
         health['http_aptrepo_ring'] = check_weburl('http://apt.ring.nlnog.net/deb/dists/ring/Release')
+        descriptions['http_aptrepo_ring'] = "A webrequest for 'http://apt.ring.nlnog.net/deb/dists/ring/Release' succeeded"
 
         # Ansible checks
         health['ansible_cron'] = check_ansible_cron()
+        descriptions['ansible_cron'] = "The ansible cron job is correctly configured"
         health['ansible_run'] = check_ansible_run()
+        descriptions['ansible_run'] = "Ansible has recently run"
 
         result['info']['success'] = True
     except:
@@ -64,11 +80,16 @@ def main(argv):
     health_api4 = report_health(4,health)
     health_api6 = report_health(6,health)
     health['ipv4_ringapi'] = health_api4
+    descriptions['ipv4_ringapi'] = "Pushing this health report to the IPv4 ring API succeeded"
     health['ipv6_ringapi'] = health_api6
+    descriptions['ipv6_ringapi'] = "Pushing this health report to the IPv6 ring API succeeded"
+    if not health_api4 or not health_api6:
+        result['info']['success'] = False
 
     # Store results on disk
     result['info']['date'] = datetime.datetime.now().isoformat()
     result['health'] = health
+    result['descriptions'] = descriptions
     with open(WEBPATH + '/status.json', 'w') as of:
         json.dump(result, of, indent=2)
     of.close()
