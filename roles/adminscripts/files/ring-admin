@@ -211,6 +211,48 @@ this situation?
 
 This concerns the machine with hostname "$hostname"
 
+For details on the problem, please see: http://$hostname/status.json
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
+V4DOWNMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: Problem with IPv4 connectivity on NLNOG RING node for $company
+
+Dear $company
+
+It appears the node you made available to the NLNOG RING project is no longer
+online on IPv4. Can you please investigate and let us know whether you could
+remedy this situation?
+
+This concerns the machine with hostname "$hostname"
+
+For details on the problem, please see: http://$hostname/status.json
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
+V6DOWNMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: Problem with IPv6 connectivity on NLNOG RING node for $company
+
+Dear $company
+
+It appears the node you made available to the NLNOG RING project is no longer
+online on IPv6. Can you please investigate and let us know whether you could
+remedy this situation?
+
+This concerns the machine with hostname "$hostname"
+
+For details on the problem, please see: http://$hostname/status.json
+
 Kind regards,
 
 NLNOG RING Admins
@@ -810,7 +852,7 @@ class commands(object):
             self.sendmail(ADMINEMAIL,RINGUSERSEMAIL,mailbody)
             print "Done."
 
-    def generate_downmail(self, hostname, send=None):
+    def generate_downmail(self, hostname, send=None, template=DOWNMAIL):
         uid = self.hostname2uid(hostname)
         if not uid:
             sys.exit('machine %s not found' % hostname)
@@ -820,7 +862,7 @@ class commands(object):
         p = self.dbselectone('participants', id=partid)
         if not p:
             sys.exit('participant %s not found' % partid)
-        text = Template(DOWNMAIL)
+        text = Template(template)
         mailbody = text.substitute(company=p['company'], nocemail=p['nocemail'],
                                    email=p['email'],
                                    hostname=hostname,
@@ -869,17 +911,53 @@ class commands(object):
             if owner['admin'] == 1:
                 continue
             reminders.append(hostname)
+
+        v4_reminders = []
+        v6_reminders = []
+        machines = self.dbselect('machines', active=1)
+        for m in machines:
+            hostname = m['hostname']
+            owner = self.dbselectone('users', id=m['owner'])
+            if owner['active'] == 0:
+                continue
+            if owner['admin'] == 1:
+                continue
+            if m['alive_v4'] == 0 and m['alive_v6'] == 0:
+                reminders.append(hostname)
+            elif m['v4'] and m['alive_v4'] == 0:
+                v4_reminders.append(hostname)
+            elif m['v6'] and m['alive_v6'] == 0:
+                v6_reminders.append(hostname)
+
         print "Inactive machines with active owners:"
         for host in sorted(reminders):
             print "- %s" % (host)
         print ""
         print "Total: %d" % (len(reminders))
+        print "Active machines with broken IPv4:"
+        for host in sorted(v4_reminders):
+            print "- %s" % (host)
+        print ""
+        print "Total: %d" % (len(v4_reminders))
+        print "Active machines with broken IPv6:"
+        for host in sorted(v6_reminders):
+            print "- %s" % (host)
+        print ""
+        print "Total: %d" % (len(v6_reminders))
 
         if send:
             print "Sending mail"
             for host in sorted(reminders):
                 print "...%s" % (host)
-                self.generate_downmail(host,1)
+                self.generate_downmail(host,send=1)
+                time.sleep(1)
+            for host in sorted(v4_reminders):
+                print "...%s" % (host)
+                self.generate_downmail(host,send=1,template=V4DOWNMAIL)
+                time.sleep(1)
+            for host in sorted(v6_reminders):
+                print "...%s" % (host)
+                self.generate_downmail(host,send=1,template=V6DOWNMAIL)
                 time.sleep(1)
             print "Done."
 
@@ -1590,7 +1668,7 @@ class commands(object):
         """send node down notification"""
         if not (re.match(r'.*%s$' % ZONE, hostname)):
             hostname = hostname + "." + ZONE
-        self.generate_downmail(hostname,1)
+        self.generate_downmail(hostname,send=1)
 
     def cmd_generate_downreminders(self):
         """show node down reminders to be sent"""
