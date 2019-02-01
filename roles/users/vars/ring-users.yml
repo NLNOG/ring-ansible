@@ -4144,3 +4144,11 @@ USERS:
     groups:
       - ring-users
 
+  inberlin:
+    state: present
+    company: 'Individual Network Berlin e.V.'
+    email: 'noc@in-berlin.de'
+    uid: 5539
+    groups:
+      - ring-users
+

@@ -399,7 +399,7 @@ ebox03.ring.nlnog.net OWNER=ebox V4=172.93.16.166 V6=2606:6d00:eb0:800::2
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
-grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
+grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 ragefour01.ring.nlnog.net OWNER=ragefour V4=185.145.200.76 V6=2a05:b0c4::76
 cologuard01.ring.nlnog.net OWNER=cologuard V4=192.157.82.100 V6=2604:eb80:4:4::4
@@ -501,6 +501,7 @@ breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:25
 misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
+inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1741,7 +1742,7 @@ kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
 
 [grifon]
-grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.210 V6=2a00:5884:102:1::2
+grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 
 [feldsam]
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
@@ -2049,3 +2050,6 @@ c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
 
 [technoserv]
+
+[inberlin]
+inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
