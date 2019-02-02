@@ -10,6 +10,7 @@ ff02::2 ip6-allrouters
 2001:1AF8:4013::24  puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 95.211.149.24   puppet master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 
+# RING hosts
 {% for host in groups['all']|sort %}
 {% set short_id = host|regex_replace("\.ring\.nlnog\.net", "") %}
 {% if hostvars[host]['V6']|default(None) %}
@@ -20,6 +21,7 @@ ff02::2 ip6-allrouters
 {% endif %}
 {% endfor %}
 
+# Proxy hosts
 {% if V4|default(None) == None %}
 {{ proxy_github }} github.com public02.infra public02.infra.ring.nlnog.net
 {{ proxy_pypi }} pypi.python.org public02.infra public02.infra.ring.nlnog.net

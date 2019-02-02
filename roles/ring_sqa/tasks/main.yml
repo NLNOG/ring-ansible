@@ -79,3 +79,19 @@
 - service: name=ring-sqa4 state=started enabled=yes
 - service: name=ring-sqa6 state=started enabled=yes
 
+- name: check /etc/hosts age
+  stat: path=/etc/hosts
+  register: etc_hosts_file
+
+- name: restart sqa4 on change in /etc/hosts
+  vars:
+    etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
+  service: name=ring-sqa4 state=restarted
+  when: ansible_date_time.epoch < etc_hosts_check_age
+
+- name: restart sqa6 on change in /etc/hosts
+  vars:
+    etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
+  service: name=ring-sqa4 state=restarted
+  when: ansible_date_time.epoch < etc_hosts_check_age
+
