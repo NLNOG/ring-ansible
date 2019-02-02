@@ -58,6 +58,10 @@ def main(argv):
         health['dns_resolvers'] = check_resolvers()
         descriptions['dns_resolvers'] = "The configured DNS resolvers are functioning"
 
+        # NTP check
+        health['ntp_status'] = check_ntp()
+        descriptions['ntp_status'] = "NTP is running and the clock is synchronized"
+
         # HTTP/HTTPS checks
         health['https_github'] = check_weburl('https://github.com/')
         descriptions['https_github'] = "A webrequest for 'https://github.com/' succeeded"
@@ -272,6 +276,16 @@ def check_resolvers():
         if len(dig_result.stdout.decode('utf-8')) < 1:
             return False
     return True
+
+def check_ntp():
+    '''Clock is synced with NTP'''
+    ntp_result = subprocess.run(['ntpctl', '-s', 'status'],
+                                 stdout=subprocess.PIPE)
+    if ntp_result.returncode != 0:
+        return False
+    if re.search('clock synced',ntp_result.stdout.decode('utf-8')):
+        return True
+    return False
 
 def check_weburl(uri):
     '''Check HTTP/HTTPS reachability'''
