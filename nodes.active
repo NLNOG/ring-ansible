@@ -2005,3 +2005,5 @@ level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11
 
 [inberlin]
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
+
+[g8net]

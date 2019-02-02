@@ -4152,3 +4152,11 @@ USERS:
     groups:
       - ring-users
 
+  g8net:
+    state: present
+    company: 'G8'
+    email: 'lucenildo@g8.net.br'
+    uid: 5540
+    groups:
+      - ring-users
+
