@@ -52,21 +52,30 @@
     dest: /opt/mitogen
     version: stable
     update: "{{ mitogen_update }}"
-  when: ansible_distribution_release != "precise"
+  when: ansible_distribution_release != "precise" and mitogen == true
 
 - name: "Check for mitogen ansible plugin installation"
   stat:
     path: /opt/mitogen/ansible_mitogen/plugins/strategy/mitogen.py
-  register: mitogen
+  register: mitogen_plugin
 
 - name: "Update ansible.cfg (mitogen)"
+  copy:
+    src=ansible_mitogen.cfg
+    dest=/etc/ansible/ansible.cfg
+    owner=root
+    group=root
+    mode=0644
+  when: mitogen_plugin.stat.exists == True and mitogen == true
+
+- name: "Update ansible.cfg (no mitogen)"
   copy:
     src=ansible.cfg
     dest=/etc/ansible/ansible.cfg
     owner=root
     group=root
     mode=0644
-  when: mitogen.stat.exists == True
+  when: mitogen_plugin.stat.exists == False or mitogen != true
 
 #### END Ansible from pkgs
 

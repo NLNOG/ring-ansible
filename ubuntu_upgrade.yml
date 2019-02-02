@@ -3,7 +3,7 @@
   become_user: root
   roles:
     - { role: apt, tags: apt }
-    - { role: ansible, tags: ansible, mitogen_update: yes }
+    - { role: ansible, tags: ansible, mitogen: no }
   tasks:
     - name: "Configure temporary dpkg options" 
       copy:
@@ -185,7 +185,7 @@
   become_user: root
   roles:
     - { role: apt, tags: apt }
-    - { role: ansible, tags: ansible }
+    - { role: ansible, tags: ansible, mitogen: no }
   tasks:
     - name: "Remove temporary dpkg configuration" 
       file:
