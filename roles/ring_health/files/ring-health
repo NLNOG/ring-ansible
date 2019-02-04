@@ -76,7 +76,13 @@ def main(argv):
         health['ansible_run'] = check_ansible_run()
         descriptions['ansible_run'] = "Ansible has recently run"
 
-        result['info']['success'] = True
+        result['info']['success'] = False
+        for key in health:
+            if health[key] == False:
+                result['info']['success'] = False
+                break
+            else:
+                result['info']['success'] = True
     except:
         result['info']['success'] = False
 
