@@ -2976,7 +2976,7 @@ USERS:
       - ring-users
 
   clouddk:
-    state: present
+    state: absent
     company: 'Cloud.dk'
     email: 'noc@cloud.dk'
     uid: 5394
