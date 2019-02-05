@@ -402,7 +402,6 @@ limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a:
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
-mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
@@ -468,6 +467,7 @@ profitbricks01.ring.nlnog.net OWNER=profitbricks V4=46.16.72.7 V6=2a02:2478::666
 ionswitch01.ring.nlnog.net OWNER=ionswitch V4=66.11.126.68 V6=2605:fb80:e000:9d18::1
 equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
+wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
@@ -480,7 +480,6 @@ nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
 hosting4real01.ring.nlnog.net OWNER=hosting4real V4=213.184.86.100 V6=2a09:3a00:3a00::1337
 overthewire01.ring.nlnog.net OWNER=overthewire V4=119.17.170.245 V6=2402:c00:0:31::4
 greenmini01.ring.nlnog.net OWNER=greenmini V4=185.200.102.77 V6=2a0a:aa42:321:2000::10
-sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:dc01::b962:ebe
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
@@ -1751,7 +1750,6 @@ nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3ef
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
 
 [mosaic]
-mosaic01.ring.nlnog.net OWNER=mosaic V4=185.125.185.22 V6=2a06:bc40:1:2::cfde:fade
 
 [netgroup]
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
@@ -1951,6 +1949,7 @@ equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 
 [wilhelmtel]
+wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 
 [telekomhu]
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
@@ -1989,7 +1988,6 @@ overthewire01.ring.nlnog.net OWNER=overthewire V4=119.17.170.245 V6=2402:c00:0:3
 greenmini01.ring.nlnog.net OWNER=greenmini V4=185.200.102.77 V6=2a0a:aa42:321:2000::10
 
 [sedmiodjel]
-sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:dc01::b962:ebe
 
 [breedbandnl]
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
