@@ -4,7 +4,7 @@
     state: directory
     mode: 0755
 
-- name: "Install the ring-health script"
+- name: "Install ring-health script"
   copy:
     src=ring-health
     dest=/usr/local/sbin/ring-health
