@@ -480,6 +480,7 @@ c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.20 V6=2a09:11c0:0:101::fefe
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
 g8net01.ring.nlnog.net OWNER=g8net V4=186.226.82.27 V6=2804:39c:1001::67
+lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:a:101::2
 
 [infranode]
 
@@ -1999,3 +2000,4 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018
 g8net01.ring.nlnog.net OWNER=g8net V4=186.226.82.27 V6=2804:39c:1001::67
 
 [lnkro]
+lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:a:101::2
