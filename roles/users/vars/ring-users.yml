@@ -4160,3 +4160,11 @@ USERS:
     groups:
       - ring-users
 
+  lnkro:
+    state: present
+    company: 'LNK Systems Muntenia SRL'
+    email: 'noc@lnk.ro'
+    uid: 5541
+    groups:
+      - ring-users
+
