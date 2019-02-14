@@ -1528,7 +1528,7 @@ USERS:
       - ring-users
 
   lightstorm:
-    state: absent
+    state: present
     company: 'LightStorm Communications s.r.o.'
     email: 'csc@lightstorm.sk'
     uid: 5210
