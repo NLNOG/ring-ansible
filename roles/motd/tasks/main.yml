@@ -36,3 +36,12 @@
     minute: 15
     user: root
 
+- name: "Disable the News MOTD line on Ubuntu 18.04"
+  lineinfile:
+    path: /etc/default/motd-news
+    regexp: '^ENABLED='
+    line: 'ENABLED=0'
+    owner: root
+    group: root
+    mode: 0644
+  when: ansible_distribution_release == "bionic"
