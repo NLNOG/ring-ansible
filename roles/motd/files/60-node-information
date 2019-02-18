@@ -24,11 +24,18 @@ def get_admininfo(pid):
 
 def get_countryname(country,state):
     cname=''
+    c=''
+
     try:
+        c=pycountry.countries.get(alpha_2=country)
+    except:
         c=pycountry.countries.get(alpha2=country)
+
+    try:
         cname=c.name
     except KeyError:
         cname='Unknown'
+
     if state:
         try:
             s=pycountry.subdivisions.get(code=country+'-'+state)
