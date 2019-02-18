@@ -757,20 +757,24 @@ class commands(object):
             self.dbupdate('machines', machid, **{'alive_v6': 1})
         if len(dead_v4) > 10:
             report = report + "More than 10 missing nodes on ipv4 since last run. Health update skipped.\n"
+            report = report + "(" + ','.join(dead_v4) + ")\n"
         else:
             for d in dead_v4:
                 machid = self.hostname2mid(d)
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v4': 0})
+                print 'machine %s marked as dead on IPv4' % (d)
         if len(dead_v6) > 10:
             report = report + "More than 10 missing nodes on ipv6 since last run. Health update skipped.\n"
+            report = report + "(" + ','.join(dead_v6) + ")\n"
         else:
             for d in dead_v6:
                 machid = self.hostname2mid(d)
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v6': 0})
+                print 'machine %s marked as dead on IPv6' % (d)
 
         text = Template(ANSIBLEREPORTEMAIL)
         mailbody = text.substitute(adminemail=ADMINEMAIL,contents=report)
