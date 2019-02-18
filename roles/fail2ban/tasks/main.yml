@@ -1,3 +1,6 @@
+- name: "Prepare /var/run/fail2ban"
+  file: path=/var/run/fail2ban state=directory
+
 - name: "Install fail2ban"
   apt: pkg=fail2ban state=latest
 
