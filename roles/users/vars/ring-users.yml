@@ -720,7 +720,7 @@ USERS:
       - ring-users
 
   nine:
-    state: present
+    state: absent
     company: 'Nine Internet Solutions AG'
     email: 'noc@nine.ch'
     uid: 5103
@@ -3801,7 +3801,7 @@ USERS:
       - ring-users
 
   internetport:
-    state: present
+    state: absent
     company: 'Internetport Sweden AB'
     email: 'support@internetport.se'
     uid: 5496
