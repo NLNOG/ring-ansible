@@ -4168,3 +4168,11 @@ USERS:
     groups:
       - ring-users
 
+  xtom:
+    state: present
+    company: 'xTom'
+    email: 'noc@xtom.com'
+    uid: 5542
+    groups:
+      - ring-users
+
