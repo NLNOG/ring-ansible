@@ -398,6 +398,10 @@ lg_peers:
     asn: 28329
     ipv4: 186.226.80.251
     ipv6: 2804:39c:1fff:ffff:ffff:ffff:ffff:fffe
+  XTOM1:
+    asn: 3214
+    ipv4: 185.255.55.19
+    ipv6: 2a0c:59c0::19
 
 readonly_peers:
   ISOLARIO1:
