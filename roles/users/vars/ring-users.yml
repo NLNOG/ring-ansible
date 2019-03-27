@@ -1768,7 +1768,7 @@ USERS:
       - ring-users
 
   amsio:
-    state: present
+    state: absent
     company: 'Amsio B.V.'
     email: 'noc@amsio.com'
     uid: 5242
@@ -4173,6 +4173,14 @@ USERS:
     company: 'xTom'
     email: 'noc@xtom.com'
     uid: 5542
+    groups:
+      - ring-users
+
+  sentia:
+    state: present
+    company: 'Sentia'
+    email: 'noc@sentia.com'
+    uid: 5543
     groups:
       - ring-users
 

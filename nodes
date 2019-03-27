@@ -197,7 +197,6 @@ kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
-amsio01.ring.nlnog.net OWNER=amsio V4=85.222.193.228 V6=2a02:20b0:165::100
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 kinber01.ring.nlnog.net OWNER=kinber V4=162.223.16.247 V6=2001:550:501:3::1ce:c01d:bee2
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
@@ -452,7 +451,7 @@ automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff
 retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
-joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:9::1
+joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2001:678:a00:15::1
 bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
@@ -506,6 +505,7 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018
 g8net01.ring.nlnog.net OWNER=g8net V4=186.226.82.27 V6=2804:39c:1001::67
 lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:2000:1::2
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
+sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1158,7 +1158,6 @@ sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:20
 [spotify]
 
 [amsio]
-amsio01.ring.nlnog.net OWNER=amsio V4=85.222.193.228 V6=2a02:20b0:165::100
 
 [goscomb]
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
@@ -1901,7 +1900,7 @@ web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 
 [joeynetwork]
-joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2a06:8187:fe01:9::1
+joeynetwork01.ring.nlnog.net OWNER=joeynetwork V4=89.46.125.9 V6=2001:678:a00:15::1
 
 [emeriaud]
 
@@ -2067,3 +2066,6 @@ lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:2000:1::2
 
 [xtom]
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
+
+[sentia]
+sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
