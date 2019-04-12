@@ -2005,3 +2005,5 @@ xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 
 [sentia]
 sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
+
+[a1bg]

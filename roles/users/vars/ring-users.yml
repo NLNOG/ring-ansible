@@ -4184,3 +4184,11 @@ USERS:
     groups:
       - ring-users
 
+  a1bg:
+    state: present
+    company: 'A1 - Bulgaria'
+    email: 'noc@a1.bg'
+    uid: 5544
+    groups:
+      - ring-users
+
