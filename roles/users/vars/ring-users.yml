@@ -4192,3 +4192,11 @@ USERS:
     groups:
       - ring-users
 
+  wustl:
+    state: present
+    company: 'Washington University in St. Louis'
+    email: 'noc@wustl.edu'
+    uid: 5545
+    groups:
+      - ring-users
+
