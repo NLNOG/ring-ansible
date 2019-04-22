@@ -4137,7 +4137,7 @@ USERS:
       - ring-users
 
   technoserv:
-    state: present
+    state: absent
     company: 'Technoserv'
     email: 'OAlexeenko@technoserv.com'
     uid: 5538
