@@ -2008,7 +2008,7 @@ USERS:
       - ring-users
 
   suretec:
-    state: present
+    state: absent
     company: 'Suretec Systems Ltd. T/A SureVoIP'
     email: 'noc@suretec.net'
     uid: 5272
