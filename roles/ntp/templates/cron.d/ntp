@@ -1,0 +1,1 @@
+@reboot root /usr/sbin/ntpdate {{ ntp_default_server }}

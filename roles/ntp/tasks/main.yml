@@ -9,6 +9,11 @@
   command: /usr/sbin/ntpdate {{ ntp_default_server }}
   when: ntpdate.changed
 
+- name: "Install cronjob to run ntpdate after reboot"
+  template:
+    src: cron.d/ntp.j2
+    dest: /etc/cron.d/ntp
+
 - name: "Install openntpd"
   apt: name=openntpd state=latest
 
