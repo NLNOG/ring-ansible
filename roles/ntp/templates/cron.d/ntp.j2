@@ -1,1 +1,1 @@
-@reboot root /usr/sbin/ntpdate {{ ntp_default_server }}
+@reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server }}
