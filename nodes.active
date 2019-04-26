@@ -2,7 +2,6 @@
 
 [ringnode]
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
@@ -205,6 +204,7 @@ funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel02.ring.nlnog.net OWNER=viatel V4=46.183.108.2 V6=2a01:8aa0:7f00:0:20c:29ff:fe60:bfac
@@ -494,7 +494,6 @@ wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
 
 [coloclue]
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 
 [widexs]
 
@@ -1171,6 +1170,7 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [telecityfi]
 
 [itps]
+itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 
 [cyberverse]
 cyberverse01.ring.nlnog.net OWNER=cyberverse V4=209.151.242.106 V6=2607:f820:104::106
