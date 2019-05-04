@@ -14,10 +14,10 @@ ff02::2 ip6-allrouters
 {% for host in groups['all']|sort %}
 {% set short_id = host|regex_replace("\.ring\.nlnog\.net", "") %}
 {% if hostvars[host]['V6']|default(None) %}
-{{ hostvars[host]['V6'] }}    {{ short_id }} {{ host }}
+{{ hostvars[host]['V6'] }}    {{ host }} {{ short_id }}
 {% endif %}
 {% if hostvars[host]['V4']|default(None) %}
-{{ hostvars[host]['V4'] }}    {{ short_id }} {{ host }}
+{{ hostvars[host]['V4'] }}    {{ host }} {{ short_id }}
 {% endif %}
 {% endfor %}
 
