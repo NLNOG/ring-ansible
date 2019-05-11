@@ -12,6 +12,7 @@ DBHOST='localhost'
 DBUSER='ansible_master'
 DBPASS='{{ api_dbpassword }}'
 DB='ring'
+ZONE='ring.nlnog.net'
 ERROR=None
 
 def set_error(errmsg=None):
@@ -494,7 +495,8 @@ def register_ansible_run():
 
     hostname = None
     try:
-        hostname = socket.gethostbyaddr(client)[0]
+        h = socket.gethostbyaddr(client)[0]
+        hostname = re.sub('.' + ZONE + '$', '', h)
     except socket.herror:
         pass
     if hostname and run_result:
@@ -510,7 +512,8 @@ def register_health_report():
     hostname = None
     family = None
     try:
-        hostname = socket.gethostbyaddr(client)[0]
+        h = socket.gethostbyaddr(client)[0]
+        hostname = re.sub('.' + ZONE + '$', '', h)
         if re.search(':',client):
             family = 6
         else:
