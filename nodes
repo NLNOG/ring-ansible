@@ -290,6 +290,7 @@ lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
+worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
 cloudvps02.ring.nlnog.net OWNER=cloudvps V4=83.96.201.176 V6=2a02:348:5e6:1::2dbf
 cloudvps03.ring.nlnog.net OWNER=cloudvps V4=83.96.201.177 V6=2a02:348:5e6:1::1dff
@@ -510,6 +511,7 @@ xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
+brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:0500::514b
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1437,6 +1439,7 @@ nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 cloudcenter01.ring.nlnog.net OWNER=cloudcenter V4=185.82.144.142 V6=2a05:9100:20::15
 
 [worldstream]
+worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 
 [cloudvps]
 cloudvps01.ring.nlnog.net OWNER=cloudvps V4=178.18.89.144 V6=2a02:348:5d:5990::1
@@ -2081,3 +2084,6 @@ a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 
 [wustl]
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
+
+[brennercom]
+brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:0500::514b

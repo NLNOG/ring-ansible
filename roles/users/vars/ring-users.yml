@@ -2496,7 +2496,7 @@ USERS:
       - ring-users
 
   worldstream:
-    state: absent
+    state: present
     company: 'WorldStream B.V.'
     email: 'noc@worldstream.nl'
     uid: 5334
@@ -4197,6 +4197,14 @@ USERS:
     company: 'Washington University in St. Louis'
     email: 'noc@wustl.edu'
     uid: 5545
+    groups:
+      - ring-users
+
+  brennercom:
+    state: present
+    company: 'Brennercom SpA'
+    email: 'ip@brennercom.it'
+    uid: 5546
     groups:
       - ring-users
 
