@@ -131,7 +131,6 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
-ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::1
 nforce01.ring.nlnog.net OWNER=nforce V4=77.247.183.177 V6=2a00:1768:1000:21:1::1
 xing01.ring.nlnog.net OWNER=xing V4=185.169.112.43 V6=2a01:8780:7473::a
@@ -298,6 +297,7 @@ choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
+linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
@@ -902,7 +902,6 @@ nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 
 [ripe]
-ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 
 [hosteurope]
 
@@ -1427,6 +1426,7 @@ choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
+linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:febb:803b
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
