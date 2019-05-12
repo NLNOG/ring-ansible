@@ -19,8 +19,8 @@ DOMAIN='ring.nlnog.net'
 CRONPATH='/etc/cron.d/ansible'
 LOGPATH='/var/log/ansible/ansible.log'
 WEBPATH='/var/www/ring'
-API4='api4.ring.nlnog.net'
-API6='api6.ring.nlnog.net'
+API4='95.211.149.25'
+API6='[2001:1af8:4013::25]'
 APIPATH='/1.0/health_report'
 WEBTIMEOUT=122
 
@@ -342,7 +342,7 @@ def report_health(family,health):
         hostname = API6
     summary = json.dumps(health)
     try:
-        r = requests.post('https://' + hostname + APIPATH, data=summary, timeout=WEBTIMEOUT)
+        r = requests.post('https://' + hostname + APIPATH, data=summary, timeout=WEBTIMEOUT, verify=False)
         j = json.loads(r.text)
         if j['info']['success'] == 1:
             return True
