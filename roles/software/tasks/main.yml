@@ -55,6 +55,7 @@
     - ndisc6
     - netcat-openbsd
     - netsed
+    - net-tools
     - ngrep
     - nmap
     - paris-traceroute
