@@ -4208,3 +4208,11 @@ USERS:
     groups:
       - ring-users
 
+  tnnet:
+    state: present
+    company: 'TNNet Oy Ltd'
+    email: 'noc@tnnet.fi'
+    uid: 5547
+    groups:
+      - ring-users
+
