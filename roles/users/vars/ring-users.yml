@@ -2418,7 +2418,7 @@ USERS:
   peakten:
     state: present
     company: 'Peak 10'
-    email: 'networkengineering@peak10.com'
+    email: 'DL-BB-Engineering@flexential.com'
     uid: 5323
     groups:
       - ring-users
