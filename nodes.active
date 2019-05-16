@@ -2,7 +2,6 @@
 
 [ringnode]
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
@@ -366,7 +365,6 @@ internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
-netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
 liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20:5::10
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
@@ -499,7 +497,6 @@ tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
 
 [coloclue]
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 
 [widexs]
 
@@ -1655,7 +1652,6 @@ custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 
 [netrouting]
-netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
 
 [liteserver]
 liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20:5::10
