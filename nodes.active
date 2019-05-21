@@ -2,6 +2,7 @@
 
 [ringnode]
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
+coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
@@ -497,6 +498,7 @@ tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
 
 [coloclue]
+coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 
 [widexs]
 
