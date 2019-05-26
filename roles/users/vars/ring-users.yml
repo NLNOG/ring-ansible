@@ -4216,3 +4216,11 @@ USERS:
     groups:
       - ring-users
 
+  xfone:
+    state: present
+    company: 'Xfone'
+    email: 'noc@018.co.il'
+    uid: 5548
+    groups:
+      - ring-users
+
