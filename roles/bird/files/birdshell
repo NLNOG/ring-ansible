@@ -78,13 +78,13 @@ main_menu() {
 	--backtitle "NLNOG RING Looking Glass: ${HOSTNAME}" \
 	--menu "Choose a Looking Glass :" 10 70 4 \
 	1 IPv4 \
-	3 IPv6 \
-	4 Logout 2>$TEMP
+	2 IPv6 \
+	3 Logout 2>$TEMP
 	choice=$(cat $TEMP)
 	case $choice in
 	    1) launch_bird4;;
-	    3) launch_bird6;;
-	    4) clean_up;;
+	    2) launch_bird6;;
+	    3) clean_up;;
 	esac
 }
 
