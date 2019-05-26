@@ -2576,7 +2576,7 @@ USERS:
       - ring-users
 
   openimp:
-    state: present
+    state: absent
     company: 'Oscar Music & Media'
     email: 'noc@openimp.net'
     uid: 5344
