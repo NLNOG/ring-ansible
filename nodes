@@ -372,7 +372,7 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
-novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
@@ -1678,7 +1678,7 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 
 [novoserve]
-novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.200.58 V6=2001:968:8888:0:89:105:200:58
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 
 [cvo]
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
