@@ -2,7 +2,6 @@
 
 [ringnode]
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
@@ -270,7 +269,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
 pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -502,7 +500,6 @@ xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
 
 [coloclue]
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 
 [widexs]
 
@@ -1366,7 +1363,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [nianet]
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
