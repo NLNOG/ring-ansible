@@ -2,7 +2,6 @@
 
 [ringnode]
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:1000:b::2
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
@@ -87,6 +86,7 @@ yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
 redpilllinpro02.ring.nlnog.net OWNER=redpilllinpro V4=87.238.39.42 V6=2a02:c0:400:108::1
 lagis01.ring.nlnog.net OWNER=lagis V4=83.164.133.186 V6=2a00:1860:1:3::186
+fnutt01.ring.nlnog.net OWNER=fnutt V4=193.150.22.68 V6=2001:67c:24e4:64::68
 sidn01.ring.nlnog.net OWNER=sidn V4=193.176.144.164 V6=2a00:d78:0:fd:193:176:144:164
 melbourne01.ring.nlnog.net OWNER=melbourne V4=37.128.187.253 V6=2a03:b200:f::24
 go6lab01.ring.nlnog.net OWNER=go6lab V4=91.239.97.26 V6=2001:67c:27e4:15::26
@@ -269,7 +269,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
 pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -355,6 +354,7 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
@@ -500,7 +500,6 @@ xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 bit01.ring.nlnog.net OWNER=bit V4=212.114.113.69 V6=2001:7b8:62b:0:400:d4ff:fe72:7145
 
 [coloclue]
-coloclue01.ring.nlnog.net OWNER=coloclue V4=94.142.247.64 V6=2a02:898:0:201::2
 
 [widexs]
 
@@ -763,6 +762,7 @@ redpilllinpro02.ring.nlnog.net OWNER=redpilllinpro V4=87.238.39.42 V6=2a02:c0:40
 lagis01.ring.nlnog.net OWNER=lagis V4=83.164.133.186 V6=2a00:1860:1:3::186
 
 [fnutt]
+fnutt01.ring.nlnog.net OWNER=fnutt V4=193.150.22.68 V6=2001:67c:24e4:64::68
 
 [sidn]
 sidn01.ring.nlnog.net OWNER=sidn V4=193.176.144.164 V6=2a00:d78:0:fd:193:176:144:164
@@ -1363,7 +1363,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
 peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [nianet]
 nianet01.ring.nlnog.net OWNER=nianet V4=87.116.6.32 V6=2a02:188:2:d6::32
@@ -1625,6 +1624,7 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 
 [novoserve]
+novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 
 [cvo]
 cvo01.ring.nlnog.net OWNER=cvo V4=185.167.204.195 V6=2a0b:b600:210:1::
