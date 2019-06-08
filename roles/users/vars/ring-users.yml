@@ -2176,7 +2176,7 @@ USERS:
       - ring-users
 
   adix:
-    state: present
+    state: absent
     company: 'Adix BV'
     email: 'noc@adix.nl'
     uid: 5293
