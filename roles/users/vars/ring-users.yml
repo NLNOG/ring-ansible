@@ -4224,3 +4224,11 @@ USERS:
     groups:
       - ring-users
 
+  mdbrasil:
+    state: present
+    company: 'MD Brasil IT & Telecom'
+    email: 'suporte@mdbrasil.com.br'
+    uid: 5549
+    groups:
+      - ring-users
+
