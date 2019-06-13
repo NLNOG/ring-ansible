@@ -4240,3 +4240,11 @@ USERS:
     groups:
       - ring-users
 
+  cloudbear:
+    state: present
+    company: 'Cloudbear'
+    email: 'noc@cloudbear.nl'
+    uid: 5551
+    groups:
+      - ring-users
+
