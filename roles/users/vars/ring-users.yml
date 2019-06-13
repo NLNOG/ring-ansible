@@ -4232,3 +4232,11 @@ USERS:
     groups:
       - ring-users
 
+  packet:
+    state: present
+    company: 'Packet'
+    email: 'netops@packet.com'
+    uid: 5550
+    groups:
+      - ring-users
+
