@@ -3129,7 +3129,7 @@ USERS:
       - ring-users
 
   cvo:
-    state: present
+    state: absent
     company: 'CVO-Technologies'
     email: 'noc@cvo-technologies.com'
     uid: 5413
