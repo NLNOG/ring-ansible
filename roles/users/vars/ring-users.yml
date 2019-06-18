@@ -4248,3 +4248,11 @@ USERS:
     groups:
       - ring-users
 
+  kamoike:
+    state: present
+    company: 'Kamoike.net LLP'
+    email: 'noc@kamoike.net'
+    uid: 5552
+    groups:
+      - ring-users
+
