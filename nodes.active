@@ -488,6 +488,7 @@ xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:210:1::
+kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210::151
 
 [infranode]
 
@@ -2037,3 +2038,4 @@ packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:210:1::
 
 [kamoike]
+kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210::151
