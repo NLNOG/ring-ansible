@@ -410,6 +410,10 @@ lg_peers:
     asn: 3214
     ipv4: 185.255.55.19
     ipv6: 2a0c:59c0::19
+  OVERTHEWIRE1:
+    asn: 9268
+    ipv4: 203.62.187.178
+    ipv6: 2402:C00::178
 
 readonly_peers:
   ISOLARIO1:
