@@ -4256,3 +4256,11 @@ USERS:
     groups:
       - ring-users
 
+  celya:
+    state: present
+    company: 'Celya'
+    email: 'noc@celya.fr'
+    uid: 5553
+    groups:
+      - ring-users
+
