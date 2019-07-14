@@ -82,6 +82,7 @@
   roles:
     - { role: etcfiles, tags: etcfiles }
     - { role: apt, tags: apt }
+    - { role: resolving, tags: resolving }
     - { role: ansible, tags: ansible }
     - { role: users, class: ring-admins, tags: ring-admins }
   tasks:
