@@ -4272,3 +4272,11 @@ USERS:
     groups:
       - ring-users
 
+  daknob:
+    state: present
+    company: 'daknob.net'
+    email: 'noc@daknob.net'
+    uid: 5555
+    groups:
+      - ring-users
+
