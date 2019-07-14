@@ -4264,3 +4264,11 @@ USERS:
     groups:
       - ring-users
 
+  denic:
+    state: present
+    company: 'DENIC eG'
+    email: 'dns-operations@denic.de'
+    uid: 5554
+    groups:
+      - ring-users
+
