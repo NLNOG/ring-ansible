@@ -1,5 +1,6 @@
 ntp_default_server: pool.ntp.org
 ntp_servers:
+ - ntp.time.nl
  - time.nist.gov
  - ntp1.tdc.fi
  - ntp3.tdc.fi
