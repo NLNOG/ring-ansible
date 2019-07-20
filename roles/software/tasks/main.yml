@@ -134,6 +134,7 @@
     - ruby-dev
     - parallel
     - python3-pip
+    - dnsviz
   when: ansible_distribution_release != "precise"
 
 - name: "Install various software packages (bionic)"
