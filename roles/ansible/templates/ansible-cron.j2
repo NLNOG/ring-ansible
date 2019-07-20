@@ -14,4 +14,5 @@ if ! flock -x -w 1 200; then
 fi
 
 # Launch Ansible
-timeout -s KILL 21600 /usr/local/sbin/run-ansible
+timeout -s KILL 21600 /usr/local/sbin/run-ansible -q
+timeout -s KILL 21600 /usr/local/sbin/run-ansible -- --tags ring-users
