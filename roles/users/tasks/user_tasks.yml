@@ -58,13 +58,15 @@
   when: keyfiles.results is defined and item.stat is defined and item.stat.exists == True
 
 - name: "Find per org local sshkey files to provision"
-  local_action: stat path=roles/users/files/keys/{{ OWNER }}/{{ OWNER }}-only.sshkeys
+  local_action: stat path=roles/users/files/keys/{{ item }}/{{ item }}-only.sshkeys
   register: keyfiles2
-  when: ENTRIES[OWNER].sshkeys is not defined and ENTRIES[OWNER].state == "present"
+  with_items: "{{ ENTRIES|list }}"
+  when: ENTRIES[item].sshkeys is not defined and ENTRIES[item].state == "present"
 
 - name: "Add local org ssh keys from files"
-  assemble: src=roles/users/files/keys/{{ OWNER }} dest=/home/{{ OWNER }}/.ssh/authorized_keys
-  when: keyfiles2.stat.exists == True
+  assemble: src=roles/users/files/keys/{{ item.item }} dest=/home/{{ item.item }}/.ssh/authorized_keys
+  when: inventory_hostname|match("^{{ item.item }}\d\d\..*") and keyfiles2.results is defined and item.stat.exists == True
+  with_items: "{{ keyfiles2.results }}"
 
 - name: "Ensure admin group exists"
   group: name="admin" gid=99 state=present
