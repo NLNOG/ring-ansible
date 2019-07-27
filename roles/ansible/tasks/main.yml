@@ -33,6 +33,7 @@
   apt:
     name: "{{ item }}"
     state: present
+    force: yes
   with_items:
     - "ansible={{ ansible_pin_version_bionic }}"
   when: ansible_distribution_release == "bionic"
