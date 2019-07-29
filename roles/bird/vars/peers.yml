@@ -388,7 +388,7 @@ lg_peers:
     ipv6: 2a06:8187:fe01::1
   NEXRIL1:
     asn: 13830
-    ipv4: 23.151.160.0
+    ipv4: 192.34.100.0
     ipv6: 2001:506:30::0
   NETACTUATE1:
     asn: 36236
