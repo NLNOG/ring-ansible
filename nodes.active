@@ -222,6 +222,7 @@ vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
+nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
 digitalocean01.ring.nlnog.net OWNER=digitalocean V4=139.59.170.31 V6=2a03:b0c0:1:a1::1838:e001
 digitalocean02.ring.nlnog.net OWNER=digitalocean V4=128.199.216.83 V6=2400:6180:0:d0::35f7:3001
 digitalocean03.ring.nlnog.net OWNER=digitalocean V4=188.166.37.221 V6=2a03:b0c0:2:d0::2084:6001
@@ -250,7 +251,6 @@ vshn02.ring.nlnog.net OWNER=vshn V4=185.72.236.108 V6=2a05:3d80:8000:208::108
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
-atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
@@ -1233,6 +1233,7 @@ onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
 
 [nexiu]
+nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
 
 [digitalocean]
 digitalocean01.ring.nlnog.net OWNER=digitalocean V4=139.59.170.31 V6=2a03:b0c0:1:a1::1838:e001
@@ -1321,7 +1322,6 @@ openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
 
 [atechmedia]
-atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 
 [cablecom]
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
