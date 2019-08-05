@@ -251,6 +251,7 @@ vshn02.ring.nlnog.net OWNER=vshn V4=185.72.236.108 V6=2a05:3d80:8000:208::108
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
+atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 quadranet01.ring.nlnog.net OWNER=quadranet V4=104.223.2.2 V6=2607:fcd0:100:22::2
@@ -355,7 +356,6 @@ novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
-carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
@@ -473,6 +473,7 @@ sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
+level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.78 V6=2a09:11c0:f1:bbf0:997d:589d:7278:b9c8
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
 g8net01.ring.nlnog.net OWNER=g8net V4=186.226.82.27 V6=2804:39c:1001::67
 lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:2000:1::2
@@ -1322,6 +1323,7 @@ openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
 
 [atechmedia]
+atechmedia01.ring.nlnog.net OWNER=atechmedia V4=185.22.208.142 V6=2a00:67a0:a:2::142
 
 [cablecom]
 cablecom01.ring.nlnog.net OWNER=cablecom V4=77.244.137.180 V6=2a01:388:0:f2::10
@@ -1634,7 +1636,6 @@ kviknet01.ring.nlnog.net OWNER=kviknet V4=185.107.12.72 V6=2a06:4000:0:5::8
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 
 [carnet]
-carnet01.ring.nlnog.net OWNER=carnet V4=193.198.233.217 V6=2001:b68:8ff:ff:a2b::10
 
 [internode]
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
@@ -1994,6 +1995,7 @@ misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 
 [level66network]
+level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.78 V6=2a09:11c0:f1:bbf0:997d:589d:7278:b9c8
 
 [technoserv]
 
