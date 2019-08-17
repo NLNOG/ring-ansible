@@ -4280,3 +4280,11 @@ USERS:
     groups:
       - ring-users
 
+  salkeld:
+    state: present
+    company: 'Salkeld Consulting'
+    email: 'noc@salkeld.com.au'
+    uid: 5556
+    groups:
+      - ring-users
+
