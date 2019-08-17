@@ -79,6 +79,16 @@
 - hosts: all
   become: true
   become_user: root
+  tasks:
+    - name: Temporarily configure resolv.conf with public resolver
+      copy:
+        dest: /etc/resolv.conf
+        mode: 0644
+        content: "nameserver 9.9.9.9"
+
+- hosts: all
+  become: true
+  become_user: root
   roles:
     - { role: etcfiles, tags: etcfiles }
     - { role: apt, tags: apt }
