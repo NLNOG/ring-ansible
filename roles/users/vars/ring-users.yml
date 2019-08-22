@@ -4288,3 +4288,11 @@ USERS:
     groups:
       - ring-users
 
+  hostin:
+    state: present
+    company: 'HostIn'
+    email: 'info@hostin.cc'
+    uid: 5557
+    groups:
+      - ring-users
+
