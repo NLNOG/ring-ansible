@@ -873,7 +873,7 @@ USERS:
 
   iabg:
     state: present
-    company: 'IABG mbH - Teleport'
+    company: 'IABG Teleport GmbH'
     email: 'ip@teleport-iabg.de'
     uid: 5126
     groups:
