@@ -4130,7 +4130,7 @@ USERS:
 
   level66network:
     state: present
-    company: 'level66.network trading as Jan Gilla'
+    company: 'level66.network UG (haftungsbeschränkt)'
     email: 'noc@level66.network'
     uid: 5537
     groups:
