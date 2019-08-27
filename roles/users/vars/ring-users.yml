@@ -240,7 +240,7 @@ USERS:
       - ring-users
 
   netability:
-    state: present
+    state: absent
     company: 'Netability'
     email: 'nick@netability.ie'
     uid: 5036
@@ -600,7 +600,7 @@ USERS:
       - ring-users
 
   softlayer:
-    state: present
+    state: absent
     company: 'Softlayer Technologies'
     email: 'noc@softlayer.com'
     uid: 5087
@@ -808,7 +808,7 @@ USERS:
       - ring-users
 
   keenondots:
-    state: present
+    state: absent
     company: 'Keen on Dots'
     email: 'support@keenondots.com'
     uid: 5117
@@ -1784,7 +1784,7 @@ USERS:
       - ring-users
 
   kinber:
-    state: present
+    state: absent
     company: 'KINBER - Keystone Initiative for Network Based Education and Research'
     email: 'noc@pennren.net'
     uid: 5244
@@ -1960,7 +1960,7 @@ USERS:
       - ring-users
 
   bogalnet:
-    state: present
+    state: absent
     company: 'Bogal AB'
     email: 'noc@bogalnet.se'
     uid: 5266
@@ -2224,7 +2224,7 @@ USERS:
       - ring-users
 
   tumuenchen:
-    state: present
+    state: absent
     company: 'Chair for Network Architectures and Services at the Technische Universitaet Muenchen'
     email: 'lir-admin@net.in.tum.de'
     uid: 5299
@@ -2488,7 +2488,7 @@ USERS:
       - ring-users
 
   cloudcenter:
-    state: present
+    state: absent
     company: 'Cloud Center Finland Oy'
     email: 'noc@cloudcenter.fi'
     uid: 5333
@@ -2672,7 +2672,7 @@ USERS:
       - ring-users
 
   ism:
-    state: present
+    state: absent
     company: 'ISM eCompany'
     email: 'hosting@ism.nl'
     uid: 5356
@@ -2736,7 +2736,7 @@ USERS:
       - ring-users
 
   nodesdirect:
-    state: present
+    state: absent
     company: 'Nodes Direct Holdings, LLC'
     email: 'noc@nodesdirect.com'
     uid: 5364
@@ -3329,7 +3329,7 @@ USERS:
       - ring-users
 
   ragefour:
-    state: present
+    state: absent
     company: 'Rage4 Networks Limited'
     email: 'office@gbshouse.com'
     uid: 5438
@@ -3337,7 +3337,7 @@ USERS:
       - ring-users
 
   cologuard:
-    state: present
+    state: absent
     company: 'Cologuard Enterprise Solutions'
     email: 'andy@cologuard.com'
     uid: 5439
@@ -3369,7 +3369,7 @@ USERS:
       - ring-users
 
   tktelecom:
-    state: present
+    state: absent
     company: 'TK-Telecom, LLC'
     email: 'noc@tk-telecom.ru'
     uid: 5443
@@ -3457,7 +3457,7 @@ USERS:
       - ring-users
 
   mosaic:
-    state: present
+    state: absent
     company: 'Mosaic Data Services, Inc.'
     email: 'noc@mosaicdataservices.com'
     uid: 5454
