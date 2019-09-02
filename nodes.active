@@ -472,6 +472,7 @@ wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
+mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
@@ -494,6 +495,7 @@ wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:0500::514b
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
+mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:210:1::
 kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
@@ -1981,6 +1983,7 @@ globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78
 [godaddy]
 
 [mitsol]
+mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
@@ -2051,6 +2054,7 @@ tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103
 xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 
 [mdbrasil]
+mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 
 [packet]
 packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
