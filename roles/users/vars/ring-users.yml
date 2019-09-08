@@ -4304,3 +4304,19 @@ USERS:
     groups:
       - ring-users
 
+  freifunkkr:
+    state: present
+    company: 'Verein zur Förderung freier Netze Region Mittlerer Oberrhein e.V.'
+    email: 'noc@vzffnrmo.de'
+    uid: 5559
+    groups:
+      - ring-users
+
+  atom:
+    state: present
+    company: 'atom86'
+    email: 'noc@atom86.net'
+    uid: 5560
+    groups:
+      - ring-users
+
