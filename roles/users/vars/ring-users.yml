@@ -4296,3 +4296,11 @@ USERS:
     groups:
       - ring-users
 
+  lonap:
+    state: present
+    company: 'LONAP'
+    email: 'support@lonap.net'
+    uid: 5558
+    groups:
+      - ring-users
+
