@@ -4306,7 +4306,7 @@ USERS:
 
   freifunkkr:
     state: present
-    company: 'Verein zur Förderung freier Netze Region Mittlerer Oberrhein e.V.'
+    company: 'Verein zur Foerderung freier Netze Region Mittlerer Oberrhein e.V.'
     email: 'noc@vzffnrmo.de'
     uid: 5559
     groups:
