@@ -18,7 +18,7 @@ def get_api_object(url):
         return None
 
 def get_admininfo(pid):
-    node=socket.gethostbyaddr(HOSTNAME)[0]
+    node=socket.gethostbyaddr(HOSTNAME)[1][0]
     org = re.sub('..$','',node)
     return os.popen("getent passwd "+org+" | cut -d : -f 5").read().strip()
 
