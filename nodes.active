@@ -398,6 +398,7 @@ aquilenet01.ring.nlnog.net OWNER=aquilenet V4=185.233.100.38 V6=2a0c:e300::38
 bkk01.ring.nlnog.net OWNER=bkk V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
+compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
 arnfai01.ring.nlnog.net OWNER=arnfai V4=89.234.141.104 V6=2a00:5881:8110:800::1
 netgroup01.ring.nlnog.net OWNER=netgroup V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
@@ -1761,6 +1762,7 @@ poprs01.ring.nlnog.net OWNER=poprs V4=200.132.1.8 V6=2804:0:0:C010:200:132:1:8
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 
 [compudyne]
+compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 
 [nefos]
 nefos01.ring.nlnog.net OWNER=nefos V4=185.150.186.13 V6=2a07:7280:0:186:f816:3eff:fe91:54fd
