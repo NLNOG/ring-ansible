@@ -219,12 +219,12 @@ businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
 cloudnl01.ring.nlnog.net OWNER=cloudnl V4=185.23.24.149 V6=2a00:6960:1:1::24:149:1
-dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
+nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
 digitalocean01.ring.nlnog.net OWNER=digitalocean V4=139.59.170.31 V6=2a03:b0c0:1:a1::1838:e001
 digitalocean02.ring.nlnog.net OWNER=digitalocean V4=128.199.216.83 V6=2400:6180:0:d0::35f7:3001
 digitalocean03.ring.nlnog.net OWNER=digitalocean V4=188.166.37.221 V6=2a03:b0c0:2:d0::2084:6001
@@ -1232,7 +1232,6 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 cloudnl01.ring.nlnog.net OWNER=cloudnl V4=185.23.24.149 V6=2a00:6960:1:1::24:149:1
 
 [dacor]
-dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 
 [networkoperations]
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
@@ -1254,6 +1253,7 @@ onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
 
 [nexiu]
+nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
 
 [digitalocean]
 digitalocean01.ring.nlnog.net OWNER=digitalocean V4=139.59.170.31 V6=2a03:b0c0:1:a1::1838:e001
