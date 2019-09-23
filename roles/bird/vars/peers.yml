@@ -420,7 +420,7 @@ lg_peers:
     ipv6: 2a00:1188::10
   ATOM862:
     asn: 8455
-    ipv4: 95.142.96.26/32
+    ipv4: 95.142.96.26
     ipv6: 2a00:1188::11
 
 readonly_peers:
