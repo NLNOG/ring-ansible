@@ -2089,3 +2089,9 @@ freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=185.65.241.51 V6=2001:678:6e0:10
 
 [atom]
 atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
+
+[mauve]
+
+[gcore]
+
+[trix]

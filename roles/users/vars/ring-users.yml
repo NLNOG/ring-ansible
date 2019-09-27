@@ -1192,7 +1192,7 @@ USERS:
       - ring-users
 
   bredband2:
-    state: absent
+    state: present
     company: 'Bredband2 AB'
     email: 'noc@bredband2.se'
     uid: 5167
@@ -4317,6 +4317,30 @@ USERS:
     company: 'atom86'
     email: 'noc@atom86.net'
     uid: 5560
+    groups:
+      - ring-users
+
+  mauve:
+    state: present
+    company: 'Mauve Mailorder Software GmbH & Co. KG'
+    email: 'noc@mauve.de'
+    uid: 5561
+    groups:
+      - ring-users
+
+  gcore:
+    state: present
+    company: 'G-Core Labs S.A.'
+    email: 'noc@gcore.lu'
+    uid: 5562
+    groups:
+      - ring-users
+
+  trix:
+    state: present
+    company: 'TRIX'
+    email: 'support@trix.network'
+    uid: 5563
     groups:
       - ring-users
 
