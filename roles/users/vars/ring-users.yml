@@ -608,7 +608,7 @@ USERS:
       - ring-users
 
   imagine:
-    state: present
+    state: absent
     company: 'Imagine Communications Ltd.'
     email: 'networkoperations@imaginegroup.ie'
     uid: 5088
