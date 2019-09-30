@@ -10,3 +10,4 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJKZw9SFDyQam3pBBkpAJusjiI41xLXSYx+ELJxaDbcx
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPw28MW9EvgVd6B/+A4ol04jrK6y0b2y0OscA4uTFNaC adriaan@jumphost # Adriaan van den Bosch EF
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPfKk/8eVrdZ+nYld8aa6D3zFYiYWAtmJzcdzLZkSYSX dawid@jumphost # Dawid Kowalczys EF
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJmPoS5Rr3A7XsPTMHaP5wGyxFnILlyJwDXQW9LcxWJP michaelb@jumphost # Michael Bosch EF
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOPendD94mwVpJuv8MwHaw6OP1sc4Hq3xrJKLX2wffAu martin@jumphost # Martin de Goeij EF
