@@ -45,7 +45,6 @@ jump01.ring.nlnog.net OWNER=jump V4=212.13.217.117 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
 rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
-boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
@@ -317,7 +316,6 @@ euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:4:298::190
 coreinternet01.ring.nlnog.net OWNER=coreinternet V4=5.2.17.92 V6=2a00:e740:2:300::2
-tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven02.ring.nlnog.net OWNER=mtwentyfourseven V4=194.79.31.55 V6=2001:ac8:21:2::e0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
@@ -668,7 +666,6 @@ rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 
 [boxed-it]
-boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 
 [spacenet]
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
@@ -1502,7 +1499,6 @@ coreinternet01.ring.nlnog.net OWNER=coreinternet V4=5.2.17.92 V6=2a00:e740:2:300
 [teleweb]
 
 [tfskok]
-tfskok01.ring.nlnog.net OWNER=tfskok V4=91.212.242.244 V6=2001:67c:24c::b
 
 [mtwentyfourseven]
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
