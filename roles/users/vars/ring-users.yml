@@ -4344,3 +4344,11 @@ USERS:
     groups:
       - ring-users
 
+  gransy:
+    state: present
+    company: 'Gransy s.r.o.'
+    email: 'horak@gransy.com'
+    uid: 5564
+    groups:
+      - ring-users
+
