@@ -507,6 +507,7 @@ mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
+netshelter01.ring.nlnog.net OWNER=netshelter V4=89.46.125.9 V6=2001:678:a00::30
 
 [infranode]
 
@@ -2101,3 +2102,4 @@ trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 
 [netshelter]
+netshelter01.ring.nlnog.net OWNER=netshelter V4=89.46.125.9 V6=2001:678:a00::30
