@@ -304,9 +304,9 @@ USERS:
       - ring-users
 
   blix:
-    state: absent
-    company: 'Blix Solutions'
-    email: 'support@blixsolutions.no'
+    state: present
+    company: 'Blix Solutions AS'
+    email: 'eirik@blix.com'
     uid: 5046
     groups:
       - ring-users
