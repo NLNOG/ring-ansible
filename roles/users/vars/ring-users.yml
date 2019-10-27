@@ -3721,7 +3721,7 @@ USERS:
       - ring-users
 
   joeynetwork:
-    state: present
+    state: absent
     company: 'netShelter'
     email: 'noc@joey-network.de'
     uid: 5486
@@ -4349,6 +4349,14 @@ USERS:
     company: 'Gransy s.r.o.'
     email: 'horak@gransy.com'
     uid: 5564
+    groups:
+      - ring-users
+
+  netshelter:
+    state: present
+    company: 'netShelter'
+    email: 'noc@joey-network.de'
+    uid: 587
     groups:
       - ring-users
 
