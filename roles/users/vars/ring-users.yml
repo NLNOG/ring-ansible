@@ -680,7 +680,7 @@ USERS:
       - ring-users
 
   spacedump:
-    state: present
+    state: absent
     company: 'SpaceDump IT AB'
     email: 'registry@spacedump.se'
     uid: 5097
@@ -800,7 +800,7 @@ USERS:
       - ring-users
 
   i3d:
-    state: present
+    state: absent
     company: 'Interactive 3D'
     email: 'noc2@i3d.nl'
     uid: 5114
