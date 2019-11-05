@@ -4368,3 +4368,11 @@ USERS:
     groups:
       - ring-users
 
+  isc:
+    state: present
+    company: 'Internet Systems Consortium'
+    email: 'noc@isc.org'
+    uid: 5566
+    groups:
+      - ring-users
+
