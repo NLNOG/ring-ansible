@@ -515,6 +515,7 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=89.46.125.9 V6=2001:678:a00::30
+isc01.ring.nlnog.net OWNER=isc V4=149.20.3.14 V6=2001:4f8:1:2000::14
 
 [infranode]
 
@@ -2121,3 +2122,4 @@ netshelter01.ring.nlnog.net OWNER=netshelter V4=89.46.125.9 V6=2001:678:a00::30
 [milkywan]
 
 [isc]
+isc01.ring.nlnog.net OWNER=isc V4=149.20.3.14 V6=2001:4f8:1:2000::14
