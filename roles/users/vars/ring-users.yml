@@ -4360,3 +4360,11 @@ USERS:
     groups:
       - ring-users
 
+  milkywan:
+    state: present
+    company: 'MilkyWan'
+    email: 'noc@milkywan.fr'
+    uid: 5565
+    groups:
+      - ring-users
+
