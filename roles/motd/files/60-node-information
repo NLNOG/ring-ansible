@@ -78,10 +78,9 @@ def store_nodeinfo(asn,localadmin,location,cymruasinfo):
 
     # Munin / Nagios / Smokeping
     c.write("\n")
-    c.write("  Munin / Graphite:\n")
+    c.write("  Munin:\n")
     c.write("\n")
-    c.write("  https://ring.nlnog.net/munin/ring.nlnog.net/"+HOSTNAME+"\n")
-    c.write("  http://graphite.ring.nlnog.net/\n")
+    c.write("  http://munin.infra.ring.nlnog.net/munin/ring.nlnog.net/"+HOSTNAME+"/\n")
 
     c.write("\n")
     c.write("  For more information, please visit https://ring.nlnog.net/\n")
