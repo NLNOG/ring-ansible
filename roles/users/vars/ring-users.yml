@@ -3769,7 +3769,7 @@ USERS:
       - ring-users
 
   xenosite:
-    state: present
+    state: absent
     company: 'Xenosite BV'
     email: 'noc@xenosite.net'
     uid: 5492
