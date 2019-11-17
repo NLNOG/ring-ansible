@@ -141,6 +141,7 @@
   apt: name={{ item }} state=latest
   with_items:
     - php7.2-cli
+    - dnsdiag
   when: ansible_distribution_release == "bionic"
 
 - name: "Create symlink for lft"
