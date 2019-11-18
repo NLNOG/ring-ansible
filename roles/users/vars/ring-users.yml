@@ -4376,3 +4376,11 @@ USERS:
     groups:
       - ring-users
 
+  neptune:
+    state: present
+    company: 'Neptune Networks'
+    email: 'noc@neptunenetworks.org'
+    uid: 5567
+    groups:
+      - ring-users
+
