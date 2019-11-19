@@ -19,6 +19,14 @@ lg_peers:
     asn: 13901
     ipv4: 199.19.52.252
     ipv6: 2001:500:a::252
+  ALARIG1:
+    asn: 208627
+    ipv4: 45.91.126.233
+    ipv6: 2a0e:f42:fffe::1
+  ALARIG2:
+    asn: 208627
+    ipv4: 45.91.126.236
+    ipv6: 2a0e:f42:fffe::4
   ALTIBOX1:
     asn: 29695
     ipv4: 79.160.115.253
