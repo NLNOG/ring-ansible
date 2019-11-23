@@ -98,3 +98,14 @@ USERS:
     sshkeys:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN6hHF8fy+vZ2wcxndGsX48wVWiKuYP2S17B6dloZywe sunfield@caprica.local'
       - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCsRhs9iY8ZxEYrTRjg5BbK7rbzHMlqbK/v5qwPjEQ6/zqBkzoqQgdO1ydveEVGJj/nZbTZWQ6uNnSRKCjMl1L+tVXtVsbnVpvNtccpC/kdPu1v8Qj+5fvfHBEIPPpA4RNZeSS/jbe5IgbMcVDh7R8FrSgxTifJijpYq0VRb/3EsKQgvVvg+7PgN3y8mzK8WgckTy5i1nU0R6J6pIftIllj/vZzn5e9vibVWmmcTR8C76Eefu99aGOK8Kw/3bEjPaDug5MHREOb2zUFSBj2OJF73LQktUP0fgnlMIYN9fIADcVzJ8fCwFLyk3Lq3MM3o6Kgfl9dyWziItJ0/1PlMYN1l6+qF8VQLXQpT+4+BS8QnKVDFJJWE3Woims1HFoCTL6bFOkH/iUHG5egPkxBTjpvu19a4xxALp0d+WkvKWcEkK9ZrAVSr3CIPDhtyL0a0/mgX24b/X8TL5o09nHHSWggtLaWkt4wRmRapPuif3dHXh+G8lRdhSucehYCrKJA4AStNE7PwqNMtSPpc3m6l9Twe0XUzbMVoliF98fnLiIkWqf1uvj1TJluGxW980r3Ya5B/ocJmhiDONNenBOVtosb1Xis/nadPWc0Udxk/f/FZ9+rdwXCo5OFUsMheE1bGStU5GHXymvsk4WLxb/iytQymCPcBv/QQu54z4PKhpdcYw== sunfield@caprica.local'
+
+  leopold:
+    state: present
+    company: "Leopold Schabel"
+    email: ring@leoluk.de
+    uid: 6009
+    shell: /bin/bash
+    groups:
+      - ring-users
+    sshkeys:
+      - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUUJrDp3xdU9mumOMFQiDxL5rNRo7nVTrkVNPdx077u3mOX6Xy0vlr4BL2MA0cR5lRe2HNp1JBlPoinrFJDAK9uLSupZ+lycgcEPbtaz7FV/HAKtSJ5sOC95kA935GvV9/XsbdHcWhNilkPMe0bRUDoTGMFNc1YAaJfYnD2jAoJtfPR7Yswktp0TfBuTDSl7m6Bj50VPjRSd6Tj+WURI+X94hWnNd4Q9Iv7vQZ3bq7pFZAogK0hb+FBT9NaU57NnerCNpFCmgIVSwYevdeh610imA7d00bzjoY57NhqqRGDKLdg8y3JKvjFrVTn2gdoYyRy/CzyRFipHWwU0b6vlOV leopold'
