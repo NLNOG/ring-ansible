@@ -3161,7 +3161,7 @@ USERS:
       - ring-users
 
   carnet:
-    state: present
+    state: absent
     company: 'CARNet'
     email: 'muc@carnet.hr'
     uid: 5417
