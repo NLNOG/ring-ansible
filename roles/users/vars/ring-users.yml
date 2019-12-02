@@ -1970,7 +1970,7 @@ USERS:
   iucc:
     state: present
     company: 'IUCC'
-    email: 'nocplus@noc.ilan.net.il'
+    email: 'iucchelp@iucc.ac.il'
     uid: 5267
     groups:
       - ring-users
