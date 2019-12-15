@@ -4384,3 +4384,19 @@ USERS:
     groups:
       - ring-users
 
+  prodigi:
+    state: present
+    company: 'Prodigi Technology Services Limited'
+    email: 'noc@prodigi.nz'
+    uid: 5568
+    groups:
+      - ring-users
+
+  mvix:
+    state: present
+    company: 'AS208751'
+    email: 'noc@as208751.net'
+    uid: 5569
+    groups:
+      - ring-users
+

@@ -2111,3 +2111,7 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.14 V6=2001:4f8:1:2000::14
 
 [neptune]
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1::133
+
+[prodigi]
+
+[mvix]
