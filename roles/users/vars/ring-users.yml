@@ -4393,7 +4393,7 @@ USERS:
       - ring-users
 
   mvix:
-    state: absent
+    state: present
     company: 'AS208751'
     email: 'noc@as208751.net'
     uid: 5569
