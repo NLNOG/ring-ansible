@@ -61,17 +61,7 @@ USERS:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINMMEIwWGy839tCt7GJjs2XagCdsXL5TZGnj0kceDccY lieter@ananas.home.plexis.eu'
 
   grizz:
-    state: present
-    company: "Matt Griswold"
-    email: grizz@20c.com
-    uid: 6006
-    shell: /bin/bash
-    groups:
-      - ring-admins
-      - ring-users
-    sshkeys:
-      - 'ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAB/8EAAf/ZqQI/f+uwUCQkfCpSzjh6fC0rNoS0/wgFAwC4EnnUUj0+NnG8/ib/7TMOZHQOxdUqwwt4dkuoj26lOyAHstuFbxl8mQBFaEWz/pWlay6QJEFfDxM/Kpu5E40Q5b59DbbVGFykPJNox2mB1gQLJFM+YxRbSlhsrvd9xum2vlA== grizz@20c.com'
-      - 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAvcBYRMAmEMmj7Wlh5MWf5wqoJePWtI+Hrpes/EoV5bsQAY05rGtb1ZZPZG9TDjBqblZeRv+tFMlsEathscuSSJBtR9mAZIicfa/799EjuEXwVGkTsE36VeSqznM7efELJn5l7Nealn6R4WpXUFjmvutVzuqhNIDK/1ZvEY62wRQtlB21flFCulrHje1KxCv7TCfhmRMf7J2A8jXXXiqEVsZ8yF6YNsg7bHpjadgS0vxlNXc8RYqW6LU85b2KxWaybRoWuMY4S/AEQNxrMNUHLUD+qjxbmkTV6cVWlx9yfPb8c3tpZL4x78/Qhae/a1dZcYz3aeO90TJ2cx0xmSLjlQ== grizz@20c.com'
+    state: absent
 
   sander:
     state: present
