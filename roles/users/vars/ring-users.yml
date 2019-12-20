@@ -4400,3 +4400,11 @@ USERS:
     groups:
       - ring-users
 
+  leopold:
+    state: present
+    company: 'NLNOG Ring-Admins'
+    email: 'ring-admins@ring.nlnog.net'
+    uid: 6009
+    groups:
+      - ring-users
+
