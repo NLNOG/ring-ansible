@@ -2296,7 +2296,7 @@ USERS:
       - ring-users
 
   vshn:
-    state: present
+    state: absent
     company: 'VSHN AG'
     email: 'tech@vshn.ch'
     uid: 5308
