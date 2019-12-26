@@ -523,6 +523,7 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.14 V6=2001:4f8:1:2000::14
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1::133
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 mvix01.ring.nlnog.net OWNER=mvix V4=45.135.151.46 V6=2a06:e881:6700:5::ff01
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2160,3 +2161,4 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::
 mvix01.ring.nlnog.net OWNER=mvix V4=45.135.151.46 V6=2a06:e881:6700:5::ff01
 
 [fetzer]
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
