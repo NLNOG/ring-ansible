@@ -4400,3 +4400,11 @@ USERS:
     groups:
       - ring-users
 
+  fetzer:
+    state: present
+    company: 'Matthias Fetzer'
+    email: 'noc@rofl.cat'
+    uid: 5570
+    groups:
+      - ring-users
+
