@@ -3977,7 +3977,7 @@ USERS:
       - ring-users
 
   equinixbr:
-    state: present
+    state: absent
     company: 'Equinix Brazil'
     email: 'br-noc@equinix.com'
     uid: 5518
@@ -4153,7 +4153,7 @@ USERS:
       - ring-users
 
   g8net:
-    state: present
+    state: absent
     company: 'G8'
     email: 'lucenildo@g8.net.br'
     uid: 5540
