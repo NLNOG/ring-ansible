@@ -2633,7 +2633,7 @@ USERS:
 
   zitcom:
     state: present
-    company: 'Zitcom A/S'
+    company: 'team.blue Denmark A/S'
     email: 'noc@zitcom.dk'
     uid: 5351
     groups:
