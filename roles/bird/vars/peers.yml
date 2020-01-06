@@ -69,7 +69,7 @@ lg_peers:
     ipv6: 2607:FEE0:0:FF00::A2
   CELYA01:
     asn: 203596
-    ipv4: 185.122.100.35
+    ipv4: 185.122.100.33
     ipv6: 2a06:a400:1:0:600d:fee1:0:1
   CHAOSDARMSTADT1:
     asn: 6766
