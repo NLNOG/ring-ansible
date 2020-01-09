@@ -22,7 +22,6 @@ signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
-cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
@@ -102,7 +101,6 @@ claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
-claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
@@ -506,7 +504,6 @@ mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
-netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1::133
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
@@ -592,7 +589,6 @@ tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 [hibernia]
 
 [cyso]
-cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 
 [netability]
 
@@ -828,7 +824,6 @@ claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
-claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 
@@ -2106,7 +2101,6 @@ trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 
 [netshelter]
-netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
 
 [milkywan]
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
