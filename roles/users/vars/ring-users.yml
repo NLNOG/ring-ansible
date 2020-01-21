@@ -4416,3 +4416,19 @@ USERS:
     groups:
       - ring-users
 
+  teliadk:
+    state: present
+    company: 'Telia Company Denmark'
+    email: 'ncc@telia.dk'
+    uid: 5572
+    groups:
+      - ring-users
+
+  7lnetworks:
+    state: present
+    company: '7L Networks Inc'
+    email: 'noc@7l.com'
+    uid: 5573
+    groups:
+      - ring-users
+
