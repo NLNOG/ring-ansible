@@ -2712,7 +2712,7 @@ USERS:
       - ring-users
 
   tfskok:
-    state: present
+    state: absent
     company: 'TF SKOK S.A.'
     email: 'root@hsoit.pl'
     uid: 5361
@@ -3377,7 +3377,7 @@ USERS:
       - ring-users
 
   korbank:
-    state: present
+    state: absent
     company: 'Korbank S\A'
     email: 'noc@korbank.pl'
     uid: 5444
