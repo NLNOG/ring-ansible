@@ -526,6 +526,7 @@ fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:fff
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2172,3 +2173,8 @@ teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 
 [7lnetworks]
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
+
+[bakkerit]
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
+
+[layerbridge]

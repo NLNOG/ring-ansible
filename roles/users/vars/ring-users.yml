@@ -4432,3 +4432,19 @@ USERS:
     groups:
       - ring-users
 
+  bakkerit:
+    state: present
+    company: 'Bakker IT'
+    email: 'noc@bakker-it.eu'
+    uid: 5574
+    groups:
+      - ring-users
+
+  layerbridge:
+    state: present
+    company: 'LayerBridge SRL'
+    email: 'internal@layerbridge.com'
+    uid: 5575
+    groups:
+      - ring-users
+
