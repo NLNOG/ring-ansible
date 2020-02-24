@@ -176,6 +176,7 @@
     - /usr/bin/traceroute.db
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
+    - /usr/bin/mtr-packet
   always_run: yes
   changed_when: false
 
