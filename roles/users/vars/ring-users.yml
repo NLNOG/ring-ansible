@@ -2936,7 +2936,7 @@ USERS:
       - ring-users
 
   zerofail:
-    state: present
+    state: absent
     company: 'ZEROFAIL'
     email: 'NOC@zerofail.com'
     uid: 5389
