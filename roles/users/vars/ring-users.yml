@@ -1184,7 +1184,7 @@ USERS:
       - ring-users
 
   serverchoice:
-    state: present
+    state: absent
     company: 'ServerChoice Ltd'
     email: 'noc@ai.co.uk'
     uid: 5166
@@ -2792,7 +2792,7 @@ USERS:
       - ring-users
 
   widenet:
-    state: present
+    state: absent
     company: 'Wide-Net Sp. z o.o.'
     email: 'noc@wide-net.pl'
     uid: 5371
@@ -4025,7 +4025,7 @@ USERS:
       - ring-users
 
   godaddy:
-    state: present
+    state: absent
     company: 'GoDaddy'
     email: 'core-net@heg.com'
     uid: 5524
