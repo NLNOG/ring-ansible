@@ -195,9 +195,8 @@
 
 - name: "Set new capabilities (bionic)"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
+  when: item.stdout != "{{ item.item }} = cap_net_admin,cap_net_raw+eip" and ansible_distribution_release == "bionic"
   with_items: "{{ capb.results }}"
-  when: ansible_distribution_release == "bionic"
 
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
