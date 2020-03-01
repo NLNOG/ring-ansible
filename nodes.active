@@ -2139,3 +2139,7 @@ bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 
 [aplitt]
+
+[cloudcix]
+
+[synapsecom]

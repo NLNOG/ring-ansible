@@ -4456,3 +4456,19 @@ USERS:
     groups:
       - ring-users
 
+  cloudcix:
+    state: present
+    company: 'CloudCIX Ltd'
+    email: 'noc@cix.ie'
+    uid: 5577
+    groups:
+      - ring-users
+
+  synapsecom:
+    state: present
+    company: 'Synapsecom Telecoms SA'
+    email: 'noc@synapsecom.gr'
+    uid: 5578
+    groups:
+      - ring-users
+
