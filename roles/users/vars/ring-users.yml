@@ -4448,3 +4448,11 @@ USERS:
     groups:
       - ring-users
 
+  aplitt:
+    state: present
+    company: 'APLITT'
+    email: 'root@hsoit.pl'
+    uid: 5576
+    groups:
+      - ring-users
+
