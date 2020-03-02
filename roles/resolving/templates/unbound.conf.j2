@@ -12,3 +12,5 @@ server:
     access-control: 127.0.0.0/8 allow_snoop
     access-control: ::1 allow_snoop
     access-control: ::ffff:127.0.0.1 allow_snoop
+    # Override TTL when it is too long, to allow for faster re-testing
+    cache-max-ttl: 3600
