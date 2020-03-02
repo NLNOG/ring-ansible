@@ -95,6 +95,7 @@
     - tshark
     - ucspi-tcp
     - unattended-upgrades
+    - unbound-host
     - update-manager-core
     - update-notifier-common
     - vim
