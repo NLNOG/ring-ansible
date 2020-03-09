@@ -1,3 +1,4 @@
+---
 lg_peers:
   ADISTA1:
     asn: 16347
@@ -22,7 +23,7 @@ lg_peers:
   ALARIG1:
     asn: 208627
     ipv4: 45.91.126.248
-    ipv6: 2a0e:f42:ffff::
+    ipv6: '2a0e:f42:ffff::'
   ALARIG2:
     asn: 208627
     ipv4: 45.91.126.249
@@ -373,7 +374,7 @@ lg_peers:
   UNILOGIC1:
     asn: 28788
     ipv4: 62.133.192.15
-    ipv6: 2001:4128:6135:210:250:56ff:feb6:3e 
+    ipv6: 2001:4128:6135:210:250:56ff:feb6:3e
   NESSUS1:
     asn: 47692
     ipv4: 77.244.255.5
