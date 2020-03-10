@@ -419,6 +419,7 @@ vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=185.219.208.126 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
 vmhaus01.ring.nlnog.net OWNER=vmhaus V4=185.214.69.134 V6=2a06:82c2:0:de::1
 comhem01.ring.nlnog.net OWNER=comhem V4=193.150.194.129 V6=2a04:ae39:300:100::1
 quxlabs01.ring.nlnog.net OWNER=quxlabs V4=193.182.61.51 V6=2a0a:3507:1:3001::3e04
@@ -463,6 +464,7 @@ ionswitch01.ring.nlnog.net OWNER=ionswitch V4=66.11.126.68 V6=2605:fb80:e000:9d1
 equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
+telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
@@ -1846,6 +1848,7 @@ ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
 
 [github]
 
@@ -1978,6 +1981,7 @@ pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:
 wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 
 [telekomhu]
+telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 
 [marbis]
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
