@@ -138,7 +138,7 @@ USERS:
   is:
     state: present
     company: 'KPN Internedservices'
-    email: 'netwerk@internedservices.nl'
+    email: 'kisinfranetwerk@kpn.com'
     uid: 5021
     groups:
       - ring-users
