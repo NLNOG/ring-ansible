@@ -313,6 +313,7 @@ linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:
 linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
 linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
+linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:100:23::2
@@ -526,7 +527,7 @@ bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
-synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.114 V6=2001:1548:8000:1::23
+synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::23
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -1496,6 +1497,7 @@ linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:
 linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
 linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
+linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
 
 [openimp]
 
@@ -2183,4 +2185,4 @@ aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
 
 [synapsecom]
-synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.114 V6=2001:1548:8000:1::23
+synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::23
