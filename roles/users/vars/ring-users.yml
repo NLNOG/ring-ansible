@@ -4025,7 +4025,7 @@ USERS:
       - ring-users
 
   godaddy:
-    state: absent
+    state: present
     company: 'GoDaddy'
     email: 'core-net@heg.com'
     uid: 5524
@@ -4469,6 +4469,14 @@ USERS:
     company: 'Synapsecom Telecoms SA'
     email: 'noc@synapsecom.gr'
     uid: 5578
+    groups:
+      - ring-users
+
+  arvan:
+    state: present
+    company: 'ArvanCloud'
+    email: 'cdn.sre@arvancloud.com'
+    uid: 5579
     groups:
       - ring-users
 
