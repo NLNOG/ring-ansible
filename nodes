@@ -474,6 +474,7 @@ wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
+godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.18 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
@@ -527,7 +528,7 @@ bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
-synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::23
+synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::25
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2022,6 +2023,7 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 
 [godaddy]
+godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.18 V6=2001:1520:100::4
 
 [mitsol]
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
@@ -2185,4 +2187,4 @@ aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
 
 [synapsecom]
-synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::23
+synapsecom01.ring.nlnog.net OWNER=synapsecom V4=2001:1548:8000:1::25 V6=2001:1548:8000:1::25
