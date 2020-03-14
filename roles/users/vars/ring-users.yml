@@ -4472,10 +4472,10 @@ USERS:
     groups:
       - ring-users
 
-  arvan:
+  infotechna:
     state: present
-    company: 'ArvanCloud'
-    email: 'cdn.sre@arvancloud.com'
+    company: 'Infotechna LTD'
+    email: 'noc@infotechna.hu'
     uid: 5579
     groups:
       - ring-users
