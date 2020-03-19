@@ -447,6 +447,9 @@ lg_peers:
     asn: 8455
     ipv4: 95.142.96.26
     ipv6: 2a00:1188::11
+  BUSINESSCONNECT1:
+    ipv4: 195.191.121.248
+    ipv6: 2a01:8800:0:1::1
 
 readonly_peers:
   ISOLARIO1:
