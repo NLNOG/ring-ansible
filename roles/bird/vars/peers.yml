@@ -448,6 +448,7 @@ lg_peers:
     ipv4: 95.142.96.26
     ipv6: 2a00:1188::11
   BUSINESSCONNECT1:
+    asn: 15693
     ipv4: 195.191.121.248
     ipv6: 2a01:8800:0:1::1
 
