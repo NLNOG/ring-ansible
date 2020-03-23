@@ -67,6 +67,7 @@ amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
+amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
@@ -308,6 +309,7 @@ linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:fe
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
 linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
+linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
 linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
@@ -416,6 +418,7 @@ mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=185.219.208.126 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
+interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.245.234 V6=2c0f:f178:ffff:ffff::2
 vmhaus01.ring.nlnog.net OWNER=vmhaus V4=185.214.69.134 V6=2a06:82c2:0:de::1
@@ -720,6 +723,7 @@ amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
+amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 
 [equinixnl]
@@ -1469,6 +1473,7 @@ linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:fe
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
 linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
+linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
 linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
 
 [openimp]
@@ -1843,6 +1848,7 @@ myloc01.ring.nlnog.net OWNER=myloc V4=185.219.208.126 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 
 [interhost]
+interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 
 [pinse]
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
