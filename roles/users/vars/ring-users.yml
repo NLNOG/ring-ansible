@@ -737,7 +737,7 @@ USERS:
 
   lagis:
     state: present
-    company: 'lagis Internet Serviceprovider GmbH'
+    company: 'LINZ STROM GAS WÄRMEGmbH'
     email: 'sysadmin@lagis.at'
     uid: 5106
     groups:
