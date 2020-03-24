@@ -221,7 +221,6 @@ businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
-networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
@@ -339,7 +338,6 @@ inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
-anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.28.226 V6=2a02:4260:1004::2
@@ -1251,7 +1249,6 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 
 [networkoperations]
-networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 
 [blizoo]
 
@@ -1579,7 +1576,6 @@ inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
 
 [anuragbhatia]
-anuragbhatia01.ring.nlnog.net OWNER=anuragbhatia V6=2402:b580:3:2::2
 
 [elite]
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
