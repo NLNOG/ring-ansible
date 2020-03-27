@@ -2696,7 +2696,7 @@ USERS:
       - ring-users
 
   coreinternet:
-    state: present
+    state: absent
     company: 'Core Internet Limited'
     email: 'noc@coreinternet.net'
     uid: 5359
