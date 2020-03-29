@@ -25,10 +25,11 @@
       tags: check_v6
       command: ping6 -c 1 ring.nlnog.net
       register: check_v6
+      when: hostvars[inventory_hostname]['V6'] is defined
     - fail:
         msg: Could not ping ring.nlnog.net (IPv6)
       tags: check_v6
-      when: check_v6.rc != 0
+      when: check_v6.rc != 0 and hostvars[inventory_hostname]['V6'] is defined
     - name: Check CPU architecture
       fail:
         msg: Host is not an x86_64 system
