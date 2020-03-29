@@ -93,6 +93,7 @@ melbourne01.ring.nlnog.net OWNER=melbourne V4=37.128.187.253 V6=2a03:b200:f::24
 go6lab01.ring.nlnog.net OWNER=go6lab V4=91.239.97.26 V6=2001:67c:27e4:15::26
 a2binternet01.ring.nlnog.net OWNER=a2binternet V4=178.249.153.39 V6=2a02:1668:a2b:1011::39
 a2binternet02.ring.nlnog.net OWNER=a2binternet V4=178.249.153.30 V6=2a02:1668:a2b:1011::30
+i3d01.ring.nlnog.net OWNER=i3d V4=31.204.150.13 V6=2a00:1630:2:1c08::1
 obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132::2
 infomaniak01.ring.nlnog.net OWNER=infomaniak V4=83.166.136.173 V6=2001:1600:4:8:f816:3eff:fe6d:bc56
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
@@ -519,6 +520,7 @@ aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
+arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [infranode]
 
@@ -811,6 +813,7 @@ a2binternet01.ring.nlnog.net OWNER=a2binternet V4=178.249.153.39 V6=2a02:1668:a2
 a2binternet02.ring.nlnog.net OWNER=a2binternet V4=178.249.153.30 V6=2a02:1668:a2b:1011::30
 
 [i3d]
+i3d01.ring.nlnog.net OWNER=i3d V4=31.204.150.13 V6=2a00:1630:2:1c08::1
 
 [keenondots]
 
@@ -2157,5 +2160,6 @@ synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 
 [arvancloud]
+arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [bogons]

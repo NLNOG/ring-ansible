@@ -800,7 +800,7 @@ USERS:
       - ring-users
 
   i3d:
-    state: absent
+    state: present
     company: 'Interactive 3D'
     email: 'noc2@i3d.nl'
     uid: 5114
