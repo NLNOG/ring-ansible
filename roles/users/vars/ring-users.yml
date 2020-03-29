@@ -4480,3 +4480,11 @@ USERS:
     groups:
       - ring-users
 
+  arvancloud:
+    state: present
+    company: 'ArvanCloud'
+    email: 'cdn.sre@arvancloud.com'
+    uid: 5580
+    groups:
+      - ring-users
+
