@@ -4488,3 +4488,11 @@ USERS:
     groups:
       - ring-users
 
+  bogons:
+    state: present
+    company: 'Bogons Ltd'
+    email: 'noc@bogons.net'
+    uid: 5581
+    groups:
+      - ring-users
+
