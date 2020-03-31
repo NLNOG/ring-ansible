@@ -438,7 +438,6 @@ centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
-mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:131:254
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
@@ -489,7 +488,6 @@ wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:0500::514b
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
-mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:210:1::
 kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
@@ -1911,7 +1909,6 @@ torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD
 [internetport]
 
 [mlab]
-mlab01.ring.nlnog.net OWNER=mlab V4=185.238.131.254 V6=2001:678:53c:2:185:238:131:254
 
 [axians]
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
@@ -2066,7 +2063,6 @@ tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103
 xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 
 [mdbrasil]
-mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 
 [packet]
 packet01.ring.nlnog.net OWNER=packet V4=147.75.199.9 V6=2604:1380:1:ae00::1
