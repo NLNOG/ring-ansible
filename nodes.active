@@ -69,6 +69,9 @@ amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
+amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
+amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
+amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
@@ -519,6 +522,7 @@ cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337:
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
+fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 
 [infranode]
 
@@ -721,6 +725,9 @@ amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
+amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
+amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
+amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 
 [equinixnl]
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
@@ -2161,3 +2168,4 @@ arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 [bogons]
 
 [fibia]
+fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
