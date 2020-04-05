@@ -69,6 +69,13 @@ amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
+amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
+amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::17
+amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
+amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
+amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
+amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
+amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
@@ -445,7 +452,7 @@ centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD:43
-mlab01.ring.nlnog.net OWNER=mlab V4=213.154.248.126 V6=2a0e:a6c0:1000:124:45:137:184:126
+mlab01.ring.nlnog.net OWNER=mlab V4=45.137.184.126 V6=2a0e:a6c0:1000:124:45:137:184:126
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
@@ -488,7 +495,7 @@ misaka01.ring.nlnog.net OWNER=misaka V4=185.209.84.110 V6=2a0b:4342:4000:63::
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:f1:bbf0:997d:589d:7278:b9c8
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018::116
-lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:2000:1::2
+lnkro01.ring.nlnog.net OWNER=lnkro V4=195.88.213.35 V6=2a0d:f400:2000:1::2
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
@@ -748,6 +755,13 @@ amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
+amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
+amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::17
+amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
+amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
+amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
+amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
+amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 
 [equinixnl]
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
@@ -1942,7 +1956,7 @@ torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2001:504:1A:1:ABBA:15:DEAD
 [internetport]
 
 [mlab]
-mlab01.ring.nlnog.net OWNER=mlab V4=213.154.248.126 V6=2a0e:a6c0:1000:124:45:137:184:126
+mlab01.ring.nlnog.net OWNER=mlab V4=45.137.184.126 V6=2a0e:a6c0:1000:124:45:137:184:126
 
 [axians]
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
@@ -2073,7 +2087,7 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.90.116 V6=2001:67c:1405:1018
 [g8net]
 
 [lnkro]
-lnkro01.ring.nlnog.net OWNER=lnkro V4=185.36.140.45 V6=2a0d:f400:2000:1::2
+lnkro01.ring.nlnog.net OWNER=lnkro V4=195.88.213.35 V6=2a0d:f400:2000:1::2
 
 [xtom]
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
