@@ -2159,3 +2159,5 @@ infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [bogons]
+
+[fibia]

@@ -4496,3 +4496,11 @@ USERS:
     groups:
       - ring-users
 
+  fibia:
+    state: present
+    company: 'Fibia'
+    email: 'noc@fibia.dk'
+    uid: 5582
+    groups:
+      - ring-users
+
