@@ -375,6 +375,7 @@ depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
+netrouting02.ring.nlnog.net OWNER=netrouting V4=199.71.235.230 V6=2606:ed00:4786:36::2
 liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20:5::10
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
@@ -471,6 +472,7 @@ telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:2
 marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
+mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
@@ -524,6 +526,7 @@ cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337:
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
+bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 
 [infranode]
@@ -1699,6 +1702,7 @@ franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 
 [netrouting]
 netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
+netrouting02.ring.nlnog.net OWNER=netrouting V4=199.71.235.230 V6=2606:ed00:4786:36::2
 
 [liteserver]
 liteserver01.ring.nlnog.net OWNER=liteserver V4=185.31.172.236 V6=2a01:6340:1:20:5::10
@@ -2003,6 +2007,7 @@ globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 
 [mitsol]
+mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
 ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
@@ -2170,6 +2175,7 @@ infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [bogons]
+bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 
 [fibia]
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
