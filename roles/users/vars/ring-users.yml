@@ -2016,7 +2016,7 @@ USERS:
       - ring-users
 
   cloudnl:
-    state: present
+    state: absent
     company: 'Cloud.nl'
     email: 'support@cloud.nl'
     uid: 5273
