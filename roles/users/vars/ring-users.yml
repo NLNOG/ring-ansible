@@ -4504,3 +4504,19 @@ USERS:
     groups:
       - ring-users
 
+  npo:
+    state: present
+    company: 'NPO'
+    email: 'noc@omroep.nl'
+    uid: 5583
+    groups:
+      - ring-users
+
+  ficolo:
+    state: present
+    company: 'Ficolo Oy'
+    email: 'noc@ficolo.com'
+    uid: 5584
+    groups:
+      - ring-users
+
