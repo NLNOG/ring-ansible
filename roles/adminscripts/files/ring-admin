@@ -55,6 +55,7 @@ CREATE TABLE users
     active INTEGER,
     participant INTEGER NOT NULL,
     admin INTEGER,
+    email VARCHAR(255),
     FOREIGN KEY(participant) REFERENCES participants(id)
 );
 CREATE TABLE machines
@@ -611,7 +612,10 @@ class commands(object):
             else:
                 f.write('    state: present\n')
             f.write('    company: \'' + p['company'] + '\'\n')
-            f.write('    email: \'' + p['nocemail'] + '\'\n')
+            if u['email']:
+                f.write('    email: \'' + u['email'] + '\'\n')
+            else:
+                f.write('    email: \'' + p['nocemail'] + '\'\n')
             f.write('    uid: ' + str(u['userid']) + '\n')
             if u['shell']:
                 f.write('    shell: ' + u['shell'] + '\n')
