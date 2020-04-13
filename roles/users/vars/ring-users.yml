@@ -4520,3 +4520,11 @@ USERS:
     groups:
       - ring-users
 
+  mediactive:
+    state: present
+    company: 'Mediactive Network'
+    email: 'noc@mediactive.fr'
+    uid: 5585
+    groups:
+      - ring-users
+
