@@ -1034,7 +1034,7 @@ USERS:
   sidnrd:
     state: present
     company: 'SIDN'
-    email: 'unixbeheer@sidn.nl'
+    email: 'sidnlabs@sidn.nl'
     uid: 5116
     groups:
       - ring-users
