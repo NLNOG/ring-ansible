@@ -2872,7 +2872,7 @@ USERS:
       - ring-users
 
   anuragbhatia:
-    state: present
+    state: absent
     company: 'Anurag Bhatia R&D Network'
     email: 'me@anuragbhatia.com'
     uid: 5382
