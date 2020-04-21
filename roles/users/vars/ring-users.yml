@@ -4528,3 +4528,19 @@ USERS:
     groups:
       - ring-users
 
+  elkaim:
+    state: present
+    company: 'ELKAIM ELIE'
+    email: 'noc@as205816.net'
+    uid: 5586
+    groups:
+      - ring-users
+
+  timico:
+    state: present
+    company: 'Timico Limited'
+    email: 'networks@timico.net'
+    uid: 5587
+    groups:
+      - ring-users
+
