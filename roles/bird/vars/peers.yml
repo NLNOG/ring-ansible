@@ -420,10 +420,14 @@ lg_peers:
     asn: 36236
     ipv4: 208.111.38.185
     ipv6: 2607:f740:0:7::f79
-  LEVEL66NETWORK1:
+  VPS66CLOUD1:
     asn: 209844
     ipv4: 141.98.136.1
     ipv6: 2a09:11c0::1
+  VPS66CLOUD2:
+    asn: 209844
+    ipv4: 141.98.136.2
+    ipv6: 2a09:11c0::2
   G8NET1:
     asn: 28329
     ipv4: 186.226.80.255
