@@ -456,6 +456,10 @@ lg_peers:
     asn: 15693
     ipv4: 195.191.121.248
     ipv6: 2a01:8800:0:1::1
+  OPENBSD1:
+    asn: 22512
+    ipv4: 204.209.252.3
+    ipv6: 2620:3d:c000:1230::34
 
 readonly_peers:
   ISOLARIO1:
