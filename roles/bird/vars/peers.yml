@@ -460,6 +460,10 @@ lg_peers:
     asn: 22512
     ipv4: 204.209.252.3
     ipv6: 2620:3d:c000:1230::34
+  TIMICO1:
+    asn: 8607
+    ipv4: 62.121.19.29
+    ipv6: 2001:40a0:0:1::b
 
 readonly_peers:
   ISOLARIO1:
