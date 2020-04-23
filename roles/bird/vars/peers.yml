@@ -464,6 +464,10 @@ lg_peers:
     asn: 8607
     ipv4: 62.121.19.29
     ipv6: 2001:40a0:0:1::b
+  ATT1:
+    asn: 7018
+    ipv4: 12.0.1.63
+    ipv6: 2001:1890:111d:1::63
 
 readonly_peers:
   ISOLARIO1:
