@@ -344,10 +344,6 @@ lg_peers:
     asn: 50343
     ipv4: 185.169.113.240
     ipv6: 2a01:8781:1::1
-  YOURORG1:
-    asn: 19255
-    ipv4: 216.14.98.5
-    ipv6: 2001:4978:1:10::ffff
   ZEROFAIL1:
     asn: 40191
     ipv4: 216.221.157.162
@@ -468,6 +464,9 @@ lg_peers:
     asn: 7018
     ipv4: 12.0.1.63
     ipv6: 2001:1890:111d:1::63
+  YOURORG1:
+    asn: 19255
+    ipv4: 163.237.247.99
 
 readonly_peers:
   ISOLARIO1:
