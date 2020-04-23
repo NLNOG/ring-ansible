@@ -467,6 +467,9 @@ lg_peers:
   YOURORG1:
     asn: 19255
     ipv4: 163.237.247.99
+  METAPEER1:
+    asn: 13331
+    ipv4: 163.237.247.112
 
 readonly_peers:
   ISOLARIO1:
