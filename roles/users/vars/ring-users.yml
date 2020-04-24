@@ -4544,3 +4544,19 @@ USERS:
     groups:
       - ring-users
 
+  jacknet:
+    state: present
+    company: 'JackNet'
+    email: 'noc@hadrill.co.uk'
+    uid: 5588
+    groups:
+      - ring-users
+
+  nextconnex:
+    state: present
+    company: 'Next Connex'
+    email: 'noc@nextconnex.com'
+    uid: 5589
+    groups:
+      - ring-users
+

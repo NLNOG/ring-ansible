@@ -541,6 +541,8 @@ ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
 elkaim01.ring.nlnog.net OWNER=elkaim V4=185.245.20.253 V6=2a0c:9b80:1::253
 timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
+jacknet01.ring.nlnog.net OWNER=jacknet V4=185.234.74.26 V6=2a06:1e80::1A
+nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2230,3 +2232,9 @@ elkaim01.ring.nlnog.net OWNER=elkaim V4=185.245.20.253 V6=2a0c:9b80:1::253
 
 [timico]
 timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
+
+[jacknet]
+jacknet01.ring.nlnog.net OWNER=jacknet V4=185.234.74.26 V6=2a06:1e80::1A
+
+[nextconnex]
+nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
