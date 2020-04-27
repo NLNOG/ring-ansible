@@ -4560,3 +4560,11 @@ USERS:
     groups:
       - ring-users
 
+  flowvps:
+    state: present
+    company: 'FlowVPS'
+    email: 'admin@alphalayer.com.au'
+    uid: 5590
+    groups:
+      - ring-users
+
