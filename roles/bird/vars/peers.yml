@@ -374,6 +374,10 @@ lg_peers:
   METAPEER1:
     asn: 13331
     ipv4: 163.237.247.112
+  FORK1:
+    asn: 25681
+    ipv4: 23.147.64.67
+    ipv6: 2620:39:6000:100::3
 
 readonly_peers:
   ISOLARIO1:
