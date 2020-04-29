@@ -381,6 +381,10 @@ lg_peers:
   ERICNET1:
     asn: 206628
     ipv6: 2a0c:9a40:1::303
+  MICHELLENET1:
+    asn: 208751
+    ipv4: 78.141.208.19
+    ipv6: 2001:19f0:5001:308a:5400:2ff:fe96:d24b
 
 readonly_peers:
   ISOLARIO1:
