@@ -378,6 +378,9 @@ lg_peers:
     asn: 25682
     ipv4: 23.147.64.67
     ipv6: 2620:39:6000:100::3
+  ERICNET1:
+    asn: 206628
+    ipv6: 2a0c:9a40:1::303
 
 readonly_peers:
   ISOLARIO1:
