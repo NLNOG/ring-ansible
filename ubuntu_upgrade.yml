@@ -170,7 +170,7 @@
         update_cache: yes
 
     - name: "Perform release upgrade (xenial -> bionic)"
-      command: do-release-upgrade -d -f DistUpgradeViewNonInteractive
+      command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release != "bionic"
 
     - name: "Remove daemontools"
