@@ -4568,3 +4568,11 @@ USERS:
     groups:
       - ring-users
 
+  skylonhost:
+    state: present
+    company: 'SkylonHost'
+    email: 'noc@skylonhost.com'
+    uid: 5591
+    groups:
+      - ring-users
+
