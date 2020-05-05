@@ -75,6 +75,7 @@ amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
 amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
+amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
@@ -535,6 +536,7 @@ timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
 jacknet01.ring.nlnog.net OWNER=jacknet V4=185.234.74.26 V6=2a06:1e80::1A
 nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 flowvps01.ring.nlnog.net OWNER=flowvps V4=103.108.228.24 V6=2402:7340:1:44::e645
+skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
 
 [infranode]
 
@@ -743,6 +745,7 @@ amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
 amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
+amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 
 [equinixnl]
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
@@ -2211,3 +2214,4 @@ nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20
 flowvps01.ring.nlnog.net OWNER=flowvps V4=103.108.228.24 V6=2402:7340:1:44::e645
 
 [skylonhost]
+skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
