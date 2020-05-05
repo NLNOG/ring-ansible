@@ -4,6 +4,10 @@
     - apache2
     - libapache2-mod-wsgi
 
+- name: "Install php7 mod-php when required"
+  apt: name=libapache2-mod-php7.0 state=latest
+  when: '"map" in apache_vhosts|default([])'
+
 - name: "Remove apache2 placeholder site"
   file:
     path: /etc/apache2/sites-enabled/000-default
