@@ -385,6 +385,10 @@ lg_peers:
     asn: 208751
     ipv4: 78.141.208.19
     ipv6: 2001:19f0:5001:308a:5400:2ff:fe96:d24b
+  SKYLONHOST1:
+    asn: 202297
+    ipv4: 109.248.43.5
+    ipv6: 2001:678:aa4::5
 
 readonly_peers:
   ISOLARIO1:
