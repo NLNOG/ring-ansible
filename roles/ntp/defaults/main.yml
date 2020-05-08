@@ -1,4 +1,4 @@
-ntp_default_server: pool.ntp.org
+ntp_default_server: 193.0.0.229
 ntp_servers:
  - ntp.time.nl
  - time.nist.gov
