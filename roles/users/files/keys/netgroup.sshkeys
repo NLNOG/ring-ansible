@@ -7,4 +7,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB/zcAYVQSoGXbp8qtV47SZymeG1tDxrDV5GWsSWsdrH+u
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIImcPQaImcnsuoF/QilnHXadj6GvUoNFokVrt59m2Cl christianlorenzen@Christians-MacBook-Pro.local
 [sudo] password for mar:
 ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBACyAQPFejlllS3f650RrebAT6soHRz/1zl7qXsQx7ZZV002dPgrnmDa0RVSqipi+U8wEwKhtqjnY3LAkpIxRfujZwFRYQ/dQwKtfNsr+wySfj77b5DLDwatu1hOa5ayDo0lIyOsQVWDjtVBowyAR7gxCNa6wIKQNb5Ez0qEcmFHeUz6SQ== acp@donkey-unicorn.lan
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFNrz6y2KSfPjIa+Q/gSuHtIZHCo/Wx/d9KCzW0xk6At pkr@Peters-MacBook-Pro.local
 
