@@ -6,3 +6,6 @@ smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter
 {% if postfix_home_mailbox | d() %}
 home_mailbox = {{ postfix_home_mailbox }}
 {% endif %}
+{% if ansible_distribution_release == "bionic" %}
+compatibility_level = 2
+{% endif %}
