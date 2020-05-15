@@ -4576,3 +4576,11 @@ USERS:
     groups:
       - ring-users
 
+  leitwerk:
+    state: present
+    company: 'Leitwerk AG'
+    email: 'netmaster@leitwerk.de'
+    uid: 5592
+    groups:
+      - ring-users
+

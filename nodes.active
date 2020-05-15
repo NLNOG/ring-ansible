@@ -2211,3 +2211,5 @@ flowvps01.ring.nlnog.net OWNER=flowvps V4=103.108.228.24 V6=2402:7340:1:44::e645
 
 [skylonhost]
 skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
+
+[leitwerk]
