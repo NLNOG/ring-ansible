@@ -340,7 +340,6 @@ kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
-23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.28.226 V6=2a02:4260:1004::2
@@ -509,7 +508,6 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
-milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 mvix01.ring.nlnog.net OWNER=mvix V4=45.135.151.46 V6=2a06:e881:6700:5::ff01
@@ -1592,7 +1590,6 @@ inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
 [23media]
-23media01.ring.nlnog.net OWNER=23media V4=212.83.32.45 V6=2a00:f48:1007::8
 
 [anuragbhatia]
 
@@ -2135,7 +2132,6 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
 
 [milkywan]
-milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 
 [isc]
 
