@@ -6,6 +6,5 @@ smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter
 {% if postfix_home_mailbox | d() %}
 home_mailbox = {{ postfix_home_mailbox }}
 {% endif %}
-{% if ansible_distribution_release == "bionic" %}
-compatibility_level = 2
-{% endif %}
+mynetworks = 127.0.0.0/8 [::1]/128
+smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
