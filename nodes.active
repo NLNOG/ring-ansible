@@ -509,6 +509,7 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
+milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 mvix01.ring.nlnog.net OWNER=mvix V4=45.135.151.46 V6=2a06:e881:6700:5::ff01
@@ -536,8 +537,6 @@ nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20
 flowvps01.ring.nlnog.net OWNER=flowvps V4=103.108.228.24 V6=2402:7340:1:44::e645
 skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
 leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56ff:feaf:546
-unixsolutions01.ring.nlnog.net OWNER=unixsolutions V4=185.111.204.122 V6=2a04:6480:204::122
-unixsolutions02.ring.nlnog.net OWNER=unixsolutions V4=109.68.162.234 V6=2a02:2a08:214::234
 wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
 xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
@@ -2139,6 +2138,7 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
 
 [milkywan]
+milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 
 [isc]
 
@@ -2222,8 +2222,6 @@ skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:2
 leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56ff:feaf:546
 
 [unixsolutions]
-unixsolutions01.ring.nlnog.net OWNER=unixsolutions V4=185.111.204.122 V6=2a04:6480:204::122
-unixsolutions02.ring.nlnog.net OWNER=unixsolutions V4=109.68.162.234 V6=2a02:2a08:214::234
 
 [wdsix]
 wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
