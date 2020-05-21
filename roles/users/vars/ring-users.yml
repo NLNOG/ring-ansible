@@ -4584,3 +4584,35 @@ USERS:
     groups:
       - ring-users
 
+  unixsolutions:
+    state: present
+    company: 'Unix-Solutions'
+    email: 'noc@unix-solutions.be'
+    uid: 5593
+    groups:
+      - ring-users
+
+  wdsix:
+    state: present
+    company: 'WD6'
+    email: 'noc@wd6.net'
+    uid: 5594
+    groups:
+      - ring-users
+
+  xplose:
+    state: present
+    company: 'X-plose BV'
+    email: 'abuse@X-plose.be'
+    uid: 5595
+    groups:
+      - ring-users
+
+  aanet:
+    state: present
+    company: 'Andrews & Arnold Ltd'
+    email: 'datacentre@aa.net.uk'
+    uid: 5596
+    groups:
+      - ring-users
+
