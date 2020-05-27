@@ -3417,7 +3417,7 @@ USERS:
       - ring-users
 
   poprs:
-    state: present
+    state: absent
     company: 'Ponto de Presença da RNP no Rio Grande do Sul'
     email: 'suporte@pop-rs.rnp.br'
     uid: 5449
