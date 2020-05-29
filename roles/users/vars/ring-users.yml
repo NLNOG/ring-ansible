@@ -4625,7 +4625,7 @@ USERS:
       - ring-users
 
   fibertel:
-    state: present
+    state: absent
     company: 'FIBER TELECOM LTD'
     email: 'michal@krajcirovic.cz'
     uid: 5598
