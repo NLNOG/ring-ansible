@@ -5,9 +5,12 @@
   apt: name=ntpdate state=latest
   register: ntpdate
 
-- name: "Run ntpdate once to sync clock"
-  command: /usr/sbin/ntpdate {{ ntp_default_server }}
-  when: ntpdate.changed
+- name: "Run ntpdate once to sync clock (IPv6)"
+  command: /usr/sbin/ntpdate {{ ntp_default_server_v6 }}
+  when: ntpdate.changed and hostvars[inventory_hostname]['V6'] is defined
+- name: "Run ntpdate once to sync clock (IPv4)"
+  command: /usr/sbin/ntpdate {{ ntp_default_server_v4 }}
+  when: ntpdate.changed and hostvars[inventory_hostname]['V6'] is not defined
 
 - name: "Install cronjob to run ntpdate after reboot"
   template:
