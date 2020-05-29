@@ -4616,3 +4616,27 @@ USERS:
     groups:
       - ring-users
 
+  techfutures:
+    state: present
+    company: 'Tech Futures Interactive Inc.'
+    email: 'noc@techfutures.xyz'
+    uid: 5597
+    groups:
+      - ring-users
+
+  fibertel:
+    state: present
+    company: 'FIBER TELECOM LTD'
+    email: 'michal@krajcirovic.cz'
+    uid: 5598
+    groups:
+      - ring-users
+
+  norlys:
+    state: present
+    company: 'Norlys'
+    email: 'noc@stofa.dk'
+    uid: 5599
+    groups:
+      - ring-users
+

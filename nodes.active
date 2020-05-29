@@ -2235,3 +2235,9 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 
 [aanet]
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
+
+[techfutures]
+
+[fibertel]
+
+[norlys]
