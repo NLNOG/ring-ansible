@@ -112,9 +112,9 @@ claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
-hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
@@ -154,7 +154,6 @@ beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 direcpath01.ring.nlnog.net OWNER=direcpath V4=65.50.1.70 V6=2607:f1e8:f0f0:b:528a:1948:db90:ec59
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -511,6 +510,7 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
+milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 mvix01.ring.nlnog.net OWNER=mvix V4=45.135.151.46 V6=2a06:e881:6700:5::ff01
@@ -543,7 +543,6 @@ wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
 xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
-norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [infranode]
 
@@ -869,6 +868,7 @@ claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
 claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
+claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 
 [arpnetworks]
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
@@ -879,7 +879,6 @@ iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 [initseven]
 
 [hosting90systems]
-hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 
 [kordia]
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
@@ -1023,7 +1022,6 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 [ispservices]
 
 [ausregistry]
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 
 [switch]
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -2144,6 +2142,7 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 netshelter01.ring.nlnog.net OWNER=netshelter V4=185.121.69.10 V6=2001:678:a00::30
 
 [milkywan]
+milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0b:cbc0:1101:1::22
 
 [isc]
 
@@ -2244,6 +2243,5 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 [fibertel]
 
 [norlys]
-norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
