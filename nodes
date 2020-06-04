@@ -205,7 +205,6 @@ sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:20
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
-kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
 maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
@@ -528,7 +527,7 @@ fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:fff
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
-bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
@@ -1227,7 +1226,6 @@ nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 
 [kpn]
-kpn01.ring.nlnog.net OWNER=kpn V4=134.222.92.50 V6=2001:680:0:800f::15e
 
 [maxitel]
 maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
@@ -2206,7 +2204,7 @@ teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
 
 [bakkerit]
-bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.127 V6=2a0e:fd40:1:250::1
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
 
 [layerbridge]
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff

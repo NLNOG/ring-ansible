@@ -1808,7 +1808,7 @@ USERS:
       - ring-users
 
   kpn:
-    state: present
+    state: absent
     company: 'KPN International'
     email: 'peering@kpn-international.com'
     uid: 5247
