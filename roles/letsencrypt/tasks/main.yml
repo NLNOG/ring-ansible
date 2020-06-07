@@ -3,6 +3,7 @@
     keyserver: keyserver.ubuntu.com
     id: 7BF576066ADA65728FC7E70A8C47BE8E75BCA694
   register: certbot_repokey
+  when: ansible_distribution_release == "xenial"
 
 - name: "Add certbot repository"
   apt_repository:
@@ -10,6 +11,7 @@
     state: present
     filename: 'certbot_repo'
   register: certbot_repo
+  when: ansible_distribution_release == "xenial"
 
 - name: "Run apt-get update"
   apt:
