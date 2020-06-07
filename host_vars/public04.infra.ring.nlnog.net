@@ -1,5 +1,7 @@
 apache_vhosts:
   - webdev
+letsencrypt_certs:
+  - webdev
 
 hugo_sites:
   - name: webdev
