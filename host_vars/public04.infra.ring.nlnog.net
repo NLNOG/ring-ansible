@@ -1,0 +1,9 @@
+apache_vhosts:
+  - webdev
+
+hugo_sites:
+  - name: webdev
+    repo: https://github.com/NLNOG/ring-web
+    theme_name: anubis
+    theme_repo: https://github.com/mitrichius/hugo-theme-anubis
+

@@ -1,0 +1,5 @@
+- name: hugo generate
+  command: hugo -s /var/www/{{ item.name }}.ring.nlnog.net
+  with_items: "{{ hugo_sites|default([]) }}"
+
+  

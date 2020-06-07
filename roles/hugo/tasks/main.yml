@@ -1,0 +1,17 @@
+- name: "Install hugo"
+  apt: name=hugo state=latest
+
+- name: "Check out hugo source code repositories"
+  git:
+    repo: {{ item.repo }}
+    dest: "/var/www/{{ item.name }}.ring.nlnog.net"
+  with_items: "{{ hugo_sites|default([]) }}"
+  notify: hugo generate 
+
+- name: "Check out hugo source code repositories"
+  git:
+    repo: {{ item.theme_repo }}
+    dest: "/var/www/{{ item.name }}.ring.nlnog.net/themes/{{ item.theme_name }}"
+  with_items: "{{ hugo_sites|default([]) }}"
+  notify: hugo generate 
+
