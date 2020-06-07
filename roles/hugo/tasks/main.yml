@@ -3,14 +3,14 @@
 
 - name: "Check out hugo source code repositories"
   git:
-    repo: {{ item.repo }}
+    repo: "{{ item.repo }}"
     dest: "/var/www/{{ item.name }}.ring.nlnog.net"
   with_items: "{{ hugo_sites|default([]) }}"
   notify: hugo generate 
 
 - name: "Check out hugo source code repositories"
   git:
-    repo: {{ item.theme_repo }}
+    repo: "{{ item.theme_repo }}"
     dest: "/var/www/{{ item.name }}.ring.nlnog.net/themes/{{ item.theme_name }}"
   with_items: "{{ hugo_sites|default([]) }}"
   notify: hugo generate 
