@@ -1,15 +1,15 @@
+- name: "Add certbot repository key"
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 7BF576066ADA65728FC7E70A8C47BE8E75BCA694
+  register: certbot_repokey
+
 - name: "Add certbot repository"
   apt_repository:
     repo: 'deb http://ppa.launchpad.net/certbot/certbot/ubuntu xenial main'
     state: present
     filename: 'certbot_repo'
   register: certbot_repo
-
-- name: "Add certbot repository key"
-  apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: 7BF576066ADA65728FC7E70A8C47BE8E75BCA694
-  register: certbot_repokey
 
 - name: "Run apt-get update"
   apt:
