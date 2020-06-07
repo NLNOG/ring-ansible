@@ -570,6 +570,7 @@ compute02.infra.ring.nlnog.net OWNER=job V4=54.173.241.225 V6=2600:1f18:415a:730
 storage01.infra.ring.nlnog.net OWNER=job V4=52.18.186.201 V6=2a05:d018:9f2:ed01::3:1
 public03.infra.ring.nlnog.net OWNER=job V4=185.107.224.27 V6=2a00:f10:400:2:4b3:4aff:fe00:707
 container07.infra.ring.nlnog.net OWNER=job V4=82.94.249.164 V6=2001:888:2000:3e::1339
+public04.infra.ring.nlnog.net OWNER=martin V4=185.109.217.179 V6=2a05:1500:600:5:1c00:25ff:fe00:d57
 staging01.ring.nlnog.net OWNER=test V4=82.94.230.133 V6=2001:888:2001::133
 staging02.ring.nlnog.net OWNER=leopold V4=78.46.122.17 V6=2a01:4f8:c17:25c::1
 
