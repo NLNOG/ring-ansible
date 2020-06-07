@@ -9,25 +9,24 @@
     path: /etc/apache2/sites-enabled/000-default
     state: absent
 
-- name: "Enable apache2 headers module"
-  file:
-    src: /etc/apache2/mods-available/headers.load
-    dest: /etc/apache2/mods-enabled/headers.load
-    state: link
-  notify: restart apache2
-
-- name: "Enable apache2 ssl module (1)"
+- name: "Enable apache2 modules (1)"
   file:
     src: /etc/apache2/mods-available/ssl.load
     dest: /etc/apache2/mods-enabled/ssl.load
     state: link
+  with_items:
+    - headers
+    - ssl
+    - socache_shmcb
   notify: restart apache2
 
-- name: "Enable apache2 ssl module (2)"
+- name: "Enable apache2 modules (2)"
   file:
-    src: /etc/apache2/mods-available/ssl.conf
-    dest: /etc/apache2/mods-enabled/ssl.conf
+    src: /etc/apache2/mods-available/{{ item }}.conf
+    dest: /etc/apache2/mods-enabled/{{ item }}.conf
     state: link
+  with_items:
+    - ssl
   notify: restart apache2
 
 - name: "Install apache2 main config"
