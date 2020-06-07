@@ -16,6 +16,20 @@
     state: link
   notify: restart apache2
 
+- name: "Enable apache2 ssl module (1)"
+  file:
+    src: /etc/apache2/mods-available/ssl.load
+    dest: /etc/apache2/mods-enabled/ssl.load
+    state: link
+  notify: restart apache2
+
+- name: "Enable apache2 ssl module (2)"
+  file:
+    src: /etc/apache2/mods-available/ssl.conf
+    dest: /etc/apache2/mods-enabled/ssl.conf
+    state: link
+  notify: restart apache2
+
 - name: "Install apache2 main config"
   copy:
     src="apache2.conf"
