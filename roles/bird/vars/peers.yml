@@ -396,7 +396,7 @@ lg_peers:
     asn: 204957
     ipv4: 92.48.224.28
     ipv6: 2001:15c8:1::28
-   TECHFUTURES1:
+  TECHFUTURES1:
     asn: 394256
     ipv4: 192.30.89.240
     ipv6: 2606:9580::1
