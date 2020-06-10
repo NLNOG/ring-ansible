@@ -4648,3 +4648,11 @@ USERS:
     groups:
       - ring-users
 
+  whitehat:
+    state: present
+    company: 'WhiteHat 1 Limited'
+    email: 'peering@whitehat.ro'
+    uid: 5601
+    groups:
+      - ring-users
+
