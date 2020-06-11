@@ -16,6 +16,12 @@
         name=/etc/cron.d/ansible
         state=absent
       when: ansible_distribution_release != "xenial"
+
+    - name: "Run apt-get dist-upgrade once for the current release"
+      apt:
+        upgrade: dist
+        update_cache: yes
+
   tags:
     - prepare
 
