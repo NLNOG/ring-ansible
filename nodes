@@ -182,6 +182,8 @@ iccn01.ring.nlnog.net OWNER=iccn V4=72.36.126.205 V6=2620:0:e10:400a::5
 popsc01.ring.nlnog.net OWNER=popsc V4=200.237.196.2 V6=2801:80:a88:4017::2
 sargasso01.ring.nlnog.net OWNER=sargasso V4=78.158.81.4 V6=2a05:e200:1:69::1
 mythicbeasts01.ring.nlnog.net OWNER=mythicbeasts V4=93.93.129.145 V6=2a00:1098:0:80:1000:1d:0:1
+mythicbeasts02.ring.nlnog.net OWNER=mythicbeasts V4=46.235.231.123 V6=2a00:1098:88::9:1
+mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:3::4:1
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
 sapphire01.ring.nlnog.net OWNER=sapphire V4=195.166.195.252 V6=2a02:638:8:1::4
 octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
@@ -1143,6 +1145,8 @@ sargasso01.ring.nlnog.net OWNER=sargasso V4=78.158.81.4 V6=2a05:e200:1:69::1
 
 [mythicbeasts]
 mythicbeasts01.ring.nlnog.net OWNER=mythicbeasts V4=93.93.129.145 V6=2a00:1098:0:80:1000:1d:0:1
+mythicbeasts02.ring.nlnog.net OWNER=mythicbeasts V4=46.235.231.123 V6=2a00:1098:88::9:1
+mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:3::4:1
 
 [transip]
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
