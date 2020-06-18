@@ -407,6 +407,10 @@ lg_peers:
   KALPAK1:
     asn: 213326
     ipv6: 2a0f:9400:8017::1 
+  WHITEHAT:
+    asn: 51999
+    ipv4: 81.19.214.4
+    ipv6: 2a01:4020:1:4d::2
 
 readonly_peers:
   ISOLARIO1:
