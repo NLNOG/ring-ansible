@@ -546,7 +546,7 @@ USERS:
   equinixnl:
     state: present
     company: 'Equinix NL'
-    email: 'servicedesk.nl@eu.equinix.com'
+    email: 'supportdesk.nl@eu.equinix.com'
     uid: 5080
     groups:
       - ring-users
