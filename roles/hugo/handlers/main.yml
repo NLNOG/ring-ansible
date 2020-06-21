@@ -1,5 +1,31 @@
+- name: hugo rebuild
+  changed_when: True
+  notify: hugo start maintenance
+
+- name: hugo start maintenance
+  file:
+    src: /var/www/{{ item.name }}.ring.nlnog.net/_placeholder
+    dest: /var/www/{{ item.name }}.ring.nlnog.net/HTML
+  with_items: "{{ hugo_sites|default([]) }}"
+  changed_when: True
+  notify: hugo clean
+
+- name: hugo clean
+  file:
+    path: /var/www/{{ item.name }}.ring.nlnog.net/_generated
+    state: absent
+  with_items: "{{ hugo_sites|default([]) }}"
+  changed_when: True
+  notify: hugo generate
+  
 - name: hugo generate
   command: hugo -s /var/www/{{ item.name }}.ring.nlnog.net
   with_items: "{{ hugo_sites|default([]) }}"
+  changed_when: True
+  notify: hugo end maintenance
 
-  
+- name: hugo end maintenance
+  file:
+    src: /var/www/{{ item.name }}.ring.nlnog.net/_generated
+    dest: /var/www/{{ item.name }}.ring.nlnog.net/HTML
+  with_items: "{{ hugo_sites|default([]) }}"

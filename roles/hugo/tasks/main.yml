@@ -6,12 +6,27 @@
     repo: "{{ item.repo }}"
     dest: "/var/www/{{ item.name }}.ring.nlnog.net"
   with_items: "{{ hugo_sites|default([]) }}"
-  notify: hugo generate 
+  notify: hugo rebuild 
 
-- name: "Check out hugo source code repositories"
+- name: "Copy toml"
+  copy:
+    src: /var/www/{{ item.name }}.ring.nlnog.net/config.toml.base
+    dest: /var/www/{{ item.name }}.ring.nlnog.net/config.toml
+    remote_src: "yes"
+  with_items: "{{ hugo_sites|default([]) }}"
+
+- name: "Set base URL"
+  lineinfile:
+    path: /var/www/{{ item.name }}.ring.nlnog.net/config.toml
+    regexp: '^baseURL = '
+    insertbefore: BOF
+    line: Listen 8080
+  with_items: "{{ hugo_sites|default([]) }}"
+
+- name: "Check out hugo theme repositories"
   git:
     repo: "{{ item.theme_repo }}"
     dest: "/var/www/{{ item.name }}.ring.nlnog.net/themes/{{ item.theme_name }}"
   with_items: "{{ hugo_sites|default([]) }}"
-  notify: hugo generate 
+  notify: hugo rebuild 
 
