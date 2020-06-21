@@ -8,6 +8,7 @@
   file:
     src: /var/www/{{ item.name }}.ring.nlnog.net/_placeholder
     dest: /var/www/{{ item.name }}.ring.nlnog.net/HTML
+    state: link
   with_items: "{{ hugo_sites|default([]) }}"
   changed_when: True
   notify: hugo clean
@@ -30,4 +31,5 @@
   file:
     src: /var/www/{{ item.name }}.ring.nlnog.net/_generated
     dest: /var/www/{{ item.name }}.ring.nlnog.net/HTML
+    state: link
   with_items: "{{ hugo_sites|default([]) }}"
