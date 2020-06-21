@@ -11,8 +11,8 @@
 
 - name: "Enable apache2 modules (1)"
   file:
-    src: /etc/apache2/mods-available/ssl.load
-    dest: /etc/apache2/mods-enabled/ssl.load
+    src: /etc/apache2/mods-available/{{ item }}.load
+    dest: /etc/apache2/mods-enabled/{{ item }}.load
     state: link
   with_items:
     - headers
