@@ -1,5 +1,7 @@
 - name: hugo rebuild
   changed_when: True
+  debug:
+    msg: "Rebuilding hugo sites..."
   notify: hugo start maintenance
 
 - name: hugo start maintenance
