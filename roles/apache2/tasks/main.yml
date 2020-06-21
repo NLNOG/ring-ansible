@@ -18,6 +18,7 @@
     - headers
     - ssl
     - socache_shmcb
+    - cgid
   notify: restart apache2
 
 - name: "Enable apache2 modules (2)"
@@ -27,6 +28,7 @@
     state: link
   with_items:
     - ssl
+    - cgid
   notify: restart apache2
 
 - name: "Install apache2 main config"
