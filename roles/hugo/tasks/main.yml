@@ -20,7 +20,7 @@
     path: /var/www/{{ item.name }}.ring.nlnog.net/config.toml
     regexp: '^baseURL = '
     insertbefore: BOF
-    line: "baseURL = https://{{ item.name }}.ring.nlnog.net/"
+    line: "baseURL = \"https://{{ item.name }}.ring.nlnog.net/\""
   with_items: "{{ hugo_sites|default([]) }}"
 
 - name: "Check out hugo theme repositories"
