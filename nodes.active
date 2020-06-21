@@ -2203,3 +2203,9 @@ as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 whitehat01.ring.nlnog.net OWNER=whitehat V4=45.13.116.245 V6=2a0b:b83:1:5c17::1
+
+[openfactory]
+
+[natesales]
+
+[deepmedia]

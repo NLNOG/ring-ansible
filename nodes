@@ -558,6 +558,9 @@ fibertel01.ring.nlnog.net OWNER=fibertel V4=91.224.59.254 V6=2a10:24c0::2
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 whitehat01.ring.nlnog.net OWNER=whitehat V4=45.13.116.245 V6=2a0b:b83:1:5c17::1
+openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
+natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
+deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2293,3 +2296,12 @@ as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 whitehat01.ring.nlnog.net OWNER=whitehat V4=45.13.116.245 V6=2a0b:b83:1:5c17::1
+
+[openfactory]
+openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
+
+[natesales]
+natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
+
+[deepmedia]
+deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42

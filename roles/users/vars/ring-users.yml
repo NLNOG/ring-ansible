@@ -4656,3 +4656,27 @@ USERS:
     groups:
       - ring-users
 
+  openfactory:
+    state: present
+    company: 'Openfactory GmbH'
+    email: 'factory@openfactory.ch'
+    uid: 5602
+    groups:
+      - ring-users
+
+  natesales:
+    state: present
+    company: 'Nathan Sales'
+    email: 'nate@natesales.net'
+    uid: 5603
+    groups:
+      - ring-users
+
+  deepmedia:
+    state: present
+    company: 'Deep Media'
+    email: 'noc@deepmedia.nl'
+    uid: 5604
+    groups:
+      - ring-users
+
