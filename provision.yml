@@ -35,6 +35,16 @@
         msg: Host is not an x86_64 system
       tags: check_cpu
       when: ansible_architecture != "x86_64"
+    - name: Check virtualization technology
+      become: true
+      become_user: root
+      tags: check_vm
+      command: grep -q container /proc/1/environ
+      register: check_vm
+    - fail:
+        msg: LXC container nodes are not supported
+      tags: check_vm
+      when: check_vm.rc == 0
 
 - hosts: ringnode
   become: true
