@@ -415,6 +415,10 @@ lg_peers:
     asn: 51999
     ipv4: 81.19.214.4
     ipv6: 2a01:4020:1:4d::2
+  NATESALES1:  
+    asn: 34553
+    ipv4: 23.141.112.1
+    ipv6: 2001:678:c4c::1
 
 readonly_peers:
   ISOLARIO1:
