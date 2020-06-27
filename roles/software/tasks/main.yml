@@ -1,3 +1,6 @@
+- name: "Load software list"
+  include_vars: install.yml
+
 - name: "Uninstall certain unnecessary packages - except where mysql is needed"
   apt: name={{ item }} state=absent
   with_items:
