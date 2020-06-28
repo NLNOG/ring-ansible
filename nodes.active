@@ -222,6 +222,7 @@ nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
 businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
+dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
@@ -441,6 +442,7 @@ ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104::9389:137
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
 ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
+rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=88.81.224.1 V6=2a01:758:fff4:2::21
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
@@ -1257,6 +1259,7 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 [cloudnl]
 
 [dacor]
+dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 
 [networkoperations]
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
@@ -1950,6 +1953,7 @@ sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219
 ffam01.ring.nlnog.net OWNER=ffam V4=185.206.209.163 V6=2a06:8187:fb11:1::14:1
 
 [rise]
+rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 
 [datagrouptransit]
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=88.81.224.1 V6=2a01:758:fff4:2::21
