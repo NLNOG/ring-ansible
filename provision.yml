@@ -41,6 +41,7 @@
       tags: check_vm
       command: grep -q container /proc/1/environ
       register: check_vm
+      ignore_errors: True
     - fail:
         msg: LXC container nodes are not supported
       tags: check_vm
