@@ -1216,7 +1216,7 @@ USERS:
       - ring-users
 
   underworld:
-    state: present
+    state: absent
     company: 'Underworld'
     email: 'noc@underworld.no'
     uid: 5170
