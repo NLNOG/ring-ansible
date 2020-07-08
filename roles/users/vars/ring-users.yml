@@ -3851,7 +3851,7 @@ USERS:
   qix:
     state: present
     company: 'Qix'
-    email: 'noc@qix.ca'
+    email: 'support@qix.ca'
     uid: 5502
     groups:
       - ring-users
