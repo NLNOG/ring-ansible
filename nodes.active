@@ -201,6 +201,8 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
 itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
+viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
+viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 viatel05.ring.nlnog.net OWNER=viatel V4=80.93.25.226 V6=2a01:258:8:8:20c:29ff:fe35:df8b
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
@@ -312,6 +314,7 @@ dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
 intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
 pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=38.103.8.242 V6=2001:550:102:ff::a0a
+inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
@@ -402,6 +405,8 @@ automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff
 retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
+web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
+web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
@@ -1201,6 +1206,8 @@ itps01.ring.nlnog.net OWNER=itps V4=128.65.97.93 V6=2A03:7F80:42:1051::93
 [cyberverse]
 
 [viatel]
+viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
+viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 viatel05.ring.nlnog.net OWNER=viatel V4=80.93.25.226 V6=2a01:258:8:8:20c:29ff:fe35:df8b
 
@@ -1540,6 +1547,7 @@ pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=38.103.8.242 V6=2001:550:102:ff::a0a
 [kit]
 
 [inxza]
+inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
@@ -1844,6 +1852,8 @@ retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 
 [web2objects]
+web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
+web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 
 [joeynetwork]
 
