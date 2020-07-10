@@ -420,6 +420,14 @@ lg_peers:
     asn: 34553
     ipv4: 23.141.112.1
     ipv6: 2001:678:c4c::1
+  OPENFACTORY_R3COREIXN:
+    asn: 58299
+    ipv4: 5.226.149.0
+    ipv6: 2a00:6340:0:154::1
+  FREETRANSIT_WIN:
+    asn: 41051
+    ipv4: 82.197.169.75
+    ipv6: 2001:67c:2648:82::75
 
 readonly_peers:
   ISOLARIO1:
