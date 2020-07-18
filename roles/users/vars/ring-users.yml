@@ -4680,3 +4680,59 @@ USERS:
     groups:
       - ring-users
 
+  hlit:
+    state: present
+    company: 'IT-SERVICE'
+    email: 'biuro@hlit.pl'
+    uid: 5605
+    groups:
+      - ring-users
+
+  merlin:
+    state: present
+    company: 'MERLIN'
+    email: 'noc@merlin.mb.ca'
+    uid: 5606
+    groups:
+      - ring-users
+
+  freedomnet:
+    state: present
+    company: 'Freedom Internet'
+    email: 'devops@freedomnet.nl'
+    uid: 5607
+    groups:
+      - ring-users
+
+  ericnet:
+    state: present
+    company: 'EricNet'
+    email: 'eric@ericz.me'
+    uid: 5608
+    groups:
+      - ring-users
+
+  swisscenter:
+    state: present
+    company: 'OpenBusiness SA'
+    email: 'noc@swisslink.ch'
+    uid: 5609
+    groups:
+      - ring-users
+
+  homenoc:
+    state: present
+    company: 'Home NOC Operators Group'
+    email: 'noc-ops@homenoc.ad.jp'
+    uid: 5610
+    groups:
+      - ring-users
+
+  netnik:
+    state: present
+    company: 'Netnik UG'
+    email: 'fuchtmann@netnik.de'
+    uid: 5611
+    groups:
+      - ring-users
+
