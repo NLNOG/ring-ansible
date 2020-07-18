@@ -4681,7 +4681,7 @@ USERS:
       - ring-users
 
   hlit:
-    state: present
+    state: absent
     company: 'IT-SERVICE'
     email: 'biuro@hlit.pl'
     uid: 5605
