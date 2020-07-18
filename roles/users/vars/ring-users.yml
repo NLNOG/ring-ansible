@@ -4697,7 +4697,7 @@ USERS:
       - ring-users
 
   freedomnet:
-    state: present
+    state: absent
     company: 'Freedom Internet'
     email: 'devops@freedomnet.nl'
     uid: 5607
@@ -4729,7 +4729,7 @@ USERS:
       - ring-users
 
   netnik:
-    state: present
+    state: absent
     company: 'Netnik UG'
     email: 'fuchtmann@netnik.de'
     uid: 5611
