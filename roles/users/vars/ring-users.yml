@@ -4697,7 +4697,7 @@ USERS:
       - ring-users
 
   freedomnet:
-    state: absent
+    state: present
     company: 'Freedom Internet'
     email: 'devops@freedomnet.nl'
     uid: 5607
