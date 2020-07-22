@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import datetime
 import getpass
 from string import Template
 from subprocess import check_output
@@ -32,6 +33,10 @@ ANSIBLE_USERFILE = 'roles/users/vars/ring-users.yml'
 ANSIBLE_KEYORIGIN = 'auth.infra.ring.nlnog.net:/opt/keys'
 ANSIBLE_KEYBASE = 'roles/users/files'
 ANSIBLE_KEYDIR = ANSIBLE_KEYBASE + '/keys'
+
+WEBDIR = '/var/ring/ring-web'
+WEB_POSTDIR = WEBDIR + '/content/post'
+WEB_LOGODIR = WEBDIR + '/content/images/ring-logos'
 
 SCHEMA = '''
 CREATE TABLE participants
@@ -296,6 +301,23 @@ Use "ring-admin send downmail <node>" to request assistance from the node owner.
 Kind regards,
 
 NLNOG RING dbmaster
+'''
+
+HUGOPOST = '''+++
+author = "RING Admins"
+title = "$company ($countrycode) joined the RING"
+date = "$date"
+description = "$company ($countrycode) joined the RING"
+categories = [
+    "participants",
+]
++++
+
+$company - AS $autnum - joined the RING today.
+
+> $companydesc
+
+Users can connect to $hostname, which is located in $country.
 '''
 
 MAILHOST='localhost'
@@ -787,6 +809,74 @@ class commands(object):
         if send and (len(activate) > 0 or len(deactivate) > 0):
             print "Sending mail... "
             self.sendmail(ADMINEMAIL,ADMINEMAIL,mailbody)
+            print "Done."
+
+    def web_checkout(self):
+        ret = os.system("cd " + WEBDIR + " && git checkout")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+        ret = os.system("cd " + WEBDIR + " && git pull")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+
+    def web_push(self):
+        username=getpass.getuser()
+        ret = os.system("cd " + WEBDIR + " && git commit -am 'dbmaster commit by " + username + "'")
+        ret = os.system("cd " + WEBDIR + " && git push")
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+
+    def web_publish(self,username,postbody):
+        self.web_checkout()
+        post_filename = WEB_POSTDIR + "/" + username + "-joined-the-ring.md"
+        post_shortloc = re.sub(WEBDIR + '/','',post_filename)
+        logo_filename = WEB_LOGODIR + "/" + username + ".png"
+        logo_shortloc = re.sub(WEBDIR + '/','',logo_filename)
+        if not os.path.isfile(logo_filename):
+            sys.exit('logo for %s missing; please add it to %s in the ring-web repository.'
+                     % (username,logo_shortloc))
+        f = open(post_filename,'wb')
+        f.write(postbody)
+        f.close()
+        ret = os.system("cd " + WEBDIR + " && git add " + post_shortloc)
+        if ret > 0:
+           sys.exit("subprocess returned error: %d" % (ret))
+        self.web_push()
+
+    def generate_hugopost(self, username, publish=None):
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        u = self.dbselectone('users', participant=partid)
+        m = self.dbselect('machines', owner=u['id'])
+        if not m:
+            sys.exit('no machines found for %s' % username)
+        hostname = ''
+        autnum = ''
+        country = ''
+        countrycode = ''
+        try:
+            mfirst = m.next()
+            hostname = mfirst['hostname']
+            autnum = str(mfirst['autnum'])
+            countrycode = mfirst['country']
+        except StopIteration:
+            pass
+        country = self.countryname(countrycode, state)
+        date = datetime.datetime.now().isoformat()[:10]
+        text = Template(HUGOPOST)
+        postbody = text.substitute(company=p['company'],
+                                   companydesc=p['companydesc'],
+                                   hostname=hostname, autnum=autnum,
+                                   country=country, countrycode=countrycode,
+                                   date=date)
+        print postbody
+        if publish:
+            print "Publishing post... "
+            self.web_publish(username,postbody)
             print "Done."
 
     def generate_welcomemail(self, username, send=None):
@@ -1649,6 +1739,14 @@ class commands(object):
                               companydesc=p['companydesc'], hostname=hostname,
                               autnum=autnum, dc=dc, country=country,
                               countrycode=countrycode)
+
+    def cmd_generate_hugopost(self, username):
+        """generate text for hugo webpost"""
+        self.generate_hugopost(username)
+
+    def cmd_publish_hugopost(self, username):
+        """publish hugo webpost"""
+        self.generate_hugopost(username,1)
 
     def cmd_generate_welcomemail(self, username):
         """generate text for welcome email"""
