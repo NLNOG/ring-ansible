@@ -81,7 +81,6 @@ hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
 pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
-nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
@@ -340,7 +339,6 @@ memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8
 dreamhack01.ring.nlnog.net OWNER=dreamhack V4=185.69.168.78 V6=2a05:2240:1000:110::78
 plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.31 V6=2620:11c:5001:1118::1:1
-hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
 ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
@@ -762,7 +760,6 @@ pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e
 [antagonist]
 
 [nts]
-nts01.ring.nlnog.net OWNER=nts V4=212.103.89.211 V6=2a00:c38:2::5
 
 [multiplay]
 
@@ -1639,7 +1636,6 @@ plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.31 V6=2620:11c:5001:1118::1:1
 
 [hextet]
-hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
 
 [geotr]
 
