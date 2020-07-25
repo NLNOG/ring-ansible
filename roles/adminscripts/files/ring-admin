@@ -857,6 +857,7 @@ class commands(object):
         hostname = ''
         autnum = ''
         country = ''
+        state = ''
         countrycode = ''
         try:
             mfirst = m.next()
