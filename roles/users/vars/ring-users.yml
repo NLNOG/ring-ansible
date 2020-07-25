@@ -4681,7 +4681,7 @@ USERS:
       - ring-users
 
   hlit:
-    state: absent
+    state: present
     company: 'IT-SERVICE'
     email: 'biuro@hlit.pl'
     uid: 5605
@@ -4733,6 +4733,22 @@ USERS:
     company: 'Netnik UG'
     email: 'fuchtmann@netnik.de'
     uid: 5611
+    groups:
+      - ring-users
+
+  kmc:
+    state: present
+    company: 'Kyoto University Microcomputer Club (KMC)'
+    email: 'noc@kmc.gr.jp'
+    uid: 5612
+    groups:
+      - ring-users
+
+  securebit:
+    state: present
+    company: 'Securebit AG'
+    email: 'noc@securebit.ch'
+    uid: 5613
     groups:
       - ring-users
 
