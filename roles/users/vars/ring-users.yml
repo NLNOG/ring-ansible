@@ -4369,7 +4369,7 @@ USERS:
       - ring-users
 
   isc:
-    state: present
+    state: absent
     company: 'Internet Systems Consortium'
     email: 'noc@isc.org'
     uid: 5566
