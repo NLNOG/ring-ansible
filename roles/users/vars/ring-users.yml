@@ -2336,7 +2336,7 @@ USERS:
       - ring-users
 
   cablecom:
-    state: present
+    state: absent
     company: 'Cablecom Networking Ltd'
     email: 'noc@cablecomnetworking.co.uk'
     uid: 5313
