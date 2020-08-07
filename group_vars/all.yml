@@ -1,6 +1,6 @@
 etc_aliases:
   postmaster: root
-  root: ring-admins@ring.nlnog.net
+  root: ring-admins@nlnog.net
 
 syslog_servers:
   - storage01.infra.ring.nlnog.net
