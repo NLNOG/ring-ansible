@@ -46,6 +46,7 @@ software:
     - mercurial
     - moreutils
     - mtr-tiny
+    - nano
     - ndisc6
     - netcat-openbsd
     - netsed
