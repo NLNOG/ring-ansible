@@ -3024,7 +3024,7 @@ USERS:
       - ring-users
 
   dreamhack:
-    state: present
+    state: absent
     company: 'DreamHack'
     email: 'noc@dreamhack.se'
     uid: 5401
