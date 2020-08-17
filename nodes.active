@@ -2271,3 +2271,7 @@ kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 
 [securebit]
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a0e:97c0:1:2d88::8bf8
+
+[hastadklev]
+
+[rgi]

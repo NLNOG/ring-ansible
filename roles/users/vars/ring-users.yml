@@ -4752,3 +4752,19 @@ USERS:
     groups:
       - ring-users
 
+  hastadklev:
+    state: present
+    company: 'Hastadklev AS'
+    email: 'jan@hastadklev.no'
+    uid: 5614
+    groups:
+      - ring-users
+
+  rgi:
+    state: present
+    company: 'RS Gesellschaft fuer Informationstechnik mbH & Co. KG'
+    email: 'noc@rgi.net'
+    uid: 5615
+    groups:
+      - ring-users
+
