@@ -437,7 +437,6 @@ freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4:
 itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 qix01.ring.nlnog.net OWNER=qix V4=206.126.112.10 V6=2620:1f:4000::10
-comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:99
 vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 noack01.ring.nlnog.net OWNER=noack V4=185.231.103.50 V6=2a0c:5700:3133:651:250:56ff:fea3:1c06
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
@@ -1949,7 +1948,6 @@ cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:
 qix01.ring.nlnog.net OWNER=qix V4=206.126.112.10 V6=2620:1f:4000::10
 
 [comvive]
-comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:99
 
 [vangulik]
 vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
