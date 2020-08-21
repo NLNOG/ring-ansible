@@ -87,7 +87,7 @@ def t_duplicate_tweet(api,text):
 def t_send_tweet(api,text):
     try:
         print("Tweeting: {"+text+"}")
-        #api.update_status(text)
+        api.update_status(text)
     except:
         return False
     return True
