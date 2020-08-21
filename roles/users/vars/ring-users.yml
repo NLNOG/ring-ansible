@@ -4561,7 +4561,7 @@ USERS:
       - ring-users
 
   flowvps:
-    state: present
+    state: absent
     company: 'FlowVPS'
     email: 'admin@alphalayer.com.au'
     uid: 5590
@@ -4773,6 +4773,14 @@ USERS:
     company: 'Sharktech'
     email: 'srtechs@sharktech.net'
     uid: 5616
+    groups:
+      - ring-users
+
+  hostuniversal:
+    state: present
+    company: 'Host Universal Pty Ltd'
+    email: 'noc@hostuniversal.com.au'
+    uid: 5617
     groups:
       - ring-users
 
