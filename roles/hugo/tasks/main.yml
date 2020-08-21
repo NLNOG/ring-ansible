@@ -39,7 +39,7 @@
 - name: "Install post tweeter"
   template:
     src=tweet_hugo_post.j2
-    dest=/us/local/bin/tweet_hugo_post
+    dest=/usr/local/bin/tweet_hugo_post
     owner=root
     group=root
     mode=0755
