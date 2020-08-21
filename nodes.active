@@ -547,6 +547,10 @@ kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a0e:97c0:1:2d88::8bf8
 hastadklev01.ring.nlnog.net OWNER=hastadklev V4=217.168.87.232 V6=2a0e:8f02:2022::232
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
+hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2406:d500:5::a014:1c67
+hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
+hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
+hostuniversal09.ring.nlnog.net OWNER=hostuniversal V4=103.216.221.19 V6=2406:d500:14:200::e896:1f7a
 
 [infranode]
 
@@ -2287,3 +2291,7 @@ rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 [sharktech]
 
 [hostuniversal]
+hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2406:d500:5::a014:1c67
+hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
+hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
+hostuniversal09.ring.nlnog.net OWNER=hostuniversal V4=103.216.221.19 V6=2406:d500:14:200::e896:1f7a
