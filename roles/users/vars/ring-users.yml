@@ -4768,3 +4768,11 @@ USERS:
     groups:
       - ring-users
 
+  sharktech:
+    state: present
+    company: 'Sharktech'
+    email: 'srtechs@sharktech.net'
+    uid: 5616
+    groups:
+      - ring-users
+
