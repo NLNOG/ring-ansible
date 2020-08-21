@@ -85,7 +85,7 @@ def dbget_participants(dbconn=None):
     conn = dbconn
     if not dbconn:
         conn = dbconnect()
-    query = "select * from participants where public!=0 or public is null"
+    query = "select distinct participants.* from participants,users where users.participant = participants.id and (participants.public!=0 or participants.public is null) and (users.active != 0 or users.active is null)"
     res = list(dbquery(conn,query))
     if not dbconn:
         dbclose(conn)
