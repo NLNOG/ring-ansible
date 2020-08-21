@@ -30,3 +30,43 @@
   with_items: "{{ hugo_sites|default([]) }}"
   notify: hugo rebuild 
 
+- name: "Install post tweeting requirements"
+  apt: name={{ item }} state=latest
+  with_items:
+    - python3-pyinotify
+    - python3-tweepy
+
+- name: "Install post tweeter"
+  template:
+    src=tweet_hugo_post.j2
+    dest=/us/local/bin/tweet_hugo_post
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Install post monitor"
+  copy:
+    src=monitor_hugo_posts
+    dest=/usr/local/sbin/monitor_hugo_posts
+    owner=root
+    group=root
+    mode=0755
+  notify: restart hugo post monitors
+
+- name: "Add post monitor systemd services"
+  template:
+    src: "monitor_{{ item.name }}_posts.service.j2"
+    dest: "/etc/systemd/system/monitor_{{ item.name }}_posts.service"
+    owner: root
+    group: root
+    mode: 0644
+  when: item.twitter is defined
+  with_items: "{{ hugo_sites|default([]) }}"
+  notify: restart hugo post monitors
+
+- name: "Start post monitors"
+  service:
+    name: "monitor_{{ item.name }}_posts"
+    state: started
+  when: item.twitter is defined
+  with_items: "{{ hugo_sites|default([]) }}"

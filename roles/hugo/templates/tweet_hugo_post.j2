@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+#
+# tweet_hugo_post - Read a hugo post and send a tweet about it
+#
+
+import datetime
+import re
+import sys
+import tweepy
+
+# HUGO settings
+WEBROOT = "/var/www"
+HUGOCONF = "config.toml"
+
+# Twitter settings
+ACCOUNT_NAME = "NLNOG"
+TIMELINE_LOOKBACK=100
+CALLBACK_URL = "https://ring.nlnog.net"
+CONSUMER_KEY = "{{ twitter_consumer_key}}"
+CONSUMER_SECRET = "{{ twitter_consumer_secret }}"
+ACCESS_TOKEN = "{{ twitter_access_token }}"
+ACCESS_TOKEN_SECRET = "{{ twitter_access_token_secret }}"
+
+# Misc settings
+DEBUGFILE = "/tmp/tweet_hugo_posts.log"
+
+# Find the base url for a hugo installation
+def h_base_url(webdir):
+    try:
+        f = open(webdir + '/' + HUGOCONF)
+        for line in f.readlines():
+            m = re.match('^baseURL = \"(.+)\"$',line)
+            if m:
+                return m.group(1)
+        f.close()
+    except:
+        pass
+    return None
+
+# Derive the url of the hugo post from the path name
+def h_post_url(pathname):
+    m = re.match(WEBROOT + '/([^/]+)/content/(.+)\.md$',pathname)
+    if m:
+        base = h_base_url(WEBROOT + '/' + m.group(1))
+        if base:
+            return base + m.group(2) + '/'
+    return None
+
+# Parse a hugo post
+def h_parse_post(pathname):
+    post = {}
+    try:
+        f = open(pathname,'r')
+        for line in f.readlines():
+            m = re.match('^title = \"(.+)\"$',line)
+            if m:
+                post['title'] = m.group(1)
+        post_url = h_post_url(pathname)
+        if post_url:
+            post['url'] = post_url
+        f.close()
+    except:
+        pass
+    return post
+
+# Login on twitter
+def t_login():
+    auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
+    api = tweepy.API(auth)
+    try:
+        api.verify_credentials()
+    except:
+        return False
+    return api
+
+# Check if a tweet containing a string has already been posted recently
+def t_duplicate_tweet(api,text):
+    timeline = api.user_timeline(screen_name=ACCOUNT_NAME,count=TIMELINE_LOOKBACK)
+    if not timeline:
+        return True
+    for tweet in timeline:
+        if re.search(re.escape(text),tweet.text):
+            return True
+    return False
+
+def t_send_tweet(api,text):
+    try:
+        print("Tweeting: {"+text+"}")
+        #api.update_status(text)
+    except:
+        return False
+    return True
+
+def f_write_tweet(text):
+    try:
+        f = open(DEBUGFILE,'a')
+        print(datetime.datetime.now().isoformat()+": {"+text+"}",file=f)
+        f.close()
+    except:
+        return False
+    return True
+
+if __name__ == "__main__":
+
+    # Parse commandline
+    if len(sys.argv) < 3:
+        sys.stderr.write("%s [tweet|debug] <pathname>\n" % (sys.argv[0]))
+        sys.exit(1)
+    action = sys.argv[1]
+    pathname = sys.argv[2]
+
+    # Process Hugo post
+    post = h_parse_post(pathname)
+    if not ('title' in post):
+        sys.stderr.write("Unable to parse Hugo post.\n")
+        sys.exit(2)
+    if not ('url' in post):
+        sys.stderr.write("Unable to derive post url.\n")
+        sys.exit(2)
+
+    # Send to Twitter
+    api = t_login()
+    if not api:
+        sys.stderr.write("Unable to connect to Twitter.\n")
+        sys.exit(2)
+    if t_duplicate_tweet(api,post['title']):
+        sys.stderr.write("Duplicate tweet or check failed; not posting.\n")
+        sys.exit(2)
+    tweet_text = "New post: " + post['title'] + " " + post['url']
+    if action == 'tweet':
+        if t_send_tweet(api,tweet_text):
+            print("Tweet sent.")
+        else:
+            sys.stderr.write("Unable to send tweet.\n")
+            sys.exit(2)
+    elif action == 'debug':
+        if f_write_tweet(tweet_text):
+            print("Tweet written to file.")
+        else:
+            sys.stderr.write("Unable to write tweet to file.\n")
+            sys.exit(2)
+    else:
+        sys.stderr.write("Unknown action %s.\n" % (action))
+        sys.exit(2)
+         

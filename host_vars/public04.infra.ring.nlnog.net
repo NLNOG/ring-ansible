@@ -8,4 +8,5 @@ hugo_sites:
     repo: https://github.com/NLNOG/ring-web
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis
+    twitter: true
 

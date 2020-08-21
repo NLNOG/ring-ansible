@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+#
+# monitor_hugo_posts - Check a hugo post directory for new posts and run a command
+#
+
+import time
+import datetime
+import os
+import pyinotify
+import re
+import sys
+
+MAXAGE = 2 # Do not process posts older than two days
+COMMAND="echo" # Default command to run
+
+class EventHandler(pyinotify.ProcessEvent):
+    def process_IN_CREATE(self, event):
+        time.sleep(1)
+        f = open(event.pathname, 'r')
+        for line in f.readlines():
+            m = re.match('^date = "(\d{4}-\d{2}-\d{2})"\s*$',line.rstrip())
+            if m:
+                post_time = time.mktime(datetime.datetime.strptime(m.group(1),"%Y-%m-%d").timetuple())
+                if post_time >= (time.time() - MAXAGE):
+                    self.do_something(event.pathname)
+                else:
+                    sys.stderr.write('Skipping %s: Post is too old (%s).\n' % (event.pathname,m.group(1)))
+        f.close()
+
+    def do_something(self,post_path):
+        os.system(COMMAND + " " + post_path)
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        sys.stderr.write('%s <directory> ["shell command"] [maximum age in days]\n' % (sys.argv[0]))
+        sys.exit(1)
+    dirname = sys.argv[1]
+    if len(sys.argv) > 2:
+        COMMAND=sys.argv[2]
+    if len(sys.argv) > 3:
+        MAXAGE=int(sys.argv[3])
+    MAXAGE = MAXAGE * 86400
+
+    wm = pyinotify.WatchManager()  # Watch Manager
+    mask = pyinotify.IN_DELETE | pyinotify.IN_CREATE  # watched events
+
+    handler = EventHandler()
+    notifier = pyinotify.Notifier(wm, handler)
+    wdd = wm.add_watch(dirname, mask, rec=True)
+
+    notifier.loop()

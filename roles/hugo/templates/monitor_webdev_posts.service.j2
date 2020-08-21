@@ -1,0 +1,9 @@
+[Unit]
+Description=Hugo post monitor
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/monitor_hugo_posts debug /var/www/webdev.ring.nlnog.net/content/post
+
+[Install]
+WantedBy=multi-user.target

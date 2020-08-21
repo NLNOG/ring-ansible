@@ -33,3 +33,10 @@
     dest: /var/www/{{ item.name }}.ring.nlnog.net/HTML
     state: link
   with_items: "{{ hugo_sites|default([]) }}"
+
+- name: restart hugo post monitor
+  service:
+    name: "monitor_{{ item }}_posts"
+    state: restarted
+    enabled: yes
+  with_items: "{{ hugo_sites|default([]) }}"
