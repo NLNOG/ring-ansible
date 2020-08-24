@@ -83,4 +83,5 @@
     - resolvconf
     - sl
     - ufw
+    - rpcbind
 
