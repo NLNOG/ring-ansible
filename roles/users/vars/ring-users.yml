@@ -2864,7 +2864,7 @@ USERS:
       - ring-users
 
   23media:
-    state: present
+    state: absent
     company: '23media GmbH'
     email: 'support@23media.de'
     uid: 5381
