@@ -62,7 +62,9 @@
     mode: 0644
   when: item.twitter is defined
   with_items: "{{ hugo_sites|default([]) }}"
-  notify: restart hugo post monitors
+  notify:
+    - reload systemd
+    - restart hugo post monitors
 
 - name: "Start post monitors"
   service:

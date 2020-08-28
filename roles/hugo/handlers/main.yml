@@ -34,6 +34,9 @@
     state: link
   with_items: "{{ hugo_sites|default([]) }}"
 
+- name: reload systemd
+  command: systemctl daemon-reload
+
 - name: restart hugo post monitors
   service:
     name: "monitor_{{ item.name }}_posts"
