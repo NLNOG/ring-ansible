@@ -1,7 +1,9 @@
 apache_vhosts:
   - webdev
+  - web
 letsencrypt_certs:
   - webdev
+  - web
 
 hugo_sites:
   - name: webdev
@@ -9,4 +11,8 @@ hugo_sites:
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis
     twitter: true
-
+  - name: web
+    repo: https://github.com/NLNOG/ring-web
+    theme_name: ring-anubis
+    theme_repo: https://github.com/NLNOG/hugo-theme-anubis
+    twitter: true
