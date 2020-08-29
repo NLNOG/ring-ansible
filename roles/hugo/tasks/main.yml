@@ -58,7 +58,7 @@
 
 - name: "Add post monitor systemd services"
   template:
-    src: "monitor_{{ item.name }}_posts.service.j2"
+    src: "monitor_{{ item.name|replace('.', '_') }}_posts.service.j2"
     dest: "/etc/systemd/system/monitor_{{ item.name|replace('.', '_') }}_posts.service"
     owner: root
     group: root
