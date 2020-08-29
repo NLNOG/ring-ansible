@@ -1,7 +1,9 @@
 apache_vhosts:
   - webdev
+  - www
 letsencrypt_certs:
   - webdev.ring.nlnog.net
+  - www.ring.nlnog.net
   - ring.nlnog.net
 
 hugo_sites:
