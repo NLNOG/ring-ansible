@@ -6,9 +6,9 @@ apache_vhosts:
   - api4
   - api6
 letsencrypt_certs:
-  - api
-  - api4
-  - api6
+  - api.ring.nlnog.net
+  - api4.ring.nlnog.net
+  - api6.ring.nlnog.net
 
 LOCAL_USERS:
   ringforger:
