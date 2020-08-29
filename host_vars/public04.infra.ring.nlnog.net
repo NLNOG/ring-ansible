@@ -7,7 +7,7 @@ letsencrypt_certs:
   - ring.nlnog.net
 
 hugo_sites:
-  - name: webdev
+  - name: webdev.ring.nlnog.net
     repo: https://github.com/NLNOG/ring-web
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis

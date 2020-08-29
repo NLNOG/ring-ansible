@@ -4,32 +4,32 @@
 - name: "Check out hugo source code repositories"
   git:
     repo: "{{ item.repo }}"
-    dest: "/var/www/{{ item.name }}.ring.nlnog.net"
+    dest: "/var/www/{{ item.name }}"
   with_items: "{{ hugo_sites|default([]) }}"
   register: hugo_rebuild
   notify: hugo rebuild 
 
 - name: "Copy toml"
   copy:
-    src: /var/www/{{ item.name }}.ring.nlnog.net/config.toml.base
-    dest: /var/www/{{ item.name }}.ring.nlnog.net/config.toml
+    src: /var/www/{{ item.name }}/config.toml.base
+    dest: /var/www/{{ item.name }}/config.toml
     remote_src: "yes"
   with_items: "{{ hugo_sites|default([]) }}"
   when: hugo_rebuild.changed
 
 - name: "Set base URL"
   lineinfile:
-    path: /var/www/{{ item.name }}.ring.nlnog.net/config.toml
+    path: /var/www/{{ item.name }}/config.toml
     regexp: '^baseURL = '
     insertbefore: BOF
-    line: "baseURL = \"https://{{ item.name }}.ring.nlnog.net/\""
+    line: "baseURL = \"https://{{ item.name }}/\""
   with_items: "{{ hugo_sites|default([]) }}"
   when: hugo_rebuild.changed
 
 - name: "Check out hugo theme repositories"
   git:
     repo: "{{ item.theme_repo }}"
-    dest: "/var/www/{{ item.name }}.ring.nlnog.net/themes/{{ item.theme_name }}"
+    dest: "/var/www/{{ item.name }}/themes/{{ item.theme_name }}"
   with_items: "{{ hugo_sites|default([]) }}"
   notify: hugo rebuild 
 
