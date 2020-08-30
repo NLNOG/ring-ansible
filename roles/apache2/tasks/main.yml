@@ -19,6 +19,7 @@
     - ssl
     - socache_shmcb
     - cgid
+    - rewrite
   notify: restart apache2
 
 - name: "Enable apache2 modules (2)"
