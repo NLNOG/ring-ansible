@@ -444,6 +444,14 @@ lg_peers:
     asn: 58057
     ipv4: 94.177.122.252
     ipv6: 2a09:4c0:0:8b1c::63fc
+  IPFAIL_SJC:
+    asn: 62538
+    ipv4: 216.218.217.61
+    ipv6: 2001:470:1:fc::2
+  IPFAIL_BUR:
+    asn: 62538
+    ipv4: 38.32.69.50
+    ipv6: 2001:550:2:9::245:2
 
 readonly_peers:
   ISOLARIO1:
