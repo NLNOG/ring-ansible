@@ -20,7 +20,6 @@ in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:
 totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
-jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
 cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
@@ -425,7 +424,6 @@ retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
-itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
@@ -628,7 +626,6 @@ signet01.ring.nlnog.net OWNER=signet V4=81.21.136.3 V6=2001:4cb8:1:ff03::2
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.11.10 V6=2a00:1f00:dc06:11::10
 
 [jaguarnetwork]
-jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
 
 [tuxis]
 tuxis01.ring.nlnog.net OWNER=tuxis V4=31.3.104.43 V6=2a03:7900:2::31:3:104:43
@@ -1919,7 +1916,6 @@ web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411
 bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 
 [itgate]
-itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:10:1::1e
 
 [gitoyen]
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
