@@ -461,7 +461,6 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
-ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
@@ -520,6 +519,7 @@ npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
 timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
+jacknet01.ring.nlnog.net OWNER=jacknet V4=185.234.74.26 V6=2a0f:5840::1a
 nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
 leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56ff:feaf:546
@@ -2025,7 +2025,6 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
-ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 
 [rootnl]
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
@@ -2210,6 +2209,7 @@ mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102
 timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
 
 [jacknet]
+jacknet01.ring.nlnog.net OWNER=jacknet V4=185.234.74.26 V6=2a0f:5840::1a
 
 [nextconnex]
 nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
