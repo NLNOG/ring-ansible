@@ -632,7 +632,7 @@ USERS:
       - ring-users
 
   towardex:
-    state: present
+    state: absent
     company: 'TowardEX Carrier Services'
     email: 'ip-admin@twdx.net'
     uid: 5091
@@ -760,7 +760,7 @@ USERS:
       - ring-users
 
   melbourne:
-    state: present
+    state: absent
     company: 'Melbourne Server Hosting'
     email: 'support.team@melbourne.co.uk'
     uid: 5109
@@ -1936,7 +1936,7 @@ USERS:
       - ring-users
 
   cyberverse:
-    state: present
+    state: absent
     company: 'Cyberverse, Inc.'
     email: 'support@cyberverse.com'
     uid: 5263
@@ -2264,7 +2264,7 @@ USERS:
       - ring-users
 
   edsitech:
-    state: present
+    state: absent
     company: 'EDSI-Tech Sarl'
     email: 'noc@edsi-tech.com'
     uid: 5304
