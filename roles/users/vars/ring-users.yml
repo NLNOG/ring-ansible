@@ -1928,7 +1928,7 @@ USERS:
       - ring-users
 
   itps:
-    state: present
+    state: absent
     company: 'IT Professional Services Ltd'
     email: 'peering@itps.co.uk'
     uid: 5262
@@ -4789,6 +4789,14 @@ USERS:
     company: 'ipFail Networks'
     email: 'noc@ip.fail'
     uid: 5618
+    groups:
+      - ring-users
+
+  sitehost:
+    state: present
+    company: 'SiteHost'
+    email: 'noc@sitehost.nz'
+    uid: 5619
     groups:
       - ring-users
 
