@@ -2297,3 +2297,7 @@ ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::12
 
 [sitehost]
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
+
+[cybera]
+
+[ercwnc]

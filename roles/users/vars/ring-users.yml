@@ -4800,3 +4800,19 @@ USERS:
     groups:
       - ring-users
 
+  cybera:
+    state: present
+    company: 'Cybera Inc'
+    email: 'noc@cybera.ca'
+    uid: 5620
+    groups:
+      - ring-users
+
+  ercwnc:
+    state: present
+    company: 'ERC Broadband'
+    email: 'network@ercwnc.org'
+    uid: 5621
+    groups:
+      - ring-users
+
