@@ -36,6 +36,11 @@
     minute: 15
     user: root
 
+- name: "Check for motd-news on Ubuntu 18.04"
+  stat: path=/etc/default/motd-news
+  register: etc_default_motd_news
+  when: ansible_distribution_release == "bionic"
+
 - name: "Disable the News MOTD line on Ubuntu 18.04"
   lineinfile:
     path: /etc/default/motd-news
@@ -44,4 +49,4 @@
     owner: root
     group: root
     mode: 0644
-  when: ansible_distribution_release == "bionic"
+  when: ansible_distribution_release == "bionic" and etc_default_motd_news.stat.exists == True
