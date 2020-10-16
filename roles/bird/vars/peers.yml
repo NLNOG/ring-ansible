@@ -452,6 +452,10 @@ lg_peers:
     asn: 62538
     ipv4: 38.32.69.50
     ipv6: 2001:550:2:9::245:2
+  AMIRGT_FSN:
+    asn: 207740
+    ipv4: 136.243.0.23
+    ipv6: 2a01:4f8:211:1990::10
 
 readonly_peers:
   ISOLARIO1:
