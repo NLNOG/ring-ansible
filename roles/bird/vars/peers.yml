@@ -219,6 +219,7 @@ lg_peers:
     ipv4: 77.233.230.4
   NONATTACHED1:
     asn: 57821
+    ipv4: 193.160.39.1
     ipv6: 2001:67c:26f4::1
   NORLYS01:
     asn: 39642
