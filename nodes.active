@@ -535,7 +535,6 @@ norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
-hlit01.ring.nlnog.net OWNER=hlit V4=193.228.123.30 V6=2a0e:46c7::100
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=87.251.42.53 V6=2001:7b8:650:1::55
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
@@ -2264,7 +2263,6 @@ natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 
 [hlit]
-hlit01.ring.nlnog.net OWNER=hlit V4=193.228.123.30 V6=2a0e:46c7::100
 
 [merlin]
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
