@@ -20,3 +20,6 @@ hugo_sites:
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis
     twitter: true
+
+paste_sites:
+  - name: paste.ring.nlnog.net

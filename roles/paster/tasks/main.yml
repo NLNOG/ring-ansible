@@ -1,0 +1,8 @@
+- name: "Install mysql-server"
+  apt: name="mysql-server" state=latest
+
+- name: "Check out 6paster sourcecode"
+  git:
+    repo: "https://github.com/cottow/6paster"
+    dest: "/var/www/{{ item.name }}"
+  with_items: "{{ paste_sites|default([]) }}"
