@@ -1,10 +1,13 @@
+need_mysql_server: true
 apache_vhosts:
   - webdev
   - www
+  - paste
 letsencrypt_certs:
   - webdev.ring.nlnog.net
   - www.ring.nlnog.net
   - ring.nlnog.net
+  - paste.ring.nlnog.net
 
 hugo_sites:
   - name: webdev.ring.nlnog.net
