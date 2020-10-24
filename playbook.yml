@@ -118,6 +118,7 @@
     - { role: letsencrypt, tags: letsencrypt }
     - { role: apache2, tags: apache2 }
     - { role: hugo, tags: hugo }
+    - { role: paster, tags: paster }
 
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true
