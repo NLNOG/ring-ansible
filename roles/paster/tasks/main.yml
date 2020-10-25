@@ -5,4 +5,21 @@
   git:
     repo: "https://github.com/cottow/6paster"
     dest: "/var/www/{{ item.name }}"
+    update: no
+  with_items: "{{ paste_sites|default([]) }}"
+
+- name: "Add paster config"
+  template:
+    src: "config_{{ item.name|replace('.', '_') }}.php.j2"
+    dest: "/var/www/{{ item.name }}/config.php"
+    owner: root
+    group: root
+    mode: 0644
+  with_items: "{{ paste_sites|default([]) }}"
+
+- name: "Link paster weboot"
+  file:
+    src: /var/www/{{ item.name }}/webroot
+    dest: /var/www/{{ item.name }}/HTML
+    state: link
   with_items: "{{ paste_sites|default([]) }}"
