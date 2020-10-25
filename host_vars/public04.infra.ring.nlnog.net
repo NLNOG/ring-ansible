@@ -1,4 +1,5 @@
 need_mysql_server: true
+need_php: true
 apache_vhosts:
   - webdev
   - www
