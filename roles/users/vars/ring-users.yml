@@ -328,7 +328,7 @@ USERS:
       - ring-users
 
   digmia:
-    state: present
+    state: absent
     company: 'Digmia'
     email: 'ring@digmia.com'
     uid: 5049
@@ -4641,7 +4641,7 @@ USERS:
       - ring-users
 
   as207960net:
-    state: present
+    state: absent
     company: 'AS207960 Cyfyngedig'
     email: 'noc@as207960.net'
     uid: 5600
@@ -4649,7 +4649,7 @@ USERS:
       - ring-users
 
   whitehat:
-    state: present
+    state: absent
     company: 'WhiteHat 1 Limited'
     email: 'peering@whitehat.ro'
     uid: 5601
