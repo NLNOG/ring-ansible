@@ -2319,3 +2319,7 @@ cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
 
 [ercwnc]
 ercwnc01.ring.nlnog.net OWNER=ercwnc V4=64.147.209.31 V6=2001:4850:2019::1
+
+[itrelation]
+
+[nethinks]

@@ -4816,3 +4816,19 @@ USERS:
     groups:
       - ring-users
 
+  itrelation:
+    state: present
+    company: 'IT Relation A/S'
+    email: 'drift@itrelation.dk'
+    uid: 5622
+    groups:
+      - ring-users
+
+  nethinks:
+    state: present
+    company: 'NETHINKS GmbH'
+    email: 'netze@nethinks.com'
+    uid: 5623
+    groups:
+      - ring-users
+
