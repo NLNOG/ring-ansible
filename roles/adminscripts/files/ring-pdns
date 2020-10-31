@@ -10,7 +10,7 @@ DBUSER='pdns'
 DB='pdns'
 ZONE='ring.nlnog.net'
 SOA='ns01.infra.ring.nlnog.net. ring-admins.ring.nlnog.net. %.0f 7200 3600 1209600 900' % time.time()
-ELEVATION='https://api.open-elevation.com/api/v1/lookup?locations='
+ELEVATION='https://api.opentopodata.org/v1/mapzen?locations='
 
 RINGDBHOST='dbmaster.infra.ring.nlnog.net'
 RINGDBUSER='ring'
@@ -624,8 +624,8 @@ class commands(object):
             response = simplejson.load(urllib.urlopen(url))
             resultset = response['results'][0]
 
-            lat=self.dd2dms(resultset['latitude'],"lat")
-            lng=self.dd2dms(resultset['longitude'],"lng")
+            lat=self.dd2dms(resultset['location']['lat'],"lat")
+            lng=self.dd2dms(resultset['location']['lng'],"lng")
             elv="%.2f" % (round(resultset['elevation'],2))
             return "%s %s %sm" % (lat,lng,elv)
         except:
