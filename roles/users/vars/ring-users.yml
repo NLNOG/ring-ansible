@@ -4832,3 +4832,11 @@ USERS:
     groups:
       - ring-users
 
+  midnet:
+    state: present
+    company: 'MIDnet'
+    email: 'noc@mid.net'
+    uid: 5624
+    groups:
+      - ring-users
+
