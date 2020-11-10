@@ -453,6 +453,10 @@ lg_peers:
     asn: 207740
     ipv4: 136.243.0.23
     ipv6: 2a01:4f8:211:1990::10
+  MIDNET_SPRNTX01:
+    asn: 16970
+    ipv4: 64.40.23.22
+    ipv6: 2602:800:1000:100::16
 
 readonly_peers:
   ISOLARIO1:
