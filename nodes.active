@@ -556,6 +556,7 @@ hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f7
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 hostuniversal09.ring.nlnog.net OWNER=hostuniversal V4=103.216.221.19 V6=2406:d500:14:200::e896:1f7a
 hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
+ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
 ercwnc01.ring.nlnog.net OWNER=ercwnc V4=64.147.209.31 V6=2001:4850:2019::1
@@ -2313,6 +2314,7 @@ hostuniversal09.ring.nlnog.net OWNER=hostuniversal V4=103.216.221.19 V6=2406:d50
 hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 
 [ipfail]
+ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 
 [sitehost]
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
