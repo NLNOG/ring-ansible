@@ -397,7 +397,6 @@ westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::8
 multim01.ring.nlnog.net OWNER=multim V4=185.87.111.13 V6=2a05:b9c0::1:0:19
 xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
-supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
@@ -1839,7 +1838,6 @@ xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
 
 [supplyframe]
-supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 
 [utelecom]
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
