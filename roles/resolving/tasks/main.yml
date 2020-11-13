@@ -28,7 +28,6 @@
     name: unbound
     state: started
     enabled: true
-    pattern: "unbound"
 
 - name: Add /etc/resolv.conf
   copy:
