@@ -65,7 +65,9 @@
 
 - name: "Add local org ssh keys from files"
   assemble: src=roles/users/files/keys/{{ item.item }} dest=/home/{{ item.item }}/.ssh/authorized_keys
-  when: inventory_hostname|match("^{{ item.item }}\d\d\..*") and keyfiles2.results is defined and item.stat.exists == True
+  vars:
+    check_string: "^{{ item.item }}\\d\\d\\..*"
+  when: inventory_hostname is match(check_string) and keyfiles2.results is defined and item.stat.exists == True
   with_items: "{{ keyfiles2.results }}"
 
 - name: "Ensure admin group exists"
