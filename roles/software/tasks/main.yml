@@ -48,7 +48,7 @@
     - /usr/bin/traceroute.db
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
-  always_run: yes
+  check_mode: no
   changed_when: false
 
 - name: "Set new capabilities"
@@ -61,7 +61,7 @@
   register: capb
   with_items:
     - /usr/bin/mtr-packet
-  always_run: yes
+  check_mode: no
   changed_when: false
   when: ansible_distribution_release == "bionic"
 
