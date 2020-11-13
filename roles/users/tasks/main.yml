@@ -17,7 +17,8 @@
       state: "{% if item.value.sudo | default(False) | bool() %}present{% else %}absent{% endif %}"
     with_dict: "{{ GROUPS }}"
 
-  - include: user_tasks.yml ENTRIES={{ USERS }}
+  - include: user_tasks.yml user={{ USERS[item] }}
+    with_items: "{{ USERS|default([])|list }}"
   when: class != "local" 
 
 - block:
