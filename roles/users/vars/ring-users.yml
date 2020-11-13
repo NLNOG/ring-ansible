@@ -737,7 +737,7 @@ USERS:
 
   lagis:
     state: present
-    company: 'LINZ STROM GAS WÄRMEGmbH'
+    company: 'LINZ STROM GAS WÄRME GmbH'
     email: 'sysadmin@lagis.at'
     uid: 5106
     groups:
