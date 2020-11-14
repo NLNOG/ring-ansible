@@ -19,6 +19,10 @@
 
   - include: user_tasks.yml user={{ USERS[item] }}
     with_items: "{{ USERS|default([])|list }}"
+
+  - include: user_tasks_auth.yml user={{ USERS[item] }}
+    with_items: "{{ USERS|default([])|list }}"
+    when: inventory_hostname == "auth.infra.ring.nlnog.net"
   when: class != "local" 
 
 - block:

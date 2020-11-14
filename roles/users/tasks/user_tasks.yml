@@ -80,11 +80,5 @@
     file:
       path="/home/{{ item }}/.ssh/authorized_keys"
       state=absent
-
-  - name: "Clean up old sshkeys on auth host - {{ item }}"
-    file:
-      path=/opt/keys/{{ item }}
-      state=absent
-    when: inventory_hostname == "auth.infra.ring.nlnog.net"
   when: user.state == "absent"
 

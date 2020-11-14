@@ -1,0 +1,15 @@
+- block:
+  - name: "Check for ssh-keys file - {{ item }}"
+    stat: path=/home/{{ item }}/ssh-keys
+    register: sshkeyfile
+
+  - name: "Archive ssh-keys file - {{ item }}"
+    command: mv /home/{{ item }}/ssh-keys /home/{{ item }}/ssh-keys.disabled
+    when: sshkeyfile.stat.exists
+
+  - name: "Clean up copied ssh-keys file - {{ item }}"
+    file:
+      path=/opt/keys/{{ item }}
+      state=absent
+  when: user.state == "absent"
+
