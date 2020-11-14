@@ -57,7 +57,7 @@
       owner={{ item }}
       group={{ item }}
       mode=0600
-    when: keyfile.stat.exists == True and keyfile2.stat.exists == False
+    when: keyfile.stat is defined keyfile.stat.exists == True and keyfile2.stat.exists == False
 
   - name: "Add ssh keys + local org ssh keys from file - {{ item }}"
     assemble:
@@ -68,7 +68,7 @@
       mode=0600
     vars:
       check_string: "^{{ item }}\\d\\d\\..*"
-    when: inventory_hostname is match(check_string) and keyfile2.stat.exists == True
+    when: inventory_hostname is match(check_string) and keyfile.stat is defined and keyfile2.stat.exists == True
 
   - name: "Add owner to admin group - {{ item }}"
     user: name={{ item }} group={{ item }} groups=admin append=yes
