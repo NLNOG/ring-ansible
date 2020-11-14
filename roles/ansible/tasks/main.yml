@@ -6,11 +6,12 @@
   template:
     src: ansible.pref.j2
     dest: /etc/apt/preferences.d/ansible.pref
-  when: ansible_distribution_release == "precise"
+  register: ansible_pin
 
-- name: "Delete apt-pin for ansible"
-  file: path=/etc/apt/preferences.d/ansible.pref state=absent
-  when: ansible_distribution_release != "precise"
+- name: "Run apt-get update"
+  apt:
+    update_cache: yes
+  when: ansible_pin.changed
 
 - name: "Ensure Ansible prequisites are installed"
   apt:
@@ -21,22 +22,13 @@
     - python-requests
   when: ansible_distribution_release != "precise"
 
-- name: "Ensure Ansible is installed (xenial)"
-  apt:
-    name: "{{ item }}"
-    state: present 
-  with_items:
-    - "ansible={{ ansible_pin_version_xenial }}"
-  when: ansible_distribution_release == "xenial"
-
-- name: "Ensure Ansible is installed (bionic)"
+- name: "Ensure Ansible is installed"
   apt:
     name: "{{ item }}"
     state: present
-    force: yes
   with_items:
-    - "ansible={{ ansible_pin_version_bionic }}"
-  when: ansible_distribution_release == "bionic"
+    - "ansible={{ ansible_pin_version[ansible_distribution_release] }}"
+  when: ansible_distribution_release != "precise"
 
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory
