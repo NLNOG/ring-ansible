@@ -39,36 +39,36 @@
     when: user.sshkeys is defined
 
   - name: "Find sshkey file to provision - {{ item }}"
-    stat:
-      path={{ inventory_dir }}/roles/users/files/keys/{{ item }}/{{ item }}.sshkeys
+    become: false
+    local_action: stat path={{ inventory_dir }}/roles/users/files/keys/{{ item }}/{{ item }}.sshkeys
     register: keyfile
     when: user.sshkeys is not defined
 
   - name: "Find per org sshkey file to provision - {{ item }}"
-    stat:
-      path={{ inventory_dir }}/roles/users/files/keys/{{ item }}/{{ item }}-only.sshkeys
+    become: false
+    local_action: stat path={{ inventory_dir }}/roles/users/files/keys/{{ item }}/{{ item }}-only.sshkeys
     register: keyfile2
     when: user.sshkeys is not defined
 
   - name: "Add ssh keys from file - {{ item }}"
     copy:
-      src=keys/{{ item }}/{{ item }}.sshkeys
+      src={{ inventory_dir }}/roles/users/files/keys/{{ item }}/{{ item }}.sshkeys
       dest=/home/{{ item }}/.ssh/authorized_keys
       owner={{ item }}
       group={{ item }}
       mode=0600
-    when: keyfile is defined and keyfile.stat is defined and keyfile.stat.exists == True and keyfile2 is not defined
+    when: keyfile.stat.exists == True and keyfile2.stat.exists == False
 
   - name: "Add ssh keys + local org ssh keys from file - {{ item }}"
     assemble:
-      src=roles/users/files/keys/{{ item }}
+      src={{ inventory_dir }}/roles/users/files/keys/{{ item }}
       dest=/home/{{ item }}/.ssh/authorized_keys
       owner={{ item }}
       group={{ item }}
       mode=0600
     vars:
       check_string: "^{{ item }}\\d\\d\\..*"
-    when: inventory_hostname is match(check_string) and keyfile2 is defined and keyfile2.stat.exists == True
+    when: inventory_hostname is match(check_string) and keyfile2.stat.exists == True
 
   - name: "Add owner to admin group - {{ item }}"
     user: name={{ item }} group={{ item }} groups=admin append=yes

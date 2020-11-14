@@ -1,0 +1,19 @@
+- hosts: ringnode:auth.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  tasks:
+    - name: "Load user role variables"
+      include_vars: roles/users/defaults/main.yml
+
+    - name: "Load user class variables"
+      include_vars: roles/users/vars/ring-users.yml
+
+    - include: roles/users/tasks/user_tasks.yml user={{ USERS[item] }}
+      vars:
+        item: "{{ username }}"
+
+    - include: roles/users/tasks/user_tasks_auth.yml user={{ USERS[item] }}
+      vars:
+        item: "{{ username }}"
+      when: inventory_hostname == "auth.infra.ring.nlnog.net"
+
