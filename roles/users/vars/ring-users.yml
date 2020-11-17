@@ -4840,3 +4840,19 @@ USERS:
     groups:
       - ring-users
 
+  lambdahellix:
+    state: present
+    company: 'Lamda Hellix SA'
+    email: 'net@lamdahellix.com'
+    uid: 5625
+    groups:
+      - ring-users
+
+  freifunkm:
+    state: present
+    company: 'Freie Netze München e.V.'
+    email: 'noc@fnmuc.net'
+    uid: 5626
+    groups:
+      - ring-users
+
