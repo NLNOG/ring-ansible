@@ -4864,7 +4864,7 @@ USERS:
     groups:
       - ring-users
 
-  neurinet:
+  neutrinet:
     state: present
     company: 'Neutrinet'
     email: 'noc@neutrinet.be'
