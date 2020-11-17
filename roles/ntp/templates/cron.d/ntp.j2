@@ -1,7 +1,7 @@
-{%- if hostvars[inventory_hostname]['V6'] is defined -%}
+{%- if hostvars[inventory_hostname]['V6'] is defined %}
 @reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v6 }} >/dev/null 2>&1
-{%- endif -%}
+{%- endif %}
 
-{%- if hostvars[inventory_hostname]['V4'] is defined -%}
+{%- if hostvars[inventory_hostname]['V4'] is defined %}
 @reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v4 }} >/dev/null 2>&1
-{%- endif -%}
+{%- endif %}
