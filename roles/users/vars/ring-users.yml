@@ -4856,3 +4856,19 @@ USERS:
     groups:
       - ring-users
 
+  oderland:
+    state: present
+    company: 'Oderland Webbhotell AB'
+    email: 'noc@as44136.net'
+    uid: 5627
+    groups:
+      - ring-users
+
+  neurinet:
+    state: present
+    company: 'Neutrinet'
+    email: 'noc@neutrinet.be'
+    uid: 5628
+    groups:
+      - ring-users
+

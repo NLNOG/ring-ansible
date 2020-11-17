@@ -574,6 +574,9 @@ itrelation01.ring.nlnog.net OWNER=itrelation V4=194.116.178.10 V6=2a02:c900:0:1:
 nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::200
 midnet01.ring.nlnog.net OWNER=midnet V4=64.40.23.206 V6=2602:800:1000::ce
 lambdahellix01.ring.nlnog.net OWNER=lambdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
+freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
+oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
+neurinet01.ring.nlnog.net OWNER=neurinet V4=80.67.181.9 V6=2001:913:1000::9
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2375,3 +2378,10 @@ midnet01.ring.nlnog.net OWNER=midnet V4=64.40.23.206 V6=2602:800:1000::ce
 lambdahellix01.ring.nlnog.net OWNER=lambdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 
 [freifunkm]
+freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
+
+[oderland]
+oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
+
+[neurinet]
+neurinet01.ring.nlnog.net OWNER=neurinet V4=80.67.181.9 V6=2001:913:1000::9
