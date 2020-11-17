@@ -1,5 +1,5 @@
 {%- if hostvars[inventory_hostname]['V6'] is defined -%}
-@reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v6 }} >/dev/null
+@reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v6 }} >/dev/null 2>&1
 {%- else -%}
-@reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v4 }} >/dev/null
+@reboot root /bin/sleep 300 && /usr/sbin/ntpdate {{ ntp_default_server_v4 }} >/dev/null 2>&1
 {%- endif -%}
