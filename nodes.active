@@ -2339,3 +2339,5 @@ freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
 oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 
 [neutrinet]
+
+[lamdahellix]

@@ -4842,7 +4842,7 @@ USERS:
 
   lambdahellix:
     state: absent
-    company: 'Lamda Hellix SA'
+    company: 'Lambda'
     email: 'net@lamdahellix.com'
     uid: 5625
     groups:
@@ -4869,6 +4869,14 @@ USERS:
     company: 'Neutrinet'
     email: 'noc@neutrinet.be'
     uid: 5628
+    groups:
+      - ring-users
+
+  lamdahellix:
+    state: present
+    company: 'Lamda Hellix SA'
+    email: 'net@lamdahellix.com'
+    uid: 5629
     groups:
       - ring-users
 
