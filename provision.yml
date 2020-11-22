@@ -96,7 +96,7 @@
       copy:
         dest: /etc/resolv.conf
         mode: 0644
-        content: "nameserver 2620:fe::fe"
+        content: "nameserver 9.9.9.9"
       when: hostvars[inventory_hostname]['V6'] is defined
     - name: Temporarily configure resolv.conf with public resolver (IPv4)
       copy:
