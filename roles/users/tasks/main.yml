@@ -30,7 +30,7 @@
     group: name={{ item }} state={{ LOCAL_GROUPS[item] }}
     with_items: "{{ LOCAL_GROUPS|default([])|list }}"
 
-  - include: user_tasks.yml user={{ USERS[item] }}
+  - include: user_tasks.yml user={{ LOCAL_USERS[item] }}
     with_items: "{{ LOCAL_USERS|default([])|list }}"
   when: class == "local"
 
