@@ -4841,7 +4841,7 @@ USERS:
       - ring-users
 
   lambdahellix:
-    state: present
+    state: absent
     company: 'Lamda Hellix SA'
     email: 'net@lamdahellix.com'
     uid: 5625
@@ -4850,7 +4850,7 @@ USERS:
 
   freifunkm:
     state: present
-    company: 'Freie Netze München e.V.'
+    company: 'Freie Netze Muenchen'
     email: 'noc@fnmuc.net'
     uid: 5626
     groups:
