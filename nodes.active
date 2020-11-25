@@ -60,7 +60,6 @@ amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.51.117 V6=2406:da1a:1b5:8d00::12
 amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
-amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
@@ -210,7 +209,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
-viatel05.ring.nlnog.net OWNER=viatel V4=80.93.25.226 V6=2a01:258:8:8:20c:29ff:fe35:df8b
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
 ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
 ntt01.ring.nlnog.net OWNER=ntt V4=165.254.21.124 V6=2001:418:1456:b0a::2
@@ -530,6 +528,7 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
@@ -756,7 +755,6 @@ amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.51.117 V6=2406:da1a:1b5:8d00::12
 amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
-amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
@@ -1258,7 +1256,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
-viatel05.ring.nlnog.net OWNER=viatel V4=80.93.25.226 V6=2a01:258:8:8:20c:29ff:fe35:df8b
 
 [ntt]
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
@@ -2252,6 +2249,7 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 
