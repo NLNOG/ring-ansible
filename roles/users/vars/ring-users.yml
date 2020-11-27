@@ -4529,7 +4529,7 @@ USERS:
       - ring-users
 
   elkaim:
-    state: present
+    state: absent
     company: 'ELKAIM ELIE'
     email: 'noc@as205816.net'
     uid: 5586
