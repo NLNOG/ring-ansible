@@ -559,6 +559,8 @@ freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
 oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.9 V6=2001:913:1000::9
 lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
+terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
+riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 
 [infranode]
 
@@ -2337,5 +2339,7 @@ neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.9 V6=2001:913:1000::9
 lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 
 [terratransit]
+terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
 
 [riepert]
+riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
