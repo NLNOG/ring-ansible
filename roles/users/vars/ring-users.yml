@@ -4880,3 +4880,19 @@ USERS:
     groups:
       - ring-users
 
+  terratransit:
+    state: present
+    company: 'TerraTransit AG'
+    email: 'noc@terratransit.de'
+    uid: 5630
+    groups:
+      - ring-users
+
+  riepert:
+    state: present
+    company: 'Riepert Informationstechnologie OG'
+    email: 'noc@riepert.at'
+    uid: 5631
+    groups:
+      - ring-users
+
