@@ -3673,7 +3673,7 @@ USERS:
       - ring-users
 
   comhem:
-    state: present
+    state: absent
     company: 'Com Hem AB'
     email: 'noc@comhem.com'
     uid: 5480
