@@ -423,8 +423,8 @@ lg_peers:
     ipv6: 2a01:4020:1:4d::2
   NATESALES1:  
     asn: 34553
-    ipv4: 23.141.112.1
-    ipv6: 2001:678:c4c::1
+    ipv4: 147.75.35.135
+    ipv6: 2604:1380:4111:b101::135
   OPENFACTORY_R3COREIXN:
     asn: 58299
     ipv4: 5.226.149.0
