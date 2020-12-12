@@ -4896,3 +4896,11 @@ USERS:
     groups:
       - ring-users
 
+  cloudws:
+    state: present
+    company: 'Cloudwebservices'
+    email: 'noc@cloudwebservices.nl'
+    uid: 5632
+    groups:
+      - ring-users
+
