@@ -45,11 +45,16 @@
   vars:
     afi: "ipv6"
 
+- name: stat /etc/ring-sqa/main.conf
+  stat: path=/etc/ring-sqa/main.conf
+  register: sqa_main_conf
+
 - name: create /etc/ring-sqa/main.conf
   template: src=main.conf.j2 dest=/etc/ring-sqa/main.conf owner=root group=root mode=0644
   notify:
     - restart ring-sqa4
     - restart ring-sqa6
+  when: not sqa_main_conf.stat.exists
 
 - name: create /etc/ring-sqa/hosts.conf
   template: src=hosts.conf.j2 dest=/etc/ring-sqa/hosts.conf owner=root group=root mode=0644
