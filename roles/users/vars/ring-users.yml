@@ -288,7 +288,7 @@ USERS:
       - ring-users
 
   hosteam:
-    state: present
+    state: absent
     company: 'HosTeam'
     email: 'noc@hosteam.pl'
     uid: 5042
@@ -4041,7 +4041,7 @@ USERS:
       - ring-users
 
   ovhde:
-    state: present
+    state: absent
     company: 'OVH GmbH'
     email: 'peering@ovh.net'
     uid: 5526
@@ -4161,7 +4161,7 @@ USERS:
       - ring-users
 
   lnkro:
-    state: present
+    state: absent
     company: 'LNK Systems Muntenia SRL'
     email: 'noc@lnk.ro'
     uid: 5541

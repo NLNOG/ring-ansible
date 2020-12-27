@@ -27,7 +27,6 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
 blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
@@ -466,7 +465,6 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
-ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
@@ -480,7 +478,6 @@ misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:f1:bbf0:997d:589d:7278:b9c8
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019::4
-lnkro01.ring.nlnog.net OWNER=lnkro V4=195.88.213.35 V6=2a0d:f400:2000:1::2
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
@@ -692,7 +689,6 @@ netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 
 [hosteam]
-hosteam01.ring.nlnog.net OWNER=hosteam V4=31.133.0.4 V6=2001:67c:2044:c102::d8c0:be8f
 
 [inotel]
 inotel01.ring.nlnog.net OWNER=inotel V4=212.67.131.20 V6=2a02:78:d443:8300::14
@@ -2069,7 +2065,6 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 mitsol01.ring.nlnog.net OWNER=mitsol V4=197.231.144.188 V6=2c0f:ee28:1:1::188
 
 [ovhde]
-ovhde01.ring.nlnog.net OWNER=ovhde V4=51.75.89.207 V6=2001:41d0:701:1000::1328
 
 [rootnl]
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
@@ -2113,7 +2108,6 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019:
 [g8net]
 
 [lnkro]
-lnkro01.ring.nlnog.net OWNER=lnkro V4=195.88.213.35 V6=2a0d:f400:2000:1::2
 
 [xtom]
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
