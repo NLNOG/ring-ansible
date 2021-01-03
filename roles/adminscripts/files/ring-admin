@@ -1089,10 +1089,22 @@ class commands(object):
             machine_delete.append(m['hostname'])
             print "Deleting machine %s" % (m['hostname'])
             self.generate_removemail(m['hostname'],1)
+
+            result = self.dbselect('sshhostkeys', machine=m['id'])
+            for row in result:
+                print row
             self.dbdelete('sshhostkeys', machine=m['id'])
             print 'ssh hostkeys for machine %s deleted' % (m['hostname'])
+
+            result = self.dbselect('mremarks', machine=m['id'])
+            for row in result:
+                print row
             self.dbdelete('mremarks', machine=m['id'])
             print 'remarks for machine %s deleted' % (m['hostname'])
+
+            result = self.dbselect('machines', hostname=m['hostname'])
+            for row in result:
+                print row
             self.dbdelete('machines', hostname=m['hostname'])
             print 'machine %s deleted' % (m['hostname'])
 
