@@ -655,30 +655,37 @@ class commands(object):
     def ansible_process(self,send=None):
         q = "select machines.*, users.username,users.admin from machines,users where machines.owner = users.id"
         machines = self.dbget(q)
+        q = "select * from ansible where timestamp >= now() - INTERVAL 1 DAY order by timestamp desc"
+        ansible_runs = self.dbget(q)
+        q = "select * from health where family=4 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc"
+        health_v4 = self.dbget(q)
+        q = "select * from health where family=6 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc"
+        health_v6 = self.dbget(q)
+
         for m in machines:
             hostname = re.sub('.' + ZONE, '', m['hostname'])
 
             # Process ansible runs
             m['seen'] = 0
             m['failed'] = 0
-            q = "select * from ansible where hostname='%s' and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
-            ansible_run = self.dbquery(q)
-            for run in ansible_run:
-                m['seen'] = 1
-                if run['unreachable'] > 0 or run['failures'] > 0:
-                    m['failed'] = 1
+            for r in ansible_runs:
+                if r['hostname'] == hostname:
+                    m['seen'] = 1
+                    if r['unreachable'] > 0 or r['failures'] > 0:
+                        m['failed'] = 1
+                        break
 
             # Process health reports
-            q = "select * from health where hostname='%s' and family=4 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
-            health_v4 = self.dbquery(q)
             m['seen_v4'] = 0
             for h in health_v4:
-                m['seen_v4'] = 1
+                if h['hostname'] == hostname:
+                    m['seen_v4'] = 1
+                    break
             m['seen_v6'] = 0
-            q = "select * from health where hostname='%s' and family=6 and timestamp >= now() - INTERVAL 1 DAY order by timestamp desc limit 1" % (hostname)
-            health_v6 = self.dbquery(q)
             for h in health_v6:
-                m['seen_v6'] = 1
+                if h['hostname'] == hostname:
+                    m['seen_v6'] = 1
+                    break
 
         total = 0
         active = 0
