@@ -220,8 +220,13 @@ def dbinsert_ansible_result(hostname,results):
                   failures=results['failures'])
 
 def dbinsert_health_report(hostname,family,results):
-    dbinsert('health', hostname=hostname, family=family,
-             summary=results)
+    try:
+        r = json.loads(results)
+        dbinsert('health', hostname=hostname, family=family,
+                 info=r['info'],summary=r['summary'])
+    except:
+        dbinsert('health', hostname=hostname, family=family,
+                 summary=results)
 
 def mk_json(results=None,count=None,errormsg=None):
     if not results:
