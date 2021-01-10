@@ -223,7 +223,7 @@ def dbinsert_health_report(hostname,family,results):
     try:
         r = json.loads(results)
         dbinsert('health', hostname=hostname, family=family,
-                 info=r['info'],summary=r['summary'])
+                 info=r['info'],summary=r['health'])
     except:
         dbinsert('health', hostname=hostname, family=family,
                  summary=results)
