@@ -1707,6 +1707,8 @@ class commands(object):
         for run in runs:
             summary = simplejson.loads(run['summary'])
             failed = []
+            if 'health' in summary:
+                summary = summary['health']
             for item in summary:
                 if summary[item] == False:
                     failed.append(item)

@@ -32,6 +32,10 @@ def main(argv):
     try:
         infranodes = get_infranodes()
 
+        # System information
+        result['info']['ubuntu_release'] = get_ubuntu_release()
+        result['info']['virtualization'] = get_virtualization_type()
+
         # Filesystem checks
         health['mountstatus_root'] = check_mountstatus()
         descriptions['mountstatus_root'] = "The root filesystem is in read/write status"
@@ -91,8 +95,8 @@ def main(argv):
         result['info']['success'] = False
 
     # Post results to RING API
-    health_api4 = report_health(4,health)
-    health_api6 = report_health(6,health)
+    health_api4 = report_health(4,{'info':result['info'],'health':health})
+    health_api6 = report_health(6,{'info':result['info'],'health':health})
     health['ipv4_ringapi'] = health_api4
     descriptions['ipv4_ringapi'] = "Pushing this health report to the IPv4 ring API (https://" +API4+ "/) succeeded"
     health['ipv6_ringapi'] = health_api6
@@ -101,7 +105,7 @@ def main(argv):
         result['info']['success'] = False
 
     # Store results on disk
-    result['info']['date'] = datetime.datetime.now().isoformat()
+    result['info']['last_check'] = datetime.datetime.now().isoformat()
     result['health'] = health
     result['descriptions'] = descriptions
     with open(WEBPATH + '/status.json', 'w') as of:
@@ -124,6 +128,21 @@ def get_infranodes(nodes_file=NODES):
                     infranodes[k].append(v)
     f.close()
     return infranodes
+
+def get_ubuntu_release():
+    f = open('/etc/lsb-release','r')
+    for line in f:
+       m = re.match('^DISTRIB_RELEASE=(.+)$',line)
+       if m:
+           return m.group(1)
+    return None
+
+def get_virtualization_type():
+    result = subprocess.run(['/usr/sbin/virt-what'],
+                            stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        return line
+    return None
 
 def check_mountstatus(partition='/'):
     '''Partition is in read/write state'''
