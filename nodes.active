@@ -2359,3 +2359,7 @@ riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 
 [cloudws]
 cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
+
+[apgp]
+
+[natoresearch]

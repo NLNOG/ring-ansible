@@ -4904,3 +4904,19 @@ USERS:
     groups:
       - ring-users
 
+  apgp:
+    state: present
+    company: 'AP GP, LLC'
+    email: 'contact@aaka.sh'
+    uid: 5633
+    groups:
+      - ring-users
+
+  natoresearch:
+    state: present
+    company: 'Nato Research Ltd.'
+    email: 'noc@nat.moe'
+    uid: 5634
+    groups:
+      - ring-users
+
