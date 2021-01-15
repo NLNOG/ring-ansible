@@ -2365,3 +2365,5 @@ cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
 apgp01.ring.nlnog.net OWNER=apgp V4=103.151.145.8 V6=2001:df3:c780::8
 
 [natoresearch]
+
+[copaco]

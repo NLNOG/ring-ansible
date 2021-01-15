@@ -4920,3 +4920,11 @@ USERS:
     groups:
       - ring-users
 
+  copaco:
+    state: present
+    company: 'Copaco Cloud BV'
+    email: 'noc@cloudnet.services'
+    uid: 5635
+    groups:
+      - ring-users
+
