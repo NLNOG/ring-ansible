@@ -457,7 +457,11 @@ lg_peers:
     asn: 16970
     ipv4: 64.40.23.22
     ipv6: 2602:800:1000:100::16
-
+  BAKKERIT01:
+    asn: 44103
+    ipv4: 45.93.119.2
+    ipv6: 2a0d:8d04:3000:100::1
+    
 readonly_peers:
   SERNET2:
     asn: 41955
