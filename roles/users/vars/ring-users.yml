@@ -2264,7 +2264,7 @@ USERS:
       - ring-users
 
   edsitech:
-    state: absent
+    state: present
     company: 'EDSI-Tech Sarl'
     email: 'noc@edsi-tech.com'
     uid: 5304
