@@ -45,7 +45,7 @@ sub process_file {
     my $host;
     foreach my $line (@lines) {
 
-        if ($line =~ m/^Subject:\s+(\[reboot required\])?\s*unattended-upgrades result for '(.+)'/) {
+        if ($line =~ m/^Subject:\s+(\[reboot required\])?\s*unattended-upgrades result for (.+)/) {
             $host   = $2;
         }
         if ($line =~ m/^Unattended upgrade returned: (.+)/) {
