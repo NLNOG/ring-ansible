@@ -156,6 +156,7 @@ masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
+msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
@@ -1078,6 +1079,7 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 
 [msu]
+msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 
 [robtex]
 
