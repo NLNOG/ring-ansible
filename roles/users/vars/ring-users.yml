@@ -2736,7 +2736,7 @@ USERS:
       - ring-users
 
   nodesdirect:
-    state: absent
+    state: present
     company: 'Nodes Direct Holdings, LLC'
     email: 'noc@nodesdirect.com'
     uid: 5364
