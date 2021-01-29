@@ -100,7 +100,7 @@ sub send_mail {
     open (MAIL, "|/usr/sbin/sendmail -t") || die "Unable to send mail";
     print MAIL "From: ring-admins\@nlnog.net\n";
     print MAIL "To: ring-admins\@nlnog.net\n";
-    print MAIL "Subject: Unattended upgrade failure report\n\n";
+    print MAIL "Subject: NLNOG RING Unattended upgrade failure report\n\n";
     print MAIL "$body";
     close(MAIL);
 }
