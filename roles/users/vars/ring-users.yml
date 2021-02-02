@@ -801,7 +801,7 @@ USERS:
 
   i3d:
     state: present
-    company: 'Interactive 3D'
+    company: 'i3D.net'
     email: 'noc2@i3d.nl'
     uid: 5114
     groups:
