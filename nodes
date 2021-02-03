@@ -546,7 +546,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-netnik01.ring.nlnog.net OWNER=netnik V4=45.146.6.83 V6=2a0e:fd47:1:105::1
 kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 hastadklev01.ring.nlnog.net OWNER=hastadklev V4=217.168.87.232 V6=2a0e:8f02:2022::232
@@ -2322,7 +2321,6 @@ swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 
 [netnik]
-netnik01.ring.nlnog.net OWNER=netnik V4=45.146.6.83 V6=2a0e:fd47:1:105::1
 
 [kmc]
 kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
