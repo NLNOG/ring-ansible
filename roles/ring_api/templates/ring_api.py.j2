@@ -130,7 +130,7 @@ def dbget_nodes(dbconn=None):
     conn = dbconn
     if not dbconn:
         conn = dbconnect()
-    query = "select machines.* from machines,users where machines.owner = users.id and (users.admin is null or users.admin != 1)"
+    query = "select machines.* from machines,users where machines.owner = users.id and (users.admin is null or users.admin != 1) and users.active !=0"
     res = list(dbquery(conn,query))
     if get_error():
         return
