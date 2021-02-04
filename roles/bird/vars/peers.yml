@@ -461,6 +461,10 @@ lg_peers:
     asn: 44103
     ipv4: 45.93.119.2
     ipv6: 2a0d:8d04:3000:100::1
+  MYTHICBEASTS01:
+    asn: 44684
+    ipv4: 176.126.240.44
+    ipv6: 2a00:1098:84::a:1
     
 readonly_peers:
   SERNET2:
