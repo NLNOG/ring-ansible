@@ -4928,3 +4928,11 @@ USERS:
     groups:
       - ring-users
 
+  apernet:
+    state: present
+    company: 'Aperture Science Limited'
+    email: 'noc@apernet.io'
+    uid: 5636
+    groups:
+      - ring-users
+
