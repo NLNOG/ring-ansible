@@ -4936,3 +4936,11 @@ USERS:
     groups:
       - ring-users
 
+  i4networks:
+    state: present
+    company: 'i4Networks'
+    email: 'noc@i4networks.nl'
+    uid: 5637
+    groups:
+      - ring-users
+
