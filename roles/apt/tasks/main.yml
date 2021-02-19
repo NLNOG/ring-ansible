@@ -67,7 +67,7 @@
 
 - name: "Install nlnog repo key"
   apt_key:
-    id: 37B0CA14
+    id: B1BA5ACA
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
     state: present
 
