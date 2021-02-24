@@ -4,3 +4,5 @@ apache_vhosts:
   - apt
   - lg
   - map
+letsencrypt_certs:
+  - lg.ring.nlnog.net

@@ -104,6 +104,8 @@
   become: true
   become_user: root
   roles:
+    - { role: letsencrypt, tags: letsencrypt }
+    - { role: apache2, tags: apache2 }
     - { role: pdns-server, tags: pdns-server }
     - { role: map, tags: map }
     - { role: apt-repository, tags: apt-repository }
