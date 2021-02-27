@@ -402,7 +402,6 @@ westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::8
 multim01.ring.nlnog.net OWNER=multim V4=185.87.111.13 V6=2a05:b9c0::1:0:19
 xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
-supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
@@ -554,7 +553,6 @@ securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d8
 hastadklev01.ring.nlnog.net OWNER=hastadklev V4=217.168.87.232 V6=2a0e:8f02:2022::232
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
-hostuniversal01.ring.nlnog.net OWNER=hostuniversal V4=103.108.228.24 V6=2402:7340:1:44::e645
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
 hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1
@@ -1880,7 +1878,6 @@ xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
 
 [supplyframe]
-supplyframe01.ring.nlnog.net OWNER=supplyframe V4=198.54.97.14 V6=2620:1a:a000:2::14
 
 [utelecom]
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
@@ -2346,7 +2343,6 @@ rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 
 [hostuniversal]
-hostuniversal01.ring.nlnog.net OWNER=hostuniversal V4=103.108.228.24 V6=2402:7340:1:44::e645
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
 hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1

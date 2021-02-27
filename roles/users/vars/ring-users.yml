@@ -3521,7 +3521,7 @@ USERS:
       - ring-users
 
   supplyframe:
-    state: present
+    state: absent
     company: 'SupplyFrame Inc'
     email: 'sfops@supplyframe.com'
     uid: 5462
