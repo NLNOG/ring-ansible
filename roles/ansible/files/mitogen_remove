@@ -1,0 +1,5 @@
+#!/bin/bash
+# Cleanup script for Mitogen
+
+sed -i'' -e 's/^strategy/#strategy/' /etc/ansible/ansible.cfg
+rm -rf /opt/mitogen

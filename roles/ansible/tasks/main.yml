@@ -47,6 +47,14 @@
     update: "{{ mitogen_update }}"
   when: ansible_distribution_release != "precise" and mitogen == true
 
+- name: "Install mitogen removal script"
+  copy:
+    src=mitogen_remove
+    dest=/usr/local/sbin/mitogen_remove
+    owner=root
+    group=root
+    mode=0755
+
 - name: "Check for mitogen ansible plugin installation"
   stat:
     path: /opt/mitogen/ansible_mitogen/plugins/strategy/mitogen.py
