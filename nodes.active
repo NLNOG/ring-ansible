@@ -534,6 +534,7 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
@@ -2268,6 +2269,7 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 
