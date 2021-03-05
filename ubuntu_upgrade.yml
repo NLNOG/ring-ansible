@@ -163,6 +163,7 @@
   roles:
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible, mitogen: no }
+    - { role: users, class: ring-users, tags: ring-users }
   tasks:
     - name: "Remove temporary dpkg configuration" 
       file:
