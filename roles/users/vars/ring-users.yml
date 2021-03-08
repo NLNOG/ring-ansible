@@ -432,7 +432,7 @@ USERS:
       - ring-users
 
   jump:
-    state: absent
+    state: present
     company: 'Jump Networks Ltd'
     email: 'admins@jump.net.uk'
     uid: 5063
