@@ -39,6 +39,7 @@ man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
+jump01.ring.nlnog.net OWNER=jump V4=212.13.217.117 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
 rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
@@ -169,7 +170,6 @@ mythicbeasts01.ring.nlnog.net OWNER=mythicbeasts V4=93.93.129.145 V6=2a00:1098:0
 mythicbeasts02.ring.nlnog.net OWNER=mythicbeasts V4=46.235.231.123 V6=2a00:1098:88::9:1
 mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:3::4:1
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
-sapphire01.ring.nlnog.net OWNER=sapphire V4=195.166.195.252 V6=2a02:638:8:1::4
 octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
 ipvisie01.ring.nlnog.net OWNER=ipvisie V4=141.136.120.48 V6=2a01:8580:103:1::108
 citynetwork01.ring.nlnog.net OWNER=citynetwork V4=91.123.206.254 V6=2a00:16d8:0:8::2
@@ -417,8 +417,6 @@ itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
-internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
-torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2602:FDE5:1::43
 mlab01.ring.nlnog.net OWNER=mlab V4=45.137.186.21 V6=2a0e:a6c1::2100:45:137:186:21
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
@@ -708,6 +706,7 @@ dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5:
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 
 [jump]
+jump01.ring.nlnog.net OWNER=jump V4=212.13.217.117 V6=2001:ba8:0:d975::
 
 [iway]
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
@@ -1124,7 +1123,6 @@ mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
 
 [sapphire]
-sapphire01.ring.nlnog.net OWNER=sapphire V4=195.166.195.252 V6=2a02:638:8:1::4
 
 [octopuce]
 octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
@@ -1924,10 +1922,8 @@ centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 
 [internetag]
-internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
 
 [torix]
-torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2602:FDE5:1::43
 
 [internetport]
 
