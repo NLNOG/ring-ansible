@@ -45,7 +45,6 @@ rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
-mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
@@ -68,7 +67,6 @@ amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
 amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
-equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
@@ -151,7 +149,6 @@ icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
-trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
@@ -724,7 +721,6 @@ boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 
 [mironet]
-mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 
 [seeweb]
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
@@ -763,7 +759,6 @@ amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 
 [equinixnl]
-equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 
 [lchost]
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
@@ -1068,7 +1063,6 @@ msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 [dyn]
 
 [trueinternet]
-trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 
 [phusion]
 
