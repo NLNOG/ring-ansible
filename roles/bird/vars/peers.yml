@@ -1,5 +1,9 @@
 ---
 lg_peers:
+  LAYERBRIDGE01:
+    asn: 3280
+    ipv4: 77.83.243.7
+    ipv6: 2a0b:b86::f
   AFILIAS_IAD1:
     asn: 393246
     ipv4: 199.115.158.251
