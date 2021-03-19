@@ -4944,3 +4944,11 @@ USERS:
     groups:
       - ring-users
 
+  terrahost:
+    state: present
+    company: 'Terrahost AS'
+    email: 'noc@terrahost.no'
+    uid: 5638
+    groups:
+      - ring-users
+
