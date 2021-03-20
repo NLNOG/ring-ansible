@@ -70,6 +70,7 @@ amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
+equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
@@ -266,7 +267,6 @@ pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
-nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 cloudvps02.ring.nlnog.net OWNER=cloudvps V4=83.96.201.176 V6=2a02:348:5e6:1::2dbf
 cloudvps03.ring.nlnog.net OWNER=cloudvps V4=83.96.201.177 V6=2a02:348:5e6:1::1dff
@@ -344,6 +344,7 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 equinixfi01.ring.nlnog.net OWNER=equinixfi V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
+kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.175.51.198 V6=2c0f:f830:6:e:41:175:51:198
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
@@ -762,6 +763,7 @@ amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 
 [equinixnl]
+equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 
 [lchost]
 lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
@@ -1440,7 +1442,6 @@ lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 
 [nordunet]
-nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 
 [bkkfiber]
 
@@ -1686,6 +1687,7 @@ novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 
 [kviknet]
+kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 
 [liquidtelecom]
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
