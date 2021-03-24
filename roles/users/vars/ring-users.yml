@@ -4353,7 +4353,7 @@ USERS:
       - ring-users
 
   netshelter:
-    state: present
+    state: absent
     company: 'netShelter'
     email: 'noc@joey-network.de'
     uid: 587
