@@ -284,7 +284,6 @@ upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 upcloud07.ring.nlnog.net OWNER=upcloud V4=152.44.44.18 V6=2604:ed40:1000:1711:a8aa:aaff:fea0:4b25
 upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
-choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
@@ -468,7 +467,6 @@ a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:0500::514b
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
-xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 packet02.ring.nlnog.net OWNER=packet V4=139.178.86.67 V6=2604:1380:4111:100::d
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:210:1::
@@ -1482,7 +1480,6 @@ upcloud07.ring.nlnog.net OWNER=upcloud V4=152.44.44.18 V6=2604:ed40:1000:1711:a8
 upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
 
 [choopa]
-choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 
 [linode]
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
@@ -2080,7 +2077,6 @@ brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:0490:2100:
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 
 [xfone]
-xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 
 [mdbrasil]
 mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
