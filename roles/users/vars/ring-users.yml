@@ -4952,3 +4952,11 @@ USERS:
     groups:
       - ring-users
 
+  pfalzkom:
+    state: present
+    company: 'Pfalzkom GmbH'
+    email: 'noc@pfalzkom.de'
+    uid: 5639
+    groups:
+      - ring-users
+
