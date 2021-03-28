@@ -4960,3 +4960,19 @@ USERS:
     groups:
       - ring-users
 
+  qldvoip:
+    state: present
+    company: 'QLD VoIP Services'
+    email: 'xrobau@gmail.com'
+    uid: 5640
+    groups:
+      - ring-users
+
+  epsilon:
+    state: present
+    company: 'Epsilon Data Management'
+    email: 'network@conversantmedia.com'
+    uid: 5641
+    groups:
+      - ring-users
+

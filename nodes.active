@@ -2367,3 +2367,7 @@ i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37
 terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:193:200:238::41
 
 [pfalzkom]
+
+[qldvoip]
+
+[epsilon]
