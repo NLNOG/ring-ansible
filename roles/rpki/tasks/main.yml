@@ -19,9 +19,5 @@
     dest: /lib/systemd/system/rpki-client.service
     src: files/rpki-client.service
 
-- name: rpki-client systemd service
-  systemd:
-    name: rpki-client.service
-    daemon_reload: yes
-    enabled: yes
-    state: started
+- name: reload systemd
+  command: systemctl daemon-reload
