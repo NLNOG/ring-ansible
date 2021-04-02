@@ -19,6 +19,10 @@ http {
             root /var/www/ring;
         }
 
+        location ~ ^/rpki.json$ {
+            alias /var/lib/rpki-client/json;
+        }
+
         location / {
             return 301 https://ring.nlnog.net/;
         }
