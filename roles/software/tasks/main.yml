@@ -11,7 +11,7 @@
 - name: "TAL selection (rpki-trust-anchors)"
   debconf:
     name: rpki-trust-anchors
-    questions: rpki-trust-anchors/get_arin_tal
+    question: rpki-trust-anchors/get_arin_tal
     vtype: boolean
     value: False
 
