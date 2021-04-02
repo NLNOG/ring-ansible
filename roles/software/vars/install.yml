@@ -72,8 +72,6 @@ software:
     - python-simplejson
     - python-virtualenv
     - python3-requests
-    - rpki-client
-    - rpki-trust-anchors
     - rsync
     - ruby
     - screen

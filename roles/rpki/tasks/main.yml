@@ -1,0 +1,27 @@
+- name: "TAL selection (rpki-trust-anchors)"
+  debconf:
+    name: rpki-trust-anchors
+    question: rpki-trust-anchors/get_arin_tal
+    vtype: boolean
+    value: False
+
+- name: "Install RPKI Trust Anchors"
+  apt: pkg=rpki-trust-anchors state=latest
+
+- name: "Only output JSON"
+  copy: dest=/etc/default/rpki-client content="OPTIONS=-j"
+
+- name: "Install rpki-client"
+  apt: pkg=rpki-client state=latest
+
+- name: "Install bionic compatible systemd service file"
+  copy:
+    dest: /lib/systemd/system/rpki-client.service
+    src: files/rpki-client.service
+
+- name: rpki-client systemd service
+  systemd:
+    name: rpki-client.service
+    daemon_reload: yes
+    enabled: yes
+    state: started

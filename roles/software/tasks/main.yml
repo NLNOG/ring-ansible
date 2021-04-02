@@ -8,13 +8,6 @@
     - apparmor-utils
   when: need_mysql_server|default(None) != true
 
-- name: "TAL selection (rpki-trust-anchors)"
-  debconf:
-    name: rpki-trust-anchors
-    question: rpki-trust-anchors/get_arin_tal
-    vtype: boolean
-    value: False
-
 - name: "Install various software packages (all)"
   apt: name={{ item }} state=latest
   with_items: "{{ software.all|default([]) }}"
@@ -22,9 +15,6 @@
 - name: "Install various software packages ({{ ansible_distribution_release }})"
   apt: name={{ item }} state=latest
   with_items: "{{ vars['software'][ansible_distribution_release]|default(None) }}"
-
-- name: "Only output JSON"
-  copy: dest=/etc/default/rpki-client content="OPTIONS=-j"
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link

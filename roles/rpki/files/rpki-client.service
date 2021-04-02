@@ -1,0 +1,28 @@
+[Unit]
+Description=OpenBSD RPKI validator
+Documentation=man:rpki-client(8)
+
+[Service]
+EnvironmentFile=-/etc/default/rpki-client
+ExecStart=/usr/sbin/rpki-client $OPTIONS
+Type=oneshot
+User=_rpki-client
+CacheDirectory=rpki-client
+StateDirectory=rpki-client
+PrivateDevices=yes
+PrivateTmp=yes
+ProtectControlGroups=yes
+ProtectHome=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+ProtectSystem=strict
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+SystemCallArchitectures=native
+SystemCallErrorNumber=EPERM
