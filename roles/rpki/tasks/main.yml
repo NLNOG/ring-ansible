@@ -14,8 +14,11 @@
 - name: "Install rpki-client"
   apt: pkg=rpki-client state=latest
 
+# The Ubuntu Hirsute package has .service file with more
+# options than systemd Bionic supports
 - name: "Install bionic compatible systemd service file"
   copy:
     src: files/rpki-client.service
     dest: /lib/systemd/system/rpki-client.service
   notify: reload systemd
+  when: ansible_distribution_release == 'bionic'
