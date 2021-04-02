@@ -16,8 +16,6 @@
 
 - name: "Install bionic compatible systemd service file"
   copy:
-    dest: /lib/systemd/system/rpki-client.service
     src: files/rpki-client.service
-
-- name: reload systemd
-  command: systemctl daemon-reload
+    dest: /lib/systemd/system/rpki-client.service
+  notify: reload systemd
