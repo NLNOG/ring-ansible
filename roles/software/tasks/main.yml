@@ -23,6 +23,9 @@
   apt: name={{ item }} state=latest
   with_items: "{{ vars['software'][ansible_distribution_release]|default(None) }}"
 
+- name: "Only output JSON"
+  copy: dest=/etc/default/rpki-client content="OPTIONS=-j"
+
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
 
