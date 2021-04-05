@@ -9,7 +9,6 @@
   copy:
     src: files/pin-rpki
     dest: /etc/apt/preferences.d/pin-rpki
-  notify: apt update
   when: ansible_distribution_release == 'bionic'
 
 - name: "Run apt-get update"
