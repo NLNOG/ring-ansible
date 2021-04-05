@@ -53,7 +53,7 @@
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
     - { role: ringfpingd, tags: ringfpingd }
-    - { role: rpki, tags: rpki }
+    - { role: rpki, tags: rpki, when: ansible_distribution_release == 'bionic'}
     - { role: upgrade, tags: upgrade, when: ansible_distribution_release == 'precise'}
 
 - hosts: infranode
