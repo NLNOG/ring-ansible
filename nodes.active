@@ -2371,3 +2371,5 @@ qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2403:7e00:f001:2002:
 
 [epsilon]
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
+
+[krystal]

@@ -585,6 +585,7 @@ terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:1
 pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c:29ff:fe85:aff9
 qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2403:7e00:f001:2002::10
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
+krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2427,3 +2428,6 @@ qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2403:7e00:f001:2002:
 
 [epsilon]
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
+
+[krystal]
+krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70

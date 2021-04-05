@@ -4976,3 +4976,11 @@ USERS:
     groups:
       - ring-users
 
+  krystal:
+    state: present
+    company: 'Krystal Hosting Limited'
+    email: 'noc@krystal.uk'
+    uid: 5642
+    groups:
+      - ring-users
+
