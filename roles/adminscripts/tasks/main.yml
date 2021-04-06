@@ -43,6 +43,14 @@
     group=root
     mode=0755
 
+- name: "Install intraceshell"
+  copy:
+    src=intraceshell
+    dest=/usr/local/bin/intraceshell
+    owner=root
+    group=root
+    mode=0755
+
 - include: dbmaster.yml
   when: dbmaster == true
 

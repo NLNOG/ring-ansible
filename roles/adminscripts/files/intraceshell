@@ -1,0 +1,50 @@
+#!/bin/bash
+#
+# Shell for https://lookingglass.global/
+#
+
+cmd=$1
+target=$2
+
+if [[ $cmd == "mtr" ]]; then
+    if [[ $target =~ ^[0-9\.]+$ ]]; then
+        /usr/bin/mtr -4boLDRSNBAWVGJMXI -rwc10 -m 50 $target
+    elif [[ $target =~ ^[A-Za-z0-9:]+$ ]]; then
+        /usr/bin/mtr -6boLDRSNBAWVGJMXI -rwc10 -m 50 $target
+    else
+        echo "IP address required"
+        exit 2
+    fi
+elif [[ $cmd == "trace" ]]; then
+    if [[ $target =~ ^[0-9\.]+$ ]]; then
+        /usr/sbin/traceroute -A -q5 -w 2 -4 -m 50 $target
+    elif [[ $target =~ ^[A-Za-z0-9:]+$ ]]; then
+        /usr/sbin/traceroute -A -q5 -w 2 -6 -m 50 $target
+    else
+        echo "IP address required"
+        exit 2
+    fi
+elif [[ $cmd == "ping" ]]; then
+    if [[ $target =~ ^[0-9\.]+$ ]]; then
+        /bin/ping -c 10 -i 0.2 -t 255 $target
+    elif [[ $target =~ ^[A-Za-z0-9:]+$ ]]; then
+        /bin/ping6 -c 10 -i 0.2 -t 255 $target
+    else
+        echo "IP address required"
+        exit 2
+    fi
+elif [[ $cmd == "dig" ]]; then
+    if [[ $target =~ ^[a-zA-Z0-9\.]+$ ]]; then
+        /usr/bin/dig +noall +answer +trace +norecurse +timeout=1 +tries=5 A $target
+        /usr/bin/dig +noall +answer +trace +norecurse +timeout=1 +tries=5 AAAA $target
+    else
+        echo "Hostname required"
+        exit 2
+    fi
+else
+    echo "Valid command required"
+    exit 2
+fi
+
+exit 0
+
