@@ -4984,3 +4984,12 @@ USERS:
     groups:
       - ring-users
 
+  intrace:
+    state: present
+    company: 'Tech Futures Interactive Inc.'
+    email: 'noc@techfutures.xyz'
+    uid: 670
+    shell: /usr/local/bin/intraceshell
+    groups:
+      - ring-users
+

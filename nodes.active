@@ -2377,3 +2377,5 @@ epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::
 
 [krystal]
 krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
+
+[intrace]
