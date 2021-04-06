@@ -2416,7 +2416,7 @@ USERS:
       - ring-users
 
   peakten:
-    state: present
+    state: absent
     company: 'Peak 10'
     email: 'DL-BB-Engineering@flexential.com'
     uid: 5323
@@ -4990,6 +4990,14 @@ USERS:
     email: 'noc@techfutures.xyz'
     uid: 670
     shell: /usr/local/bin/intraceshell
+    groups:
+      - ring-users
+
+  flexential:
+    state: present
+    company: 'Flexential'
+    email: 'DL-BB-Network-Engineering@flexential.com'
+    uid: 5643
     groups:
       - ring-users
 

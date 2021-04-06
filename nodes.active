@@ -262,10 +262,6 @@ tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
-peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
-peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
-peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
@@ -567,6 +563,10 @@ pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c
 qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2403:7e00:f001:2002::10
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
 krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
+flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
+flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
+flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
+flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [infranode]
 
@@ -1432,10 +1432,6 @@ exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 
 [peakten]
-peakten01.ring.nlnog.net OWNER=peakten V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
-peakten02.ring.nlnog.net OWNER=peakten V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
-peakten03.ring.nlnog.net OWNER=peakten V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-peakten04.ring.nlnog.net OWNER=peakten V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [nianet]
 
@@ -2379,3 +2375,9 @@ epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::
 krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
 
 [intrace]
+
+[flexential]
+flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
+flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
+flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
+flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
