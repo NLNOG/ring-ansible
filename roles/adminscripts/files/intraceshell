@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Shell for https://lookingglass.global/
+# Contact noc@techfutures.xyz for details
 #
 
 cmd=$1
