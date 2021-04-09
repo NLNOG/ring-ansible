@@ -163,7 +163,6 @@
   roles:
     - { role: apt, tags: apt }
     - { role: ansible, tags: ansible, mitogen: no }
-    - { role: users, class: ring-users, tags: ring-users }
   tasks:
     - name: "Remove temporary dpkg configuration" 
       file:
@@ -182,3 +181,8 @@
   tags:
     - cleanup
 
+- hosts: ringnode
+  become: true
+  become_user: root
+  roles:
+    - { role: users, class: ring-users, tags: ring-users }
