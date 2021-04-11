@@ -1,6 +1,6 @@
 - name: "Add powerdns apt repository"
   apt_repository:
-    repo: 'deb [arch=amd64] http://repo.powerdns.com/ubuntu xenial-auth-41 main'
+    repo: 'deb [arch=amd64] http://repo.powerdns.com/ubuntu bionic-auth-44 main'
     state: present
     filename: 'pdns.list'
 
