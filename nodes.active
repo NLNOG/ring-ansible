@@ -383,6 +383,7 @@ lgi01.ring.nlnog.net OWNER=lgi V4=62.99.159.106 V6=2a02:8384:11:4::106
 multim01.ring.nlnog.net OWNER=multim V4=185.87.111.13 V6=2a05:b9c0::1:0:19
 xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
+utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
@@ -1824,6 +1825,7 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 [supplyframe]
 
 [utelecom]
+utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 
 [customconnect]
 
