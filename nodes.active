@@ -45,7 +45,6 @@ rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
-seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
@@ -127,7 +126,6 @@ rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
-heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V4=185.49.141.7 V6=2a04:b900:0:100::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -358,7 +356,6 @@ connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5:
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 svwh01.ring.nlnog.net OWNER=svwh V4=72.5.72.35 V6=2606:c680:1:17:6c02:c1ff:fea3:d427
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
-mnetworks01.ring.nlnog.net OWNER=mnetworks V4=91.237.68.9 V6=2001:67c:2ad8::9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
 ebox03.ring.nlnog.net OWNER=ebox V4=172.93.16.166 V6=2606:6d00:eb0:800::2
@@ -727,7 +724,6 @@ spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 [mironet]
 
 [seeweb]
-seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 
 [zensystems]
 
@@ -961,7 +957,6 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 [rediris]
 
 [heanet]
-heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 
 [algar]
 
@@ -1732,7 +1727,6 @@ svwh01.ring.nlnog.net OWNER=svwh V4=72.5.72.35 V6=2606:c680:1:17:6c02:c1ff:fea3:
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 
 [mnetworks]
-mnetworks01.ring.nlnog.net OWNER=mnetworks V4=91.237.68.9 V6=2001:67c:2ad8::9
 
 [ebox]
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
