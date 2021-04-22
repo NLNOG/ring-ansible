@@ -1,8 +1,0 @@
-
-- name: "Add /root/upgrade-12-16"
-  template:
-    src: upgrade-12-16.j2
-    dest: /root/upgrade-12-16
-    mode: 0755
-    owner: root
-    group: root

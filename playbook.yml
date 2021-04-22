@@ -54,7 +54,6 @@
     - { role: ring_sqa, tags: ring_sqa }
     - { role: ringfpingd, tags: ringfpingd }
     - { role: rpki, tags: rpki, when: ansible_distribution_release == 'bionic'}
-    - { role: upgrade, tags: upgrade, when: ansible_distribution_release == 'precise'}
 
 - hosts: infranode
   become: true
