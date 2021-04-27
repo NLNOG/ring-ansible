@@ -127,7 +127,6 @@ rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:1:1107::2
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
-glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
@@ -979,7 +978,6 @@ bahnhof01.ring.nlnog.net OWNER=bahnhof V4=195.178.185.171 V6=2001:9b0:1:1107::2
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 
 [glesys]
-glesys01.ring.nlnog.net OWNER=glesys V4=109.74.6.228 V6=2a02:750:7::392
 
 [rcsrds]
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
