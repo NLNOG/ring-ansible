@@ -3833,7 +3833,7 @@ USERS:
       - ring-users
 
   itafdelingen:
-    state: present
+    state: absent
     company: 'It-afdelingen A/S'
     email: 'noc@itafdelingen.dk'
     uid: 5500
@@ -4681,7 +4681,7 @@ USERS:
       - ring-users
 
   hlit:
-    state: present
+    state: absent
     company: 'IT-SERVICE'
     email: 'biuro@hlit.pl'
     uid: 5605

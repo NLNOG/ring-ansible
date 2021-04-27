@@ -436,7 +436,6 @@ torix01.ring.nlnog.net OWNER=torix V4=206.108.0.43 V6=2602:FDE5:1::43
 mlab01.ring.nlnog.net OWNER=mlab V4=45.137.186.21 V6=2a0e:a6c1::2100:45:137:186:21
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
-itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 qix01.ring.nlnog.net OWNER=qix V4=206.126.112.10 V6=2620:1f:4000::10
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
@@ -539,7 +538,6 @@ as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
-hlit01.ring.nlnog.net OWNER=hlit V4=194.36.25.13 V6=2a0e:46c7::100
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
@@ -1996,7 +1994,6 @@ axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 
 [itafdelingen]
-itafdelingen01.ring.nlnog.net OWNER=itafdelingen V4=178.209.160.135 V6=2a05:f700:2:3::2
 
 [cyberfusion]
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
@@ -2311,7 +2308,6 @@ natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 
 [hlit]
-hlit01.ring.nlnog.net OWNER=hlit V4=194.36.25.13 V6=2a0e:46c7::100
 
 [merlin]
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
