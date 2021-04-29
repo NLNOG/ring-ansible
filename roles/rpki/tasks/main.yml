@@ -22,6 +22,7 @@
     question: rpki-trust-anchors/get_arin_tal
     vtype: boolean
     value: False
+  changed_when: false
 
 - name: "Install RPKI Trust Anchors"
   apt: pkg=rpki-trust-anchors state=latest
