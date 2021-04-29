@@ -7,7 +7,6 @@ interconnect01.ring.nlnog.net OWNER=interconnect V4=212.83.212.122 V6=2001:4018:
 cambrium01.ring.nlnog.net OWNER=cambrium V4=217.19.17.23 V6=2a02:58:3:110::23:1
 duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
 previder01.ring.nlnog.net OWNER=previder V4=84.241.137.18 V6=2001:1690:2:115::18
-leaseweb01.ring.nlnog.net OWNER=leaseweb V4=85.17.150.181 V6=2001:1af8:4300:a004:8::2
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
@@ -151,6 +150,7 @@ masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
+msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
@@ -243,6 +243,7 @@ kudelski01.ring.nlnog.net OWNER=kudelski V4=185.35.63.208 V6=2a04:5c85:1000::28
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
@@ -258,6 +259,7 @@ utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
+nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 cloudvps02.ring.nlnog.net OWNER=cloudvps V4=83.96.201.176 V6=2a02:348:5e6:1::2dbf
 cloudvps03.ring.nlnog.net OWNER=cloudvps V4=83.96.201.177 V6=2a02:348:5e6:1::1dff
@@ -406,6 +408,7 @@ web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
+gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:216:3eff:feb2:ca4
@@ -489,6 +492,7 @@ layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
+arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
@@ -584,7 +588,6 @@ duocast01.ring.nlnog.net OWNER=duocast V4=89.188.27.98 V6=2a01:1b0:7999:453::50
 previder01.ring.nlnog.net OWNER=previder V4=84.241.137.18 V6=2001:1690:2:115::18
 
 [leaseweb]
-leaseweb01.ring.nlnog.net OWNER=leaseweb V4=85.17.150.181 V6=2001:1af8:4300:a004:8::2
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
@@ -1056,6 +1059,7 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 
 [msu]
+msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 
 [robtex]
 
@@ -1362,6 +1366,7 @@ qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 
 [edsitech]
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 
 [1oconsulting]
 
@@ -1429,6 +1434,7 @@ lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 
 [nordunet]
+nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 
 [bkkfiber]
 
@@ -1897,6 +1903,7 @@ bellmts01.ring.nlnog.net OWNER=bellmts V4=216.55.208.254 V6=2606:5c80:2:b::1
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 
 [gitoyen]
+gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 
 [centralnic]
 centralnic01.ring.nlnog.net OWNER=centralnic V4=212.18.250.41 V6=2a04:2b00:212::70:250:41
@@ -2162,6 +2169,7 @@ synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 
 [arvancloud]
+arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [bogons]
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
