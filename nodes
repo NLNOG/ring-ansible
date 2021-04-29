@@ -530,7 +530,7 @@ unixsolutions01.ring.nlnog.net OWNER=unixsolutions V4=185.111.204.122 V6=2a04:64
 unixsolutions02.ring.nlnog.net OWNER=unixsolutions V4=109.68.162.234 V6=2a02:2a08:214::234
 wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
 xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
-aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
+aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
@@ -2281,7 +2281,7 @@ wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
 xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
 
 [aanet]
-aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:62::240
+aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 
 [techfutures]
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
