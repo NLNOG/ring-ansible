@@ -6,3 +6,4 @@ apache_vhosts:
   - map
 letsencrypt_certs:
   - lg.ring.nlnog.net
+  - map.ring.nlnog.net
