@@ -354,7 +354,6 @@ ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
 ebox03.ring.nlnog.net OWNER=ebox V4=172.93.16.166 V6=2606:6d00:eb0:800::2
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
-elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
@@ -1732,7 +1731,6 @@ unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 
 [elvisru]
-elvisru01.ring.nlnog.net OWNER=elvisru V4=194.190.198.13 V6=2a00:1c88:1::13
 
 [grifon]
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
