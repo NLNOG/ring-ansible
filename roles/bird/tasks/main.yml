@@ -36,22 +36,6 @@
     group=root
     mode=0444
 
-- name: "Install table dump script"
-  copy:
-    src=fetchtables.sh
-    dest=/usr/local/bin/fetchtables.sh
-    owner=root
-    group=root
-    mode=0755
-
-- name: "Dump tables every 5 minutes cronjob"
-  cron:
-    name: fetchtables
-    job: /usr/local/bin/fetchtables.sh
-    hour: '*'
-    minute: '*/10'
-    user: root
-
 - name: "refresh ipv4 rtrsub configuration"
   command: "rtrsub --afi ipv4 -t /etc/bird/rpki.j2 -o /etc/bird/rpki-ipv4.conf"
   notify: reload bird

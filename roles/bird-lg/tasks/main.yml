@@ -50,3 +50,18 @@
 - name: "Start bird-lg-proxy"
   service: name=bird-lg-proxy state=started
 
+- name: "Install table dump script"
+  template:
+    src=fetchtables.sh.j2
+    dest=/usr/local/bin/fetchtables.sh
+    owner=root
+    group=root
+    mode=0755
+
+- name: "Dump tables every 5 minutes cronjob"
+  cron:
+    name: fetchtables
+    job: /usr/local/bin/fetchtables.sh
+    hour: '*'
+    minute: '*/10'
+    user: root

@@ -1,3 +1,8 @@
+apache_vhosts:
+  - lg01.infra
+letsencrypt_certs:
+  - lg01.infra.ring.nlnog.net
+
 LOCAL_USERS:
   dave:
     state: present

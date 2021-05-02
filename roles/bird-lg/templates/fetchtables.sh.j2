@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+basedir="/var/www/{{ inventory_hostname}}/HTML"
+
+/usr/sbin/birdc show route primary all | egrep "unreachable|as_path" | paste - - | sed 's/{.*//' | tee >(
+    awk '{ print $1 " " $NF }' | grep -v "^0\.0\.0\.0/0 " | sort -n -k 2 > $basedir/table-v4.txt.tmp) |
+    sed 's/unreachable.*BGP\.//' | grep -v "^0\.0\.0\.0/0 " | sort -n -k 2 > $basedir/table-paths-v4.txt.tmp
+
+/usr/sbin/birdc6 show route primary all | egrep "unreachable|as_path" | paste - - | sed 's/{.*//' | tee >(
+    awk '{ print $1 " " $NF }' | grep -v "^::/0 " | sort -n -k 2 > $basedir/table-v6.txt.tmp) |
+    sed 's/unreachable.*BGP\.//' | grep -v "^::/0 " | sort -n -k 2 > $basedir/table-paths-v6.txt.tmp
+
+
+
+mv $basedir/table-v4.txt.tmp $basedir/table-v4.txt
+mv $basedir/table-v6.txt.tmp $basedir/table-v6.txt
+mv $basedir/table-paths-v4.txt.tmp $basedir/table-paths-v4.txt
+mv $basedir/table-paths-v6.txt.tmp $basedir/table-paths-v6.txt
+
+cat $basedir/table-v4.txt $basedir/table-v6.txt > $basedir/table.txt.tmp
+mv $basedir/table.txt.tmp $basedir/table.txt
+cat $basedir/table-paths-v4.txt $basedir/table-paths-v6.txt > $basedir/table-paths.txt.tmp
+mv $basedir/table-paths.txt.tmp $basedir/table-paths.txt
