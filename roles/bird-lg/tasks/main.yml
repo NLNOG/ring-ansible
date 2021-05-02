@@ -50,6 +50,14 @@
 - name: "Start bird-lg-proxy"
   service: name=bird-lg-proxy state=started
 
+- name: "Create dump dir"
+  file:
+    path: "/var/www/{{ inventory_hostname}}/HTML"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
 - name: "Install table dump script"
   template:
     src=fetchtables.sh.j2
