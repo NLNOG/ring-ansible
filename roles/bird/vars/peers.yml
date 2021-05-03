@@ -153,7 +153,7 @@ lg_peers:
     ipv4: 89.234.186.6
     ipv6: 2a00:5884::6
   HASTADKLEV1:
-    asn: 49271
+    asn: 47753
     ipv4: 217.168.87.1
     ipv6: 2001:678:dd0::1
   HIVANE1:
