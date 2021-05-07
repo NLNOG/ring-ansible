@@ -143,6 +143,7 @@ iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
+ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -159,6 +160,7 @@ world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
+vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
 lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d8:11::158
 iccn01.ring.nlnog.net OWNER=iccn V4=72.36.126.205 V6=2620:0:e10:400a::5
@@ -178,7 +180,6 @@ luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
 etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
-dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14::1
@@ -258,6 +259,7 @@ nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
+transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
@@ -543,7 +545,6 @@ lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:10
 terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
 riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
-apgp01.ring.nlnog.net OWNER=apgp V4=103.151.145.8 V6=2001:df3:c780::8
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:250:56ff:fe83:6e1d
 copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
 apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
@@ -1025,6 +1026,7 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 [ispservices]
 
 [ausregistry]
+ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 
 [switch]
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -1091,6 +1093,7 @@ rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::13
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
 
 [vocus]
+vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 
 [hostvirtual]
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
@@ -1154,7 +1157,6 @@ stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200:
 etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 
 [dragon]
-dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 
 [2connect]
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
@@ -1426,6 +1428,7 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 
 [transtelco]
+transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:302:7::2
 
 [lwlcom]
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
@@ -2325,7 +2328,6 @@ riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
 
 [apgp]
-apgp01.ring.nlnog.net OWNER=apgp V4=103.151.145.8 V6=2001:df3:c780::8
 
 [natoresearch]
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:250:56ff:fe83:6e1d
