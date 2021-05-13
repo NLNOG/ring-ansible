@@ -2352,7 +2352,7 @@ USERS:
       - ring-users
 
   quadranet:
-    state: present
+    state: absent
     company: 'QuadraNet, Inc'
     email: 'escalations@quadranet.com'
     uid: 5315

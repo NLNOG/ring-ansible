@@ -213,6 +213,7 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
+atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
 nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
@@ -1279,6 +1280,7 @@ networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 
 [atw]
+atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 
 [onlinesas]
 onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
