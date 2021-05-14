@@ -993,8 +993,8 @@ USERS:
 
   bahnhof:
     state: present
-    company: 'Bahnhof'
-    email: 'ncc@bahnhof.net'
+    company: 'Bahnhof AB'
+    email: 'noc@bahnhof.net'
     uid: 5145
     groups:
       - ring-users
