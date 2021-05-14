@@ -485,7 +485,6 @@ brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:5
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
-packet02.ring.nlnog.net OWNER=packet V4=139.178.86.67 V6=2604:1380:4111:100::d
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:3c04:101::25
 kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
@@ -584,6 +583,7 @@ flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:
 flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
+eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2142,7 +2142,6 @@ xfone01.ring.nlnog.net OWNER=xfone V4=94.230.90.30 V6=2a02:ed0:3800:81::30
 mdbrasil01.ring.nlnog.net OWNER=mdbrasil V4=187.73.144.77 V6=2804:40:fe20::2
 
 [packet]
-packet02.ring.nlnog.net OWNER=packet V4=139.178.86.67 V6=2604:1380:4111:100::d
 
 [cloudbear]
 cloudbear01.ring.nlnog.net OWNER=cloudbear V4=185.167.204.195 V6=2a0b:b600:3c04:101::25
@@ -2431,3 +2430,6 @@ flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:
 flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
+
+[eqxmetal]
+eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7

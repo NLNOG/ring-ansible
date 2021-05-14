@@ -4233,7 +4233,7 @@ USERS:
       - ring-users
 
   packet:
-    state: present
+    state: absent
     company: 'Packet'
     email: 'netops@packet.com'
     uid: 5550
@@ -4998,6 +4998,14 @@ USERS:
     company: 'Flexential'
     email: 'DL-BB-Network-Engineering@flexential.com'
     uid: 5643
+    groups:
+      - ring-users
+
+  eqxmetal:
+    state: present
+    company: 'Equinix Metal'
+    email: 'metal-noc@equinix.com'
+    uid: 5644
     groups:
       - ring-users
 
