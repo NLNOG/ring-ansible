@@ -560,6 +560,7 @@ flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
+vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
 
 [infranode]
 
@@ -2371,3 +2372,4 @@ flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
 
 [vorboss]
+vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
