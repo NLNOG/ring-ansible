@@ -5009,3 +5009,11 @@ USERS:
     groups:
       - ring-users
 
+  vorboss:
+    state: present
+    company: 'Vorboss Limited'
+    email: 'noc@vorboss.com'
+    uid: 5645
+    groups:
+      - ring-users
+
