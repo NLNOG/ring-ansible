@@ -201,7 +201,6 @@ cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
-viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
 ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
@@ -434,7 +433,6 @@ adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
 mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::beef
 profitbricks01.ring.nlnog.net OWNER=profitbricks V4=46.16.72.7 V6=2a02:2478::666
 ionswitch01.ring.nlnog.net OWNER=ionswitch V4=66.11.126.68 V6=2605:fb80:e000:9d18::1
-equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fec1:1dac
@@ -1247,7 +1245,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 
 [viatel]
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
-viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 
 [ntt]
@@ -1988,7 +1985,6 @@ profitbricks01.ring.nlnog.net OWNER=profitbricks V4=46.16.72.7 V6=2a02:2478::666
 ionswitch01.ring.nlnog.net OWNER=ionswitch V4=66.11.126.68 V6=2605:fb80:e000:9d18::1
 
 [equinixbr]
-equinixbr01.ring.nlnog.net OWNER=equinixbr V4=187.0.196.139 V6=2804:50:1:f::139
 
 [pccw]
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
