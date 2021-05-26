@@ -82,7 +82,6 @@ nts01.ring.nlnog.net OWNER=nts V4=212.103.89.212 V6=2a00:c38:2::212
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
-isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
 sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
@@ -226,7 +225,6 @@ digitalocean07.ring.nlnog.net OWNER=digitalocean V4=159.203.1.207 V6=2604:A880:0
 digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0002:00D0:0000:0000:00E6:9001
 digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
-digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
@@ -804,7 +802,6 @@ gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
 
 [isarnet]
-isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
 
 [strato]
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
@@ -1310,7 +1307,6 @@ digitalocean07.ring.nlnog.net OWNER=digitalocean V4=159.203.1.207 V6=2604:A880:0
 digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0002:00D0:0000:0000:00E6:9001
 digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
-digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 
 [bdhub]
 
