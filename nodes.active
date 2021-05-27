@@ -200,7 +200,6 @@ cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
-viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
 ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
@@ -210,7 +209,6 @@ nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
 businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
-dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 vibe01.ring.nlnog.net OWNER=vibe V4=14.1.44.230 V6=2401:7000:1:2::2
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
@@ -246,6 +244,7 @@ kudelski01.ring.nlnog.net OWNER=kudelski V4=185.35.63.208 V6=2a04:5c85:1000::28
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
@@ -293,6 +292,7 @@ linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe
 linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
+gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
@@ -1245,7 +1245,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 
 [viatel]
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
-viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 
 [ntt]
@@ -1275,7 +1274,6 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 [cloudnl]
 
 [dacor]
-dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 
 [networkoperations]
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
@@ -1371,6 +1369,7 @@ qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 
 [edsitech]
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 
 [1oconsulting]
 
@@ -1506,6 +1505,7 @@ fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 
 [gigabit]
+gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 
 [altibox]
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
