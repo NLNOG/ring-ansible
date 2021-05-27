@@ -3241,7 +3241,7 @@ USERS:
       - ring-users
 
   svwh:
-    state: present
+    state: absent
     company: 'Silicon Valley Web Hosting LLC'
     email: 'support@svwh.net'
     uid: 5427
