@@ -193,8 +193,8 @@ maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
 telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
-infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
 funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
+dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
@@ -293,7 +293,6 @@ fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
-zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 iptron01.ring.nlnog.net OWNER=iptron V4=188.227.249.82 V6=2a03:5880:101:5::82
 euronet01.ring.nlnog.net OWNER=euronet V4=194.134.192.4 V6=2a02:2500:0000:040B::5
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
@@ -415,7 +414,6 @@ mlab01.ring.nlnog.net OWNER=mlab V4=45.137.186.21 V6=2a0e:a6c1::2100:45:137:186:
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
-qix01.ring.nlnog.net OWNER=qix V4=206.126.112.10 V6=2620:1f:4000::10
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 noack01.ring.nlnog.net OWNER=noack V4=185.231.103.50 V6=2a0c:5700:3133:651:250:56ff:fea3:1c06
@@ -508,7 +506,6 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
-as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2001:678:c4c::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
@@ -1219,12 +1216,12 @@ telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
 [sne]
 
 [infowest]
-infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
 
 [funet]
 funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
 
 [dcenterpl]
+dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 
 [cybercom]
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
@@ -1509,7 +1506,6 @@ gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 
 [zitcom]
-zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 
 [bytemark]
 
@@ -1935,7 +1931,6 @@ freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4:
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 
 [qix]
-qix01.ring.nlnog.net OWNER=qix V4=206.126.112.10 V6=2620:1f:4000::10
 
 [comvive]
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
@@ -2226,7 +2221,6 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
-as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 
