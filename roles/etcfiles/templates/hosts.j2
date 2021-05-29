@@ -10,9 +10,6 @@ ff02::2 ip6-allrouters
 2001:1AF8:4013::24  master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 95.211.149.24   master master.ring.nlnog.net sqa-collector.infra.ring.nlnog.net
 
-193.0.11.4	rpki.ripe.net
-2001:67c:2e8:25::c100:b04	rpki.ripe.net
-
 # RING hosts
 {% for host in groups['all']|sort %}
 {% set short_id = host|regex_replace("\.ring\.nlnog\.net", "") %}
