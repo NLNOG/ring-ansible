@@ -5017,3 +5017,11 @@ USERS:
     groups:
       - ring-users
 
+  onit:
+    state: present
+    company: 'ONIT AS'
+    email: 'noc@hastadklev.no'
+    uid: 5646
+    groups:
+      - ring-users
+

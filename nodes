@@ -544,7 +544,6 @@ swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
-hastadklev01.ring.nlnog.net OWNER=hastadklev V4=217.168.87.232 V6=2a0e:8f02:2022::232
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
@@ -586,6 +585,7 @@ flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
+onit01.ring.nlnog.net OWNER=onit V4=185.249.254.195 V6=2a10:a647:1::195/64
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2333,7 +2333,6 @@ kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 
 [hastadklev]
-hastadklev01.ring.nlnog.net OWNER=hastadklev V4=217.168.87.232 V6=2a0e:8f02:2022::232
 
 [rgi]
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
@@ -2439,3 +2438,6 @@ eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200:
 
 [vorboss]
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
+
+[onit]
+onit01.ring.nlnog.net OWNER=onit V4=185.249.254.195 V6=2a10:a647:1::195/64

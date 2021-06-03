@@ -2367,3 +2367,5 @@ eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200:
 
 [vorboss]
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
+
+[onit]
