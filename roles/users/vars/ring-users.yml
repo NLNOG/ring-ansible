@@ -4753,7 +4753,7 @@ USERS:
       - ring-users
 
   hastadklev:
-    state: present
+    state: absent
     company: 'Hastadklev AS'
     email: 'jan@hastadklev.no'
     uid: 5614
