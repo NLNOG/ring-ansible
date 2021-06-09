@@ -5025,3 +5025,11 @@ USERS:
     groups:
       - ring-users
 
+  vmcity:
+    state: present
+    company: 'VMCity'
+    email: 'noc@vmcity.ru'
+    uid: 5647
+    groups:
+      - ring-users
+
