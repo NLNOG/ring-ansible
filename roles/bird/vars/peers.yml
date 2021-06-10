@@ -481,7 +481,11 @@ lg_peers:
     asn: 46997
     ipv4: 202.5.31.219
     ipv6: 2602:feda:4::1
-    
+  VMCITY_RU:
+    asn: 51093
+    ipv4: 212.48.225.134
+    ipv6: 2a06:300:10::133
+
 readonly_peers:
   SERNET2:
     asn: 41955
