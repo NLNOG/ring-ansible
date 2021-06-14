@@ -241,6 +241,10 @@ lg_peers:
     asn: 197595
     ipv4: 46.227.64.248
     ipv6: 2a03:8600:8600:1::8
+  ODERLAND01:
+    asn: 44136
+    ipv4: 193.180.19.2
+    ipv6: 2a02:28f0:101:1::1001
   PBWCOMM01:
     asn: 16409
     ipv4: 38.103.8.1
@@ -481,7 +485,11 @@ lg_peers:
     asn: 46997
     ipv4: 202.5.31.219
     ipv6: 2602:feda:4::1
-    
+  VMCITY_RU:
+    asn: 51093
+    ipv4: 212.48.225.134
+    ipv6: 2a06:300:10::133
+
 readonly_peers:
   SERNET2:
     asn: 41955
