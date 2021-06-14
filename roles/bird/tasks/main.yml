@@ -17,7 +17,6 @@
   with_items:
     - bird
     - dialog
-    - nginx
 
 - pip:
     name: rtrsub
