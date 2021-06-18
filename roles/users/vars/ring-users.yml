@@ -5033,3 +5033,19 @@ USERS:
     groups:
       - ring-users
 
+  honeycomb:
+    state: present
+    company: 'Honeycomb Internet Services'
+    email: 'noc@honeycomb.net'
+    uid: 5648
+    groups:
+      - ring-users
+
+  globallayer:
+    state: present
+    company: 'Global Layer B.V.'
+    email: 'noc@global-layer.com'
+    uid: 5649
+    groups:
+      - ring-users
+

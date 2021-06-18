@@ -2377,3 +2377,7 @@ onit01.ring.nlnog.net OWNER=onit V4=185.249.254.195 V6=2a10:a647:1::195
 
 [vmcity]
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
+
+[honeycomb]
+
+[globallayer]
