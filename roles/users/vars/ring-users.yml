@@ -5049,3 +5049,11 @@ USERS:
     groups:
       - ring-users
 
+  bytepark:
+    state: present
+    company: 'BytePark'
+    email: 'noc@bytepark.net'
+    uid: 5650
+    groups:
+      - ring-users
+
