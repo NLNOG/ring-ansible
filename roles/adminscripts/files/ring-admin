@@ -1205,7 +1205,7 @@ class commands(object):
     def countryname(self, country, state):
         cname = ''
         try:
-            c = pycountry.countries.get(alpha2=country)
+            c = pycountry.countries.get(alpha_2=country)
             cname = c.name
         except KeyError:
             cname = 'Unknown'
