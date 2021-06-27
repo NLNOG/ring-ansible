@@ -158,7 +158,6 @@ icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
-trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
@@ -249,7 +248,6 @@ ovh01.ring.nlnog.net OWNER=ovh V4=37.187.111.58 V6=2001:41d0:a:643a::137
 ovh04.ring.nlnog.net OWNER=ovh V4=192.99.153.129 V6=2607:5300:101:0:0:0:0:599
 ovh05.ring.nlnog.net OWNER=ovh V4=51.79.29.232 V6=2607:5300:205:300::191
 ovh06.ring.nlnog.net OWNER=ovh V4=51.89.117.83 V6=2001:41d0:701:1000::15ca
-ovh07.ring.nlnog.net OWNER=ovh V4=51.68.89.39 V6=2001:41d0:404:100::856
 ovh08.ring.nlnog.net OWNER=ovh V4=51.77.110.247 V6=2001:41d0:801:1000::d3
 ovh09.ring.nlnog.net OWNER=ovh V4=51.83.250.206 V6=2001:41d0:601:2000::8cc
 ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
@@ -1122,7 +1120,6 @@ msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 [dyn]
 
 [trueinternet]
-trueinternet01.ring.nlnog.net OWNER=trueinternet V4=203.144.167.57 V6=2001:fb0:100:ffff:211:25ff:fe40:9468
 
 [phusion]
 
@@ -1403,7 +1400,6 @@ ovh01.ring.nlnog.net OWNER=ovh V4=37.187.111.58 V6=2001:41d0:a:643a::137
 ovh04.ring.nlnog.net OWNER=ovh V4=192.99.153.129 V6=2607:5300:101:0:0:0:0:599
 ovh05.ring.nlnog.net OWNER=ovh V4=51.79.29.232 V6=2607:5300:205:300::191
 ovh06.ring.nlnog.net OWNER=ovh V4=51.89.117.83 V6=2001:41d0:701:1000::15ca
-ovh07.ring.nlnog.net OWNER=ovh V4=51.68.89.39 V6=2001:41d0:404:100::856
 ovh08.ring.nlnog.net OWNER=ovh V4=51.77.110.247 V6=2001:41d0:801:1000::d3
 ovh09.ring.nlnog.net OWNER=ovh V4=51.83.250.206 V6=2001:41d0:601:2000::8cc
 ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294

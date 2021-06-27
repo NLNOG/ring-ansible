@@ -1432,7 +1432,7 @@ USERS:
       - ring-users
 
   trueinternet:
-    state: present
+    state: absent
     company: 'True Internet Co., Ltd.'
     email: 'corpsupport@trueinternet.co.th'
     uid: 5198
