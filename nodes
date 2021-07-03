@@ -293,6 +293,10 @@ upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 upcloud07.ring.nlnog.net OWNER=upcloud V4=209.151.145.12 V6=2604:ed40:1000:1711:d42a:dcff:fe53:124
 upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
+upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000:d42a:dcff:fe53:664c
+upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
+upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
+upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
 choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
@@ -1536,6 +1540,10 @@ upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.40.201 V6=2a04:3544:1000:1510:a
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 upcloud07.ring.nlnog.net OWNER=upcloud V4=209.151.145.12 V6=2604:ed40:1000:1711:d42a:dcff:fe53:124
 upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
+upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000:d42a:dcff:fe53:664c
+upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
+upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
+upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
 
 [choopa]
 choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
