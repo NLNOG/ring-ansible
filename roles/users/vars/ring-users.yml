@@ -370,7 +370,7 @@ USERS:
   nautile:
     state: present
     company: 'Nautile'
-    email: 'network@nautile.nc'
+    email: 'noc@nautile.sarl'
     uid: 5054
     groups:
       - ring-users
