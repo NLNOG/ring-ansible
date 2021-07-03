@@ -5057,3 +5057,11 @@ USERS:
     groups:
       - ring-users
 
+  6connect:
+    state: present
+    company: '6connect Inc'
+    email: 'ops@6connect.com'
+    uid: 5651
+    groups:
+      - ring-users
+

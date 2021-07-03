@@ -2389,3 +2389,5 @@ globallayer02.ring.nlnog.net OWNER=globallayer V4=134.19.182.14 V6=2a00:1678:da7
 
 [bytepark]
 bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::179
+
+[6connect]
