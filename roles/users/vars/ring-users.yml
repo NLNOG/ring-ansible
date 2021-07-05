@@ -4033,7 +4033,7 @@ USERS:
       - ring-users
 
   mitsol:
-    state: present
+    state: absent
     company: 'Mitsol'
     email: 'peering@mitsol.net'
     uid: 5525
