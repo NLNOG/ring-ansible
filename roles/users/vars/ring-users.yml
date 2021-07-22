@@ -3481,7 +3481,7 @@ USERS:
       - ring-users
 
   lgi:
-    state: present
+    state: absent
     company: 'Liberty Global'
     email: 'ip-noc@upctechnology.com'
     uid: 5457
