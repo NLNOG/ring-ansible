@@ -5097,3 +5097,11 @@ USERS:
     groups:
       - ring-users
 
+  webinabox:
+    state: present
+    company: 'Web In A Box'
+    email: 'admin@webinabox.net.au'
+    uid: 5656
+    groups:
+      - ring-users
+
