@@ -5065,3 +5065,35 @@ USERS:
     groups:
       - ring-users
 
+  nicat:
+    state: present
+    company: 'nic.at GmbH'
+    email: 'ops@nic.at'
+    uid: 5652
+    groups:
+      - ring-users
+
+  massar:
+    state: present
+    company: 'Massar's Network'
+    email: 'noc@massars.net'
+    uid: 5653
+    groups:
+      - ring-users
+
+  entech:
+    state: present
+    company: 'EN Technologies Pte Ltd'
+    email: 'noc@en.com.sg'
+    uid: 5654
+    groups:
+      - ring-users
+
+  lumity:
+    state: present
+    company: 'Lumity Technology Solutions'
+    email: 'noc@lumity.com.au'
+    uid: 5655
+    groups:
+      - ring-users
+
