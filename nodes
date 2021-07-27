@@ -12,7 +12,6 @@ leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
-nedzone01.ring.nlnog.net OWNER=nedzone V4=178.18.139.54 V6=2a02:990:222::6932:49e9
 is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
@@ -124,7 +123,6 @@ ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
-ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
@@ -166,7 +164,6 @@ world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
 vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
-hostvirtual01.ring.nlnog.net OWNER=hostvirtual V4=103.6.87.36 V6=2403:2500:4000::d77
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
 lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d8:11::158
 iccn01.ring.nlnog.net OWNER=iccn V4=72.36.126.205 V6=2620:0:e10:400a::5
@@ -375,7 +372,6 @@ connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000
 connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5::6
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
-mnetworks01.ring.nlnog.net OWNER=mnetworks V4=91.237.68.9 V6=2001:67c:2ad8::9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
 ebox03.ring.nlnog.net OWNER=ebox V4=172.93.16.166 V6=2606:6d00:eb0:800::2
@@ -542,7 +538,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
@@ -652,7 +647,6 @@ leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 
 [nedzone]
-nedzone01.ring.nlnog.net OWNER=nedzone V4=178.18.139.54 V6=2a02:990:222::6932:49e9
 
 [nlnogbot]
 
@@ -980,7 +974,6 @@ poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 
 [ehsab]
-ehsab02.ring.nlnog.net OWNER=ehsab V4=178.236.73.122 V6=2a02:1610:1000:2::2
 
 [yellowfiber]
 
@@ -1156,7 +1149,6 @@ doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
 vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 
 [hostvirtual]
-hostvirtual01.ring.nlnog.net OWNER=hostvirtual V4=103.6.87.36 V6=2403:2500:4000::d77
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
 
 [mozilla]
@@ -1801,7 +1793,6 @@ freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 
 [mnetworks]
-mnetworks01.ring.nlnog.net OWNER=mnetworks V4=91.237.68.9 V6=2001:67c:2ad8::9
 
 [ebox]
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
@@ -2338,7 +2329,6 @@ homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 [netnik]
 
 [kmc]
-kmc01.ring.nlnog.net OWNER=kmc V4=192.50.220.195 V6=2001:df0:8500:2e:0:a591:28:a
 
 [securebit]
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8

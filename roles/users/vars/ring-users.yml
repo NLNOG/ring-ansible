@@ -112,7 +112,7 @@ USERS:
       - ring-users
 
   nedzone:
-    state: present
+    state: absent
     company: 'Nedzone BV'
     email: 'noc@nedzone.nl'
     uid: 5016
@@ -976,7 +976,7 @@ USERS:
       - ring-users
 
   ehsab:
-    state: present
+    state: absent
     company: 'Excellent Hosting Sweden AB'
     email: 'teknik@excellent-hosting.se'
     uid: 5143
@@ -3257,7 +3257,7 @@ USERS:
       - ring-users
 
   mnetworks:
-    state: present
+    state: absent
     company: 'M-Networks Sp. z o.o.'
     email: 'noc@m-networks.pl'
     uid: 5429
@@ -4737,7 +4737,7 @@ USERS:
       - ring-users
 
   kmc:
-    state: present
+    state: absent
     company: 'Kyoto University Microcomputer Club (KMC)'
     email: 'noc@kmc.gr.jp'
     uid: 5612
