@@ -1176,7 +1176,7 @@ USERS:
       - ring-users
 
   xing:
-    state: present
+    state: absent
     company: 'XING AG'
     email: 'xing-nog@lists.xing.com'
     uid: 5165
