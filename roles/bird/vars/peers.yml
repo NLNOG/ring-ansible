@@ -485,6 +485,10 @@ lg_peers:
     asn: 30950
     ipv4: 193.28.236.32
     ipv6: 2001:67c:324::32
+  MASSAR:
+    asn: 57777
+    ipv4: 185.173.128.2
+    ipv6: 2a10:fc42::2
 
 readonly_peers:
   SERNET2:
