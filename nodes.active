@@ -149,7 +149,6 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
-icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
@@ -462,6 +461,7 @@ misaka02.ring.nlnog.net OWNER=misaka V4=45.142.247.147 V6=2a0e:6902:2002:14c:505
 misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
+c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019::4
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
@@ -516,6 +516,7 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.12 V6=2602:809:3009::12
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
@@ -1067,7 +1068,6 @@ masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430
 
 [icanndns]
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
-icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 
 [intellit]
 
@@ -2064,6 +2064,7 @@ misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
 
 [c3noc]
+c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 
 [level66network]
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
@@ -2248,6 +2249,7 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 
