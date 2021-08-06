@@ -587,7 +587,7 @@ globallayer02.ring.nlnog.net OWNER=globallayer V4=134.19.182.14 V6=2a00:1678:da7
 bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::179
 6connect01.ring.nlnog.net OWNER=6connect V4=67.221.244.126 V6=2607:fae0:a000:5::126
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
-massar01.ring.nlnog.net OWNER=massar V4=185.173.128.80 V6=2a10:fc42:b::80
+massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 lumity01.ring.nlnog.net OWNER=lumity V4=103.153.30.158 V6=2001:df4:2c80:cafe:dcf5:60ff:fe30:741a
 webinabox01.ring.nlnog.net OWNER=webinabox V4=110.173.226.9 V6=2403:dc00:ffff:8000::1
@@ -2461,7 +2461,7 @@ bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::1
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
 
 [massar]
-massar01.ring.nlnog.net OWNER=massar V4=185.173.128.80 V6=2a10:fc42:b::80
+massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 
 [entech]
 entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
