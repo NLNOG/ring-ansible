@@ -5105,3 +5105,19 @@ USERS:
     groups:
       - ring-users
 
+  veloxserv:
+    state: present
+    company: 'VeloxServ Communications Ltd'
+    email: 'noc@veloxserv.co.uk'
+    uid: 5657
+    groups:
+      - ring-users
+
+  freifunkbr:
+    state: present
+    company: 'Freifunk Bremen'
+    email: 'noc@bremen.freifunk.net'
+    uid: 5658
+    groups:
+      - ring-users
+
