@@ -148,6 +148,7 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
+icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 onet01.ring.nlnog.net OWNER=onet V4=141.105.16.129 V6=2a02:c10:3f00:5::2
 msu01.ring.nlnog.net OWNER=msu V4=93.180.19.229 V6=2a00:f480:0:104::2
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
@@ -1064,6 +1065,7 @@ masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430
 
 [icanndns]
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
+icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 
 [intellit]
 
