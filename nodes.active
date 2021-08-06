@@ -573,6 +573,7 @@ bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::1
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
 massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
+veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 
 [infranode]
 
@@ -2421,5 +2422,6 @@ entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 [webinabox]
 
 [veloxserv]
+veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 
 [freifunkbr]
