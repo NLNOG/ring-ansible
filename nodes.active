@@ -389,7 +389,6 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
@@ -400,6 +399,7 @@ myloc01.ring.nlnog.net OWNER=myloc V4=62.141.35.164 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 vmhaus01.ring.nlnog.net OWNER=vmhaus V4=185.214.69.134 V6=2a06:82c2:0:de::1
 quxlabs01.ring.nlnog.net OWNER=quxlabs V4=193.182.61.51 V6=2a0a:3507:1:3001::3e04
 elastx01.ring.nlnog.net OWNER=elastx V4=217.61.244.211 V6=2a07:2180::217:61:244:211
@@ -513,6 +513,7 @@ xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
@@ -1851,7 +1852,6 @@ jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 
 [dialpad]
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 
 [kanren]
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
@@ -1884,6 +1884,7 @@ interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:c
 pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
+thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 
 [github]
 
@@ -2245,6 +2246,7 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 
 [as207960net]
+as207960net01.ring.nlnog.net OWNER=as207960net V6=2a0d:1a40:7900:5::3
 
 [whitehat]
 
