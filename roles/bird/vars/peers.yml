@@ -308,7 +308,7 @@ lg_peers:
   FREIFUNKFFM1:
     asn: 64475
     ipv4: 185.206.209.0
-    ipv6: 2a06:8187:fb10::1
+    ipv6: 2a0f:3786:10:1::1
   UNILOGIC1:
     asn: 28788
     ipv4: 62.133.192.15
