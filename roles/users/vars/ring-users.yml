@@ -1528,7 +1528,7 @@ USERS:
       - ring-users
 
   lightstorm:
-    state: present
+    state: absent
     company: 'LightStorm Communications s.r.o.'
     email: 'csc@lightstorm.sk'
     uid: 5210
@@ -3305,7 +3305,7 @@ USERS:
       - ring-users
 
   elvisru:
-    state: present
+    state: absent
     company: 'Elvis-Telecom, Ltd.'
     email: 'noc@telekom.ru'
     uid: 5435
