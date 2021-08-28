@@ -256,6 +256,7 @@ openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.61 V6=2607:f350:1:1000::3
+speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.230 V6=2a03:2c60:1::10
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
@@ -1421,6 +1422,7 @@ netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 xfernet01.ring.nlnog.net OWNER=xfernet V4=72.34.255.61 V6=2607:f350:1:1000::3
 
 [speakup]
+speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.230 V6=2a03:2c60:1::10
 
 [dna]
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
