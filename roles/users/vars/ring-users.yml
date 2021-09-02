@@ -5121,3 +5121,11 @@ USERS:
     groups:
       - ring-users
 
+  ionos:
+    state: present
+    company: 'Ionos Cloud'
+    email: 'platform-network@cloud.ionos.com'
+    uid: 5659
+    groups:
+      - ring-users
+
