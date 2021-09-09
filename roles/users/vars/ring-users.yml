@@ -5129,3 +5129,11 @@ USERS:
     groups:
       - ring-users
 
+  ting:
+    state: present
+    company: 'Ting Fiber'
+    email: 'netops@tucows.com'
+    uid: 5660
+    groups:
+      - ring-users
+

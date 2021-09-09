@@ -588,6 +588,7 @@ webinabox01.ring.nlnog.net OWNER=webinabox V4=110.173.226.9 V6=2403:dc00:ffff:80
 veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
 ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
+ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2471,3 +2472,6 @@ freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff0
 
 [ionos]
 ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
+
+[ting]
+ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
