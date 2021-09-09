@@ -5137,3 +5137,11 @@ USERS:
     groups:
       - ring-users
 
+  fusioned:
+    state: present
+    company: 'Fusioned'
+    email: 'noc@fusioned.net'
+    uid: 5661
+    groups:
+      - ring-users
+
