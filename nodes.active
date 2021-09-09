@@ -578,6 +578,7 @@ freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff0
 ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
 ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
+canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:129b:0:0:0:1
 
 [infranode]
 
@@ -2441,3 +2442,4 @@ ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 
 [canadainc]
+canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:129b:0:0:0:1
