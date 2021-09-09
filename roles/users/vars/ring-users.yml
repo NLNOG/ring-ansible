@@ -2232,7 +2232,7 @@ USERS:
       - ring-users
 
   kudelski:
-    state: present
+    state: absent
     company: 'Kudelski Security'
     email: 'rndoi-noc@nagra.com'
     uid: 5300
