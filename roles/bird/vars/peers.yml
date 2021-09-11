@@ -486,6 +486,10 @@ lg_peers:
     asn: 57777
     ipv4: 185.173.128.2
     ipv6: 2a10:fc42::2
+  TING:
+    asn: 32133
+    ipv4: 64.98.10.8
+    ipv6: 2606:8e80:64::8
 
 readonly_peers:
   SERNET2:
