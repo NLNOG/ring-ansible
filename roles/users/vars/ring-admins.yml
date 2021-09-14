@@ -58,10 +58,9 @@ USERS:
       - ring-admins
       - ring-users
     sshkeys:
-      - 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEJUWfeP3PFDrbtZHN40ukmId28mr08mxo2qYaHc3FxLQqZ5mimChxe4KcSZWBgdfheRGIMROTVKcMfnsaorVUA= pieter@aardbei.mobile.plexis.eu'
-      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBC+hdM7tLIfBlcM0kbTfLB58ufbFs4/5/7wvouBUhPX lieter@aardbei.mobile.plexis.eu'
       - 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDFvrscfrTJEq8X8kEk1SeXwrbN2uKUwcdGH2GSegWZoWMmrA5hhKvt0IlXRxdpYEjs4rT19nE35gSIBfF2EfYA= lieter@ananas.home.plexis.eu'
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINMMEIwWGy839tCt7GJjs2XagCdsXL5TZGnj0kceDccY lieter@ananas.home.plexis.eu'
+      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJeirBnOP0kIkA9+814UNd+2ZedVv2NSoxqGMYpv28XL lieter@perzik.mobile.plexis.eu'
 
   grizz:
     state: absent
