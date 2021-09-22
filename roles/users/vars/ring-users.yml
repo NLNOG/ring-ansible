@@ -3042,7 +3042,7 @@ USERS:
   plutex:
     state: present
     company: 'PLUTEX GmbH'
-    email: 'nlnog@plutex.de'
+    email: 'noc@plutex.de'
     uid: 5403
     groups:
       - ring-users
