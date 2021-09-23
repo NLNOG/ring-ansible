@@ -5153,3 +5153,11 @@ USERS:
     groups:
       - ring-users
 
+  gocode:
+    state: present
+    company: 'GoCodeIT Inc'
+    email: 'domainsupport@gocode.it'
+    uid: 5663
+    groups:
+      - ring-users
+
