@@ -296,7 +296,6 @@ linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:f
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
-linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
 linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
 linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
@@ -486,7 +485,6 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
-prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -1515,7 +1513,6 @@ linode04.ring.nlnog.net OWNER=linode V4=104.200.18.129 V6=2600:3c00::f03c:91ff:f
 linode05.ring.nlnog.net OWNER=linode V4=45.56.92.54 V6=2600:3c01::f03c:91ff:febb:80b9
 linode06.ring.nlnog.net OWNER=linode V4=50.116.41.174 V6=2600:3c02::f03c:91ff:febb:8065
 linode07.ring.nlnog.net OWNER=linode V4=139.162.229.237 V6=2a01:7e00::f03c:91ff:febb:800c
-linode08.ring.nlnog.net OWNER=linode V4=139.162.106.78 V6=2400:8902::f03c:91ff:feac:60af
 linode09.ring.nlnog.net OWNER=linode V4=172.105.15.136 V6=2600:3c04::f03c:91ff:fe58:25b5
 linode10.ring.nlnog.net OWNER=linode V4=172.105.42.29 V6=2400:8904::f03c:91ff:fe58:25f5
 linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:fe1f:cc3e
@@ -2159,7 +2156,6 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 
 [prodigi]
-prodigi01.ring.nlnog.net OWNER=prodigi V4=103.121.34.125 V6=2403:b4c0:1000:101::2
 
 [mvix]
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
