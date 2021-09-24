@@ -5,18 +5,6 @@
     filename: 'bit_ubuntu_archiv_hirsute'
   when: ansible_distribution_release == 'bionic'
 
-- name: "Add Debian Bullseye/11 APT key"
-  apt_key:
-    id: 648ACFD622F3D138
-    url: https://ftp-master.debian.org/keys/archive-key-11.asc
-    state: present
-
-- name: "Add Debian Buster/10 APT key"
-  apt_key:
-    id: 0E98404D386FA1D9
-    url: https://ftp-master.debian.org/keys/archive-key-10.asc
-    state: present
-
 - name: "Add Debian Bookworm repo"
   apt_repository:
     repo: 'deb https://ftp.bit.nl/debian/ bookworm main'
