@@ -1,16 +1,12 @@
-- name: "Remove Ubuntu Hirsute repo"
-  apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu/ hirsute universe'
+- name: "Remove Bookworm repo"
+  file:
     state: absent
-    filename: 'bit_ubuntu_archiv_hirsute'
-  when: ansible_distribution_release == 'bionic'
+    path: "/etc/apt/sources.list.d/bit_debian_bookworm.list"
 
-- name: "Remove Debian Bookworm repo"
-  apt_repository:
-    repo: 'deb https://ftp.bit.nl/debian/ bookworm main'
+- name: "Remove Hirsute"
+  file:
     state: absent
-    filename: 'bit_debian_bookworm'
-  when: ansible_distribution_release == 'bionic'
+    path: "/etc/apt/sources.list.d/bit_ubuntu_archiv_hirsute.list"
 
 - name: "Install prequisites for apt_repository"
   apt: name={{ item }} state=latest
