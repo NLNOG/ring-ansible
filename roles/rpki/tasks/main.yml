@@ -8,7 +8,7 @@
 - name: "Add Debian Bookworm repo"
   apt_repository:
     repo: 'deb https://ftp.bit.nl/debian/ bookworm main'
-    state: present
+    state: absent
     filename: 'bit_debian_bookworm'
   when: ansible_distribution_release == 'bionic'
 

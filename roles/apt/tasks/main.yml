@@ -75,13 +75,13 @@
   apt_key:
     id: 648ACFD622F3D138
     keyserver: keyserver.ubuntu.com
-    state: present
+    state: absent
 
 - name: "Add Debian Buster/10 APT key"
   apt_key:
     id: 0E98404D386FA1D9
     keyserver: keyserver.ubuntu.com
-    state: present
+    state: absent
 
 - name: "Remove old nlnog apt repository"
   apt_repository:
