@@ -1,17 +1,3 @@
-- name: "Remove Ubuntu Hirsute repo"
-  apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu/ hirsute universe'
-    state: absent
-    filename: 'bit_ubuntu_archiv_hirsute'
-  when: ansible_distribution_release == 'bionic'
-
-- name: "Add Debian Bookworm repo"
-  apt_repository:
-    repo: 'deb https://ftp.bit.nl/debian/ bookworm main'
-    state: absent
-    filename: 'bit_debian_bookworm'
-  when: ansible_distribution_release == 'bionic'
-
 - name: "APT pin the RPKI software to Bookworm"
   copy:
     src: files/pin-rpki
