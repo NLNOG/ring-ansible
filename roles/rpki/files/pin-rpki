@@ -1,7 +1,0 @@
-Package: *
-Pin: release bookworm
-Pin-Priority: -1
-
-Package: rpki-client rpki-trust-anchors
-Pin: release bookworm
-Pin-Priority: 990

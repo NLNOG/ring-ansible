@@ -1,13 +1,7 @@
-- name: "APT pin the RPKI software to Bookworm"
-  copy:
-    src: files/pin-rpki
-    dest: /etc/apt/preferences.d/pin-rpki
-  when: ansible_distribution_release == 'bionic'
-
-- name: "Run apt-get update"
-  apt:
-    update_cache: yes
-  changed_when: false
+- name: "delete old pin file"
+  file:
+    state: absent
+    path: /etc/apt/preferences.d/pin-rpki
 
 - name: "TAL selection (rpki-trust-anchors)"
   debconf:
