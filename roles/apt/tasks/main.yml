@@ -74,13 +74,13 @@
 - name: "Add Debian Bullseye/11 APT key"
   apt_key:
     id: 648ACFD622F3D138
-    url: https://ftp-master.debian.org/keys/archive-key-11.asc
+    keyserver: keyserver.ubuntu.com
     state: present
 
 - name: "Add Debian Buster/10 APT key"
   apt_key:
     id: 0E98404D386FA1D9
-    url: https://ftp-master.debian.org/keys/archive-key-10.asc
+    keyserver: keyserver.ubuntu.com
     state: present
 
 - name: "Remove old nlnog apt repository"
