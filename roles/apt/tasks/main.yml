@@ -81,13 +81,13 @@
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
     state: present
 
-- name: "Add Debian Bullseye/11 APT key"
+- name: "Remove Debian Bullseye/11 APT key"
   apt_key:
     id: 648ACFD622F3D138
     keyserver: keyserver.ubuntu.com
     state: absent
 
-- name: "Add Debian Buster/10 APT key"
+- name: "Remove Debian Buster/10 APT key"
   apt_key:
     id: 0E98404D386FA1D9
     keyserver: keyserver.ubuntu.com
