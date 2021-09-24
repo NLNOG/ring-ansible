@@ -1,11 +1,18 @@
-- name: "Add Ubuntu Hirsute repo"
+- name: "Remove Ubuntu Hirsute repo"
   apt_repository:
     repo: 'deb http://ftp.bit.nl/ubuntu/ hirsute universe'
-    state: present
+    state: absent
     filename: 'bit_ubuntu_archiv_hirsute'
   when: ansible_distribution_release == 'bionic'
 
-- name: "APT pin the RPKI software to Hirsute"
+- name: "Add Debian Bookworm repo"
+  apt_repository:
+    repo: 'deb https://ftp.bit.nl/debian/ bookworm main'
+    state: present
+    filename: 'bit_debian_bookworm'
+  when: ansible_distribution_release == 'bionic'
+
+- name: "APT pin the RPKI software to Bookworm"
   copy:
     src: files/pin-rpki
     dest: /etc/apt/preferences.d/pin-rpki
@@ -33,7 +40,7 @@
 - name: "Install rpki-client"
   apt: pkg=rpki-client state=latest
 
-# The Ubuntu Hirsute package has .service file with more
+# The Ubuntu Bookworm package has .service file with more
 # options than Bionic's systemd supports
 - name: "Install bionic compatible systemd service file"
   copy:
