@@ -7,14 +7,14 @@
 
 - name: "Add Debian Bullseye/11 APT key"
   apt_key:
-    id: A4285295FC7B1A81600062A9605C66F00D6C9793
-    url: https://ftp-master.debian.org/keys/release-11.asc
+    id: 648ACFD622F3D138
+    url: https://ftp-master.debian.org/keys/archive-key-11.asc
     state: present
 
 - name: "Add Debian Buster/10 APT key"
   apt_key:
-    id: 6D33866EDD8FFA41C0143AEDDCC9EFBF77E11517
-    url: https://ftp-master.debian.org/keys/release-10.asc
+    id: 0E98404D386FA1D9
+    url: https://ftp-master.debian.org/keys/archive-key-10.asc
     state: present
 
 - name: "Add Debian Bookworm repo"
