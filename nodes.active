@@ -11,7 +11,6 @@ leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
-is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
@@ -116,7 +115,6 @@ afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 grnet01.ring.nlnog.net OWNER=grnet V4=62.217.125.248 V6=2001:648:2ffc:113:dcdb:eeff:fe35:9c68
 ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
-poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
@@ -621,7 +619,6 @@ xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 [ebayclassifiedsgroup]
 
 [is]
-is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 
 [surfnet]
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
@@ -928,7 +925,6 @@ ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 
 [poznan]
-poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 
 [bluezonejordan]
 
