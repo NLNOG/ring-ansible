@@ -3048,7 +3048,7 @@ USERS:
       - ring-users
 
   metapeer:
-    state: present
+    state: absent
     company: 'Metapeer'
     email: 'noc@metapeer.com'
     uid: 5404
@@ -4217,7 +4217,7 @@ USERS:
       - ring-users
 
   xfone:
-    state: present
+    state: absent
     company: 'Xfone'
     email: 'noc@018.co.il'
     uid: 5548
