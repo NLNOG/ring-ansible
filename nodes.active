@@ -114,6 +114,7 @@ afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
+poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
@@ -181,7 +182,6 @@ syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13
 syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14::1
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
-atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc5:9715:a000:185:5:202:122
@@ -201,6 +201,7 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
+ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
 ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
 ntt01.ring.nlnog.net OWNER=ntt V4=165.254.21.124 V6=2001:418:1456:b0a::2
 iucc01.ring.nlnog.net OWNER=iucc V4=128.139.197.81 V6=2001:bf8:900:1::808b:c551
@@ -221,7 +222,6 @@ digitalocean03.ring.nlnog.net OWNER=digitalocean V4=188.166.37.221 V6=2a03:b0c0:
 digitalocean05.ring.nlnog.net OWNER=digitalocean V4=139.59.43.142 V6=2400:6180:100:d0::cf4:b001
 digitalocean07.ring.nlnog.net OWNER=digitalocean V4=159.203.1.207 V6=2604:A880:0CAD:00D0:0000:0000:0CE6:F001
 digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0002:00D0:0000:0000:00E6:9001
-digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
@@ -479,7 +479,6 @@ trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
-neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -515,7 +514,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
@@ -921,6 +919,7 @@ ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 
 [poznan]
+poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 
 [bluezonejordan]
 
@@ -1182,7 +1181,6 @@ vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 
 [atlanticmetro]
-atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 
 [esgob]
 
@@ -1260,6 +1258,7 @@ viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 
 [ntt]
+ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
 ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
 ntt01.ring.nlnog.net OWNER=ntt V4=165.254.21.124 V6=2001:418:1456:b0a::2
 
@@ -1316,7 +1315,6 @@ digitalocean03.ring.nlnog.net OWNER=digitalocean V4=188.166.37.221 V6=2a03:b0c0:
 digitalocean05.ring.nlnog.net OWNER=digitalocean V4=139.59.43.142 V6=2400:6180:100:d0::cf4:b001
 digitalocean07.ring.nlnog.net OWNER=digitalocean V4=159.203.1.207 V6=2604:A880:0CAD:00D0:0000:0000:0CE6:F001
 digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0002:00D0:0000:0000:00E6:9001
-digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 
@@ -2144,7 +2142,6 @@ milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 
 [neptune]
-neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 
 [prodigi]
 
@@ -2272,7 +2269,6 @@ homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 [kmc]
 
 [securebit]
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 
 [hastadklev]
 
