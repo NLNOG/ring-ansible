@@ -2425,3 +2425,5 @@ canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:12
 
 [gocode]
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
+
+[kis]

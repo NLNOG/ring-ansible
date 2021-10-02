@@ -136,7 +136,7 @@ USERS:
       - ring-users
 
   is:
-    state: present
+    state: absent
     company: 'KPN Internedservices'
     email: 'kisinfranetwerk@kpn.com'
     uid: 5021
@@ -5158,6 +5158,14 @@ USERS:
     company: 'GoCodeIT Inc'
     email: 'domainsupport@gocode.it'
     uid: 5663
+    groups:
+      - ring-users
+
+  kis:
+    state: present
+    company: 'KPN Internedservices'
+    email: 'kisinfranetwerk@kpn.com'
+    uid: 5664
     groups:
       - ring-users
 

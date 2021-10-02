@@ -11,7 +11,6 @@ leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
-is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
@@ -590,6 +589,7 @@ ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:129b:0:0:0:1
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
+is01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -650,7 +650,6 @@ xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 [ebayclassifiedsgroup]
 
 [is]
-is01.ring.nlnog.net OWNER=is V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 
 [surfnet]
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
@@ -2483,3 +2482,6 @@ canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:12
 
 [gocode]
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
+
+[kis]
+is01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
