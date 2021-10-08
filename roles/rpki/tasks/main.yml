@@ -1,20 +1,7 @@
-- name: "Add Ubuntu Hirsute repo"
-  apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu/ hirsute universe'
-    state: present
-    filename: 'bit_ubuntu_archiv_hirsute'
-  when: ansible_distribution_release == 'bionic'
-
-- name: "APT pin the RPKI software to Hirsute"
-  copy:
-    src: files/pin-rpki
-    dest: /etc/apt/preferences.d/pin-rpki
-  when: ansible_distribution_release == 'bionic'
-
-- name: "Run apt-get update"
-  apt:
-    update_cache: yes
-  changed_when: false
+- name: "delete old pin file"
+  file:
+    state: absent
+    path: /etc/apt/preferences.d/pin-rpki
 
 - name: "TAL selection (rpki-trust-anchors)"
   debconf:
@@ -33,7 +20,7 @@
 - name: "Install rpki-client"
   apt: pkg=rpki-client state=latest
 
-# The Ubuntu Hirsute package has .service file with more
+# The Ubuntu Bookworm package has .service file with more
 # options than Bionic's systemd supports
 - name: "Install bionic compatible systemd service file"
   copy:

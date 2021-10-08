@@ -235,7 +235,7 @@ lg_peers:
     ipv4: 109.236.144.125
     ipv6: 2a00:e60:1100::1:1
   OBENETWORK1:
-    asn: 197595
+    asn: 3399
     ipv4: 46.227.64.248
     ipv6: 2a03:8600:8600:1::8
   ODERLAND01:
@@ -486,6 +486,10 @@ lg_peers:
     asn: 57777
     ipv4: 185.173.128.2
     ipv6: 2a10:fc42::2
+  TING:
+    asn: 32133
+    ipv4: 64.98.10.8
+    ipv6: 2606:8e80:64::8
 
 readonly_peers:
   SERNET2:

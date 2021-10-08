@@ -136,7 +136,7 @@ USERS:
       - ring-users
 
   is:
-    state: present
+    state: absent
     company: 'KPN Internedservices'
     email: 'kisinfranetwerk@kpn.com'
     uid: 5021
@@ -1528,7 +1528,7 @@ USERS:
       - ring-users
 
   lightstorm:
-    state: absent
+    state: present
     company: 'LightStorm Communications s.r.o.'
     email: 'csc@lightstorm.sk'
     uid: 5210
@@ -3042,13 +3042,13 @@ USERS:
   plutex:
     state: present
     company: 'PLUTEX GmbH'
-    email: 'nlnog@plutex.de'
+    email: 'noc@plutex.de'
     uid: 5403
     groups:
       - ring-users
 
   metapeer:
-    state: present
+    state: absent
     company: 'Metapeer'
     email: 'noc@metapeer.com'
     uid: 5404
@@ -4217,7 +4217,7 @@ USERS:
       - ring-users
 
   xfone:
-    state: present
+    state: absent
     company: 'Xfone'
     email: 'noc@018.co.il'
     uid: 5548
@@ -5150,6 +5150,22 @@ USERS:
     company: '12128489 Canada Inc'
     email: 'noc@as212934.net'
     uid: 5662
+    groups:
+      - ring-users
+
+  gocode:
+    state: present
+    company: 'GoCodeIT Inc'
+    email: 'domainsupport@gocode.it'
+    uid: 5663
+    groups:
+      - ring-users
+
+  kis:
+    state: present
+    company: 'KPN Internedservices'
+    email: 'kisinfranetwerk@kpn.com'
+    uid: 5664
     groups:
       - ring-users
 

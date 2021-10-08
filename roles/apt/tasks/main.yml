@@ -1,17 +1,3 @@
-- name: "Install prequisites for apt_repository"
-  apt: name={{ item }} state=latest
-  with_items:
-    - python-apt
-    - ca-certificates
-
-- name: "Clean sources.list"
-  copy:
-    src=sources.list
-    dest=/etc/apt/sources.list
-    owner=root
-    group=root
-    mode=0644
-
 - name: "Remove old repo files"
   file: name={{ item }} state=absent
   with_items:
@@ -30,6 +16,8 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial.list.distUpgrade'
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-security.list.distUpgrade'
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list.distUpgrade'
+    - '/etc/apt/sources.list.d/bit_debian_bookworm.list'
+    - '/etc/apt/sources.list.d/bit_ubuntu_archiv_hirsute.list'
 
 - name: "Remove old repo files (bionic)"
   file: name={{ item }} state=absent
@@ -46,6 +34,20 @@
     - '/etc/apt/sources.list.d/nlnog_ring_repo.list.distUpgrade'
     - '/etc/apt/sources.list.distUpgrade'
   when: ansible_distribution_release == "bionic"
+
+- name: "Install prequisites for apt_repository"
+  apt: name={{ item }} state=latest
+  with_items:
+    - python-apt
+    - ca-certificates
+
+- name: "Clean sources.list"
+  copy:
+    src=sources.list
+    dest=/etc/apt/sources.list
+    owner=root
+    group=root
+    mode=0644
 
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
@@ -70,6 +72,16 @@
     id: B1BA5ACA
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
     state: present
+
+- name: "Remove Debian Bullseye/11 APT key"
+  apt_key:
+    id: 1F89983E0081FDE018F3CC9673A4F27B8DD47936
+    state: absent
+
+- name: "Remove Debian Buster/10 APT key"
+  apt_key:
+    id: 80D15823B7FD1561F9F7BCDDDC30D7C23CBBABEE
+    state: absent
 
 - name: "Remove old nlnog apt repository"
   apt_repository:
