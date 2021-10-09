@@ -171,7 +171,6 @@ iplan01.ring.nlnog.net OWNER=iplan V4=190.210.175.57 V6=2800:40:c06::0001
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
-etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
@@ -1157,7 +1156,6 @@ combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
 
 [etop]
-etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 
 [dragon]
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
