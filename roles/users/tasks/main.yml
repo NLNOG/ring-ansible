@@ -18,10 +18,10 @@
     with_dict: "{{ GROUPS }}"
 
   - include: user_tasks.yml user={{ USERS[item] }}
-    with_items: "{{ USERS|default([])|list }}"
+    with_items: "{{ USERS|default([])|list|sort }}"
 
   - include: user_tasks_auth.yml user={{ USERS[item] }}
-    with_items: "{{ USERS|default([])|list }}"
+    with_items: "{{ USERS|default([])|list|sort }}"
     when: inventory_hostname == "auth.infra.ring.nlnog.net"
   when: class != "local" 
 
