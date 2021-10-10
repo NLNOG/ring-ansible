@@ -57,7 +57,7 @@
       owner={{ item }}
       group={{ item }}
       mode=0600
-    when: user.sshkeys is not defined and keyfile.stat.exists == True and keyfile2.stat.exists == False
+    when: user.sshkeys is not defined and keyfile.stat.exists == True and item != OWNER
 
   - name: "Add ssh keys + local org ssh keys from file - {{ item }}"
     assemble:
@@ -66,9 +66,7 @@
       owner={{ item }}
       group={{ item }}
       mode=0600
-    vars:
-      check_string: "^{{ item }}\\d\\d\\..*"
-    when: inventory_hostname is match(check_string) and user.sshkeys is not defined and keyfile2.stat.exists == True
+    when: user.sshkeys is not defined and (keyfile.stat.exists == True or keyfile2.stat.exists == True) and item == OWNER
 
   - name: "Add owner to admin group - {{ item }}"
     user: name={{ item }} group={{ item }} groups=admin append=yes
