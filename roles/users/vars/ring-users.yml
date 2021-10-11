@@ -1722,7 +1722,7 @@ USERS:
   atlanticmetro:
     state: present
     company: 'Atlantic Metro Communications'
-    email: 'support@atlanticmetro.net'
+    email: 'service@365datacenters.com'
     uid: 5235
     groups:
       - ring-users
