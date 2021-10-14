@@ -490,7 +490,7 @@ lg_peers:
     asn: 32133
     ipv4: 64.98.10.8
     ipv6: 2606:8e80:64::8
-  12128489CANADAINC:
+  ACCURIS1:
     asn: 212934
     ipv4: 172.99.232.1
     ipv6: 2602:fcd3:10::1
