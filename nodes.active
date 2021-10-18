@@ -75,7 +75,6 @@ lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
-pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.212 V6=2a00:c38:2::212
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
@@ -184,7 +183,6 @@ goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
-virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
 telus01.ring.nlnog.net OWNER=telus V4=154.11.253.242 V6=2001:56A:2:3::f2
 infowest01.ring.nlnog.net OWNER=infowest V4=209.33.215.106 V6=2604:2C00:0:110::2
@@ -478,6 +476,7 @@ milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
@@ -512,7 +511,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
@@ -787,7 +785,6 @@ hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 [pcextreme]
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
-pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
 
 [antagonist]
 
@@ -1212,7 +1209,6 @@ maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 [flhsi]
 
 [virtualone]
-virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
 
 [swisscom]
 swisscom01.ring.nlnog.net OWNER=swisscom V4=193.247.170.254 V6=2001:918:0:64::2
@@ -2148,6 +2144,7 @@ neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82f
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 
 [connectedpl]
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -2268,7 +2265,6 @@ homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 [kmc]
 
 [securebit]
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 
 [hastadklev]
 
