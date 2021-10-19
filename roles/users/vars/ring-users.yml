@@ -3737,7 +3737,7 @@ USERS:
       - ring-users
 
   bellmts:
-    state: present
+    state: absent
     company: 'BellMTS DataCentres'
     email: 'noc@bellmtsdatacentres.com'
     uid: 5488
