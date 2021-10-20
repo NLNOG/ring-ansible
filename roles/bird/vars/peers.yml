@@ -462,10 +462,6 @@ lg_peers:
     asn: 38008
     ipv4: 103.152.35.254
     ipv6: 2406:4440::1
-  NATOLAB_FMT:
-    asn: 46997
-    ipv4: 134.195.101.254
-    ipv6: 2602:feda:30::abcd
   NATOLAB_SEA:
     asn: 46997
     ipv4: 202.5.31.219
