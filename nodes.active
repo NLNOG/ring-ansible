@@ -42,6 +42,7 @@ solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:f
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
+seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
@@ -141,6 +142,7 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
+msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa:50c8
@@ -729,6 +731,7 @@ spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 
 [seeweb]
+seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 
 [zensystems]
 
@@ -1058,6 +1061,7 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 [onet]
 
 [msu]
+msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 
 [robtex]
 
