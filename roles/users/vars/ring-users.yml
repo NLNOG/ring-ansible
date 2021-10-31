@@ -5169,3 +5169,11 @@ USERS:
     groups:
       - ring-users
 
+  eolas:
+    state: present
+    company: 'EOLAS - Business & Decision Group'
+    email: 'noc-eolas@eolas.fr'
+    uid: 5665
+    groups:
+      - ring-users
+
