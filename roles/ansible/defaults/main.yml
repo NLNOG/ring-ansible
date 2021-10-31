@@ -1,2 +1,3 @@
 mitogen: yes
+mitogen_version: 0.2-release
 callback_url: https://api.ring.nlnog.net/1.0/ansible_run
