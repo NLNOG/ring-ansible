@@ -117,6 +117,7 @@ poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
+rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
@@ -192,7 +193,6 @@ dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.17.192.2 V6=2001:67c:1740:9003::c111:c002
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
-viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 ntt02.ring.nlnog.net OWNER=ntt V4=5.158.213.65 V6=2001:728:0:5000::1533
@@ -941,6 +941,7 @@ nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:
 [glesys]
 
 [rcsrds]
+rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 
 [belwue]
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
@@ -1248,7 +1249,6 @@ fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808:
 [cyberverse]
 
 [viatel]
-viatel01.ring.nlnog.net OWNER=viatel V4=80.93.31.245 V6=2a01:258:8:6:20c:29ff:fe95:1965
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
 viatel04.ring.nlnog.net OWNER=viatel V4=46.183.104.122 V6=2a02:220:80:0:20c:29ff:febe:fe6d
 
