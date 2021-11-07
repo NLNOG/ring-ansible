@@ -3449,7 +3449,7 @@ USERS:
       - ring-users
 
   arnfai:
-    state: present
+    state: absent
     company: 'Alsace Reseau Neutre (ARN)'
     email: 'admins@arn-fai.net'
     uid: 5453
