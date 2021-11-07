@@ -5177,3 +5177,11 @@ USERS:
     groups:
       - ring-users
 
+  kerfuffle:
+    state: present
+    company: 'Kerfuffle'
+    email: 'noc@kerfuffle.net'
+    uid: 5666
+    groups:
+      - ring-users
+

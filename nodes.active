@@ -2435,3 +2435,5 @@ gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f4
 
 [eolas]
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
+
+[kerfuffle]
