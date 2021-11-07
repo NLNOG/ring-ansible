@@ -3113,7 +3113,7 @@ USERS:
       - ring-users
 
   equinixfi:
-    state: present
+    state: absent
     company: 'Equinix FI'
     email: 'fi.noc@telecity.com'
     uid: 5411
@@ -5182,6 +5182,14 @@ USERS:
     company: 'Kerfuffle'
     email: 'noc@kerfuffle.net'
     uid: 5666
+    groups:
+      - ring-users
+
+  equinixemea:
+    state: present
+    company: 'Equinix Connect EMEA'
+    email: 'fi.noc@telecity.com'
+    uid: 5667
     groups:
       - ring-users
 
