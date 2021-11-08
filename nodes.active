@@ -513,7 +513,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
@@ -571,6 +570,7 @@ ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:129b:0:0:0:1
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
+kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
 kerfuffle01.ring.nlnog.net OWNER=kerfuffle V4=194.246.109.26 V6=2001:67c:760:130::26
 equinixemea01.ring.nlnog.net OWNER=equinixemea V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
@@ -2272,7 +2272,6 @@ homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 [kmc]
 
 [securebit]
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 
 [hastadklev]
 
@@ -2434,6 +2433,7 @@ canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:12
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
 
 [kis]
+kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 
 [eolas]
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
