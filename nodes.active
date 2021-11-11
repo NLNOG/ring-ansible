@@ -177,7 +177,6 @@ syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13
 syseleven02.ring.nlnog.net OWNER=syseleven V4=37.49.153.82 V6=2a00:7fc0:4000:14::1
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
-atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc5:9715:a000:185:5:202:122
@@ -571,7 +570,6 @@ ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:129b:0:0:0:1
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
-kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
 kerfuffle01.ring.nlnog.net OWNER=kerfuffle V4=194.246.109.26 V6=2001:67c:760:130::26
 equinixemea01.ring.nlnog.net OWNER=equinixemea V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
@@ -1181,7 +1179,6 @@ vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 
 [atlanticmetro]
-atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 
 [esgob]
 
@@ -2435,7 +2432,6 @@ canadainc01.ring.nlnog.net OWNER=canadainc V4=172.99.232.10 V6=2602:fcd3:0010:12
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
 
 [kis]
-kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 
 [eolas]
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
