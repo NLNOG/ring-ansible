@@ -5193,3 +5193,11 @@ USERS:
     groups:
       - ring-users
 
+  steffann:
+    state: present
+    company: 'S.J.M. Steffann'
+    email: 'noc@steffann.nl'
+    uid: 5668
+    groups:
+      - ring-users
+
