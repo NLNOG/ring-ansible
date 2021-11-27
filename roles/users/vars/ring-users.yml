@@ -4665,7 +4665,7 @@ USERS:
       - ring-users
 
   natesales:
-    state: present
+    state: absent
     company: 'Nathan Sales'
     email: 'nate@natesales.net'
     uid: 5603
@@ -5018,7 +5018,7 @@ USERS:
       - ring-users
 
   onit:
-    state: present
+    state: absent
     company: 'ONIT AS'
     email: 'noc@hastadklev.no'
     uid: 5646
