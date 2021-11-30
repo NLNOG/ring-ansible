@@ -138,6 +138,7 @@ ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
+poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
@@ -490,6 +491,7 @@ synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:
 synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1::27
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
+bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
@@ -512,7 +514,6 @@ freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
@@ -1047,6 +1048,7 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 [teletalk]
 
 [poppr]
+poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 
 [kaiaglobal]
 
@@ -2185,6 +2187,7 @@ infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 
 [bogons]
+bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 
 [fibia]
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
@@ -2271,7 +2274,6 @@ homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 [kmc]
 
 [securebit]
-securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 
 [hastadklev]
 
