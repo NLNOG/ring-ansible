@@ -365,7 +365,6 @@ unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
-vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
 casablanca01.ring.nlnog.net OWNER=casablanca V4=109.123.197.83 V6=2001:1528:1:2100:250:56ff:fea1:1b69
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
@@ -1774,7 +1773,6 @@ feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:fea
 [cologuard]
 
 [vpsfree]
-vpsfree01.ring.nlnog.net OWNER=vpsfree V4=83.167.228.93 V6=2a01:430:17:1::ffff:99
 
 [protectedca]
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
