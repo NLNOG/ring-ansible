@@ -318,6 +318,7 @@ kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
+inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.28.226 V6=2a02:4260:1004::2
@@ -1602,6 +1603,7 @@ kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 [inxza]
 inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
+inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
 [23media]
 
