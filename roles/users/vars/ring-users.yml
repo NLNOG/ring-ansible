@@ -3409,7 +3409,7 @@ USERS:
       - ring-users
 
   bkk:
-    state: present
+    state: absent
     company: 'BKK AS'
     email: 'noc@bkk.no'
     uid: 5448
@@ -5198,6 +5198,14 @@ USERS:
     company: 'S.J.M. Steffann'
     email: 'noc@steffann.nl'
     uid: 5668
+    groups:
+      - ring-users
+
+  eviny:
+    state: present
+    company: 'Eviny'
+    email: 'noc@bkk.no'
+    uid: 5669
     groups:
       - ring-users
 
