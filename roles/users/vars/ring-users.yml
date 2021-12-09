@@ -5225,3 +5225,11 @@ USERS:
     groups:
       - ring-users
 
+  nullroute:
+    state: present
+    company: 'Nullroute ry'
+    email: 'noc@nullroute.fi'
+    uid: 5672
+    groups:
+      - ring-users
+

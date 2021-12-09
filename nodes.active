@@ -2447,3 +2447,5 @@ equinixemea01.ring.nlnog.net OWNER=equinixemea V4=87.108.57.169 V6=2001:a68:1:d:
 [wobcom]
 
 [hivedc]
+
+[nullroute]
