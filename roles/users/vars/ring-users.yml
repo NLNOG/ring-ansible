@@ -5209,3 +5209,11 @@ USERS:
     groups:
       - ring-users
 
+  wobcom:
+    state: present
+    company: 'Wobcom GmbH'
+    email: 'peering@wobcom.de'
+    uid: 5670
+    groups:
+      - ring-users
+
