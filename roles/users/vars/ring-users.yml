@@ -5217,3 +5217,11 @@ USERS:
     groups:
       - ring-users
 
+  hivedc:
+    state: present
+    company: 'Hive Data Center'
+    email: 'noc@hivedatacenter.com'
+    uid: 5671
+    groups:
+      - ring-users
+
