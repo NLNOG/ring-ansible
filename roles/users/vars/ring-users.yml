@@ -2104,7 +2104,7 @@ USERS:
       - ring-users
 
   bdhub:
-    state: absent
+    state: present
     company: 'bdHUB Limited'
     email: 'noc@bdhub.com'
     uid: 5284
