@@ -5233,3 +5233,11 @@ USERS:
     groups:
       - ring-users
 
+  estruxture:
+    state: present
+    company: 'eStruxture Data Centers'
+    email: 'noc@estruxture.com'
+    uid: 5673
+    groups:
+      - ring-users
+
