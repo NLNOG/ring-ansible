@@ -220,6 +220,7 @@ digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0
 digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
+bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.13 V6=2404:D900:0:A::d
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
@@ -577,6 +578,7 @@ eviny01.ring.nlnog.net OWNER=eviny V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 wobcom01.ring.nlnog.net OWNER=wobcom V4=62.176.246.168 V6=2a01:581:b::14
 hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
 nullroute01.ring.nlnog.net OWNER=nullroute V4=192.26.105.218 V6=2001:67c:2970:f02::f02
+estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:208::fd
 
 [infranode]
 
@@ -1322,6 +1324,7 @@ digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 
 [bdhub]
+bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.13 V6=2404:D900:0:A::d
 
 [blacknight]
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
@@ -2461,3 +2464,4 @@ hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
 nullroute01.ring.nlnog.net OWNER=nullroute V4=192.26.105.218 V6=2001:67c:2970:f02::f02
 
 [estruxture]
+estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:208::fd
