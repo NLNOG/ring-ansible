@@ -220,7 +220,6 @@ digitalocean08.ring.nlnog.net OWNER=digitalocean V4=142.93.93.188 V6=2604:A880:0
 digitalocean09.ring.nlnog.net OWNER=digitalocean V4=192.241.208.19 V6=2604:A880:0001:0020:0000:0000:0083:7001
 digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:e0::251:5001
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
-bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.13 V6=2404:D900:0:A::d
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
@@ -467,7 +466,6 @@ daknob01.ring.nlnog.net OWNER=daknob V4=193.5.16.163 V6=2a0d:3dc0:111:1::10
 salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
 hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.163 V6=2a00:eb20:434::163
-freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=185.65.241.51 V6=2001:678:6e0:1006::f
 atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
@@ -1324,7 +1322,6 @@ digitalocean06.ring.nlnog.net OWNER=digitalocean V4=165.22.22.72 V6=2a03:b0c0:3:
 digitalocean04.ring.nlnog.net OWNER=digitalocean V4=104.236.41.143 V6=2604:a880:800:10::2f27:c001
 
 [bdhub]
-bdhub01.ring.nlnog.net OWNER=bdhub V4=103.12.179.13 V6=2404:D900:0:A::d
 
 [blacknight]
 blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::aaaa
@@ -2121,7 +2118,6 @@ hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.163 V6=2a00:eb20:434::163
 
 [freifunkkr]
-freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=185.65.241.51 V6=2001:678:6e0:1006::f
 
 [atom]
 atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
