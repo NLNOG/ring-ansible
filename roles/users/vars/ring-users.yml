@@ -5204,7 +5204,7 @@ USERS:
   eviny:
     state: present
     company: 'Eviny'
-    email: 'noc@bkk.no'
+    email: 'noc@eviny.no'
     uid: 5669
     groups:
       - ring-users
