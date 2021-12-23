@@ -31,3 +31,9 @@ listen pypi-ssl-relay
     mode    tcp
     option  ssl-hello-chk
     server  pypi pypi.python.org:443
+
+listen pythonhosted-ssl-relay
+    bind    {{ proxy_pythonhosted }}:443
+    mode    tcp
+    option  ssl-hello-chk
+    server  pythonhosted files.pythonhosted.org:443
