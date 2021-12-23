@@ -7,4 +7,4 @@ syslog_servers:
 
 proxy_github: 2001:1af8:4013::101
 proxy_pypi: 2001:1af8:4013::102
-proxy_rubygems: 2001:1af8:4013::103
+proxy_pythonhosted: 2001:1af8:4013::103
