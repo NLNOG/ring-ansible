@@ -5249,3 +5249,11 @@ USERS:
     groups:
       - ring-users
 
+  itconfidence:
+    state: present
+    company: 'IT Confidence A/S'
+    email: 'noc@itconfidence.dk'
+    uid: 5675
+    groups:
+      - ring-users
+
