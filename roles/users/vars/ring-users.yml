@@ -5241,3 +5241,11 @@ USERS:
     groups:
       - ring-users
 
+  powerhosting:
+    state: present
+    company: 'Powerhosting ApS'
+    email: 'hostmaster@powerhosting.dk'
+    uid: 5674
+    groups:
+      - ring-users
+
