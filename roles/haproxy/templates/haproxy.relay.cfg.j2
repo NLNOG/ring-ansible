@@ -31,9 +31,3 @@ listen pypi-ssl-relay
     mode    tcp
     option  ssl-hello-chk
     server  pypi pypi.python.org:443
-
-listen rubygems-ssl-relay
-    bind    {{ proxy_rubygems }}:443
-    mode    tcp
-    option  ssl-hello-chk
-    server  rubygems api.rubygems.org:443

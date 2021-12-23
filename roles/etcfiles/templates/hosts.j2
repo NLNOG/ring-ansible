@@ -25,9 +25,7 @@ ff02::2 ip6-allrouters
 {% if V4|default(None) == None %}
 {{ proxy_github }} github.com public02.infra public02.infra.ring.nlnog.net
 {{ proxy_pypi }} pypi.python.org public02.infra public02.infra.ring.nlnog.net
-{{ proxy_rubygems }} api.rubygems.org public02.infra public02.infra.ring.nlnog.net
 {% else %}
 {{ proxy_github }} public02.infra.ring.nlnog.net public02.infra
 {{ proxy_pypi }} public02.infra.ring.nlnog.net public02.infra
-{{ proxy_rubygems }} public02.infra.ring.nlnog.net public02.infra
 {% endif %}
