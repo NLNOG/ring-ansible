@@ -296,7 +296,7 @@ USERS:
       - ring-users
 
   inotel:
-    state: present
+    state: absent
     company: 'Inotel'
     email: 'noc@inotel.pl'
     uid: 5044
@@ -4641,7 +4641,7 @@ USERS:
       - ring-users
 
   as207960net:
-    state: present
+    state: absent
     company: 'AS207960 Cyfyngedig'
     email: 'noc@as207960.net'
     uid: 5600
@@ -4673,7 +4673,7 @@ USERS:
       - ring-users
 
   deepmedia:
-    state: present
+    state: absent
     company: 'Deep Media'
     email: 'noc@deepmedia.nl'
     uid: 5604
