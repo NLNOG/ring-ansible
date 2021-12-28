@@ -8,3 +8,9 @@ home_mailbox = {{ postfix_home_mailbox }}
 {% endif %}
 mynetworks = 127.0.0.0/8 [::1]/128
 smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
+{% if postfix_relayhost | d() %}
+relayhost = [{{ postfix_relayhost }}]
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+{% endif %}
