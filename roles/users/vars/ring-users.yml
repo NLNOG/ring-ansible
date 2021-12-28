@@ -4665,7 +4665,7 @@ USERS:
       - ring-users
 
   natesales:
-    state: absent
+    state: present
     company: 'Nathan Sales'
     email: 'nate@natesales.net'
     uid: 5603
