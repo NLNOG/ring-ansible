@@ -486,6 +486,10 @@ lg_peers:
     asn: 212934
     ipv4: 172.99.232.1
     ipv6: 2602:fcd3:10::1
+  NULLROUTE1:
+    asn: 211722
+    ipv4: 192.26.105.217
+    ipv6: 2001:67c:2970:ff00::1
 
 readonly_peers:
   SERNET2:
