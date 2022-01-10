@@ -131,6 +131,7 @@ cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
+dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -331,6 +332,7 @@ hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
 memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8b3:cf19:9e11
 plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
+ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
@@ -1029,6 +1031,7 @@ beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 [direcpath]
 
 [dcsone]
+dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 
 [berkeley]
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
@@ -1677,6 +1680,7 @@ hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::13
 [geotr]
 
 [ekmedia]
+ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 
 [fundaments]
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
