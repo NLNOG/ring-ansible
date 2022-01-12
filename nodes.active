@@ -132,6 +132,7 @@ cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
+dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -316,7 +317,6 @@ intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
 pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=38.103.8.242 V6=2001:550:102:ff::a0a
 kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
-inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 elite01.ring.nlnog.net OWNER=elite V4=217.68.244.129 V6=2a00:0c20:10:2::1
@@ -1034,6 +1034,7 @@ beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 [direcpath]
 
 [dcsone]
+dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 
 [berkeley]
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
@@ -1612,7 +1613,6 @@ kit01.ring.nlnog.net OWNER=kit V4=129.13.55.214 V6=2a00:1398:200:601::10
 kit02.ring.nlnog.net OWNER=kit V4=129.13.73.30 V6=2a00:1398:200:602::10
 
 [inxza]
-inxza01.ring.nlnog.net OWNER=inxza V4=196.10.53.5 V6=2001:43f8:1f3:a00::5
 inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 
