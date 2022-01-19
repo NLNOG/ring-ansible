@@ -491,6 +491,10 @@ lg_peers:
     asn: 211722
     ipv4: 192.26.105.217
     ipv6: 2001:67c:2970:ff00::1
+  GOCODEIT1:
+    asn: 62513
+    ipv4: 23.159.16.22
+    ipv6: 2602:fd50:0:bad::1
 
 readonly_peers:
   SERNET2:
