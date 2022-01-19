@@ -223,9 +223,6 @@ lg_peers:
     asn: 31078
     ipv4: 217.115.0.27
     ipv6: 2a00:1328:e00e::27
-  NIANET1:
-    asn: 31027
-    ipv4: 77.233.230.4
   NONATTACHED1:
     asn: 57821
     ipv4: 193.160.39.1
