@@ -145,7 +145,7 @@ lg_peers:
     ipv4: 217.70.176.70
     ipv6: 2001:4b98::70
   GLOBALCONNECT1:
-    asn: 42525
+    asn: 31027
     ipv4: 77.243.32.3
     ipv6: 2a02:188::11:90
   GO6LAB1:
