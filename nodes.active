@@ -2461,3 +2461,7 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 
 [itconfidence]
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
+
+[lukegb]
+
+[samip]

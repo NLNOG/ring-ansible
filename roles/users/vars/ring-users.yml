@@ -5257,3 +5257,19 @@ USERS:
     groups:
       - ring-users
 
+  lukegb:
+    state: present
+    company: 'Luke Granger-Brown'
+    email: 'noc@as205479.net'
+    uid: 5676
+    groups:
+      - ring-users
+
+  samip:
+    state: present
+    company: 'SamipSolutions'
+    email: 'sm+ring-noc@samipsolutions.fi'
+    uid: 5677
+    groups:
+      - ring-users
+
