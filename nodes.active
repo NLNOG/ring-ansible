@@ -138,7 +138,6 @@ ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
-poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
@@ -277,6 +276,7 @@ upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000
 upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
 upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
 upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
+choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
@@ -1052,7 +1052,6 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 [teletalk]
 
 [poppr]
-poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 
 [kaiaglobal]
 
@@ -1495,6 +1494,7 @@ upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d
 upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
 
 [choopa]
+choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 
 [linode]
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
