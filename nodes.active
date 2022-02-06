@@ -579,6 +579,7 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
 lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:e09a::10
+kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 
 [infranode]
 
@@ -2475,3 +2476,4 @@ lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:e09a::10
 
 [kamel]
+kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
