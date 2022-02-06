@@ -5273,3 +5273,11 @@ USERS:
     groups:
       - ring-users
 
+  kamel:
+    state: present
+    company: 'Kamel Networks'
+    email: 'noc@kamel.network'
+    uid: 5678
+    groups:
+      - ring-users
+

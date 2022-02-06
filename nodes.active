@@ -2473,3 +2473,5 @@ lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:e09a::10
+
+[kamel]
