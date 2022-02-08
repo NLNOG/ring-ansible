@@ -35,7 +35,7 @@ man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
-jump01.ring.nlnog.net OWNER=jump V4=212.13.217.117 V6=2001:ba8:0:d975::
+jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
 rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
@@ -363,6 +363,7 @@ protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2
 casablanca01.ring.nlnog.net OWNER=casablanca V4=109.123.197.83 V6=2001:1528:1:2100:250:56ff:fea1:1b69
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
+aquilenet01.ring.nlnog.net OWNER=aquilenet V4=185.233.100.38 V6=2a0c:e300::38
 limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a::16d
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=45.154.164.47 V6=2a0f:bd00::f816:3eff:fecf:903
@@ -721,7 +722,7 @@ dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5:
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 
 [jump]
-jump01.ring.nlnog.net OWNER=jump V4=212.13.217.117 V6=2001:ba8:0:d975::
+jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 
 [iway]
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
@@ -1791,6 +1792,7 @@ arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
 nexthop01.ring.nlnog.net OWNER=nexthop V4=91.90.104.206 V6=2a02:d140:1:44::2
 
 [aquilenet]
+aquilenet01.ring.nlnog.net OWNER=aquilenet V4=185.233.100.38 V6=2a0c:e300::38
 
 [bkk]
 
