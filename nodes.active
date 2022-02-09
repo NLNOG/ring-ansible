@@ -138,6 +138,7 @@ ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
+poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
@@ -239,6 +240,7 @@ firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 fidonet01.ring.nlnog.net OWNER=fidonet V4=80.252.121.11 V6=2a01:2c0:a::1:102
@@ -1053,6 +1055,7 @@ proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:
 [teletalk]
 
 [poppr]
+poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 
 [kaiaglobal]
 
@@ -1384,6 +1387,7 @@ qcom01.ring.nlnog.net OWNER=qcom V4=80.76.80.28 V6=2001:4bb0:d:8::28
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 
 [edsitech]
+edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 
 [1oconsulting]
 
