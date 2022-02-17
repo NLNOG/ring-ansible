@@ -5289,3 +5289,11 @@ USERS:
     groups:
       - ring-users
 
+  servu:
+    state: present
+    company: 'serve-u'
+    email: 'noc@fmt32.net'
+    uid: 5680
+    groups:
+      - ring-users
+
