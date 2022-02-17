@@ -2469,3 +2469,5 @@ samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:e09a::10
 
 [kamel]
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
+
+[uniserver]

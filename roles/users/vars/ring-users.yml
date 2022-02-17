@@ -5281,3 +5281,11 @@ USERS:
     groups:
       - ring-users
 
+  uniserver:
+    state: present
+    company: 'Uniserver B.V.'
+    email: 'netwerkadmin@uniserver.nl'
+    uid: 5679
+    groups:
+      - ring-users
+
