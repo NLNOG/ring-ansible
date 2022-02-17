@@ -498,6 +498,10 @@ lg_peers:
     asn: 62513
     ipv4: 23.159.16.22
     ipv6: 2602:fd50:0:bad::1
+  SERVEU:
+    asn: 13058
+    ipv4: 192.108.73.66
+    ipv6: 2a0c:7286:2736::66
 
 readonly_peers:
   SERNET2:
