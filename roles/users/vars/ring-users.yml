@@ -5297,7 +5297,7 @@ USERS:
     groups:
       - ring-users
 
-  clearnetworkx:
+  clearnetworx:
     state: present
     company: 'Clearnetworx'
     email: 'admin@clearnetworx.com'
