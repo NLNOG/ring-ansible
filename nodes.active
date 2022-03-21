@@ -2471,3 +2471,5 @@ uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 
 [servu]
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
+
+[clearnetworkx]

@@ -5297,3 +5297,11 @@ USERS:
     groups:
       - ring-users
 
+  clearnetworkx:
+    state: present
+    company: 'Clearnetworx'
+    email: 'admin@clearnetworx.com'
+    uid: 5681
+    groups:
+      - ring-users
+
