@@ -480,7 +480,7 @@ USERS:
       - ring-users
 
   mironet:
-    state: present
+    state: absent
     company: 'MiroNet GmbH'
     email: 'noc@mironet.ch'
     uid: 5071
@@ -3345,7 +3345,7 @@ USERS:
       - ring-users
 
   vpsfree:
-    state: present
+    state: absent
     company: 'vpsFree.cz z.s.'
     email: 'tomas.srnka@vpsfree.cz'
     uid: 5440
