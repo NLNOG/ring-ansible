@@ -5305,3 +5305,11 @@ USERS:
     groups:
       - ring-users
 
+  nmmn:
+    state: present
+    company: 'NMMN New Media Markets & Networks IT-Services GmbH'
+    email: 'technik@nmmn.com'
+    uid: 5682
+    groups:
+      - ring-users
+
