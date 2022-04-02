@@ -507,7 +507,6 @@ hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780
 hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
-hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
@@ -2277,7 +2276,6 @@ hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780
 hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
-hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
