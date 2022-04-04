@@ -24,6 +24,7 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 solido01.ring.nlnog.net OWNER=solido V4=109.238.49.65 V6=2a02:9d0:3023:1::2
 rootlu01.ring.nlnog.net OWNER=rootlu V4=94.242.192.13 V6=2a01:608:f::13
@@ -674,6 +675,7 @@ rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 [inotel]
 
 [blix]
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 
 [portlane]
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
