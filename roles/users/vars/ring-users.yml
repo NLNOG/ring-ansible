@@ -5313,3 +5313,19 @@ USERS:
     groups:
       - ring-users
 
+  ninjaix:
+    state: present
+    company: 'Ninja-IX'
+    email: 'peering@ninja-ix.net'
+    uid: 5683
+    groups:
+      - ring-users
+
+  unchained:
+    state: present
+    company: 'Unchained ISP Limited'
+    email: 'noc@unchainedisp.net'
+    uid: 5684
+    groups:
+      - ring-users
+
