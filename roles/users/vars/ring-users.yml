@@ -480,7 +480,7 @@ USERS:
       - ring-users
 
   mironet:
-    state: present
+    state: absent
     company: 'MiroNet GmbH'
     email: 'noc@mironet.ch'
     uid: 5071
@@ -3345,7 +3345,7 @@ USERS:
       - ring-users
 
   vpsfree:
-    state: present
+    state: absent
     company: 'vpsFree.cz z.s.'
     email: 'tomas.srnka@vpsfree.cz'
     uid: 5440
@@ -5294,6 +5294,38 @@ USERS:
     company: 'serve-u'
     email: 'noc@fmt32.net'
     uid: 5680
+    groups:
+      - ring-users
+
+  clearnetworx:
+    state: present
+    company: 'Clearnetworx'
+    email: 'admin@clearnetworx.com'
+    uid: 5681
+    groups:
+      - ring-users
+
+  nmmn:
+    state: present
+    company: 'NMMN New Media Markets & Networks IT-Services GmbH'
+    email: 'technik@nmmn.com'
+    uid: 5682
+    groups:
+      - ring-users
+
+  ninjaix:
+    state: present
+    company: 'Ninja-IX'
+    email: 'peering@ninja-ix.net'
+    uid: 5683
+    groups:
+      - ring-users
+
+  unchained:
+    state: present
+    company: 'Unchained ISP Limited'
+    email: 'noc@unchainedisp.net'
+    uid: 5684
     groups:
       - ring-users
 
