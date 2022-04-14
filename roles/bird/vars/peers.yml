@@ -510,6 +510,10 @@ lg_peers:
     asn: 13058
     ipv4: 192.108.73.66
     ipv6: 2a0c:7286:2736::66
+  LEVEL66NETWORK1:
+    asn: 56381
+    ipv4: 141.98.136.0
+    ipv6: 2a09:11c0:1000::
 
 readonly_peers:
   SERNET2:
