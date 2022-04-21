@@ -3048,7 +3048,7 @@ USERS:
       - ring-users
 
   metapeer:
-    state: absent
+    state: present
     company: 'Metapeer'
     email: 'noc@metapeer.com'
     uid: 5404
