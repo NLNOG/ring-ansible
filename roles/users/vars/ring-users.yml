@@ -4641,7 +4641,7 @@ USERS:
       - ring-users
 
   as207960net:
-    state: absent
+    state: present
     company: 'AS207960 Cyfyngedig'
     email: 'noc@as207960.net'
     uid: 5600
