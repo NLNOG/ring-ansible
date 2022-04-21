@@ -324,6 +324,7 @@ netcup01.ring.nlnog.net OWNER=netcup V4=37.221.193.100 V6=2a03:4000:8:78::10
 hostwayde01.ring.nlnog.net OWNER=hostwayde V4=83.246.46.45 V6=2a02:790:4:6::2
 memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8b3:cf19:9e11
 plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
+metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.33 V6=2620:11c:5001:1099::33
 hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
 ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
@@ -1667,6 +1668,7 @@ memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8
 plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 
 [metapeer]
+metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.33 V6=2620:11c:5001:1099::33
 
 [hextet]
 hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
