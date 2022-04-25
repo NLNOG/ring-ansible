@@ -22,7 +22,7 @@ ff02::2 ip6-allrouters
 {% endfor %}
 
 # Proxy hosts
-{% if V4|default(None) == None %}
+{% if V4|default(None) == None or use_proxies|default(None) == True %}
 {{ proxy_github }} github.com public02.infra public02.infra.ring.nlnog.net
 {{ proxy_pypi }} pypi.python.org public02.infra public02.infra.ring.nlnog.net
 {{ proxy_pythonhosted }} files.pythonhosted.org public02.infra public02.infra.ring.nlnog.net

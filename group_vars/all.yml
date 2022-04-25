@@ -5,6 +5,7 @@ etc_aliases:
 syslog_servers:
   - storage01.infra.ring.nlnog.net
 
+use_proxies: False
 proxy_github: 2001:1af8:4013::101
 proxy_pypi: 2001:1af8:4013::102
 proxy_pythonhosted: 2001:1af8:4013::103
