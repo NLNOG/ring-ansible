@@ -1,3 +1,8 @@
+- name: "delete RIPE TAL"
+  file:
+    state: absent
+    path: /etc/tals/ripe.tal
+
 - name: "delete old pin file"
   file:
     state: absent
