@@ -425,12 +425,12 @@ lg_peers:
     ipv6: 2606:9580::1
   KALPAK1:
     asn: 213326
-    ipv6: 2a0f:9400:8017::1 
+    ipv6: 2a0f:9400:8017::1
   WHITEHAT:
     asn: 51999
     ipv4: 81.19.214.4
     ipv6: 2a01:4020:1:4d::2
-  NATESALES1:  
+  NATESALES1:
     asn: 34553
     ipv4: 147.75.35.135
     ipv6: 2604:1380:4111:b101::135
@@ -517,7 +517,7 @@ lg_peers:
   LEVEL66NETWORK1:
     asn: 56381
     ipv4: 141.98.136.0
-    ipv6: 2a09:11c0:1000::
+    ipv6: '2a09:11c0:1000::'
 
 readonly_peers:
   SERNET2:
