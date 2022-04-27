@@ -2656,7 +2656,7 @@ USERS:
       - ring-users
 
   iptron:
-    state: present
+    state: absent
     company: 'IPTRON.NET'
     email: 'noc@iptron.net'
     uid: 5354
@@ -4273,7 +4273,7 @@ USERS:
       - ring-users
 
   daknob:
-    state: present
+    state: absent
     company: 'daknob.net'
     email: 'noc@daknob.net'
     uid: 5555
