@@ -5329,7 +5329,7 @@ USERS:
     groups:
       - ring-users
 
-  Public Internet is a UK provider of voice and connectivity solutions for small businesses. Services include fibre broadband, ethernet leased lines, SIP trunks and managed hosting.:
+  pblin:
     state: present
     company: 'Public Internet'
     email: 'netops@pblin.net'
