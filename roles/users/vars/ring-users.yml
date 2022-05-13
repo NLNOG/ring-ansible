@@ -4907,7 +4907,7 @@ USERS:
   apgp:
     state: present
     company: 'AP GP Operations, LLC'
-    email: 'contact@aaka.sh'
+    email: 'noc@ap.foundation'
     uid: 5633
     groups:
       - ring-users
