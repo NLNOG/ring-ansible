@@ -109,6 +109,7 @@
   become: true
   become_user: root
   roles:
+    - { role: mysql, tags: mysql }
     - { role: letsencrypt, tags: letsencrypt }
     - { role: apache2, tags: apache2 }
     - { role: pdns-server, tags: pdns-server }
@@ -119,6 +120,7 @@
   become: true
   become_user: root
   roles:
+    - { role: mysql, tags: mysql }
     - { role: letsencrypt, tags: letsencrypt }
     - { role: apache2, tags: apache2 }
     - { role: hugo, tags: hugo }

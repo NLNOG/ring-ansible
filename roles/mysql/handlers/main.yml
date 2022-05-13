@@ -1,2 +1,2 @@
-- name: reload mysql
+- name: restart mysql
   service: name=mysql state=restarted enabled=yes
