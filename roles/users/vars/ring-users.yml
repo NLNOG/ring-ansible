@@ -5337,3 +5337,11 @@ USERS:
     groups:
       - ring-users
 
+  layerswitch:
+    state: present
+    company: 'LayerSwitch, Inc.'
+    email: 'ipnoc@layerswitch.com'
+    uid: 5686
+    groups:
+      - ring-users
+
