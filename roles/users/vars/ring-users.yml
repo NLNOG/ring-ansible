@@ -4906,7 +4906,7 @@ USERS:
 
   apgp:
     state: present
-    company: 'AP GP, LLC'
+    company: 'AP GP Operations, LLC'
     email: 'contact@aaka.sh'
     uid: 5633
     groups:
