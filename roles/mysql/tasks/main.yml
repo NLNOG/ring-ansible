@@ -4,7 +4,7 @@
 - name: "Install my.cnf"
   copy:
     src=my.cnf
-    dest=/etc/mysql/my.conf
+    dest=/etc/mysql/my.cnf
     owner=root
     group=root
     mode=0644
