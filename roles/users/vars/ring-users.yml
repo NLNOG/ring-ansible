@@ -3465,7 +3465,7 @@ USERS:
       - ring-users
 
   netgroup:
-    state: present
+    state: absent
     company: 'Netgroup A/S'
     email: 'support@netgroup.dk'
     uid: 5455
