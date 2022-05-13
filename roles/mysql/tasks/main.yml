@@ -8,4 +8,4 @@
     owner=root
     group=root
     mode=0644
-  notify: reload mysql
+  notify: restart mysql
