@@ -1,0 +1,11 @@
+- name: "Install mysql-server"
+  apt: name=mysql-server state=latest
+
+- name: "Install my.cnf"
+  copy:
+    src=my.cnf
+    dest=/etc/mysql/my.conf
+    owner=root
+    group=root
+    mode=0644
+  notify: reload mysql
