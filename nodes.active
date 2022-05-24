@@ -43,6 +43,7 @@ boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
+kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
@@ -576,6 +577,7 @@ lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:ac::10
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
+servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
 clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
@@ -752,6 +754,7 @@ seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 
 [kantonsschulezug]
+kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 
 [filoo]
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
@@ -2479,6 +2482,7 @@ kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:13
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 
 [servu]
+servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
 
 [clearnetworx]
 clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
