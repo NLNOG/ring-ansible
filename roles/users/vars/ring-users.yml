@@ -352,7 +352,7 @@ USERS:
       - ring-users
 
   nebula:
-    state: absent
+    state: present
     company: 'Nebula Oy'
     email: 'net-core@nebula.fi'
     uid: 5052
