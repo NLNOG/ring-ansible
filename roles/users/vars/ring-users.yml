@@ -5353,3 +5353,11 @@ USERS:
     groups:
       - ring-users
 
+  uepg:
+    state: present
+    company: 'Universidade Estadual de Ponta Grossa'
+    email: 'redes@uepg.br'
+    uid: 5688
+    groups:
+      - ring-users
+
