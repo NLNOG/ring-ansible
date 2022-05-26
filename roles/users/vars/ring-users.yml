@@ -5361,3 +5361,11 @@ USERS:
     groups:
       - ring-users
 
+  august:
+    state: present
+    company: 'August Internet'
+    email: 'noc@august.tw'
+    uid: 5689
+    groups:
+      - ring-users
+
