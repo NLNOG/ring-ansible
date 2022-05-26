@@ -518,6 +518,10 @@ lg_peers:
     asn: 56381
     ipv4: 141.98.136.0
     ipv6: '2a09:11c0:1000::'
+  AUGUST:
+    asn: 50058
+    ipv4: 165.140.142.121
+    ipv6: '2602:fc23:18::7'
 
 readonly_peers:
   SERNET2:
