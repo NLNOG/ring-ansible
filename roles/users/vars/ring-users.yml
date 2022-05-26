@@ -5345,3 +5345,11 @@ USERS:
     groups:
       - ring-users
 
+  kapsi:
+    state: present
+    company: 'Kapsi Internet-users association'
+    email: 'yllapito@tuki.kapsi.fi'
+    uid: 5687
+    groups:
+      - ring-users
+
