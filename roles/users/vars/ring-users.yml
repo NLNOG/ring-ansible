@@ -672,7 +672,7 @@ USERS:
       - ring-users
 
   sixdegrees:
-    state: present
+    state: absent
     company: 'Six Degrees Group'
     email: 'noc@6dg.co.uk'
     uid: 5096
@@ -928,7 +928,7 @@ USERS:
       - ring-users
 
   ipmax:
-    state: present
+    state: absent
     company: 'IP-Max'
     email: 'noc@ip-max.net'
     uid: 5136
@@ -1464,7 +1464,7 @@ USERS:
       - ring-users
 
   es:
-    state: present
+    state: absent
     company: 'Energy Sciences Network (US Department of Energy)'
     email: 'trouble@es.net'
     uid: 5202
@@ -1672,7 +1672,7 @@ USERS:
       - ring-users
 
   etop:
-    state: present
+    state: absent
     company: 'Etop Sp. z o.o.'
     email: 'noc@etop.pl'
     uid: 5228
@@ -1712,7 +1712,7 @@ USERS:
       - ring-users
 
   kwaoo:
-    state: present
+    state: absent
     company: 'Kwaoo'
     email: 'noc@kwaoo.net'
     uid: 5234
@@ -4497,7 +4497,7 @@ USERS:
       - ring-users
 
   fibia:
-    state: present
+    state: absent
     company: 'Fibia'
     email: 'noc@fibia.dk'
     uid: 5582

@@ -82,7 +82,6 @@ gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
 isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
-sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 yourorg01.ring.nlnog.net OWNER=yourorg V4=163.237.247.17 V6=2001:4978:1000::2319:17
 redpilllinpro01.ring.nlnog.net OWNER=redpilllinpro V4=87.238.49.250 V6=2a02:c0:200:104::1
 lagis01.ring.nlnog.net OWNER=lagis V4=83.164.133.228 V6=2a00:1860:1:3::186
@@ -111,7 +110,6 @@ kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
-ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
@@ -147,7 +145,6 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
-es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa:50c8
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
@@ -171,12 +168,10 @@ iplan01.ring.nlnog.net OWNER=iplan V4=190.210.175.57 V6=2800:40:c06::0001
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
-etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
-kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
@@ -493,7 +488,6 @@ synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
-fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
@@ -867,7 +861,6 @@ strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
 [edutel]
 
 [sixdegrees]
-sixdegrees01.ring.nlnog.net OWNER=sixdegrees V4=78.41.154.18 V6=2a02:298:81:1337::b33f
 
 [spacedump]
 
@@ -960,7 +953,6 @@ afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 [grnet]
 
 [ipmax]
-ipmax01.ring.nlnog.net OWNER=ipmax V4=46.20.247.200 V6=2a02:2528:404:1::200
 
 [merit]
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
@@ -1130,7 +1122,6 @@ nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 
 [es]
-es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 
 [world4you]
 world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa:50c8
@@ -1206,7 +1197,6 @@ combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 stargate01.ring.nlnog.net OWNER=stargate V4=98.143.95.34 V6=2607:4100:0000:0200::2
 
 [etop]
-etop01.ring.nlnog.net OWNER=etop V4=80.72.36.210 V6=2a00:c90:0:3::1:2
 
 [dragon]
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
@@ -1221,7 +1211,6 @@ syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 
 [kwaoo]
-kwaoo01.ring.nlnog.net OWNER=kwaoo V4=178.250.209.33 V6=2a03:4980::10:0:15
 
 [atlanticmetro]
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
@@ -2234,7 +2223,6 @@ arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 
 [fibia]
-fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 
 [npo]
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
