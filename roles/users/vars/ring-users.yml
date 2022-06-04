@@ -4681,7 +4681,7 @@ USERS:
       - ring-users
 
   hlit:
-    state: present
+    state: absent
     company: 'IT-SERVICE'
     email: 'noc@as34681.net'
     uid: 5605
