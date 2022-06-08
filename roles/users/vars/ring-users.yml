@@ -5369,3 +5369,11 @@ USERS:
     groups:
       - ring-users
 
+  silica:
+    state: present
+    company: 'Silica Networks'
+    email: 'cs2n@datco.net'
+    uid: 5690
+    groups:
+      - ring-users
+
