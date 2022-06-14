@@ -4811,7 +4811,7 @@ USERS:
   ercwnc:
     state: present
     company: 'ERC Broadband'
-    email: 'network@ercwnc.org'
+    email: 'network@ercbroadband.com'
     uid: 5621
     groups:
       - ring-users
