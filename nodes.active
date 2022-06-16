@@ -342,6 +342,7 @@ netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::4
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
 netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
 netrouting06.ring.nlnog.net OWNER=netrouting V4=103.101.0.68 V6=2401:c740:0:a::adb4:2896
+netrouting07.ring.nlnog.net OWNER=netrouting V4=107.178.59.238 V6=2606:ed00:3:a504:7869::22
 liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0::10
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
@@ -1728,6 +1729,7 @@ netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::4
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
 netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
 netrouting06.ring.nlnog.net OWNER=netrouting V4=103.101.0.68 V6=2401:c740:0:a::adb4:2896
+netrouting07.ring.nlnog.net OWNER=netrouting V4=107.178.59.238 V6=2606:ed00:3:a504:7869::22
 
 [liteserver]
 liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0::10
