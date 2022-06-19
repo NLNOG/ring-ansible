@@ -22,15 +22,12 @@
   apt: name={{ item }} state=latest
   with_items:
     - libffi-dev
-  when: ansible_distribution_release == "xenial" or ansible_distribution_release == "bionic"
 
 - name: "Install rbnacl with ed22519 support (for ring.rb)"
   gem: name=rbnacl version=4.0.2 executable=/usr/bin/gem user_install=no
-  when: ansible_distribution_release == "xenial" or ansible_distribution_release == "bionic"
 
 - name: "Install various gems for ring.rb"
   gem: name={{ item }} state=latest executable=/usr/bin/gem user_install=no
-  when: ansible_distribution_release == "xenial" or ansible_distribution_release == "bionic"
   with_items:
     - net-ssh
     - rbnacl-libsodium

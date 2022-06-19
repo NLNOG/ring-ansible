@@ -24,7 +24,7 @@
 
 - name: move /etc/postfix/postfix-files.dpkg-dist
   command: /bin/mv /etc/postfix/postfix-files.dpkg-dist /etc/postfix/postfix-files
-  when: etc_postfix_postfix_files.stat.exists == False and (ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic")
+  when: etc_postfix_postfix_files.stat.exists == False
 
 - name: check /etc/aliases existence
   stat: path=/etc/aliases

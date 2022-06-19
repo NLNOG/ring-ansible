@@ -15,7 +15,6 @@
   apt: name={{ item }} state=latest
   with_items:
     - dbus
-  when: ansible_distribution_release != "precise"
 
 - name: "Ensure systemd-hostnamed.service.d exists"
   file:
@@ -24,7 +23,6 @@
     mode: 0755
     owner: root
     group: root
-  when: ansible_distribution_release != "precise"
 
 - name: "Install hostnamed override.conf"
   copy:
@@ -34,7 +32,6 @@
     group=root
     mode=0644
   notify: reload systemd
-  when: ansible_distribution_release != "precise"
 
 - name: "Reload systemd if needed"
   meta: flush_handlers

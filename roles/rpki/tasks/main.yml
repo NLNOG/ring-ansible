@@ -32,4 +32,3 @@
     src: files/rpki-client.service
     dest: /lib/systemd/system/rpki-client.service
   notify: reload systemd
-  when: ansible_distribution_release == 'bionic'

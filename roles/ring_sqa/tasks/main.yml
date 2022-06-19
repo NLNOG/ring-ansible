@@ -1,21 +1,8 @@
 - name: Install SyslogLogger
-  gem: name=SyslogLogger state=latest executable=/usr/bin/gem2.3 user_install=no
-  when: ansible_distribution_release == 'xenial'
-
-- name: Install SyslogLogger
   gem: name=SyslogLogger state=latest executable=/usr/bin/gem2.5 user_install=no
-  when: ansible_distribution_release == 'bionic'
-
-- name: Install RING SQA Gem
-  gem: name=ring-sqa state=latest executable=/usr/bin/gem2.3 user_install=no
-  when: ansible_distribution_release == 'xenial'
-  notify:
-    - restart ring-sqa4
-    - restart ring-sqa6
 
 - name: Install RING SQA Gem
   gem: name=ring-sqa state=latest executable=/usr/bin/gem2.5 user_install=no
-  when: ansible_distribution_release == 'bionic'
   notify:
     - restart ring-sqa4
     - restart ring-sqa6
@@ -29,18 +16,15 @@
     - "/etc/init/ring-sqa6.conf"
     - "/etc/init.d/ring-sqa4"
     - "/etc/init.d/ring-sqa6"
-  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
 
 - name: create /lib/systemd/system/ring-sqa4.service
   template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa4.service owner=root group=root mode=0644
-  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
   notify: reload systemd
   vars:
     afi: "ipv4"
 
 - name: create /lib/systemd/system/ring-sqa6.service
   template: src=systemd-ring-sqa.service.j2 dest=/lib/systemd/system/ring-sqa6.service owner=root group=root mode=0644
-  when: ansible_distribution_release == 'xenial' or ansible_distribution_release == "bionic"
   notify: reload systemd
   vars:
     afi: "ipv6"

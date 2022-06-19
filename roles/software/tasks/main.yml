@@ -25,12 +25,6 @@
     - /bin/ping
     - /usr/sbin/lft
 
-- name: "Apply setuid root to some tools (< bionic)"
-  file: path={{ item }} mode=4755
-  with_items:
-    - /bin/ping6
-  when: ansible_distribution_release != "bionic"
-
 - name: "Allow ring-users to do wire capturing"
   file: path={{ item }} mode=0754 owner=root group=ring-users
   with_items:
@@ -58,20 +52,19 @@
   when: item.stdout != check_string
   with_items: "{{ cap.results }}"
 
-- name: "Get network capabilities for some tools (bionic)"
+- name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
   register: capb
   with_items:
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
-  when: ansible_distribution_release == "bionic"
 
-- name: "Set new capabilities (bionic)"
+- name: "Set new capabilities"
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: ansible_distribution_release == "bionic" and item.stdout != check_string
+  when: item.stdout != check_string
   with_items: "{{ capb.results }}"
 
 - name: "Uninstall certain unnecessary packages"

@@ -18,10 +18,6 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_xenial-updates.list.distUpgrade'
     - '/etc/apt/sources.list.d/bit_debian_bookworm.list'
     - '/etc/apt/sources.list.d/bit_ubuntu_archiv_hirsute.list'
-
-- name: "Remove old repo files (bionic)"
-  file: name={{ item }} state=absent
-  with_items:
     - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial.list'
     - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-security.list'
     - '/etc/apt/sources.list.d/bit_ubuntu_archiv_xenial-updates.list'
@@ -33,7 +29,6 @@
     - '/etc/apt/sources.list.d/ubuntu_archiv_bionic-updates.list.distUpgrade'
     - '/etc/apt/sources.list.d/nlnog_ring_repo.list.distUpgrade'
     - '/etc/apt/sources.list.distUpgrade'
-  when: ansible_distribution_release == "bionic"
 
 - name: "Install prequisites for apt_repository"
   apt: name={{ item }} state=latest
@@ -95,34 +90,6 @@
     state: present
     filename: 'nlnog_ring_repo'
 
-- name: "Install ansible repo key"
-  apt_key:
-    id: 7BB9C367
-    url: "https://ring.nlnog.net/ansiblerepopublic.key"
-    state: present
-  when: ansible_distribution_release == "precise"
-
-- name: "Remove ansible repo key"
-  apt_key:
-    id: 7BB9C367
-    url: "https://ring.nlnog.net/ansiblerepopublic.key"
-    state: absent
-  when: ansible_distribution_release != "precise"
-
-- name: "Add ansible repository"
-  apt_repository:
-    repo: 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main'
-    state: present
-    filename: 'ansible_repo'
-  when: ansible_distribution_release == "precise"
-
-- name: "Remove ansible repository"
-  apt_repository:
-    repo: 'deb http://ppa.launchpad.net/ansible/ansible/ubuntu precise main'
-    state: absent
-    filename: 'ansible_repo'
-  when: ansible_distribution_release != "precise"
-
 - name: "Install unattended-upgrades"
   apt: name=unattended-upgrades state=latest
 
@@ -160,11 +127,10 @@
 - name: "Reset system default splay back to 1h"
   lineinfile: dest=/lib/systemd/system/apt-daily-upgrade.timer regexp='^RandomizedDelaySec=' line='RandomizedDelaySec=1h'
   notify: reload systemd
-  when: ansible_distribution_release != "precise" and apt_daily_upgrade_timer.stat.exists == True
+  when: apt_daily_upgrade_timer.stat.exists == True
 
 - name: reload systemd if needed
   meta: flush_handlers
-  when: ansible_distribution_release != "precise"
 
 - name: "Run apt-get update"
   apt:

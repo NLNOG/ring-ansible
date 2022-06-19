@@ -10,7 +10,6 @@
 
 - name: Disable systemd-resolved
   service: name=systemd-resolved state=stopped enabled=no
-  when: ansible_distribution_release == "bionic"
 
 - name: Install unbound
   apt:

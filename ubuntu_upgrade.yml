@@ -15,126 +15,13 @@
       file:
         name=/etc/cron.d/ansible
         state=absent
-      when: ansible_distribution_release != "xenial"
 
     - name: "Run apt-get dist-upgrade once for the current release"
       apt:
         upgrade: dist
         update_cache: yes
-
   tags:
     - prepare
-
-- hosts: all
-  become: true
-  become_user: root
-  tasks:
-    - name: "Make sure unupgradable packages are gone"
-      apt: name={{ item }} state=absent
-      with_items:
-        - puppet-common
-        - puppet
-        - libsodium13
-        - keyboard-configuration
-        - daemontools-run
-        - console-setup-linux
-        - console-setup
-        - kbd
-
-    - name: "Remove automatic update files"
-      file: name={{ item }} state=absent
-      with_items:
-        - /etc/apt/apt.conf.d/50unattended-upgrades
-        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
-
-    - name: "Add ubuntu trusty repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu trusty main restricted universe multiverse'
-        state: present
-        filename: 'ubuntu_archiv_trusty'
-      when: ansible_distribution_release == "precise"
-
-    - name: "Add ubuntu trusty updates repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu trusty-updates main restricted universe multiverse'
-        state: present
-        filename: 'ubuntu_archiv_trusty-updates'
-      when: ansible_distribution_release == "precise"
-
-    - name: "Add ubuntu trusty security repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu trusty-security main restricted universe multiverse'
-        state: present
-        filename: 'ubuntu_archiv_trusty-security'
-      when: ansible_distribution_release == "precise"
-
-    - name: "Remove ubuntu precise repositories"
-      file: name={{ item }} state=absent
-      with_items:
-        - '/etc/apt/sources.list.d/ubuntu_archiv_precise-security.list'
-        - '/etc/apt/sources.list.d/ubuntu_archiv_precise-updates.list'
-        - '/etc/apt/sources.list.d/ubuntu_archiv_precise.list'
-
-    - name: "apt-get update (trusty repos)"
-      apt:
-        update_cache: yes
-      when: ansible_distribution_release == "precise"
-
-    - name: "Perform release upgrade (precise -> trusty)"
-      command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release == "precise"
-  tags:
-    - trusty
-
-- hosts: all
-  become: true
-  become_user: root
-  tasks:
-    - name: "Remove daemontools-run"
-      apt: name={{ item }} state=absent
-      with_items:
-        - daemontools-run
-    
-    - name: "Remove automatic update files"
-      file: name={{ item }} state=absent
-      with_items:
-        - /etc/apt/apt.conf.d/50unattended-upgrades
-        - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
-
-    - name: "Add ubuntu xenial repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu xenial main restricted universe multiverse'
-        state: present
-        filename: 'bit_ubuntu_archiv_xenial'
-
-    - name: "Add ubuntu xenial updates repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu xenial-updates main restricted universe multiverse'
-        state: present
-        filename: 'bit_ubuntu_archiv_xenial-updates'
-
-    - name: "Add ubuntu xenial security repository"
-      apt_repository:
-        repo: 'deb http://ftp.bit.nl/ubuntu xenial-security main restricted universe multiverse'
-        state: present
-        filename: 'bit_ubuntu_archiv_xenial-security'
-
-    - name: "Remove ubuntu trusty repositories"
-      file: name={{ item }} state=absent
-      with_items:
-        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty.list'
-        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-updates.list'
-        - '/etc/apt/sources.list.d/ubuntu_archiv_trusty-security.list'
-
-    - name: "apt-get update (xenial repos)"
-      apt:
-        update_cache: yes
-
-    - name: "Perform release upgrade (trusty -> xenial)"
-      command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release != "xenial" and ansible_distribution_release != "bionic"
-  tags:
-    - xenial
 
 - hosts: all
   become: true
@@ -148,7 +35,7 @@
 
     - name: "Perform release upgrade (xenial -> bionic)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release != "bionic"
+      when: ansible_distribution_release == "xenial"
 
     - name: "Remove daemontools"
       apt: name={{ item }} state=absent
