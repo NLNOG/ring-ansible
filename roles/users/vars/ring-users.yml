@@ -1464,7 +1464,7 @@ USERS:
       - ring-users
 
   es:
-    state: absent
+    state: present
     company: 'Energy Sciences Network (US Department of Energy)'
     email: 'trouble@es.net'
     uid: 5202
