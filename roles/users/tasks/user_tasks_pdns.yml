@@ -1,0 +1,8 @@
+- block:
+  - name: "Add user to pdns group - {{ item }}"
+    user:
+      name={{ item }}
+      groups=pdns
+      append=yes
+  when: user.state == "present"
+

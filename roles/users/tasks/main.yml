@@ -26,6 +26,12 @@
   when: class != "local" 
 
 - block:
+  - include: user_tasks_pdns.yml user={{ USERS[item] }}
+    with_items: "{{ USERS|default([])|list|sort }}"
+    when: inventory_hostname == "public03.infra.ring.nlnog.net"
+  when: class == "ring-admins"
+
+- block:
   - name: "Add local groups"
     group: name={{ item }} state={{ LOCAL_GROUPS[item] }}
     with_items: "{{ LOCAL_GROUPS|default([])|list }}"
