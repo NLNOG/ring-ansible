@@ -469,6 +469,7 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
@@ -519,7 +520,6 @@ hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d50
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
-ercwnc01.ring.nlnog.net OWNER=ercwnc V4=72.250.243.98 V6=2001:4850:2019::1
 itrelation01.ring.nlnog.net OWNER=itrelation V4=194.116.178.10 V6=2a02:c900:0:1::10
 nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::200
 midnet01.ring.nlnog.net OWNER=midnet V4=64.40.23.206 V6=2602:800:1000:100::ce
@@ -532,6 +532,7 @@ riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
 apgp01.ring.nlnog.net OWNER=apgp V4=204.137.12.2 V6=2602:fcad:2::2
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:250:56ff:fe83:6e1d
+copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
 apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
 terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:193:200:238::41
@@ -2157,6 +2158,7 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
+fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 
 [connectedpl]
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -2309,7 +2311,6 @@ sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700:
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
 
 [ercwnc]
-ercwnc01.ring.nlnog.net OWNER=ercwnc V4=72.250.243.98 V6=2001:4850:2019::1
 
 [itrelation]
 itrelation01.ring.nlnog.net OWNER=itrelation V4=194.116.178.10 V6=2a02:c900:0:1::10
@@ -2350,6 +2351,7 @@ apgp01.ring.nlnog.net OWNER=apgp V4=204.137.12.2 V6=2602:fcad:2::2
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:250:56ff:fe83:6e1d
 
 [copaco]
+copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
 
 [apernet]
 apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
