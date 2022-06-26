@@ -344,7 +344,6 @@ internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12
 depaul01.ring.nlnog.net OWNER=depaul V4=140.192.218.142 V6=2620:0:2250:2115:d61f:92e0:1893:b57d
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
-netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
 netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::41a6:282f
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
 netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
@@ -1759,7 +1758,6 @@ custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 
 [netrouting]
-netrouting01.ring.nlnog.net OWNER=netrouting V4=37.46.195.238 V6=2a00:dd0:0:53::2
 netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::41a6:282f
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
 netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
