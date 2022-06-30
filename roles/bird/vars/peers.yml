@@ -197,8 +197,8 @@ lg_peers:
     ipv6: 2001:4f8:1b::193
   IWAY1:
     asn: 8758
-    ipv4: 212.25.27.39
-    ipv6: 2001:8e0:0:ffff::2
+    ipv4: 212.25.27.56
+    ipv6: 2001:8e0:ffff::56
   KANREN1:
     asn: 2495
     ipv4: 164.113.193.221
@@ -436,8 +436,8 @@ lg_peers:
     ipv6: 2a01:4020:1:4d::2
   NATESALES1:
     asn: 34553
-    ipv4: 147.75.35.135
-    ipv6: 2604:1380:4111:b101::135
+    ipv4: 23.170.176.6
+    ipv6: 2602:809:3008::6
   OPENFACTORY_R3COREIXN:
     asn: 58299
     ipv4: 5.226.149.0

@@ -2816,7 +2816,7 @@ USERS:
       - ring-users
 
   comcast:
-    state: present
+    state: absent
     company: 'Comcast'
     email: '_CHQ--Backbone-T2E_@cable.comcast.com'
     uid: 5374
