@@ -366,6 +366,10 @@ lg_peers:
     asn: 3214
     ipv4: 185.255.55.19
     ipv6: 2a0c:59c0::19
+  POPNIX1:
+    asn: 135063
+    ipv4: 103.208.24.2
+    ipv6: 2404:3a80:42::1
   OVERTHEWIRE1:
     asn: 9268
     ipv4: 203.62.187.191
