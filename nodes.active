@@ -46,6 +46,7 @@ seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
+nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
@@ -117,6 +118,7 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
+nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
@@ -574,6 +576,7 @@ nullroute01.ring.nlnog.net OWNER=nullroute V4=192.26.105.218 V6=2001:67c:2970:f0
 estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:208::fd
 powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
+lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:ac::10
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
@@ -765,6 +768,7 @@ kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 
 [nessus]
+nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 
 [amazon]
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
@@ -984,6 +988,7 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [qbranch]
 
 [nlnetlabs]
+nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -2475,6 +2480,7 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
 
 [lukegb]
+lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
 samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:ac::10
