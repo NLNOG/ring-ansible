@@ -5377,3 +5377,11 @@ USERS:
     groups:
       - ring-users
 
+  byteark:
+    state: present
+    company: 'ByteArk Company Limited'
+    email: 'idc@byteark.com'
+    uid: 5691
+    groups:
+      - ring-users
+

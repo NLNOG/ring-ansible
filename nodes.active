@@ -2517,3 +2517,5 @@ august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 
 [silica]
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
+
+[byteark]
