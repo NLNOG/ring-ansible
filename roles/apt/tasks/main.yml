@@ -30,7 +30,7 @@
     - '/etc/apt/sources.list.d/nlnog_ring_repo.list.distUpgrade'
     - '/etc/apt/sources.list.distUpgrade'
 
-- name: "Install prequisites for apt_repository"
+- name: "Install prerequisites for apt_repository"
   apt: name={{ item }} state=latest
   with_items:
     - python-apt

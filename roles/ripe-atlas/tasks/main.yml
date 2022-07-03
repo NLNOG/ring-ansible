@@ -1,4 +1,4 @@
-- name: "Install deb prequisites for ripe-atlas-tools"
+- name: "Install deb prerequisites for ripe-atlas-tools"
   apt: name={{ item }} state=present
   with_items:
     - python-dev
