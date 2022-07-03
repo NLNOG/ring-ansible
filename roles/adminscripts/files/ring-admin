@@ -1648,25 +1648,6 @@ class commands(object):
         """initialize database"""
         self.dbdo(SCHEMA, None, script=True)
 
-    def cmd_generate_puppet_node(self, hostname):
-        """generate puppet node config"""
-        if not (re.match(r'.*%s$' % ZONE, hostname)):
-            hostname = hostname + "." + ZONE
-        name = re.sub('.' + ZONE, '', hostname)
-        m = self.dbselectone('machines', hostname=hostname)
-        if not m:
-            sys.exit('machine %s not found' % hostname)
-        u = self.dbselectone('users', id=m['owner'])
-        if not u:
-            sys.exit('user %s not found' % m['owner'])
-
-        print "node '" + name + "' inherits ringnode {"
-        print "    $owner = \"" + u['username'] + "\""
-        print "    $location = \"" + m['geo'] + "\""
-        print "    include set_local_settings"
-        print "    include users"
-        print "}"
-
     def cmd_generate_hostsfile(self, hostname):
         """generate hostsfile config"""
         if not (re.match(r'.*%s$' % ZONE, hostname)):

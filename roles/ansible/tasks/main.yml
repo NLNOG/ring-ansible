@@ -128,45 +128,6 @@
     regexp: 'ansible(-|_)pull'
     state: absent
 
-- name: "Remove any old salt crontab entries"
-  lineinfile:
-    dest: /var/spool/cron/crontabs/root
-    regexp: 'salt-call'
-    state: absent
-
-- name: "Remove old Puppet crontab entries"
-  lineinfile:
-    dest: /var/spool/cron/crontabs/root
-    regexp: "puppetagent|puppetd|zombiekiller|puppet_zombiecleanup|ring-puppet-repo-sync|pull_from_repo"
-    state: absent
-  when: remove_puppet is defined and remove_puppet
-
-- name: "Remove puppet"
-  apt:
-    name: "{{ item }}"
-    state: absent
-    purge: yes
-  with_items:
-    - puppet
-    - puppet-common
-    - libaugeas-ruby1.8
-    - libaugeas0
-    - augeas-lenses
-    - libruby
-    - libshadow-ruby1.8
-    - facter
-  when: remove_puppet is defined and remove_puppet
-
-- name: "Remove puppet 'helper' files"
-  file:
-    name: "{{ item }}"
-    state: absent
-  with_items:
-    - /usr/local/bin/puppet_zombiecleanup
-    - /usr/local/bin/ring-convert-ssh-keys
-    - /usr/local/bin/ring-puppet-repo-sync
-    - /var/lib/puppet
-
 - include: master.yml
   when: ansible_master|default(None) == true
 
