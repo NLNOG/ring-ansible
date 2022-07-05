@@ -6,3 +6,4 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKWhcwDcVZftWZ/1Nn+oD1P+VhXm5dkV1s2/yqOfZjie
 # KEEP
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKWhcwDcVZftWZ/1Nn+oD1P+VhXm5dkV1s2/yqOfZjie interconnect@interconnect01.ring.nlnog.net
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPgam7TDt6shAAERJF3r00Ok+SVAVc8kaGWpauc53pCB bram@interconnect
+sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIIgzXBl/u159BGrBH2Y/ZiBkoWc+AGrPJudENBdR/PaMAAAACnNzaDpsZXNzZXI= ssh:lesser jacobdb
