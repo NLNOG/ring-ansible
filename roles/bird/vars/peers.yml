@@ -530,6 +530,10 @@ lg_peers:
     asn: 50058
     ipv4: 165.140.142.121
     ipv6: '2602:fc23:18::7'
+  FIEBIG:
+    asn: 59645
+    ipv4: 195.191.197.21
+    ipv6: '2a06:d1c0:dead:1::21'
 
 readonly_peers:
   SERNET2:
