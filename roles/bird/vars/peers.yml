@@ -530,7 +530,14 @@ lg_peers:
     asn: 50058
     ipv4: 165.140.142.121
     ipv6: '2602:fc23:18::7'
-
+  SERVERION1:
+    asn: 213035
+    ipv4: 185.28.37.200
+    ipv6: 2a10:1440:0:a::/128
+  SERVERION2:
+    asn: 213035
+    ipv4: 185.28.37.201
+    ipv6: 2a10:1440:0:a::1/128
 readonly_peers:
   SERNET2:
     asn: 41955
