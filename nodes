@@ -599,6 +599,7 @@ uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
 august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
+fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2557,3 +2558,6 @@ silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 
 [byteark]
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
+
+[fiebig]
+fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71

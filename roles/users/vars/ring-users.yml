@@ -5385,3 +5385,11 @@ USERS:
     groups:
       - ring-users
 
+  fiebig:
+    state: present
+    company: 'AS59645'
+    email: 'contact@as59645.net'
+    uid: 5692
+    groups:
+      - ring-users
+
