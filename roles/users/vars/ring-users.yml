@@ -5393,3 +5393,11 @@ USERS:
     groups:
       - ring-users
 
+  serverion:
+    state: present
+    company: 'Serverion'
+    email: 'noc@serverion.com'
+    uid: 5693
+    groups:
+      - ring-users
+
