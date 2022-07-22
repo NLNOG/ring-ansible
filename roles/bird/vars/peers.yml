@@ -534,7 +534,15 @@ lg_peers:
     asn: 59645
     ipv4: 195.191.197.21
     ipv6: '2a06:d1c0:dead:1::21'
-
+  SERVERION1:
+    asn: 213035
+    ipv4: 185.28.37.200
+    ipv6: 2a10:1440:0:a::/128
+  SERVERION2:
+    asn: 213035
+    ipv4: 185.28.37.201
+    ipv6: 2a10:1440:0:a::1/128
+    
 readonly_peers:
   SERNET2:
     asn: 41955
