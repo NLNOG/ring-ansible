@@ -537,11 +537,11 @@ lg_peers:
   SERVERION1:
     asn: 213035
     ipv4: 185.28.37.200
-    ipv6: 2a10:1440:0:a::/128
+    ipv6: '2a10:1440:0:a::'
   SERVERION2:
     asn: 213035
     ipv4: 185.28.37.201
-    ipv6: 2a10:1440:0:a::1/128
+    ipv6: '2a10:1440:0:a::1'
     
 readonly_peers:
   SERNET2:
