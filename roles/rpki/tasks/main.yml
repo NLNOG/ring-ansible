@@ -14,7 +14,7 @@
     state: absent
 
 - name: "Delete Trust Anchors"
-  apt: pkg=rpki-trust-anchors state=purged
+  apt: pkg=rpki-trust-anchors state=absent purge=true
 
 - name: "Delete rpki-client"
-  apt: pkg=rpki-client state=purged
+  apt: pkg=rpki-client state=absent purge=true
