@@ -1,34 +1,20 @@
-- name: "delete RIPE TAL"
+- name: "Delete old pin file"
   file:
-    state: absent
-    path: /etc/tals/ripe.tal
-
-- name: "delete old pin file"
-  file:
-    state: absent
     path: /etc/apt/preferences.d/pin-rpki
+    state: absent
 
-- name: "TAL selection (rpki-trust-anchors)"
-  debconf:
-    name: rpki-trust-anchors
-    question: rpki-trust-anchors/get_arin_tal
-    vtype: boolean
-    value: False
-  changed_when: false
+- name: "Delete defaults file"
+  file:
+    path: /etc/default/rpki-client
+    state: absent
 
-- name: "Install RPKI Trust Anchors"
-  apt: pkg=rpki-trust-anchors state=latest
+- name: "Remove custom systemd service file"
+  file:
+    path: /lib/systemd/system/rpki-client.service
+    state: absent
 
-- name: "Only output JSON"
-  copy: dest=/etc/default/rpki-client content="OPTIONS=-j"
+- name: "Delete Trust Anchors"
+  apt: pkg=rpki-trust-anchors state=absent
 
-- name: "Install rpki-client"
-  apt: pkg=rpki-client state=latest
-
-# The Ubuntu Bookworm package has .service file with more
-# options than Bionic's systemd supports
-- name: "Install bionic compatible systemd service file"
-  copy:
-    src: files/rpki-client.service
-    dest: /lib/systemd/system/rpki-client.service
-  notify: reload systemd
+- name: "Delete rpki-client"
+  apt: pkg=rpki-client state=absent
