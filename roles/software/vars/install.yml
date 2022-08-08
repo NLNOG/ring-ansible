@@ -63,7 +63,6 @@ software:
     - sipcalc
     - snmp
     - socat
-    - sshfp
     - strace
     - sysstat
     - tcpdump
@@ -109,6 +108,7 @@ software:
     - python-setuptools
     - python-simplejson
     - python-virtualenv
+    - sshfp
 
   jammy:
     - python3
