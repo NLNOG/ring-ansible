@@ -33,7 +33,7 @@
     name: update_motd
     job: run-parts --lsbsysinit /etc/update-motd.d > /var/run/motd 2>/dev/null
     hour: 1,7,13,19
-    minute: 15
+    minute: '15'
     user: root
 
 - name: "Check for motd-news"
