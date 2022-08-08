@@ -99,9 +99,9 @@
   become: true
   become_user: root
   roles:
-    - { role: letsencrypt, tags: letsencrypt }
-    - { role: apache2, tags: apache2 }
     - { role: ansible, tags: ansible, mitogen: no }
+#    - { role: letsencrypt, tags: letsencrypt }
+#    - { role: apache2, tags: apache2 }
 #    - { role: bird, tags: bird }
 #    - { role: bird-lg, tags: bird-lg }
 #    - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell, tags: ring-users }
