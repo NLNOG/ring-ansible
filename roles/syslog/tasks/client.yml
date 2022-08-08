@@ -1,6 +1,6 @@
 - name: create syslog-ng.conf
   template:
-    src: etc/syslog-ng/syslog-ng.conf.client.{{ ansible_distribution_release }}
+    src: etc/syslog-ng/syslog-ng.conf.client
     dest: /etc/syslog-ng/syslog-ng.conf
     owner: root
     group: root
