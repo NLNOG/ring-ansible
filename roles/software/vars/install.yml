@@ -56,20 +56,6 @@ software:
     - pastebinit
     - psmisc
     - pv
-    - python
-    - python-beautifulsoup
-    - python-demjson
-    - python-dnspython
-    - python-flask
-    - python-ipaddr
-    - python-libxml2
-    - python-mysqldb
-    - python-networkx
-    - python-pip
-    - python-pycountry
-    - python-setuptools
-    - python-simplejson
-    - python-virtualenv
     - python3-requests
     - rsync
     - ruby
@@ -109,5 +95,20 @@ software:
     - dnsviz
     - php7.2-cli
     - dnsdiag
+    - python
+    - python-beautifulsoup
+    - python-demjson
+    - python-dnspython
+    - python-flask
+    - python-ipaddr
+    - python-libxml2
+    - python-mysqldb
+    - python-networkx
+    - python-pip
+    - python-pycountry
+    - python-setuptools
+    - python-simplejson
+    - python-virtualenv
+
   jammy:
     - python3
