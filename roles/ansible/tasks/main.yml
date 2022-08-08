@@ -76,7 +76,7 @@
     owner=root
     group=root
     mode=0644
-  when: mitogen_plugin.stat.exists == True and mitogen == true
+  when: mitogen_plugin.stat.exists == True and mitogen == true and ansible_distribution_release != "jammy"
 
 - name: "Update ansible.cfg (no mitogen)"
   copy:
