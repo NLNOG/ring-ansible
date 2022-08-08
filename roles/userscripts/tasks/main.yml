@@ -22,12 +22,15 @@
   apt: name={{ item }} state=latest
   with_items:
     - libffi-dev
+  when: ansible_distribution_release == "bionic"
 
 - name: "Install rbnacl with ed22519 support (for ring.rb)"
   gem: name=rbnacl version=4.0.2 executable=/usr/bin/gem user_install=no
+  when: ansible_distribution_release == "bionic"
 
 - name: "Install net-ssh (for ring.rb)"
   gem: name=net-ssh version=6.1.0 executable=/usr/bin/gem user_install=no
+  when: ansible_distribution_release == "bionic"
 
 - name: "Install various gems for ring.rb"
   gem: name={{ item }} state=latest executable=/usr/bin/gem user_install=no
@@ -35,6 +38,11 @@
     - rbnacl-libsodium
     - bcrypt_pbkdf
     - ed25519
+  when: ansible_distribution_release == "bionic"
+
+- name: "install ruby-rbnacl"
+  apt: name=ruby-rbnacl state=latest
+  when: ansible_distribution_release == "jammy"
 
 - name: "Install ring userscripts"
   copy:
