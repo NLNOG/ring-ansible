@@ -52,6 +52,7 @@
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != check_string
   with_items: "{{ cap.results }}"
+  when: ansible_distribution_release == "bionic"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
@@ -60,6 +61,7 @@
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
+  when: ansible_distribution_release == "bionic"
 
 - name: "Set new capabilities"
   vars:
@@ -67,6 +69,7 @@
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != check_string
   with_items: "{{ capb.results }}"
+  when: ansible_distribution_release == "bionic"
 
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
