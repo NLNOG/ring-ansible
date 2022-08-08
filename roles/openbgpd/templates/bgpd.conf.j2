@@ -30,20 +30,22 @@ group "readonly_peers" {
 {% if readonly_peers[peer].ipv4|default(None) %}
     neighbor {{ readonly_peers[peer].ipv4 }} {
         descr "firehose-{{ peer }}-v4"
-        remote-as {{ lg_peers[peer].asn }}
+        remote-as {{ readonly_peers[peer].asn }}
     }
 {% endif %}
 {% if readonly_peers[peer].ipv6|default(None) %}
     neighbor {{ readonly_peers[peer].ipv6 }} {
         descr "firehose-{{ peer }}-v6"
-        remote-as {{ lg_peers[peer].asn }}
+        remote-as {{ readonly_peers[peer].asn }}
     }
 {% endif %}
 {% endfor %}
 }
 
-allow from group peers
+# allow anything from regular peers, but never send them any route
 deny quick to group peers
+allow from group peers
 
-allow to group readonly_peers
+# send everything to firehose peers, accept nothing
 deny quick from group readonly_peers
+allow to group readonly_peers
