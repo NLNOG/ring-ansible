@@ -53,7 +53,6 @@ software:
     - net-tools
     - ngrep
     - nmap
-    - paris-traceroute
     - pastebinit
     - psmisc
     - pv
