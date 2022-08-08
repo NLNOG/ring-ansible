@@ -28,6 +28,7 @@
     owner: root
     group: root
     state: link
+  when: ansible_distribution_release == "bionic"
 
 - name: Add cronjob for ring-fetch-nodes-json
   template:
