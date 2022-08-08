@@ -550,8 +550,8 @@ readonly_peers:
     ipv6: 2a0a:a3c0:0:d2ca::217:227
   BGPDOTTOOLS:
     asn: 212232
-    ipv4: 185.230.223.92
-    ipv6: 2a0c:2f07:9459:592::2
+    ipv4: 185.230.223.45
+    ipv6: 2a0c:2f07:9459::b5
   XINDI_RC0:
     asn: 57984
     ipv4: 185.173.16.146
