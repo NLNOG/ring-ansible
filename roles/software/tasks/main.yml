@@ -30,6 +30,7 @@
   with_items:
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
+  when: ansible_distribution_release == "bionic"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
@@ -43,6 +44,7 @@
     - /usr/bin/dumpcap
   check_mode: no
   changed_when: false
+  when: ansible_distribution_release == "bionic"
 
 - name: "Set new capabilities"
   vars:
