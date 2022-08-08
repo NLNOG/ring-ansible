@@ -1,0 +1,12 @@
+- name: "Load peer list"
+  include_vars: peers.yml
+
+- name: "Install OpenBGPD"
+  apt: name=openbgpd state=latest
+
+- name: "Install /etc/bgpd.conf"
+  template: src=bgpd.conf.j2 dest=/etc/bgpd.conf
+  notify: reload openbgpd
+
+- name: "Start OpenBGPD"
+  service: name=openbgpd state=started

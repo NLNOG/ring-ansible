@@ -1,0 +1,49 @@
+AS 199036
+
+fib-update no
+reject as-set yes
+
+include "/var/lib/rpki-client/openbgpd"
+
+group "peers" {
+    multihop 255
+{% for peer in lg_peers %}
+{% if lg_peers[peer].ipv4|default(None) %}
+    neighbor {{ lg_peers[peer].ipv4 }} {
+        descr "{{ peer }}-v4"
+        remote-as {{ lg_peers[peer].asn }}
+    }
+{% endif %}
+{% if lg_peers[peer].ipv6|default(None) %}
+    neighbor {{ lg_peers[peer].ipv6 }} {
+        descr "{{ peer }}-v6"
+        remote-as {{ lg_peers[peer].asn }}
+    }
+{% endif %}
+{% endfor %}
+}
+
+group "readonly_peers" {
+    multihop 255
+    announce add-path send all
+{% for peer in readonly_peers %}
+{% if readonly_peers[peer].ipv4|default(None) %}
+    neighbor {{ readonly_peers[peer].ipv4 }} {
+        descr "firehose-{{ peer }}-v4"
+        remote-as {{ lg_peers[peer].asn }}
+    }
+{% endif %}
+{% if readonly_peers[peer].ipv6|default(None) %}
+    neighbor {{ readonly_peers[peer].ipv6 }} {
+        descr "firehose-{{ peer }}-v6"
+        remote-as {{ lg_peers[peer].asn }}
+    }
+{% endif %}
+{% endfor %}
+}
+
+allow from group peers
+deny quick to group peers
+
+allow to group readonly_peers
+deny quick from group readonly_peers

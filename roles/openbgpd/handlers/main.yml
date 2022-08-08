@@ -1,0 +1,2 @@
+- name: reload openbgpd
+  service: name=openbgpd state=reloaded enabled=yes

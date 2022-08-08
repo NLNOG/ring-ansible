@@ -1,0 +1,558 @@
+---
+lg_peers:
+  LAYERBRIDGE01:
+    asn: 3280
+    ipv4: 77.83.243.7
+    ipv6: 2a0b:b86::f
+  AFILIAS_IAD1:
+    asn: 393246
+    ipv4: 199.115.158.251
+    ipv6: 2001:500:A6::251
+  AFILIAS_MIA2:
+    asn: 33280
+    ipv4: 65.22.12.251
+    ipv6: 2A01:8840:C::251
+  AFILIAS_TKY1:
+    asn: 13901
+    ipv4: 199.19.52.251
+    ipv6: 2001:500:a::251
+  AFILIAS_TKY2:
+    asn: 13901
+    ipv4: 199.19.52.252
+    ipv6: 2001:500:a::252
+  ALARIG1:
+    asn: 208627
+    ipv4: 45.91.126.248
+    ipv6: '2a0e:f42:ffff::'
+  ALARIG2:
+    asn: 208627
+    ipv4: 45.91.126.249
+    ipv6: 2a0e:f42:ffff::2
+  ALTIBOX1:
+    asn: 29695
+    ipv4: 79.160.115.253
+    ipv6: 2a01:798:0:1::262
+  APGP01:
+    asn: 54316
+    ipv4: 23.175.208.1
+    ipv6: 2602:fcad:1::1
+  AQUILENET1:
+    asn: 198985
+    ipv4: 185.233.100.246
+    ipv6: 2a0c:e300:1::246
+  AQUILENET2:
+    asn: 198985
+    ipv4: 185.233.100.247
+    ipv6: 2a0c:e300:1::247
+  AS207960NET1:
+    asn: 207960
+    ipv4: 45.129.95.2
+    ipv6: 2a0d:1a40:7900:7::1
+  BELWUE1:
+    asn: 553
+    ipv4: 129.143.4.244
+    ipv6: 2001:7c0:0:1000::1
+  BIT1:
+    asn: 12859
+    ipv4: 213.136.1.132
+    ipv6: 2001:7b8:0:fffe::2
+  BOXED_IT1:
+    asn: 50156
+    ipv4: 195.200.224.1
+    ipv6: 2001:67c:344::1
+  BRENNERCOM01:
+    asn: 20811
+    ipv4: 37.186.150.34
+    ipv6: 2a02:490:f02::5
+  CDW1:
+    asn: 3599
+    ipv4: 64.73.0.252
+    ipv6: 2607:FEE0:0:FF00::A2
+  CELYA01:
+    asn: 203596
+    ipv4: 185.122.100.33
+    ipv6: 2a06:a400:1:0:600d:fee1:0:1
+  CHAOSDARMSTADT1:
+    asn: 6766
+    ipv4: 82.195.73.62
+    ipv6: 2001:67c:2ed8::1
+  CHRONOS1:
+    asn: 202365
+    ipv4: 5.255.90.109
+    ipv6: 2a00:1ca8:2a::e0
+  COLOCLUE1:
+    asn: 8283
+    ipv4: 94.142.247.3
+    ipv6: 2a02:898:0:300::3
+  CUSTODIAN:
+    asn: 50300
+    ipv4: 176.12.110.8
+    ipv6: 2A00:1C10:10::8
+  CYBERCOM1:
+    asn: 51164
+    ipv4: 178.217.128.1
+    ipv6: 2001:67c:224::1
+  CYBERCOM2:
+    asn: 51164
+    ipv4: 178.217.128.2
+    ipv6: 2001:67c:224::2
+  DCSONE1:
+    asn: 37989
+    ipv4: 203.123.48.6
+    ipv6: 2405:fc00::6
+  DHIRAAGU01:
+    asn: 7642
+    ipv4: 202.1.192.176
+    ipv6: 2406:e400:0:b::b3
+  DNA1:
+    asn: 16086
+    ipv4: 217.78.199.200
+    ipv6: 2001:14b8:1080:0200::1001
+  DUOCAST1:
+    asn: 31477
+    ipv4: 89.188.4.1
+    ipv6: 2A01:01B0:1::1
+  DUOCAST2:
+    asn: 31477
+    ipv4: 89.188.4.16
+    ipv6: 2a01:01b0:1::16
+  EDSITECH:
+    asn: 202194
+    ipv4: 185.50.188.1
+    ipv6: 2a04:c000::1
+  FIBERBY1:
+    asn: 42541
+    ipv4: 193.104.135.79
+    ipv6: 2a03:5440:1::79
+  FIBERBY2:
+    asn: 42541
+    ipv4: 193.104.135.78
+    ipv6: 2a03:5440:1::78
+  FREIFUNKRL1:
+    asn: 201701
+    ipv4: 185.66.195.1
+    ipv6: 2a03:2260::4
+  FUSIX1:
+    asn: 57866
+    ipv4: 37.139.139.0
+    ipv6: 2a00:a7c0:e20a::0
+  GANDI1:
+    asn: 29169
+    ipv4: 173.246.102.254
+    ipv6: 2001:4b98::fe
+  GANDI2:
+    asn: 29169
+    ipv4: 217.70.176.70
+    ipv6: 2001:4b98::70
+  GLOBALCONNECT1:
+    asn: 31027
+    ipv4: 77.243.32.3
+    ipv6: 2a02:188::11:90
+  GO6LAB1:
+    asn: 198644
+    ipv4: 91.239.96.218
+    ipv6: 2001:67C:27E4:1::1036
+  GRIFON1:
+    asn: 204092
+    ipv4: 89.234.186.6
+    ipv6: 2a00:5884::6
+  HASTADKLEV1:
+    asn: 47753
+    ipv4: 217.168.87.1
+    ipv6: 2001:678:dd0::1
+  HIVANE1:
+    asn: 34019
+    ipv4: 193.17.192.132
+    ipv6: 2001:67c:1740::9
+  HOSTWAY1:
+    asn: 14280
+    ipv4: 64.40.105.22
+    ipv6: 2606:6a00::e
+  HOSTWAYDE1:
+    asn: 24679
+    ipv4: 195.47.229.254
+    ipv6: 2a02:790::1
+  ICCN1:
+    asn: 40387
+    ipv4: 72.36.126.1
+    ipv6: 2620:0:e10:1::1
+  IFOG1:
+    asn: 34927
+    ipv4: 193.148.249.1
+    ipv6: 2a0c:9a40:1030::1
+  INFOWEST1:
+    asn: 11071
+    ipv4: 209.33.215.64
+    ipv6: 2604:2c00::ff:2
+  INTERHOST1:
+    asn: 61102
+    ipv4: 185.37.148.232
+  IPMAX2:
+    asn: 25091
+    ipv4: 46.20.255.6
+    ipv6: 2A02:2528:201:3::1
+  ISC1280PAO1:
+    asn: 1280
+    ipv4: 149.20.65.193
+    ipv6: 2001:4f8:1b::193
+  IWAY1:
+    asn: 8758
+    ipv4: 212.25.27.56
+    ipv6: 2001:8e0:ffff::56
+  KANREN1:
+    asn: 2495
+    ipv4: 164.113.193.221
+    ipv6: 2001:49d0:2000:1036::1
+  KAPSI1:
+    asn: 57692
+    ipv4: 91.232.154.62
+    ipv6: 2001:67c:1be8::62
+  MILKYWAN1:
+    asn: 2027
+    ipv4: 80.67.167.1
+    ipv6: 2a0b:cbc0:2::1
+  MNETWORKS1:
+    asn: 198611
+    ipv4: 178.73.7.190
+    ipv6: 2a02:a308:1:3::2
+  MNETWORKS2:
+    asn: 198611
+    ipv4: 178.73.7.58
+    ipv6: 2a02:a308:1:2::2
+  MSU1:
+    asn: 2848
+    ipv4: 93.180.0.143
+    ipv6: 2a00:f480::14
+  NEPTUNE1:
+    asn: 21700
+    ipv4: 23.157.160.4
+    ipv6: 2602:fe2e::4
+  NETSIGN1:
+    asn: 31078
+    ipv4: 217.115.0.27
+    ipv6: 2a00:1328:e00e::27
+  NONATTACHED1:
+    asn: 57821
+    ipv4: 193.160.39.1
+    ipv6: 2001:67c:26f4::1
+  NORLYS01:
+    asn: 39642
+    ipv4: 212.10.212.249
+    ipv6: 2a03:7400:2202:2::1
+  NYNEX1:
+    asn: 62023
+    ipv4: 109.236.144.125
+    ipv6: 2a00:e60:1100::1:1
+  OBENETWORK1:
+    asn: 3399
+    ipv4: 195.128.255.251
+    ipv6: 2a07:5cc0::500:701:2002
+  ODERLAND01:
+    asn: 44136
+    ipv4: 193.180.19.2
+    ipv6: 2a02:28f0:101:1::1001
+  PBWCOMM01:
+    asn: 16409
+    ipv4: 38.103.8.1
+    ipv6: 2001:550:102::1
+  QUADRANET3:
+    asn: 8100
+    ipv4: 96.44.143.30
+    ipv6: 2607:fcd0:da80::11
+  QUADRANET4:
+    asn: 8100
+    ipv4: 173.44.32.245
+    ipv6: 2607:ff48:aa81:400::1
+  SBTAP1:
+    asn: 59715
+    ipv4: 185.5.200.255
+    ipv6: 2A02:CDC5:9715:0:185:5:200:255
+  SIDN1:
+    asn: 1140
+    ipv4: 193.176.144.93
+    ipv6: 2a00:d78::193:176:144:93
+  TETANEUTRAL1:
+    asn: 197422
+    ipv4: 91.224.149.152
+    ipv6: 2a03:7220:8081:9800::1
+  TFSKOK1:
+    asn: 49420
+    ipv4: 46.28.243.194
+    ipv6: 2a02:2978:c:c::12
+  VMHAUS1:
+    asn: 136620
+    ipv4: 185.214.69.1
+    ipv6: 2a06:82c2::1
+  VOCUS1:
+    asn: 4826
+    ipv4: 114.31.199.17
+    ipv6: 2402:7800:100::17
+  VOCUS2:
+    asn: 4826
+    ipv4: 114.31.199.18
+    ipv6: 2402:7800:100::18
+  XINDI1:
+    asn: 48112
+    ipv4: 185.173.16.135
+    ipv6: 2a0b:2f00:0:234::135
+  LIBERTYGLOBAL1:
+    asn: 6830
+    ipv4: 72.14.216.241
+    ipv6: 2001:730:2200::5474:8026
+  LONAP1:
+    asn: 8330
+    ipv4: 5.57.95.90
+    ipv6: 2a00:eb20::90
+  LONAP2:
+    asn: 8330
+    ipv4: 5.57.95.91
+    ipv6: 2a00:eb20::91
+  KIT1:
+    asn: 34878
+    ipv4: 129.13.96.0
+    ipv6: 2a00:1398:0:179::1
+  NTT1:
+    asn: 2914
+    ipv4: 129.250.1.96
+    ipv6: 2001:728:0:1000::f00f
+  FREIFUNKFFM1:
+    asn: 64475
+    ipv4: 185.206.209.0
+    ipv6: 2a0f:3786:10:1::1
+  UNILOGIC1:
+    asn: 28788
+    ipv4: 62.133.192.15
+    ipv6: 2001:4128:6135:210:250:56ff:feb6:3e
+  NESSUS1:
+    asn: 47692
+    ipv4: 77.244.255.5
+    ipv6: 2a02:1b8::5
+  SERNET1:
+    asn: 41955
+    ipv4: 185.199.216.3
+    ipv6: 2a0a:a3c0::2:1
+  SAMIP1:
+    asn: 213021
+    ipv6: 2001:67c:1104::1
+  IPB1:
+    asn: 20647
+    ipv4: 91.102.8.233
+    ipv6: 2a02:f28::233
+  PCCW1:
+    asn: 3491
+    ipv4: 63.218.242.9
+    ipv6: 2400:8800:3e06::9
+  PCCW2:
+    asn: 3491
+    ipv4: 63.218.218.10
+    ipv6: 2400:8800:5e08::10
+  PCCW3:
+    asn: 3491
+    ipv4: 63.218.72.11
+    ipv6: 2400:8800:7e02::11
+  PCCW4:
+    asn: 3491
+    ipv4: 63.218.164.14
+    ipv6: 2400:8800:1e02::14
+  EBOX1:
+    asn: 1403
+    ipv4: 198.58.198.252
+    ipv6: 2606:6d00:eb0::252
+  NETACTUATE1:
+    asn: 36236
+    ipv4: 208.111.38.185
+    ipv6: 2607:f740:0:7::f79
+  XTOM1:
+    asn: 3214
+    ipv4: 185.255.55.19
+    ipv6: 2a0c:59c0::19
+  POPNIX1:
+    asn: 135063
+    ipv4: 103.208.24.2
+    ipv6: 2404:3a80:42::1
+  OVERTHEWIRE1:
+    asn: 9268
+    ipv4: 203.62.187.191
+    ipv6: 2402:c00::191
+  ATOM861:
+    asn: 8455
+    ipv4: 95.142.96.25
+    ipv6: 2a00:1188::10
+  ATOM862:
+    asn: 8455
+    ipv4: 95.142.96.26
+    ipv6: 2a00:1188::11
+  BUSINESSCONNECT1:
+    asn: 15693
+    ipv4: 195.191.121.248
+    ipv6: 2a01:8800:0:1::1
+  OPENBSD1:
+    asn: 22512
+    ipv4: 204.209.252.3
+    ipv6: 2620:3d:c000:1230::34
+  TIMICO1:
+    asn: 8607
+    ipv4: 62.121.19.29
+    ipv6: 2001:40a0:0:1::b
+  ATT1:
+    asn: 7018
+    ipv4: 12.0.1.63
+    ipv6: 2001:1890:111d:1::63
+  YOURORG1:
+    asn: 19255
+    ipv4: 163.237.247.99
+  METAPEER1:
+    asn: 13331
+    ipv4: 163.237.247.112
+  FORK1:
+    asn: 25682
+    ipv4: 23.147.64.67
+    ipv6: 2620:39:6000:100::3
+  ERICNET1:
+    asn: 206628
+    ipv4: 134.195.121.1
+    ipv6: 2001:678:d3c::0
+  ERICNET2:
+    asn: 206628
+    ipv6: 2a0c:9a40:1::303
+  MICHELLENET1:
+    asn: 208751
+    ipv4: 78.141.208.19
+    ipv6: 2001:19f0:5001:308a:5400:2ff:fe96:d24b
+  SKYLONHOST1:
+    asn: 202297
+    ipv4: 109.248.43.5
+    ipv6: 2001:678:aa4::5
+  WD61:
+    asn: 20495
+    ipv4: 92.48.224.28
+    ipv6: 2001:15c8:1::28
+  TECHFUTURES1:
+    asn: 394256
+    ipv4: 192.30.89.240
+    ipv6: 2606:9580::1
+  KALPAK1:
+    asn: 213326
+    ipv6: 2a0f:9400:8017::1
+  WHITEHAT:
+    asn: 51999
+    ipv4: 81.19.214.4
+    ipv6: 2a01:4020:1:4d::2
+  NATESALES1:
+    asn: 34553
+    ipv4: 23.170.176.6
+    ipv6: 2602:809:3008::6
+  OPENFACTORY_R3COREIXN:
+    asn: 58299
+    ipv4: 5.226.149.0
+    ipv6: 2a00:6340:0:154::1
+  FREETRANSIT_WIN:
+    asn: 41051
+    ipv4: 82.197.169.75
+    ipv6: 2001:67c:2648:82::75
+  SECUREBIT_ZUR01:
+    asn: 58057
+    ipv4: 94.177.122.251
+    ipv6: 2a09:4c0:0:8b1c::63fb
+  SECUREBIT_ZUR02:
+    asn: 58057
+    ipv4: 94.177.122.252
+    ipv6: 2a09:4c0:0:8b1c::63fc
+  IPFAIL_SJC:
+    asn: 62538
+    ipv4: 216.218.217.61
+    ipv6: 2001:470:1:fc::2
+  IPFAIL_BUR:
+    asn: 62538
+    ipv4: 38.32.69.50
+    ipv6: 2001:550:2:9::245:2
+  AMIRGT_FSN:
+    asn: 207740
+    ipv4: 136.243.0.23
+    ipv6: 2a01:4f8:211:1990::10
+  MIDNET_SPRNTX01:
+    asn: 16970
+    ipv4: 64.40.23.22
+    ipv6: 2602:800:1000:100::16
+  BAKKERIT01:
+    asn: 44103
+    ipv4: 45.93.119.2
+    ipv6: 2a0d:8d04:3000:100::1
+  MYTHICBEASTS01:
+    asn: 44684
+    ipv4: 176.126.240.44
+    ipv6: 2a00:1098:84::a:1
+  APERNET_HKG:
+    asn: 38008
+    ipv4: 103.152.35.254
+    ipv6: 2406:4440::1
+  NATOLAB_SEA:
+    asn: 46997
+    ipv4: 202.5.31.219
+    ipv6: 2602:feda:4::1
+  VMCITY_RU:
+    asn: 51093
+    ipv4: 212.48.225.134
+    ipv6: 2a06:300:10::133
+  EVINY:
+    asn: 30950
+    ipv4: 193.28.236.32
+    ipv6: 2001:67c:324::32
+  MASSAR:
+    asn: 57777
+    ipv4: 185.173.128.2
+    ipv6: 2a10:fc42::2
+  TING:
+    asn: 32133
+    ipv4: 64.98.10.8
+    ipv6: 2606:8e80:64::8
+  ACCURIS1:
+    asn: 212934
+    ipv4: 172.99.232.1
+    ipv6: 2602:fcd3:10::1
+  NULLROUTE1:
+    asn: 211722
+    ipv4: 192.26.105.217
+    ipv6: 2001:67c:2970:ff00::1
+  GOCODEIT1:
+    asn: 62513
+    ipv4: 23.159.16.22
+    ipv6: 2602:fd50:0:bad::1
+  SERVEU:
+    asn: 13058
+    ipv4: 192.108.73.66
+    ipv6: 2a0c:7286:2736::66
+  LEVEL66NETWORK1:
+    asn: 56381
+    ipv4: 141.98.136.0
+    ipv6: '2a09:11c0:1000::'
+  AUGUST:
+    asn: 50058
+    ipv4: 165.140.142.121
+    ipv6: '2602:fc23:18::7'
+  FIEBIG:
+    asn: 59645
+    ipv4: 195.191.197.21
+    ipv6: '2a06:d1c0:dead:1::21'
+  SERVERION1:
+    asn: 213035
+    ipv4: 185.28.37.200
+    ipv6: '2a10:1440:0:a::'
+  SERVERION2:
+    asn: 213035
+    ipv4: 185.28.37.201
+    ipv6: '2a10:1440:0:a::1'
+    
+readonly_peers:
+  SERNET2:
+    asn: 41955
+    ipv4: 185.199.217.227
+    ipv6: 2a0a:a3c0:0:d2ca::217:227
+  BGPDOTTOOLS:
+    asn: 212232
+    ipv4: 185.230.223.92
+    ipv6: 2a0c:2f07:9459:592::2
+  XINDI_RC0:
+    asn: 57984
+    ipv4: 185.173.16.146
+    ipv6: 2a0b:2f00:0:234::146

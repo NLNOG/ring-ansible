@@ -100,6 +100,7 @@
   become_user: root
   roles:
     - { role: ansible, tags: ansible, mitogen: no }
+    - { role: openbgpd, tags: openbgpd }
 #    - { role: letsencrypt, tags: letsencrypt }
 #    - { role: apache2, tags: apache2 }
 #    - { role: bird, tags: bird }
