@@ -26,7 +26,7 @@
     state: present
   with_items:
     - git
-    - python-requests
+    - python3-requests
   when: ansible_distribution_release == "jammy"
 
 - name: "Ensure Ansible is installed"
