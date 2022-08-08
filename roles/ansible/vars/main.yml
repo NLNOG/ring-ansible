@@ -1,6 +1,7 @@
 ---
 ansible_pin_version:
   bionic: 2.5.1+dfsg-1ubuntu0.1
+  jammy: '2.10.7+merged+base+2.10.8+dfsg-1'
 ansible_pip_version: 2.1.1.0
 ansible_venv_dir: /usr/share/ansible-venv
 mitogen_update: no

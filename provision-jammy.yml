@@ -1,0 +1,124 @@
+- hosts: all
+  gather_facts: false
+  become: true
+  become_user: root
+  pre_tasks:
+    - name: Run apt-get update
+      raw: sudo apt-get update -y
+    - name: Install python
+      raw: sudo apt-get install -y python3
+
+- hosts: all
+  tasks:
+    - name: Check if /etc/ansible/ring exists
+      stat:
+        path: /etc/ansible/ring
+      register: etc_ansible_ring
+    - name: Ensure an existing host is not provisioned
+      fail:
+        msg: This host is already provisioned!
+      when: etc_ansible_ring.stat.exists
+
+- hosts: all
+  tasks:
+    - name: Check IPv6 connectivity
+      tags: check_v6
+      command: ping6 -c 1 ring.nlnog.net
+      register: check_v6
+      when: hostvars[inventory_hostname]['V6'] is defined
+    - fail:
+        msg: Could not ping ring.nlnog.net (IPv6)
+      tags: check_v6
+      when: check_v6.rc != 0 and hostvars[inventory_hostname]['V6'] is defined
+    - name: Check CPU architecture
+      fail:
+        msg: Host is not an x86_64 system
+      tags: check_cpu
+      when: ansible_architecture != "x86_64"
+    - name: Check virtualization technology
+      become: true
+      become_user: root
+      tags: check_vm
+      command: grep -q container /proc/1/environ
+      register: check_vm
+      ignore_errors: True
+    - fail:
+        msg: LXC container nodes are not supported
+      tags: check_vm
+      when: check_vm.rc == 0
+
+- hosts: ringnode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+      tags: vault_pw
+    - name: Add the vault password
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ ringnode_vault_pw }}"
+      tags: vault_pw
+    - name: Remove apparmor
+      apt: name={{ item }} state=absent
+      with_items:
+        - apparmor
+        - apparmor-utils
+
+- hosts: infranode
+  become: true
+  become_user: root
+  tasks:
+    - name: Load the vault passwords
+      include_vars: "vault/vault.yml"
+      tags: vault_pw
+    - name: Add the vault password (host-specific)
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ vars['host_vaults'][inventory_hostname] }}"
+      when: vars['host_vaults'][inventory_hostname] is defined
+      tags: vault_pw
+    - name: Add the vault password (generic)
+      copy:
+        dest: /root/.vaultpw
+        mode: 0400
+        content: "{{ infranode_vault_pw }}"
+      when: vars['host_vaults'][inventory_hostname] is not defined
+      tags: vault_pw
+
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: Temporarily configure resolv.conf with public resolver (IPV6)
+      copy:
+        dest: /etc/resolv.conf
+        mode: 0644
+        content: "nameserver 2620:fe::fe"
+      when: hostvars[inventory_hostname]['V6'] is defined
+    - name: Temporarily configure resolv.conf with public resolver (IPv4)
+      copy:
+        dest: /etc/resolv.conf
+        mode: 0644
+        content: "nameserver 9.9.9.9"
+      when: hostvars[inventory_hostname]['V6'] is not defined
+
+- hosts: all
+  become: true
+  become_user: root
+  roles:
+    - { role: etcfiles, tags: etcfiles }
+    - { role: apt, tags: apt }
+    - { role: resolving, tags: resolving }
+    - { role: ansible, tags: ansible }
+    - { role: users, class: ring-admins, tags: ring-admins }
+  tasks:
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+    - name: Flush ansible handlers
+      meta: flush_handlers
+    - name: Reboot
+      command: /sbin/reboot

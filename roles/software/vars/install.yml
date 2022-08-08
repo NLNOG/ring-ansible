@@ -110,4 +110,5 @@ software:
     - dnsviz
     - php7.2-cli
     - dnsdiag
-
+  jammy:
+    - python3

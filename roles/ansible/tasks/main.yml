@@ -11,13 +11,23 @@
     update_cache: yes
   when: ansible_pin.changed
 
-- name: "Ensure Ansible prerequisites are installed"
+- name: "Ensure Ansible prerequisites are installed (bionic)"
   apt:
     name: "{{ item }}"
     state: present
   with_items:
     - git
     - python-requests
+  when: ansible_distribution_release == "bionic"
+
+- name: "Ensure Ansible prerequisites are installed (Jammy)"
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - python-requests
+  when: ansible_distribution_release == "jammy"
 
 - name: "Ensure Ansible is installed"
   apt:
@@ -55,6 +65,9 @@
   stat:
     path: /opt/mitogen/ansible_mitogen/plugins/strategy/mitogen.py
   register: mitogen_plugin
+
+- name: "Create /etc/ansible"
+  file: path=/etc/ansible state=directory
 
 - name: "Update ansible.cfg (mitogen)"
   copy:
