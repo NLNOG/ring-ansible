@@ -5409,3 +5409,11 @@ USERS:
     groups:
       - ring-users
 
+  iphh:
+    state: present
+    company: 'IPHH Internet Port Hamburg GmbH'
+    email: 'noc@iphh.net'
+    uid: 5695
+    groups:
+      - ring-users
+
