@@ -5401,3 +5401,11 @@ USERS:
     groups:
       - ring-users
 
+  telerys:
+    state: present
+    company: 'Telerys Communication'
+    email: 'noc@telerys.com'
+    uid: 5694
+    groups:
+      - ring-users
+
