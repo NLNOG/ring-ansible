@@ -542,6 +542,10 @@ lg_peers:
     asn: 213035
     ipv4: 185.28.37.201
     ipv6: '2a10:1440:0:a::1'
+  NEXTHOP1:
+    asn: 49788
+    ipv4: 91.218.184.60
+    ipv6: 2a02:d140:1::60
     
 readonly_peers:
   SERNET2:
