@@ -5417,3 +5417,11 @@ USERS:
     groups:
       - ring-users
 
+  andrewnet:
+    state: present
+    company: 'andrewnet'
+    email: 'noc@as1003.net'
+    uid: 5696
+    groups:
+      - ring-users
+

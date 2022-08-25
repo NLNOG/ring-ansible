@@ -2541,3 +2541,5 @@ telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 
 [iphh]
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
+
+[andrewnet]
