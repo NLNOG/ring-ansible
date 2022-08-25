@@ -5146,7 +5146,7 @@ USERS:
       - ring-users
 
   canadainc:
-    state: present
+    state: absent
     company: '12128489 Canada Inc'
     email: 'noc@as212934.net'
     uid: 5662
