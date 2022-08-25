@@ -5425,3 +5425,11 @@ USERS:
     groups:
       - ring-users
 
+  accuris:
+    state: present
+    company: 'Accuris Technologies Ltd.'
+    email: 'noc@accuristechnologies.ca'
+    uid: 5697
+    groups:
+      - ring-users
+
