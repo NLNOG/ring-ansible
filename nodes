@@ -62,7 +62,6 @@ amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
-amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::17
 amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
 amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
@@ -147,7 +146,6 @@ msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
-world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa:50c8
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5
 rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
@@ -816,7 +814,6 @@ amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
 amazon15.ring.nlnog.net OWNER=amazon V4=52.15.184.123 V6=2600:1f16:cfd:6400::15
 amazon11.ring.nlnog.net OWNER=amazon V4=52.79.39.89 V6=2406:da12:fc3:5300::11
 amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
-amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::17
 amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
 amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
@@ -1135,7 +1132,6 @@ vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 
 [world4you]
-world4you01.ring.nlnog.net OWNER=world4you V4=185.164.6.6 V6=2a00:1a68:3:1::35fa:50c8
 
 [4ddc]
 4ddc01.ring.nlnog.net OWNER=4ddc V4=46.245.255.5 V6=2a00:1c18:0:101::5

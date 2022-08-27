@@ -1472,7 +1472,7 @@ USERS:
       - ring-users
 
   world4you:
-    state: present
+    state: absent
     company: 'World4You Internet Services GmbH'
     email: 'noc@world4you.com'
     uid: 5203
