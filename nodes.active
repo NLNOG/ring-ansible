@@ -2547,3 +2547,5 @@ aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::
 
 [devstorage]
 devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
+
+[fibo]

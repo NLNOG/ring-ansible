@@ -5449,3 +5449,11 @@ USERS:
     groups:
       - ring-users
 
+  fibo:
+    state: present
+    company: 'Fiber Operator B.V.'
+    email: 'netwerk@tnoc.nl'
+    uid: 5700
+    groups:
+      - ring-users
+
