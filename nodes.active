@@ -2539,3 +2539,5 @@ andrewnet01.ring.nlnog.net OWNER=andrewnet V6=2602:fc26:12:2::3
 
 [accuris]
 accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
+
+[aussiebb]

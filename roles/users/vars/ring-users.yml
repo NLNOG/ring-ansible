@@ -5433,3 +5433,11 @@ USERS:
     groups:
       - ring-users
 
+  aussiebb:
+    state: present
+    company: 'Aussie Broadband'
+    email: 'noc@aussiebb.com.au'
+    uid: 5698
+    groups:
+      - ring-users
+
