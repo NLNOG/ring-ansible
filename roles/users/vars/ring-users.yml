@@ -5441,3 +5441,11 @@ USERS:
     groups:
       - ring-users
 
+  devstorage:
+    state: present
+    company: 'DevStorage IT-Services UG & Co. KG'
+    email: 'noc@devstorage.eu'
+    uid: 5699
+    groups:
+      - ring-users
+
