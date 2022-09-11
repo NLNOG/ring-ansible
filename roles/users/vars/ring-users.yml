@@ -5443,7 +5443,7 @@ USERS:
 
   devstorage:
     state: present
-    company: 'DevStorage IT-Services UG & Co. KG'
+    company: 'DevStorage IT-Services UG (haftungsbechraenkt) & Co. KG'
     email: 'noc@devstorage.eu'
     uid: 5699
     groups:
