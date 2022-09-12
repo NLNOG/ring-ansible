@@ -25,6 +25,7 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=46.250.186.30 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 nebula01.ring.nlnog.net OWNER=nebula V4=188.117.58.137 V6=2001:1bc8:200:f::2
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
@@ -118,6 +119,7 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
+nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
@@ -584,6 +586,7 @@ pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
 kapsi01.ring.nlnog.net OWNER=kapsi V4=91.232.156.99 V6=2001:67c:1be8:1::999
 uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
+august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
@@ -695,6 +698,7 @@ rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 [inotel]
 
 [blix]
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 
 [portlane]
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
@@ -992,6 +996,7 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [qbranch]
 
 [nlnetlabs]
+nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -2518,6 +2523,7 @@ kapsi01.ring.nlnog.net OWNER=kapsi V4=91.232.156.99 V6=2001:67c:1be8:1::999
 uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
 
 [august]
+august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 
 [silica]
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
