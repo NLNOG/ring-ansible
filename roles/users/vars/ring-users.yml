@@ -338,7 +338,7 @@ USERS:
   rootlu:
     state: present
     company: 'ROOT S.A.'
-    email: 'noc@as5577.net'
+    email: 'support@root.lu'
     uid: 5050
     groups:
       - ring-users
