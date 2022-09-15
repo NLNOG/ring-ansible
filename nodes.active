@@ -597,6 +597,7 @@ iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V6=2602:fc26:12:2::3
 accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
 aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::1
+devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 
 [infranode]
@@ -2554,6 +2555,7 @@ accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
 aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::1
 
 [devstorage]
+devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 
 [fibo]
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
