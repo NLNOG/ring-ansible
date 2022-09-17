@@ -602,6 +602,8 @@ aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::
 aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::1
 devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
+enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
+xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 
 [infranode]
 
@@ -2567,5 +2569,7 @@ devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 
 [enix]
+enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 
 [xxlnet]
+xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
