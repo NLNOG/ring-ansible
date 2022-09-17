@@ -5457,3 +5457,19 @@ USERS:
     groups:
       - ring-users
 
+  enix:
+    state: present
+    company: 'Enix'
+    email: 'noc@as48813.net'
+    uid: 5701
+    groups:
+      - ring-users
+
+  xxlnet:
+    state: present
+    company: 'XXLnet B.V.'
+    email: 'operator@forefreedom.nl'
+    uid: 5702
+    groups:
+      - ring-users
+
