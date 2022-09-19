@@ -67,7 +67,7 @@
   roles:
     - { role: container, tags: container }
 
-- hosts: public03.infra.ring.nlnog.net:compute02.infra.ring.nlnog.net
+- hosts: public03.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
@@ -78,12 +78,6 @@
   become_user: root
   roles:
     - { role: munin-master, tags: munin-master }
-
-- hosts: compute02.infra.ring.nlnog.net
-  become: true
-  become_user: root
-  roles:
-    - { role: kafka, tags: kafka }
 
 - hosts: lg01.infra.ring.nlnog.net
   become: true
