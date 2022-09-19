@@ -1,6 +1,21 @@
 - name: "Load peer list"
   include_vars: peers.yml
 
+- name: "Install StayRTR"
+  apt: name=stayrtr state=latest
+
+- name: "Install /etc/default/stayrtr"
+  copy:
+    content: 'STAYRTR_ARGS=-bind 127.0.0.1:323 -cache /var/lib/rpki-client/json'
+    dest: /etc/default/stayrtr
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart stayrtr
+
+- name: "Start StayRTR"
+  service: name=stayrtr state=started
+
 - name: "Install OpenBGPD"
   apt: name=openbgpd state=latest
 

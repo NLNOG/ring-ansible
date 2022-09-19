@@ -1,2 +1,5 @@
 - name: reload openbgpd
   service: name=openbgpd state=reloaded enabled=yes
+
+- name: reload stayrtr
+  service: name=stayrtr state=reloaded enabled=yes
