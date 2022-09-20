@@ -546,6 +546,14 @@ lg_peers:
     asn: 49788
     ipv4: 91.218.184.60
     ipv6: 2a02:d140:1::60
+  DEVSTORAGE1:
+    asn: 210633
+    ipv4: 194.50.19.41
+    ipv6: '2a0f:5707:b130:3::1'
+  ANDREWNET1:
+    asn: 1003
+    ipv4: 192.189.65.162
+    ipv6: '2602:fc26:12::1'
     
 readonly_peers:
   SERNET2:
