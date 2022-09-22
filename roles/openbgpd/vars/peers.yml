@@ -26,8 +26,8 @@ lg_peers:
     ipv6: '2a0e:f42:ffff::'
   ALARIG2:
     asn: 208627
-    ipv4: 45.91.126.249
-    ipv6: 2a0e:f42:ffff::2
+    ipv4: 45.91.126.255
+    ipv6: 2a0e:f42:ffff::8
   ALTIBOX1:
     asn: 29695
     ipv4: 79.160.115.253
