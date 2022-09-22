@@ -554,6 +554,10 @@ lg_peers:
     asn: 1003
     ipv4: 192.189.65.162
     ipv6: '2602:fc26:12::1'
+  MASTERDC1:
+    asn: 24971
+    ipv4: 81.31.40.9
+    ipv6: '2a01:430:0:ff::9'
     
 readonly_peers:
   SERNET2:
