@@ -2320,7 +2320,7 @@ USERS:
       - ring-users
 
   fidonet:
-    state: present
+    state: absent
     company: 'FidoNet'
     email: 'ops@fido.net'
     uid: 5311
