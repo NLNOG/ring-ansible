@@ -560,7 +560,6 @@ fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2:
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
 kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
-kerfuffle01.ring.nlnog.net OWNER=kerfuffle V4=194.246.109.26 V6=2001:67c:760:130::26
 equinixemea01.ring.nlnog.net OWNER=equinixemea V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
 steffann01.ring.nlnog.net OWNER=steffann V4=185.54.92.71 V6=2a00:8642:1000:f000::71
 eviny01.ring.nlnog.net OWNER=eviny V4=85.200.239.110 V6=2a00:14d8:1001:713::2
@@ -2454,7 +2453,6 @@ kis01.ring.nlnog.net OWNER=kis V4=213.197.240.52 V6=2001:9a0:2000:a::1:1
 eolas01.ring.nlnog.net OWNER=eolas V4=178.237.105.39 V6=2a00:4280:f00:100:178:237:105:39
 
 [kerfuffle]
-kerfuffle01.ring.nlnog.net OWNER=kerfuffle V4=194.246.109.26 V6=2001:67c:760:130::26
 
 [equinixemea]
 equinixemea01.ring.nlnog.net OWNER=equinixemea V4=87.108.57.169 V6=2001:a68:1:d:87:108:57:169
