@@ -145,7 +145,7 @@ USERS:
 
   surfnet:
     state: present
-    company: 'SURFNet'
+    company: 'SURF'
     email: 'surf-ring@prolocation.eu'
     uid: 5022
     groups:
