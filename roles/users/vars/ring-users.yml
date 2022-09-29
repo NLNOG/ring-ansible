@@ -3627,7 +3627,7 @@ USERS:
   ahdde:
     state: present
     company: 'ahd GmbH & Co. KG'
-    email: 'cloud-ncc@ahd.de'
+    email: 'CloudOperations-West@proact.de'
     uid: 5474
     groups:
       - ring-users
