@@ -5473,3 +5473,11 @@ USERS:
     groups:
       - ring-users
 
+  tispa:
+    state: present
+    company: 'TISPA'
+    email: 'tech@tix.or.tz'
+    uid: 5703
+    groups:
+      - ring-users
+
