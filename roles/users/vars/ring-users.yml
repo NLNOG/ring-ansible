@@ -5178,7 +5178,7 @@ USERS:
       - ring-users
 
   kerfuffle:
-    state: present
+    state: absent
     company: 'Kerfuffle'
     email: 'noc@kerfuffle.net'
     uid: 5666
