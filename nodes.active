@@ -114,7 +114,6 @@ rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
-belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
@@ -478,6 +477,7 @@ synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=37.152.182.132
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
+npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
 timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
@@ -970,7 +970,6 @@ nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 
 [belwue]
-belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 
 [sidnrd]
 
@@ -2204,6 +2203,7 @@ bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 [fibia]
 
 [npo]
+npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 
 [ficolo]
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
