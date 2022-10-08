@@ -2664,7 +2664,7 @@ USERS:
       - ring-users
 
   euronet:
-    state: present
+    state: absent
     company: 'Euronet Communications BV'
     email: 'dl-network.operations@euronet.com'
     uid: 5355
@@ -3665,7 +3665,7 @@ USERS:
       - ring-users
 
   vmhaus:
-    state: present
+    state: absent
     company: 'VMHaus Enterprises'
     email: 'jack@vmhaus.com'
     uid: 5479
