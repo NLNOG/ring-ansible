@@ -84,6 +84,7 @@ software:
     - swaks
     - ruby-json
     - libldns-dev
+    - cmake
   bionic:
     - git
     - jsonlint

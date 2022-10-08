@@ -44,6 +44,15 @@
   apt: name=ruby-rbnacl state=latest
   when: ansible_distribution_release == "jammy"
 
+- name: "Install python3 modules for ring-mtr"
+  pip:
+    name: "{{ item }}"
+    state: present
+    executable: pip3
+  with_items:
+    - dnspython==2.2.1
+    - parallel-ssh
+
 - name: "Install ring userscripts"
   copy:
     src={{ item }}
@@ -58,6 +67,7 @@
     - ring-curl
     - ring-http
     - ring-ping
+    - ring-mtr
     - ring-trace
     - ring-uping
 
