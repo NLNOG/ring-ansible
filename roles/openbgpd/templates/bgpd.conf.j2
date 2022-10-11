@@ -1,5 +1,7 @@
 AS 199036
 
+socket "/var/run/bgpd.rsock.0" restricted
+
 fib-update no
 reject as-set yes
 
@@ -7,6 +9,8 @@ rtr 127.0.0.1
 
 group "peers" {
     multihop 255
+    export none
+    announce add-path recv yes
 
 {% for peer in lg_peers %}
 {% if lg_peers[peer].ipv4|default(None) %}
@@ -45,9 +49,10 @@ group "readonly_peers" {
 }
 
 # allow anything from regular peers, but never send them any route
-deny quick to group peers
+# the send filter is here for protection, by default peers use export none
 allow from group peers
+deny to group peers
 
 # send everything to firehose peers, accept nothing
-deny quick from group readonly_peers
+deny from group readonly_peers
 allow to group readonly_peers
