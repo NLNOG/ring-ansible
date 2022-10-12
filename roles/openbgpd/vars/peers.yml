@@ -481,7 +481,7 @@ lg_peers:
   BAKKERIT01:
     asn: 44103
     ipv4: 185.235.144.33
-    ipv6: 2a11:2:10::
+    ipv6: '2a11:2:10::'
   MYTHICBEASTS01:
     asn: 44684
     ipv4: 176.126.240.44
