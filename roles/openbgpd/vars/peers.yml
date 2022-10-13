@@ -574,7 +574,11 @@ lg_peers:
     asn: 8315
     ipv4: 185.74.76.9
     ipv6: '2a02:2858:500:5::1'
-    
+  NETSHELTERAMS1:
+    asn: 41047
+    ipv4: 87.237.165.6
+    ipv6: 2a0e:a6c0::100:66:2:2
+
 readonly_peers:
   SERNET2:
     asn: 41955
