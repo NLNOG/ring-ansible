@@ -566,6 +566,14 @@ lg_peers:
     asn: 197731
     ipv4: 185.119.29.17
     ipv6: '2a03:7900:0:5::1'
+  SENTIAAMS5:
+    asn: 8315
+    ipv4: 185.74.76.8
+    ipv6: '2a02:2858:500:4::1'
+  SENTIAAMS6:
+    asn: 8315
+    ipv4: 185.74.76.9
+    ipv6: '2a02:2858:500:5::1'
     
 readonly_peers:
   SERNET2:
