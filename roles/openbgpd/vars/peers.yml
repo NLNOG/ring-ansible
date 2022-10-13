@@ -562,6 +562,10 @@ lg_peers:
     asn: 24971
     ipv4: 81.31.40.9
     ipv6: '2a01:430:0:ff::9'
+  TUXISAMS:
+    asn: 197731
+    ipv4: 185.119.29.17
+    ipv6: '2a03:7900:0:5::1'
     
 readonly_peers:
   SERNET2:
