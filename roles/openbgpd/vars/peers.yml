@@ -148,6 +148,10 @@ lg_peers:
     asn: 29169
     ipv4: 217.70.176.70
     ipv6: 2001:4b98::70
+  GITOYEN1:
+    asn: 20766
+    ipv4: 80.67.168.5
+    ipv6: 2001:910::5
   GLOBALCONNECT1:
     asn: 31027
     ipv4: 77.243.32.3
