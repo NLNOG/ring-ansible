@@ -594,6 +594,18 @@ lg_peers:
     asn: 41047
     ipv4: 87.237.165.6
     ipv6: 2a0e:a6c0::100:66:2:2
+  MEDIALINE_FRA1:
+    asn: 205614
+    ipv4: 185.171.47.1
+    ipv6: 2a0d:1f80::1
+  MEDIALINE_FRA2:
+    asn: 205614
+    ipv4: 185.171.47.2
+    ipv6: 2a0d:1f80::2
+  MEDIALINE_FRA3:
+    asn: 205614
+    ipv4: 185.171.47.6
+    ipv6: 2a0d:1f80::6
 
 readonly_peers:
   SERNET2:
