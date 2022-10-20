@@ -5481,3 +5481,11 @@ USERS:
     groups:
       - ring-users
 
+  telemark:
+    state: present
+    company: 'Telemark'
+    email: 'it@telemark.de'
+    uid: 5704
+    groups:
+      - ring-users
+
