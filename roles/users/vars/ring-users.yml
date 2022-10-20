@@ -480,7 +480,7 @@ USERS:
       - ring-users
 
   mironet:
-    state: absent
+    state: present
     company: 'MiroNet GmbH'
     email: 'noc@mironet.ch'
     uid: 5071
