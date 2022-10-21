@@ -606,6 +606,14 @@ lg_peers:
     asn: 205614
     ipv4: 185.171.47.6
     ipv6: 2a0d:1f80::6
+  ERITAP1:
+    asn: 44854
+    ipv4: 93.114.180.0
+    ipv6: '2a10:e300:26::'
+  ERITAP2:
+    asn: 44854
+    ipv4: 93.114.180.1
+    ipv6: '2a10:e300:26::1'
 
 readonly_peers:
   SERNET2:
