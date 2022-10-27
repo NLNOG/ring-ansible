@@ -4329,7 +4329,7 @@ USERS:
       - ring-users
 
   gcore:
-    state: absent
+    state: present
     company: 'G-Core Labs S.A.'
     email: 'noc@gcore.lu'
     uid: 5562
