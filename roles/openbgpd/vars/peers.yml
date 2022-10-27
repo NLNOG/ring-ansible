@@ -622,14 +622,10 @@ lg_peers:
     asn: 44854
     ipv4: 93.114.180.1
     ipv6: '2a10:e300:26::1'
-  ROOTNL1:
+  ROOTNL:
     asn: 16350
     ipv4: 217.119.226.1
     ipv6: 2a02:1398:800:5000::1:1
-  FUSIONED1:
-    asn: 51392
-    ipv4: 185.157.208.1
-    ipv6: 2001:1548:105::1
 
 readonly_peers:
   SERNET2:
