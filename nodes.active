@@ -2577,3 +2577,5 @@ tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 
 [telemark]
 telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
+
+[titandc]

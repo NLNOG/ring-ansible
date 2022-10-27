@@ -5489,3 +5489,11 @@ USERS:
     groups:
       - ring-users
 
+  titandc:
+    state: present
+    company: 'Titan Datacenters France'
+    email: 'ripe-fr@titandc.fr'
+    uid: 5705
+    groups:
+      - ring-users
+
