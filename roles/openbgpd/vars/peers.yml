@@ -1,5 +1,9 @@
 ---
 lg_peers:
+  KVIKNET_DK01:
+    asn: 204151
+    ipv6: 2a06:4000:0:4::5
+    ipv4: 185.107.12.53
   LAYERBRIDGE01:
     asn: 3280
     ipv4: 77.83.243.7
