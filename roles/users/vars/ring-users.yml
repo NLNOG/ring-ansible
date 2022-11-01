@@ -4497,7 +4497,7 @@ USERS:
       - ring-users
 
   fibia:
-    state: absent
+    state: present
     company: 'Fibia'
     email: 'noc@fibia.dk'
     uid: 5582
