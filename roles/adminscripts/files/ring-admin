@@ -861,7 +861,7 @@ class commands(object):
         logo_filename = WEB_LOGODIR + "/" + username + ".png"
         logo_shortloc = re.sub(WEBDIR + '/','',logo_filename)
         if not os.path.isfile(logo_filename):
-            sys.exit('logo for %s missing; please add it to %s in the ring-web repository.'
+            sys.warn('logo for %s missing; please add it to %s in the ring-web repository.'
                      % (username,logo_shortloc))
         f = open(post_filename,'wb')
         f.write(postbody)
