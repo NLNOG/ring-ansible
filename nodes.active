@@ -2589,3 +2589,7 @@ telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 
 [titandc]
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
+
+[ewpratten]
+
+[ielo]

@@ -5497,3 +5497,19 @@ USERS:
     groups:
       - ring-users
 
+  ewpratten:
+    state: present
+    company: 'Evan Warren Pratten'
+    email: 'noc@ewpratten.com'
+    uid: 5706
+    groups:
+      - ring-users
+
+  ielo:
+    state: present
+    company: 'ielo'
+    email: 'tech@ielo.net'
+    uid: 5707
+    groups:
+      - ring-users
+
