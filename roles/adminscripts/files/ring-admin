@@ -1266,6 +1266,14 @@ class commands(object):
         self.dbupdate('participants', partid, **{attribute: value})
         print 'attribute %s for participant %s updated' % (attribute, partid)
 
+    def cmd_unset_participant(self, username, attribute):
+        """unset participant data"""
+        partid = self.username2pid(username)
+        if not partid:
+            sys.exit('user %s not found' % username)
+        self.dbupdate('participants', partid, **{attribute: None})
+        print 'attribute %s for participant %s unset' % (attribute, partid)
+
     def cmd_delete_participant(self, pid):
         """delete a participant"""
         result = self.dbselect('users', participant=pid)
@@ -1390,6 +1398,20 @@ class commands(object):
             city = self.cityname(value)
             self.dbupdate('machines', machid, **{'city': city})
             print 'attribute city for machine %s updated' % (hostname)
+
+    def cmd_unset_machine(self, hostname, attribute):
+        """unset machine data"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        machid = self.hostname2mid(hostname)
+        if not machid:
+            sys.exit('machine %s not found' % hostname)
+        self.dbupdate('machines', machid, **{attribute: None})
+        print 'attribute %s for machine %s unset' % (attribute, hostname)
+        if (attribute == "geo"):
+            city = self.cityname(value)
+            self.dbupdate('machines', machid, **{'city': None})
+            print 'attribute city for machine %s unset' % (hostname)
 
     def cmd_activate_machine(self, hostname):
         """mark machine as active"""
