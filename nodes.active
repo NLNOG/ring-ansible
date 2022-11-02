@@ -581,6 +581,7 @@ nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
+ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25::246
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
 pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
@@ -607,6 +608,7 @@ xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
+ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
 
 [infranode]
 
@@ -2515,6 +2517,7 @@ nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
+ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25::246
 
 [unchained]
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
@@ -2589,3 +2592,4 @@ titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:80
 [ewpratten]
 
 [ielo]
+ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
