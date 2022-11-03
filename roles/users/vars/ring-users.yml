@@ -5266,7 +5266,7 @@ USERS:
       - ring-users
 
   samip:
-    state: present
+    state: absent
     company: 'SamipSolutions'
     email: 'sm+ring-noc@samipsolutions.fi'
     uid: 5677

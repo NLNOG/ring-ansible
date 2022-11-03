@@ -572,7 +572,6 @@ estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:20
 powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
 lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
-samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:ac::10
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
@@ -581,6 +580,7 @@ nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
+ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
 pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
@@ -2496,7 +2496,6 @@ itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::256
 lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
-samip01.ring.nlnog.net OWNER=samip V6=2001:67c:1104:ac::10
 
 [kamel]
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
@@ -2517,6 +2516,7 @@ nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
+ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
 
 [unchained]
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
