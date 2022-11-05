@@ -46,8 +46,8 @@ lg_peers:
     ipv6: 2406:4440::1
   APGP01:
     asn: 54316
-    ipv4: 23.175.208.1
-    ipv6: 2602:fcad:1::1
+    ipv4: 23.175.208.254
+    ipv6: 2602:fcad:1:ffff::ffff
   AQUILENET1:
     asn: 198985
     ipv4: 185.233.100.246
