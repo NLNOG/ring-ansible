@@ -436,10 +436,10 @@ lg_peers:
     asn: 36236
     ipv4: 208.111.38.185
     ipv6: 2607:f740:0:7::f79
-  NETSHELTERAMS1:
+  NETSHELTERDUS1:
     asn: 41047
-    ipv4: 87.237.165.6
-    ipv6: 2a0e:a6c0::100:66:2:2
+    ipv4: 87.237.165.4
+    ipv6: 2a0e:a6c0::100:66:1:2
   NETSIGN1:
     asn: 31078
     ipv4: 217.115.0.27
