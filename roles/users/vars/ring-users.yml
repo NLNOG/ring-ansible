@@ -3761,7 +3761,7 @@ USERS:
       - ring-users
 
   centralnic:
-    state: present
+    state: absent
     company: 'CentralNic Group PLC'
     email: 'ops@centralnic.com'
     uid: 5491
