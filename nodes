@@ -617,6 +617,7 @@ telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
 ewpratten01.ring.nlnog.net OWNER=ewpratten V6=2602:faf5:0:1:3681:e1ff:fe97:1b4b
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
+zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::11
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2625,3 +2626,6 @@ ewpratten01.ring.nlnog.net OWNER=ewpratten V6=2602:faf5:0:1:3681:e1ff:fe97:1b4b
 
 [ielo]
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
+
+[zencurity]
+zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::11

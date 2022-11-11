@@ -5513,3 +5513,11 @@ USERS:
     groups:
       - ring-users
 
+  zencurity:
+    state: present
+    company: 'Zencurity Aps'
+    email: 'noc@zencurity.com'
+    uid: 5708
+    groups:
+      - ring-users
+

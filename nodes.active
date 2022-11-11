@@ -2593,3 +2593,5 @@ ewpratten01.ring.nlnog.net OWNER=ewpratten V6=2602:faf5:0:1:3681:e1ff:fe97:1b4b
 
 [ielo]
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
+
+[zencurity]
