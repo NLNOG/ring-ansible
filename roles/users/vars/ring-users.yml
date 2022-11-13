@@ -5521,3 +5521,11 @@ USERS:
     groups:
       - ring-users
 
+  onas:
+    state: present
+    company: 'Open Networks Association'
+    email: 'noc@0xnet.org'
+    uid: 5709
+    groups:
+      - ring-users
+
