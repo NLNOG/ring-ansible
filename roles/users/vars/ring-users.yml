@@ -5529,3 +5529,11 @@ USERS:
     groups:
       - ring-users
 
+  systemde:
+    state: present
+    company: 'system.de - System &amp; Project GmbH'
+    email: 'noc@system.de'
+    uid: 5710
+    groups:
+      - ring-users
+
