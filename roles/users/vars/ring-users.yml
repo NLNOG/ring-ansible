@@ -5537,3 +5537,11 @@ USERS:
     groups:
       - ring-users
 
+  linkor:
+    state: present
+    company: 'Link Oregon'
+    email: 'noc@linkoregon.org'
+    uid: 5711
+    groups:
+      - ring-users
+
