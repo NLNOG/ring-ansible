@@ -34,7 +34,6 @@ lg_peers:
     ipv6: 2a01:798:0:1::262
   AMIRGT_FSN:
     asn: 207740
-    ipv4: 136.243.0.23
     ipv6: 2a01:4f8:211:1990::10
   ANDREWNET1:
     asn: 1003
