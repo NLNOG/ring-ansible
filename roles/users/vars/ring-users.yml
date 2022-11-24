@@ -5545,3 +5545,11 @@ USERS:
     groups:
       - ring-users
 
+  upx:
+    state: present
+    company: 'UPX TECHNOLOGIES'
+    email: 'noc@upx.com.br'
+    uid: 5712
+    groups:
+      - ring-users
+
