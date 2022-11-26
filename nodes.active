@@ -247,7 +247,6 @@ tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
-pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:0302:0007:0000:0000:0000:0002
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
@@ -598,6 +597,7 @@ aussiebb02.ring.nlnog.net OWNER=aussiebb V4=119.18.35.7 V6=2403:5800:700:16::1
 aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::1
 aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::1
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
+devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
@@ -1463,7 +1463,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 [nianet]
 
 [pix]
-pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 
 [utwente]
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -2566,6 +2565,7 @@ aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
 
 [devstorage]
+devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 
 [fibo]
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
