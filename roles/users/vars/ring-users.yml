@@ -3969,7 +3969,7 @@ USERS:
       - ring-users
 
   ionswitch:
-    state: present
+    state: absent
     company: 'IonSwitch, LLC'
     email: 'noc@ionswitch.com'
     uid: 5517
@@ -4241,7 +4241,7 @@ USERS:
       - ring-users
 
   cloudbear:
-    state: present
+    state: absent
     company: 'Cloudbear'
     email: 'noc@cloudbear.nl'
     uid: 5551
