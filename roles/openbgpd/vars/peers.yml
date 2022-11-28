@@ -583,6 +583,10 @@ lg_peers:
     asn: 202297
     ipv4: 109.248.43.5
     ipv6: 2001:678:aa4::5
+  SOLUTIONS4XS:
+    asn: 209288
+    ipv4: 151.248.16.4
+    ipv6: 2a10:c080::1
   TECHFUTURES1:
     asn: 394256
     ipv4: 192.30.89.240
@@ -646,10 +650,6 @@ lg_peers:
   YOURORG1:
     asn: 19255
     ipv4: 163.237.247.99
-  SOLUTIONS4XS:
-    asn: 209288
-    ipv4: 151.248.16.4
-    ipv6: 2a10:c080::1
 
 readonly_peers:
   BGPDOTTOOLS:
