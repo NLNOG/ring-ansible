@@ -142,7 +142,7 @@ lg_peers:
   DEVSTORAGE1:
     asn: 210633
     ipv4: 194.50.19.41
-    ipv6: 2a0f:5707:b130:3::1
+    ipv6: 2a0f:5707:ab80:633::1
   DHIRAAGU01:
     asn: 7642
     ipv4: 202.1.192.176
