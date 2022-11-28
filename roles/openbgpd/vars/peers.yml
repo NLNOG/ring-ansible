@@ -437,8 +437,8 @@ lg_peers:
     ipv6: 2a02:1b8::5
   NETACTUATE1:
     asn: 36236
-    ipv4: 208.111.38.185
-    ipv6: 2607:f740:0:7::f79
+    ipv4: 104.225.4.202
+    ipv6: 2607:fc50:2000:99::1eb
   NETSHELTERDUS1:
     asn: 41047
     ipv4: 87.237.165.4
