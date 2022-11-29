@@ -428,7 +428,6 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
-nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
 hosting4real01.ring.nlnog.net OWNER=hosting4real V4=213.184.86.100 V6=2a09:3a00:3a00::1337
 overthewire01.ring.nlnog.net OWNER=overthewire V4=119.17.170.245 V6=2402:c00:0:31::4
@@ -2078,7 +2077,6 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [nero]
-nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 
 [nexril]
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000

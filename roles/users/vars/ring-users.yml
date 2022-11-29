@@ -4057,7 +4057,7 @@ USERS:
       - ring-users
 
   nero:
-    state: present
+    state: absent
     company: 'NERO Network'
     email: 'noc@nero.net'
     uid: 5528
