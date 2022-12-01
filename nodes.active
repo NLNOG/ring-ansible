@@ -325,6 +325,7 @@ memset01.ring.nlnog.net OWNER=memset V4=37.128.134.97 V6=2a02:24e0:2:ab2f:e020:8
 plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.33 V6=2620:11c:5001:1099::33
 hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
+ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
 patientsky01.ring.nlnog.net OWNER=patientsky V4=185.161.127.5 V6=2a07:c3c0:ffff:3002::5
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
@@ -424,7 +425,6 @@ marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3e
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
-nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
 hosting4real01.ring.nlnog.net OWNER=hosting4real V4=213.184.86.100 V6=2a09:3a00:3a00::1337
 overthewire01.ring.nlnog.net OWNER=overthewire V4=119.17.170.245 V6=2402:c00:0:31::4
@@ -611,6 +611,7 @@ zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::
 onas01.ring.nlnog.net OWNER=onas V4=93.190.126.18 V6=2a11:7980:1::1:0
 systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446:6
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
+upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
 
 [infranode]
 
@@ -1703,6 +1704,7 @@ hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::13
 [geotr]
 
 [ekmedia]
+ekmedia01.ring.nlnog.net OWNER=ekmedia V4=91.221.151.47 V6=2001:67c:16b4:1011::47
 
 [fundaments]
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
@@ -2048,7 +2050,6 @@ godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
 
 [nero]
-nero01.ring.nlnog.net OWNER=nero V4=207.98.65.50 V6=2605:bc80:0:2::50
 
 [nexril]
 nexril01.ring.nlnog.net OWNER=nexril V4=161.129.153.254 V6=2604:fbc0:1:2::1000
@@ -2607,3 +2608,4 @@ systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 
 [upx]
+upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
