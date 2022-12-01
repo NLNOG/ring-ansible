@@ -11,6 +11,11 @@
 - name: Disable systemd-resolved
   service: name=systemd-resolved state=stopped enabled=no
 
+- name: Remove network-manager
+  apt:
+    name: network-manager
+    state: absent
+
 - name: Install unbound
   apt:
     name: unbound
