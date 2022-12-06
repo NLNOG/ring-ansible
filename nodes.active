@@ -94,7 +94,7 @@ obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132:
 infomaniak01.ring.nlnog.net OWNER=infomaniak V4=83.166.136.173 V6=2001:1600:4:8:f816:3eff:fe6d:bc56
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
 skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
-solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
+solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.3 V6=2001:9e0:400:53::3
 claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
@@ -914,7 +914,7 @@ teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
 skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
 
 [solcon]
-solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.2 V6=2001:9e0:400:53:212:45:52:2
+solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.3 V6=2001:9e0:400:53::3
 
 [claranet]
 claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
