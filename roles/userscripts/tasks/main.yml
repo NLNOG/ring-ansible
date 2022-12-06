@@ -51,6 +51,7 @@
     executable: pip3
   with_items:
     - dnspython==2.2.1
+    - setuptools
     - parallel-ssh
 
 - name: "Install ring userscripts"

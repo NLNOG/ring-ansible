@@ -110,6 +110,7 @@ software:
     - python-simplejson
     - python-virtualenv
     - sshfp
+    - python3-dev
 
   jammy:
     - python3
