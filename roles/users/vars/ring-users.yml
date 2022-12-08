@@ -5553,3 +5553,11 @@ USERS:
     groups:
       - ring-users
 
+  rzhas:
+    state: present
+    company: 'Rechenzentrum Haßfurt GmbH'
+    email: 'noc@rzhas.de'
+    uid: 5713
+    groups:
+      - ring-users
+

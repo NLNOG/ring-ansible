@@ -2641,3 +2641,5 @@ linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 [upx]
 upx01.ring.nlnog.net OWNER=upx V6=2804:2870:1:1::246
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
+
+[rzhas]
