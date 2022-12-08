@@ -620,6 +620,7 @@ systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 upx01.ring.nlnog.net OWNER=upx V6=2804:2870:1:1::246
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
+rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2643,3 +2644,4 @@ upx01.ring.nlnog.net OWNER=upx V6=2804:2870:1:1::246
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
 
 [rzhas]
+rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
