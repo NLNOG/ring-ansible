@@ -610,6 +610,7 @@ onas01.ring.nlnog.net OWNER=onas V4=93.190.126.18 V6=2a11:7980:1::1:0
 systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446:6
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
+rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
 
 [infranode]
 
@@ -2607,3 +2608,4 @@ linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
 
 [rzhas]
+rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
