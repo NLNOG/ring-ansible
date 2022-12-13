@@ -5561,3 +5561,11 @@ USERS:
     groups:
       - ring-users
 
+  geant:
+    state: present
+    company: 'GEANT'
+    email: 'noc@geant.org'
+    uid: 5714
+    groups:
+      - ring-users
+
