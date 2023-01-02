@@ -25,13 +25,21 @@
     - /bin/ping
     - /usr/sbin/lft
 
-- name: "Allow ring-users to do wire capturing"
+- name: "allow ring-users to do wire capturing (bionic)"
   file: path={{ item }} mode=0754 owner=root group=ring-users
   with_items:
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
+  when: ansible_distribution_release == "bionic"
 
-- name: "Get network capabilities for some tools"
+- name: "allow ring-users to do wire capturing (jammy)"
+  file: path={{ item }} mode=0754 owner=root group=ring-users
+  with_items:
+    - /usr/bin/tcpdump
+    - /usr/bin/dumpcap
+  when: ansible_distribution_release == "jammy"
+
+- name: "Get network capabilities for some tools (bionic)"
   command: /sbin/getcap {{ item }}
   register: cap
   with_items:
@@ -43,6 +51,21 @@
     - /usr/bin/dumpcap
   check_mode: no
   changed_when: false
+  when: ansible_distribution_release == "bionic"
+
+- name: "Get network capabilities for some tools (jammy)"
+  command: /sbin/getcap {{ item }}
+  register: cap
+  with_items:
+    - /usr/sbin/hping3
+    - /usr/bin/nmap
+    - /usr/bin/nping
+    - /usr/bin/traceroute.db
+    - /usr/bin/tcpdump
+    - /usr/bin/dumpcap
+  check_mode: no
+  changed_when: false
+  when: ansible_distribution_release == "jammy"
 
 - name: "Set new capabilities"
   vars:
