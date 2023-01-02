@@ -45,7 +45,11 @@
         - /etc/apt/apt.conf.d/50unattended-upgrades
         - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
 
-    - name: "Perform release upgrade (bionic -> jammy)"
+    - name: "Perform release upgrade (bionic -> focal)"
+      command: do-release-upgrade -f DistUpgradeViewNonInteractive
+      when: ansible_distribution_release == "bionic"
+
+    - name: "Perform release upgrade (focal -> jammy)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release == "bionic"
   tags:
