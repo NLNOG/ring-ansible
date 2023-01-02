@@ -29,5 +29,5 @@
   lineinfile:
     destfile: /root/.ssh/authorized_keys
     regexp: 'root@storage01.infra.ring.nlnog.net'
-    line: 'from="52.18.186.201,2a01:578:3::3412:bac9",command="/root/validate-rsync-backup" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPbHCX7dsU6DlTxOCCh5+f+OxDTuuaIkrckgFX6/boqtkdeKzDIOmKfO+QNvngcJvwSQ0fcwd41ijq0xdy8LKeNP59nyOHyd7s4ZVK4whVWBGwh3D0zWvfXmhycaEwPV/9lGEyqSJ7+GNHkQmIxcZwg5BT/Y+AnWv5FDRnJNbxRm9Va7PMnq5/vSdCRc8LNZFkpiUz6w9KQPEMulBEuYVNo2PvbDWLhuZVpNKMEmE+5kRxK9/OOQ4SZnU3LKQEQsJfEtKjafeYvSDsQgq0ZOsgWVk1sXwTeaUWuCPQRzX2APxCubJLHduUC9GTanefTohcuYNYCn/98rZ+JUD0qjSp root@storage01.infra.ring.nlnog.net'
+    line: 'from="35.174.70.43,2600:1f18:415a:7301::102",command="/root/validate-rsync-backup" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDOaWLVcbWGzMgFggF8rkHGKt4kGByrE1c1bAz+kMBaVoqrgfO55e18xGzCUDhTE3bzfNBUXwMa23XDn4LfcZJfa+5Qj8BlvUJhS6b2fejv0xdgvhTda7r6pV+Mxqy0jRP1uoKaoUJ3M27bWMbEGbvrC3Up5eyacGs1LeJu/Aaa28xjT9bah4FjQXf/j45Vd3yrFjBOblEhKgsbgWvu5Ptga7UQ5HBmkZ1nhaFfwHQngjYDYu7Z5g8nWXrii/hyi/tsYAL6iH7quv82F+foZgbF9nsVglF736g5nu4TtGLZ2HpsoEoqfRKj1GW1yHZWvlvL+IZHuNc2t+WpbLLIfDWmcDd4TLAdsfuH5eNSrA0VpeuHHn/Ng+sqPAtJyd7p7SlD7c2sueqM2OjgZt2g//acWDB5qTA+hnIS0nz409OGsfuyoU6VSkfSAu5RJ+sgJVH4aY0XJegz7HqmKTYLXxiPvmTgyElZak4Fm2s/fqv4LxnZFlnap9o0J1CUrlg/Ak8= root@storage01.infra.ring.nlnog.net'
 
