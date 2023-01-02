@@ -41,7 +41,7 @@
 
 - name: "Get network capabilities for some tools (bionic)"
   command: /sbin/getcap {{ item }}
-  register: cap
+  register: cap_bionic
   with_items:
     - /usr/sbin/hping3
     - /usr/bin/nmap
@@ -55,7 +55,7 @@
 
 - name: "Get network capabilities for some tools (jammy)"
   command: /sbin/getcap {{ item }}
-  register: cap
+  register: cap_jammy
   with_items:
     - /usr/sbin/hping3
     - /usr/bin/nmap
@@ -67,12 +67,19 @@
   changed_when: false
   when: ansible_distribution_release == "jammy"
 
-- name: "Set new capabilities"
+- name: "Set new capabilities (bionic)"
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != check_string
-  with_items: "{{ cap.results }}"
+  with_items: "{{ cap_bionic.results }}"
+
+- name: "Set new capabilities (jammy)"
+  vars:
+    check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
+  command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
+  when: item.stdout != check_string
+  with_items: "{{ cap_jammy.results }}"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
