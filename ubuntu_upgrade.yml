@@ -16,6 +16,18 @@
         name=/etc/cron.d/ansible
         state=absent
 
+    - name: "Apt-pin ansible to new version"
+      lineinfile:
+        path: /etc/apt/preferences.d/ansible.pref
+        regexp: '^Pin: version (.*)$'
+        line: 'Pin: version 2.10.7+merged+base+2.10.8+dfsg-1'
+      register: ansible_pin
+
+    - name: "Run apt-get update"
+      apt:
+        update_cache: yes
+      when: ansible_pin.changed
+
     - name: "Run apt-get dist-upgrade once for the current release"
       apt:
         upgrade: dist
