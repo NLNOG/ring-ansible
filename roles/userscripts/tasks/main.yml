@@ -52,6 +52,7 @@
   with_items:
     - dnspython==2.2.1
     - setuptools
+    - wheel
     - parallel-ssh
 
 - name: "Install ring userscripts"
