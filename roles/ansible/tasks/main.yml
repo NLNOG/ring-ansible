@@ -49,7 +49,7 @@
   git:
     repo: 'https://github.com/dw/mitogen.git'
     dest: /opt/mitogen
-    version: "{{ mitogen_version }}"
+    version: "{{ mitogen_version[ansible_distribution_release] }}"
     update: "{{ mitogen_update }}"
   when: mitogen == true
 
@@ -76,7 +76,7 @@
     owner=root
     group=root
     mode=0644
-  when: mitogen_plugin.stat.exists == True and mitogen == true and ansible_distribution_release != "jammy"
+  when: mitogen_plugin.stat.exists == True and mitogen == true
 
 - name: "Update ansible.cfg (no mitogen)"
   copy:
