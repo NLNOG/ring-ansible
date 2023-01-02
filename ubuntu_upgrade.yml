@@ -51,7 +51,7 @@
 
     - name: "Perform release upgrade (focal -> jammy)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release == "bionic"
+      when: ansible_distribution_release == "focal"
   tags:
     - jammy
 
