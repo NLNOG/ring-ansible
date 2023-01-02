@@ -33,6 +33,12 @@
     notify:
       - restart apache2
 
+  - name: create apache conf.d dir if needed
+    file:
+      path: /etc/apache/conf.d
+      state: directory
+      mode: '0755'
+
   - name: set apache config symlink
     file:
       src: /etc/munin/apache24.conf
