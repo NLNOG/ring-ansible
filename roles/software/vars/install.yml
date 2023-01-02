@@ -114,6 +114,7 @@ software:
   jammy:
     - python3
     - python3-demjson
+    - python3-pycountry
     - git
     - jsonlint
     - iperf3
