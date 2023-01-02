@@ -6,7 +6,7 @@
     - name: Run apt-get update
       raw: sudo apt-get update -y
     - name: Install python
-      raw: sudo apt-get install -y python
+      raw: sudo apt-get install -y python || sudo apt-get install -y python3
 
 - hosts: all
   tasks:
