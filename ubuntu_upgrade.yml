@@ -33,16 +33,11 @@
         - /etc/apt/apt.conf.d/50unattended-upgrades
         - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
 
-    - name: "Perform release upgrade (xenial -> bionic)"
+    - name: "Perform release upgrade (bionic -> jammy)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release == "xenial"
-
-    - name: "Remove daemontools"
-      apt: name={{ item }} state=absent
-      with_items:
-        - daemontools
+      when: ansible_distribution_release == "bionic"
   tags:
-    - bionic
+    - jammy
 
 - hosts: all
   become: true
