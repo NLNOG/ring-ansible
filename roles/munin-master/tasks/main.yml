@@ -33,9 +33,9 @@
     notify:
       - restart apache2
 
-  - name: create apache conf.d dir if needed
+  - name: create apache2 conf.d dir if needed
     file:
-      path: /etc/apache/conf.d
+      path: /etc/apache2/conf.d
       state: directory
       mode: '0755'
 
