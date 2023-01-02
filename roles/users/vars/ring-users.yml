@@ -5569,3 +5569,11 @@ USERS:
     groups:
       - ring-users
 
+  eurofiber:
+    state: present
+    company: 'Eurofiber CloudInfra'
+    email: 'noc@dcspine.com'
+    uid: 5715
+    groups:
+      - ring-users
+

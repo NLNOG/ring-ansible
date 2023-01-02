@@ -622,6 +622,7 @@ upx01.ring.nlnog.net OWNER=upx V6=2804:2870:1:1::246
 upx02.ring.nlnog.net OWNER=upx V6=2606:9840:1:1::246
 rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
 geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1:f208
+eurofiber01.ring.nlnog.net OWNER=eurofiber V4=185.152.85.250 V6=2a0d:8600:2::7
 
 [infranode]
 lg01.infra.ring.nlnog.net OWNER=job V4=82.94.230.130 V6=2001:888:2001::130
@@ -2649,3 +2650,6 @@ rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
 
 [geant]
 geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1:f208
+
+[eurofiber]
+eurofiber01.ring.nlnog.net OWNER=eurofiber V4=185.152.85.250 V6=2a0d:8600:2::7
