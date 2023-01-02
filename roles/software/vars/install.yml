@@ -111,7 +111,15 @@ software:
     - python-virtualenv
     - sshfp
     - python3-dev
-
   jammy:
     - python3
     - python3-demjson
+    - git
+    - jsonlint
+    - iperf3
+    - ruby-dev
+    - parallel
+    - python3-pip
+    - dnsviz
+    - dnsdiag
+    - python3-dev

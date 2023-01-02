@@ -20,7 +20,7 @@
     - python-requests
   when: ansible_distribution_release == "bionic"
 
-- name: "Ensure Ansible prerequisites are installed (Jammy)"
+- name: "Ensure Ansible prerequisites are installed (jammy)"
   apt:
     name: "{{ item }}"
     state: present

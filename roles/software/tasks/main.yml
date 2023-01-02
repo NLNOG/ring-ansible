@@ -30,7 +30,6 @@
   with_items:
     - /usr/sbin/tcpdump
     - /usr/bin/dumpcap
-  when: ansible_distribution_release == "bionic"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
@@ -44,13 +43,12 @@
     - /usr/bin/dumpcap
   check_mode: no
   changed_when: false
-  when: ansible_distribution_release == "bionic"
 
 - name: "Set new capabilities"
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != check_string and ansible_distribution_release == "bionic"
+  when: item.stdout != check_string
   with_items: "{{ cap.results }}"
 
 - name: "Get network capabilities for some tools"
@@ -60,13 +58,12 @@
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
-  when: ansible_distribution_release == "bionic"
 
 - name: "Set new capabilities"
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != check_string and ansible_distribution_release == "bionic"
+  when: item.stdout != check_string
   with_items: "{{ capb.results }}"
 
 - name: "Uninstall certain unnecessary packages"
