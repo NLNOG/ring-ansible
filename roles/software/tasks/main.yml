@@ -71,14 +71,14 @@
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != check_string
+  when: item.stdout != check_string and ansible_distribution_release == "bionic"
   with_items: "{{ cap_bionic.results }}"
 
 - name: "Set new capabilities (jammy)"
   vars:
     check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != check_string
+  when: item.stdout != check_string and ansible_distribution_release == "jammy"
   with_items: "{{ cap_jammy.results }}"
 
 - name: "Get network capabilities for some tools"
