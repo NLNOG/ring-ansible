@@ -1,14 +1,27 @@
 - name: "Install deb prerequisites for ripe-atlas-tools"
   apt: name={{ item }} state=present
   with_items:
-    - python-dev
     - libffi-dev
     - libssl-dev
-    - python-virtualenv
     - virtualenv
-    - python-pip
 
-- name: "Install ripe-atlas-tools"
+- name: "Install deb prerequisites for ripe-atlas-tools (bionic)"
+  apt: name={{ item }} state=present
+  with_items:
+    - python-dev
+    - python-virtualenv
+    - python-pip
+  when: ansible_distribution_release == "bionic"
+
+- name: "Install deb prerequisites for ripe-atlas-tools (jammy)"
+  apt: name={{ item }} state=present
+  with_items:
+    - python3-dev
+    - python3-virtualenv
+    - python3-pip
+  when: ansible_distribution_release == "jammy"
+
+- name: "Install ripe-atlas-tools (bionic)"
   pip:
     name: "{{ item }}"
     state: present
@@ -20,6 +33,21 @@
     - ndg-httpsclient
     - pyasn1
     - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
+  when: ansible_distribution_release == "bionic"
+
+- name: "Install ripe-atlas-tools (jammy)"
+  pip:
+    name: "{{ item }}"
+    state: present
+    virtualenv: "{{ ripe_atlas_venv_dir }}"
+    virtualenv_python: python3
+  with_items:
+    - IPy
+    - pyOpenSSL
+    - ndg-httpsclient
+    - pyasn1
+    - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
+  when: ansible_distribution_release == "jammy"
 
 - name: "Create symlinks for ripe-atlas-tools"
   file:
