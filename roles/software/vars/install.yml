@@ -85,16 +85,22 @@ software:
     - ruby-json
     - libldns-dev
     - cmake
-  bionic:
     - git
-    - jsonlint
-    - iperf3
-    - ruby-dev
-    - parallel
+    - python3
+    - python3-demjson
+    - python3-dnspython
+    - python3-pycountry
+    - python3-simplejson
+    - python3-dev
     - python3-pip
+    - ruby-dev
+    - iperf3
     - dnsviz
-    - php7.2-cli
     - dnsdiag
+    - parallel
+    - jsonlint
+  bionic:
+    - php7.2-cli
     - python
     - python-beautifulsoup
     - python-demjson
@@ -110,18 +116,5 @@ software:
     - python-simplejson
     - python-virtualenv
     - sshfp
-    - python3-dev
   jammy:
-    - python3
-    - python3-demjson
-    - python3-pycountry
-    - git
-    - jsonlint
-    - iperf3
-    - ruby-dev
-    - parallel
-    - python3-pip
-    - dnsviz
-    - dnsdiag
-    - python3-dev
     - hash-slinger
