@@ -1,16 +1,7 @@
 # run ubuntu dist-upgrade via ansible-pull
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-# try upgrades
-total=3
-for loop in `seq 1 $total`; do
-    echo "Upgrading, round $loop of $total... "
-    /usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ubuntu_upgrade.yml
-done
+echo "Upgrading... "
+/usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ubuntu_upgrade.yml
 
-# re-install mitogen
-echo "Re-installing Mitogen... "
-rm -rf /opt/mitogen
-/usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local --tags ansible playbook.yml --extra-vars "mitogen_update=yes"
-
-echo "All done. Please reboot. In case of errors, contact a ring admin."
+echo "All done. In case of errors, contact a ring admin."

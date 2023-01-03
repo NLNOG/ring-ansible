@@ -11,9 +11,14 @@
         mode: 0644
         content: 'DPkg::options { "--force-confold"; }'
 
-    - name: "Disable ansible cron"
+    - name: "Replace ansible cron"
       file:
-        name=/etc/cron.d/ansible
+        dest: "/etc/cron.d/ansible"
+        content: "@reboot /usr/local/sbin/ansible-distupgrade"
+
+    - name: "Remove mitogen"
+      file:
+        path=/opt/mitogen
         state=absent
 
     - name: "Apt-pin ansible to new version"
@@ -48,12 +53,22 @@
     - name: "Perform release upgrade (bionic -> focal)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release == "bionic"
+      register: focal
+
+    - name: "Rebooting for upgrade to focal"
+      command: /sbin/reboot
+      when: focal.changed
 
     - name: "Perform release upgrade (focal -> jammy)"
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release == "focal"
+      register: jammy
+
+    - name: "Rebooting for upgrade to jammy"
+      command: /sbin/reboot
+      when: jammy.changed
   tags:
-    - jammy
+    - upgrade
 
 - hosts: all
   become: true
@@ -78,9 +93,3 @@
         - /usr/share/ripe-atlas-venv
   tags:
     - cleanup
-
-- hosts: ringnode
-  become: true
-  become_user: root
-  roles:
-    - { role: users, class: ring-users, tags: ring-users }
