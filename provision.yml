@@ -60,11 +60,6 @@
         mode: 0400
         content: "{{ ringnode_vault_pw }}"
       tags: vault_pw
-    - name: Remove apparmor
-      apt: name={{ item }} state=absent
-      with_items:
-        - apparmor
-        - apparmor-utils
 
 - hosts: infranode
   become: true
@@ -92,6 +87,11 @@
   become: true
   become_user: root
   tasks:
+    - name: Remove apparmor
+      apt: name={{ item }} state=absent
+      with_items:
+        - apparmor
+        - apparmor-utils
     - name: Temporarily configure resolv.conf with public resolver (IPV6)
       copy:
         dest: /etc/resolv.conf
