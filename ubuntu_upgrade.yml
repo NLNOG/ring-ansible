@@ -12,7 +12,7 @@
         content: 'DPkg::options { "--force-confold"; }'
 
     - name: "Replace ansible cron"
-      file:
+      copy:
         dest: "/etc/cron.d/ansible"
         content: "@reboot /usr/local/sbin/ansible-distupgrade"
 
