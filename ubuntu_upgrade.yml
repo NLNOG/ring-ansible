@@ -14,7 +14,7 @@
     - name: "Replace ansible cron"
       copy:
         dest: "/etc/cron.d/ansible"
-        content: "@reboot /usr/local/sbin/ansible-distupgrade\n"
+        content: "@reboot root /usr/local/sbin/ansible-distupgrade\n"
 
     - name: "Remove mitogen"
       file:
