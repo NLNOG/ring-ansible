@@ -51,28 +51,18 @@
         - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
 
     - name: "Perform release upgrade (bionic -> focal)"
-      command: do-release-upgrade -f DistUpgradeViewNonInteractive
+      shell: |
+        do-release-upgrade -f DistUpgradeViewNonInteractive
+        /sbin/reboot
       when: ansible_distribution_release == "bionic"
-      register: focal
       ignore_errors: True
-      changed_when:
-        - result.rc != 0
-
-    - name: "Rebooting for upgrade to focal"
-      command: /sbin/reboot
-      when: focal.changed
 
     - name: "Perform release upgrade (focal -> jammy)"
-      command: do-release-upgrade -f DistUpgradeViewNonInteractive
-      when: ansible_distribution_release == "focal"
-      register: jammy
+      shell: |
+        do-release-upgrade -f DistUpgradeViewNonInteractive
+        /sbin/reboot
       ignore_errors: True
-      changed_when:
-        - result.rc != 0
-
-    - name: "Rebooting for upgrade to jammy"
-      command: /sbin/reboot
-      when: jammy.changed
+      when: ansible_distribution_release == "focal"
   tags:
     - upgrade
 
