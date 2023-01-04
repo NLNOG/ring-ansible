@@ -145,6 +145,7 @@
 
 - name: "Purge old kernels"
   command: /usr/bin/purge-old-kernels -y
+  changed_when: false
 
 - name: "Run apt-get update"
   apt:
