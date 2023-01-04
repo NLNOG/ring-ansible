@@ -54,6 +54,9 @@
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release == "bionic"
       register: focal
+      ignore_errors: True
+      changed_when:
+        - result.rc != 0
 
     - name: "Rebooting for upgrade to focal"
       command: /sbin/reboot
@@ -63,6 +66,9 @@
       command: do-release-upgrade -f DistUpgradeViewNonInteractive
       when: ansible_distribution_release == "focal"
       register: jammy
+      ignore_errors: True
+      changed_when:
+        - result.rc != 0
 
     - name: "Rebooting for upgrade to jammy"
       command: /sbin/reboot
