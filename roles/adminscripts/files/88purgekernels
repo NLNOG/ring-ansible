@@ -1,1 +1,1 @@
-DPkg::Post-Invoke { "/usr/sbin/purgekernels --non-interactive -k 3"; };
+DPkg::Post-Invoke { "/usr/bin/purge-old-kernels -y"; };
