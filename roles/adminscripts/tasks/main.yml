@@ -3,15 +3,11 @@
   with_items:
     - libdpkg-perl
     - libgetopt-simple-perl
-    - purgekernels
 
-- name: "Install purgekernels apt.conf"
-  copy:
-    src=88purgekernels
-    dest=/etc/apt/apt.conf.d/88purgekernels
-    owner=root
-    group=root
-    mode=0755
+- name: "Ensure purgekernels apt.conf is absent"
+  file:
+    path=/etc/apt/apt.conf.d/88purgekernels
+    state=absent
 
 - name: "Install ring-fetch-nodes-json"
   copy:
