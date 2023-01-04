@@ -3,7 +3,7 @@
   with_items:
     - libdpkg-perl
     - libgetopt-simple-perl
-    - byobu
+    - purgekernels
 
 - name: "Install purgekernels apt.conf"
   copy:
