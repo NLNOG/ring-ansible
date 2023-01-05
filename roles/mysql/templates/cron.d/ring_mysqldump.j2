@@ -1,0 +1,4 @@
+# Local backup of mysql databases
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+23 23 * * * root mysqldump --all-databases --triggers --routines --events | ifne gzip > /root/{{ ansible_nodename }}.sql.tmp.gz && if [ -s /root/{{ ansible_nodename }}.sql.tmp.gz ]; then mv /root/{{ ansible_nodename }}.sql.tmp.gz /root/{{ ansible_nodename }}.sql.gz; fi

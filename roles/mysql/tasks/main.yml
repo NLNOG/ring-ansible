@@ -9,3 +9,13 @@
     group=root
     mode=0644
   notify: restart mysql
+
+- name: "Install my.cnf for root user"
+  template:
+    src: my.cnf.j2
+    dest: /root/.my.cnf
+
+- name: "Install mysqldump cronjob"
+  template:
+    src: cron.d/ring_mysqldump.j2
+    dest: /etc/cron.d/ring_mysqldump
