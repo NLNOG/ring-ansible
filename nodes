@@ -2653,3 +2653,5 @@ geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1
 
 [eurofiber]
 eurofiber01.ring.nlnog.net OWNER=eurofiber V4=185.152.85.250 V6=2a0d:8600:2::7
+
+[rub]

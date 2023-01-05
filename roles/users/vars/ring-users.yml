@@ -5577,3 +5577,11 @@ USERS:
     groups:
       - ring-users
 
+  rub:
+    state: present
+    company: 'Ruhr-Universitaet Bochum'
+    email: 'noc@rub.de'
+    uid: 5716
+    groups:
+      - ring-users
+
