@@ -89,6 +89,7 @@ software:
     - python3
     - python3-demjson
     - python3-dnspython
+    - python3-mysqldb
     - python3-pycountry
     - python3-simplejson
     - python3-dev

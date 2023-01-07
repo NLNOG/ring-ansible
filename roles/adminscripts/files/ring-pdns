@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import MySQLdb as mdb
 import sys, inspect, re, time, simplejson, urllib, math
 from subprocess import call
@@ -127,9 +127,9 @@ class commands(object):
         spec = inspect.getargspec(func)
         d=dict()
         for i,k in enumerate(spec.args[1:]):
-            print "%s:" % k,
+            print("%s:" % k),
             if i >= (len(spec.args)-len(spec.defaults)-1):
-                print "(optional)",
+                print("(optional)"),
             v=raw_input()
             d[k]=v
         return d
@@ -171,7 +171,7 @@ class commands(object):
 
         maxcmdlen = max(len(cmd[0]) for cmd in cmds)
         for cmd, doc in cmds:
-            print '%-*s %s' % (maxcmdlen+2, cmd, doc)
+            print('%-*s %s' % (maxcmdlen+2, cmd, doc))
         return 1
     
     def dbdo(self, q, v=None, script=False):
@@ -221,7 +221,7 @@ class commands(object):
         query = 'SELECT * FROM %s' % table
         result = self.dbquery(query)
         for row in result:
-            print row
+            print(row)
 
     def ring_dbquery(self, q, v=None):
         conn = mdb.connect(RINGDBHOST,RINGDBUSER,RINGDBPASS,RINGDB)
@@ -290,7 +290,7 @@ class commands(object):
             txt = row['content']
             txt=re.sub('\"','',txt)
             if (re.search(r'(^|\s+)%s($|\s+)' % name,txt)):
-                print "%s already in txt (record %s)" % (name,id)
+                print("%s already in txt (record %s)" % (name,id))
                 return
 
         for row in result2:
@@ -305,10 +305,10 @@ class commands(object):
         result = None
         if update is not None:
             self.update_record(update,newtxt)
-            print "record %s updated" % id
+            print("record %s updated" % id)
         else:
             recid = self.add_record(recordname,'TXT',name,600,0);
-            print 'record %s added' % (recid)
+            print('record %s added' % (recid))
  
     def del_from_txt(self,name,subzone=None,zone=ZONE):
         name=re.sub('.' + ZONE,'',name)
@@ -334,10 +334,10 @@ class commands(object):
         if update is not None:
             if (len(newtxt) > 0):
                 self.update_record(update,newtxt)
-                print "record %s updated" % id
+                print("record %s updated" % id)
             else:
                 self.del_record(update);
-                print 'record %s deleted' % (update)
+                print('record %s deleted' % (update))
 
     def destroy_txt(self,subzone=None,zone=ZONE):
         recordname=zone
@@ -348,7 +348,7 @@ class commands(object):
         for row in result:
             id= row['id']
             self.del_record(id);
-            print 'record %s deleted' % (id)
+            print('record %s deleted' % (id))
 
     def destroy_sshfp(self,subzone=None,zone=ZONE):
         recordname=zone
@@ -359,7 +359,7 @@ class commands(object):
         for row in result:
             id= row['id']
             self.del_record(id);
-            print 'record %s deleted' % (id)
+            print('record %s deleted' % (id))
 
     def regenerate_txt(self,zone=ZONE):
         query ="select hostname,country,active from machines where active=1"
@@ -385,7 +385,7 @@ class commands(object):
                 self.add_to_txt(name,country.lower());
                 self.add_to_txt(country.lower(),"countries");
             self.add_to_txt(name);
-            print 'node %s (%s) activated' % (name,country.lower())
+            print('node %s (%s) activated' % (name,country.lower()))
     
     def rectify_zone(self,zone=ZONE):
         call(["pdnsutil", "rectify-zone", zone])
@@ -394,7 +394,7 @@ class commands(object):
         query = "update records set content='%s' where name='%s' and type='SOA'" % (SOA,zone);
         self.dbdo(query)
         self.rectify_zone(zone)
-        print 'soa updated (%s)' % (SOA)
+        print('soa updated (%s)' % (SOA))
 
     def get_dbpass(self,pdnsconf):
         f = open(pdnsconf)
@@ -408,13 +408,13 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,name)):
             name=name + "." + zone
         recid=self.add_record(name=name,rtype=rtype,content=content,ttl=ttl,prio=prio,zone=zone)
-        print 'record %s added' % (recid)
+        print('record %s added' % (recid))
         self.update_soa(zone)
     
     def cmd_del_record(self,pid,zone=ZONE):
         """delete a record"""
         self.del_record(pid)
-        print 'record %s deleted' % (pid)
+        print('record %s deleted' % (pid))
         self.update_soa(zone)
 
     def cmd_list_records(self,name=None,zone=ZONE):
@@ -424,7 +424,7 @@ class commands(object):
                 name=name + "." + zone
             result=self.dbselect('records', name=name)
             for row in result:
-                print row
+                print(row)
         else:
             self.dblist('records')
     
@@ -437,17 +437,17 @@ class commands(object):
         if v4:
             recid=self.add_record(name=name,rtype='A',content=v4,
                                   ttl=600,prio=0,zone=zone)
-            print 'record %s added' % (recid)
+            print('record %s added' % (recid))
         else:
-            print >> sys.stderr, "Unable to retrieve IPv4 address from ring db"
+            sys.stderr.write("Unable to retrieve IPv4 address from ring db\n")
             
         v6=self.ring_getnodeattr(name,"v6")
         if v6:
             recid=self.add_record(name=name,rtype='AAAA',content=v6,
                                   ttl=600,prio=0,zone=zone)
-            print 'record %s added' % (recid)
+            print('record %s added' % (recid))
         else:
-            print >> sys.stderr, "Unable to retrieve IPv6 address from ring db"
+            sys.stderr.write("Unable to retrieve IPv6 address from ring db\n")
         geo=self.ring_getnodeattr(name,"geo")
         geocontent = None
         if geo:
@@ -455,10 +455,10 @@ class commands(object):
         if geocontent:
             recid=self.add_record(name=name,rtype='LOC',content=geocontent,
                                   ttl=600,prio=0,zone=zone)
-            print 'record %s added' % (recid)
+            print('record %s added' % (recid))
         else:
-            print >> sys.stderr, "Unable to retrieve geo information from ring db"
-        print 'node %s added' % (name)
+            sys.stderr.write("Unable to retrieve geo information from ring db\n")
+        print('node %s added' % (name))
         self.update_soa(zone)
         
     def cmd_update_node(self,name,attribute,value,zone=ZONE):
@@ -489,8 +489,8 @@ class commands(object):
         else:    
             recid=self.add_record(name=name,rtype=rtype,content=value,
                                   ttl=600,prio=0,zone=zone)
-            print 'record %s added' % (recid)
-        print 'node %s updated' % (name)
+            print('record %s added' % (recid))
+        print('node %s updated' % (name))
         self.update_soa(zone)
 
     def cmd_del_node(self,name,zone=ZONE):
@@ -503,11 +503,11 @@ class commands(object):
         if country:
             self.del_from_txt(name,country.lower());
         else:
-            print >> sys.stderr, "Unable to retrieve country code from ring db"
+            sys.stderr.write("Unable to retrieve country code from ring db\n")
         self.del_from_txt(name);
-        print 'node %s deactivated' % (name)
+        print('node %s deactivated' % (name))
         self.dbdelete('records',name=fullname);
-        print 'node %s deleted' % (name)
+        print('node %s deleted' % (name))
         self.update_soa(zone)
 
     def cmd_activate_node(self,name,zone=ZONE):
@@ -521,10 +521,10 @@ class commands(object):
             self.add_to_txt(name,country.lower());
             self.add_to_txt(country.lower(),"countries");
         else:
-            print >> sys.stderr, "Unable to retrieve country code from ring db"
+            sys.stderr.write("Unable to retrieve country code from ring db\n")
 
         self.add_to_txt(name);
-        print 'node %s activated' % (name)
+        print('node %s activated' % (name))
         self.update_soa(zone)
     
     def cmd_deactivate_node(self,name,zone=ZONE):
@@ -537,10 +537,10 @@ class commands(object):
         if country:
             self.del_from_txt(name,country.lower());
         else:
-            print >> sys.stderr, "Unable to retrieve country code from ring db"
+            sys.stderr.write("Unable to retrieve country code from ring db\n")
 
         self.del_from_txt(name);
-        print 'node %s deactivated' % (name)
+        print('node %s deactivated' % (name))
         self.update_soa(zone)
 
     def cmd_update_sshfp(self,filename=None,zone=ZONE):
@@ -559,7 +559,7 @@ class commands(object):
                 continue
             vals = line.split()
             if len(vals) < 6 or vals[1] != "IN" or vals[2] != rtype:
-                print >> sys.stderr, "Skipping invalid entry"
+                sys.stderr.write("Skipping invalid entry\n")
                 continue
 
             name=vals[0]
@@ -574,45 +574,45 @@ class commands(object):
                 break
             
             if cname:
-                print 'cname found. skipping %s' % (name)
+                print('cname found. skipping %s' % (name))
             else:
                 recid=self.add_record(name=name,rtype=rtype,
                                     content=value,ttl=600,prio=0,zone=zone)
-                print 'record %s added for %s' % (recid,name)
+                print('record %s added for %s' % (recid,name))
         f.close()
         self.update_soa(zone)
 
     def cmd_add_domain(self,zone=ZONE):
         """add a domain"""
         domainid=self.add_domain(zone)
-        print 'domain %s added' % (domainid)
+        print('domain %s added' % (domainid))
     
     def cmd_list_domains(self,pid=None):
         """list domains"""
         if pid:
-            print self.dbselectone('domains', id=pid)
+            print(self.dbselectone('domains', id=pid))
         else:
             self.dblist('domains')
     
     def cmd_del_domain(self,pid):
         """delete a domain"""
         domainid=self.del_domain(pid)
-        print 'domain %s deleted' % (pid)
+        print('domain %s deleted' % (pid))
 
     def cmd_add_soa(self,zone=ZONE):
         """add the SOA for a domain"""
         recid=self.add_record(zone,'SOA',SOA,3600,0,zone=zone)
-        print 'record %s added' % (recid)
+        print('record %s added' % (recid))
     
     def cmd_update_soa(self,zone=ZONE):
         """update the SOA for a domain"""
         self.update_soa(zone)
 
     def cmd_regenerate_txt(self,zone=ZONE):
-        print 'regenerating txt records... '
+        print('regenerating txt records... ')
         self.regenerate_txt(zone)
         self.update_soa(zone)
-        print 'done.'
+        print('done.')
 
     def cmd_initdb(self):
         """initialize database"""
