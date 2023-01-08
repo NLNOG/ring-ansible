@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import datetime
 import getpass
@@ -14,7 +14,7 @@ import smtplib
 import string
 import sys
 import time
-import urllib
+import urllib.request
 import unicodedata
 
 DBHOST = 'localhost'
@@ -376,9 +376,9 @@ class commands(object):
         spec = inspect.getargspec(func)
         d = dict()
         for i, k in enumerate(spec.args[1:]):
-            print "%s:" % k,
+            print("%s:" % k),
             if i >= (len(spec.args) - len(spec.defaults) - 1):
-                print "(optional)",
+                print("(optional)"),
             v = raw_input()
             d[k] = v
         return d
@@ -420,7 +420,7 @@ class commands(object):
 
         maxcmdlen = max(len(cmd[0]) for cmd in cmds)
         for cmd, doc in cmds:
-            print '%-*s %s' % (maxcmdlen + 2, cmd, doc)
+            print('%-*s %s' % (maxcmdlen + 2, cmd, doc))
         return 1
 
     def dbdo(self, q, v=None, script=False):
@@ -428,13 +428,10 @@ class commands(object):
         cur = conn.cursor()
         if v:
             vlist = list(v)
-            for index, s in enumerate(vlist):
-                if isinstance(s, basestring):
-                    vlist[index] = s.encode('utf8')
             v = tuple(vlist)
             cur.execute(q, v)
         else:
-            cur.execute(q.encode('utf8'))
+            cur.execute(q)
         if not script:
             conn.commit()
             conn.close()
@@ -492,7 +489,7 @@ class commands(object):
         cols, vals = zip(*kwargs.items())
         query = 'INSERT INTO %s (%s) VALUES(%s)' % \
             (table, ','.join(cols), ','.join(['%s'] * len(vals)))
-        print vals
+        print(vals)
         _, rowid = self.dbdo(query, vals)
         return rowid
 
@@ -518,7 +515,7 @@ class commands(object):
         query = 'SELECT * FROM %s' % table
         result = self.dbquery(query)
         for row in result:
-            print row
+            print(row)
 
     def sendmail(self,sender,recipients,message):
         server = smtplib.SMTP(MAILHOST)
@@ -784,7 +781,7 @@ class commands(object):
             if not machid:
                 sys.stderr.write('could not active machine %s: not found\n' % a)
             self.activate_machine(machid)
-            print 'machine %s marked as active' % (a)
+            print('machine %s marked as active' % (a))
         report = report + "%d nodes activated.\n" % len(activate)
 
         if len(deactivate) > 10:
@@ -795,7 +792,7 @@ class commands(object):
                 if not machid:
                     sys.stderr.write('could not deactive machine %s: not found\n' % a)
                 self.deactivate_machine(machid)
-                print 'machine %s marked as inactive' % (d)
+                print('machine %s marked as inactive' % (d))
             report = report + "%d nodes deactivated.\n" % len(deactivate)
 
         # Update alive/dead status
@@ -818,7 +815,7 @@ class commands(object):
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v4': 0})
-                print 'machine %s marked as dead on IPv4' % (d)
+                print('machine %s marked as dead on IPv4' % (d))
         if len(dead_v6) > 10:
             report = report + "More than 10 missing nodes on ipv6 since last run. Health update skipped.\n"
             report = report + "(" + ','.join(dead_v6) + ")\n"
@@ -828,16 +825,16 @@ class commands(object):
                 if not machid:
                     continue
                 self.dbupdate('machines', machid, **{'alive_v6': 0})
-                print 'machine %s marked as dead on IPv6' % (d)
+                print('machine %s marked as dead on IPv6' % (d))
 
         text = Template(ANSIBLEREPORTEMAIL)
         mailbody = text.substitute(adminemail=ADMINEMAIL,contents=report)
-        print mailbody
+        print(mailbody)
 
         if send and (len(activate) > 0 or len(deactivate) > 0):
-            print "Sending mail... "
+            print("Sending mail... ")
             self.sendmail(ADMINEMAIL,ADMINEMAIL,mailbody)
-            print "Done."
+            print("Done.")
 
     def web_checkout(self):
         ret = os.system("cd " + WEBDIR + " && git checkout")
@@ -888,7 +885,7 @@ class commands(object):
         state = ''
         countrycode = ''
         try:
-            mfirst = m.next()
+            mfirst = next(m)
             hostname = mfirst['hostname']
             autnum = str(mfirst['autnum'])
             countrycode = mfirst['country']
@@ -902,11 +899,11 @@ class commands(object):
                                    hostname=hostname, autnum=autnum,
                                    country=country, countrycode=countrycode,
                                    date=date)
-        print postbody
+        print(postbody)
         if publish:
-            print "Publishing post... "
+            print("Publishing post... ")
             self.web_publish(username,postbody)
-            print "Done."
+            print("Done.")
 
     def generate_welcomemail(self, username, send=None):
         partid = self.username2pid(username)
@@ -921,7 +918,7 @@ class commands(object):
             sys.exit('no machines found for %s' % username)
         hostname = ''
         try:
-            mfirst = m.next()
+            mfirst = next(m)
             hostname = mfirst['hostname']
         except StopIteration:
             pass
@@ -930,14 +927,14 @@ class commands(object):
                                    email=p['email'],
                                    hostname=hostname, username=u['username'],
                                    adminemail=ADMINEMAIL)
-        print mailbody
+        print(mailbody)
 
         if send:
-            print "Sending mail... "
+            print("Sending mail... ")
             self.sendmail(ADMINEMAIL,
                           [p['nocemail'],p['email'],ADMINEMAIL],
                           mailbody)
-            print "Done."
+            print("Done.")
 
     def generate_announcemail(self, username, send=None):
         partid = self.username2pid(username)
@@ -956,7 +953,7 @@ class commands(object):
         state = ''
         country = ''
         try:
-            mfirst = m.next()
+            mfirst = next(m)
             hostname = mfirst['hostname']
             autnum = str(mfirst['autnum'])
             dc = mfirst['dc']
@@ -972,12 +969,12 @@ class commands(object):
                                    state=state, country=country,
                                    countrycode=countrycode,
                                    adminemail=ADMINEMAIL,ringusers=RINGUSERSEMAIL)
-        print mailbody
+        print(mailbody)
 
         if send:
-            print "Sending mail... "
+            print("Sending mail... ")
             self.sendmail(ADMINEMAIL,RINGUSERSEMAIL,mailbody)
-            print "Done."
+            print("Done.")
 
     def generate_downmail(self, hostname, send=None, template=DOWNMAIL):
         uid = self.hostname2uid(hostname)
@@ -994,14 +991,14 @@ class commands(object):
                                    email=p['email'],
                                    hostname=hostname,
                                    adminemail=ADMINEMAIL)
-        print mailbody
+        print(mailbody)
 
         if send:
-            print "Sending mail... "
+            print("Sending mail... ")
             self.sendmail(ADMINEMAIL,
                           [p['nocemail'],p['email'],ADMINEMAIL],
                           mailbody)
-            print "Done."
+            print("Done.")
 
     def generate_removemail(self, hostname, send=None):
         uid = self.hostname2uid(hostname)
@@ -1018,14 +1015,14 @@ class commands(object):
                                    email=p['email'],
                                    hostname=hostname,
                                    adminemail=ADMINEMAIL)
-        print mailbody
+        print(mailbody)
 
         if send:
-            print "Sending mail... "
+            print("Sending mail... ")
             self.sendmail(ADMINEMAIL,
                           [p['nocemail'],p['email'],ADMINEMAIL],
                           mailbody)
-            print "Done."
+            print("Done.")
 
     def generate_downreminders(self, send=None):
         reminders = []
@@ -1056,37 +1053,37 @@ class commands(object):
             elif m['v6'] and m['alive_v6'] == 0:
                 v6_reminders.append(hostname)
 
-        print "Inactive machines with active owners:"
+        print("Inactive machines with active owners:")
         for host in sorted(reminders):
-            print "- %s" % (host)
-        print ""
-        print "Total: %d" % (len(reminders))
-        print "Active machines with broken IPv4:"
+            print("- %s" % (host))
+        print("")
+        print("Total: %d" % (len(reminders)))
+        print("Active machines with broken IPv4:")
         for host in sorted(v4_reminders):
-            print "- %s" % (host)
-        print ""
-        print "Total: %d" % (len(v4_reminders))
-        print "Active machines with broken IPv6:"
+            print("- %s" % (host))
+        print("")
+        print("Total: %d" % (len(v4_reminders)))
+        print("Active machines with broken IPv6:")
         for host in sorted(v6_reminders):
-            print "- %s" % (host)
-        print ""
-        print "Total: %d" % (len(v6_reminders))
+            print("- %s" % (host))
+        print("")
+        print("Total: %d" % (len(v6_reminders)))
 
         if send:
-            print "Sending mail"
+            print("Sending mail")
             for host in sorted(reminders):
-                print "...%s" % (host)
+                print("...%s" % (host))
                 self.generate_downmail(host,send=1)
                 time.sleep(1)
             for host in sorted(v4_reminders):
-                print "...%s" % (host)
+                print("...%s" % (host))
                 self.generate_downmail(host,send=1,template=V4DOWNMAIL)
                 time.sleep(1)
             for host in sorted(v6_reminders):
-                print "...%s" % (host)
+                print("...%s" % (host))
                 self.generate_downmail(host,send=1,template=V6DOWNMAIL)
                 time.sleep(1)
-            print "Done."
+            print("Done.")
 
     def purge_inactive_machines(self):
         tstamp = time.time()
@@ -1101,33 +1098,33 @@ class commands(object):
                 continue
             if m['last_active']:
                 if (tstamp - m['last_active']) < (INACTIVE_DAYS * 86400):
-                    print "Not yet deleting %s" % (m['hostname'])
+                    print("Not yet deleting %s" % (m['hostname']))
                     continue
             else:
-                print "Not deleting %s (no last_active date)" % (m['hostname'])
+                print("Not deleting %s (no last_active date)" % (m['hostname']))
                 continue
 
             machine_delete.append(m['hostname'])
-            print "Deleting machine %s" % (m['hostname'])
+            print("Deleting machine %s" % (m['hostname']))
             self.generate_removemail(m['hostname'],1)
 
             result = self.dbselect('sshhostkeys', machine=m['id'])
             for row in result:
-                print row
+                print(row)
             self.dbdelete('sshhostkeys', machine=m['id'])
-            print 'ssh hostkeys for machine %s deleted' % (m['hostname'])
+            print('ssh hostkeys for machine %s deleted' % (m['hostname']))
 
             result = self.dbselect('mremarks', machine=m['id'])
             for row in result:
-                print row
+                print(row)
             self.dbdelete('mremarks', machine=m['id'])
-            print 'remarks for machine %s deleted' % (m['hostname'])
+            print('remarks for machine %s deleted' % (m['hostname']))
 
             result = self.dbselect('machines', hostname=m['hostname'])
             for row in result:
-                print row
+                print(row)
             self.dbdelete('machines', hostname=m['hostname'])
-            print 'machine %s deleted' % (m['hostname'])
+            print('machine %s deleted' % (m['hostname']))
 
             q = "select participants.id as id, participants.company as " + \
                 "company from participants left join " + \
@@ -1142,7 +1139,7 @@ class commands(object):
                 machines = self.dbget(q)
                 if not machines:
                     participant_deactivate.append(p['company'])
-                    print "Deactivating users for participant %s" % (p['company'])
+                    print("Deactivating users for participant %s" % (p['company']))
                     self.deactivate_participant(p['id'])
 
     def activate_machine(self, machid):
@@ -1159,13 +1156,13 @@ class commands(object):
         users = self.dbselect('users', participant=partid)
         for u in users:
             self.dbupdate('users', u['id'], **{'active': 1})
-            print "Activated user %s" % (u['username'])
+            print("Activated user %s" % (u['username']))
 
     def deactivate_participant(self, partid):
         users = self.dbselect('users', participant=partid)
         for u in users:
             self.dbupdate('users', u['id'], **{'active': 0})
-            print "Deactivated user %s" % (u['username'])
+            print("Deactivated user %s" % (u['username']))
 
     def username2uid(self, username):
         user = self.dbselectone('users', username=username)
@@ -1222,7 +1219,7 @@ class commands(object):
         lat,lon = geo.split(',')
         url = GEOCODE + 'lat=' + lat + '&lon=' + lon
         try:
-            response = simplejson.load(urllib.urlopen(url))
+            response = simplejson.load(urllib.request.urlopen(url))
             address = response['address']
             if 'city' in address:
                 city = address['city']
@@ -1231,7 +1228,6 @@ class commands(object):
         except:
             sys.stderr.write('unable to retrieve city geocoding info\n')
             return ""
-
         if city:
             if isinstance(city,str):
                 return city
@@ -1248,7 +1244,7 @@ class commands(object):
                                contact=contact, email=email,
                                nocemail=nocemail, companydesc=companydesc,
                                tstamp=tstamp)
-        print 'participant %s added' % (partid)
+        print('participant %s added' % (partid))
         userid = self.dbselectmax('users', 'userid',
                                   'admin IS NULL OR admin=0')
         if not userid:
@@ -1256,7 +1252,7 @@ class commands(object):
         userid = userid + 1
         uid = self.dbinsert('users', username=username,
                             participant=partid, userid=userid, active=1)
-        print 'user %s added for participant %s' % (uid, partid)
+        print('user %s added for participant %s' % (uid, partid))
 
     def cmd_update_participant(self, username, attribute, value):
         """update participant data"""
@@ -1264,7 +1260,7 @@ class commands(object):
         if not partid:
             sys.exit('user %s not found' % username)
         self.dbupdate('participants', partid, **{attribute: value})
-        print 'attribute %s for participant %s updated' % (attribute, partid)
+        print('attribute %s for participant %s updated' % (attribute, partid))
 
     def cmd_unset_participant(self, username, attribute):
         """unset participant data"""
@@ -1272,7 +1268,7 @@ class commands(object):
         if not partid:
             sys.exit('user %s not found' % username)
         self.dbupdate('participants', partid, **{attribute: None})
-        print 'attribute %s for participant %s unset' % (attribute, partid)
+        print('attribute %s for participant %s unset' % (attribute, partid))
 
     def cmd_delete_participant(self, pid):
         """delete a participant"""
@@ -1281,9 +1277,9 @@ class commands(object):
             sys.exit('participant %s still has users' % pid)
 
         self.dbdelete('premarks', participant=pid)
-        print 'remarks for participant %s deleted' % (pid)
+        print('remarks for participant %s deleted' % (pid))
         self.dbdelete('participants', id=pid)
-        print 'participant %s deleted' % (pid)
+        print('participant %s deleted' % (pid))
 
     def cmd_list_participants(self):
         """list participants"""
@@ -1294,7 +1290,7 @@ class commands(object):
         partid = self.username2pid(username)
         if not partid:
             sys.exit('user %s not found' % username)
-        print self.dbselectone('participants', id=partid)
+        print(self.dbselectone('participants', id=partid))
 
     def cmd_activate_participant(self,username):
         """activate all user for participant"""
@@ -1317,7 +1313,7 @@ class commands(object):
             sys.exit('participant %s not found' % pid)
         uid = self.dbinsert('users', username=username,
                             userid=userid, participant=pid, active=1)
-        print 'user %s added' % (uid)
+        print('user %s added' % (uid))
 
     def cmd_update_user(self, username, attribute, value):
         """update user data"""
@@ -1325,7 +1321,7 @@ class commands(object):
         if not uid:
             sys.exit('user %s not found' % username)
         self.dbupdate('users', uid, **{attribute: value})
-        print 'attribute %s for user %s updated' % (attribute, username)
+        print('attribute %s for user %s updated' % (attribute, username))
 
     def cmd_delete_user(self, username):
         """delete a user"""
@@ -1337,16 +1333,16 @@ class commands(object):
             sys.exit('user %s still has machines' % username)
 
         self.dbdelete('sshkeys', user=uid)
-        print 'sshkeys for user %s deleted' % (username)
+        print('sshkeys for user %s deleted' % (username))
         self.dbdelete('users', username=username)
-        print 'user %s deleted' % (username)
+        print('user %s deleted' % (username))
 
     def cmd_list_users(self, pid=None):
         """list users"""
         if pid:
             result = self.dbselect('users', participant=pid)
             for row in result:
-                print row
+                print(row)
         else:
             self.dblist('users')
 
@@ -1368,8 +1364,8 @@ class commands(object):
                                   autnum=autnum, country=country, state=state,
                                   city=city, geo=geo, dc=dc, v4=v4, v6=v6,
                                   tstamp=tstamp, active=0)
-        print "Added machine %s ('%s' at '%s') for user %s" % \
-            (machineid, hostname, country, username)
+        print("Added machine %s ('%s' at '%s') for user %s" % \
+              (machineid, hostname, country, username))
 
     def cmd_delete_machine(self, hostname):
         """delete a machine"""
@@ -1379,11 +1375,11 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.dbdelete('sshhostkeys', machine=machid)
-        print 'ssh hostkeys for machine %s deleted' % (hostname)
+        print('ssh hostkeys for machine %s deleted' % (hostname))
         self.dbdelete('mremarks', machine=machid)
-        print 'remarks for machine %s deleted' % (hostname)
+        print('remarks for machine %s deleted' % (hostname))
         self.dbdelete('machines', hostname=hostname)
-        print 'machine %s deleted' % (hostname)
+        print('machine %s deleted' % (hostname))
 
     def cmd_update_machine(self, hostname, attribute, value):
         """update machine data"""
@@ -1393,11 +1389,11 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.dbupdate('machines', machid, **{attribute: value})
-        print 'attribute %s for machine %s updated' % (attribute, hostname)
+        print('attribute %s for machine %s updated' % (attribute, hostname))
         if (attribute == "geo"):
             city = self.cityname(value)
             self.dbupdate('machines', machid, **{'city': city})
-            print 'attribute city for machine %s updated' % (hostname)
+            print('attribute city for machine %s updated' % (hostname))
 
     def cmd_unset_machine(self, hostname, attribute):
         """unset machine data"""
@@ -1407,11 +1403,11 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.dbupdate('machines', machid, **{attribute: None})
-        print 'attribute %s for machine %s unset' % (attribute, hostname)
+        print('attribute %s for machine %s unset' % (attribute, hostname))
         if (attribute == "geo"):
             city = self.cityname(value)
             self.dbupdate('machines', machid, **{'city': None})
-            print 'attribute city for machine %s unset' % (hostname)
+            print('attribute city for machine %s unset' % (hostname))
 
     def cmd_activate_machine(self, hostname):
         """mark machine as active"""
@@ -1421,7 +1417,7 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.activate_machine(machid)
-        print 'machine %s marked as active' % (hostname)
+        print('machine %s marked as active' % (hostname))
         self.cmd_scan_hostkeys(hostname)
 
     def cmd_deactivate_machine(self, hostname):
@@ -1432,7 +1428,7 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.deactivate_machine(machid)
-        print 'machine %s marked as inactive' % (hostname)
+        print('machine %s marked as inactive' % (hostname))
 
     def cmd_list_machines(self, username=None):
         """list machines"""
@@ -1442,13 +1438,12 @@ class commands(object):
                 sys.exit('user %s not found' % username)
             result = self.dbselect('machines', owner=uid)
             for row in result:
-                print row
+                print(row)
         else:
             self.dblist('machines')
 
     def cmd_add_sshkeys(self, username, filename=None):
-        print >> sys.stderr, \
-            "DEPRECATED: Update the ssh-keys file on manage.ring.nlnog.net"
+        sys.stderr.write("DEPRECATED: Update the ssh-keys file on manage.ring.nlnog.net\n")
         return
 
     def cmd_replace_sshkeys(self, username, filename=None):
@@ -1457,13 +1452,13 @@ class commands(object):
         if not uid:
             sys.exit('user %s not found' % username)
         self.dbdelete('sshkeys', user=uid)
-        print 'sshkeys for user %s deleted' % (username)
+        print('sshkeys for user %s deleted' % (username))
         self.cmd_add_sshkeys(username, filename)
 
     def cmd_delete_sshkey(self, id):
         """delete an sshkey"""
         self.dbdelete('sshkeys', id=id)
-        print 'key %s deleted' % (id)
+        print('key %s deleted' % (id))
 
     def cmd_list_sshkeys(self, username):
         """list sshkeys"""
@@ -1472,7 +1467,7 @@ class commands(object):
             sys.exit('user %s not found' % username)
         result = self.dbselect('sshkeys', user=uid)
         for row in result:
-            print row
+            print(row)
 
     def cmd_add_hostkeys(self, hostname, filename=None):
         """add ssh hostkeys"""
@@ -1494,7 +1489,7 @@ class commands(object):
             vals = line.split()
             insert = []
             if len(vals) < 2:
-                print >> sys.stderr, "Skipping invalid entry"
+                sys.stderr.write("Skipping invalid entry\n")
                 continue
             insert.append(vals[0])
             insert.append(vals[1])
@@ -1507,13 +1502,13 @@ class commands(object):
                 insert.append(vals[2])
             insert.append(machid)
             kid = self.dbinsertlist('sshhostkeys', cols, insert)
-            print "Added key %s for machine %s" % (kid, hostname)
+            print("Added key %s for machine %s" % (kid, hostname))
         file.close()
 
     def cmd_delete_hostkey(self, id):
         """delete an ssh hostkey"""
         self.dbdelete('sshhostkeys', id=id)
-        print 'key %s deleted' % (id)
+        print('key %s deleted' % (id))
 
     def cmd_delete_hostkeys(self, hostname):
         """delete ssh hostkeys for a machine"""
@@ -1523,7 +1518,7 @@ class commands(object):
         if not machid:
             sys.exit('machine %s not found' % hostname)
         self.dbdelete('sshhostkeys', machine=machid)
-        print 'sshkeys for machine %s deleted' % (hostname)
+        print('sshkeys for machine %s deleted' % (hostname))
 
     def cmd_replace_hostkeys(self, hostname, filename=None):
         """replace ssh hostkeys"""
@@ -1544,7 +1539,7 @@ class commands(object):
             sys.exit('machine %s not found' % hostname)
         result = self.dbselect('sshhostkeys', machine=machid)
         for row in result:
-            print row
+            print(row)
 
     def cmd_scan_hostkeys(self, hostname=None):
         """scan one or all hosts for ssh hostkeys"""
@@ -1596,19 +1591,15 @@ class commands(object):
                             self.dbupdate('sshhostkeys',
                                           old['id'],
                                           **{'sshkey': new['sshkey']})
-                            print "Replaced %s key %s for %s" % (old['keytype'],
-                                                             old['id'],hostname)
-                #if not old['keytype'] in seen:
-                #    self.dbdelete('sshhostkeys', id=old['id'])
-                #    print "Deleted %s key %s for %s" % (old['keytype'],
-                #                                        old['id'],hostname)
+                            print("Replaced %s key %s for %s" % (old['keytype'],
+                                                                 old['id'],hostname))
             for new in newkeys:
                 if not new['keytype'] in seen:
                     kid = self.dbinsertlist('sshhostkeys',
                             ['machine','keytype','sshkey'],
                             [machid,new['keytype'],new['sshkey']])
-                    print "Added %s key %s for machine %s" % (new['keytype'],
-                                                              kid, hostname)
+                    print("Added %s key %s for machine %s" % (new['keytype'],
+                                                              kid, hostname))
 
     def cmd_add_premark(self, username, remark):
         """add a participant remark"""
@@ -1621,13 +1612,13 @@ class commands(object):
         tstamp = time.time()
         rid = self.dbinsert('premarks', participant=partid, remark=remark,
                             tstamp=tstamp)
-        print "Added remark %s for participant '%s'" % \
-            (rid, participant['company'])
+        print("Added remark %s for participant '%s'" % \
+            (rid, participant['company']))
 
     def cmd_delete_premark(self, id):
         """delete a participant remark"""
         self.dbdelete('premarks', id=id)
-        print 'remark %s deleted' % (id)
+        print('remark %s deleted' % (id))
 
     def cmd_list_premarks(self, username):
         """list participant remarks"""
@@ -1636,7 +1627,7 @@ class commands(object):
             sys.exit('user %s not found' % username)
         result = self.dbselect('premarks', participant=partid)
         for row in result:
-            print row
+            print(row)
 
     def cmd_add_mremark(self, hostname, remark):
         """add a machine remark"""
@@ -1648,12 +1639,12 @@ class commands(object):
         tstamp = time.time()
         rid = self.dbinsert('mremarks', machine=machid, remark=remark,
                             tstamp=tstamp)
-        print "Added remark %s for machine %s" % (rid, hostname)
+        print("Added remark %s for machine %s" % (rid, hostname))
 
     def cmd_delete_mremark(self, id):
         """delete a machine remark"""
         self.dbdelete('mremarks', id=id)
-        print 'remark %s deleted' % (id)
+        print('remark %s deleted' % (id))
 
     def cmd_list_mremarks(self, hostname):
         """list machine remarks"""
@@ -1664,7 +1655,7 @@ class commands(object):
             sys.exit('machine %s not found' % hostname)
         result = self.dbselect('mremarks', machine=machid)
         for row in result:
-            print row
+            print(row)
 
     def cmd_initdb(self):
         """initialize database"""
@@ -1679,9 +1670,9 @@ class commands(object):
         if not m:
             sys.exit('machine %s not found' % hostname)
 
-        print m['v6'] + "  " + name + " " + m['hostname']
+        print(m['v6'] + "  " + name + " " + m['hostname'])
         if m['v4']:
-            print m['v4'] + "    " + name + " " + m['hostname']
+            print(m['v4'] + "    " + name + " " + m['hostname'])
 
     def cmd_ansible_deploy(self):
         """update ansible repository"""
@@ -1711,9 +1702,9 @@ class commands(object):
             q = "select * from ansible where timestamp >= now() - INTERVAL 1 DAY"
             runs = self.dbquery(q)
         for run in runs:
-            print "%20s %s :\tok=%d\tchanged=%d\tunreachable=%d\tfailed=%d" % \
+            print("%20s %s :\tok=%d\tchanged=%d\tunreachable=%d\tfailed=%d" % \
                   (run['hostname'],run['timestamp'],run['ok'],run['changed'], \
-                   run['unreachable'],run['failures'])
+                   run['unreachable'],run['failures']))
 
     def cmd_health_log(self,hostname=None,family=None):
         """show health reports from nodes"""
@@ -1739,8 +1730,8 @@ class commands(object):
             failedstr = 'none'
             if len(failed) > 0:
                 failedstr = ','.join(failed)
-            print "%20s %s :\tfamily=%d\tfailed=%s" % \
-                  (run['hostname'],run['timestamp'],run['family'],failedstr)
+            print("%20s %s :\tfamily=%d\tfailed=%s" % \
+                  (run['hostname'],run['timestamp'],run['family'],failedstr))
 
     def cmd_dnscommands(self, hostname):
         """generate dns commands"""
@@ -1749,9 +1740,9 @@ class commands(object):
         m = self.dbselectone('machines', hostname=hostname)
         if not m:
             sys.exit('machine %s not found' % hostname)
-        print "ring-pdns add node " + m['hostname'] + " " + m['v4'] + " " + \
-            m['v6'] + " " + m['geo']
-        print "ring-pdns activate node " + m['hostname'] + " " + m['country']
+        print("ring-pdns add node " + m['hostname'] + " " + m['v4'] + " " + \
+              m['v6'] + " " + m['geo'])
+        print("ring-pdns activate node " + m['hostname'] + " " + m['country'])
 
     def cmd_generate_webpost(self, username):
         """generate text for website post"""
@@ -1771,7 +1762,7 @@ class commands(object):
         state = ''
         country = ''
         try:
-            mfirst = m.next()
+            mfirst = next(m)
             hostname = mfirst['hostname']
             autnum = str(mfirst['autnum'])
             dc = mfirst['dc']
@@ -1781,10 +1772,10 @@ class commands(object):
             pass
         country = self.countryname(countrycode, state)
         text = Template(WEBSITETEXT)
-        print text.substitute(company=p['company'],
+        print(text.substitute(company=p['company'],
                               companydesc=p['companydesc'], hostname=hostname,
                               autnum=autnum, dc=dc, country=country,
-                              countrycode=countrycode)
+                              countrycode=countrycode))
 
     def cmd_generate_hugopost(self, username):
         """generate text for hugo webpost"""
@@ -1855,8 +1846,5 @@ if __name__ == "__main__":
     lctype = None
     if len(os.environ.get('LC_CTYPE', '.').split('.', 1)) > 1:
         lctype = os.environ.get('LC_CTYPE', '.').split('.', 1)[1]
-    sys.exit(
-        c.run(
-            [s.decode(sys.stdout.encoding or lctype or 'utf-8')
-                      for s in sys.argv[1:]]))
+    sys.exit(c.run(sys.argv[1:]))
 
