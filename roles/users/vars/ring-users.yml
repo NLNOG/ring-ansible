@@ -737,7 +737,7 @@ USERS:
 
   lagis:
     state: present
-    company: 'LINZ STROM GAS WÃRME GmbH'
+    company: 'LINZ STROM GAS WÄRME GmbH'
     email: 'sysadmin@lagis.at'
     uid: 5106
     groups:
@@ -3418,7 +3418,7 @@ USERS:
 
   poprs:
     state: absent
-    company: 'Ponto de PresenÃ§a da RNP no Rio Grande do Sul'
+    company: 'Ponto de Presença da RNP no Rio Grande do Sul'
     email: 'suporte@pop-rs.rnp.br'
     uid: 5449
     groups:
@@ -4130,7 +4130,7 @@ USERS:
 
   level66network:
     state: present
-    company: 'level66.network UG (haftungsbeschrÃ¤nkt)'
+    company: 'level66.network UG (haftungsbeschränkt)'
     email: 'noc@level66.network'
     uid: 5537
     groups:
@@ -5555,7 +5555,7 @@ USERS:
 
   rzhas:
     state: present
-    company: 'Rechenzentrum HaÃfurt GmbH'
+    company: 'Rechenzentrum Haßfurt GmbH'
     email: 'noc@rzhas.de'
     uid: 5713
     groups:
