@@ -276,6 +276,7 @@ def get_participant(participant_id):
     participantlist = dbget_participants()
     try:
         participantlist = filter(lambda p: p['id'] == participant_id, participantlist)
+        participantlist = list(participantlist)
     except TypeError:
         pass
     except KeyError as err:
@@ -293,6 +294,7 @@ def get_nodes_participant(participant_id):
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['participant'] == participant_id, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -309,6 +311,7 @@ def get_nodes_participant_active(participant_id):
     try:
         nodelist = filter(lambda n: n['participant'] == participant_id, nodelist)
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -332,6 +335,7 @@ def get_node(node_id):
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['id'] == node_id, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -347,6 +351,7 @@ def get_node_by_name(node_hostname):
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['hostname'] == node_hostname, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -354,7 +359,7 @@ def get_node_by_name(node_hostname):
 
     if get_error():
         return mk_json(errormsg=set_error())
-    return mk_json(results={'nodes':nodelist},count=len(nodelist))
+    return mk_json(results={'nodes':nodelist},count=len(list(nodelist)))
 
 @app.route('/1.0/nodes/country/<string:country>', methods = ['GET'])
 def get_nodes_country(country):
@@ -363,6 +368,7 @@ def get_nodes_country(country):
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['countrycode'] == country, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -381,6 +387,7 @@ def get_nodes_country_state(country,state):
     try:
         nodelist = filter(lambda n: n['countrycode'] == country, nodelist)
         nodelist = filter(lambda n: n['statecode'] == state, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -396,6 +403,7 @@ def get_nodes_active():
     nodelist = dbget_nodes()
     try:
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -413,6 +421,7 @@ def get_nodes_active_protocol(protocol):
     try:
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
         nodelist = filter(lambda n: n['alive_' + protocol] == 1, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -430,6 +439,7 @@ def get_nodes_active_country(country):
     try:
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
         nodelist = filter(lambda n: n['countrycode'] == country.upper(), nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -449,6 +459,7 @@ def get_nodes_active_country_state(country,state):
         nodelist = filter(lambda n: n['active'] == 1, nodelist)
         nodelist = filter(lambda n: n['countrycode'] == country, nodelist)
         nodelist = filter(lambda n: n['statecode'] == state, nodelist)
+        nodelist = list(nodelist)
     except TypeError:
         pass
     except KeyError as err:
@@ -473,6 +484,7 @@ def get_statecodes(country):
     countrylist = dbget_statecodes()
     try:
         countrylist = filter(lambda c: c['countrycode'] == country, countrylist)
+        countrylist = list(countrylist)
         statelist = []
         for line in countrylist:
             for k,v in line.iteritems():
@@ -499,7 +511,7 @@ def register_ansible_run():
     except socket.herror:
         pass
     if hostname and run_result:
-        dbinsert_ansible_result(hostname,ast.literal_eval(run_result))
+        dbinsert_ansible_result(hostname,ast.literal_eval(run_result.decode()))
         return jsonify({'hostname':hostname,'results':run_result})
     return jsonify({})
 
