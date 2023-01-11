@@ -1563,7 +1563,7 @@ class commands(object):
                     r = check_output(["ssh-keyscan",family,"-T","30","-t",
                                       ktype,hostname],stderr=FNULL)
                     if r:
-                        result = result + r
+                        result = result + r.decode("utf-8")
                 except:
                     sys.stderr.write('could not scan keys for %s (%s)\n' % (hostname,family))
 
