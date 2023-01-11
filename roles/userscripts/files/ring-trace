@@ -9,6 +9,8 @@
 
 
  Changelog:
+ v1.9.2         Add Frys-IX to IXP list
+ v1.9.1         Small fixes for Python3 convertsion
  v1.9           Conversion to Python3
  v1.8.3         Pastebin moved to a new location
  v1.8.2         API moved to a new location
@@ -65,7 +67,7 @@ except:
     print("On Ubuntu: apt-get install python3-dnspython")
     sys.exit(1)
 
-VERSION="1.9"
+VERSION="1.9.2"
 DEBUG=0
 PASTEBIN="https://paste.ring.nlnog.net/"
 API_NODES="https://api.ring.nlnog.net/1.0/nodes/active"
@@ -131,7 +133,7 @@ ixps4 = [
    ("193.149.0.0/24", "ESPANIX", 0),
    ("198.32.131.0/24", "KD-X", 0),
    ("80.67.175.0/26", "Pouix", 0),
-   ("195.140.149.129/25", "FNIX6", 0),
+   ("195.140.149.128/25", "FNIX6", 0),
    ("77.95.71.0/24", "LyonIX", 0),
    ("194.68.123.0/24", "NetNod Stockholm", 0),
    ("194.68.128.0/24", "NetNod Stockholm", 0),
@@ -350,6 +352,7 @@ ixps4 = [
    ("206.108.236.0/24", "Boston Internet Exchange", 0),
    ("218.100.21.0/24", "PNIX", 0),
    ("193.138.31.0/24", "Stuttgarter InternetXchange", 0),
+   ("185.1.203.0/24", "Frys-IX", 56393),
 ]
 
 ixps6 = [
@@ -479,6 +482,7 @@ ixps6 = [
     ("2604:2c00:ffff:fff0::/64", "SUPRnet", 0),
     ("2607:f388:0:2200::/64", "MadIX", 0),
     ("2607:fe10:ffff::/64", "MICE", 0),
+    ("2001:7f8:10f::/64", "Frys-IX", 56393),
     ("2001:7f8::/29", "", 0),           # generic IXP
 ]
 
@@ -805,7 +809,7 @@ digraph G {
                 # asns instead of ips
                 a = []
                 for ip in ips:
-                    if tracedata.has_key(ip):
+                    if ip in tracedata:
                         if not (tracedata[ip].get("ix", False) and no_ixp):
                             a.append((tracedata[ip].get("asn", "unknown"),tracedata[ip].get("ix", False),tracedata[ip].get("desc", "unknown"), ""))
                     else:
