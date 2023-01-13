@@ -1,2 +1,2 @@
 # compress logfiles
-0 0 * * * root /usr/bin/find /var/log/HOSTS -type f -! -name '*bz2' -mtime +3 -print0 | /usr/bin/xargs -0 /bin/bzip2 -9 &
+0 0 * * * root /usr/bin/find /var/log/HOSTS/ -type f -! -name '*bz2' -mtime +3 -print0 | /usr/bin/xargs -0 /bin/bzip2 -9 &
