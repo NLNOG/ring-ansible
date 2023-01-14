@@ -690,8 +690,7 @@ class commands(object):
                 if r['hostname'] == hostname:
                     m['seen'] = 1
                     if r['unreachable'] > 0 or r['failures'] > 0:
-                        m['failed'] = 1
-                        break
+                        m['failed'] = m['failed'] + 1
 
             # Process health reports
             m['seen_v4'] = 0
@@ -710,8 +709,8 @@ class commands(object):
         inactive = 0
         activate = []
         deactivate = []
-        failed = []
-        failed_admin = []
+        failed = {}
+        failed_admin = {}
         missing_admin = []
         alive_v4 = []
         dead_v4 = []
@@ -732,28 +731,28 @@ class commands(object):
                 dead_v6.append(m['hostname'])
 
             if m['admin'] == 1:
-                if m['failed'] == 1:
-                    failed_admin.append(m['hostname'])
+                if m['failed'] > 0:
+                    failed_admin[m['hostname']] = m['failed']
                 elif m['seen'] == 0:
                     missing_admin.append(m['hostname'])
             else:
                 total = total + 1
-                if m['failed'] == 1:
-                        failed.append(m['hostname'])
+                if m['failed'] > 0:
+                        failed[m['hostname']] = m['failed']
                 if m['active'] != 1:
                     inactive = inactive + 1
-                    if m['seen'] == 1 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                    if m['seen'] == 1 and m['failed'] == 0 and not m['hostname'] in exceptions:
                         activate.append(m['hostname'])
                 if m['active'] == 1:
                     active = active + 1
-                    if m['seen'] == 0 and m['failed'] != 1 and not m['hostname'] in exceptions:
+                    if m['seen'] == 0 and m['failed'] == 0 and not m['hostname'] in exceptions:
                         deactivate.append(m['hostname'])
 
         report = ""
-        report = report + "Nodes:\t\t%d\n" % (total)
-        report = report + "Active:\t\t%d (%d new)\n" % (active+len(activate)-len(deactivate),len(activate))
+        report = report + "Nodes:   \t%d\n" % (total)
+        report = report + "Active:  \t%d (%d new)\n" % (active+len(activate)-len(deactivate),len(activate))
         report = report + "Inactive:\t%d (%d new)\n" % (inactive+len(deactivate)-len(activate),len(deactivate))
-        report = report + "Failed:\t\t%d\n" % (len(failed))
+        report = report + "Failed:  \t%d\n" % (len(failed.keys()))
         if len(exceptions) > 0:
             report = report + "Ignored:\t%d\n" % (len(exceptions))
 
@@ -764,15 +763,15 @@ class commands(object):
         for d in deactivate:
           report = report + "  - %s\n" % (d)
         report = report + "\nFailed ansible runs:\n"
-        for f in failed:
-          report = report + "  - %s\n" % (f)
+        for k,v in failed.items():
+          report = report + "  - %s (%d)\n" % (k,v)
         report = report + "\n"
         report = report + "\nMissing admin nodes:\n"
         for m in missing_admin:
           report = report + "  - %s\n" % (m)
         report = report + "\nFailed runs on admin nodes:\n"
-        for f in failed_admin:
-          report = report + "  - %s\n" % (f)
+        for k,v in failed_admin.items():
+          report = report + "  - %s (%d)\n" % (k,v)
         report = report + "\n"
 
         # Run activate/deactive changes
