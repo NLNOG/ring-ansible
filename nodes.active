@@ -509,7 +509,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
@@ -593,7 +592,6 @@ aussiebb02.ring.nlnog.net OWNER=aussiebb V4=119.18.35.7 V6=2403:5800:700:16::1
 aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::1
 aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::1
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
-devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
@@ -2313,7 +2311,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 
 [ipfail]
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
@@ -2563,7 +2560,6 @@ aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
 
 [devstorage]
-devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 
 [fibo]
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
