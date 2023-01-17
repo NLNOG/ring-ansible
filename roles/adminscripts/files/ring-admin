@@ -697,11 +697,13 @@ class commands(object):
             for h in health_v4:
                 if h['hostname'] == hostname:
                     m['seen_v4'] = 1
+                    m['ubuntu_release'] = simplejson.loads(h['summary'])['info'].get('ubuntu_release', 'unknown')
                     break
             m['seen_v6'] = 0
             for h in health_v6:
                 if h['hostname'] == hostname:
                     m['seen_v6'] = 1
+                    m['ubuntu_release'] = simplejson.loads(h['summary'])['info'].get('ubuntu_release', 'uknown')
                     break
 
         total = 0
@@ -716,6 +718,8 @@ class commands(object):
         dead_v4 = []
         alive_v6 = []
         dead_v6 = []
+        ubuntu18 = []
+        ubuntu22 = []
         # Hardcoded ignore list
         exceptions = {}
         #exceptions['hostname'] = 1
@@ -729,6 +733,10 @@ class commands(object):
                 alive_v6.append(m['hostname'])
             if m['seen_v6'] == 0 and m['alive_v6'] != 0:
                 dead_v6.append(m['hostname'])
+            if m.get('ubuntu_release', '') == '18.04':
+                ubuntu18.append(m['hostname'])
+            if m.get('ubuntu_release', '') == '22.04':
+                ubuntu22.append(m['hostname'])
 
             if m['admin'] == 1:
                 if m['failed'] > 0:
@@ -755,6 +763,8 @@ class commands(object):
         report = report + "Failed:  \t%d\n" % (len(failed.keys()))
         if len(exceptions) > 0:
             report = report + "Ignored:\t%d\n" % (len(exceptions))
+        report = report + "\nUbuntu 18.04: \t%d\n" % len(ubuntu18)
+        report = report + "Ubuntu 22.04: \t%d\n" % len(ubuntu22)
 
         report = report + "\nNew nodes seen:\n"
         for a in activate:
