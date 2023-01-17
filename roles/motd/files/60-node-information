@@ -1,66 +1,78 @@
-#!/usr/bin/env python
-import os, re, socket, sys, simplejson, time, urllib2, pycountry
+#!/usr/bin/env python3
+import os
+import re
+import time
+import socket
+import requests
+import pycountry
 
-API='https://api.ring.nlnog.net/1.0'
-HOSTNAME=socket.gethostname()
-BANNER='/etc/update-motd.d/ring.nlnog.net-logo'
-CACHE='/var/run/motd.cached'
+
+API = 'https://api.ring.nlnog.net/1.0'
+HOSTNAME = socket.gethostname()
+BANNER = '/etc/update-motd.d/ring.nlnog.net-logo'
+CACHE = '/var/run/motd.cached'
+
 
 def get_api_object(url):
     try:
-        response = simplejson.load(urllib2.urlopen(url,None,30))
-        returncode = response['info']['success'];
-        if (returncode == 1):
-            rescount   = response['info']['resultcount'];
-            if (rescount > 0):
+        response = requests.get(url, timeout=30).json()
+        returncode = response['info']['success']
+        if returncode == 1:
+            rescount = response['info']['resultcount']
+            if rescount > 0:
                 return response['results']
-    except:
+    except Exception as e:
         return None
 
+
 def get_admininfo(pid):
-    node=socket.gethostbyaddr(HOSTNAME)[1][0]
-    org = re.sub('..$','',node)
+    node = socket.gethostbyaddr(HOSTNAME)[1][0]
+    org = re.sub('..$', '', node)
     return os.popen("getent passwd "+org+" | cut -d : -f 5").read().strip()
 
-def get_countryname(country,state):
-    cname=''
-    c=''
+
+def get_countryname(country, state):
+    cname = ''
+    c = ''
 
     try:
-        c=pycountry.countries.get(alpha_2=country)
-    except:
-        c=pycountry.countries.get(alpha2=country)
+        c = pycountry.countries.get(alpha_2=country)
+    except Exception:
+        c = pycountry.countries.get(alpha2=country)
 
     try:
-        cname=c.name
+        cname = c.name
     except KeyError:
-        cname='Unknown'
+        cname = 'Unknown'
 
     if state:
         try:
-            s=pycountry.subdivisions.get(code=country+'-'+state)
-            cname=s.name+', '+cname                
+            s = pycountry.subdivisions.get(code=country + '-' + state)
+            cname = s.name + ', ' + cname
         except KeyError:
-            cname='Unknown, '+cname
+            cname = 'Unknown, ' + cname
     return cname
 
+
 def get_routeviewsinfo(ipv4):
-    ip=ipv4.split(".")
-    rvinfo=os.popen("dig +short TXT "+ip[3]+"."+ip[2]+"."+ip[1]+"."+ip[0]+".asn.routeviews.org").read()
-    rvlist=rvinfo.split(" ")
-    return re.sub('"','',rvlist[0],count=0)
+    ip = ipv4.split(".")
+    rvinfo = os.popen("dig +short TXT " + ip[3] + "." + ip[2] + "." + ip[1] + "." + ip[0] + ".asn.routeviews.org").read()
+    rvlist = rvinfo.split(" ")
+    return re.sub('"', '', rvlist[0], count=0)
+
 
 def get_cymruinfo(asn):
-    cymruinfo=os.popen("dig +short TXT AS"+asn+".asn.cymru.com").read()
-    return re.sub('"','',cymruinfo,count=0)
+    cymruinfo = os.popen("dig +short TXT AS" + asn + ".asn.cymru.com").read()
+    return re.sub('"', '', cymruinfo, count=0)
 
-def store_nodeinfo(asn,localadmin,location,cymruasinfo):
+
+def store_nodeinfo(asn, localadmin, location, cymruasinfo):
     c = open(CACHE, 'w')
 
     # NLNOG RING Logo - can be disabled :)
     try:
         f = open(BANNER, 'r')
-        c.write(f.read(),)
+        c.write(f.read())
         f.close()
     except IOError:
         c.write("Banner not found.\n")
@@ -69,9 +81,9 @@ def store_nodeinfo(asn,localadmin,location,cymruasinfo):
     c.write("  Welcome on "+HOSTNAME+", an NLNOG RING Node!\n")
     c.write("  System operated by "+localadmin+"\n")
     if cymruasinfo:
-	cymrulist=cymruasinfo.split("|")
-	region=cymrulist[2].strip()
-	asinfo=cymrulist[4].strip()
+        cymrulist = cymruasinfo.split("|")
+        region = cymrulist[2].strip()
+        asinfo = cymrulist[4].strip()
         c.write("  Location: "+location+" - AS"+asn+" ("+region+", "+asinfo+")\n")
     else:
         c.write("  Location: "+location+" - AS"+asn+"\n")
@@ -86,52 +98,54 @@ def store_nodeinfo(asn,localadmin,location,cymruasinfo):
     c.write("  For more information, please visit https://ring.nlnog.net/\n")
     c.close()
 
+
 def store_error(error):
     c = open(CACHE, 'w')
-    
+
     # NLNOG RING Logo - can be disabled :)
     try:
         f = open(BANNER, 'r')
-        c.write(f.read(),)
+        c.write(f.read())
         f.close()
     except IOError:
         c.write("Banner not found.\n")
-    c.write(error+"\n")
+    c.write(error + "\n")
     c.close()
+
 
 def print_nodeinfo():
     try:
         c = open(CACHE, 'r')
-        print c.read(),
+        print(c.read())
         c.close()
     except IOError:
-        print "Unable to open motd file"
+        print("Unable to open motd file")
+
 
 if __name__ == "__main__":
-    mtime=0
-    if (os.path.exists(CACHE)):
-        mtime=os.path.getmtime(CACHE)
-    if (mtime < (time.time() - 86400)):
-        url=API+'/nodes/hostname/'+HOSTNAME
-        result=get_api_object(url)
+    mtime = 0
+    if os.path.exists(CACHE):
+        mtime = os.path.getmtime(CACHE)
+    if mtime < (time.time() - 86400):
+        url = API + '/nodes/hostname/' + HOSTNAME
+        result = get_api_object(url)
         if not result:
-	    store_error("Unable to retrieve node info")
+            store_error("Unable to retrieve node info")
         else:
             nodeinfo = result['nodes'][0]
-            ipv4=nodeinfo['ipv4']
-            pid=nodeinfo['participant']
-            country=nodeinfo['countrycode']
-            state=nodeinfo['statecode']
+            ipv4 = nodeinfo['ipv4']
+            pid = nodeinfo['participant']
+            country = nodeinfo['countrycode']
+            state = nodeinfo['statecode']
 
             if ipv4:
-                asn=get_routeviewsinfo(ipv4)
+                asn = get_routeviewsinfo(ipv4)
             else:
-                asn=str(nodeinfo['asn'])
+                asn = str(nodeinfo['asn'])
 
-            localadmin=get_admininfo(pid)
-            location=get_countryname(country,state)
-            cymruasinfo=get_cymruinfo(asn)
-            store_nodeinfo(asn,localadmin,location,cymruasinfo)
+            localadmin = get_admininfo(pid)
+            location = get_countryname(country, state)
+            cymruasinfo = get_cymruinfo(asn)
+            store_nodeinfo(asn, localadmin, location, cymruasinfo)
 
     print_nodeinfo()
-
