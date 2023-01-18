@@ -1608,7 +1608,7 @@ USERS:
       - ring-users
 
   citynetwork:
-    state: present
+    state: absent
     company: 'City Network Hosting AB'
     email: 'jh@citynetwork.se'
     uid: 5220
@@ -5582,6 +5582,14 @@ USERS:
     company: 'Ruhr-Universitaet Bochum'
     email: 'noc@rub.de'
     uid: 5716
+    groups:
+      - ring-users
+
+  cleura:
+    state: present
+    company: 'Cleura AB'
+    email: 'noc@cleura.com'
+    uid: 5717
     groups:
       - ring-users
 
