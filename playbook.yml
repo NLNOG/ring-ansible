@@ -80,27 +80,12 @@
     - { role: apache2, tags: apache2 }
     - { role: munin-master, tags: munin-master }
 
-- hosts: lg01.infra.ring.nlnog.net
-  become: true
-  become_user: root
-  roles:
-    - { role: letsencrypt, tags: letsencrypt }
-    - { role: apache2, tags: apache2 }
-    - { role: bird, tags: bird }
-    - { role: bird-lg, tags: bird-lg }
-    - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell, tags: ring-users }
-
 - hosts: lg02.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
     - { role: ansible, tags: ansible, mitogen: no }
     - { role: openbgpd, tags: openbgpd }
-#    - { role: letsencrypt, tags: letsencrypt }
-#    - { role: apache2, tags: apache2 }
-#    - { role: bird, tags: bird }
-#    - { role: bird-lg, tags: bird-lg }
-#    - { role: users, class: ring-users, user_shell: /usr/local/bin/birdshell, tags: ring-users }
 
 - hosts: public02.infra.ring.nlnog.net
   become: true
