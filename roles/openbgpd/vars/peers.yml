@@ -564,11 +564,11 @@ lg_peers:
   SECUREBIT_ZUR01:
     asn: 58057
     ipv4: 94.177.122.251
-    ipv6: 2a09:4c0:0:8b1c::63fb
+    ipv6: 2a09:4c0:100:5eb1::7afb
   SECUREBIT_ZUR02:
     asn: 58057
     ipv4: 94.177.122.252
-    ipv6: 2a09:4c0:0:8b1c::63fc
+    ipv6: 2a09:4c0:100:5eb1::7afc
   SENTIAAMS5:
     asn: 8315
     ipv4: 185.74.76.8
