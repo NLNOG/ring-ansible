@@ -557,6 +557,10 @@ lg_peers:
     asn: 59715
     ipv4: 185.5.200.255
     ipv6: 2A02:CDC5:9715:0:185:5:200:255
+  SECUREBIT_FRE01:
+    asn: 58057
+    ipv4: 85.202.203.251
+    ipv6: 2a09:4c0:f00:55ca::cbfb
   SECUREBIT_ZUR01:
     asn: 58057
     ipv4: 94.177.122.251
