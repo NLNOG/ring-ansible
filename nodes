@@ -432,7 +432,7 @@ overthewire01.ring.nlnog.net OWNER=overthewire V4=119.17.170.245 V6=2402:c00:0:3
 greenmini01.ring.nlnog.net OWNER=greenmini V4=185.200.102.77 V6=2a0a:aa42:321:2000::10
 sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:dc01::b962:ebe
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
-misaka02.ring.nlnog.net OWNER=misaka V4=45.142.247.147 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
+misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
 misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka04.ring.nlnog.net OWNER=misaka V4=170.39.226.136 V6=2a0e:6902:4002:31:5054:ff:fe16:e9db
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
@@ -2096,7 +2096,7 @@ sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 
 [misaka]
-misaka02.ring.nlnog.net OWNER=misaka V4=45.142.247.147 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
+misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
 misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka04.ring.nlnog.net OWNER=misaka V4=170.39.226.136 V6=2a0e:6902:4002:31:5054:ff:fe16:e9db
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
