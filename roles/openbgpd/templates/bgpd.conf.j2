@@ -48,6 +48,14 @@ group "readonly_peers" {
 {% endfor %}
 }
 
+group "aspa_test" {
+    multihop 255
+    announce add-path send best plus 2
+    remote-as 15562
+    neighbor 45.138.228.4
+    neighbor 2a10:3781:276::1
+}
+
 # allow anything from regular peers, but never send them any route
 # the send filter is here for protection, by default peers use export none
 allow from group peers
@@ -56,3 +64,7 @@ deny to group peers
 # send everything to firehose peers, accept nothing
 deny from group readonly_peers
 allow to group readonly_peers
+
+# # send to ASPA testbed
+deny from group aspa_test
+allow to group aspa_test
