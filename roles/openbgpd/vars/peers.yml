@@ -87,6 +87,10 @@ lg_peers:
     asn: 12859
     ipv4: 213.136.1.132
     ipv6: 2001:7b8:0:fffe::2
+  BITTERBAL1:
+    asn: 200995
+    ipv4: 212.72.236.1
+    ipv6: 2001:7bb:b1ba::1
   BOXED_IT1:
     asn: 50156
     ipv4: 195.200.224.1
