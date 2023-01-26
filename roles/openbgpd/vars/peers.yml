@@ -126,6 +126,9 @@ lg_peers:
     asn: 202365
     ipv4: 5.255.90.109
     ipv6: 2a00:1ca8:2a::e0
+  CMHMR1:
+    asn: 203528
+    ipv6: 2a0e:8f02:21d1:dead::90
   COLOCLUE1:
     asn: 8283
     ipv4: 94.142.247.3
