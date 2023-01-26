@@ -2655,3 +2655,5 @@ rub01.ring.nlnog.net OWNER=rub V4=134.147.20.2 V6=2a05:3e00:f:2::2
 
 [cleura]
 cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
+
+[cmhmr]

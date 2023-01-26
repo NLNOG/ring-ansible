@@ -5593,3 +5593,11 @@ USERS:
     groups:
       - ring-users
 
+  cmhmr:
+    state: present
+    company: 'AS203528'
+    email: 'cmhmr.mgmt@gmail.com'
+    uid: 5718
+    groups:
+      - ring-users
+
