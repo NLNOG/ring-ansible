@@ -871,7 +871,7 @@ class commands(object):
         if not os.path.isfile(logo_filename):
             sys.stderr.write('logo for %s missing; please add it to %s in the ring-web repository.'
                              % (username,logo_shortloc))
-        f = open(post_filename,'wb')
+        f = open(post_filename,'w')
         f.write(postbody)
         f.close()
         ret = os.system("cd " + WEBDIR + " && git add " + post_shortloc)
