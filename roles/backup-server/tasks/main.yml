@@ -5,16 +5,20 @@
   with_items:
     - zfsutils-linux
 
-- name: "Create required directories"
+- name: "Create backup mountpoint"
   file:
-    path: "{{ item }}"
+    path: /backups
     state: directory
     owner: root
     group: root
     mode: 0755
-  with_items:
-    - /var/lib/syslog-ng
-    - /backups
+  register: backup_mountpoint
+
+- name: "Create zfs base"
+  shell: |
+    /usr/sbin/zfs create tank/backups
+    /usr/sbin/zfs set mountpoint=/backups tank/backups
+  when: backup_mountpoint.changed
 
 - name: "Populate backup-hosts file"
   template:
@@ -24,3 +28,30 @@
     group: root
     mode: 0644
 
+- name: "Install backup scripts"
+  copy:
+    src={{ item }}
+    dest=/usr/local/sbin/{{ item }}
+    owner=root
+    group=root
+    mode=0744
+  with_items:
+    - start-backup
+    - zrbackup
+    - zfs_health_check
+    - check-backup-age
+
+- name: "Install systemd service"
+  copy:
+    src=systemd/zrbackup.service
+    dest=/etc/systemd/system/zrbackup.service
+  register: zrbackup_systemd
+
+- name: "Reload systemd"
+  shell: /usr/bin/systemctl daemon-reload
+  when: zrbackup_systemd.changed
+
+- name: "Install backup age check cronjob"
+  copy:
+    src=cron.d/check_zfs_backups
+    dest=/etc/cron.d/check_zfs_backups

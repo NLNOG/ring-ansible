@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Starting backup service."
+sleep 30;
+
+while true;
+	do /usr/local/sbin/zrbackup ;
+	echo $(date);
+	sleep 57600;
+done

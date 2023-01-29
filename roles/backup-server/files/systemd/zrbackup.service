@@ -1,0 +1,20 @@
+[Unit]
+Description=RING Infra Backup service
+Documentation=https://github.com/NLNOG/ring-ansible/tree/master/roles/backup-server
+OnFailure=heartbeat-failed@%n
+
+[Service]
+Nice=-5
+Type=exec
+NotifyAccess=all
+StartLimitInterval=3m
+StartLimitBurst=3
+TimeoutSec=2m
+LimitNOFILE=1024
+ExecStart=/usr/local/sbin/start-backup
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=zrbackup
+
+[Install]
+WantedBy=multi-user.target

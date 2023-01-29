@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+import re
+import sys
+import time
+
+base = '/backups'
+hostfile = base + '/backup-hosts'
+statesuffix = 'Latest/last-backup'
+maxage = 172800 # 48 hours
+now_ts = time.time()
+
+try:
+    f = open(hostfile,'r')
+    hosts = f.readlines()
+    f.close()
+except:
+    sys.stderr.write('Unable to open hostfile {}\n'.format(hostfile))
+    sys.exit(2)
+if len(hosts) < 0:
+    sys.stderr.write('No hosts found in hostfile {}\n'.format(hostfile))
+    sys.exit(2)
+
+exitcode = 0
+for host in hosts:
+    host = host.strip()
+    if re.match('^$',host):
+        continue
+    statefile = base + '/' + host + '/' + statesuffix
+    try:
+        f = open(statefile)
+        state = f.readlines()
+        state_ts = state[1].strip()
+        f.close()
+    except:
+        sys.stderr.write('No backup state found for {}\n'.format(host))
+        exitcode = 1
+        continue
+    age = now_ts - float(state_ts)
+    if age > maxage:
+        sys.stderr.write('WARN\t{}): {} seconds old\n'.format(host,int(age)))
+        exitcode = 1
+    else:
+        sys.stdout.write('OK\t{}: {} seconds old\n'.format(host,int(age)))
+
+exit(exitcode)
