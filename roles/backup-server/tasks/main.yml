@@ -49,7 +49,11 @@
 
 - name: "Reload systemd"
   shell: /usr/bin/systemctl daemon-reload
+  notify: restart zrbackup
   when: zrbackup_systemd.changed
+
+- name: "Start zrbackup service"
+  service: name=zrbackup state=started enabled=yes
 
 - name: "Install backup age check cronjob"
   copy:

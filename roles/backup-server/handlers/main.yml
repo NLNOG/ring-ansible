@@ -1,0 +1,2 @@
+- name: restart zrbackup
+  service: name=zrbackup state=restarted enabled=yes
