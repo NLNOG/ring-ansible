@@ -1,0 +1,3 @@
+39 5 * * * root chronic /usr/local/sbin/check-backup-age
+55 3 * * */6 root chronic /sbin/zpool scrub tank
+45 */10 * * * root /usr/local/sbin/zfs_health_check

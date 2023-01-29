@@ -57,5 +57,5 @@
 
 - name: "Install backup age check cronjob"
   copy:
-    src=cron.d/check_zfs_backups
-    dest=/etc/cron.d/check_zfs_backups
+    src=cron.d/ring_backup
+    dest=/etc/cron.d/ring_backup
