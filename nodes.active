@@ -374,6 +374,7 @@ kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
+mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=62.141.35.164 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
@@ -591,7 +592,6 @@ aussiebb02.ring.nlnog.net OWNER=aussiebb V4=119.18.35.7 V6=2403:5800:700:16::1
 aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::1
 aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::1
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
-devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
@@ -611,6 +611,7 @@ eurofiber01.ring.nlnog.net OWNER=eurofiber V4=185.152.85.250 V6=2a0d:8600:2::7
 rub01.ring.nlnog.net OWNER=rub V4=134.147.20.2 V6=2a05:3e00:f:2::2
 cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
+cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 
 [infranode]
 
@@ -1884,6 +1885,7 @@ teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
 nextpertise01.ring.nlnog.net OWNER=nextpertise V4=77.73.231.141 V6=2a02:690:4001:42::141
 
 [mdex]
+mdex01.ring.nlnog.net OWNER=mdex V4=185.70.144.117 V6=2a05:2a80:1::200
 
 [vimexx]
 vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
@@ -2561,7 +2563,6 @@ aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
 
 [devstorage]
-devstorage01.ring.nlnog.net OWNER=devstorage V6=2a06:a005:7d0:0:1ce:1ce:babe:5
 
 [fibo]
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
@@ -2619,3 +2620,4 @@ cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
 
 [cmhmr]
+cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
