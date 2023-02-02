@@ -5178,7 +5178,7 @@ USERS:
       - ring-users
 
   kerfuffle:
-    state: absent
+    state: present
     company: 'Kerfuffle'
     email: 'noc@kerfuffle.net'
     uid: 5666
@@ -5598,6 +5598,14 @@ USERS:
     company: 'AS203528'
     email: 'cmhmr.mgmt@gmail.com'
     uid: 5718
+    groups:
+      - ring-users
+
+  witine:
+    state: present
+    company: 'Witine Limited'
+    email: 'noc@witine.com'
+    uid: 5719
     groups:
       - ring-users
 
