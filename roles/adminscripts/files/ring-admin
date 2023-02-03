@@ -355,7 +355,7 @@ If you're able to fix the node, please do so and let us know.
 If not, please provision a fresh install with the following details:
  * Ubuntu 22.04
  * user 'nlnog' with the SSH-keys mentioned on https://ring.nlnog.net/contact/
- * make sure this user has 'sudo' rights
+ * make sure this user has passwordless 'sudo' rights
 
 This concerns the machine with hostname "$hostname"
 
