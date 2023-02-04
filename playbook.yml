@@ -13,6 +13,9 @@
   tags:
     - always
 
+- include: ubuntu_upgrade.yml
+  when: '"ringnode" in group_names and ansible_distribution_release != "jammy"'
+
 - hosts: all
   become: true
   become_user: root
