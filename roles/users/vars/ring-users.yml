@@ -5609,3 +5609,11 @@ USERS:
     groups:
       - ring-users
 
+  deltafiber:
+    state: present
+    company: 'DELTA Fiber'
+    email: 'coreftthgroep@deltafiber.nl'
+    uid: 5720
+    groups:
+      - ring-users
+

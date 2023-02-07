@@ -2669,3 +2669,5 @@ cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 
 [witine]
 witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
+
+[deltafiber]
