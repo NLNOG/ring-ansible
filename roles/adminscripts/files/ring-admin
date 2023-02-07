@@ -367,7 +367,7 @@ NLNOG RING Admins
 CANNOTUPGRADEMAIL = '''From: $adminemail
 To: $nocemail, $email
 Cc: $adminemail
-Subject: Failed Upgrade of NLNOG RING node $node for $company
+Subject: Failed Upgrade of NLNOG RING node $hostname for $company
 
 Dear $company
 
