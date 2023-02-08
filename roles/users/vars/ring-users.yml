@@ -5612,7 +5612,7 @@ USERS:
   deltafiber:
     state: present
     company: 'DELTA Fiber'
-    email: 'coreftthgroep@deltafiber.nl'
+    email: 'coreftth@ad.dfnld.nl'
     uid: 5720
     groups:
       - ring-users
