@@ -90,6 +90,7 @@
     - login
     - sshd
     - su
+    - common-auth
 
 - name: "Set localtime"
   file:
