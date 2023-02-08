@@ -332,6 +332,7 @@ ebox03.ring.nlnog.net OWNER=ebox V4=172.93.16.166 V6=2606:6d00:eb0:800::2
 unithost01.ring.nlnog.net OWNER=unithost V4=89.31.56.43 V6=2a05:52a0:65::20
 kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
+feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
 casablanca01.ring.nlnog.net OWNER=casablanca V4=109.123.197.83 V6=2001:1528:1:2100:250:56ff:fea1:1b69
 arcadiz01.ring.nlnog.net OWNER=arcadiz V4=185.160.128.147 V6=2a0b:5e00:100::2
@@ -371,6 +372,7 @@ web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
+internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:5caf:67ff:fe2f:54e8
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.104 V6=2602:fde5:1:63::d104
 mlab01.ring.nlnog.net OWNER=mlab V4=87.237.165.30 V6=2a0e:a6c1:0:2100:87:237:165:30
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
@@ -556,6 +558,7 @@ serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0
 telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V4=23.143.82.4 V6=2602:fc26:12:2::3
+accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
 aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::1
 aussiebb02.ring.nlnog.net OWNER=aussiebb V4=119.18.35.7 V6=2403:5800:700:16::1
 aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::1
@@ -1743,6 +1746,7 @@ kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 
 [feldsam]
+feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 
 [ragefour]
 
@@ -1898,6 +1902,7 @@ gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 
 [internetag]
+internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:5caf:67ff:fe2f:54e8
 
 [torix]
 torix01.ring.nlnog.net OWNER=torix V4=206.108.0.104 V6=2602:fde5:1:63::d104
@@ -2493,6 +2498,7 @@ iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V4=23.143.82.4 V6=2602:fc26:12:2::3
 
 [accuris]
+accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
 
 [aussiebb]
 aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::1
