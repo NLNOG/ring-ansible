@@ -5,7 +5,7 @@
 - name: "Link mkdir for building sqlite3"
   file:
     src: /bin/mkdir
-    dst: /usr/bin/mkdir
+    dest: /usr/bin/mkdir
     state: link
 
 - name: Install Sqlite3
