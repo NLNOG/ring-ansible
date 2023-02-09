@@ -2,12 +2,6 @@
   gem: name=SyslogLogger state=latest executable=/usr/bin/gem2.5 user_install=no
   when: ansible_distribution_release == "bionic"
 
-- name: "Link mkdir for building sqlite3"
-  file:
-    src: /bin/mkdir
-    dest: /usr/bin/mkdir
-    state: link
-
 - name: Install Sqlite3
   gem: name=sqlite3 version=1.4.2 executable=/usr/bin/gem2.5 user_install=no
   when: ansible_distribution_release == "bionic"
