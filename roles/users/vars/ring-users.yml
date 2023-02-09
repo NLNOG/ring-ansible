@@ -1954,7 +1954,7 @@ USERS:
   ntt:
     state: present
     company: 'NTT'
-    email: 'noc@us.ntt.net'
+    email: 'noc@gin.ntt.net'
     uid: 5265
     groups:
       - ring-users
