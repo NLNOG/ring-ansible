@@ -543,7 +543,7 @@ flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:
 flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
+eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=147.28.159.31 V6=2604:1380:b1:2a00::1
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
@@ -2432,7 +2432,7 @@ flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [eqxmetal]
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=145.40.89.71 V6=2604:1380:45f1:2200::7
+eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=147.28.159.31 V6=2604:1380:b1:2a00::1
 
 [vorboss]
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
