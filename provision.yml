@@ -7,6 +7,8 @@
       raw: sudo apt-get update -y
     - name: Install python
       raw: sudo apt-get install -y python || sudo apt-get install -y python3
+    - name: Install ping
+      raw: sudo apt-get install -y iputils-ping
 
 - hosts: all
   tasks:
