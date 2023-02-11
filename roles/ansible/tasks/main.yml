@@ -134,6 +134,9 @@
   template:
     src: cron.d/ansible.j2
     dest: /etc/cron.d/ansible
+    owner: root
+    group: root
+    mode: 0644
 
 - name: "Remove any old ansible crontab entries"
   lineinfile:
