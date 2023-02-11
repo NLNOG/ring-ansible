@@ -5617,3 +5617,11 @@ USERS:
     groups:
       - ring-users
 
+  ipng:
+    state: present
+    company: 'IPng Networks GmbH'
+    email: 'noc@ipng.ch'
+    uid: 5721
+    groups:
+      - ring-users
+
