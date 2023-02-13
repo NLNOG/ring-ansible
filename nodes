@@ -350,6 +350,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0:
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
 connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5::6
+connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
@@ -1798,6 +1799,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0:
 [connectria]
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
 connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5::6
+connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 
 [freifunkrl]
 freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
