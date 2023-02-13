@@ -388,6 +388,14 @@ lg_peers:
     asn: 3491
     ipv4: 63.218.156.9
     ipv6: 2400:8800:1e04::9
+  PFALZKOM-MAN:
+    asn: 21473
+    ipv4: 212.65.5.201
+    ipv6: 2a00:1e80:2::151
+  PFALZKOM-MUT:
+    asn: 21473
+    ipv4: 212.65.5.202
+    ipv6: 2a00:1e80:2::152
   POPNIX1:
     asn: 135063
     ipv4: 103.208.24.2
