@@ -74,8 +74,8 @@
 - name: reload systemd if needed
   meta: flush_handlers
 
-- service: name=ring-sqa4 state=stopped enabled=no
-- service: name=ring-sqa6 state=stopped enabled=no
+- service: name=ring-sqa4 state=started enabled=yes
+- service: name=ring-sqa6 state=started enabled=yes
 
 - name: check /etc/hosts age
   stat: path=/etc/hosts
