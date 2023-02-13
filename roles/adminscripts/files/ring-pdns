@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import MySQLdb as mdb
-import sys, inspect, re, time, simplejson, urllib, math
+import sys, inspect, re, time, simplejson, urllib.request, math
 from subprocess import call
 from itertools import tee
 
@@ -499,7 +499,7 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,fullname)):
             fullname=fullname + "." + zone
         
-        country=self.ring_getnodeattr(name,"country")
+        country=self.ring_getnodeattr(fullname,"country")
         if country:
             self.del_from_txt(name,country.lower());
         else:
@@ -621,7 +621,7 @@ class commands(object):
     def getgeo(self,geo):
         url=ELEVATION+geo
         try:
-            response = simplejson.load(urllib.urlopen(url))
+            response = simplejson.load(urllib.request.urlopen(url))
             resultset = response['results'][0]
 
             lat=self.dd2dms(resultset['location']['lat'],"lat")
