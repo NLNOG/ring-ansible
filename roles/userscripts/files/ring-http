@@ -84,7 +84,7 @@ while read line; do
 	    [ -n "${verbose}" ] && printf "%-20s ${output}\n" ${server}: 
     fi
 
-done < <(echo "$SERVERS" | xargs -P10 -n1 -I{} sh -c "${ssh_cmd}||:")
+done < <(echo "$SERVERS" | xargs -P10 -I{} sh -c "${ssh_cmd}||:")
 
 if [ "${replies[*]}" ]; then
     echo ${#replies[@]} servers: OK 

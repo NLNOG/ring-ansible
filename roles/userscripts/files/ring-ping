@@ -162,7 +162,7 @@ while read line; do
     fi
 
 
-done < <(echo "$SERVERS" | xargs -P10 -n1 -I{} sh -c "${ssh_cmd}||:")
+done < <(echo "$SERVERS" | xargs -P10 -I{} sh -c "${ssh_cmd}||:")
 
 if [ -n "${replies[*]}" ]; then
     mean=$(printf '%.2f' $(printf '%s\n' "${replies[@]}" | datamash mean 1))
