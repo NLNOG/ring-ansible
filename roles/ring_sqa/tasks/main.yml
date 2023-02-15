@@ -1,19 +1,4 @@
 - name: Install SyslogLogger
-  gem: name=SyslogLogger state=latest executable=/usr/bin/gem2.5 user_install=no
-  when: ansible_distribution_release == "bionic"
-
-- name: Install Sqlite3
-  gem: name=sqlite3 version=1.4.2 executable=/usr/bin/gem2.5 user_install=no
-  when: ansible_distribution_release == "bionic"
-
-- name: Install RING SQA Gem
-  gem: name=ring-sqa state=latest executable=/usr/bin/gem2.5 user_install=no
-  when: ansible_distribution_release == "bionic"
-  notify:
-    - restart ring-sqa4
-    - restart ring-sqa6
-
-- name: Install SyslogLogger
   gem: name=SyslogLogger state=latest user_install=no
   when: ansible_distribution_release == "jammy"
 
