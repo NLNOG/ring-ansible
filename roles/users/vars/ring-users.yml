@@ -352,7 +352,7 @@ USERS:
       - ring-users
 
   nebula:
-    state: present
+    state: absent
     company: 'Nebula Oy'
     email: 'net-core@nebula.fi'
     uid: 5052
@@ -5622,6 +5622,14 @@ USERS:
     company: 'IPng Networks GmbH'
     email: 'noc@ipng.ch'
     uid: 5721
+    groups:
+      - ring-users
+
+  tin:
+    state: present
+    company: 'Telia Inmics-Nebula Oy'
+    email: 'net-core@inmicsnebula.fi'
+    uid: 5722
     groups:
       - ring-users
 
