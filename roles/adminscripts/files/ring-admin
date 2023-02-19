@@ -1697,6 +1697,11 @@ class commands(object):
                                           **{'sshkey': new['sshkey']})
                             print("Replaced %s key %s for %s" % (old['keytype'],
                                                                  old['id'],hostname))
+                if not old['keytype'] in seen:
+                    self.dbdelete('sshhostkeys', id=old['id'])
+                    print("Deleted %s key %s for %s" % (old['keytype'],
+                                                        old['id'],hostname))
+
             for new in newkeys:
                 if not new['keytype'] in seen:
                     kid = self.dbinsertlist('sshhostkeys',
