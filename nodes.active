@@ -23,6 +23,7 @@ unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001
 maverick01.ring.nlnog.net OWNER=maverick V4=195.110.48.110 V6=2a01:5e00:0:67::2
 netsign01.ring.nlnog.net OWNER=netsign V4=217.115.1.67 V6=2a00:1328:e000:456::67
 rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
@@ -115,7 +116,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
@@ -468,7 +468,6 @@ techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
-hlit01.ring.nlnog.net OWNER=hlit V4=193.32.86.6 V6=2a0f:5701:3200:23::1
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=134.195.121.46 V6=2602:fd50:20:babe::
@@ -587,6 +586,7 @@ cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
+tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 
 [infranode]
 
@@ -685,6 +685,7 @@ rrbone01.ring.nlnog.net OWNER=rrbone V4=31.172.10.5 V6=2a01:a700:4836::1:2
 [inotel]
 
 [blix]
+blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 
 [portlane]
 portlane01.ring.nlnog.net OWNER=portlane V4=46.246.31.250 V6=2a00:1a28:0:4::1342
@@ -981,7 +982,6 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [qbranch]
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
 entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
@@ -2224,7 +2224,6 @@ natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 [deepmedia]
 
 [hlit]
-hlit01.ring.nlnog.net OWNER=hlit V4=193.32.86.6 V6=2a0f:5701:3200:23::1
 
 [merlin]
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
@@ -2579,3 +2578,4 @@ deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e:
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 
 [tin]
+tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
