@@ -242,7 +242,7 @@ lg_peers:
     ipv4: 193.17.192.132
     ipv6: 2001:67c:1740::9
   HOSTWAYDE1:
-    asn: asn: 24679
+    asn: 24679
     ipv4: 195.47.229.254
     ipv6: 2a02:790::1
   INFOWEST1:
