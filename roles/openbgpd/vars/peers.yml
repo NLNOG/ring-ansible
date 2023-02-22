@@ -256,6 +256,10 @@ lg_peers:
     asn: 1280
     ipv4: 149.20.65.193
     ipv6: 2001:4f8:1b::193
+  ITSERVICE1:
+    asn: 34681
+    ipv4: 193.32.86.1
+    ipv6: 2a0e:46c7::1
   IWAY1:
     asn: 8758
     ipv4: 212.25.27.56
