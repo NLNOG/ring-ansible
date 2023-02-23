@@ -90,5 +90,5 @@
     owner=root
     group=root
     mode=0755
-  when: 'ringnode' in group_names and network_ifupd.stat.exists
+  when: "'ringnode' in group_names and network_ifupd.stat.exists"
 
