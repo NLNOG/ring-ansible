@@ -7,6 +7,11 @@
     mode: 0644
   notify: syslog restart service
 
+- name: check for /etc/network/if-up.d
+  stat:
+    path: /etc/network/if-up.d
+  register: network_ifupd
+
 - name: install if-up.d script on ringnodes
   copy:
     src=if-up.d/syslog-ng
@@ -14,5 +19,4 @@
     owner=root
     group=root
     mode=0755
-  when: "'ringnode' in group_names"
-
+  when: "'ringnode' in group_names and network_ifupd.stat.exists"
