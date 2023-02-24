@@ -3947,7 +3947,7 @@ USERS:
   adista:
     state: present
     company: 'Adista'
-    email: 'architecture_tsr@adista.fr'
+    email: 'Lst_SEI_Cellule_Experts_Technique@adista.fr'
     uid: 5514
     groups:
       - ring-users
