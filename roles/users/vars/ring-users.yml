@@ -2520,7 +2520,7 @@ USERS:
       - ring-users
 
   vellance:
-    state: present
+    state: absent
     company: 'Vellance'
     email: 'noc@ppse.net'
     uid: 5337
