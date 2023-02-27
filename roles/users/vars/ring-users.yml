@@ -104,7 +104,7 @@ USERS:
       - ring-users
 
   xs4all:
-    state: present
+    state: absent
     company: 'XS4ALL'
     email: 'noc@xs4all.net'
     uid: 5015

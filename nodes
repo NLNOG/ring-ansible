@@ -11,7 +11,6 @@ previder01.ring.nlnog.net OWNER=previder V4=84.241.137.18 V6=2001:1690:2:115::18
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
-xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
@@ -466,7 +465,6 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
-fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
@@ -679,7 +677,6 @@ leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 
 [xs4all]
-xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 
 [nedzone]
 
@@ -2208,7 +2205,6 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
-fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]
