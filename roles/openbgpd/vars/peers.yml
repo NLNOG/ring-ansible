@@ -20,7 +20,7 @@ lg_peers:
     asn: 33280
     ipv4: 65.22.12.251
     ipv6: 2A01:8840:C::251
-  AFILIAS_TKY1:
+  AFILIAS_NRT1:
     asn: 13901
     ipv4: 199.19.52.251
     ipv6: 2001:500:a::251

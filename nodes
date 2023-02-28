@@ -11,7 +11,6 @@ previder01.ring.nlnog.net OWNER=previder V4=84.241.137.18 V6=2001:1690:2:115::18
 leaseweb02.ring.nlnog.net OWNER=leaseweb V4=37.48.73.130 V6=2001:1af8:4700:a103:baaa::2
 leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05:baaa::1
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
-xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
@@ -110,6 +109,8 @@ kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
+afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
+afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
 poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
@@ -258,7 +259,6 @@ worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:d
 cloudvps02.ring.nlnog.net OWNER=cloudvps V4=83.96.201.176 V6=2a02:348:5e6:1::2dbf
 cloudvps03.ring.nlnog.net OWNER=cloudvps V4=83.96.201.177 V6=2a02:348:5e6:1::1dff
 cloudvps04.ring.nlnog.net OWNER=cloudvps V4=83.96.202.8 V6=2a02:348:5e6:1::a480
-vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:239c:0:20::22
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
@@ -465,7 +465,6 @@ isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
-fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
@@ -678,7 +677,6 @@ leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 
 [xs4all]
-xs4all01.ring.nlnog.net OWNER=xs4all V4=82.94.249.162 V6=2001:888:2000:3e::1337
 
 [nedzone]
 
@@ -979,6 +977,8 @@ nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:
 [afilias]
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
+afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
+afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 
 [grnet]
 
@@ -1529,7 +1529,6 @@ cloudvps04.ring.nlnog.net OWNER=cloudvps V4=83.96.202.8 V6=2a02:348:5e6:1::a480
 [veracity]
 
 [vellance]
-vellance01.ring.nlnog.net OWNER=vellance V4=217.195.114.152 V6=2a03:5500:1:2:217:195:114:152
 
 [cegeka]
 cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:239c:0:20::22
@@ -2206,7 +2205,6 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
-fetzer01.ring.nlnog.net OWNER=fetzer V4=195.191.81.31 V6=2a00:1908:fffc:ffff:ffff:b33f:f00d:b4b3
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]

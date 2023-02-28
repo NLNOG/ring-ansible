@@ -104,7 +104,7 @@ USERS:
       - ring-users
 
   xs4all:
-    state: present
+    state: absent
     company: 'XS4ALL'
     email: 'noc@xs4all.net'
     uid: 5015
@@ -2520,7 +2520,7 @@ USERS:
       - ring-users
 
   vellance:
-    state: present
+    state: absent
     company: 'Vellance'
     email: 'noc@ppse.net'
     uid: 5337
@@ -3947,7 +3947,7 @@ USERS:
   adista:
     state: present
     company: 'Adista'
-    email: 'architecture_tsr@adista.fr'
+    email: 'Lst_SEI_Cellule_Experts_Technique@adista.fr'
     uid: 5514
     groups:
       - ring-users
