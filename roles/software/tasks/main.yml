@@ -48,7 +48,7 @@
 
 - name: "Set new capabilities (jammy)"
   vars:
-    check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
+    check_string: "{{ item.item }} cap_net_admin,cap_net_raw=eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: ansible_distribution_release == "jammy" and item.stdout != check_string
   with_items: "{{ cap_jammy.results }}"
