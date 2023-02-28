@@ -25,16 +25,15 @@
     - /bin/ping
     - /usr/sbin/lft
 
-- name: "allow ring-users to do wire capturing (jammy)"
+- name: "allow ring-users to do wire capturing"
   file: path={{ item }} mode=0754 owner=root group=ring-users
   with_items:
     - /usr/bin/tcpdump
     - /usr/bin/dumpcap
-  when: ansible_distribution_release == "jammy"
 
-- name: "Get network capabilities for some tools (jammy)"
+- name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
-  register: cap_jammy
+  register: caps
   with_items:
     - /usr/sbin/hping3
     - /usr/bin/nmap
@@ -42,31 +41,16 @@
     - /usr/bin/traceroute.db
     - /usr/bin/tcpdump
     - /usr/bin/dumpcap
-  check_mode: no
-  changed_when: false
-  when: ansible_distribution_release == "jammy"
-
-- name: "Set new capabilities (jammy)"
-  vars:
-    check_string: "{{ item.item }} cap_net_admin,cap_net_raw=eip"
-  command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: ansible_distribution_release == "jammy" and item.stdout != check_string
-  with_items: "{{ cap_jammy.results }}"
-
-- name: "Get network capabilities for some tools"
-  command: /sbin/getcap {{ item }}
-  register: capb
-  with_items:
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
 
 - name: "Set new capabilities"
   vars:
-    check_string: "{{ item.item }} = cap_net_admin,cap_net_raw+eip"
+    check_string: "{{ item.item }} cap_net_admin,cap_net_raw=eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != check_string
-  with_items: "{{ capb.results }}"
+  with_items: "{{ caps.results }}"
 
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
