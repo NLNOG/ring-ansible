@@ -8,7 +8,6 @@ software:
     - bison
     - build-essential
     - bzr
-    - command-not-found
     - curl
     - cvs
     - datamash
