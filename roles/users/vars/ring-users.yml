@@ -5633,3 +5633,11 @@ USERS:
     groups:
       - ring-users
 
+  oneaccess:
+    state: present
+    company: '1access Sweden AB'
+    email: 'noc@1o.se'
+    uid: 5723
+    groups:
+      - ring-users
+
