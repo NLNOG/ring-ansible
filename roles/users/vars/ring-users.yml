@@ -5641,3 +5641,11 @@ USERS:
     groups:
       - ring-users
 
+  equest:
+    state: present
+    company: 'e-Quest'
+    email: 'noc-infra@e-quest.nl'
+    uid: 5724
+    groups:
+      - ring-users
+

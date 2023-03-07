@@ -628,6 +628,7 @@ deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e:
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 oneaccess01.ring.nlnog.net OWNER=oneaccess V4=91.198.135.13 V6=2a0b:142:0:2::beef
+equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2677,3 +2678,6 @@ tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 
 [oneaccess]
 oneaccess01.ring.nlnog.net OWNER=oneaccess V4=91.198.135.13 V6=2a0b:142:0:2::beef
+
+[equest]
+equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
