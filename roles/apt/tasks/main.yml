@@ -41,6 +41,7 @@
 - name: "Install prerequisites for apt_repository"
   apt: name={{ item }} state=latest
   with_items:
+    - gpg
     - python3-apt
     - ca-certificates
   when: ansible_distribution_release == "jammy"
