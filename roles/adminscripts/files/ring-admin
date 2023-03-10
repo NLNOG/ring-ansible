@@ -386,6 +386,23 @@ Kind regards,
 NLNOG RING Admins
 '''
 
+DISKMAIL = '''From: $adminemail
+To: $nocemail, $email
+Cc: $adminemail
+Subject: Problem with NLNOG RING node for $company
+
+Dear $company
+
+The node you made available to the NLNOG RING project has run out of available
+disk space. Could you please remedy this?
+
+This concerns the machine with hostname "$hostname"
+
+Kind regards,
+
+NLNOG RING Admins
+'''
+
 MAILHOST='localhost'
 INACTIVE_DAYS=90
 
@@ -1189,6 +1206,30 @@ class commands(object):
                           mailbody)
             print("Done.")
 
+    def generate_diskmail(self, hostname, send=None, template=DISKMAIL):
+        uid = self.hostname2uid(hostname)
+        if not uid:
+            sys.exit('machine %s not found' % hostname)
+        partid = self.uid2pid(uid)
+        if not partid:
+            sys.exit('user %s not found' % uid)
+        p = self.dbselectone('participants', id=partid)
+        if not p:
+            sys.exit('participant %s not found' % partid)
+        text = Template(template)
+        mailbody = text.substitute(company=p['company'], nocemail=p['nocemail'],
+                                   email=p['email'],
+                                   hostname=hostname,
+                                   adminemail=ADMINEMAIL)
+        print(mailbody)
+
+        if send:
+            print("Sending mail... ")
+            self.sendmail(ADMINEMAIL,
+                          [p['nocemail'],p['email'],ADMINEMAIL],
+                          mailbody)
+            print("Done.")
+
     def purge_inactive_machines(self):
         tstamp = time.time()
         machine_delete = []
@@ -1965,6 +2006,18 @@ class commands(object):
         if not (re.match(r'.*%s$' % ZONE, hostname)):
             hostname = hostname + "." + ZONE
         self.generate_cannotupgrademail(hostname,send=1)
+
+    def cmd_generate_diskmail(self, hostname):
+        """generate text for disk full notification"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_diskmail(hostname)
+
+    def cmd_send_diskmail(self, hostname):
+        """send disk full notification"""
+        if not (re.match(r'.*%s$' % ZONE, hostname)):
+            hostname = hostname + "." + ZONE
+        self.generate_diskmail(hostname,send=1)
 
     def cmd_purge_machines(self):
         """purge machines inactive for a long time"""
