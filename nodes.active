@@ -106,7 +106,6 @@ hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
-afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
 afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 merit01.ring.nlnog.net OWNER=merit V4=192.122.200.171 V6=2001:48a8:7fff:13::3
@@ -256,7 +255,6 @@ upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000
 upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
 upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
 upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
-choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
 linode02.ring.nlnog.net OWNER=linode V4=139.162.156.136 V6=2a01:7e01::f03c:91ff:feb0:de12
 linode03.ring.nlnog.net OWNER=linode V4=45.79.137.222 V6=2600:3c03::f03c:91ff:feb0:de49
@@ -926,7 +924,6 @@ nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:
 
 [afilias]
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
-afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
 afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 
@@ -1488,7 +1485,6 @@ upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d
 upcloud12.ring.nlnog.net OWNER=upcloud V4=194.62.97.148 V6=2a04:3542:8000:1000:d42a:dcff:fe53:3568
 
 [choopa]
-choopa01.ring.nlnog.net OWNER=choopa V4=45.63.14.202 V6=2001:19f0:300:62a8:5400:ff:fe09:a1cd
 
 [linode]
 linode01.ring.nlnog.net OWNER=linode V4=103.3.60.146 V6=2400:8901::f03c:91ff:fe37:a150
