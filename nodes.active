@@ -190,7 +190,6 @@ ntt03.ring.nlnog.net OWNER=ntt V4=61.200.92.132 V6=2001:218:200f:3::2
 ntt01.ring.nlnog.net OWNER=ntt V4=165.254.21.124 V6=2001:418:1456:b0a::2
 iucc01.ring.nlnog.net OWNER=iucc V4=128.139.197.81 V6=2001:bf8:900:1::808b:c551
 nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
-businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
 mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640::55:3
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
@@ -493,7 +492,6 @@ ercwnc01.ring.nlnog.net OWNER=ercwnc V4=72.250.243.98 V6=2001:4850:2019::1
 itrelation01.ring.nlnog.net OWNER=itrelation V4=194.116.178.10 V6=2a02:c900:0:1::10
 nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::200
 freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
-oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
 lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
@@ -1276,7 +1274,6 @@ iucc01.ring.nlnog.net OWNER=iucc V4=128.139.197.81 V6=2001:bf8:900:1::808b:c551
 nynex01.ring.nlnog.net OWNER=nynex V4=109.236.159.249 V6=2a00:e60:7000:1::249:1
 
 [businessconnect]
-businessconnect01.ring.nlnog.net OWNER=businessconnect V4=46.183.250.9 V6=2a01:8800:0:250::9
 
 [noris]
 noris01.ring.nlnog.net OWNER=noris V4=213.95.10.76 V6=2001:780:100:115::10
@@ -2297,7 +2294,6 @@ nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::
 freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
 
 [oderland]
-oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 
 [neutrinet]
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
