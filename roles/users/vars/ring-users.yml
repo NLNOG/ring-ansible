@@ -3977,7 +3977,7 @@ USERS:
       - ring-users
 
   equinixbr:
-    state: present
+    state: absent
     company: 'Equinix Brazil'
     email: 'SMC_LATAM@equinix.com'
     uid: 5518
