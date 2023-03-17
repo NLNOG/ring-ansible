@@ -485,7 +485,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
@@ -495,7 +494,6 @@ nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::
 freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
 oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
-lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
 riepert01.ring.nlnog.net OWNER=riepert V4=185.89.162.230 V6=2a05:d9c0:100::2
 cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
@@ -2271,7 +2269,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 
 [ipfail]
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
@@ -2305,7 +2302,6 @@ oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f0:5:a::35
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
 
 [lamdahellix]
-lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 
 [terratransit]
 terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
