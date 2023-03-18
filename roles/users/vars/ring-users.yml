@@ -5649,3 +5649,19 @@ USERS:
     groups:
       - ring-users
 
+  globedc:
+    state: present
+    company: 'GLOBE DataCenter B.V.'
+    email: 'd.voogel@globe-datacenter.com'
+    uid: 5725
+    groups:
+      - ring-users
+
+  fastjet:
+    state: present
+    company: 'FastJet Telecom Private Limited'
+    email: 'admin@jetway.in'
+    uid: 5726
+    groups:
+      - ring-users
+
