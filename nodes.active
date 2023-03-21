@@ -2609,3 +2609,5 @@ globedc01.ring.nlnog.net OWNER=globedc V4=91.202.208.129 V6=2a10:9800:1:1::129
 
 [fastjet]
 fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
+
+[alizer]

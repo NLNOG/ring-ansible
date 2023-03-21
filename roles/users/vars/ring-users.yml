@@ -5665,3 +5665,11 @@ USERS:
     groups:
       - ring-users
 
+  alizer:
+    state: present
+    company: 'Alizer'
+    email: 'noc@alizer.se'
+    uid: 5727
+    groups:
+      - ring-users
+
