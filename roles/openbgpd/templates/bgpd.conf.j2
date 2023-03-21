@@ -11,6 +11,7 @@ group "peers" {
     multihop 255
     export none
     announce add-path recv yes
+    role customer
 
 {% for peer in lg_peers %}
 {% if lg_peers[peer].ipv4|default(None) %}
