@@ -533,6 +533,7 @@ massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
+ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
 ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
@@ -2416,6 +2417,7 @@ veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200:
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
 
 [ionos]
+ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
 
 [ting]
 ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
