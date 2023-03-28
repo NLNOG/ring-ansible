@@ -396,6 +396,10 @@ Dear $company
 The node you made available to the NLNOG RING project has run out of available
 disk space. Could you please remedy this?
 
+Please make the root partition at least 20GB, and if your machine has a 
+dedicated /boot partition, please make sure it is at least 1GB so new kernels
+can be installed.
+
 This concerns the machine with hostname "$hostname"
 
 Kind regards,
