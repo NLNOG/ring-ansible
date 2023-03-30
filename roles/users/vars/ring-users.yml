@@ -3641,7 +3641,7 @@ USERS:
       - ring-users
 
   pinse:
-    state: present
+    state: absent
     company: 'PIN Sweden AB'
     email: 'noc@pin.se'
     uid: 5476
