@@ -631,6 +631,7 @@ equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:
 globedc01.ring.nlnog.net OWNER=globedc V4=91.202.208.129 V6=2a10:9800:1:1::129
 fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
 alizer01.ring.nlnog.net OWNER=alizer V4=194.68.20.6 V6=2a0c:b641:952:1000::20:6
+x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2695,3 +2696,4 @@ alizer01.ring.nlnog.net OWNER=alizer V4=194.68.20.6 V6=2a0c:b641:952:1000::20:6
 [infracom]
 
 [x2com]
+x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
