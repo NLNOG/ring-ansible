@@ -37,7 +37,6 @@ iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:b
 rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
-spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
 seeweb01.ring.nlnog.net OWNER=seeweb V4=85.94.202.10 V6=2001:4b78:2100:3::1
 westnet01.ring.nlnog.net OWNER=westnet V4=88.81.97.211 V6=2a02:3d8:0:10::211
@@ -231,11 +230,11 @@ ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
-jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
+netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.163.230 V6=2a03:2c60:1::10
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
@@ -369,7 +368,6 @@ vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=62.141.35.164 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
-pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 quxlabs01.ring.nlnog.net OWNER=quxlabs V4=193.182.61.51 V6=2a0a:3507:1:3001::3e04
 elastx01.ring.nlnog.net OWNER=elastx V4=217.61.244.211 V6=2a07:2180::217:61:244:211
@@ -395,7 +393,6 @@ comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 noack01.ring.nlnog.net OWNER=noack V4=185.231.100.55 V6=2a0c:5700:3133:650:f4c5:d0ff:fe0e:e3d9
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
-gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104::9389:137
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
@@ -445,7 +442,6 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
-isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
@@ -520,7 +516,6 @@ flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:
 flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=147.28.159.31 V6=2604:1380:b1:2a00::1
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
@@ -533,7 +528,6 @@ massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
-ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
 ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
 fusioned01.ring.nlnog.net OWNER=fusioned V4=185.157.208.249 V6=2a03:afe2:1001:2::249
 gocode01.ring.nlnog.net OWNER=gocode V4=170.39.230.105 V6=2602:fd50:0100:0901:f485:87a2:c983:9f00
@@ -553,7 +547,6 @@ lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
-clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
@@ -583,7 +576,6 @@ fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
-telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
 zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::11
@@ -759,7 +751,6 @@ solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:f
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 
 [spacenet]
-spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
 
 [mironet]
 mironet01.ring.nlnog.net OWNER=mironet V4=109.71.96.106 V6=2a00:17E0:4000:7E2::6D47:606A
@@ -1399,7 +1390,6 @@ csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0
 [qcom]
 
 [jointtransit]
-jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 
 [edsitech]
 edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
@@ -1426,6 +1416,7 @@ openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 [cablecom]
 
 [netnod]
+netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 
 [quadranet]
 
@@ -1883,7 +1874,6 @@ ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
 
 [pinse]
-pinse01.ring.nlnog.net OWNER=pinse V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [thusa]
 thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
@@ -1969,7 +1959,6 @@ noack01.ring.nlnog.net OWNER=noack V4=185.231.100.55 V6=2a0c:5700:3133:650:f4c5:
 
 [gandi]
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
-gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 
 [ipbde]
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
@@ -2141,7 +2130,6 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 
 [isc]
-isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 
 [neptune]
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
@@ -2374,7 +2362,6 @@ flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [eqxmetal]
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=147.28.159.31 V6=2604:1380:b1:2a00::1
 
 [vorboss]
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
@@ -2417,7 +2404,6 @@ veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200:
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
 
 [ionos]
-ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
 
 [ting]
 ting01.ring.nlnog.net OWNER=ting V4=64.98.79.87 V6=2606:8e80:5010:2::87
@@ -2481,7 +2467,6 @@ uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
 
 [clearnetworx]
-clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
 
 [nmmn]
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
@@ -2557,7 +2542,6 @@ xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 
 [telemark]
-telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 
 [titandc]
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
@@ -2625,3 +2609,7 @@ fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103
 
 [alizer]
 alizer01.ring.nlnog.net OWNER=alizer V4=194.68.20.6 V6=2a0c:b641:952:1000::20:6
+
+[infracom]
+
+[x2com]

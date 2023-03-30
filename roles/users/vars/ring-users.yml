@@ -3073,7 +3073,7 @@ USERS:
       - ring-users
 
   ekmedia:
-    state: present
+    state: absent
     company: 'EK-Media B.V.'
     email: 'noc@ek-media.nl'
     uid: 5407
@@ -4905,7 +4905,7 @@ USERS:
       - ring-users
 
   apgp:
-    state: present
+    state: absent
     company: 'AP GP Operations, LLC'
     email: 'noc@ap.foundation'
     uid: 5633
@@ -5098,7 +5098,7 @@ USERS:
       - ring-users
 
   webinabox:
-    state: present
+    state: absent
     company: 'Web In A Box'
     email: 'admin@webinabox.net.au'
     uid: 5656
@@ -5670,6 +5670,22 @@ USERS:
     company: 'Alizer'
     email: 'noc@alizer.se'
     uid: 5727
+    groups:
+      - ring-users
+
+  infracom:
+    state: present
+    company: 'Infracom'
+    email: 'support.it@infracom.se'
+    uid: 5728
+    groups:
+      - ring-users
+
+  x2com:
+    state: present
+    company: 'X2com BE'
+    email: 'noc@x2com.nl'
+    uid: 5729
     groups:
       - ring-users
 
