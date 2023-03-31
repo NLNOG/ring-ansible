@@ -195,7 +195,6 @@ mknetzdienste01.ring.nlnog.net OWNER=mknetzdienste V4=85.220.161.84 V6=2001:1640
 dacor01.ring.nlnog.net OWNER=dacor V4=217.24.48.97 V6=2a00:9d80:9000:2::48:97
 networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2a01:5140:130::123
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
-onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 tigron01.ring.nlnog.net OWNER=tigron V4=86.39.65.11 V6=2a00:6ec0:101:1:0:11::
 nexiu01.ring.nlnog.net OWNER=nexiu V4=87.253.248.13 V6=2a01:7f8:0:10f::13
 digitalocean01.ring.nlnog.net OWNER=digitalocean V4=104.248.161.112 V6=2a03:b0c0:1:d0::1118:9001
@@ -599,6 +598,7 @@ fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103
 alizer01.ring.nlnog.net OWNER=alizer V4=194.68.20.6 V6=2a0c:b641:952:1000::20:6
 infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
+scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
 
 [infranode]
 
@@ -1309,7 +1309,6 @@ networkoperations01.ring.nlnog.net OWNER=networkoperations V4=80.73.130.123 V6=2
 atw01.ring.nlnog.net OWNER=atw V4=88.151.99.253 V6=2a01:270:91fd::1
 
 [onlinesas]
-onlinesas01.ring.nlnog.net OWNER=onlinesas V4=62.210.156.8 V6=2001:bc8:3::3
 
 [mainloop]
 
@@ -2619,3 +2618,4 @@ infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 
 [scaleway]
+scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9

@@ -2064,7 +2064,7 @@ USERS:
       - ring-users
 
   onlinesas:
-    state: present
+    state: absent
     company: 'Online S.A.S.'
     email: 'noc@as12876.net'
     uid: 5279
