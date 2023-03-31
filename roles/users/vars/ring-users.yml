@@ -5689,3 +5689,11 @@ USERS:
     groups:
       - ring-users
 
+  scaleway:
+    state: present
+    company: 'Scaleway'
+    email: 'noc@as12876.net'
+    uid: 5730
+    groups:
+      - ring-users
+
