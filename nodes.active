@@ -2617,3 +2617,5 @@ infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [x2com]
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
+
+[scaleway]
