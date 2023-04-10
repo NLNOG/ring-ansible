@@ -605,6 +605,7 @@ alizer01.ring.nlnog.net OWNER=alizer V4=194.68.20.6 V6=2a0c:b641:952:1000::20:6
 infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
+chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 
 [infranode]
 
@@ -2633,3 +2634,4 @@ x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
 
 [chrisrogers]
+chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
