@@ -5697,3 +5697,11 @@ USERS:
     groups:
       - ring-users
 
+  chrisrogers:
+    state: present
+    company: 'Chris Rogers'
+    email: 'networking+nlnog@rogers.ch'
+    uid: 5731
+    groups:
+      - ring-users
+
