@@ -122,6 +122,14 @@ lg_peers:
     asn: 6766
     ipv4: 82.195.73.62
     ipv6: 2001:67c:2ed8::1
+  CHRISROGERS_PHL:
+    asn: 19529
+    ipv4: 207.2.124.0
+    ipv6: 2602:fd10:10::
+  CHRISROGERS_SJC:
+    asn: 19529
+    ipv4: 207.2.125.0
+    ipv6: 2602:fd10:20::
   CLOUDIE1:
     asn: 924
     ipv4: 23.138.8.68
