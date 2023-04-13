@@ -5705,3 +5705,11 @@ USERS:
     groups:
       - ring-users
 
+  pentanet:
+    state: present
+    company: 'Pentanet'
+    email: 'noc@pentanet.com.au'
+    uid: 5732
+    groups:
+      - ring-users
+
