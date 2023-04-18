@@ -1480,7 +1480,7 @@ USERS:
       - ring-users
 
   4ddc:
-    state: present
+    state: absent
     company: '4D Data Centres Ltd'
     email: 'networkops@4d-dc.com'
     uid: 5204
