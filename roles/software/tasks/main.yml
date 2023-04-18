@@ -30,6 +30,7 @@
   with_items:
     - /usr/bin/tcpdump
     - /usr/bin/dumpcap
+  when: ansible_distribution_release == "jammy"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
@@ -44,6 +45,7 @@
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
+  when: ansible_distribution_release == "jammy"
 
 - name: "Set new capabilities"
   vars:
@@ -51,6 +53,7 @@
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
   when: item.stdout != check_string
   with_items: "{{ caps.results }}"
+  when: ansible_distribution_release == "jammy"
 
 - name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
