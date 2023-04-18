@@ -2645,3 +2645,5 @@ chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 
 [pentanet]
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
+
+[netone]

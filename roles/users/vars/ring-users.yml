@@ -5713,3 +5713,11 @@ USERS:
     groups:
       - ring-users
 
+  netone:
+    state: present
+    company: 'NetOne NL'
+    email: 'noc@netone.nl'
+    uid: 5733
+    groups:
+      - ring-users
+
