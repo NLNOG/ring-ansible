@@ -20,6 +20,7 @@
   become: true
   become_user: root
   roles:
+    - { role: postfix, tags: postfix }
     - { role: apt, tags: apt }
     - { role: resolving, tags: resolving }
     - { role: etcfiles, tags: etcfiles }
@@ -33,7 +34,6 @@
     - { role: munin-node, tags: munin-node }
     - { role: dhcp, tags: dhcp }
     - { role: fail2ban, tags: fail2ban }
-    - { role: postfix, tags: postfix }
     - { role: userscripts, tags: userscripts }
     - { role: adminscripts, tags: adminscripts }
     - { role: users, class: ring-admins, tags: ring-admins }
