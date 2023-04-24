@@ -818,7 +818,7 @@ USERS:
   obenetwork:
     state: present
     company: 'Obenetwork AB'
-    email: 'noc@obenetwork.com'
+    email: 'noc@obe.net'
     uid: 5118
     groups:
       - ring-users
