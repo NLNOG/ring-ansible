@@ -5721,3 +5721,19 @@ USERS:
     groups:
       - ring-users
 
+  belnet:
+    state: present
+    company: 'Belnet'
+    email: 'networks@belnet.be'
+    uid: 5734
+    groups:
+      - ring-users
+
+  accenture:
+    state: present
+    company: 'Accenture BV'
+    email: 'noc@cie.ac'
+    uid: 5735
+    groups:
+      - ring-users
+
