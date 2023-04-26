@@ -543,6 +543,11 @@ lg_peers:
     asn: 3214
     ipv4: 185.255.55.19
     ipv6: 2a0c:59c0::19
+  TRITAN:
+    asn: 393577
+    ipv4: 66.103.134.4
+    ipv6: 2602:291::1
+  
 
 readonly_peers:
   BGPDOTTOOLS:
