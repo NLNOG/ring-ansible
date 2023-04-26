@@ -439,8 +439,7 @@ c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019::4
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
-sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
-sentia02.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
+sentia01.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:500::1
@@ -637,6 +636,7 @@ chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
 netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2a12:8fc6:600:177:1:1:0:5
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
+accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2133,8 +2133,7 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019:
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 
 [sentia]
-sentia01.ring.nlnog.net OWNER=sentia V4=85.222.193.228 V6=2a02:20b0:165::100
-sentia02.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
+sentia01.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 
 [a1bg]
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
@@ -2719,3 +2718,4 @@ netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2a12:8fc6:600:177:1:1:0:
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 
 [accenture]
+accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
