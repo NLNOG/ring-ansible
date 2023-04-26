@@ -6,6 +6,7 @@
   with_items:
     - apparmor
     - apparmor-utils
+    - sssd
   when: need_mysql_server|default(None) != true
 
 - name: "Install various software packages (all)"
