@@ -4545,7 +4545,7 @@ USERS:
       - ring-users
 
   jacknet:
-    state: present
+    state: absent
     company: 'JackNet'
     email: 'noc@hadrill.co.uk'
     uid: 5588
@@ -4833,7 +4833,7 @@ USERS:
       - ring-users
 
   midnet:
-    state: present
+    state: absent
     company: 'MIDnet'
     email: 'noc@mid.net'
     uid: 5624
