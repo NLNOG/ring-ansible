@@ -946,7 +946,7 @@ USERS:
   poznan:
     state: present
     company: 'Poznan Supercomputing and Networking Center'
-    email: 'ipv6-support@man.poznan.pl'
+    email: 'nlnogring-support@psnc.pl'
     uid: 5138
     groups:
       - ring-users
