@@ -1,4 +1,5 @@
 need_mysql_server: true
+need_wsgi_py3: true
 apache_vhosts:
   - webdev
   - www
