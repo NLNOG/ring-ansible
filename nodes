@@ -635,6 +635,7 @@ pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
 netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2a12:8fc6:600:177:1:1:0:5
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
+bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2717,3 +2718,4 @@ belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
 
 [bitterbal]
+bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
