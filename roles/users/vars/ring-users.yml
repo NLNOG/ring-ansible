@@ -5737,3 +5737,11 @@ USERS:
     groups:
       - ring-users
 
+  bitterbal:
+    state: present
+    company: 'BITTERBAL'
+    email: 'noc@bit.nl'
+    uid: 5736
+    groups:
+      - ring-users
+
