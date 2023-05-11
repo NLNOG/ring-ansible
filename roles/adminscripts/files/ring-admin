@@ -430,7 +430,7 @@ class commands(object):
         if not func:
             return self.usage()
 
-        spec = inspect.getargspec(func)
+        spec = inspect.getargfullspec(func)
         reqcount = len(spec.args) - 1
         if spec.defaults:
             reqcount = reqcount - len(spec.defaults)
@@ -439,7 +439,7 @@ class commands(object):
         return func(*args, **kwargs)
 
     def ask(self, func):
-        spec = inspect.getargspec(func)
+        spec = inspect.getargfullspec(func)
         d = dict()
         for i, k in enumerate(spec.args[1:]):
             print("%s:" % k),
@@ -468,7 +468,7 @@ class commands(object):
         for k, v in sorted(inspect.getmembers(self)):
             if k.startswith('cmd_'):
                 cmd = k[4:].replace('_', ' ')
-                argspec = inspect.getargspec(v)
+                argspec = inspect.getargfullspec(v)
                 args = []
                 if argspec.defaults:
                     defcount = len(argspec.defaults)
