@@ -1,1 +1,1 @@
-4 4 * * * root cat /etc/ssh/ssh_known_hosts | perl -pe 's/,[^ ]+//' | sed 's/.ring.nlnog.net//' > /tmp/sshfp.$$ && sshfp -k /tmp/sshfp.$$ -a | chronic /usr/local/bin/ring-pdns update sshfp && rm /tmp/sshfp.$$
+4 4 * * * root cat /etc/ssh/ssh_known_hosts | perl -pe 's/,[^ ]+//' | sed 's/.ring.nlnog.net//' | grep -v ssh-dss > /tmp/sshfp.$$ && sshfp -k /tmp/sshfp.$$ -a | chronic /usr/local/bin/ring-pdns update sshfp && rm /tmp/sshfp.$$
