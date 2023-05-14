@@ -1707,14 +1707,14 @@ class commands(object):
         FNULL = open(os.devnull, 'w')
         result = ""
         for family in "-4","-6":
-            for ktype in "ecdsa","rsa","dsa":
+            for ktype in "ecdsa","rsa":
                 try:
                     r = check_output(["ssh-keyscan",family,"-T","30","-t",
                                       ktype,hostname],stderr=FNULL)
                     if r:
                         result = result + r.decode("utf-8")
                 except:
-                    sys.stderr.write('could not scan keys for %s (%s)\n' % (hostname,family))
+                    sys.stderr.write('could not scan keys for %s (%s/%s)\n' % (hostname,family,ktype))
 
         if result:
             oldkeys = list(self.dbselect('sshhostkeys', machine=machid))
