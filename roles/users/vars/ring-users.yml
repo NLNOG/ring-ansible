@@ -5747,7 +5747,7 @@ USERS:
 
   funkfeuer:
     state: present
-    company: 'FunkFeuer Wien - Verein zur Förderung freier Netze'
+    company: 'FunkFeuer Wien - Verein zur Foerderung freier Netze'
     email: 'noc@funkfeuer.at'
     uid: 5737
     groups:
