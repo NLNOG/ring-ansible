@@ -5745,3 +5745,11 @@ USERS:
     groups:
       - ring-users
 
+  funkfeuer:
+    state: present
+    company: 'FunkFeuer Wien - Verein zur Förderung freier Netze'
+    email: 'noc@funkfeuer.at'
+    uid: 5737
+    groups:
+      - ring-users
+
