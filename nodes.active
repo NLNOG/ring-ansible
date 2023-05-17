@@ -408,6 +408,7 @@ mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::b
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fe98:e0ab
+marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
 godaddy01.ring.nlnog.net OWNER=godaddy V4=62.138.161.20 V6=2001:1520:100::4
 rootnl01.ring.nlnog.net OWNER=rootnl V4=217.119.224.247 V6=2a02:1398:800::247
@@ -548,7 +549,6 @@ nullroute01.ring.nlnog.net OWNER=nullroute V4=192.26.105.218 V6=2001:67c:2970:f0
 estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:208::fd
 powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
@@ -2026,6 +2026,7 @@ wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fe98:e0ab
 
 [marbis]
+marbis01.ring.nlnog.net OWNER=marbis V4=5.83.160.137 V6=2a03:4d40:1337:0:f816:3eff:fea2:3790
 
 [globaledc]
 globaledc01.ring.nlnog.net OWNER=globaledc V4=79.143.213.22 V6=2a00:1280:8003:78::10
@@ -2478,7 +2479,6 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
 
 [lukegb]
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
 
