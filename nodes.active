@@ -150,7 +150,6 @@ doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
 vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
 lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d9:333::158
-iccn01.ring.nlnog.net OWNER=iccn V4=72.36.116.232 V6=2620:0:e00:1b10::11
 popsc01.ring.nlnog.net OWNER=popsc V4=200.237.196.2 V6=2801:80:a88:4017::2
 sargasso01.ring.nlnog.net OWNER=sargasso V4=78.158.81.4 V6=2a05:e200:1:69::1
 mythicbeasts01.ring.nlnog.net OWNER=mythicbeasts V4=93.93.129.145 V6=2a00:1098:0:80:1000:1d:0:1
@@ -1152,7 +1151,6 @@ hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000
 lightstorm01.ring.nlnog.net OWNER=lightstorm V4=92.240.232.158 V6=2a00:10d9:333::158
 
 [iccn]
-iccn01.ring.nlnog.net OWNER=iccn V4=72.36.116.232 V6=2620:0:e00:1b10::11
 
 [popsc]
 popsc01.ring.nlnog.net OWNER=popsc V4=200.237.196.2 V6=2801:80:a88:4017::2
