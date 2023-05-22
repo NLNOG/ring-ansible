@@ -396,6 +396,10 @@ lg_peers:
     asn: 22512
     ipv4: 204.209.252.3
     ipv6: 2620:3d:c000:1230::34
+  PARADOXNETWORKS_MCI:
+    asn: 52025
+    ipv4: 192.209.63.17
+    ipv6: '2a05:dfc1:479::'
   PBWCOMM01:
     asn: 16409
     ipv4: 204.9.92.1
