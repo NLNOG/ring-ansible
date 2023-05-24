@@ -4905,7 +4905,7 @@ USERS:
       - ring-users
 
   apgp:
-    state: absent
+    state: present
     company: 'AP GP Operations, LLC'
     email: 'noc@ap.foundation'
     uid: 5633
