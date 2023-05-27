@@ -232,7 +232,7 @@ USERS:
       - ring-users
 
   cyso:
-    state: present
+    state: absent
     company: 'Cyso'
     email: 'noc@cyso.net'
     uid: 5034
@@ -1664,7 +1664,7 @@ USERS:
       - ring-users
 
   stargate:
-    state: present
+    state: absent
     company: 'Stargate Connections Inc.'
     email: 'peering@stargate.ca'
     uid: 5227
@@ -2048,7 +2048,7 @@ USERS:
       - ring-users
 
   vibe:
-    state: present
+    state: absent
     company: 'Vibe Communications LTD'
     email: 'noc@vibecommunications.co.nz'
     uid: 5277
@@ -2248,7 +2248,7 @@ USERS:
       - ring-users
 
   qcom:
-    state: present
+    state: absent
     company: 'Qcom SPA'
     email: 'staff@qcom.it'
     uid: 5302
@@ -2880,7 +2880,7 @@ USERS:
       - ring-users
 
   elite:
-    state: present
+    state: absent
     company: 'Elite Limited'
     email: 'NLNOG@elite.net.uk'
     uid: 5383
@@ -4481,7 +4481,7 @@ USERS:
       - ring-users
 
   arvancloud:
-    state: present
+    state: absent
     company: 'ArvanCloud'
     email: 'cdn.sre@arvancloud.com'
     uid: 5580
@@ -4641,7 +4641,7 @@ USERS:
       - ring-users
 
   as207960net:
-    state: present
+    state: absent
     company: 'AS207960 Cyfyngedig'
     email: 'noc@as207960.net'
     uid: 5600
@@ -5498,7 +5498,7 @@ USERS:
       - ring-users
 
   ewpratten:
-    state: present
+    state: absent
     company: 'Evan Warren Pratten'
     email: 'noc@ewpratten.com'
     uid: 5706
