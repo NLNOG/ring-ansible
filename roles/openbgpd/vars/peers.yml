@@ -205,6 +205,14 @@ lg_peers:
     asn: 807
     ipv4: 23.147.64.2
     ipv6: 2620:39:6000:ffff::2
+  FREIFUNKFFM1:
+    asn: 64475
+    ipv4: 185.206.209.0
+    ipv6: 2a0f:3786:10:1::1
+  FREIFUNKFFM2:
+    asn: 64475
+    ipv4: 185.206.210.0
+    ipv6: 2a0f:3786:20:1::1
   FREIFUNKRL1:
     asn: 201701
     ipv4: 185.66.195.1
