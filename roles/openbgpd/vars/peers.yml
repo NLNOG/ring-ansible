@@ -1,9 +1,5 @@
 ---
 lg_peers:
-  DOMINETLLC:
-    asn: 210645
-    ipv4: 193.148.248.207
-    ipv6: 2a0c:9a40:1072::607
   ACCURIS1:
     asn: 212934
     ipv4: 23.130.139.83
@@ -153,6 +149,10 @@ lg_peers:
     asn: 210633
     ipv4: 194.50.19.41
     ipv6: 2a0f:5707:ab80:633::1
+  DOMINETLLC:
+    asn: 210645
+    ipv4: 193.148.248.207
+    ipv6: 2a0c:9a40:1072::607
   DUOCAST1:
     asn: 31477
     ipv4: 89.188.4.1
