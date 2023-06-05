@@ -1807,14 +1807,6 @@ USERS:
     groups:
       - ring-users
 
-  kpn:
-    state: absent
-    company: 'KPN International'
-    email: 'peering@kpn-international.com'
-    uid: 5247
-    groups:
-      - ring-users
-
   maxitel:
     state: present
     company: 'MaxiTEL Telecom B.V.'
@@ -5750,6 +5742,14 @@ USERS:
     company: 'FunkFeuer Wien - Verein zur Foerderung freier Netze'
     email: 'noc@funkfeuer.at'
     uid: 5737
+    groups:
+      - ring-users
+
+  kpn:
+    state: present
+    company: 'KPN B.V.'
+    email: 'peering-office@kpn.com'
+    uid: 5738
     groups:
       - ring-users
 
