@@ -18,8 +18,14 @@
 
 - name: Install unbound
   apt:
-    name: unbound
+    name: "{{ item }}"
     state: latest
+  with_items:
+    - unbound
+    - unbound-anchor
+    - unbound-host
+    - python3-unbound
+    - libunbound8
 
 - name: Configure unbound
   template:
