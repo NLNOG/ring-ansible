@@ -618,6 +618,7 @@ belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
 bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
 funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::135
+kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
 
 [infranode]
 
@@ -2671,3 +2672,4 @@ bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
 funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::135
 
 [kpn]
+kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
