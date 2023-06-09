@@ -3,7 +3,7 @@
 import datetime
 import getpass
 from string import Template
-from subprocess import check_output
+from subprocess import check_output, CalledProcessError
 import MySQLdb as mdb
 import inspect
 import os
@@ -1713,6 +1713,8 @@ class commands(object):
                                       ktype,hostname],stderr=FNULL)
                     if r:
                         result = result + r.decode("utf-8")
+                except CalledProcessError as e:
+                    pass
                 except:
                     sys.stderr.write('could not scan keys for %s (%s/%s)\n' % (hostname,family,ktype))
 
