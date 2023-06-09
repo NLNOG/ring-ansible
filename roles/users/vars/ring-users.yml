@@ -4473,9 +4473,9 @@ USERS:
       - ring-users
 
   arvancloud:
-    state: absent
+    state: present
     company: 'ArvanCloud'
-    email: 'cdn.sre@gmail.com'
+    email: 'cdn.sre@arvancloud.ir'
     uid: 5580
     groups:
       - ring-users
