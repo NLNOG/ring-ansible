@@ -5753,3 +5753,11 @@ USERS:
     groups:
       - ring-users
 
+  pathnet:
+    state: present
+    company: 'Path Network'
+    email: 'engineering@path.net'
+    uid: 5739
+    groups:
+      - ring-users
+

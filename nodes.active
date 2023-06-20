@@ -2673,3 +2673,5 @@ funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::13
 
 [kpn]
 kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
+
+[pathnet]
