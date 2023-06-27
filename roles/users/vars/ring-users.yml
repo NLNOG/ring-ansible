@@ -624,7 +624,7 @@ USERS:
       - ring-users
 
   gossamerthreads:
-    state: present
+    state: absent
     company: 'Gossamer Threads Inc.'
     email: 'noc-nlnog@gt.net'
     uid: 5090
@@ -2424,7 +2424,7 @@ USERS:
       - ring-users
 
   pix:
-    state: present
+    state: absent
     company: 'Palestine Internet Exchange Point - PIX'
     email: 'smansour@palestineix.com'
     uid: 5325

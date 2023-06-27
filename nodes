@@ -75,7 +75,6 @@ pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4
 pcextreme05.ring.nlnog.net OWNER=pcextreme V4=185.95.29.75 V6=2a05:1500:0:101:4e8:a4ff:fe00:10b
 nts01.ring.nlnog.net OWNER=nts V4=212.103.89.212 V6=2a00:c38:2::212
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
-gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
 simplytransit01.ring.nlnog.net OWNER=simplytransit V4=94.76.229.204 V6=2a02:af8:1:4300::4516
 isarnet01.ring.nlnog.net OWNER=isarnet V4=192.162.230.35 V6=2001:67c:2274:4021::101
 strato01.ring.nlnog.net OWNER=strato V4=81.169.160.77 V6=2a01:238:b:f034::77
@@ -246,7 +245,6 @@ tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
-pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:0302:0007:0000:0000:0000:0002
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
@@ -503,7 +501,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
@@ -877,7 +874,6 @@ nts01.ring.nlnog.net OWNER=nts V4=212.103.89.212 V6=2a00:c38:2::212
 speedpartner01.ring.nlnog.net OWNER=speedpartner V4=91.184.33.38 V6=2a01:198:0:3::38
 
 [gossamerthreads]
-gossamerthreads01.ring.nlnog.net OWNER=gossamerthreads V4=208.70.247.50 V6=2607:fcc0:2:1:208:70:247:50
 
 [towardex]
 
@@ -1498,7 +1494,6 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 [nianet]
 
 [pix]
-pix01.ring.nlnog.net OWNER=pix V4=185.90.125.134 V6=2a03:87a0:125:134::1
 
 [utwente]
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -2341,7 +2336,6 @@ hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
 hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
-hostuniversal10.ring.nlnog.net OWNER=hostuniversal V4=180.149.230.19 V6=2406:d500:9::be6e:4d7c
 
 [ipfail]
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
