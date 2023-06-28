@@ -620,7 +620,6 @@ accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::1
 bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
 funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::135
 kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
-pathnet01.ring.nlnog.net OWNER=pathnet V4=23.183.245.182 V6=2600:3500:c000:c0de::2000
 
 [infranode]
 
@@ -2678,4 +2677,3 @@ funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::13
 kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
 
 [pathnet]
-pathnet01.ring.nlnog.net OWNER=pathnet V4=23.183.245.182 V6=2600:3500:c000:c0de::2000
