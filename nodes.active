@@ -442,7 +442,6 @@ gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 trix01.ring.nlnog.net OWNER=trix V4=95.214.17.12 V6=2a09:d380:820:1::12
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
-isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
@@ -521,7 +520,6 @@ flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:
 flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
@@ -2151,7 +2149,6 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 
 [isc]
-isc01.ring.nlnog.net OWNER=isc V4=149.20.3.18 V6=2001:4f8:1:2000::18
 
 [neptune]
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
@@ -2388,7 +2385,6 @@ flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [eqxmetal]
-eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
 
 [vorboss]
 vorboss01.ring.nlnog.net OWNER=vorboss V4=5.10.145.254 V6=2a00:e340:dd:110::11
