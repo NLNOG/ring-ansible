@@ -126,3 +126,16 @@ USERS:
       - ring-admins
     sshkeys:
       - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDE521tanRWXYyZYcd1/KKw0M1j14rkbk680mQ4xnaxsGAaoEfZPHeb2+goeFC0Av0znCXyjvzxUQ/lDLZhjYpjVP0zV3NWOIzupOWQ97RhhHnT2zCn+7GGRR7AZMy9LzJsD0uvIQCX79bLJsyqzgZj55Hevy+RSqic16rd2t9Qi8wVRfEhuNs1e7fQoHaC68fniHov/QphzoqU1b9whddspaiyt2+ukEAnVZuREPWOmgsp0YI4mKlyaF5vxWkPVMjBYA2OgyfJ8AAJvLSPxXBmNOkyVljIi6FzY9ku0JdFVpHKx2lGIV/8ht0tvbeMhwu3qgQEl78Uq2/fU7ViYLzXE6euXlymmcHWCQxn9ylJgCN5/66aavme70aspOQP7PCY7ET4DuU84ZoJSx02nBBiT0iqG8h2heXPgPx1EClau/hkHEl4G742e12p+eCZOsb5ch50W26qATQQVpdK1BCSqGQgxRRhrH5TYC5SGws73RqgidCRQ2/sVVxdodlR0Hs= niels@nlnog'
+
+
+  cas:
+    state: present
+    company: "Cas de Reuver"
+    email: cas@reuver.co
+    uid: 6012
+    shell: /bin/bash
+    groups:
+      - ring-users
+      - ring-admins
+    sshkeys:
+      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVbSfoOcCeSNZ/t9BPot5uh43N9rmVXla+Ga+BS4Two cas@reuver.co'
