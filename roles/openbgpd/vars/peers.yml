@@ -577,7 +577,10 @@ lg_peers:
     asn: 393577
     ipv4: 66.103.134.4
     ipv6: 2602:291::1
-  
+  AS212635_AMS2:
+    asn: 212635
+    ipv4: 45.159.140.2
+    ipv6: 2a10:6e40::2
 
 readonly_peers:
   BGPDOTTOOLS:
