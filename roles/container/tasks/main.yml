@@ -3,3 +3,4 @@
   with_items:
     - qemu-kvm
     - virt-manager
+    - bridge-utils
