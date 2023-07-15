@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import requests
 import MySQLdb as mdb
 import sys, inspect, re, time, simplejson, urllib.request, math
 from subprocess import call
@@ -11,11 +12,7 @@ DB='pdns'
 ZONE='ring.nlnog.net'
 SOA='ns01.infra.ring.nlnog.net. ring-admins.ring.nlnog.net. %.0f 7200 3600 1209600 900' % time.time()
 ELEVATION='https://api.opentopodata.org/v1/mapzen?locations='
-
-RINGDBHOST='dbmaster.infra.ring.nlnog.net'
-RINGDBUSER='ring'
-RINGDBPASS=''
-RINGDB='ring'
+RINGAPI='https://api.ring.nlnog.net/1.0/'
 
 SCHEMA='''
 create table domains (
@@ -223,25 +220,35 @@ class commands(object):
         for row in result:
             print(row)
 
-    def ring_dbquery(self, q, v=None):
-        conn = mdb.connect(RINGDBHOST,RINGDBUSER,RINGDBPASS,RINGDB)
-        if not conn:
-            sys.stderr.write("could not connect to db\n")
-            sys.exit(1)
-        cur = conn.cursor(mdb.cursors.DictCursor)
-        if v:
-            cur.execute(q, v)
-        else:
-            cur.execute(q)
-        for row in cur.fetchall():
-            yield row
-        conn.close()
+    def ring_getactivenodes(self):
+        url = RINGAPI + "/nodes/active"
+        try:
+            req = requests.get(url)
+            result = simplejson.loads(req.text)
+            if result["info"]["success"] == 1:
+                return result["results"]["nodes"]
+            return None
+        except Exception as e:
+            print(str(e))
+            return None
+
+    def ring_getnode(self,name):
+        url = RINGAPI + "/nodes/hostname/" + name
+        try:
+            req = requests.get(url)
+            result = simplejson.loads(req.text)
+            if result["info"]["success"] == 1:
+                for host in result["results"]["nodes"]:
+                    return host
+            return None
+        except Exception as e:
+            print(str(e))
+            return None
 
     def ring_getnodeattr(self,name,attr):
-        query ="select %s from machines where hostname='%s'" % (attr,name)
-        result=list(self.ring_dbquery(query))
-        for r in result:
-            return r[attr]
+        node = self.ring_getnode(name)
+        if node:
+            return node[attr]
         return None
     
     def add_domain(self,zone=ZONE):
@@ -363,7 +370,7 @@ class commands(object):
 
     def regenerate_txt(self,zone=ZONE):
         query ="select hostname,country,active from machines where active=1"
-        ringresult=list(self.ring_dbquery(query))
+        ringresult=self.ring_getactivenodes()
         if len(ringresult) < 1:
             sys.exit("unable to retrieve node status information")
 
@@ -380,7 +387,7 @@ class commands(object):
 
         for row in ringresult:
             name = row['hostname']
-            country = row['country']
+            country = row['countrycode']
             if country:
                 self.add_to_txt(name,country.lower());
                 self.add_to_txt(country.lower(),"countries");
@@ -433,7 +440,7 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,name)):
             name=name + "." + zone
 
-        v4=self.ring_getnodeattr(name,"v4")
+        v4=self.ring_getnodeattr(name,"ipv4")
         if v4:
             recid=self.add_record(name=name,rtype='A',content=v4,
                                   ttl=600,prio=0,zone=zone)
@@ -441,7 +448,7 @@ class commands(object):
         else:
             sys.stderr.write("Unable to retrieve IPv4 address from ring db\n")
             
-        v6=self.ring_getnodeattr(name,"v6")
+        v6=self.ring_getnodeattr(name,"ipv6")
         if v6:
             recid=self.add_record(name=name,rtype='AAAA',content=v6,
                                   ttl=600,prio=0,zone=zone)
@@ -499,7 +506,7 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,fullname)):
             fullname=fullname + "." + zone
         
-        country=self.ring_getnodeattr(fullname,"country")
+        country=self.ring_getnodeattr(fullname,"countrycode")
         if country:
             self.del_from_txt(name,country.lower());
         else:
@@ -516,7 +523,7 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,fullname)):
             fullname=fullname + "." + zone
 
-        country=self.ring_getnodeattr(fullname,"country")
+        country=self.ring_getnodeattr(fullname,"countrycode")
         if country:
             self.add_to_txt(name,country.lower());
             self.add_to_txt(country.lower(),"countries");
@@ -533,7 +540,7 @@ class commands(object):
         if not (re.match(r'.*%s$' % zone,fullname)):
             fullname=fullname + "." + zone
 
-        country=self.ring_getnodeattr(fullname,"country")
+        country=self.ring_getnodeattr(fullname,"countrycode")
         if country:
             self.del_from_txt(name,country.lower());
         else:
