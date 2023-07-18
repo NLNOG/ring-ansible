@@ -570,6 +570,7 @@ silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
+telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V4=23.143.82.4 V6=2602:fc26:12:2::3
 accuris01.ring.nlnog.net OWNER=accuris V4=23.130.139.81 V6=2602:FCD3:1:1::11
@@ -2535,6 +2536,7 @@ fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
 
 [telerys]
+telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 
 [iphh]
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
