@@ -632,7 +632,6 @@ kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
-container02.infra.ring.nlnog.net OWNER=job V4=95.211.149.17 V6=2001:1af8:4013::1
 container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
 dbmaster.infra.ring.nlnog.net OWNER=job V4=95.211.149.25 V6=2001:1AF8:4013::25
 public02.infra.ring.nlnog.net OWNER=job V4=95.211.149.18 V6=2001:1AF8:4013::18
