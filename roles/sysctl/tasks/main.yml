@@ -69,4 +69,16 @@
     value: 1
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
+- name: "IP forwarding on container hosts"
+  sysctl:
+    name: net.ipv4.ip_forward
+    value: 1
+    sysctl_file: /etc/sysctl.d/35-container-settings.conf
+  when: inventory_hostname | regex_search('^container')
 
+- name: "IPv6 forwarding on container hosts"
+  sysctl:
+    name: net.ipv6.conf.all.forwarding
+    value: 1
+    sysctl_file: /etc/sysctl.d/35-container-settings.conf
+  when: inventory_hostname | regex_search('^container')
