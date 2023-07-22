@@ -1,10 +1,5 @@
-- name: "Install certbot (bionic)"
-  apt: name=python-certbot-apache state=latest
-  when: ansible_distribution_release == "bionic"
-
-- name: "Install certbot (jammy)"
+- name: "Install certbot"
   apt: name=python3-certbot-apache state=latest
-  when: ansible_distribution_release == "jammy"
 
 - name: "Check for existing certificates"
   stat: path=/etc/letsencrypt/live/{{ item }}/cert.pem

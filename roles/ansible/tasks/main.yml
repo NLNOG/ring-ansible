@@ -11,23 +11,13 @@
     update_cache: yes
   when: ansible_pin.changed
 
-- name: "Ensure Ansible prerequisites are installed (bionic)"
-  apt:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - git
-    - python-requests
-  when: ansible_distribution_release == "bionic"
-
-- name: "Ensure Ansible prerequisites are installed (jammy)"
+- name: "Ensure Ansible prerequisites are installed"
   apt:
     name: "{{ item }}"
     state: present
   with_items:
     - git
     - python3-requests
-  when: ansible_distribution_release == "jammy"
 
 - name: "Ensure Ansible is installed"
   apt:

@@ -1,22 +1,17 @@
 - name: Install SyslogLogger
   gem: name=SyslogLogger state=latest user_install=no
-  when: ansible_distribution_release == "jammy"
 
 - name: Install Sqlite3
   gem: name=sqlite3 version=1.4.2 user_install=no
-  when: ansible_distribution_release == "jammy"
 
 - name: Install Sequel
   gem: name=sequel version=4.12.0 user_install=no
-  when: ansible_distribution_release == "jammy"
 
 - name: Install correct version of asetus
   gem: name=asetus version=0.3.0 user_install=no
-  when: ansible_distribution_release == "jammy"
 
 - name: Install RING SQA Gem
   gem: name=ring-sqa state=latest user_install=no
-  when: ansible_distribution_release == "jammy"
   notify:
     - restart ring-sqa4
     - restart ring-sqa6

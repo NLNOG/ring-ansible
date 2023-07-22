@@ -17,15 +17,6 @@
     group=root
     mode=0755
 
-- name: "Add jsonlint symlink"
-  file:
-    src: /usr/bin/jsonlint-py
-    dest: /usr/bin/jsonlint
-    owner: root
-    group: root
-    state: link
-  when: ansible_distribution_release == "bionic"
-
 - name: Add cronjob for ring-fetch-nodes-json
   template:
     src: "cron.d/ring-fetch-nodes-json.j2"

@@ -30,7 +30,6 @@
   with_items:
     - /usr/bin/tcpdump
     - /usr/bin/dumpcap
-  when: ansible_distribution_release == "jammy"
 
 - name: "Get network capabilities for some tools"
   command: /sbin/getcap {{ item }}
@@ -45,13 +44,12 @@
     - /usr/bin/mtr-packet
   check_mode: no
   changed_when: false
-  when: ansible_distribution_release == "jammy"
 
 - name: "Set new capabilities"
   vars:
     check_string: "{{ item.item }} cap_net_admin,cap_net_raw=eip"
   command: /sbin/setcap cap_net_raw,cap_net_admin=eip {{ item.item }}
-  when: item.stdout != check_string and ansible_distribution_release == "jammy"
+  when: item.stdout != check_string
   with_items: "{{ caps.results }}"
 
 - name: "Uninstall certain unnecessary packages"
@@ -69,7 +67,7 @@
     - ufw
     - rpcbind
 
-- name: "Uninstall certain unnecessary packages (jammy specific)"
+- name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
   with_items:
     - command-not-found
@@ -88,4 +86,3 @@
     - libpython2.7-stdlib:amd64
     - python2-minimal
     - python2.7-minimal
-  when: ansible_distribution_release == "jammy"

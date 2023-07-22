@@ -3,12 +3,6 @@
   with_items:
     - apache2
 
-- name: "Install WSGI for python2"
-  apt: name={{ item }} state=latest
-  with_items:
-    - libapache2-mod-wsgi
-  when: ansible_distribution_release == "bionic" and need_wsgi_py3|default(None) != True
-
 - name: "Install WSGI for python3"
   apt: name={{ item }} state=latest
   with_items:

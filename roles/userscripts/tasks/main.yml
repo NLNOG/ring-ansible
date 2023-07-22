@@ -18,20 +18,17 @@
     group=root
     mode=0755
 
-- name: "Install net-ssh (for ring.rb - jammy)"
+- name: "Install net-ssh (for ring.rb)"
   gem: name=net-ssh executable=/usr/bin/gem user_install=no
-  when: ansible_distribution_release == "jammy"
 
 - name: "Install ring-all net-ssh dependencies"
   apt: name={{ item }} state=latest
   with_items:
     - ruby-ed25519
     - ruby-bcrypt-pbkdf
-  when: ansible_distribution_release == "jammy"
 
 - name: "install ruby-rbnacl"
   apt: name=ruby-rbnacl state=latest
-  when: ansible_distribution_release == "jammy"
 
 - name: "Install python3 modules for ring-mtr"
   pip:
