@@ -14,7 +14,7 @@
 
 - name: "Install various software packages ({{ ansible_distribution_release }})"
   apt: name={{ item }} state=latest
-  with_items: "{{ vars['software'][ansible_distribution_release]|default(None) }}"
+  with_items: "{{ vars['software'][ansible_distribution_release]|default([]) }}"
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
