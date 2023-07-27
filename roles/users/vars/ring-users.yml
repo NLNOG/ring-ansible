@@ -5082,7 +5082,7 @@ USERS:
       - ring-users
 
   lumity:
-    state: present
+    state: absent
     company: 'Lumity Technology Solutions'
     email: 'noc@lumity.com.au'
     uid: 5655
