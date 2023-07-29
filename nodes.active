@@ -133,7 +133,6 @@ iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -363,7 +362,6 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
@@ -1080,7 +1078,6 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 [ispservices]
 
 [ausregistry]
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 
 [switch]
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -1872,7 +1869,6 @@ jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 
 [dialpad]
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 
 [kanren]
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
