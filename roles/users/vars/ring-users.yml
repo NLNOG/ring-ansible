@@ -5761,3 +5761,11 @@ USERS:
     groups:
       - ring-users
 
+  siacom:
+    state: present
+    company: 'SIACOM'
+    email: 'noc@sia-com.com'
+    uid: 5740
+    groups:
+      - ring-users
+
