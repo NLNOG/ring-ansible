@@ -156,6 +156,11 @@
   notify: restart smartmontools
   when: smartd_conf.changed and not smartmontools_installed.changed
 
+- name: "Install cron if needed"
+  apt: name={{ item }} state=latest
+  with_items:
+    - cron
+
 - name: "Update /etc/cron.weekly/fstrim"
   copy:
     src=fstrim
