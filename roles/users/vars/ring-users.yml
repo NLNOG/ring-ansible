@@ -1794,7 +1794,7 @@ USERS:
   nonattached:
     state: present
     company: 'Nonattached Network'
-    email: 'mail@danrl.de'
+    email: 'noc@nonattached.net'
     uid: 5245
     groups:
       - ring-users
