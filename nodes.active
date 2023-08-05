@@ -171,7 +171,6 @@ itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc5:9715:a000:185:5:202:122
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
-nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
 virtualone01.ring.nlnog.net OWNER=virtualone V4=128.127.31.126 V6=2a01:a000:0:5::10
@@ -356,7 +355,6 @@ limestone01.ring.nlnog.net OWNER=limestone V4=162.253.42.201 V6=2607:ff68:100:a:
 compudyne01.ring.nlnog.net OWNER=compudyne V4=192.208.55.11 V6=2604:1940:0:8004::1000
 nefos01.ring.nlnog.net OWNER=nefos V4=45.154.166.91 V6=2a0f:bd00::f816:3eff:feae:82aa
 nefos02.ring.nlnog.net OWNER=nefos V4=92.119.28.43 V6=2a09:b340::f816:3eff:fe67:c1ac
-westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
 xindi01.ring.nlnog.net OWNER=xindi V4=185.173.16.145 V6=2a0b:2f00:0:234::145
 anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:235:214
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
@@ -598,7 +596,6 @@ rub01.ring.nlnog.net OWNER=rub V4=134.147.20.2 V6=2a05:3e00:f:2::2
 cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
 cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
-witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
@@ -1238,7 +1235,6 @@ goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 [kinber]
 
 [nonattached]
-nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 
 [suomi]
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
@@ -1845,7 +1841,6 @@ nefos02.ring.nlnog.net OWNER=nefos V4=92.119.28.43 V6=2a09:b340::f816:3eff:fe67:
 [lgi]
 
 [westnetz]
-westnetz01.ring.nlnog.net OWNER=westnetz V4=185.142.180.252 V6=2a07:2ec0:2140::80:41ff:fe50:1d0a
 
 [multim]
 
@@ -2615,7 +2610,6 @@ cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
 cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 
 [witine]
-witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 
 [deltafiber]
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
