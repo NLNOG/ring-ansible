@@ -5769,3 +5769,11 @@ USERS:
     groups:
       - ring-users
 
+  shapiro:
+    state: present
+    company: 'Gregory Shapiro'
+    email: 'noc@as199518.net'
+    uid: 5741
+    groups:
+      - ring-users
+
