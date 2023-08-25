@@ -5777,7 +5777,7 @@ USERS:
     groups:
       - ring-users
 
-  OneQode Cloud is an Asia Pacific centered network focused on low latency networking and high performance compute. We also built Asia Pacific’s only central server region based in Guam that can serve all of APAC in under 100ms.:
+  oneqode:
     state: present
     company: 'OneQode Cloud'
     email: 'nick@oneqode.com'
