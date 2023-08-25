@@ -2677,3 +2677,5 @@ siacom01.ring.nlnog.net OWNER=siacom V4=46.8.37.35 V6=2a13:9cc3:1:1::2
 
 [shapiro]
 shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
+
+[OneQode Cloud is an Asia Pacific centered network focused on low latency networking and high performance compute. We also built Asia Pacific’s only central server region based in Guam that can serve all of APAC in under 100ms.]
