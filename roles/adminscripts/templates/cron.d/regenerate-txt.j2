@@ -1,1 +1,1 @@
-14 4 * * * root /usr/local/bin/ring-pdns regenerate txt 3>&1 1>/dev/null 2>&3 | grep -v NSEC 3>&1 1>&2 2>&3
+14 4 * * * root /usr/local/bin/ring-pdns regenerate txt 3>&1 1>/dev/null 2>&3 | grep -v NSEC | grep -v MYSQL_OPT_RECONNECT 3>&1 1>&2 2>&3
