@@ -3169,7 +3169,7 @@ USERS:
       - ring-users
 
   depaul:
-    state: present
+    state: absent
     company: 'DePaul University'
     email: 'networks@depaul.edu'
     uid: 5419
@@ -3873,7 +3873,7 @@ USERS:
       - ring-users
 
   gandi:
-    state: present
+    state: absent
     company: 'Gandi'
     email: 'ipnoc@gandi.net'
     uid: 5506
@@ -5642,7 +5642,7 @@ USERS:
       - ring-users
 
   globedc:
-    state: present
+    state: absent
     company: 'GLOBE DataCenter B.V.'
     email: 'd.voogel@globe-datacenter.com'
     uid: 5725
