@@ -5785,3 +5785,11 @@ USERS:
     groups:
       - ring-users
 
+  trouble:
+    state: present
+    company: 'Alternative Enterprises'
+    email: 'noc@as150788.net'
+    uid: 5743
+    groups:
+      - ring-users
+
