@@ -3873,7 +3873,7 @@ USERS:
       - ring-users
 
   gandi:
-    state: absent
+    state: present
     company: 'Gandi'
     email: 'ipnoc@gandi.net'
     uid: 5506
