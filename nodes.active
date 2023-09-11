@@ -580,7 +580,7 @@ tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 telemark01.ring.nlnog.net OWNER=telemark V6=2a06:d681::113
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
-zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::11
+zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.63.131 V6=2a06:d380:0:102::11
 onas01.ring.nlnog.net OWNER=onas V4=93.190.126.18 V6=2a11:7980:1::1:0
 systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446:6
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
@@ -2571,7 +2571,7 @@ titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:80
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
 
 [zencurity]
-zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.60.11 V6=2a06:d380:0:102::11
+zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.63.131 V6=2a06:d380:0:102::11
 
 [onas]
 onas01.ring.nlnog.net OWNER=onas V4=93.190.126.18 V6=2a11:7980:1::1:0
