@@ -2442,7 +2442,7 @@ USERS:
   transtelco:
     state: present
     company: 'Transtelco'
-    email: 'noc@transtelco.net'
+    email: 'noc@flo.net'
     uid: 5327
     groups:
       - ring-users
