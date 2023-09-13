@@ -5793,3 +5793,11 @@ USERS:
     groups:
       - ring-users
 
+  sting:
+    state: present
+    company: 'Sting Alleman'
+    email: 'noc@stingalleman.nl'
+    uid: 5744
+    groups:
+      - ring-users
+
