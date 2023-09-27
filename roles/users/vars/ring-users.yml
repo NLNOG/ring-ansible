@@ -4217,7 +4217,7 @@ USERS:
       - ring-users
 
   mdbrasil:
-    state: present
+    state: absent
     company: 'MD Brasil IT & Telecom'
     email: 'suporte@mdbrasil.com.br'
     uid: 5549
