@@ -155,8 +155,8 @@ lg_peers:
     ipv6: 2a0f:5707:ab80:633::1
   DOMINETLLC:
     asn: 210645
-    ipv4: 193.148.248.207
-    ipv6: 2a0c:9a40:1072::607
+    ipv4: 193.148.248.71
+    ipv6: 2a0c:9a40:272c::2
   DUOCAST1:
     asn: 31477
     ipv4: 89.188.4.1
