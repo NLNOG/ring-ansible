@@ -281,7 +281,7 @@ linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:f
 linode12.ring.nlnog.net OWNER=linode V4=172.233.194.151 V6=2600:3c05::f03c:93ff:feb1:b925
 linode13.ring.nlnog.net OWNER=linode V4=172.232.13.46 V6=2600:3c06::f03c:93ff:feb1:b986
 linode14.ring.nlnog.net OWNER=linode V4=172.232.36.218 V6=2600:3c07::f03c:93ff:feb1:b9eb
-linode18.ring.nlnog.net OWNER=linode V4=172.232.122.112 V6=2600:3c08::f03c:93ff:fedf:6ea9
+linode18.ring.nlnog.net OWNER=linode V4=172.232.96.243 V6=2600:3c08::f03c:93ff:feae:b9c3
 linode15.ring.nlnog.net OWNER=linode V4=172.233.80.182 V6=2400:8905::f03c:93ff:fedf:a9bc
 linode16.ring.nlnog.net OWNER=linode V4=172.232.161.34 V6=2600:3c0a::f03c:93ff:fedf:a930
 linode17.ring.nlnog.net OWNER=linode V4=172.232.158.18 V6=2600:3c09::f03c:93ff:fedf:a97c
@@ -1569,7 +1569,7 @@ linode11.ring.nlnog.net OWNER=linode V4=172.105.182.85 V6=2400:8907::f03c:92ff:f
 linode12.ring.nlnog.net OWNER=linode V4=172.233.194.151 V6=2600:3c05::f03c:93ff:feb1:b925
 linode13.ring.nlnog.net OWNER=linode V4=172.232.13.46 V6=2600:3c06::f03c:93ff:feb1:b986
 linode14.ring.nlnog.net OWNER=linode V4=172.232.36.218 V6=2600:3c07::f03c:93ff:feb1:b9eb
-linode18.ring.nlnog.net OWNER=linode V4=172.232.122.112 V6=2600:3c08::f03c:93ff:fedf:6ea9
+linode18.ring.nlnog.net OWNER=linode V4=172.232.96.243 V6=2600:3c08::f03c:93ff:feae:b9c3
 linode15.ring.nlnog.net OWNER=linode V4=172.233.80.182 V6=2400:8905::f03c:93ff:fedf:a9bc
 linode16.ring.nlnog.net OWNER=linode V4=172.232.161.34 V6=2600:3c0a::f03c:93ff:fedf:a930
 linode17.ring.nlnog.net OWNER=linode V4=172.232.158.18 V6=2600:3c09::f03c:93ff:fedf:a97c
