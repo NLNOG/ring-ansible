@@ -259,7 +259,6 @@ upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.47.105 V6=2a04:3544:1000:1510:d42a:dcff:fe53:7f9
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 upcloud07.ring.nlnog.net OWNER=upcloud V4=209.151.145.12 V6=2604:ed40:1000:1711:d42a:dcff:fe53:124
-upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
 upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000:d42a:dcff:fe53:664c
 upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
 upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
@@ -1518,7 +1517,6 @@ upcloud04.ring.nlnog.net OWNER=upcloud V4=38.100.118.29 V6=2605:7380:1000:1310:a
 upcloud05.ring.nlnog.net OWNER=upcloud V4=94.237.47.105 V6=2a04:3544:1000:1510:d42a:dcff:fe53:7f9
 upcloud06.ring.nlnog.net OWNER=upcloud V4=94.237.64.45 V6=2a04:3543:1000:2310:a8aa:aaff:fea0:62bc
 upcloud07.ring.nlnog.net OWNER=upcloud V4=209.151.145.12 V6=2604:ed40:1000:1711:d42a:dcff:fe53:124
-upcloud08.ring.nlnog.net OWNER=upcloud V4=94.237.9.232 V6=2a04:3545:1000:720:a8aa:aaff:fea0:1fde
 upcloud09.ring.nlnog.net OWNER=upcloud V4=209.151.152.165 V6=2605:7380:8000:1000:d42a:dcff:fe53:664c
 upcloud10.ring.nlnog.net OWNER=upcloud V4=95.111.216.171 V6=2a04:3546:8000:1000:d42a:dcff:fe53:5a6e
 upcloud11.ring.nlnog.net OWNER=upcloud V4=185.70.197.76 V6=2a04:3544:8000:1000:d42a:dcff:fe53:763f
