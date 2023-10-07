@@ -4665,7 +4665,7 @@ USERS:
       - ring-users
 
   deepmedia:
-    state: absent
+    state: present
     company: 'Deep Media'
     email: 'noc@deepmedia.nl'
     uid: 5604
