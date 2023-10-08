@@ -2695,3 +2695,5 @@ trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 
 [sting]
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
+
+[florisvdk]

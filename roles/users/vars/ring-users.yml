@@ -5801,3 +5801,11 @@ USERS:
     groups:
       - ring-users
 
+  florisvdk:
+    state: present
+    company: 'Floris Van der krieken'
+    email: 'noc@florisvdk.net'
+    uid: 5745
+    groups:
+      - ring-users
+
