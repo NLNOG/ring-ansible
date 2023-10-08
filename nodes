@@ -636,6 +636,7 @@ shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 oneqode01.ring.nlnog.net OWNER=oneqode V4=156.247.201.95 V6=2406:1540:69:2::548a
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
+florisvdk01.ring.nlnog.net OWNER=florisvdk V6=2a0a:b400::19
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2736,3 +2737,4 @@ trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 
 [florisvdk]
+florisvdk01.ring.nlnog.net OWNER=florisvdk V6=2a0a:b400::19
