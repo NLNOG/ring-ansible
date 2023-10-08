@@ -1,7 +1,7 @@
 ---
 lg_peers:
   ACCURIS1:
-    asn: 212934
+    asn: 52210
     ipv4: 23.130.139.83
     ipv6: 2602:fcd3:1:1::13
   AFILIAS_AMS2:
