@@ -2703,3 +2703,5 @@ sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 
 [florisvdk]
 florisvdk01.ring.nlnog.net OWNER=florisvdk V6=2a0a:b400::19
+
+[sparkedhost]

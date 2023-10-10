@@ -5809,3 +5809,11 @@ USERS:
     groups:
       - ring-users
 
+  sparkedhost:
+    state: present
+    company: 'Sparked Host LLC'
+    email: 'sysadmin@sparkedhost.com'
+    uid: 5746
+    groups:
+      - ring-users
+
