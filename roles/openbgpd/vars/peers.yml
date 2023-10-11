@@ -537,6 +537,10 @@ lg_peers:
     asn: 209288
     ipv4: 151.248.16.4
     ipv6: 2a10:c080::1
+  SPARKED_MFL_01:
+    asn: 210715
+    ipv4: 155.94.218.130
+    ipv6: 2602:fa87:1::1
   TECHFUTURES1:
     asn: 394256
     ipv4: 192.30.89.240
