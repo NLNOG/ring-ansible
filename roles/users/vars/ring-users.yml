@@ -2552,7 +2552,7 @@ USERS:
       - ring-users
 
   choopa:
-    state: present
+    state: absent
     company: 'Choopa'
     email: 'support@choopa.com'
     uid: 5342
@@ -5814,6 +5814,14 @@ USERS:
     company: 'Sparked Host LLC'
     email: 'sysadmin@sparkedhost.com'
     uid: 5746
+    groups:
+      - ring-users
+
+  vultr:
+    state: present
+    company: 'Vultr'
+    email: 'netops@vultr.com'
+    uid: 5747
     groups:
       - ring-users
 
