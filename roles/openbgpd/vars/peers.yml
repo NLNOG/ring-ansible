@@ -1,5 +1,9 @@
 ---
 lg_peers:
+  SPARKED_MFL_01:
+    asn: 210715
+    ipv4: 155.94.218.130
+    ipv6: 2602:fa87:1::1
   ACCURIS1:
     asn: 52210
     ipv4: 23.130.139.83
