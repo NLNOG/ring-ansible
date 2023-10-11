@@ -642,6 +642,8 @@ vultr01.ring.nlnog.net OWNER=vultr V4=45.77.0.131 V6=2001:19f0:ac02:0403:5400:04
 vultr02.ring.nlnog.net OWNER=vultr V4=139.84.234.78 V6=2a05:f480:3000:2789:5400:04ff:fe9b:1383
 vultr03.ring.nlnog.net OWNER=vultr V4=149.28.235.20 V6=2001:19f0:0000:458a:5400:04ff:fe9b:1408
 vultr05.ring.nlnog.net OWNER=vultr V4=139.84.143.67 V6=2401:c080:3000:2e56:5400:04ff:fe9b:4912
+vultr06.ring.nlnog.net OWNER=vultr V4=158.247.208.108 V6=2401:c080:1c02:0870:5400:04ff:fe9b:491a
+vultr07.ring.nlnog.net OWNER=vultr V4=45.76.36.16 V6=2001:19f0:5000:18df:5400:04ff:fe9b:4927
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2752,3 +2754,5 @@ vultr01.ring.nlnog.net OWNER=vultr V4=45.77.0.131 V6=2001:19f0:ac02:0403:5400:04
 vultr02.ring.nlnog.net OWNER=vultr V4=139.84.234.78 V6=2a05:f480:3000:2789:5400:04ff:fe9b:1383
 vultr03.ring.nlnog.net OWNER=vultr V4=149.28.235.20 V6=2001:19f0:0000:458a:5400:04ff:fe9b:1408
 vultr05.ring.nlnog.net OWNER=vultr V4=139.84.143.67 V6=2401:c080:3000:2e56:5400:04ff:fe9b:4912
+vultr06.ring.nlnog.net OWNER=vultr V4=158.247.208.108 V6=2401:c080:1c02:0870:5400:04ff:fe9b:491a
+vultr07.ring.nlnog.net OWNER=vultr V4=45.76.36.16 V6=2001:19f0:5000:18df:5400:04ff:fe9b:4927
