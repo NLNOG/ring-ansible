@@ -639,6 +639,13 @@ vultr03.ring.nlnog.net OWNER=vultr V4=149.28.235.20 V6=2001:19f0:0000:458a:5400:
 vultr05.ring.nlnog.net OWNER=vultr V4=139.84.143.67 V6=2401:c080:3000:2e56:5400:04ff:fe9b:4912
 vultr06.ring.nlnog.net OWNER=vultr V4=158.247.208.108 V6=2401:c080:1c02:0870:5400:04ff:fe9b:491a
 vultr07.ring.nlnog.net OWNER=vultr V4=45.76.36.16 V6=2001:19f0:5000:18df:5400:04ff:fe9b:4927
+vultr08.ring.nlnog.net OWNER=vultr V4=67.219.111.225 V6=2401:c080:2000:1cbe:5400:4ff:fe9d:c973
+vultr09.ring.nlnog.net OWNER=vultr V4=64.176.55.183 V6=2401:c080:3800:21be:5400:4ff:fe9d:c970
+vultr10.ring.nlnog.net OWNER=vultr V4=216.238.114.3 V6=2001:19f0:b800:1778:5400:4ff:fe9d:c96b
+vultr11.ring.nlnog.net OWNER=vultr V4=208.83.237.118 V6=2001:19f0:c000:d1b7:5400:4ff:fe9d:c964
+vultr12.ring.nlnog.net OWNER=vultr V4=64.176.169.249 V6=2a05:f480:2c00:1f8c:5400:4ff:fe9d:c95b
+vultr13.ring.nlnog.net OWNER=vultr V4=216.238.72.96 V6=2001:19f0:b400:1cf0:5400:4ff:fe9d:c956
+vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4ff:fe9d:c950
 
 [infranode]
 
@@ -2731,3 +2738,10 @@ vultr03.ring.nlnog.net OWNER=vultr V4=149.28.235.20 V6=2001:19f0:0000:458a:5400:
 vultr05.ring.nlnog.net OWNER=vultr V4=139.84.143.67 V6=2401:c080:3000:2e56:5400:04ff:fe9b:4912
 vultr06.ring.nlnog.net OWNER=vultr V4=158.247.208.108 V6=2401:c080:1c02:0870:5400:04ff:fe9b:491a
 vultr07.ring.nlnog.net OWNER=vultr V4=45.76.36.16 V6=2001:19f0:5000:18df:5400:04ff:fe9b:4927
+vultr08.ring.nlnog.net OWNER=vultr V4=67.219.111.225 V6=2401:c080:2000:1cbe:5400:4ff:fe9d:c973
+vultr09.ring.nlnog.net OWNER=vultr V4=64.176.55.183 V6=2401:c080:3800:21be:5400:4ff:fe9d:c970
+vultr10.ring.nlnog.net OWNER=vultr V4=216.238.114.3 V6=2001:19f0:b800:1778:5400:4ff:fe9d:c96b
+vultr11.ring.nlnog.net OWNER=vultr V4=208.83.237.118 V6=2001:19f0:c000:d1b7:5400:4ff:fe9d:c964
+vultr12.ring.nlnog.net OWNER=vultr V4=64.176.169.249 V6=2a05:f480:2c00:1f8c:5400:4ff:fe9d:c95b
+vultr13.ring.nlnog.net OWNER=vultr V4=216.238.72.96 V6=2001:19f0:b400:1cf0:5400:4ff:fe9d:c956
+vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4ff:fe9d:c950
