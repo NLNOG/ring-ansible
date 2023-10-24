@@ -5825,3 +5825,11 @@ USERS:
     groups:
       - ring-users
 
+  sdnbucks:
+    state: present
+    company: 'Sdnbucks BV'
+    email: 'noc@sdnbucks.com'
+    uid: 5748
+    groups:
+      - ring-users
+
