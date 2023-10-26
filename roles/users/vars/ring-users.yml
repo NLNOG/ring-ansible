@@ -5833,3 +5833,11 @@ USERS:
     groups:
       - ring-users
 
+  sys36net:
+    state: present
+    company: 'SYSTEM36 LLC'
+    email: 'noc@sys36.net'
+    uid: 5749
+    groups:
+      - ring-users
+
