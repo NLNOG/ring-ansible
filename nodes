@@ -2786,3 +2786,5 @@ sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 
 [sys36net]
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
+
+[s5b]
