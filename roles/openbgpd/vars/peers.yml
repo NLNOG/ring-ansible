@@ -609,6 +609,9 @@ lg_peers:
     asn: 211588
     ipv4: 45.83.205.255
     ipv6: 2a07:e345::255
+  AS57225_FLORISVDK:
+    asn: 57225
+    ipv6: 2a0a:b400::1
 
 readonly_peers:
   BGPDOTTOOLS:
