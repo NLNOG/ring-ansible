@@ -657,6 +657,7 @@ vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4f
 sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
+s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2790,3 +2791,4 @@ sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 
 [s1networks]
+s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
