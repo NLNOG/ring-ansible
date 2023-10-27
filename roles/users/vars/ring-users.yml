@@ -5849,3 +5849,11 @@ USERS:
     groups:
       - ring-users
 
+  s1networks:
+    state: present
+    company: 'S1 Networks Oy'
+    email: 'support@s1networks.fi'
+    uid: 5751
+    groups:
+      - ring-users
+
