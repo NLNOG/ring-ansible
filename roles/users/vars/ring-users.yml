@@ -5434,7 +5434,7 @@ USERS:
       - ring-users
 
   devstorage:
-    state: present
+    state: absent
     company: 'DevStorage IT-Services UG (haftungsbechraenkt) & Co. KG'
     email: 'noc@devstorage.eu'
     uid: 5699
