@@ -295,6 +295,14 @@ lg_peers:
   INTERHOST1:
     asn: 61102
     ipv4: 185.37.148.232
+  IPFAIL1:
+    asn: 62538
+    ipv4: 185.101.99.107
+    ipv6: 2a04:ad80:2:fe0b::3
+  IPFAIL2:
+    asn: 62538
+    ipv4: 216.218.217.3
+    ipv6: 2001:470:1:d27::3
   ISC1280PAO1:
     asn: 1280
     ipv4: 149.20.65.193
