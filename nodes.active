@@ -504,7 +504,7 @@ ercwnc01.ring.nlnog.net OWNER=ercwnc V4=72.250.243.98 V6=2001:4850:2019::1
 itrelation01.ring.nlnog.net OWNER=itrelation V4=194.116.178.10 V6=2a02:c900:0:1::10
 nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::200
 freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
-oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f3:5000:4::1011
+oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f3:5000:1::109c
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
 lamdahellix01.ring.nlnog.net OWNER=lamdahellix V4=185.36.233.116 V6=2a04:3e00:1001::4
 terratransit01.ring.nlnog.net OWNER=terratransit V4=77.237.224.26 V6=2a01:6f0:101:1a::1
@@ -643,6 +643,9 @@ vultr11.ring.nlnog.net OWNER=vultr V4=208.83.237.118 V6=2001:19f0:c000:d1b7:5400
 vultr12.ring.nlnog.net OWNER=vultr V4=64.176.169.249 V6=2a05:f480:2c00:1f8c:5400:4ff:fe9d:c95b
 vultr13.ring.nlnog.net OWNER=vultr V4=216.238.72.96 V6=2001:19f0:b400:1cf0:5400:4ff:fe9d:c956
 vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4ff:fe9d:c950
+vultr15.ring.nlnog.net OWNER=vultr V4=139.84.163.156 V6=2401:c080:3400:220b:5400:4ff:fea0:4f78
+vultr16.ring.nlnog.net OWNER=vultr V4=65.20.82.174 V6=2401:c080:2400:1872:5400:4ff:fea0:4f56
+vultr17.ring.nlnog.net OWNER=vultr V4=149.28.159.108 V6=2001:19f0:4400:257c:5400:4ff:fea0:4f52
 sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
@@ -2362,7 +2365,7 @@ nethinks01.ring.nlnog.net OWNER=nethinks V4=212.218.193.200 V6=2001:4cd8:4:193::
 freifunkm01.ring.nlnog.net OWNER=freifunkm V4=5.1.66.6 V6=2001:678:e68:ff00::6
 
 [oderland]
-oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f3:5000:4::1011
+oderland01.ring.nlnog.net OWNER=oderland V4=185.20.12.198 V6=2a02:28f3:5000:1::109c
 
 [neutrinet]
 neutrinet01.ring.nlnog.net OWNER=neutrinet V4=80.67.181.30 V6=2001:0913:1000:200::30
@@ -2743,6 +2746,9 @@ vultr11.ring.nlnog.net OWNER=vultr V4=208.83.237.118 V6=2001:19f0:c000:d1b7:5400
 vultr12.ring.nlnog.net OWNER=vultr V4=64.176.169.249 V6=2a05:f480:2c00:1f8c:5400:4ff:fe9d:c95b
 vultr13.ring.nlnog.net OWNER=vultr V4=216.238.72.96 V6=2001:19f0:b400:1cf0:5400:4ff:fe9d:c956
 vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4ff:fe9d:c950
+vultr15.ring.nlnog.net OWNER=vultr V4=139.84.163.156 V6=2401:c080:3400:220b:5400:4ff:fea0:4f78
+vultr16.ring.nlnog.net OWNER=vultr V4=65.20.82.174 V6=2401:c080:2400:1872:5400:4ff:fea0:4f56
+vultr17.ring.nlnog.net OWNER=vultr V4=149.28.159.108 V6=2001:19f0:4400:257c:5400:4ff:fea0:4f52
 
 [sdnbucks]
 sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
