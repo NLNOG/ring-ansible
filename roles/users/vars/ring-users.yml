@@ -5857,3 +5857,11 @@ USERS:
     groups:
       - ring-users
 
+  bouwhuis:
+    state: present
+    company: 'bouwhuis.network'
+    email: 'noc@as202585.net'
+    uid: 5752
+    groups:
+      - ring-users
+
