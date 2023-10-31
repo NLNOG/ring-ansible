@@ -5865,3 +5865,11 @@ USERS:
     groups:
       - ring-users
 
+  as8net:
+    state: present
+    company: 'AS8'
+    email: 'noc@as8.net'
+    uid: 5753
+    groups:
+      - ring-users
+
