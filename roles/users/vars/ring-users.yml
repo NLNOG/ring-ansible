@@ -3089,7 +3089,7 @@ USERS:
       - ring-users
 
   patientsky:
-    state: present
+    state: absent
     company: 'Patientsky Hosting AS'
     email: 'noc@patientsky.com'
     uid: 5409
