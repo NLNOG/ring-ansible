@@ -665,6 +665,7 @@ bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::
 as8net01.ring.nlnog.net OWNER=as8net V6=2a13:40:a300:c500::22
 mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
+newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2816,3 +2817,4 @@ mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 
 [newvm]
+newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
