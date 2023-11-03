@@ -5889,3 +5889,11 @@ USERS:
     groups:
       - ring-users
 
+  newvm:
+    state: present
+    company: 'NewVM B.V.'
+    email: 'noc@newvm.com'
+    uid: 5756
+    groups:
+      - ring-users
+
