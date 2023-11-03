@@ -2806,3 +2806,5 @@ bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::
 
 [as8net]
 as8net01.ring.nlnog.net OWNER=as8net V6=2a13:40:a300:c500::22
+
+[mciu]

@@ -5873,3 +5873,11 @@ USERS:
     groups:
       - ring-users
 
+  mciu:
+    state: present
+    company: 'Montgomery County Intermediate Unit'
+    email: 'noc@mciu.org'
+    uid: 5754
+    groups:
+      - ring-users
+
