@@ -5881,3 +5881,11 @@ USERS:
     groups:
       - ring-users
 
+  cbws:
+    state: present
+    company: 'CBWS'
+    email: 'noc@cbws.nl'
+    uid: 5755
+    groups:
+      - ring-users
+
