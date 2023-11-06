@@ -3281,7 +3281,7 @@ USERS:
       - ring-users
 
   unithost:
-    state: present
+    state: absent
     company: 'Unithost Internet B.V.'
     email: 'noc@unithost.nl'
     uid: 5433
