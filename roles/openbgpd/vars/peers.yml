@@ -351,6 +351,10 @@ lg_peers:
     asn: 8330
     ipv4: 5.57.95.91
     ipv6: 2a00:eb20::91
+  LONAP3:
+    asn: 8330
+    ipv4: 5.57.95.92
+    ipv6: 2a00:eb20::92
   MASSAR:
     asn: 57777
     ipv4: 185.173.128.2
