@@ -5897,3 +5897,11 @@ USERS:
     groups:
       - ring-users
 
+  fibertelecom:
+    state: present
+    company: 'Fiber Telecom SPA'
+    email: 'noc@fibertelecom.it'
+    uid: 5757
+    groups:
+      - ring-users
+
