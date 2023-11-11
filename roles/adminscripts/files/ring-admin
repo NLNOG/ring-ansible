@@ -178,9 +178,8 @@ We also operate an IRC channel: #ring on IRCnet and we have a #ring channel on t
 NLNOG Discord server: https://nlnog.net/discord.
 
 Finally, you are invited to peer with our looking glass. The looking glass
-service is available for all RING members via ssh on lg02.infra.ring.nlnog.net,
-and web on http://lg.ring.nlnog.net/.  Peering with this Looking Glass is
-optional for ring users. If you want to peer with NLNOG RING, configure a 
+service is available for everyone via https://lg.ring.nlnog.net/. Peering with this 
+Looking Glass is optional for ring users. If you want to peer with NLNOG RING, configure a 
 session with the following information:
 
     AS: 199036
