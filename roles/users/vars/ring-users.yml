@@ -5905,3 +5905,11 @@ USERS:
     groups:
       - ring-users
 
+  dscw:
+    state: present
+    company: 'DSCW'
+    email: 'noc@dscw.fr'
+    uid: 5758
+    groups:
+      - ring-users
+
