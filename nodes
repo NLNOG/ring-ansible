@@ -666,6 +666,8 @@ as8net01.ring.nlnog.net OWNER=as8net V6=2a13:40:a300:c500::22
 mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
+fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
+fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2820,3 +2822,5 @@ cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 
 [fibertelecom]
+fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
+fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
