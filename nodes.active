@@ -648,6 +648,7 @@ newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
+oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:0:185:219:6:254
 
 [infranode]
 
@@ -2773,3 +2774,4 @@ fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:5
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 
 [oranjekoek]
+oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:0:185:219:6:254
