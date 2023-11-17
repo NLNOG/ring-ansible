@@ -5913,3 +5913,11 @@ USERS:
     groups:
       - ring-users
 
+  oranjekoek:
+    state: present
+    company: 'Oranjekoek ERITAP B.V.'
+    email: 'noc@eritap.com'
+    uid: 5759
+    groups:
+      - ring-users
+

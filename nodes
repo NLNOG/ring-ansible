@@ -2828,3 +2828,5 @@ fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:5
 
 [dscw]
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
+
+[oranjekoek]
