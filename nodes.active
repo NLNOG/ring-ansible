@@ -214,7 +214,6 @@ ovh09.ring.nlnog.net OWNER=ovh V4=51.83.250.206 V6=2001:41d0:601:2000::8cc
 ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
-firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
@@ -423,6 +422,7 @@ a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:500::1
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
+kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
 denic01.ring.nlnog.net OWNER=denic V4=81.91.160.190 V6=2a02:568:100:100::5
 salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
@@ -1414,7 +1414,6 @@ btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5:
 [larsendata]
 
 [firstcolo]
-firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 
 [tumuenchen]
 
@@ -2131,6 +2130,7 @@ tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103
 [cloudbear]
 
 [kamoike]
+kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
 
 [celya]
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
