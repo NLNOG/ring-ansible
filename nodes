@@ -2830,3 +2830,5 @@ dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 
 [oranjekoek]
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:0:185:219:6:254
+
+[macarne]

@@ -5921,3 +5921,11 @@ USERS:
     groups:
       - ring-users
 
+  macarne:
+    state: present
+    company: 'Macarne LLC'
+    email: 'noc@macarne.com'
+    uid: 5760
+    groups:
+      - ring-users
+
