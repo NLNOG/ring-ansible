@@ -1824,7 +1824,7 @@ USERS:
       - ring-users
 
   virtualone:
-    state: present
+    state: absent
     company: 'Virtual1'
     email: 'ninjas@virtual1.com'
     uid: 5250
