@@ -1304,7 +1304,7 @@ USERS:
       - ring-users
 
   ausregistry:
-    state: present
+    state: absent
     company: 'AusRegistry'
     email: 'AUnetadmin@neustar.biz'
     uid: 5181
@@ -3553,7 +3553,7 @@ USERS:
       - ring-users
 
   dialpad:
-    state: present
+    state: absent
     company: 'Dialpad'
     email: 'neteng@dialpad.com'
     uid: 5466
@@ -4673,7 +4673,7 @@ USERS:
       - ring-users
 
   hlit:
-    state: present
+    state: absent
     company: 'IT-SERVICE'
     email: 'noc@as34681.net'
     uid: 5605
@@ -5074,7 +5074,7 @@ USERS:
       - ring-users
 
   entech:
-    state: present
+    state: absent
     company: 'EN Technologies Pte Ltd'
     email: 'noc@en.com.sg'
     uid: 5654

@@ -132,7 +132,6 @@ iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 hurricane01.ring.nlnog.net OWNER=hurricane V4=64.71.160.154 V6=2001:470:0:292::2
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -340,7 +339,6 @@ custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::41a6:282f
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
-netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
 netrouting07.ring.nlnog.net OWNER=netrouting V4=107.178.59.238 V6=2606:ed00:3:a504:7869::22
 liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0::10
 20c01.ring.nlnog.net OWNER=20c V4=204.130.133.181 V6=2607:fae0:f202:44c::181
@@ -369,7 +367,6 @@ anexia01.ring.nlnog.net OWNER=anexia V4=37.252.235.214 V6=2a00:11c0:d:5:37:252:2
 utelecom01.ring.nlnog.net OWNER=utelecom V4=176.122.99.75 V6=2001:67c:2d40::4b
 jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
 proxsys01.ring.nlnog.net OWNER=proxsys V4=93.95.0.217 V6=2a03:5d80:103:ff01::aa10
 teleag01.ring.nlnog.net OWNER=teleag V4=5.61.190.124 V6=2a01:5240:2::124
@@ -490,7 +487,6 @@ norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
-hlit01.ring.nlnog.net OWNER=hlit V4=193.32.86.4 V6=2a0e:46c7:0:3e1::1e3
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
@@ -543,7 +539,6 @@ bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::1
 6connect01.ring.nlnog.net OWNER=6connect V4=67.221.244.126 V6=2607:fae0:a000:5::126
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
 massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
-entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
 ionos01.ring.nlnog.net OWNER=ionos V4=217.160.211.250 V6=2a02:247a:8000::4
@@ -1142,7 +1137,6 @@ berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff0
 [ispservices]
 
 [ausregistry]
-ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d::4
 
 [switch]
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
@@ -1822,7 +1816,6 @@ franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 [netrouting]
 netrouting03.ring.nlnog.net OWNER=netrouting V4=109.235.51.6 V6=2a00:dd0:0:20::41a6:282f
 netrouting04.ring.nlnog.net OWNER=netrouting V4=94.185.81.36 V6=2a00:dd0:ffff:2::3ed3:791d
-netrouting05.ring.nlnog.net OWNER=netrouting V4=208.76.54.138 V6=2606:ed00:4786:43::2ec3:1c25
 netrouting07.ring.nlnog.net OWNER=netrouting V4=107.178.59.238 V6=2606:ed00:3:a504:7869::22
 
 [liteserver]
@@ -1941,7 +1934,6 @@ jpbe01.ring.nlnog.net OWNER=jpbe V4=185.120.22.17 V6=2001:67c:16c8:e88c::1
 ampath01.ring.nlnog.net OWNER=ampath V4=190.103.186.186 V6=2800:bc0:0:10::186
 
 [dialpad]
-dialpad01.ring.nlnog.net OWNER=dialpad V4=185.91.9.17 V6=2a05:e580:0:1::2
 
 [kanren]
 kanren01.ring.nlnog.net OWNER=kanren V4=164.113.50.50 V6=2001:49d0:1c00:1::50
@@ -2342,7 +2334,6 @@ natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 
 [hlit]
-hlit01.ring.nlnog.net OWNER=hlit V4=193.32.86.4 V6=2a0e:46c7:0:3e1::1e3
 
 [merlin]
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
@@ -2495,7 +2486,6 @@ nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
 massar01.ring.nlnog.net OWNER=massar V4=185.173.128.72 V6=2a10:fc42:b::72
 
 [entech]
-entech01.ring.nlnog.net OWNER=entech V4=103.255.250.213 V6=2001:df1:a800:1::3
 
 [lumity]
 
