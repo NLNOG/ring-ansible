@@ -99,6 +99,7 @@ itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
+entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
@@ -525,7 +526,6 @@ nullroute01.ring.nlnog.net OWNER=nullroute V4=192.26.105.218 V6=2001:67c:2970:f0
 estruxture01.ring.nlnog.net OWNER=estruxture V4=67.212.77.61 V6=2605:9000:400:208::fd
 powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
@@ -1012,6 +1012,7 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
+entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 
 [ripe]
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -2468,7 +2469,6 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
 
 [lukegb]
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
 
