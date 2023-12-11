@@ -1304,7 +1304,7 @@ USERS:
       - ring-users
 
   ausregistry:
-    state: absent
+    state: present
     company: 'AusRegistry'
     email: 'AUnetadmin@neustar.biz'
     uid: 5181
