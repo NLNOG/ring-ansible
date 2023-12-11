@@ -363,7 +363,7 @@ lg_peers:
     asn: 8330
     ipv4: 5.57.95.92
     ipv6: 2a00:eb20::92
-  LSHIY1:
+  LSHIY_HKG1:
     asn: 955
     ipv4: 103.203.242.1
     ipv6: 2401:4020:1:1::1
