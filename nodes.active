@@ -29,6 +29,7 @@ nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:fea1:5f4a
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
+dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
@@ -125,6 +126,7 @@ msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
+rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
 vocus01.ring.nlnog.net OWNER=vocus V4=175.45.73.66 V6=2402:7800:0:2::1CE
 hostvirtual02.ring.nlnog.net OWNER=hostvirtual V4=103.6.84.107 V6=2403:2500:8000:1::62e
@@ -540,6 +542,7 @@ uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
 clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
+ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
 ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
@@ -772,6 +775,7 @@ webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:00
 [concepts-ict]
 
 [dataoppdrag]
+dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
 
 [tetaneutral]
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
@@ -1136,6 +1140,7 @@ es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
 [4ddc]
 
 [rackfish]
+rackfish01.ring.nlnog.net OWNER=rackfish V4=194.169.225.130 V6=2a00:59c0:1:3::130
 
 [doruknet]
 doruknet01.ring.nlnog.net OWNER=doruknet V4=212.58.0.250 V6=2a02:480:3411:6::3
@@ -2505,6 +2510,7 @@ clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 
 [ninjaix]
+ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
 ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
