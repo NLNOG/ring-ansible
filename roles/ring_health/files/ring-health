@@ -73,8 +73,8 @@ def main(argv):
         # HTTP/HTTPS checks
         health['https_github'] = check_weburl('https://github.com/')
         descriptions['https_github'] = "A webrequest for 'https://github.com/' succeeded"
-        health['http_aptrepo_bit'] = check_weburl('http://ftp.bit.nl/ubuntu')
-        descriptions['http_aptrepo_bit'] = "A webrequest for 'http://ftp.bit.nl/ubuntu' succeeded"
+        health['http_aptrepo_bit'] = check_weburl('http://nl.archive.ubuntu.com/ubuntu')
+        descriptions['http_aptrepo_bit'] = "A webrequest for 'http://nl.archive.ubuntu.com/ubuntu' succeeded"
         health['http_aptrepo_ring'] = check_weburl('http://apt.ring.nlnog.net/deb/dists/ring/Release')
         descriptions['http_aptrepo_ring'] = "A webrequest for 'http://apt.ring.nlnog.net/deb/dists/ring/Release' succeeded"
 

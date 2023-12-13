@@ -47,19 +47,19 @@
 
 - name: "Add ubuntu {{ ansible_distribution_release }} repository"
   apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }} main restricted universe multiverse'
+    repo: 'deb http://nl.archive.ubuntu.com/ubuntu {{ ansible_distribution_release }} main restricted universe multiverse'
     state: present
     filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} updates repository"
   apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }}-updates main restricted universe multiverse'
+    repo: 'deb http://nl.archive.ubuntu.com/ubuntu {{ ansible_distribution_release }}-updates main restricted universe multiverse'
     state: present
     filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-updates'
 
 - name: "Add ubuntu {{ ansible_distribution_release }} security repository"
   apt_repository:
-    repo: 'deb http://ftp.bit.nl/ubuntu {{ ansible_distribution_release }}-security main restricted universe multiverse'
+    repo: 'deb http://nl.archive.ubuntu.com/ubuntu {{ ansible_distribution_release }}-security main restricted universe multiverse'
     state: present
     filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-security'
 
