@@ -41,6 +41,8 @@ def main(argv):
         descriptions['mountstatus_root'] = "The root filesystem is in read/write status"
         health['diskspace_root'] = check_diskspace()
         descriptions['diskspace_root'] = "The root filesystem has enough free disk space"
+        health['diskspace_boot'] = check_diskspace_absolute(partition='/boot')
+        descriptions['diskspace_boot'] = "The boot filesystem has enough free disk space"
 
         # L3 connectivity checks
         health['ipv6_addresses'] = check_ipv6_addr()
@@ -179,6 +181,20 @@ def check_diskspace(partition='/', maximum=99, imaximum=99):
     if space_free and inode_free:
         return True
     return False
+
+def check_diskspace_absolute(partition='/', minimum=100):
+    '''Megabytes of used disk space on a partition'''
+    space_free = False
+    result = subprocess.run(['df', '-m', partition], stdout=subprocess.PIPE)
+    for line in result.stdout.decode('utf-8').split('\n'):
+        df = line.split()
+        if len(df) != 6:
+            continue
+        mb_free = df[3]
+
+        if int(mb_free) > minimum:
+            space_free = True
+    return space_free
 
 def check_ipv6_addr():
     '''System must have a single, globally reachable IPv6 address'''
