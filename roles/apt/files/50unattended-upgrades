@@ -34,6 +34,8 @@ Unattended-Upgrade::Remove-Unused-Dependencies "true";
 // the file /var/run/reboot-required is found after the upgrade 
 Unattended-Upgrade::Automatic-Reboot "true";
 
+// Automatically remove unused kernel packages
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
 APT::Periodic::RandomSleep "82800";
 
 // Use apt bandwidth limit feature, this example limits the download
