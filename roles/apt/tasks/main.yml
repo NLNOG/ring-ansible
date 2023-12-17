@@ -94,9 +94,6 @@
 - name: "Install unattended-upgrades"
   apt: name=unattended-upgrades state=latest
 
-- name: "Install byobu (provides purge-old-kernels)"
-  apt: name=byobu state=latest
-
 - name: "Add apt configuration files"
   copy:
     src={{ item }}
@@ -135,10 +132,6 @@
 
 - name: reload systemd if needed
   meta: flush_handlers
-
-- name: "Purge old kernels"
-  command: /usr/bin/purge-old-kernels -y
-  changed_when: false
 
 - name: "Run apt-get update"
   apt:
