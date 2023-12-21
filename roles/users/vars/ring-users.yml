@@ -5929,3 +5929,11 @@ USERS:
     groups:
       - ring-users
 
+  ehiweb:
+    state: present
+    company: 'Ehinet Srl'
+    email: 'noc@ehiweb.it'
+    uid: 5761
+    groups:
+      - ring-users
+

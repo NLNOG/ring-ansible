@@ -2765,3 +2765,5 @@ oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:
 
 [macarne]
 macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
+
+[ehiweb]
