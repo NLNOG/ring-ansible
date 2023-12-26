@@ -655,6 +655,9 @@ lg_peers:
   AS203686_ILHAM_DK_SBL:
     asn: 203686
     ipv6: 2001:67c:bec:a:e013:e3ff:fe36:2e05
+  AS203686_ILHAM_JKT_ATH:
+    asn: 203686
+    ipv6: 2a06:9f44:f170::6
 
 
 readonly_peers:
