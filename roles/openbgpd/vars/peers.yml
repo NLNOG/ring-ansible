@@ -652,6 +652,9 @@ lg_peers:
     asn: 211588
     ipv4: 45.83.205.255
     ipv6: 2a07:e345::255
+  AS203686_ILHAM_DK_SBL:
+    asn: 203686
+    ipv6: 2001:67c:bec:a:e013:e3ff:fe36:2e05
 
 
 readonly_peers:
