@@ -213,7 +213,6 @@ ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
-csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
@@ -501,7 +500,6 @@ cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
 apgp01.ring.nlnog.net OWNER=apgp V4=23.175.209.12 V6=2602:fcad:2::12
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:8ce8:d2ff:fe9b:8cd9
 copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
-apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
 terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:193:200:238::41
 pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c:29ff:fe85:aff9
@@ -634,7 +632,6 @@ sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
-bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
 as8net01.ring.nlnog.net OWNER=as8net V6=2a13:40:a300:c500::22
 mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
@@ -1415,7 +1412,6 @@ firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212
 [kudelski]
 
 [csuc]
-csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.229 V6=2001:40B0:1:1122:CE5C:A007:0:2
 
 [qcom]
 
@@ -2375,7 +2371,6 @@ natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda
 copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
 
 [apernet]
-apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 
 [i4networks]
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
@@ -2742,7 +2737,6 @@ s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
 
 [bouwhuis]
-bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
 
 [as8net]
 as8net01.ring.nlnog.net OWNER=as8net V6=2a13:40:a300:c500::22
