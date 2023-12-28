@@ -2769,3 +2769,5 @@ macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
 
 [ehiweb]
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
+
+[dqn]

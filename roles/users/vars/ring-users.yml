@@ -5937,3 +5937,11 @@ USERS:
     groups:
       - ring-users
 
+  dqn:
+    state: present
+    company: 'Dynamic Quantum Networks'
+    email: 'noc@as200351.net'
+    uid: 5762
+    groups:
+      - ring-users
+
