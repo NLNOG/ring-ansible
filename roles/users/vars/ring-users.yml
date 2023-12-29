@@ -5945,3 +5945,11 @@ USERS:
     groups:
       - ring-users
 
+  edgoo:
+    state: present
+    company: 'Edgoo Networks'
+    email: 'noc@edgoo.com'
+    uid: 5763
+    groups:
+      - ring-users
+
