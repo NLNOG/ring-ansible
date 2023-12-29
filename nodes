@@ -668,6 +668,7 @@ macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40::5
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
+dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2838,3 +2839,4 @@ dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40::5
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 
 [dutchis]
+dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
