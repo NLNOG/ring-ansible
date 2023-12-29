@@ -5953,3 +5953,11 @@ USERS:
     groups:
       - ring-users
 
+  dutchis:
+    state: present
+    company: 'DutchIS'
+    email: 'gijsbert@dutchis.net'
+    uid: 5764
+    groups:
+      - ring-users
+
