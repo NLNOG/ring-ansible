@@ -5810,7 +5810,7 @@ USERS:
       - ring-users
 
   sparkedhost:
-    state: present
+    state: absent
     company: 'Sparked Host LLC'
     email: 'sysadmin@sparkedhost.com'
     uid: 5746
