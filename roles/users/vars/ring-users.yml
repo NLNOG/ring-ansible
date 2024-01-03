@@ -5961,3 +5961,11 @@ USERS:
     groups:
       - ring-users
 
+  alwyzon:
+    state: present
+    company: 'Alwyzon'
+    email: 'noc@alwyzon.net'
+    uid: 5765
+    groups:
+      - ring-users
+
