@@ -1,12 +1,13 @@
 - name: "Load software list"
   include_vars: install.yml
 
-- name: "Uninstall certain unnecessary packages - except where mysql is needed"
+- name: "Uninstall certain unnecessary packages"
   apt: name={{ item }} state=absent
   with_items:
     - apparmor
     - apparmor-utils
     - sssd
+    - avahi-daemon
 
 - name: "Install various software packages (all)"
   apt: name={{ item }} state=latest
