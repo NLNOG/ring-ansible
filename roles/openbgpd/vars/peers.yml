@@ -670,6 +670,12 @@ lg_peers:
   AS203686_ILHAM_JKT_ATH:
     asn: 203686
     ipv6: 2a06:9f44:f170::6
+  AS199471_S5B_DUS:
+    asn: 199471
+    ipv6: 2a13:fc80:fffe::1
+  AS199471_S5B_FRA:
+    asn: 199471
+    ipv6: 2a13:fc80:fffd::1
 
 
 readonly_peers:
