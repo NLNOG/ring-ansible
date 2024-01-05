@@ -148,6 +148,7 @@ combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
+vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
@@ -222,7 +223,6 @@ xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
-nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
@@ -283,7 +283,6 @@ mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=20
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c10::155
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
-fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=206.123.203.163 V6=2607:6400:700:2::3163
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
 gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.188 V6=2606:69c0:5120:5285:385:1039:0:2f
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
@@ -357,7 +356,6 @@ vimexx01.ring.nlnog.net OWNER=vimexx V4=185.104.28.190 V6=2a06:2ec0:1::fffe
 myloc01.ring.nlnog.net OWNER=myloc V4=62.141.35.164 V6=2001:4ba0:1337:1::2
 ahdde01.ring.nlnog.net OWNER=ahdde V4=185.176.16.202 V6=2a00:4c40:2002:5::2
 interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:cc15:185:37:148:205
-thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 quxlabs01.ring.nlnog.net OWNER=quxlabs V4=193.182.61.51 V6=2a0a:3507:1:3001::3e04
 elastx01.ring.nlnog.net OWNER=elastx V4=217.61.244.211 V6=2a07:2180::217:61:244:211
 elastx02.ring.nlnog.net OWNER=elastx V4=217.61.244.212 V6=2a07:2180::217:61:244:212
@@ -650,6 +648,7 @@ edgoo03.ring.nlnog.net OWNER=edgoo V4=185.162.183.87 V6=2001:b18:1002:200::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
+alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
 
 [infranode]
 
@@ -1223,6 +1222,7 @@ dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 
 [vertixo]
+vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 
 [kwaoo]
 
@@ -1467,7 +1467,6 @@ dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 
 [nicbr]
-nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 
 [exnetworks]
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
@@ -1618,7 +1617,6 @@ nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
 
 [fasttrackcomm]
-fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=206.123.203.163 V6=2607:6400:700:2::3163
 
 [amatis]
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
@@ -1916,7 +1914,6 @@ interhost01.ring.nlnog.net OWNER=interhost V4=185.37.148.205 V6=2a03:ff40:4ed1:c
 [pinse]
 
 [thusa]
-thusa01.ring.nlnog.net OWNER=thusa V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 
 [github]
 
@@ -2789,3 +2786,4 @@ edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 
 [alwyzon]
+alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
