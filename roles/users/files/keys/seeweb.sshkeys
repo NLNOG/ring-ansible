@@ -1,1 +1,2 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAxlcb96uJhrNAstsPI/OLjfeSlv7ha+hcr+zPe623k7RxpxpOxtiWYRlnt7O1LNGkNuuMS1zKQtWbQLKtjBys6xZkieQpt/AlbaHzqxyVA9PiiMUiHvjH6+jbYa0N7w8+f0kllWLcafdyfuTER8Lj55sjAvL6/WON1UYr+8famx8= md@wonderland.linux.it
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1StlGrQmC3GhkOhcrtT7uNjxIW2oaQS0Tiakg17BNS md@bongo.bofh.it
+cert-authority,from="212.25.179.128/25,85.94.206.128/26,2001:4b78:1:f::/64,2001:4b78:2:f::/64",principals="seeweb-infra" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOL/S1SD6hroj4Dra8wKE+5/BK+CwHzWNvQBVevyf6CT ca-2020@seeweb.it
