@@ -8,6 +8,8 @@ table inet filter {
         policy drop;
         iifname lo accept;
         ct state established,related accept;
+        ip protocol icmp accept;
+        ip6 nexthdr ipv6-icmp accept;
         tcp dport ssh accept;
 {% for master in munin_masters|ipv4|default([]) %}
         tcp dport 4949 ip saddr {{ master }} accept; # munin
