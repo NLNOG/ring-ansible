@@ -17,16 +17,18 @@ table inet filter {
 {% for master in munin_masters|ipv6|default([]) %}
         tcp dport 4949 ip6 saddr {{ master }} accept; # munin
 {% endfor %}
-{% if 'input' in nftables %}
-{%   for rule in nftables.input %}
-{%     if not 'saddr' in rule %}
+{% if nftables is defined %}
+{%   if 'input' in nftables %}
+{%     for rule in nftables.input %}
+{%       if not 'saddr' in rule %}
         {{ rule.proto }} dport {{ rule.dport }} accept; # {{ rule.name }}
-{%     elif rule.saddr|ipv4 %}
+{%       elif rule.saddr|ipv4 %}
         {{ rule.proto }} dport {{ rule.dport }} ip saddr {{ rule.saddr }} accept; # {{ rule.name }}
-{%     elif rule.saddr|ipv6 %}
+{%       elif rule.saddr|ipv6 %}
         {{ rule.proto }} dport {{ rule.dport }} ip6 saddr {{ rule.saddr }} accept; # {{ rule.name }}
-{%     endif %}
-{%   endfor %}
+{%       endif %}
+{%     endfor %}
+{%   endif %}
 {% endif %}
     }
     chain forward {

@@ -61,6 +61,7 @@
   become: true
   become_user: root
   roles:
+    - { role: nftables, tags: nftables }
     - { role: backup-client, tags: backup-client }
 
 - hosts: ~container[0-9]*\.infra\.ring\.nlnog.net
