@@ -7,3 +7,18 @@ apache_vhosts:
 letsencrypt_certs:
   - lg.ring.nlnog.net
   - map.ring.nlnog.net
+
+nftables:
+  input:
+    - name: dns
+      proto: udp
+      dport: 53
+    - name: dns
+      proto: tcp
+      dport: 53
+    - name: http (lg, map)
+      proto: tcp
+      dport: 80
+    - name: https (lg, map)
+      proto: tcp
+      dport: 443

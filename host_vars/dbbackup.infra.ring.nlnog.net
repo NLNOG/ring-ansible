@@ -1,2 +1,11 @@
 apache_vhosts: []
 need_wsgi_py3: true
+
+nftables:
+  input:
+    - name: http (api)
+      proto: tcp
+      dport: 80
+    - name: https (api)
+      proto: tcp
+      dport: 443

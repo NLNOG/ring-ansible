@@ -13,3 +13,12 @@ LOCAL_USERS:
 
 postfix_smtp_listen: all
 postfix_home_mailbox: Maildir/
+
+nftables:
+  input:
+    - name: smtp
+      proto: tcp
+      dport: 25
+    - name: haproxy
+      proto: tcp
+      dport: 443

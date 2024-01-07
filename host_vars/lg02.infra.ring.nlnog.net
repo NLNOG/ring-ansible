@@ -2,3 +2,12 @@ apache_vhosts:
   - lg02.infra
 letsencrypt_certs:
   - lg02.infra.ring.nlnog.net
+
+nftables:
+  input:
+    - name: http (lg-api)
+      proto: tcp
+      dport: 80
+    - name: bgp
+      proto: tcp
+      dport: 179

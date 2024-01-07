@@ -24,3 +24,12 @@ hugo_sites:
 
 paste_sites:
   - name: paste.ring.nlnog.net
+
+nftables:
+  input:
+    - name: http (www, paste)
+      proto: tcp
+      dport: 80
+    - name: https (www, paste)
+      proto: tcp
+      dport: 443

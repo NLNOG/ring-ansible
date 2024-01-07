@@ -10,6 +10,23 @@ letsencrypt_certs:
   - api6.ring.nlnog.net
 need_wsgi_py3: true
 
+nftables:
+  input:
+    - name: http (api)
+      proto: tcp
+      dport: 80
+    - name: https (api)
+      proto: tcp
+      dport: 443
+    - name: mysql from dbbackup
+      proto: tcp
+      saddr: 109.72.93.39/32
+      dport: 3306
+    - name: mysql from dbbackup
+      proto: tcp
+      saddr: 2a00:f10:122::39/128
+      dport: 3306
+
 LOCAL_USERS:
   ringforger:
     state: present

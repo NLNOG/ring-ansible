@@ -1,2 +1,8 @@
 backups: disabled
 syslog_server: true
+
+nftables:
+  input:
+    - name: syslog
+      proto: udp
+      dport: 514
