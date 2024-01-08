@@ -1,3 +1,6 @@
+- name: install nftables
+  apt: name=nftables state=latest
+
 - name: nftables config
   template: src=nftables.conf.jinja dest=/etc/nftables.conf validate='/usr/sbin/nft -c -f %s'
   notify: reload nftables
