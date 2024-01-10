@@ -669,7 +669,7 @@ lg_peers:
     ipv6: 2001:67c:bec:a:e013:e3ff:fe36:2e05
   AS203686_ILHAM_JKT_ATH:
     asn: 203686
-    ipv6: 2a06:9f44:f170::6
+    ipv6: 2001:df1:7340:1e0:be0f:f3ff:fe7d:6d57
   AS199471_S5B_DUS:
     asn: 199471
     ipv6: 2a13:fc80:fffe::1
