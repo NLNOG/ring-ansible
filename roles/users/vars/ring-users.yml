@@ -5969,3 +5969,11 @@ USERS:
     groups:
       - ring-users
 
+  tritann:
+    state: present
+    company: 'Tritann Internet LLC'
+    email: 'noc@as393577.net'
+    uid: 5766
+    groups:
+      - ring-users
+
