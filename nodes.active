@@ -226,7 +226,6 @@ dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
-sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:0302:0007:0000:0000:0000:0002
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
@@ -447,7 +446,6 @@ aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1::27
-infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=188.121.119.49
 arvancloud02.ring.nlnog.net OWNER=arvancloud V4=37.152.178.22
 arvancloud03.ring.nlnog.net OWNER=arvancloud V4=5.34.199.116
@@ -537,7 +535,6 @@ wobcom01.ring.nlnog.net OWNER=wobcom V4=62.176.246.168 V6=2a01:581:b::14
 hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
 powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
 servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
@@ -1478,7 +1475,6 @@ nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 
 [sggs]
-sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 
 [peakten]
 
@@ -2215,7 +2211,6 @@ synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:
 synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1::27
 
 [infotechna]
-infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 
 [arvancloud]
 arvancloud01.ring.nlnog.net OWNER=arvancloud V4=188.121.119.49
@@ -2501,7 +2496,6 @@ powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
 
 [lukegb]
-lukegb01.ring.nlnog.net OWNER=lukegb V4=92.118.28.13 V6=2a09:a441::13
 
 [samip]
 
