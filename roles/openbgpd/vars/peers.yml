@@ -308,6 +308,18 @@ lg_peers:
     asn: 24679
     ipv4: 195.47.229.254
     ipv6: 2a02:790::1
+  HYEHOST_FRA1:
+    asn: 47272
+    ipv4: 154.57.85.83
+    ipv6: 2a11:29c0:9000::1
+  HYEHOST_AMS1:
+    asn: 47272
+    ipv4: 193.148.248.238
+    ipv6: 2a11:29c0:9006::1
+  HYEHOST_MCI1:
+    asn: 47272
+    ipv4: 23.160.200.1
+    ipv6: 2a11:29c0:9003::1
   INFOWEST1:
     asn: 11071
     ipv4: 209.33.215.64
