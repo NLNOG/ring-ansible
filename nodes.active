@@ -639,6 +639,7 @@ edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
+hyehost01.ring.nlnog.net OWNER=hyehost V4=23.160.200.231 V6=2001:67c:d88:21::a
 
 [infranode]
 
@@ -2771,3 +2772,4 @@ alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff
 [tritan]
 
 [hyehost]
+hyehost01.ring.nlnog.net OWNER=hyehost V4=23.160.200.231 V6=2001:67c:d88:21::a
