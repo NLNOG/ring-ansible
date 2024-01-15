@@ -354,7 +354,7 @@ lg_peers:
   KEMMIT1:
     asn: 216084
     ipv4: 2.59.58.1
-    ipv6: 2001:97c0::1
+    ipv6: 2a0e:97c0::1
   KERFUFFLE1:
     asn: 35008
     ipv4: 194.246.109.123
