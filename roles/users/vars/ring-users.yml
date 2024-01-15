@@ -5977,3 +5977,11 @@ USERS:
     groups:
       - ring-users
 
+  hyehost:
+    state: present
+    company: 'HYEHOST LTD'
+    email: 'noc@hyehost.co.uk'
+    uid: 5767
+    groups:
+      - ring-users
+
