@@ -500,7 +500,6 @@ cloudws01.ring.nlnog.net OWNER=cloudws V4=103.219.152.35 V6=2a09:3c00:1::35
 apgp01.ring.nlnog.net OWNER=apgp V4=23.175.209.12 V6=2602:fcad:2::12
 natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda:30:cafe:8ce8:d2ff:fe9b:8cd9
 copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
-apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
 terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:193:200:238::41
 pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c:29ff:fe85:aff9
@@ -2381,7 +2380,6 @@ natoresearch01.ring.nlnog.net OWNER=natoresearch V4=134.195.101.201 V6=2602:feda
 copaco01.ring.nlnog.net OWNER=copaco V4=188.126.109.12 V6=2a09:f400:0:ff::100
 
 [apernet]
-apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 
 [i4networks]
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
