@@ -1,3 +1,8 @@
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKnXSQnrVI0dzJL5YJHDtDr9vj+VPle/UdAIc38XH+FD quantum@mercury
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIObCFD/UsxpVF21jsOcbJTsubW/KdobQl8h1280AFFVn quantum@deuterium
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDTFsO775XU9l/s32dRiq3C1+Gtx72FUhUBatDZDdwHQ quantum@vanadium
+# Master keys
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKnXSQnrVI0dzJL5YJHDtDr9vj+VPle/UdAIc38XH+FD quantum@mercury-main
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIObCFD/UsxpVF21jsOcbJTsubW/KdobQl8h1280AFFVn quantum@deuterium-main
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDTFsO775XU9l/s32dRiq3C1+Gtx72FUhUBatDZDdwHQ quantum@vanadium-main
+#
+# Keys for regular ring use
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOTVpBpxgbFR3v7Fg+uvXZYjogzU+gSzOy7f8h4e+Vwc quantum@mercury-ring
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQ5aBmb7uswauVZ4B/PfJC3M5Re2MYrK6sdqueGsGDp quantum@vanadium-ring
