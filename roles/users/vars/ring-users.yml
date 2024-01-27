@@ -1320,7 +1320,7 @@ USERS:
       - ring-users
 
   hurricane:
-    state: present
+    state: absent
     company: 'Hurricane Electric'
     email: 'noc@he.net'
     uid: 5183
