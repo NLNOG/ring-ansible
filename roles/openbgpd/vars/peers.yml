@@ -692,7 +692,10 @@ lg_peers:
   AS199471_S5B_FRA:
     asn: 199471
     ipv6: 2a13:fc80:fffd::1
-
+  ATHARVA:
+    asn: 150249
+    ipv4: 103.153.42.74
+    ipv6: 2a06:9f44:f170:ff::2
 
 readonly_peers:
   BGPDOTTOOLS:
