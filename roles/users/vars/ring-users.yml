@@ -4889,7 +4889,7 @@ USERS:
       - ring-users
 
   cloudws:
-    state: present
+    state: absent
     company: 'Cloudwebservices'
     email: 'noc@cloudwebservices.nl'
     uid: 5632
