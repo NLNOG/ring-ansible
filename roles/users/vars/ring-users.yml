@@ -905,7 +905,7 @@ USERS:
 
   nexellent:
     state: present
-    company: 'nexellent AG'
+    company: 'Netrics AG'
     email: 'noc@nexellent.net'
     uid: 5132
     groups:
