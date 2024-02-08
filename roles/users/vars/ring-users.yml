@@ -5985,3 +5985,11 @@ USERS:
     groups:
       - ring-users
 
+  syslevel:
+    state: present
+    company: 'SYSLEVEL'
+    email: 'noc@6level.net'
+    uid: 5768
+    groups:
+      - ring-users
+

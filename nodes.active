@@ -2809,3 +2809,5 @@ tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 
 [hyehost]
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.160.200.231 V6=2001:67c:d88:21::a
+
+[syslevel]
