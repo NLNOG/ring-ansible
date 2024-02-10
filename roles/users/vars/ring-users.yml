@@ -5993,3 +5993,11 @@ USERS:
     groups:
       - ring-users
 
+  hypernology:
+    state: present
+    company: 'Hyper Group Network Ltd.'
+    email: 'noc@hypernology.com'
+    uid: 5769
+    groups:
+      - ring-users
+
