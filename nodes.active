@@ -2821,3 +2821,5 @@ syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 
 [hypernology]
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
+
+[rsm]

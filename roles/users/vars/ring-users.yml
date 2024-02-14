@@ -6001,3 +6001,11 @@ USERS:
     groups:
       - ring-users
 
+  rsm:
+    state: present
+    company: 'RSM Freilassing'
+    email: 'michael.rack+nlnog@rsm-freilassing.de'
+    uid: 5770
+    groups:
+      - ring-users
+
