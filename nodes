@@ -676,6 +676,7 @@ tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.160.200.231 V6=2001:67c:d88:21::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
+rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2866,3 +2867,4 @@ syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
 
 [rsm]
+rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
