@@ -312,7 +312,7 @@ USERS:
       - ring-users
 
   portlane:
-    state: present
+    state: absent
     company: 'Portlane'
     email: 'noc@portlane.com'
     uid: 5047
