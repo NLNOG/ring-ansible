@@ -1008,8 +1008,8 @@ USERS:
       - ring-users
 
   glesys:
-    state: absent
-    company: 'GleSYS Internet Services AB'
+    state: present
+    company: 'GleSYS AB'
     email: 'noc@glesys.se'
     uid: 5147
     groups:
