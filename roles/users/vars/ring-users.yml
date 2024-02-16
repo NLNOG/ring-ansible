@@ -6017,3 +6017,11 @@ USERS:
     groups:
       - ring-users
 
+  lvinformatique:
+    state: present
+    company: 'LV Informatique'
+    email: 'support@lv-informatique.com'
+    uid: 5772
+    groups:
+      - ring-users
+
