@@ -6009,3 +6009,11 @@ USERS:
     groups:
       - ring-users
 
+  tyktech:
+    state: present
+    company: 'tyktech aps'
+    email: 'thomas@tyktech.dk'
+    uid: 5771
+    groups:
+      - ring-users
+
