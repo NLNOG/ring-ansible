@@ -16,6 +16,7 @@ import sys
 import time
 import urllib.request
 import unicodedata
+from unidecode import unidecode
 
 DBHOST = 'localhost'
 DBUSER = 'ring-admins'
@@ -585,6 +586,7 @@ class commands(object):
 
     def sendmail(self,sender,recipients,message):
         server = smtplib.SMTP(MAILHOST)
+        message = unidecode(message)
         server.sendmail(sender, recipients, message)
         server.quit()
 
