@@ -6025,3 +6025,11 @@ USERS:
     groups:
       - ring-users
 
+  ichilton:
+    state: present
+    company: 'Ian Chilton'
+    email: 'ian@ichilton.net'
+    uid: 5773
+    groups:
+      - ring-users
+
