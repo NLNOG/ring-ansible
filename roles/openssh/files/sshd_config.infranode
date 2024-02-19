@@ -24,7 +24,7 @@ LogLevel VERBOSE
 
 # Authentication:
 LoginGraceTime 120
-PermitRootLogin without-password
+PermitRootLogin prohibit-password
 StrictModes yes
 
 RSAAuthentication yes
