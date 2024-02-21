@@ -10,6 +10,7 @@ table inet filter {
         ct state established,related accept;
         ip protocol icmp accept;
         ip6 nexthdr ipv6-icmp accept;
+        udp dport 546 ip6 saddr fe80::/64 accept; # dhcpv6
         tcp dport ssh accept;
 {% for master in munin_masters|ipv4|default([]) %}
         tcp dport 4949 ip saddr {{ master }} accept; # munin
