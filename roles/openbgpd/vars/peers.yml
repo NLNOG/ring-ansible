@@ -616,6 +616,9 @@ lg_peers:
     asn: 210715
     ipv4: 155.94.218.130
     ipv6: 2602:fa87:1::1
+  SYSLEVEL:
+    asn: 57797
+    ipv6: 2a12:8ac1:a0::60
   SYSTEM36_EWR01:
     asn: 59678
     ipv4: 23.148.232.1
