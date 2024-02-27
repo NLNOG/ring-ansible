@@ -5002,7 +5002,7 @@ USERS:
       - ring-users
 
   vorboss:
-    state: present
+    state: absent
     company: 'Vorboss Limited'
     email: 'noc@vorboss.com'
     uid: 5645
