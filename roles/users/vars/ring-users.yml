@@ -6033,3 +6033,11 @@ USERS:
     groups:
       - ring-users
 
+  bitency:
+    state: present
+    company: 'Bitency B.V.'
+    email: 'noc@bitency.net'
+    uid: 5774
+    groups:
+      - ring-users
+
