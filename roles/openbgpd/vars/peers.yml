@@ -703,6 +703,10 @@ lg_peers:
     asn: 150249
     ipv4: 103.153.42.74
     ipv6: 2a06:9f44:f170:ff::2
+  BITENCY_EQAM5:
+    asn: 61029
+    ipv4: 37.72.101.64
+    ipv6: 2a00:8240:b2b:1::    
 
 readonly_peers:
   BGPDOTTOOLS:
