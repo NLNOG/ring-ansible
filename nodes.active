@@ -230,7 +230,6 @@ globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
-xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
@@ -609,6 +608,7 @@ scaleway02.ring.nlnog.net OWNER=scaleway V4=51.158.228.16 V6=2001:bc8:5008::a
 scaleway03.ring.nlnog.net OWNER=scaleway V4=151.115.68.32 V6=2001:bc8:1d08::9
 chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
+netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2a12:8fc6:600:177:1:1:0:5
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
 bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
@@ -662,6 +662,7 @@ dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
+syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
@@ -1485,7 +1486,6 @@ netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 [quadranet]
 
 [xfernet]
-xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 
 [speakup]
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
@@ -2702,6 +2702,7 @@ chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
 
 [netone]
+netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2a12:8fc6:600:177:1:1:0:5
 
 [belnet]
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
@@ -2825,6 +2826,7 @@ tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 
 [syslevel]
+syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 
 [hypernology]
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
