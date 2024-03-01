@@ -543,7 +543,6 @@ steffann01.ring.nlnog.net OWNER=steffann V4=185.54.92.71 V6=2a00:8642:1000:f000:
 eviny01.ring.nlnog.net OWNER=eviny V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 wobcom01.ring.nlnog.net OWNER=wobcom V4=62.176.246.168 V6=2a01:581:b::14
 hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
-powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
@@ -662,7 +661,6 @@ dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
-syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
@@ -2519,7 +2517,6 @@ hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
 [estruxture]
 
 [powerhosting]
-powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 
 [itconfidence]
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
@@ -2826,7 +2823,6 @@ tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 
 [syslevel]
-syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 
 [hypernology]
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
