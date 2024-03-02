@@ -66,6 +66,7 @@ amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
 amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::17
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
+lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
 pcextreme02.ring.nlnog.net OWNER=pcextreme V4=185.66.251.224 V6=2a00:f10:121:a00:46b:e6ff:fe00:1953
 pcextreme03.ring.nlnog.net OWNER=pcextreme V4=185.87.187.104 V6=2a00:f10:305:0:4d8:4ff:fe00:4a0
@@ -870,6 +871,7 @@ amazon17.ring.nlnog.net OWNER=amazon V4=161.189.131.229 V6=2404:c2c0:84cd:bf00::
 equinixnl01.ring.nlnog.net OWNER=equinixnl V4=217.114.111.202 V6=2001:1540:801:19:20c:29ff:fe8f:8feb
 
 [lchost]
+lchost01.ring.nlnog.net OWNER=lchost V4=213.230.217.125 V6=2a01:70:1:217:2::125
 
 [hostway]
 hostway01.ring.nlnog.net OWNER=hostway V4=64.40.105.244 V6=2606:6a00::a:c
