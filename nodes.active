@@ -419,9 +419,9 @@ greenmini01.ring.nlnog.net OWNER=greenmini V4=185.200.102.77 V6=2a0a:aa42:321:20
 sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:dc01::b962:ebe
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
-misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
+c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019::4
 xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
@@ -544,6 +544,7 @@ steffann01.ring.nlnog.net OWNER=steffann V4=185.54.92.71 V6=2a00:8642:1000:f000:
 eviny01.ring.nlnog.net OWNER=eviny V4=85.200.239.110 V6=2a00:14d8:1001:713::2
 wobcom01.ring.nlnog.net OWNER=wobcom V4=62.176.246.168 V6=2a01:581:b::14
 hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
+powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
 kamel01.ring.nlnog.net OWNER=kamel V4=93.177.80.137 V6=2a0a:d980:3::93:177:80:137
 uniserver01.ring.nlnog.net OWNER=uniserver V4=5.39.171.10 V6=2a0a:9fc0:0:1::10
@@ -2113,11 +2114,11 @@ breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:25
 
 [misaka]
 misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
-misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
 
 [c3noc]
+c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 
 [level66network]
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
@@ -2520,6 +2521,7 @@ hivedc01.ring.nlnog.net OWNER=hivedc V4=170.39.197.44 V6=2602:fd23:0:11::44
 [estruxture]
 
 [powerhosting]
+powerhosting01.ring.nlnog.net OWNER=powerhosting V4=185.31.77.77 V6=2a00:b920:3:1337:77::77
 
 [itconfidence]
 itconfidence01.ring.nlnog.net OWNER=itconfidence V6=2a10:4c47::257
