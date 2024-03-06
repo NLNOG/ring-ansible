@@ -78,5 +78,9 @@
     file:
       path="/home/{{ item }}/.ssh/authorized_keys"
       state=absent
+  - name: "Clean up cron jobs - {{ item }}"
+    file:
+      path=/var/spool/cron/crontabs/{{ item }}
+      state=absent
   when: user.state == "absent"
 
