@@ -13,6 +13,9 @@ import requests
 import subprocess
 import sys
 import time
+import urllib3
+from colorama import Fore, Back, Style
+
 
 NODES='/etc/ansible/ring/nodes'
 DOMAIN='ring.nlnog.net'
@@ -24,7 +27,8 @@ API6='[2001:1af8:4013::25]'
 APIPATH='/1.0/health_report'
 WEBTIMEOUT=122
 
-def main(argv):
+def create_report():
+    urllib3.disable_warnings()
     result = dict()
     result['info'] = dict()
     health = dict()
@@ -113,6 +117,32 @@ def main(argv):
     with open(WEBPATH + '/status.json', 'w') as of:
         json.dump(result, of, indent=2)
     of.close()
+
+    return result
+
+
+def read_report():
+    try:
+        with open(WEBPATH + '/status.json', 'r') as infile:
+            return json.load(infile)
+    except Exception as err:
+        print(f"Failed to read the statusfile: {err}")
+
+
+def print_report(report):
+    status = {
+        False: f"{Fore.RED}*FAIL*{Style.RESET_ALL}",
+        True: f"{Fore.GREEN}OK{Style.RESET_ALL}",
+    }
+    print()
+    print(f"  Ubuntu release: {report['info']['ubuntu_release']}")
+    print(f"  Status:         {Fore.WHITE}{status[report['info']['success']]}")
+    print(f"  Last check:     {report['info']['last_check']}")
+    print()
+    for item in report["health"]:
+        print(f""" {status[report["health"][item]]:^18} {report["descriptions"][item]}""")
+    print()
+
 
 def get_infranodes(nodes_file=NODES):
     infranodes = dict()
@@ -389,4 +419,9 @@ def report_health(family,health):
 
 
 if __name__ == "__main__":
-        main(sys.argv)
+    if "-r" in sys.argv:
+        report = read_report()
+    else:
+        report = create_report()
+    if "-r" in sys.argv or "-v" in sys.argv:
+        print_report(report)
