@@ -239,7 +239,8 @@ this situation?
 
 This concerns the machine with hostname "$hostname"
 
-For details on the problem, please see: http://$hostname/status.json
+For details on the problem, please see: http://$hostname/status.json or run
+'ring-health -r' on the command line.
 
 Kind regards,
 
@@ -259,7 +260,8 @@ remedy this situation?
 
 This concerns the machine with hostname "$hostname"
 
-For details on the problem, please see: http://$hostname/status.json
+For details on the problem, please see: http://$hostname/status.json or run
+'ring-heaalth -r' on the command line.
 
 Kind regards,
 
@@ -279,7 +281,8 @@ remedy this situation?
 
 This concerns the machine with hostname "$hostname"
 
-For details on the problem, please see: http://$hostname/status.json
+For details on the problem, please see: http://$hostname/status.json or run
+'ring-health -r' on the command line.
 
 Kind regards,
 
