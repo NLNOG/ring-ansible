@@ -447,7 +447,6 @@ isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
-fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
@@ -522,7 +521,6 @@ flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
-vorboss01.ring.nlnog.net OWNER=vorboss V4=144.98.99.67 V6=2a00:e345:ee:ff::1000
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
 globallayer01.ring.nlnog.net OWNER=globallayer V4=185.23.214.242 V6=2a00:1678:2470:da7a::2
@@ -663,7 +661,6 @@ edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
-hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a03:5840:ff:10::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
@@ -671,7 +668,6 @@ tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680:
 lvinformatique01.ring.nlnog.net OWNER=lvinformatique V4=193.176.88.206 V6=2A0E:E900:0:300::2
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
-ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 
 [infranode]
 
@@ -2216,7 +2212,6 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
-fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -2443,7 +2438,6 @@ flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
 
 [vorboss]
-vorboss01.ring.nlnog.net OWNER=vorboss V4=144.98.99.67 V6=2a00:e345:ee:ff::1000
 
 [onit]
 
@@ -2828,7 +2822,6 @@ alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 
 [hyehost]
-hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 
 [syslevel]
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
@@ -2852,4 +2845,3 @@ ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 
 [ferox]
-ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
