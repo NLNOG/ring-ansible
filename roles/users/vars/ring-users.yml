@@ -6041,3 +6041,11 @@ USERS:
     groups:
       - ring-users
 
+  ferox:
+    state: present
+    company: 'Ferox Hosting'
+    email: 'noc@feroxhosting.nl'
+    uid: 5775
+    groups:
+      - ring-users
+
