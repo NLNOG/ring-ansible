@@ -6049,3 +6049,11 @@ USERS:
     groups:
       - ring-users
 
+  rvdm:
+    state: present
+    company: 'Robert van der Meulen'
+    email: 'ring@public.wiretrip.org'
+    uid: 5776
+    groups:
+      - ring-users
+
