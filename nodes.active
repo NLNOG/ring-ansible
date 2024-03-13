@@ -2847,3 +2847,5 @@ ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 
 [rvdm]
 rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
+
+[moji]

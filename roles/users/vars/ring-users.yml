@@ -6057,3 +6057,11 @@ USERS:
     groups:
       - ring-users
 
+  moji:
+    state: present
+    company: 'moji'
+    email: 'noc@moji.fr'
+    uid: 5777
+    groups:
+      - ring-users
+
