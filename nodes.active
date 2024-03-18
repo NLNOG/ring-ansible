@@ -451,6 +451,7 @@ fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
 aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
 cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337::2
@@ -481,6 +482,7 @@ natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
+ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
@@ -661,11 +663,11 @@ hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
-lvinformatique01.ring.nlnog.net OWNER=lvinformatique V4=193.176.88.206 V6=2A0E:E900:0:300::2
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
+moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 
 [infranode]
 
@@ -2222,6 +2224,7 @@ teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
 
 [bakkerit]
+bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
 
 [layerbridge]
 layerbridge01.ring.nlnog.net OWNER=layerbridge V4=95.128.168.121 V6=2a0b:b86::ff
@@ -2320,6 +2323,7 @@ merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 
 [ericnet]
+ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 
 [swisscenter]
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
@@ -2830,7 +2834,6 @@ rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
 
 [lvinformatique]
-lvinformatique01.ring.nlnog.net OWNER=lvinformatique V4=193.176.88.206 V6=2A0E:E900:0:300::2
 
 [ichilton]
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
@@ -2845,3 +2848,4 @@ ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 
 [moji]
+moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
