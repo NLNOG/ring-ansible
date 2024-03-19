@@ -6065,10 +6065,10 @@ USERS:
     groups:
       - ring-users
 
-  support@edgeconnec.co.za:
+  edgeconnect:
     state: present
     company: 'edgeconnect'
-    email: 'edrich.delange@edgeconnect.co.za'
+    email: 'support@edgeconnect.co.za'
     uid: 5778
     groups:
       - ring-users
