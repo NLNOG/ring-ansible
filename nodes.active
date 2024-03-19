@@ -2849,3 +2849,5 @@ rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 
 [edgeconnect]
+
+[ztvi]

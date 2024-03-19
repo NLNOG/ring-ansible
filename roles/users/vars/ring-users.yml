@@ -6065,3 +6065,11 @@ USERS:
     groups:
       - ring-users
 
+  ztvi:
+    state: present
+    company: 'ForwardingPlane, LLC - ZTVI Ventures'
+    email: 'buraglio@forwardingplane.net'
+    uid: 5779
+    groups:
+      - ring-users
+
