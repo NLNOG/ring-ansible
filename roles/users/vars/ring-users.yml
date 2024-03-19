@@ -3640,14 +3640,6 @@ USERS:
     groups:
       - ring-users
 
-  thusa:
-    state: present
-    company: 'Thusa Connect'
-    email: 'support@thusaconnect.co.za'
-    uid: 5477
-    groups:
-      - ring-users
-
   github:
     state: absent
     company: 'GitHub Inc.'
