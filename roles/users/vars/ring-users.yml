@@ -5210,7 +5210,7 @@ USERS:
       - ring-users
 
   nullroute:
-    state: present
+    state: absent
     company: 'Nullroute ry'
     email: 'noc@nullroute.fi'
     uid: 5672
@@ -5218,7 +5218,7 @@ USERS:
       - ring-users
 
   estruxture:
-    state: present
+    state: absent
     company: 'eStruxture Data Centers'
     email: 'noc@estruxture.com'
     uid: 5673
