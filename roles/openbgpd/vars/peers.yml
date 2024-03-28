@@ -549,6 +549,9 @@ lg_peers:
     asn: 399580
     ipv4: 209.209.88.249
     ipv6: 2606:5040::249
+  RAOULBROUNS:
+    asn: 215296
+    ipv6: 2001:67c:e3c::1
   ROOTNL:
     asn: 16350
     ipv4: 217.119.226.1
