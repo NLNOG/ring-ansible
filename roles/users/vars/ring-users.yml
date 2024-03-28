@@ -6073,3 +6073,11 @@ USERS:
     groups:
       - ring-users
 
+  tempest:
+    state: present
+    company: 'Tempest'
+    email: 'noc@path.net'
+    uid: 5780
+    groups:
+      - ring-users
+
