@@ -2861,3 +2861,5 @@ ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 
 [tempest]
 tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
+
+[brouns]

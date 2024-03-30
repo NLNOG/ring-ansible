@@ -6081,3 +6081,11 @@ USERS:
     groups:
       - ring-users
 
+  brouns:
+    state: present
+    company: 'Raoul Brouns'
+    email: 'noc@as215296.net'
+    uid: 5781
+    groups:
+      - ring-users
+
