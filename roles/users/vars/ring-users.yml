@@ -6089,3 +6089,11 @@ USERS:
     groups:
       - ring-users
 
+  tngnet:
+    state: present
+    company: 'TNGNET B.V.'
+    email: 'operations@tngnet.com'
+    uid: 5782
+    groups:
+      - ring-users
+

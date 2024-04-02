@@ -2867,3 +2867,5 @@ tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
 
 [brouns]
 brouns01.ring.nlnog.net OWNER=brouns V6=2001:67c:e3c:300::3
+
+[tngnet]
