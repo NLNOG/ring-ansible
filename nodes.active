@@ -674,6 +674,7 @@ edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ff
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
 brouns01.ring.nlnog.net OWNER=brouns V6=2001:67c:e3c:300::3
+tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 
 [infranode]
 
@@ -2869,3 +2870,4 @@ tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
 brouns01.ring.nlnog.net OWNER=brouns V6=2001:67c:e3c:300::3
 
 [tngnet]
+tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
