@@ -101,3 +101,4 @@ software:
     - parallel
     - jsonlint
     - hash-slinger
+    - gping
