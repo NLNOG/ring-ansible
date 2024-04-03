@@ -144,8 +144,8 @@ lg_peers:
     ipv6: '2602:fd10:20::'
   CLOUDIE1:
     asn: 924
-    ipv4: 185.195.239.24
-    ipv6: 2a06:1280:bee1:beef::2
+    ipv4: 185.121.168.42
+    ipv6: 2a06:1280:ce07::42
   CMHMR1:
     asn: 203528
     ipv6: 2a0e:8f02:21d1:dead::90
