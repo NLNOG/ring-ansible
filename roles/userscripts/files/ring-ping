@@ -113,7 +113,7 @@ else
 fi
 
 if [ -n "${thop}" ]; then
-    trace_cmd="'\$(traceroute -I -N1  -w1 -q1 $host|wc -l)'"
+    trace_cmd="'\$(traceroute -I -N1  -w1 -q1 $host|tail -n +2|wc -l)'"
 fi
 
 
