@@ -2908,3 +2908,5 @@ brouns01.ring.nlnog.net OWNER=brouns V6=2001:67c:e3c:300::3
 
 [tngnet]
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
+
+[v4less]

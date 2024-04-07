@@ -6097,3 +6097,11 @@ USERS:
     groups:
       - ring-users
 
+  v4less:
+    state: present
+    company: 'V4LESS-AS'
+    email: 'noc@measurement.network'
+    uid: 5783
+    groups:
+      - ring-users
+
