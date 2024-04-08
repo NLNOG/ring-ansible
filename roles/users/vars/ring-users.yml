@@ -6105,3 +6105,11 @@ USERS:
     groups:
       - ring-users
 
+  shift:
+    state: present
+    company: 'Shift Hosting LLC'
+    email: 'support@shifthosting.com'
+    uid: 5784
+    groups:
+      - ring-users
+
