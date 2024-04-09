@@ -729,5 +729,5 @@ readonly_peers:
     ipv6: 2a0a:a3c0:0:d2ca::217:227
   XINDI_RC0:
     asn: 57984
-    ipv4: 185.173.16.146
-    ipv6: 2a0b:2f00:0:234::146
+    ipv4: 91.207.120.39
+    ipv6: 2a0b:2f07:abcd:234::39
