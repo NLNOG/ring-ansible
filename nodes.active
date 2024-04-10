@@ -660,7 +660,6 @@ edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
-tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
@@ -2830,7 +2829,6 @@ dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=31.14.17.13 V6=2a0d:f302:98::be24:11ff:fedb:37ff
 
 [tritan]
-tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 
 [hyehost]
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
