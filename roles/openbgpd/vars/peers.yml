@@ -545,6 +545,10 @@ lg_peers:
   PSDEV_FRA3:
     asn: 199176
     ipv6: 2a13:c007:8017:100::3
+  QUXLABS1:
+    asn: 203038
+    ipv4: 185.243.23.254
+    ipv6: 2a0a:3507:1::
   RADISHNETWORKS1:
     asn: 399580
     ipv4: 209.209.88.249
