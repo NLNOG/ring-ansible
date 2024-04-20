@@ -117,7 +117,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
@@ -225,7 +224,6 @@ ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
-csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40B0:1:1122:CE5C:A007:0:2
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
@@ -1078,7 +1076,6 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 [qbranch]
 
 [nlnetlabs]
-nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
 
@@ -1464,7 +1461,6 @@ firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212
 [kudelski]
 
 [csuc]
-csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40B0:1:1122:CE5C:A007:0:2
 
 [qcom]
 
