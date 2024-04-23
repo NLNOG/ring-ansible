@@ -6113,3 +6113,11 @@ USERS:
     groups:
       - ring-users
 
+  abicom:
+    state: present
+    company: 'ABICOM'
+    email: 'noc@abicom.fr'
+    uid: 5785
+    groups:
+      - ring-users
+
