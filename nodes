@@ -14,7 +14,6 @@ leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 surfnet02.ring.nlnog.net OWNER=surfnet V4=145.100.181.27 V6=2001:610:0:800f:f816:3eff:fed5:a93e
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
-totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 signet01.ring.nlnog.net OWNER=signet V4=217.149.143.73 V6=2001:4cb9:fffe:ff03::10
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.8.20 V6=2a00:1f00:dc06:8::130
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
@@ -119,7 +118,6 @@ itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
-entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 wirehive01.ring.nlnog.net OWNER=wirehive V4=134.0.17.134 V6=2a03:b980:c037::
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
@@ -214,7 +212,6 @@ blacknight01.ring.nlnog.net OWNER=blacknight V4=78.153.194.4 V6=2a01:a8:dc3:40::
 globalways01.ring.nlnog.net OWNER=globalways V4=94.186.187.3 V6=2a02:c98:ffff:ff00::2
 dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
 riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d6ff:fec2:dcd5
-immense01.ring.nlnog.net OWNER=immense V4=104.254.54.4 V6=2605:e380:200::10
 bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a05:7300:0:201::2
 cesnet01.ring.nlnog.net OWNER=cesnet V4=78.128.211.50 V6=2001:718:1:1f:50:56ff:feee:50
 sasag01.ring.nlnog.net OWNER=sasag V4=88.213.188.38 V6=2a00:d80:1520:2151::38
@@ -291,7 +288,6 @@ linode23.ring.nlnog.net OWNER=linode V4=172.233.129.10 V6=2a01:7e03::f03c:93ff:f
 linode24.ring.nlnog.net OWNER=linode V4=172.233.107.60 V6=2a01:7e02::f03c:94ff:fed1:4814
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
-gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
@@ -764,7 +760,6 @@ in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:
 [netground]
 
 [totaalnet]
-totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 
 [signet]
 signet01.ring.nlnog.net OWNER=signet V4=217.149.143.73 V6=2001:4cb9:fffe:ff03::10
@@ -1107,7 +1102,6 @@ heanet01.ring.nlnog.net OWNER=heanet V4=193.1.33.23 V6=2001:770:1c:7::c101:2117
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 
 [entanet]
-entanet01.ring.nlnog.net OWNER=entanet V4=78.33.35.246 V6=2001:4d48:face:e::2
 
 [ripe]
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -1456,7 +1450,6 @@ dfn01.ring.nlnog.net OWNER=dfn V4=194.95.236.10 V6=2001:638:d:c402::10
 riseup01.ring.nlnog.net OWNER=riseup V4=199.254.238.43 V6=2620:13:4000:8000:e8:d6ff:fec2:dcd5
 
 [immense]
-immense01.ring.nlnog.net OWNER=immense V4=104.254.54.4 V6=2605:e380:200::10
 
 [bchnetwork]
 bchnetwork01.ring.nlnog.net OWNER=bchnetwork V4=195.234.45.126 V6=2a05:7300:0:201::2
@@ -1649,7 +1642,6 @@ fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 
 [gigabit]
-gigabit01.ring.nlnog.net OWNER=gigabit V4=185.24.168.23 V6=2a00:7660:0:1::23
 
 [altibox]
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75

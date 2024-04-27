@@ -176,7 +176,7 @@ USERS:
       - ring-users
 
   totaalnet:
-    state: present
+    state: absent
     company: 'Totaalnet'
     email: 'noc@gl-ix.net'
     uid: 5026
@@ -1128,7 +1128,7 @@ USERS:
       - ring-users
 
   entanet:
-    state: present
+    state: absent
     company: 'Entanet'
     email: 'noc@enta.net'
     uid: 5159
@@ -2144,7 +2144,7 @@ USERS:
       - ring-users
 
   immense:
-    state: present
+    state: absent
     company: 'Immense Networks, LLC'
     email: 'support@immense.net'
     uid: 5290
@@ -2608,7 +2608,7 @@ USERS:
       - ring-users
 
   gigabit:
-    state: present
+    state: absent
     company: 'Gigabit Aps'
     email: 'noc@gigabit.dk'
     uid: 5349
