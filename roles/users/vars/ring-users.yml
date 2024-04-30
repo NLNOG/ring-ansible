@@ -5554,8 +5554,8 @@ USERS:
       - ring-users
 
   eurofiber:
-    state: present
-    company: 'Eurofiber CloudInfra'
+    state: absent
+    company: 'Eurofiber CloundInfra (old)'
     email: 'noc@dcspine.com'
     uid: 5715
     groups:
@@ -6118,6 +6118,14 @@ USERS:
     company: 'ABICOM'
     email: 'noc@abicom.fr'
     uid: 5785
+    groups:
+      - ring-users
+
+  dcspine:
+    state: present
+    company: 'Eurofiber CloudInfra'
+    email: 'noc@dcspine.com'
+    uid: 5786
     groups:
       - ring-users
 
