@@ -681,6 +681,7 @@ v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
+eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
 
 [infranode]
 
@@ -2893,3 +2894,4 @@ abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:2
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 
 [eurofibernl]
+eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
