@@ -6129,3 +6129,11 @@ USERS:
     groups:
       - ring-users
 
+  eurofibernl:
+    state: present
+    company: 'Eurofiber Netherlands'
+    email: 'ossbeheer@eurofiber.com'
+    uid: 5787
+    groups:
+      - ring-users
+
