@@ -230,6 +230,7 @@ globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
+xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
@@ -1497,6 +1498,7 @@ netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 [quadranet]
 
 [xfernet]
+xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 
 [speakup]
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
