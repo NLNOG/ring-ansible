@@ -1152,7 +1152,7 @@ USERS:
       - ring-users
 
   wirehive:
-    state: present
+    state: absent
     company: 'Wirehive Ltd'
     email: 'support@wirehive.net'
     uid: 5162
