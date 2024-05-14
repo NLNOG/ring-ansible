@@ -486,7 +486,7 @@ lg_peers:
   OBENETWORK1:
     asn: 3399
     ipv4: 195.128.255.251
-    ipv6: 2a07:5cc0::500:701:2002
+    ipv6: 2a07:5cc0::500:705:2002
   ODERLAND01:
     asn: 44136
     ipv4: 193.180.19.2
