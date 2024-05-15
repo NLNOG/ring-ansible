@@ -628,6 +628,10 @@ lg_peers:
     asn: 210715
     ipv4: 155.94.218.130
     ipv6: 2602:fa87:1::1
+  SPARKED_PAR_01:
+    asn: 210715
+    ipv4: 45.43.163.1
+    ipv6: 2602:fa87:6:100::1
   SYSLEVEL:
     asn: 57797
     ipv6: 2a12:8ac1:a0::60
