@@ -2891,3 +2891,5 @@ dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 
 [eurofibernl]
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
+
+[luje]
