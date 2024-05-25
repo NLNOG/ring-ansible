@@ -297,6 +297,7 @@ nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c
 quanza01.ring.nlnog.net OWNER=quanza V4=91.208.87.80 V6=2a04:a500:1337:764:91:208:87:80
 fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=135.129.101.3 V6=2607:6400:2600:1::100
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
+gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.188 V6=2606:69c0:5120:5285:385:1039:0:2f
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
 dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
@@ -338,7 +339,6 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0:
 connectria02.ring.nlnog.net OWNER=connectria V4=199.189.66.254 V6=2607:f148:4000:3::4
 connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5::6
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
-freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
@@ -445,6 +445,7 @@ isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
+fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 7lnetworks01.ring.nlnog.net OWNER=7lnetworks V4=74.118.39.82 V6=2607:c180::1
@@ -1666,6 +1667,7 @@ fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=135.129.101.3 V6=2607:6400
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
 
 [gwu]
+gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.188 V6=2606:69c0:5120:5285:385:1039:0:2f
 
 [communityrack]
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
@@ -1823,7 +1825,6 @@ connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5:
 connectria01.ring.nlnog.net OWNER=connectria V4=199.19.208.6 V6=2607:f148:1000::6
 
 [freifunkrl]
-freifunkrl01.ring.nlnog.net OWNER=freifunkrl V4=185.66.195.243 V6=2a03:2260:2000:1::3
 
 [svwh]
 
@@ -2220,6 +2221,7 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 mvix02.ring.nlnog.net OWNER=mvix V4=45.135.151.26 V6=2a06:e881:6700::ff01
 
 [fetzer]
+fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
