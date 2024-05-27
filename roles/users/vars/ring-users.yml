@@ -5242,7 +5242,7 @@ USERS:
       - ring-users
 
   lukegb:
-    state: present
+    state: absent
     company: 'Luke Granger-Brown'
     email: 'noc@as205479.net'
     uid: 5676
