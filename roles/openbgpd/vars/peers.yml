@@ -711,10 +711,7 @@ lg_peers:
     asn: 211588
     ipv4: 45.83.205.255
     ipv6: 2a07:e345::255
-  AS203686_ILHAM_RR1:
-    asn: 203686
-    ipv6: "2600:1900:4000:5507:0:1::"
-  AS203686_ILHAM_RR2:
+  AS203686_ILHAM_RR:
     asn: 203686
     ipv6: 2a05:dfc1:7e00:abcd::5
   AS199471_S5B_DUS:
