@@ -6145,3 +6145,11 @@ USERS:
     groups:
       - ring-users
 
+  websupport:
+    state: present
+    company: 'WebSupport s.r.o'
+    email: 'noc@websupport.eu'
+    uid: 5789
+    groups:
+      - ring-users
+
