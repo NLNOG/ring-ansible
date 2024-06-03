@@ -6153,3 +6153,11 @@ USERS:
     groups:
       - ring-users
 
+  helloly:
+    state: present
+    company: 'helloly GmbH'
+    email: 'ops@helloly.com'
+    uid: 5790
+    groups:
+      - ring-users
+
