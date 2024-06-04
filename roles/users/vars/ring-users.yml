@@ -6161,3 +6161,11 @@ USERS:
     groups:
       - ring-users
 
+  pdxnet:
+    state: present
+    company: 'ParadoxNetworks Limited'
+    email: 'noc@pdxnet.co.uk'
+    uid: 5791
+    groups:
+      - ring-users
+

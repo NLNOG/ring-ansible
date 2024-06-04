@@ -2899,3 +2899,5 @@ websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000
 
 [helloly]
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
+
+[pdxnet]
