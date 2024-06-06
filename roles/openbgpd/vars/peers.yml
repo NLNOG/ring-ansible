@@ -707,7 +707,7 @@ lg_peers:
     asn: 212635
     ipv4: 45.159.140.2
     ipv6: 2a10:6e40::2
-  AS211588_CEAMS:
+  XYPHENIT_CE_AMS:
     asn: 211588
     ipv4: 45.83.205.255
     ipv6: 2a07:e345::255
