@@ -324,6 +324,7 @@ plutex01.ring.nlnog.net OWNER=plutex V4=91.202.41.253 V6=2a02:16d0:0:2::2
 metapeer01.ring.nlnog.net OWNER=metapeer V4=204.15.11.33 V6=2620:11c:5001:1099::33
 hextet01.ring.nlnog.net OWNER=hextet V4=192.160.102.139 V6=2620:132:3003:300::139
 fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::412
+xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
@@ -682,6 +683,7 @@ luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:f
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
+pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 
 [infranode]
 
@@ -1779,6 +1781,7 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 [patientsky]
 
 [xantaro]
+xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 
 [equinixfi]
 
@@ -2903,3 +2906,4 @@ helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 
 [pdxnet]
 pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
+pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
