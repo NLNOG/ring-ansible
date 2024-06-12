@@ -18,47 +18,76 @@ ping="ping"
 nodes=50
 hinfo=""
 
-while getopts "6vitdn:" flag; do
-    case $flag in
-    6)
-        ping="ping6"
-        ;;
-    d)
-        debug=1
-        ;;
-    n)
-        nodes=$OPTARG
-        test "$nodes" -eq 0 && unset nodes
-        ;;
-    v)
-        verbose=1
-        ;;
-    i)
-        minfo=1
-        ;;
-        t)
-        thop=1
-        ;;
-    *)
-        echo "Usage: $(basename $0) [-6ivtd] [-n <numnodes>] host"
-        exit 1
-        ;;
-    esac
-done
-
-shift $((OPTIND-1))
-
-if [ $# -lt 1 ]; then
-    echo "No arguments were given"
+function usage()
+{
     echo "Usage: $(basename $0) [-6vitd] [-n <numnodes>] host"
+    echo -e "\t-h \t\t show this help output"
     echo -e "\t-v \t\t print RTT for each server"
     echo -e "\t-t \t\t print hop distance for each server"
     echo -e "\t-i \t\t print host information for each server"
     echo -e "\t-6 \t\t use IPv6 - obsolete, used only for backwards compatibility"
     echo -e "\t-n \t\t number of nodes in test (default $nodes; use 0 for all nodes)"
     echo -e "\t-d \t\t debug mode"
+}
+if [ $# -lt 1 ]; then
+    echo "No arguments were given" 1>&2
+    usage
+   exit 1
+fi
+
+# Put all the arguments in the correct order, options first, hosts later, seperated by --
+argsparsed=$(getopt -qo '6vitdhn:' -- "$@")
+
+if [ $? -ne 0 ]; then
+    echo 'Invalid argument given' 1>&2
+    usage
     exit 1
 fi
+# Set the environment variable with the new order of arguments
+eval set -- "$argsparsed"
+unset argsparsed
+
+while true; do
+    case $1 in
+        '-6')
+               ping="ping6"
+        shift
+            ;;
+        '-d')
+            debug=1
+        shift
+            ;;
+        '-n')
+            nodes=$2
+            test "$nodes" -eq 0 && unset nodes
+        shift 2
+            ;;
+        '-v')
+            verbose=1
+        shift
+            ;;
+        '-i')
+            minfo=1
+        shift
+            ;;
+        '-t')
+            thop=1
+        shift
+            ;;
+        '-h')
+            usage
+            exit 0
+            ;;
+        '--')
+            shift
+            break
+            ;;
+        *)
+            echo "Usage: $(basename $0) [-6ivtd] [-n <numnodes>] host"
+            exit 1
+            ;;
+    esac
+done
 
 # gnu sed needs "-r" for normal regexps; bsd sed requires "-E".  Solaris is
 # broken.
