@@ -327,7 +327,6 @@ fundaments01.ring.nlnog.net OWNER=fundaments V4=185.113.85.7 V6=2a06:6940:1:1::4
 xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
-kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
 liquidtelecom02.ring.nlnog.net OWNER=liquidtelecom V4=41.175.51.198 V6=2c0f:f830:6:e:41:175:51:198
 internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
@@ -679,7 +678,6 @@ shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
-luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:feff:a00c
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
@@ -1794,7 +1792,6 @@ novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 
 [kviknet]
-kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 
 [liquidtelecom]
 liquidtelecom01.ring.nlnog.net OWNER=liquidtelecom V4=41.60.207.30 V6=2a01:410:1:4003:41:60:207:30
@@ -2896,7 +2893,6 @@ dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
 
 [luje]
-luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:feff:a00c
 
 [websupport]
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
