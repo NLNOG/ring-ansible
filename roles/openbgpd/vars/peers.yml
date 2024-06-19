@@ -1,5 +1,9 @@
 ---
 lg_peers:
+  ASTROMANDEV:
+    asn: 215605
+    ipv4: 194.28.99.54
+    ipv6: 2a0c:b640:13:54::1
   A2B1:
     asn: 51088
     ipv4: 5.10.192.4
