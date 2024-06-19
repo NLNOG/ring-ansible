@@ -6169,3 +6169,11 @@ USERS:
     groups:
       - ring-users
 
+  converged:
+    state: present
+    company: 'Converged Communication Solutions'
+    email: 'tech@converged.co.uk'
+    uid: 5792
+    groups:
+      - ring-users
+
