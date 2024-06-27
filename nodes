@@ -420,7 +420,6 @@ greenmini01.ring.nlnog.net OWNER=greenmini V4=185.200.102.77 V6=2a0a:aa42:321:20
 sedmiodjel01.ring.nlnog.net OWNER=sedmiodjel V4=185.98.14.190 V6=2a04:a7c0:a001:dc01::b962:ebe
 breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:250:56ff:fe01:57
 misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
-misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
@@ -491,7 +490,6 @@ securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
-hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
@@ -669,7 +667,6 @@ syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
-lvinformatique01.ring.nlnog.net OWNER=lvinformatique V4=193.176.88.206 V6=2A0E:E900:0:300::2
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
@@ -2153,7 +2150,6 @@ breedbandnl01.ring.nlnog.net OWNER=breedbandnl V4=31.3.8.51 V6=2a03:4f00:20:0:25
 
 [misaka]
 misaka02.ring.nlnog.net OWNER=misaka V4=170.39.224.167 V6=2a0e:6902:2002:14c:5054:ff:fe68:df5c
-misaka03.ring.nlnog.net OWNER=misaka V4=45.11.105.144 V6=2a0b:4341:1500:10f:5054:ff:fe75:fdcf
 misaka05.ring.nlnog.net OWNER=misaka V4=102.130.49.134 V6=2a0b:4342:1a91:23:5054:ff:fec0:c73a
 misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:ff:fed5:3082
 
@@ -2390,7 +2386,6 @@ sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59
 
 [hostuniversal]
 hostuniversal02.ring.nlnog.net OWNER=hostuniversal V4=163.47.21.112 V6=2404:f780:5:a1f::b71b:4a7
-hostuniversal03.ring.nlnog.net OWNER=hostuniversal V4=45.248.77.40 V6=2404:f780:4:805::567:cde5
 hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501::93ec:5ad1
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
@@ -2880,7 +2875,6 @@ rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
 
 [lvinformatique]
-lvinformatique01.ring.nlnog.net OWNER=lvinformatique V4=193.176.88.206 V6=2A0E:E900:0:300::2
 
 [ichilton]
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a

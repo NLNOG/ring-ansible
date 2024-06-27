@@ -6010,7 +6010,7 @@ USERS:
       - ring-users
 
   lvinformatique:
-    state: present
+    state: absent
     company: 'LV Informatique'
     email: 'support@lv-informatique.com'
     uid: 5772
