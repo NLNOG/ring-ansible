@@ -3225,7 +3225,7 @@ USERS:
       - ring-users
 
   freifunkrl:
-    state: present
+    state: absent
     company: 'Freifunk Rheinland e.V.'
     email: 'noc@freifunk-rheinland.net'
     uid: 5426
