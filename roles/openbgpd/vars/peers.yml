@@ -590,16 +590,16 @@ lg_peers:
     ipv6: 2A02:CDC5:9715:0:185:5:200:255
   SECUREBIT_FRE01:
     asn: 58057
-    ipv4: 85.202.203.251
-    ipv6: 2a09:4c0:f00:55ca::cbfb
+    ipv4: 185.102.84.251
+    ipv6: 2a09:4c0:f00:b966::54fb
   SECUREBIT_ZUR01:
     asn: 58057
-    ipv4: 94.177.122.251
-    ipv6: 2a09:4c0:100:5eb1::7afb
+    ipv4: 193.33.94.251
+    ipv6: 2a09:4c0:100:c121::5efb
   SECUREBIT_ZUR02:
     asn: 58057
-    ipv4: 94.177.122.252
-    ipv6: 2a09:4c0:100:5eb1::7afc
+    ipv4: 193.33.94.252
+    ipv6: 2a09:4c0:100:c121::5efc
   SENTIAAMS5:
     asn: 8315
     ipv4: 185.74.76.8
