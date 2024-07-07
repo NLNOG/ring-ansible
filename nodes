@@ -649,7 +649,7 @@ newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
-oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:0:185:219:6:254
+oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40::5
@@ -2830,7 +2830,7 @@ fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:5
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 
 [oranjekoek]
-oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=185.219.6.254 V6=2a10:e300:8411:0:185:219:6:254
+oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 
 [macarne]
 macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
