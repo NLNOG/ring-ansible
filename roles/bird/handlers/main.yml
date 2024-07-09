@@ -1,6 +1,0 @@
-- name: reload bird
-  service: name=bird state=reloaded enabled=yes
-
-- name: reload bird6
-  service: name=bird6 state=reloaded enabled=yes
-

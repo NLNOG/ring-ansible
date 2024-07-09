@@ -1,4 +1,0 @@
----
-# the NLNOG Looking Glass isn't using BIRD anymore
-# peer configurations can now be found here:
-# https://github.com/NLNOG/ring-ansible/blob/master/roles/openbgpd/vars/peers.yml
