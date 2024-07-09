@@ -1,0 +1,10 @@
+---
+    - name: Checkout the lg.ring.nlnog.net repository
+      ansible.builtin.git:
+        repo: "https://github.com/NLNOG/lg.ring.nlnog.net"
+        dest: "/var/www/testlg.ring.nlnog.net"
+        clone: yes
+        update: yes
+      become: yes
+      become_user: www-data
+      notify: restart apache2
