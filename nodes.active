@@ -129,6 +129,7 @@ rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
+berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
 ausregistry01.ring.nlnog.net OWNER=ausregistry V4=120.29.249.252 V6=2001:dcd:11:3d:250:56ff:fe97:25a8
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -661,7 +662,6 @@ tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680:
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
-rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
@@ -1133,6 +1133,7 @@ beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 
 [berkeley]
+berkeley01.ring.nlnog.net OWNER=berkeley V4=128.32.158.100 V6=2607:f140:ffff:ff07::a
 
 [ispservices]
 
@@ -2853,7 +2854,6 @@ bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 
 [rvdm]
-rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 
 [moji]
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
