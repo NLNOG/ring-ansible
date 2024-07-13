@@ -139,3 +139,14 @@ USERS:
       - ring-admins
     sshkeys:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVbSfoOcCeSNZ/t9BPot5uh43N9rmVXla+Ga+BS4Two cas@reuver.co'
+
+  certifiedsecure:
+    state: present
+    company: "Certified Secure"
+    email: info@certifiedsecure.com
+    uid: 6013
+    shell: /bin/bash
+    groups:
+      - ring-users
+    sshkeys:
+      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH+PqQxYK5l3E++iYBiEyF92ZYIirjhkCoQ5JR7rgePs haakjes'
