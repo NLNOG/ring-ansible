@@ -17,7 +17,7 @@
 
 - name: Install unbound
   apt:
-    name: "{{ item }}"
+    name:
       - unbound
       - unbound-anchor
       - unbound-host
