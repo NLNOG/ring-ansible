@@ -90,10 +90,11 @@
   become_user: root
   tasks:
     - name: Remove apparmor
-      apt: name={{ item }} state=absent
-      with_items:
-        - apparmor
-        - apparmor-utils
+      apt:
+        name:
+          - apparmor
+          - apparmor-utils
+        state: absent
     - name: Temporarily configure resolv.conf with public resolver (IPV6)
       copy:
         dest: /etc/resolv.conf

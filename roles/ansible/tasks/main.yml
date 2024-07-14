@@ -13,18 +13,15 @@
 
 - name: "Ensure Ansible prerequisites are installed"
   apt:
-    name: "{{ item }}"
+    name:
+      - git
+      - python3-requests
     state: present
-  with_items:
-    - git
-    - python3-requests
 
 - name: "Ensure Ansible is installed"
   apt:
-    name: "{{ item }}"
+    name: "ansible={{ ansible_pin_version[ansible_distribution_release] }}"
     state: present
-  with_items:
-    - "ansible={{ ansible_pin_version[ansible_distribution_release] }}"
 
 - name: "Create callback plugin dir"
   file: path={{ item }} state=directory

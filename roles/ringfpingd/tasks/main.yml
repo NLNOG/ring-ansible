@@ -8,7 +8,9 @@
   notify: restart ringfpingd
 
 - name: "Install ringfpingd package"
-  apt: name=ringfpingd state=latest
+  apt:
+    name: ringfpingd
+    state: latest
   notify: restart ringfpingd
 
 # Stop ringfpingd until we have a replacement for Graphite

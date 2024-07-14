@@ -2,20 +2,23 @@
   include_vars: install.yml
 
 - name: "Uninstall certain unnecessary packages"
-  apt: name={{ item }} state=absent
-  with_items:
-    - apparmor
-    - apparmor-utils
-    - sssd
-    - avahi-daemon
+  apt:
+    name:
+      - apparmor
+      - apparmor-utils
+      - sssd
+      - avahi-daemon
+    state: absent
 
 - name: "Install various software packages (all)"
-  apt: name={{ item }} state=latest
-  with_items: "{{ software.all|default([]) }}"
+  apt:
+    name: "{{ software.all|default([]) }}"
+    state: latest
 
 - name: "Install various software packages ({{ ansible_distribution_release }})"
-  apt: name={{ item }} state=latest
-  with_items: "{{ vars['software'][ansible_distribution_release]|default([]) }}"
+  apt:
+    name: "{{ vars['software'][ansible_distribution_release]|default([]) }}"
+    state: latest
 
 - name: "Create symlink for lft"
   file: src=/usr/sbin/lft dest=/usr/bin/lft state=link
@@ -54,36 +57,33 @@
   with_items: "{{ caps.results }}"
 
 - name: "Uninstall certain unnecessary packages"
-  apt: name={{ item }} state=absent
-  with_items:
-    - ferm
-    - molly-guard
-    - mtr
-    - pppoe
-    - ppp
-    - pppconfig
-    - pppoeconfig
-    - resolvconf
-    - sl
-    - ufw
-    - rpcbind
-
-- name: "Uninstall certain unnecessary packages"
-  apt: name={{ item }} state=absent
-  with_items:
-    - command-not-found
-    - command-not-found-data
-    - python3-commandnotfound
-    - python2
-    - python2.7
-    - python2.7-minimal
-    - python-apt
-    - python-libxml2
-    - python-gdbm
-    - python-dnspython
-    - libpython2-stdlib:amd64
-    - libpython2.7:amd64
-    - libpython2.7-minimal:amd64
-    - libpython2.7-stdlib:amd64
-    - python2-minimal
-    - python2.7-minimal
+  apt:
+    name:
+      - ferm
+      - molly-guard
+      - mtr
+      - pppoe
+      - ppp
+      - pppconfig
+      - pppoeconfig
+      - resolvconf
+      - sl
+      - ufw
+      - rpcbind
+      - command-not-found
+      - command-not-found-data
+      - python3-commandnotfound
+      - python2
+      - python2.7
+      - python2.7-minimal
+      - python-apt
+      - python-libxml2
+      - python-gdbm
+      - python-dnspython
+      - libpython2-stdlib:amd64
+      - libpython2.7:amd64
+      - libpython2.7-minimal:amd64
+      - libpython2.7-stdlib:amd64
+      - python2-minimal
+      - python2.7-minimal
+    state: absent

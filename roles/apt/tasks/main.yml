@@ -31,11 +31,12 @@
     - '/etc/apt/sources.list.distUpgrade'
 
 - name: "Install prerequisites for apt_repository"
-  apt: name={{ item }} state=latest
-  with_items:
-    - gpg
-    - python3-apt
-    - ca-certificates
+  apt:
+    name:
+      - gpg
+      - python3-apt
+      - ca-certificates
+    state: latest
 
 - name: "Clean sources.list"
   copy:
@@ -92,7 +93,9 @@
     filename: 'nlnog_ring_repo'
 
 - name: "Install unattended-upgrades"
-  apt: name=unattended-upgrades state=latest
+  apt:
+    name: unattended-upgrades
+    state: latest
 
 - name: "Add apt configuration files"
   copy:

@@ -1,15 +1,18 @@
 - name: "Install dhcp3-client"
-  apt: name={{ item }} state=latest
-  with_items:
-    - dhcp3-client
-    - dhcp3-common
+  apt:
+    name:
+      - dhcp3-client
+      - dhcp3-common
+    state: latest
   when: dhcp_client == "enabled"
 
 - name: "Purge dhcp3-client"
-  apt: name={{ item }} state=absent purge=yes
-  with_items:
-    - dhcp3-client
-    - dhcp3-common
+  apt:
+    name:
+      - dhcp3-client
+      - dhcp3-common
+    state: absent
+    purge: yes
   when: dhcp_client != "enabled"
 
 - name: "Copy dhclient.conf"

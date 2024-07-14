@@ -2,7 +2,9 @@
   file: path=/var/run/fail2ban state=directory
 
 - name: "Install fail2ban"
-  apt: pkg=fail2ban state=latest
+  apt:
+    name: fail2ban
+    state: latest
 
 - name: "Install jail.local"
   template: src=jail.local.j2 dest=/etc/fail2ban/jail.local

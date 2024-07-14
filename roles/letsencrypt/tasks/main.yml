@@ -1,5 +1,7 @@
 - name: "Install certbot"
-  apt: name=python3-certbot-apache state=latest
+  apt:
+    name: python3-certbot-apache
+    state: latest
 
 - name: "Check for existing certificates"
   stat: path=/etc/letsencrypt/live/{{ item }}/cert.pem

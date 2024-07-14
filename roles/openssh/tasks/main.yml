@@ -1,5 +1,7 @@
 - name: "Install openssh-server"
-  apt: name=openssh-server state=latest
+  apt:
+    name: openssh-server
+    state: latest
 
 - include: ringnode.yml
   when: "'ringnode' in group_names"

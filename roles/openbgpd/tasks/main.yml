@@ -2,7 +2,9 @@
   include_vars: peers.yml
 
 - name: "Install StayRTR"
-  apt: name=stayrtr state=latest
+  apt:
+    name: stayrtr
+    state: latest
 
 - name: "Install /etc/default/stayrtr"
   copy:
@@ -17,7 +19,9 @@
   service: name=stayrtr state=started
 
 - name: "Install OpenBGPD"
-  apt: name=openbgpd state=latest
+  apt:
+    name: openbgpd
+    state: latest
 
 - name: "Install /etc/bgpd.conf"
   template: src=bgpd.conf.j2 dest=/etc/bgpd.conf

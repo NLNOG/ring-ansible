@@ -1,8 +1,9 @@
 - name: "Install library dependencies"
-  apt: name={{ item }} state=latest
-  with_items:
-    - libdpkg-perl
-    - libgetopt-simple-perl
+  apt:
+    name:
+      - libdpkg-perl
+      - libgetopt-simple-perl
+    state: latest
 
 - name: "Ensure purgekernels apt.conf is absent"
   file:

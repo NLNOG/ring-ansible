@@ -13,7 +13,7 @@
   tags:
     - always
 
-- include: ubuntu_upgrade.yml
+- import_playbook: ubuntu_upgrade.yml
   when: '"ringnode" in group_names and ansible_distribution_release != "jammy"'
 
 - hosts: all

@@ -1,5 +1,7 @@
 - name: "Install hugo"
-  apt: name=hugo state=latest
+  apt:
+    name: hugo
+    state: latest
 
 - name: "Check out hugo source code repositories"
   git:
@@ -34,10 +36,11 @@
   notify: hugo rebuild 
 
 - name: "Install post tweeting requirements"
-  apt: name={{ item }} state=latest
-  with_items:
-    - python3-pyinotify
-    - python3-tweepy
+  apt:
+    name:
+      - python3-pyinotify
+      - python3-tweepy
+    state: latest
 
 - name: "Install post tweeter"
   template:

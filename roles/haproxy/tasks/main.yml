@@ -1,5 +1,7 @@
 - name: "Install haproxy"
-  apt: pkg=haproxy state=latest
+  apt:
+    name: haproxy
+    state: latest
 
 - name: "Install haproxy defaults file"
   template: src=haproxy.default.j2 dest=/etc/default/haproxy

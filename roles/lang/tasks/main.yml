@@ -1,8 +1,9 @@
 - name: "Install locales"
-  apt: name={{ item }} state=latest
-  with_items:
-    - locales
-    - language-pack-en
+  apt:
+    name:
+      - locales
+      - language-pack-en
+    state: latest
 
 - name: "Add default locale"
   copy:

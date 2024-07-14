@@ -12,9 +12,9 @@
     content: "{{ inventory_hostname }}"
 
 - name: "Install dbus for systemd hostname changes"
-  apt: name={{ item }} state=latest
-  with_items:
-    - dbus
+  apt:
+    name: dbus
+    state: latest
 
 - name: "Ensure systemd-hostnamed.service.d exists"
   file:
@@ -157,9 +157,9 @@
   when: smartd_conf.changed and not smartmontools_installed.changed
 
 - name: "Install cron if needed"
-  apt: name={{ item }} state=latest
-  with_items:
-    - cron
+  apt:
+    name: cron
+    state: latest
 
 - name: "Update /etc/cron.weekly/fstrim"
   copy:

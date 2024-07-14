@@ -1,8 +1,9 @@
 - name: "Install library dependencies"
-  apt: name={{ item }} state=latest
-  with_items:
-    - libjson-perl
-    - libwww-curl-perl
+  apt:
+    name:
+      - libjson-perl
+      - libwww-curl-perl
+    state: latest
 
 - name: "Make sure site_ruby directory exists (for ring.rb)"
   file:
@@ -22,24 +23,26 @@
   gem: name=net-ssh executable=/usr/bin/gem user_install=no
 
 - name: "Install ring-all net-ssh dependencies"
-  apt: name={{ item }} state=latest
-  with_items:
-    - ruby-ed25519
-    - ruby-bcrypt-pbkdf
+  apt:
+    name:
+      - ruby-ed25519
+      - ruby-bcrypt-pbkdf
+    state: latest
 
 - name: "install ruby-rbnacl"
-  apt: name=ruby-rbnacl state=latest
+  apt:
+    name: ruby-rbnacl
+    state: latest
 
 - name: "Install python3 modules for ring-mtr"
   pip:
-    name: "{{ item }}"
+    name:
+      - dnspython==2.2.1
+      - setuptools
+      - wheel
+      - parallel-ssh
     state: present
     executable: pip3
-  with_items:
-    - dnspython==2.2.1
-    - setuptools
-    - wheel
-    - parallel-ssh
 
 - name: "Install ring userscripts"
   copy:

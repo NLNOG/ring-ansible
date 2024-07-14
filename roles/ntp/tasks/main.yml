@@ -1,8 +1,13 @@
 - name: "Remove ntpd"
-  apt: name=ntp state=absent purge=yes
+  apt:
+    name: ntp
+    state: absent
+    purge: yes
 
 - name: "Install ntpdate"
-  apt: name=ntpdate state=latest
+  apt:
+    name: ntpdate
+    state: latest
   register: ntpdate
 
 - name: "Run ntpdate once to sync clock (IPv6)"
@@ -18,7 +23,9 @@
     dest: /etc/cron.d/ntp
 
 - name: "Install openntpd"
-  apt: name=openntpd state=latest
+  apt:
+    name: openntpd
+    state: latest
 
 - name: "Create /etc/default/openntpd"
   copy:

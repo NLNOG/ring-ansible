@@ -1,10 +1,11 @@
 - name: "Install packages"
-  apt: name={{ item }} state=latest
-  with_items:
-    - ring-python-ceres
-    - ring-python-whisper
-    - ring-carbon
-    - ring-python-graphite-web
+  apt:
+    name:
+      - ring-python-ceres
+      - ring-python-whisper
+      - ring-carbon
+      - ring-python-graphite-web
+    state: latest
 
 - name: "Create graphite group"
   group:

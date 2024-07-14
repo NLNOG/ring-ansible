@@ -1,29 +1,30 @@
 - name: "Install deb prerequisites for ripe-atlas-tools"
-  apt: name={{ item }} state=present
-  with_items:
-    - libffi-dev
-    - libssl-dev
-    - virtualenv
+  apt:
+    name:
+      - libffi-dev
+      - libssl-dev
+      - virtualenv
+    state: present
 
 - name: "Install deb prerequisites for ripe-atlas-tools"
-  apt: name={{ item }} state=present
-  with_items:
-    - python3-dev
-    - python3-virtualenv
-    - python3-pip
+  apt:
+    name:
+      - python3-dev
+      - python3-virtualenv
+      - python3-pip
+    state: present
 
 - name: "Install ripe-atlas-tools"
   pip:
-    name: "{{ item }}"
+    name:
+      - IPy
+      - pyOpenSSL
+      - ndg-httpsclient
+      - pyasn1
+      - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
     state: present
     virtualenv: "{{ ripe_atlas_venv_dir }}"
     virtualenv_python: python3
-  with_items:
-    - IPy
-    - pyOpenSSL
-    - ndg-httpsclient
-    - pyasn1
-    - 'git+https://github.com/RIPE-NCC/ripe-atlas-tools@latest#egg=ripe-atlas-tools'
 
 - name: "Create symlinks for ripe-atlas-tools"
   file:

@@ -1,6 +1,7 @@
 - name: "Install KVM software packages"
-  apt: name={{ item }} state=latest
-  with_items:
-    - qemu-kvm
-    - virt-manager
-    - bridge-utils
+  apt:
+    name:
+      - qemu-kvm
+      - virt-manager
+      - bridge-utils
+    state: latest

@@ -1,5 +1,7 @@
 - name: "Install mysql-server"
-  apt: name="mysql-server" state=latest
+  apt:
+    name: mysql-server
+    state: latest
 
 - name: "Check out 6paster sourcecode"
   git:

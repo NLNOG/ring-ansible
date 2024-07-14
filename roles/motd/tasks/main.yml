@@ -1,5 +1,7 @@
 - name: "Install update-motd"
-  apt: name=update-motd state=latest
+  apt:
+    name: update-motd
+    state: latest
 
 - name: "Remove uninteresting motd items"
   file: path={{ item }} state=absent

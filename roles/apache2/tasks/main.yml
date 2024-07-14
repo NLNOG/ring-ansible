@@ -1,20 +1,21 @@
 - name: "Install apache2"
-  apt: name={{ item }} state=latest
-  with_items:
-    - apache2
+  apt:
+    name: apache2
+    state: latest
 
 - name: "Install WSGI for python3"
-  apt: name={{ item }} state=latest
-  with_items:
-    - libapache2-mod-wsgi-py3
+  apt:
+    name: libapache2-mod-wsgi-py3
+    state: latest
   when: need_wsgi_py3|default(None) == True
 
 - name: "Install php when required"
-  apt: name={{ item }} state=latest
-  with_items:
-    - libapache2-mod-php8.1
-    - php8.1-mbstring
-    - php8.1-mysql
+  apt:
+    name:
+      - libapache2-mod-php8.1
+      - php8.1-mbstring
+      - php8.1-mysql
+    state: latest
   when: need_php|default(None) == true
   notify: restart apache2
 

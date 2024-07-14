@@ -1,12 +1,11 @@
 ---
 - name: Ensure other nameservers are not installed
   apt:
-    name: "{{ item }}"
+    name:
+      - bind9
+      - pdns-recursor
     state: absent
     purge: true
-  with_items:
-    - bind9
-    - pdns-recursor
 
 - name: Disable systemd-resolved
   service: name=systemd-resolved state=stopped enabled=no
@@ -19,13 +18,12 @@
 - name: Install unbound
   apt:
     name: "{{ item }}"
+      - unbound
+      - unbound-anchor
+      - unbound-host
+      - python3-unbound
+      - libunbound8
     state: latest
-  with_items:
-    - unbound
-    - unbound-anchor
-    - unbound-host
-    - python3-unbound
-    - libunbound8
 
 - name: Configure unbound
   template:
