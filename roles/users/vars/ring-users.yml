@@ -6185,3 +6185,11 @@ USERS:
     groups:
       - ring-users
 
+  xyphen:
+    state: present
+    company: 'Xyphen IT'
+    email: 'noc@xyphen-it.nl'
+    uid: 5794
+    groups:
+      - ring-users
+
