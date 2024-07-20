@@ -1,6 +1,6 @@
 - name: "Key management"
-  include: keys.yml
+  include_tasks: keys.yml
 
 - name: "Graphite user management"
-  include: graphite.yml
+  include_tasks: graphite.yml
 

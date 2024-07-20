@@ -3,9 +3,9 @@
     name: openssh-server
     state: latest
 
-- include: ringnode.yml
+- include_tasks: ringnode.yml
   when: "'ringnode' in group_names"
 
-- include: infranode.yml
+- include_tasks: infranode.yml
   when: "'infranode' in group_names"
 

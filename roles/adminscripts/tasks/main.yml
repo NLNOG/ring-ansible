@@ -39,9 +39,9 @@
     group=root
     mode=0755
 
-- include: dbmaster.yml
+- include_tasks: dbmaster.yml
   when: dbmaster == true
 
-- include: pdnsmaster.yml
+- include_tasks: pdnsmaster.yml
   when: pdnsmaster == true
 

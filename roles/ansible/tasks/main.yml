@@ -131,6 +131,6 @@
     regexp: 'ansible(-|_)pull'
     state: absent
 
-- include: master.yml
+- include_tasks: master.yml
   when: ansible_master|default(None) == true
 

@@ -1,15 +1,15 @@
 ---
 # local service user
-- include: user.yml
+- include_tasks: user.yml
   when: kafka_configure_broker or kafka_configure_zookeeper
 
 # download + unpack kafka
-- include: install.yml
+- include_tasks: install.yml
   when: kafka_configure_broker or kafka_configure_zookeeper
 
 # Kafka configs
-- include: kafka.yml
+- include_tasks: kafka.yml
   when: kafka_configure_broker
 
-- include: zookeeper.yml
+- include_tasks: zookeeper.yml
   when: kafka_configure_zookeeper

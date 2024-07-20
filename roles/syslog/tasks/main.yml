@@ -29,10 +29,10 @@
     - etc/default/syslog-ng
     - etc/logrotate.d/syslog-ng
 
-- include: client.yml
+- include_tasks: client.yml
   when: syslog_server|default(None) != true
 
-- include: server.yml
+- include_tasks: server.yml
   when: syslog_server|default(None) == true
 
 - name: create scripts

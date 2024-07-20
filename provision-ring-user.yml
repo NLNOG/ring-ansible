@@ -8,12 +8,14 @@
     - name: "Load user class variables"
       include_vars: roles/users/vars/ring-users.yml
 
-    - include: roles/users/tasks/user_tasks.yml user={{ USERS[item] }}
+    - include_tasks: roles/users/tasks/user_tasks.yml
       vars:
+        user: "{{ USERS[item] }}"
         item: "{{ username }}"
 
-    - include: roles/users/tasks/user_tasks_auth.yml user={{ USERS[item] }}
+    - include_tasks: roles/users/tasks/user_tasks_auth.yml
       vars:
+        user: "{{ USERS[item] }}"
         item: "{{ username }}"
       when: inventory_hostname == "auth.infra.ring.nlnog.net"
 
