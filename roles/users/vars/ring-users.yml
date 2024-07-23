@@ -6193,3 +6193,11 @@ USERS:
     groups:
       - ring-users
 
+  frumentum:
+    state: present
+    company: 'Frumentum Media'
+    email: 'noc@frumentum.nl'
+    uid: 5795
+    groups:
+      - ring-users
+
