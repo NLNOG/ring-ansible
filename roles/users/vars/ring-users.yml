@@ -2232,7 +2232,7 @@ USERS:
       - ring-users
 
   csuc:
-    state: present
+    state: absent
     company: 'CSUC'
     email: 'com@csuc.cat'
     uid: 5301
@@ -4417,7 +4417,7 @@ USERS:
       - ring-users
 
   bakkerit:
-    state: present
+    state: absent
     company: 'Bakker IT'
     email: 'noc@bakker-it.eu'
     uid: 5574
