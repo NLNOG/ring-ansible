@@ -3,10 +3,8 @@
   service:
     name: unbound
     state: reloaded
-    pattern: "unbound"
 
 - name: restart unbound
   service:
     name: unbound
     state: restarted
-    pattern: "unbound"
