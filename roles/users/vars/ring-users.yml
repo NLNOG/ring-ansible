@@ -6201,3 +6201,11 @@ USERS:
     groups:
       - ring-users
 
+  skhron:
+    state: present
+    company: 'Skhron OÜ'
+    email: 'noc@skhron.com.ua'
+    uid: 5796
+    groups:
+      - ring-users
+
