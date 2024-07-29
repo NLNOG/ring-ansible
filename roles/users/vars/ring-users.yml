@@ -2232,7 +2232,7 @@ USERS:
       - ring-users
 
   csuc:
-    state: absent
+    state: present
     company: 'CSUC'
     email: 'com@csuc.cat'
     uid: 5301
