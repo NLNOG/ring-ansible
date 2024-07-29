@@ -4417,7 +4417,7 @@ USERS:
       - ring-users
 
   bakkerit:
-    state: absent
+    state: present
     company: 'Bakker IT'
     email: 'noc@bakker-it.eu'
     uid: 5574
