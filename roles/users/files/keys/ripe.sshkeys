@@ -26,3 +26,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuczF1QanCc6evgvSaDHvVy6WElc9CFNuA4buPpQwL
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK6+NIBv9gzFj0uK6D6vNFjny/JY8Hm2l7aYllOGUhbz tdekock@ripencc
 # Bart Bakker
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILU5/ZoCY9vmi78w0I/r2Y43IHeszEx0fwpdIi2nrf0K Bart Bakker <bbakker@ripe.net>
+# Andrea di Menna
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAFhXTtMbTc9MR+d49AnXmc38vI0Ii1VGI2xtMtgXE5o adimenna@ncc
