@@ -26,7 +26,6 @@ blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
-apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:fea1:5f4a
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5::2
@@ -225,7 +224,6 @@ ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
-edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
@@ -310,7 +308,6 @@ inxza02.ring.nlnog.net OWNER=inxza V4=196.10.54.133 V6=2001:43f8:1f4:a00::133
 inxza03.ring.nlnog.net OWNER=inxza V4=196.10.55.133 V6=2001:43f8:1f5:a00::133
 lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.28.226 V6=2a02:4260:1004::2
-cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 fiberby01.ring.nlnog.net OWNER=fiberby V4=193.106.164.98 V6=2a03:5440:5:50::2
 serversaustralia01.ring.nlnog.net OWNER=serversaustralia V4=117.120.13.125 V6=2400:8100:ffff:0:117:120:13:125
 chaosdarmstadt01.ring.nlnog.net OWNER=chaosdarmstadt V4=82.195.73.60 V6=2001:67c:2ed8::60:0
@@ -804,7 +801,6 @@ nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 [voxel]
 
 [apnic]
-apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 
 [man-da]
 man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:fea1:5f4a
@@ -1471,7 +1467,6 @@ firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 
 [edsitech]
-edsitech01.ring.nlnog.net OWNER=edsitech V4=185.50.191.247 V6=2a04:c000:ed51:919::247:1
 
 [1oconsulting]
 
@@ -1716,7 +1711,6 @@ lbl01.ring.nlnog.net OWNER=lbl V4=128.3.121.244 V6=2620:83:8000:105::a
 keklolwtf01.ring.nlnog.net OWNER=keklolwtf V4=185.54.28.226 V6=2a02:4260:1004::2
 
 [cadence]
-cadence01.ring.nlnog.net OWNER=cadence V4=185.59.204.164 V6=2a02:6da0:44:253::164
 
 [netflix]
 
