@@ -2256,7 +2256,7 @@ USERS:
       - ring-users
 
   edsitech:
-    state: present
+    state: absent
     company: 'EDSI-Tech Sarl'
     email: 'noc@edsi-tech.com'
     uid: 5304
@@ -5650,7 +5650,7 @@ USERS:
       - ring-users
 
   alizer:
-    state: present
+    state: absent
     company: 'Alizer'
     email: 'noc@alizer.se'
     uid: 5727
@@ -6206,6 +6206,14 @@ USERS:
     company: 'Skhron OÜ'
     email: 'noc@skhron.com.ua'
     uid: 5796
+    groups:
+      - ring-users
+
+  wavex:
+    state: present
+    company: 'WaveX Internet Service Provider'
+    email: 'noc@wavex.co.ke'
+    uid: 5797
     groups:
       - ring-users
 
