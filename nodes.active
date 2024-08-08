@@ -33,7 +33,6 @@ dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5:
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
-rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
@@ -510,10 +509,7 @@ pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c
 qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2406:e940:0:10::10
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
 krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
-flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
-flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
 vorboss01.ring.nlnog.net OWNER=vorboss V4=144.98.99.67 V6=2a00:e345:ee:ff::1000
 vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
@@ -625,6 +621,7 @@ vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4f
 vultr15.ring.nlnog.net OWNER=vultr V4=139.84.163.156 V6=2401:c080:3400:220b:5400:4ff:fea0:4f78
 vultr16.ring.nlnog.net OWNER=vultr V4=65.20.82.174 V6=2401:c080:2400:1872:5400:4ff:fea0:4f56
 vultr17.ring.nlnog.net OWNER=vultr V4=149.28.159.108 V6=2001:19f0:4400:257c:5400:4ff:fea0:4f52
+vultr18.ring.nlnog.net OWNER=vultr V4=45.32.221.163 V6=2001:19f0:5401:16df:5400:5ff:fe0a:79b8
 sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
@@ -826,7 +823,6 @@ jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
 
 [rezopole]
-rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 
 [solnet]
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
@@ -2435,10 +2431,7 @@ krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
 [intrace]
 
 [flexential]
-flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
-flexential02.ring.nlnog.net OWNER=flexential V4=64.239.240.36 V6=2607:f758:8080:0:250:56ff:feaf:3c80
 flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0:250:56ff:fe92:544c
-flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 
 [eqxmetal]
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
@@ -2758,6 +2751,7 @@ vultr14.ring.nlnog.net OWNER=vultr V4=64.176.11.4 V6=2001:19f0:c800:2920:5400:4f
 vultr15.ring.nlnog.net OWNER=vultr V4=139.84.163.156 V6=2401:c080:3400:220b:5400:4ff:fea0:4f78
 vultr16.ring.nlnog.net OWNER=vultr V4=65.20.82.174 V6=2401:c080:2400:1872:5400:4ff:fea0:4f56
 vultr17.ring.nlnog.net OWNER=vultr V4=149.28.159.108 V6=2001:19f0:4400:257c:5400:4ff:fea0:4f52
+vultr18.ring.nlnog.net OWNER=vultr V4=45.32.221.163 V6=2001:19f0:5401:16df:5400:5ff:fe0a:79b8
 
 [sdnbucks]
 sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
