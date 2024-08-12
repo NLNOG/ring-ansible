@@ -3145,7 +3145,7 @@ USERS:
       - ring-users
 
   liquidtelecom:
-    state: present
+    state: absent
     company: 'Liquid Telecom'
     email: 'anthony.somerset@liquidtelecom.com'
     uid: 5416
