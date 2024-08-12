@@ -6217,3 +6217,11 @@ USERS:
     groups:
       - ring-users
 
+  kantonzug:
+    state: present
+    company: 'Kanton Zug, Amt für Informatik und Organisation'
+    email: 'service@zg.ch'
+    uid: 5798
+    groups:
+      - ring-users
+
