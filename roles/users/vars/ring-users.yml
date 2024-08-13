@@ -2146,7 +2146,7 @@ USERS:
   immense:
     state: absent
     company: 'Immense Networks, LLC'
-    email: 'support@immense.net'
+    email: 'noc@immense.net'
     uid: 5290
     groups:
       - ring-users
