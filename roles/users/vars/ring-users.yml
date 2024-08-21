@@ -4089,7 +4089,7 @@ USERS:
       - ring-users
 
   breedbandnl:
-    state: present
+    state: absent
     company: 'Breedband B.V.'
     email: 'support@breedband.nl'
     uid: 5534
