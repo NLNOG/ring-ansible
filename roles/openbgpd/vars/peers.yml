@@ -691,6 +691,18 @@ lg_peers:
     asn: 20495
     ipv4: 92.48.224.28
     ipv6: 2001:15c8:1::28
+  WAVEX_NBO1_PE1:
+    asn: 328977
+    ipv4: 102.217.166.1
+    ipv6: 2c0f:6300::
+  WAVEX_NBO1_PE2:
+    asn: 328977
+    ipv4: 102.217.166.2
+    ipv6: 2c0f:6300:0:ffa::
+  WAVEX_MBA1_PE1:
+    asn: 328977
+    ipv4: 102.217.166.8
+    ipv6: 2c0f:6300:0:ff6::
   XINDI1:
     asn: 48112
     ipv4: 185.173.16.135
