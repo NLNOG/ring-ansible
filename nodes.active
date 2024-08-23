@@ -115,7 +115,6 @@ rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
-heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
@@ -159,7 +158,6 @@ luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
-syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
@@ -1088,7 +1086,6 @@ one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 [rediris]
 
 [heanet]
-heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 
 [algar]
 
@@ -1282,7 +1279,6 @@ dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 
 [syseleven]
-syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 
 [vertixo]
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
