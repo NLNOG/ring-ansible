@@ -658,7 +658,7 @@ lg_peers:
   TELSENSE:
     asn: 329035
     ipv4: 102.216.24.5
-    ipv6: 2c0f:4c80:0:1::5  
+    ipv6: 2c0f:4c80:0:1::5
   TETANEUTRAL1:
     asn: 197422
     ipv4: 91.224.149.152
