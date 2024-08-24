@@ -752,6 +752,9 @@ lg_peers:
     asn: 32554
     ipv4: 216.162.82.13
     ipv6: 2607:6b40:2000:ffff:401::2
+  TEST_VAN_TEUN:
+    asn: 65666
+    ipv6: 2001:db8::
 
 readonly_peers:
   BGPDOTTOOLS:
