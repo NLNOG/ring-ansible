@@ -1,9 +1,5 @@
 ---
 lg_peers:
-  ASTROMANDEV:
-    asn: 215605
-    ipv4: 194.28.99.54
-    ipv6: 2a0c:b640:13:54::1
   A2B1:
     asn: 51088
     ipv4: 5.10.192.4
@@ -67,10 +63,31 @@ lg_peers:
     asn: 198985
     ipv4: 185.233.100.247
     ipv6: 2a0c:e300:1::247
+  AS199471_S5B_DUS:
+    asn: 199471
+    ipv6: 2a13:fc80:fffe::1
+  AS199471_S5B_FRA:
+    asn: 199471
+    ipv6: 2a13:fc80:fffd::1
+  AS203686_ILHAM_RR:
+    asn: 203686
+    ipv6: 2a05:dfc1:7e00:abcd::5
   AS207960NET1:
     asn: 207960
     ipv4: 45.129.95.2
     ipv6: 2a0d:1a40:7900:7::1
+  AS212635_AMS2:
+    asn: 212635
+    ipv4: 45.159.140.2
+    ipv6: 2a10:6e40::2
+  ASTROMANDEV:
+    asn: 215605
+    ipv4: 194.28.99.54
+    ipv6: 2a0c:b640:13:54::1
+  ATHARVA:
+    asn: 150249
+    ipv4: 103.153.42.74
+    ipv6: 2a06:9f44:f170:ff::2
   ATOM861:
     asn: 8455
     ipv4: 95.142.96.25
@@ -103,6 +120,10 @@ lg_peers:
     asn: 12859
     ipv4: 213.136.1.132
     ipv6: 2001:7b8:0:fffe::2
+  BITENCY_EQAM5:
+    asn: 61029
+    ipv4: 37.72.101.64
+    ipv6: '2a00:8240:b2b:1::'
   BITTERBAL1:
     asn: 200995
     ipv4: 212.72.236.1
@@ -127,13 +148,13 @@ lg_peers:
     asn: 45009
     ipv4: 45.150.40.2
     ipv6: '2a0f:9200:0:800:2::'
-  CENTAURINET_AMS:
-    asn: 46307
-    ipv6: 2602:fb3c:11:1::1
   CELYA01:
     asn: 203596
     ipv4: 185.122.100.33
     ipv6: 2a06:a400:1:0:600d:fee1:0:1
+  CENTAURINET_AMS:
+    asn: 46307
+    ipv6: 2602:fb3c:11:1::1
   CHAOSDARMSTADT1:
     asn: 6766
     ipv4: 82.195.73.62
@@ -153,14 +174,14 @@ lg_peers:
   CMHMR1:
     asn: 203528
     ipv6: 2a0e:8f02:21d1:dead::90
-  COLOCLUE1:
-    asn: 8283
-    ipv4: 94.142.247.3
-    ipv6: 2a02:898:0:300::3
   CNTDPLKRK:
     asn: 49102
     ipv4: 93.159.133.98
     ipv6: 2a00:1578:2137::1
+  COLOCLUE1:
+    asn: 8283
+    ipv4: 94.142.247.3
+    ipv6: 2a02:898:0:300::3
   DAM64:
     asn: 207910
     ipv4: 45.67.83.250
@@ -316,14 +337,14 @@ lg_peers:
     asn: 24679
     ipv4: 195.47.229.254
     ipv6: 2a02:790::1
-  HYEHOST_FRA1:
-    asn: 47272
-    ipv4: 154.57.85.83
-    ipv6: 2001:67c:d84::1
   HYEHOST_AMS1:
     asn: 47272
     ipv4: 89.37.98.120
     ipv6: 2001:678:7ec:120::1
+  HYEHOST_FRA1:
+    asn: 47272
+    ipv4: 154.57.85.83
+    ipv6: 2001:67c:d84::1
   HYEHOST_MCI1:
     asn: 47272
     ipv4: 23.172.120.10
@@ -419,6 +440,11 @@ lg_peers:
     asn: 24971
     ipv4: 81.31.40.9
     ipv6: 2a01:430:0:ff::9
+  MCIU_PHL:
+    asn: 32554
+    ipv4: 216.162.82.13
+    ipv6: 2607:6b40:2000:ffff:401::2
+
   MEDIALINE_FRA1:
     asn: 205614
     ipv4: 185.171.47.1
@@ -431,14 +457,14 @@ lg_peers:
     asn: 205614
     ipv4: 185.171.47.6
     ipv6: 2a0d:1f80::6
-  METAPEER:
-    asn: 13331
-    ipv4: 163.237.247.112
-    ipv6: 2001:4978:1000::2319:b
   MERLIN1:
     asn: 16796
     ipv4: 216.73.71.129
     ipv6: 2620:b0:0:a::2
+  METAPEER:
+    asn: 13331
+    ipv4: 163.237.247.112
+    ipv6: 2001:4978:1000::2319:b
   MIDNET_SPRNTX01:
     asn: 16970
     ipv4: 64.40.23.22
@@ -558,7 +584,7 @@ lg_peers:
   QUXLABS1:
     asn: 203038
     ipv4: 185.243.23.254
-    ipv6: "2a0a:3507:1::"
+    ipv6: '2a0a:3507:1::'
   RADISHNETWORKS1:
     asn: 399580
     ipv4: 209.209.88.249
@@ -671,6 +697,10 @@ lg_peers:
     asn: 32133
     ipv4: 64.98.10.8
     ipv6: 2606:8e80:64::8
+  TRITAN:
+    asn: 393577
+    ipv4: 23.142.248.1
+    ipv6: 2602:291::1
   TUXISAMS1:
     asn: 197731
     ipv4: 185.119.29.17
@@ -691,22 +721,22 @@ lg_peers:
     asn: 4826
     ipv4: 114.31.199.18
     ipv6: 2402:7800:100::18
+  WAVEX_MBA1_PE1:
+    asn: 328977
+    ipv4: 102.217.166.8
+    ipv6: '2c0f:6300:0:ff6::'
+  WAVEX_NBO1_PE1:
+    asn: 328977
+    ipv4: 102.217.166.1
+    ipv6: '2c0f:6300::'
+  WAVEX_NBO1_PE2:
+    asn: 328977
+    ipv4: 102.217.166.2
+    ipv6: '2c0f:6300:0:ffa::'
   WD61:
     asn: 20495
     ipv4: 92.48.224.28
     ipv6: 2001:15c8:1::28
-  WAVEX_NBO1_PE1:
-    asn: 328977
-    ipv4: 102.217.166.1
-    ipv6: "2c0f:6300::"
-  WAVEX_NBO1_PE2:
-    asn: 328977
-    ipv4: 102.217.166.2
-    ipv6: "2c0f:6300:0:ffa::"
-  WAVEX_MBA1_PE1:
-    asn: 328977
-    ipv4: 102.217.166.8
-    ipv6: "2c0f:6300:0:ff6::"
   XINDI1:
     asn: 48112
     ipv4: 185.173.16.135
@@ -715,52 +745,16 @@ lg_peers:
     asn: 3214
     ipv4: 185.255.55.19
     ipv6: 2a0c:59c0::19
-  YOURORG_ORD1:
-    asn: 19255
-    ipv4: 163.237.247.99
-    ipv6: 2001:4978:1000::2319:99
-  TRITAN:
-    asn: 393577
-    ipv4: 23.142.248.1
-    ipv6: 2602:291::1
-  AS212635_AMS2:
-    asn: 212635
-    ipv4: 45.159.140.2
-    ipv6: 2a10:6e40::2
   XYPHENIT_CE_AMS:
     asn: 211588
     ipv4: 45.83.205.255
     ipv6: 2a07:e345::255
-  AS203686_ILHAM_RR:
-    asn: 203686
-    ipv6: 2a05:dfc1:7e00:abcd::5
-  AS199471_S5B_DUS:
-    asn: 199471
-    ipv6: 2a13:fc80:fffe::1
-  AS199471_S5B_FRA:
-    asn: 199471
-    ipv6: 2a13:fc80:fffd::1
-  ATHARVA:
-    asn: 150249
-    ipv4: 103.153.42.74
-    ipv6: 2a06:9f44:f170:ff::2
-  BITENCY_EQAM5:
-    asn: 61029
-    ipv4: 37.72.101.64
-    ipv6: "2a00:8240:b2b:1::"
-  MCIU_PHL:
-    asn: 32554
-    ipv4: 216.162.82.13
-    ipv6: 2607:6b40:2000:ffff:401::2
-  TEST_VAN_TEUN:
-    asn: 65666
-    ipv6: 2001:db8::
+  YOURORG_ORD1:
+    asn: 19255
+    ipv4: 163.237.247.99
+    ipv6: 2001:4978:1000::2319:99
 
 readonly_peers:
-  BGPDOTTOOLS:
-    asn: 212232
-    ipv4: 185.230.223.54
-    ipv6: 2a0c:2f07:9459::b5
   SERNET2:
     asn: 41955
     ipv4: 185.199.217.227
