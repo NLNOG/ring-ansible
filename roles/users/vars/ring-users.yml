@@ -6225,3 +6225,11 @@ USERS:
     groups:
       - ring-users
 
+  internetty:
+    state: present
+    company: 'Internetty Ltd'
+    email: 'noc@internetty.uk'
+    uid: 5799
+    groups:
+      - ring-users
+

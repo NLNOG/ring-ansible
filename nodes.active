@@ -2949,3 +2949,5 @@ wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 
 [kantonzug]
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
+
+[internetty]
