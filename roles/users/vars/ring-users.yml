@@ -4425,7 +4425,7 @@ USERS:
       - ring-users
 
   layerbridge:
-    state: present
+    state: absent
     company: 'LayerBridge SRL'
     email: 'internal@layerbridge.com'
     uid: 5575
