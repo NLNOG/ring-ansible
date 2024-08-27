@@ -3537,7 +3537,7 @@ USERS:
       - ring-users
 
   jpbe:
-    state: present
+    state: absent
     company: 'JPBE Network'
     email: 'noc@as206479.net'
     uid: 5464
