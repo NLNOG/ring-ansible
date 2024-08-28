@@ -222,6 +222,7 @@ ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
+csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40b0:1:1122:ce5c:a007:0:4
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
@@ -1476,6 +1477,7 @@ firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212
 [kudelski]
 
 [csuc]
+csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40b0:1:1122:ce5c:a007:0:4
 
 [qcom]
 
