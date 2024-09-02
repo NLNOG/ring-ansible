@@ -664,6 +664,7 @@ alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
+hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
@@ -2856,6 +2857,7 @@ hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 
 [hypernology]
+hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
 
 [rsm]
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
