@@ -2951,3 +2951,5 @@ kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013:
 
 [internetty]
 internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
+
+[vnv]

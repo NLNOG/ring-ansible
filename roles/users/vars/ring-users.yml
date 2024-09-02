@@ -6233,3 +6233,11 @@ USERS:
     groups:
       - ring-users
 
+  vnv:
+    state: present
+    company: 'VNV SA'
+    email: 'noc@vnv.ch'
+    uid: 5800
+    groups:
+      - ring-users
+
