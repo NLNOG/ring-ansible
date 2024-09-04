@@ -670,6 +670,12 @@ lg_peers:
     asn: 210715
     ipv4: 45.43.163.1
     ipv6: 2602:fa87:6:100::1
+  STOCADE_AMS_01:
+    asn: 214809
+    ipv6: 2a0a:6044:b304::1
+  STOCADE_YYZ_01:
+    asn: 214809
+    ipv6: 2a0a:6044:b306::1
   SYSLEVEL:
     asn: 57797
     ipv6: 2a12:8ac1:a0::60
