@@ -6241,3 +6241,11 @@ USERS:
     groups:
       - ring-users
 
+  stocade:
+    state: present
+    company: 'Stocade'
+    email: 'noc@stocade.com'
+    uid: 5801
+    groups:
+      - ring-users
+
