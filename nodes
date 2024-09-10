@@ -2992,3 +2992,5 @@ vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 
 [stocade]
 stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
+
+[cloudferro]

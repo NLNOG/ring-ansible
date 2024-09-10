@@ -6249,3 +6249,11 @@ USERS:
     groups:
       - ring-users
 
+  cloudferro:
+    state: present
+    company: 'Cloudferro S.A'
+    email: 'network@cloudferro.com'
+    uid: 5802
+    groups:
+      - ring-users
+
