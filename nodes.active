@@ -110,6 +110,7 @@ poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
+glesys01.ring.nlnog.net OWNER=glesys V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::36
@@ -540,7 +541,6 @@ servu01.ring.nlnog.net OWNER=servu V4=192.108.73.88 V6=2a0c:7286:2736::88
 clearnetworx01.ring.nlnog.net OWNER=clearnetworx V4=172.103.36.110 V6=2606:B640:172:10::110
 nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
-ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
 ninjaix05.ring.nlnog.net OWNER=ninjaix V4=23.175.16.27 V6=2604:6040:80:3::27
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
 pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
@@ -695,7 +695,6 @@ wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
 internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
-stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 
 [infranode]
 
@@ -1057,6 +1056,7 @@ bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
 
 [glesys]
+glesys01.ring.nlnog.net OWNER=glesys V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 
 [rcsrds]
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
@@ -2559,7 +2559,6 @@ nmmn01.ring.nlnog.net OWNER=nmmn V4=217.114.76.126 V6=2a01:688:4:65::4
 
 [ninjaix]
 ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
-ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
 ninjaix05.ring.nlnog.net OWNER=ninjaix V4=23.175.16.27 V6=2604:6040:80:3::27
 
 [unchained]
@@ -2950,4 +2949,3 @@ internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::100
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 
 [stocade]
-stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
