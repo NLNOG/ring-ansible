@@ -46,6 +46,7 @@
     - /usr/bin/tcpdump
     - /usr/bin/dumpcap
     - /usr/bin/mtr-packet
+    - /usr/bin/trip
   check_mode: no
   changed_when: false
 

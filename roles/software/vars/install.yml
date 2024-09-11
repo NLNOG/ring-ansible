@@ -103,3 +103,4 @@ software:
     - jsonlint
     - hash-slinger
     - gping
+    - trippy
