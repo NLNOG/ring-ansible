@@ -6257,3 +6257,11 @@ USERS:
     groups:
       - ring-users
 
+  hetzner:
+    state: present
+    company: 'Hetzner Online GmbH'
+    email: 'noc@hetzner.com'
+    uid: 5803
+    groups:
+      - ring-users
+

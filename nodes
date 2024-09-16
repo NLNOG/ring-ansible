@@ -2996,3 +2996,5 @@ stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 
 [cloudferro]
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.142.9 V6=2a01:9aa0:5:13:f816:3eff:feff:b5e4
+
+[hetzner]
