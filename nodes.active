@@ -695,6 +695,7 @@ wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
 internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
+stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.142.9 V6=2a01:9aa0:5:13:f816:3eff:feff:b5e4
 hetzner01.ring.nlnog.net OWNER=hetzner V4=142.132.175.61 V6=2a01:4f8:1c1e:a7::1
 
@@ -2951,6 +2952,7 @@ internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::100
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 
 [stocade]
+stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 
 [cloudferro]
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.142.9 V6=2a01:9aa0:5:13:f816:3eff:feff:b5e4
