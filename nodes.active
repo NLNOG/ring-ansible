@@ -159,6 +159,7 @@ luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
+syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
@@ -661,7 +662,6 @@ alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
-hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
 ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
@@ -1279,6 +1279,7 @@ dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 2connect01.ring.nlnog.net OWNER=2connect V4=109.205.75.161 V6=2a00:1238:4:2c:3::2
 
 [syseleven]
+syseleven01.ring.nlnog.net OWNER=syseleven V4=37.49.155.108 V6=2a00:7fc0:4000:13::9
 
 [vertixo]
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
@@ -2853,7 +2854,6 @@ hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 
 [hypernology]
-hypernology01.ring.nlnog.net OWNER=hypernology V6=2a14:7581:104::1000
 
 [rsm]
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
