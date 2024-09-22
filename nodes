@@ -715,6 +715,7 @@ hetzner02.ring.nlnog.net OWNER=hetzner V4=159.69.255.71 V6=2a01:4f8:c010:c031::1
 hetzner03.ring.nlnog.net OWNER=hetzner V4=135.181.159.185 V6=2a01:4f9:c011:c136::1
 hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.40.60 V6=2a01:4ff:2f0:7::1
 hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.47.227 V6=2a01:4ff:1f0:f80a::1
+hetzner06.ring.nlnog.net OWNER=hetzner V4=5.161.40.151 V6=2a01:4ff:f0:80::1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3008,3 +3009,4 @@ hetzner02.ring.nlnog.net OWNER=hetzner V4=159.69.255.71 V6=2a01:4f8:c010:c031::1
 hetzner03.ring.nlnog.net OWNER=hetzner V4=135.181.159.185 V6=2a01:4f9:c011:c136::1
 hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.40.60 V6=2a01:4ff:2f0:7::1
 hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.47.227 V6=2a01:4ff:1f0:f80a::1
+hetzner06.ring.nlnog.net OWNER=hetzner V4=5.161.40.151 V6=2a01:4ff:f0:80::1
