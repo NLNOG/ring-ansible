@@ -710,12 +710,12 @@ internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::100
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.142.9 V6=2a01:9aa0:5:13:f816:3eff:feff:b5e4
-hetzner01.ring.nlnog.net OWNER=hetzner V4=142.132.175.61 V6=2a01:4f8:1c1e:a7::1
-hetzner02.ring.nlnog.net OWNER=hetzner V4=159.69.255.71 V6=2a01:4f8:c010:c031::1
-hetzner03.ring.nlnog.net OWNER=hetzner V4=135.181.159.185 V6=2a01:4f9:c011:c136::1
-hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.40.60 V6=2a01:4ff:2f0:7::1
-hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.47.227 V6=2a01:4ff:1f0:f80a::1
-hetzner06.ring.nlnog.net OWNER=hetzner V4=5.161.40.151 V6=2a01:4ff:f0:80::1
+hetzner01.ring.nlnog.net OWNER=hetzner V4=162.55.223.6 V6=2a01:4f8:1c1b:b875::1
+hetzner02.ring.nlnog.net OWNER=hetzner V4=49.12.37.137 V6=2a01:4f8:c013:534b::1
+hetzner03.ring.nlnog.net OWNER=hetzner V4=65.108.147.62 V6=2a01:4f9:c012:1178::1
+hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.46.17 V6=2a01:4ff:2f0:37f1::1
+hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.119.224 V6=2a01:4ff:1f0:95eb::1
+hetzner06.ring.nlnog.net OWNER=hetzner V4=178.156.130.174 V6=2a01:4ff:f0:b05e::1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3004,9 +3004,9 @@ stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.142.9 V6=2a01:9aa0:5:13:f816:3eff:feff:b5e4
 
 [hetzner]
-hetzner01.ring.nlnog.net OWNER=hetzner V4=142.132.175.61 V6=2a01:4f8:1c1e:a7::1
-hetzner02.ring.nlnog.net OWNER=hetzner V4=159.69.255.71 V6=2a01:4f8:c010:c031::1
-hetzner03.ring.nlnog.net OWNER=hetzner V4=135.181.159.185 V6=2a01:4f9:c011:c136::1
-hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.40.60 V6=2a01:4ff:2f0:7::1
-hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.47.227 V6=2a01:4ff:1f0:f80a::1
-hetzner06.ring.nlnog.net OWNER=hetzner V4=5.161.40.151 V6=2a01:4ff:f0:80::1
+hetzner01.ring.nlnog.net OWNER=hetzner V4=162.55.223.6 V6=2a01:4f8:1c1b:b875::1
+hetzner02.ring.nlnog.net OWNER=hetzner V4=49.12.37.137 V6=2a01:4f8:c013:534b::1
+hetzner03.ring.nlnog.net OWNER=hetzner V4=65.108.147.62 V6=2a01:4f9:c012:1178::1
+hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.46.17 V6=2a01:4ff:2f0:37f1::1
+hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.119.224 V6=2a01:4ff:1f0:95eb::1
+hetzner06.ring.nlnog.net OWNER=hetzner V4=178.156.130.174 V6=2a01:4ff:f0:b05e::1
