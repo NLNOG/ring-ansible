@@ -681,9 +681,6 @@ lg_peers:
   STOCADE_AMS_01:
     asn: 214809
     ipv6: 2a0a:6044:b304::1
-  STOCADE_YYZ_01:
-    asn: 214809
-    ipv6: 2a0a:6044:b306::1
   SYSLEVEL:
     asn: 57797
     ipv6: 2a12:8ac1:a0::60
