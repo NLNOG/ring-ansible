@@ -6265,3 +6265,11 @@ USERS:
     groups:
       - ring-users
 
+  fornex:
+    state: present
+    company: 'Fornex'
+    email: 'noc@fornex.com'
+    uid: 5804
+    groups:
+      - ring-users
+
