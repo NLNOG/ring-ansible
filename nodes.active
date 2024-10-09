@@ -706,6 +706,7 @@ hetzner04.ring.nlnog.net OWNER=hetzner V4=5.223.46.17 V6=2a01:4ff:2f0:37f1::1
 hetzner05.ring.nlnog.net OWNER=hetzner V4=5.78.119.224 V6=2a01:4ff:1f0:95eb::1
 hetzner06.ring.nlnog.net OWNER=hetzner V4=178.156.130.174 V6=2a01:4ff:f0:b05e::1
 fornex01.ring.nlnog.net OWNER=fornex V4=91.228.154.40 V6=2a02:6b40:2000:cf8::1
+pixelhosting01.ring.nlnog.net OWNER=pixelhosting V4=83.142.31.254 V6=2a06:9f41:a100:10::254
 
 [infranode]
 
@@ -2979,3 +2980,4 @@ hetzner06.ring.nlnog.net OWNER=hetzner V4=178.156.130.174 V6=2a01:4ff:f0:b05e::1
 fornex01.ring.nlnog.net OWNER=fornex V4=91.228.154.40 V6=2a02:6b40:2000:cf8::1
 
 [pixelhosting]
+pixelhosting01.ring.nlnog.net OWNER=pixelhosting V4=83.142.31.254 V6=2a06:9f41:a100:10::254
