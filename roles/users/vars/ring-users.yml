@@ -6273,3 +6273,11 @@ USERS:
     groups:
       - ring-users
 
+  pixelhosting:
+    state: present
+    company: 'PixelHosting'
+    email: 'noc@pixelhosting.nl'
+    uid: 5805
+    groups:
+      - ring-users
+

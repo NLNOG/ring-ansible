@@ -3016,3 +3016,5 @@ hetzner06.ring.nlnog.net OWNER=hetzner V4=178.156.130.174 V6=2a01:4ff:f0:b05e::1
 
 [fornex]
 fornex01.ring.nlnog.net OWNER=fornex V4=91.228.154.40 V6=2a02:6b40:2000:cf8::1
+
+[pixelhosting]
