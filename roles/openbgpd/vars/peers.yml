@@ -768,6 +768,10 @@ lg_peers:
     asn: 19255
     ipv4: 163.237.247.99
     ipv6: 2001:4978:1000::2319:99
+  PIXELHOSTING1:
+    asn: 215085
+    ipv4: 83.142.31.1
+    ipv6: 2a06:9f41:a100::1
 
 readonly_peers:
   SERNET2:
