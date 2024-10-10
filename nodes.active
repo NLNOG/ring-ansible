@@ -583,7 +583,6 @@ cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
 cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
-ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 oneaccess01.ring.nlnog.net OWNER=oneaccess V4=91.198.135.13 V6=2a0b:142:0:2::beef
 equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
@@ -687,6 +686,7 @@ eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1
 luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:feff:a00c
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
+pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
 pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
@@ -2689,7 +2689,6 @@ witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
 
 [ipng]
-ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 
 [tin]
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
@@ -2933,6 +2932,7 @@ websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 
 [pdxnet]
+pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
 pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 
 [converged]
