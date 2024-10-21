@@ -1,0 +1,1 @@
+{{ 60|determrand(ansible_nodename) }} 5 * * * root /usr/sbin/unbound-anchor -a /var/lib/unbound/root.key || service unbound restart

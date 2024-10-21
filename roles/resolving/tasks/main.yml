@@ -37,6 +37,14 @@
     state: started
     enabled: true
 
+- name: "Add unbound-anchor cronjob"
+  template:
+    src: cron.d/unbound-anchor.j2
+    dest: /etc/cron.d/unbound-anchor
+    owner: root
+    group: root
+    mode: 0644
+
 - name: Add /etc/resolv.conf
   copy:
     src: resolv.conf
