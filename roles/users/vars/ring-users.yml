@@ -6281,3 +6281,11 @@ USERS:
     groups:
       - ring-users
 
+  dfri:
+    state: present
+    company: 'DFRI'
+    email: 'noc@dfri.net'
+    uid: 5806
+    groups:
+      - ring-users
+
