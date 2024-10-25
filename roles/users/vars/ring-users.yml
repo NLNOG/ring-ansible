@@ -1288,7 +1288,7 @@ USERS:
       - ring-users
 
   berkeley:
-    state: present
+    state: absent
     company: 'University of California at Berkeley'
     email: 'noc@nak.berkeley.edu'
     uid: 5179
