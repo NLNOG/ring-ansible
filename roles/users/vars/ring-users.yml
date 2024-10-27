@@ -3777,7 +3777,7 @@ USERS:
       - ring-users
 
   torix:
-    state: present
+    state: absent
     company: 'Toronto Internet Exchange'
     email: 'admin@torix.ca'
     uid: 5495
@@ -4889,7 +4889,7 @@ USERS:
       - ring-users
 
   apgp:
-    state: present
+    state: absent
     company: 'AP GP Operations, LLC'
     email: 'noc@ap.foundation'
     uid: 5633
@@ -5202,7 +5202,7 @@ USERS:
       - ring-users
 
   hivedc:
-    state: present
+    state: absent
     company: 'Hive Data Center'
     email: 'noc@hivedatacenter.com'
     uid: 5671
@@ -5770,7 +5770,7 @@ USERS:
       - ring-users
 
   oneqode:
-    state: present
+    state: absent
     company: 'OneQode Cloud'
     email: 'nick@oneqode.com'
     uid: 5742
