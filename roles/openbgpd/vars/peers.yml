@@ -782,3 +782,7 @@ readonly_peers:
     asn: 57984
     ipv4: 91.207.120.39
     ipv6: 2a0b:2f07:abcd:234::39
+  BASED_RC0THTP:
+    asn: 21991
+    ipv4: 198.8.59.40
+    ipv6: '2a0f:85c1:31:2c::'
