@@ -662,7 +662,6 @@ ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
-ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
 brouns01.ring.nlnog.net OWNER=brouns V4=193.28.228.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
@@ -2876,7 +2875,6 @@ moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 
 [ztvi]
-ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 
 [tempest]
 tempest01.ring.nlnog.net OWNER=tempest V4=148.59.74.225 V6=2606:f240:7::2
