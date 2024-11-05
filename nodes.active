@@ -286,7 +286,7 @@ altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.205.138 V6=2405:aa00:aa00:604::2
+sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c10::155
@@ -1655,7 +1655,7 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 
 [sabay]
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.205.138 V6=2405:aa00:aa00:604::2
+sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 
 [coreinternet]
 
