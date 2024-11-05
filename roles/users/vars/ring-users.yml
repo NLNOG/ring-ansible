@@ -6289,3 +6289,11 @@ USERS:
     groups:
       - ring-users
 
+  ddfr:
+    state: present
+    company: 'DDFR IT Infra &amp; Security'
+    email: 'info@ddfr.nl'
+    uid: 5807
+    groups:
+      - ring-users
+

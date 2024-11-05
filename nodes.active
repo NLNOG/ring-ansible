@@ -2971,3 +2971,5 @@ pixelhosting01.ring.nlnog.net OWNER=pixelhosting V4=83.142.31.254 V6=2a06:9f41:a
 
 [dfri]
 dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
+
+[ddfr]
