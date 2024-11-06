@@ -6291,7 +6291,7 @@ USERS:
 
   ddfr:
     state: present
-    company: 'DDFR IT Infra &amp; Security'
+    company: 'DDFR IT Infra & Security'
     email: 'info@ddfr.nl'
     uid: 5807
     groups:
