@@ -8,6 +8,7 @@ letsencrypt_certs:
   - api.ring.nlnog.net
   - api4.ring.nlnog.net
   - api6.ring.nlnog.net
+  - dbmaster.infra.ring.nlnog.net
 need_wsgi_py3: true
 
 nftables:
