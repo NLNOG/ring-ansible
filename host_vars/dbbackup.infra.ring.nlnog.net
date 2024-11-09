@@ -1,4 +1,10 @@
 apache_vhosts: []
+letsencrypt_certs:
+  - dbbackup.infra.ring.nlnog.net
+mysqld_ssl: true
+mysqld_serverid: 2
+mysqld_replicate:
+  - ring
 need_wsgi_py3: true
 
 nftables:

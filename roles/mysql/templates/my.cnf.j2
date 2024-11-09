@@ -89,10 +89,13 @@ myisam_recover_options	= BACKUP
 server-id           = {{ mysqld_serverid }}
 {% endif %}
 {% if mysqld_replicate|default(None) %}
-log_bin			= /var/log/mysql/mysql-bin.log
+log_bin             = /var/log/mysql/mysql-bin.log
 {% for db in mysqld_replicate %}
 binlog_do_db        = {{ db }}
 {% endfor %}
+{% if mysqld_serverid|default(None) != 1 %}
+relay-log           = /var/log/mysql/mysql-relay-bin.log
+{% endif %}
 {% endif %}
 #binlog_ignore_db	= include_database_name
 expire_logs_days    = 10
