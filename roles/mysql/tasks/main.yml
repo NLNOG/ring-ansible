@@ -19,8 +19,13 @@
     owner=root
     group=root
     mode=0755
+  register: letsencrypt_mysql
   when: mysqld_ssl is defined and mysqld_ssl == true
   notify: restart mysql
+
+- name: "Run letsencrypt post-renewal hook once"
+  shell: /etc/letsencrypt/renewal-hooks/post/mysql
+  when: letsencrypt_mysql.changed
 
 - name: "Install my.cnf for root user"
   template:
