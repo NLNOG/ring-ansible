@@ -85,12 +85,18 @@ myisam_recover_options	= BACKUP
 # The following can be used as easy to replay backup logs or for replication.
 # note: if you are setting up a replication slave, see README.Debian about
 #       other settings you may need to change.
-#server-id		= 1
-#log_bin			= /var/log/mysql/mysql-bin.log
-expire_logs_days	= 10
-max_binlog_size         = 100M
-#binlog_do_db		= include_database_name
+{% if mysqld_serverid|default(None) %}
+server-id           = {{ mysqld_serverid }}
+{% endif %}
+{% if mysqld_replicate|default(None) %}
+log_bin			= /var/log/mysql/mysql-bin.log
+{% for db in mysqld_replicate %}
+binlog_do_db        = {{ db }}
+{% endfor %}
+{% endif %}
 #binlog_ignore_db	= include_database_name
+expire_logs_days    = 10
+max_binlog_size     = 100M
 #
 # * InnoDB
 #
