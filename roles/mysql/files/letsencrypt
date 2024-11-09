@@ -1,0 +1,11 @@
+#!/bin/bash
+
+hostname=`/usr/bin/hostname`
+
+if [ -d /etc/letsencrypt/live/$hostname ];
+then
+    cp /etc/letsencrypt/live/$hostname/privkey.pem /var/lib/mysql/
+    cp /etc/letsencrypt/live/$hostname/fullchain.pem /var/lib/mysql/
+    chown mysql:mysql /var/lib/mysql/privkey.pem /var/lib/mysql/fullchain.pem
+    service mysql reload
+fi

@@ -4,17 +4,27 @@
     state: latest
 
 - name: "Install my.cnf"
-  copy:
-    src=my.cnf
+  template:
+    src=my.cnf.j2
     dest=/etc/mysql/my.cnf
     owner=root
     group=root
     mode=0644
   notify: restart mysql
 
+- name: "Install letsencrypt post-renewal hook"
+  copy:
+    src=letsencrypt
+    dest=/etc/letsencrypt/renewal-hooks/post/mysql
+    owner=root
+    group=root
+    mode=0755
+  when: mysqld_ssl == true
+  notify: restart mysql
+
 - name: "Install my.cnf for root user"
   template:
-    src: my.cnf.j2
+    src: dot_my.cnf.j2
     dest: /root/.my.cnf
 
 - name: "Install mysqldump cronjob"

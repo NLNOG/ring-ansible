@@ -9,6 +9,7 @@ letsencrypt_certs:
   - api4.ring.nlnog.net
   - api6.ring.nlnog.net
   - dbmaster.infra.ring.nlnog.net
+mysqld_ssl: true
 need_wsgi_py3: true
 
 nftables:
