@@ -19,7 +19,7 @@
     owner=root
     group=root
     mode=0755
-  when: mysqld_ssl == true
+  when: mysqld_ssl is defined and mysqld_ssl == true
   notify: restart mysql
 
 - name: "Install my.cnf for root user"
