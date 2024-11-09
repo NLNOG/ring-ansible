@@ -287,6 +287,7 @@ linode23.ring.nlnog.net OWNER=linode V4=172.233.129.10 V6=2a01:7e03::f03c:93ff:f
 linode24.ring.nlnog.net OWNER=linode V4=172.233.107.60 V6=2a01:7e02::f03c:94ff:fed1:4814
 linode25.ring.nlnog.net OWNER=linode V4=172.236.35.66 V6=2600:3c14::f03c:94ff:feb2:779d
 linode26.ring.nlnog.net OWNER=linode V4=172.236.1.116 V6=2600:3c13::f03c:95ff:fec7:5e30
+linode27.ring.nlnog.net OWNER=linode V4=172.236.156.20 V6=2600:3c15::f03c:95ff:fec4:c456
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
@@ -716,6 +717,7 @@ fornex01.ring.nlnog.net OWNER=fornex V4=91.228.154.40 V6=2a02:6b40:2000:cf8::1
 pixelhosting01.ring.nlnog.net OWNER=pixelhosting V4=83.142.31.254 V6=2a06:9f41:a100:10::254
 dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
 ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
+valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -1657,6 +1659,7 @@ linode23.ring.nlnog.net OWNER=linode V4=172.233.129.10 V6=2a01:7e03::f03c:93ff:f
 linode24.ring.nlnog.net OWNER=linode V4=172.233.107.60 V6=2a01:7e02::f03c:94ff:fed1:4814
 linode25.ring.nlnog.net OWNER=linode V4=172.236.35.66 V6=2600:3c14::f03c:94ff:feb2:779d
 linode26.ring.nlnog.net OWNER=linode V4=172.236.1.116 V6=2600:3c13::f03c:95ff:fec7:5e30
+linode27.ring.nlnog.net OWNER=linode V4=172.236.156.20 V6=2600:3c15::f03c:95ff:fec4:c456
 
 [openimp]
 
@@ -3018,3 +3021,6 @@ dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
 
 [ddfr]
 ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
+
+[valoo]
+valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66

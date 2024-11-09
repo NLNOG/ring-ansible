@@ -6297,3 +6297,11 @@ USERS:
     groups:
       - ring-users
 
+  valoo:
+    state: present
+    company: 'Valoo Oy'
+    email: 'noc@valoo.fi'
+    uid: 5808
+    groups:
+      - ring-users
+
