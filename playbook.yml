@@ -95,8 +95,8 @@
   become: true
   become_user: root
   roles:
-    - { role: mysql, tags: mysql }
     - { role: letsencrypt, tags: letsencrypt }
+    - { role: mysql, tags: mysql }
     - { role: apache2, tags: apache2 }
     - { role: pdns-server, tags: pdns-server }
     - { role: map, tags: map }
@@ -107,8 +107,8 @@
   become: true
   become_user: root
   roles:
-    - { role: mysql, tags: mysql }
     - { role: letsencrypt, tags: letsencrypt }
+    - { role: mysql, tags: mysql }
     - { role: apache2, tags: apache2 }
     - { role: hugo, tags: hugo }
     - { role: paster, tags: paster }
@@ -129,8 +129,8 @@
   become: true
   become_user: root
   roles:
-    - { role: mysql, tags: mysql }
     - { role: letsencrypt, tags: letsencrypt }
+    - { role: mysql, tags: mysql }
     - { role: apache2, tags: apache2 }
     - { role: ring_api, tags: ring_api }
 
@@ -138,6 +138,7 @@
   become: true
   become_user: root
   roles:
+    - { role: letsencrypt, tags: letsencrypt }
     - { role: mysql, tags: mysql }
     - { role: apache2, tags: apache2 }
     - { role: ring_api, tags: ring_api }
