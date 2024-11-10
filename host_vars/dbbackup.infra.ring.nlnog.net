@@ -21,7 +21,7 @@ nftables:
       dport: 443
 
 LOCAL_GROUPS:
-  apt: dbmaster
+  dbmaster: present
 
 LOCAL_USERS:
   dbmaster:
