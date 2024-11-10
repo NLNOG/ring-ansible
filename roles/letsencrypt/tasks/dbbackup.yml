@@ -1,0 +1,7 @@
+- name: "create letsencrypt sync dir"
+  file:
+    path: /var/lib/ssl
+    owner: root
+    group: dbmaster
+    mode: 0770
+    state: directory

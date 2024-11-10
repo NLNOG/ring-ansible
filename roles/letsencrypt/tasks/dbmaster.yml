@@ -1,0 +1,15 @@
+- name: "symlink letsencrypt dir"
+  file: 
+    src: /etc/letsencrypt/live
+    dest: /var/lib/ssl
+    owner: root
+    group: root
+    state: link
+
+- name: "sync api certificates to dbbackup"
+  copy:
+    src=sync_apicerts
+    dest=/etc/letsencrypt/renewal-hooks/post/sync_apicerts
+    owner=root
+    group=root
+    mode=0755

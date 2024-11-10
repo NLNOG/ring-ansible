@@ -3,6 +3,12 @@
     name: python3-certbot-apache
     state: latest
 
+- include_tasks: dbmaster.yml
+  when: dbmaster == true
+
+- include_tasks: dbbackup.yml
+  when: dbbackup == true
+
 - name: "Check for existing certificates"
   stat: path=/etc/letsencrypt/live/{{ item }}/cert.pem
   register: certs_installed
