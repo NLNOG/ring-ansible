@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -az --delete /var/lib/ssl/api* dbbackup.infra.ring.nlnog.net:/var/lib/ssl/
+rsync -az --delete /var/lib/ssl/api* dbmaster@dbbackup.infra.ring.nlnog.net:/var/lib/ssl/

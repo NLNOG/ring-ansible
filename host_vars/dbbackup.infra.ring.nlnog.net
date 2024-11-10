@@ -33,4 +33,4 @@ LOCAL_USERS:
     groups:
       - dbmaster
     sshkeys:
-      'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPgK05cigRW2dvG1m3gT6sr+PS4DnU0Ic7Lk+pdjOqVW root@dbmaster.infra.ring.nlnog.net'
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPgK05cigRW2dvG1m3gT6sr+PS4DnU0Ic7Lk+pdjOqVW root@dbmaster.infra.ring.nlnog.net"
