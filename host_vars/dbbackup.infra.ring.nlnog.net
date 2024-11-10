@@ -20,6 +20,9 @@ nftables:
       proto: tcp
       dport: 443
 
+LOCAL_GROUPS:
+  apt: dbmaster
+
 LOCAL_USERS:
   dbmaster:
     state: present
