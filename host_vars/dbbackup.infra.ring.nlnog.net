@@ -1,3 +1,4 @@
+dbbackup: true
 apache_vhosts:
   - api
   - api4
@@ -18,3 +19,15 @@ nftables:
     - name: https (api)
       proto: tcp
       dport: 443
+
+LOCAL_USERS:
+  dbmaster:
+    state: present
+    company: 'NLNOG Ring Admins'
+    email: ring-admins@nlnog.net
+    uid: 62004
+    shell: /bin/bash
+    groups:
+      - dbmaster
+    sshkeys:
+      'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPgK05cigRW2dvG1m3gT6sr+PS4DnU0Ic7Lk+pdjOqVW root@dbmaster.infra.ring.nlnog.net'
