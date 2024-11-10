@@ -4,10 +4,10 @@
     state: latest
 
 - include_tasks: dbmaster.yml
-  when: dbmaster == true
+  when: dbmaster is defined and dbmaster == true
 
 - include_tasks: dbbackup.yml
-  when: dbbackup == true
+  when: dbbackup is defined and dbbackup == true
 
 - name: "Check for existing certificates"
   stat: path=/etc/letsencrypt/live/{{ item }}/cert.pem
