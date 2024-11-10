@@ -1,4 +1,7 @@
-apache_vhosts: []
+apache_vhosts:
+  - api
+  - api4
+  - api6
 letsencrypt_certs:
   - dbbackup.infra.ring.nlnog.net
 mysqld_ssl: true
