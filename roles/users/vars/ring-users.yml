@@ -6305,3 +6305,11 @@ USERS:
     groups:
       - ring-users
 
+  bittenbytes:
+    state: present
+    company: 'BittenBytes'
+    email: 'noc@as213052.net'
+    uid: 5809
+    groups:
+      - ring-users
+
