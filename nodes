@@ -718,6 +718,7 @@ pixelhosting01.ring.nlnog.net OWNER=pixelhosting V4=83.142.31.254 V6=2a06:9f41:a
 dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
 ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
+bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3026,3 +3027,4 @@ ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 
 [bittenbytes]
+bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
