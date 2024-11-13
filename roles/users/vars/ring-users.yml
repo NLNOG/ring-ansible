@@ -6313,3 +6313,11 @@ USERS:
     groups:
       - ring-users
 
+  marlies:
+    state: present
+    company: 'marlies.online'
+    email: 'mheijkoop@gmail.com'
+    uid: 5810
+    groups:
+      - ring-users
+
