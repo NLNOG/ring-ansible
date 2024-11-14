@@ -11,19 +11,19 @@ lg_peers:
   AFILIAS_AMS2:
     asn: 198260
     ipv4: 199.10.66.251
-    ipv6: 2001:500:F1::251
+    ipv6: 2001:500:f1::251
   AFILIAS_IAD1:
     asn: 393246
     ipv4: 199.115.158.251
-    ipv6: 2001:500:A6::251
+    ipv6: 2001:500:a6::251
   AFILIAS_LAX1:
     asn: 63403
     ipv4: 199.19.51.251
-    ipv6: 2A01:8840:D::251
+    ipv6: 2a01:8840:d::251
   AFILIAS_MIA2:
     asn: 33280
     ipv4: 65.22.12.251
-    ipv6: 2A01:8840:C::251
+    ipv6: 2a01:8840:c::251
   AFILIAS_NRT1:
     asn: 13901
     ipv4: 199.19.52.251
@@ -213,7 +213,7 @@ lg_peers:
   DUOCAST1:
     asn: 31477
     ipv4: 89.188.4.1
-    ipv6: 2A01:01B0:1::1
+    ipv6: 2a01:01b0:1::1
   DUOCAST2:
     asn: 31477
     ipv4: 89.188.4.16
@@ -629,7 +629,7 @@ lg_peers:
   SBTAP1:
     asn: 59715
     ipv4: 185.5.200.255
-    ipv6: 2A02:CDC5:9715:0:185:5:200:255
+    ipv6: 2a02:cdc5:9715:0:185:5:200:255
   SECUREBIT_FRE01:
     asn: 58057
     ipv4: 185.102.84.251
