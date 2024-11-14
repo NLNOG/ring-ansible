@@ -720,6 +720,7 @@ ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
+informatiq01.ring.nlnog.net OWNER=informatiq V4=5.181.130.100 V6=2a0a:6044:8200::100
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3034,3 +3035,4 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
+informatiq01.ring.nlnog.net OWNER=informatiq V4=5.181.130.100 V6=2a0a:6044:8200::100
