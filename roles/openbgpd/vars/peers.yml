@@ -1,5 +1,9 @@
 ---
 lg_peers:
+  Informatiq:
+    asn: 215605
+    ipv4: 5.181.130.1
+    ipv6: 2a0a:6044:8200::1
   A2B1:
     asn: 51088
     ipv4: 5.10.192.4
@@ -80,10 +84,6 @@ lg_peers:
     asn: 212635
     ipv4: 45.159.140.2
     ipv6: 2a10:6e40::2
-  ASTROMANDEV:
-    asn: 215605
-    ipv4: 194.28.99.54
-    ipv6: 2a0c:b640:13:54::1
   ATHARVA:
     asn: 150249
     ipv4: 103.153.42.74
