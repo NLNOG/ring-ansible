@@ -611,7 +611,7 @@ siacom01.ring.nlnog.net OWNER=siacom V4=46.8.37.35 V6=2a13:9cc3:1:1::2
 shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
-florisvdk01.ring.nlnog.net OWNER=florisvdk V6=2a0a:b400::19
+florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 vultr04.ring.nlnog.net OWNER=vultr V4=149.28.178.229 V6=2401:c080:1800:4048:5400:4ff:fe9b:4808
 vultr01.ring.nlnog.net OWNER=vultr V4=45.77.0.131 V6=2001:19f0:ac02:0403:5400:04ff:fe9b:1312
 vultr02.ring.nlnog.net OWNER=vultr V4=139.84.234.78 V6=2a05:f480:3000:2789:5400:04ff:fe9b:1383
@@ -2793,7 +2793,7 @@ trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 
 [florisvdk]
-florisvdk01.ring.nlnog.net OWNER=florisvdk V6=2a0a:b400::19
+florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 
 [sparkedhost]
 
