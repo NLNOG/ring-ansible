@@ -3032,3 +3032,5 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 
 [marlies]
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
+
+[informatiq]

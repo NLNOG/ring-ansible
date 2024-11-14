@@ -6321,3 +6321,11 @@ USERS:
     groups:
       - ring-users
 
+  informatiq:
+    state: present
+    company: 'Informatiq'
+    email: 'noc@astroman.dev'
+    uid: 5811
+    groups:
+      - ring-users
+
