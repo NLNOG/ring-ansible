@@ -456,7 +456,6 @@ lg_peers:
     asn: 32554
     ipv4: 216.162.82.13
     ipv6: 2607:6b40:2000:ffff:401::2
-
   MEDIALINE_FRA1:
     asn: 205614
     ipv4: 185.171.47.1
@@ -724,6 +723,9 @@ lg_peers:
     asn: 197731
     ipv4: 185.119.29.17
     ipv6: 2a03:7900:0:5::1
+  TV2DANMARK1:
+    asn: 56496
+    ipv4: 91.224.211.117
   UNILOGIC1:
     asn: 28788
     ipv4: 62.133.192.15
