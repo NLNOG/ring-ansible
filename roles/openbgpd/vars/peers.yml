@@ -695,10 +695,14 @@ lg_peers:
     asn: 59678
     ipv4: 23.148.232.1
     ipv6: 2602:fa9b:1::1
-  TECHFUTURES1:
+  TECHFUTURES_YVR1_RT1:
     asn: 394256
-    ipv4: 192.30.89.240
+    ipv4: 192.30.89.241
     ipv6: 2606:9580::1
+  TECHFUTURES_YVR1_RT2:
+    asn: 394256
+    ipv4: 192.30.89.242
+    ipv6: 2606:9580::2   
   TELSENSE:
     asn: 329035
     ipv4: 102.216.24.5
