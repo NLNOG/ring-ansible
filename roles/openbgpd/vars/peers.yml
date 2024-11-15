@@ -1,9 +1,5 @@
 ---
 lg_peers:
-  Informatiq:
-    asn: 215605
-    ipv4: 5.181.130.1
-    ipv6: 2a0a:6044:8200::1
   A2B1:
     asn: 51088
     ipv4: 5.10.192.4
@@ -357,6 +353,10 @@ lg_peers:
     asn: 47272
     ipv4: 23.172.120.10
     ipv6: 2602:f96d::10
+  INFORMATIQ1:
+    asn: 215605
+    ipv4: 5.181.130.1
+    ipv6: 2a0a:6044:8200::1
   INFOWEST1:
     asn: 11071
     ipv4: 209.33.215.64
