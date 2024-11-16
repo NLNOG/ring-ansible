@@ -27,7 +27,7 @@
   shell: /etc/letsencrypt/renewal-hooks/post/mysql
   when: letsencrypt_mysql.changed
 
-- name: "Install .my.cnf for root user"
+- name: "Install my.cnf for root user"
   template:
     src: dot_my.cnf.j2
     dest: /root/.my.cnf
