@@ -691,7 +691,7 @@ shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
-luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:feff:a00c
+luje01.ring.nlnog.net OWNER=luje V4=93.157.140.233 V6=2001:67c:f8c:214:5054:ff:feff:a00c
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
 helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
@@ -2960,7 +2960,7 @@ dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
 
 [luje]
-luje01.ring.nlnog.net OWNER=luje V4=185.36.229.233 V6=2a07:cd40:2:14:5054:00ff:feff:a00c
+luje01.ring.nlnog.net OWNER=luje V4=93.157.140.233 V6=2001:67c:f8c:214:5054:ff:feff:a00c
 
 [websupport]
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
