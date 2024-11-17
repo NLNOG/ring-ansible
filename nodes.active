@@ -215,6 +215,7 @@ ovh08.ring.nlnog.net OWNER=ovh V4=51.77.110.247 V6=2001:41d0:801:1000::d3
 ovh09.ring.nlnog.net OWNER=ovh V4=51.83.250.206 V6=2001:41d0:601:2000::8cc
 ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
+ovh07.ring.nlnog.net OWNER=ovh V4=57.128.109.157 V6=2001:41d0:404:100::3c39
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
 firstcolo01.ring.nlnog.net OWNER=firstcolo V4=212.224.84.34 V6=2a01:7e0:fc:1:212:224:84:34
 csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40b0:1:1122:ce5c:a007:0:4
@@ -1460,6 +1461,7 @@ ovh08.ring.nlnog.net OWNER=ovh V4=51.77.110.247 V6=2001:41d0:801:1000::d3
 ovh09.ring.nlnog.net OWNER=ovh V4=51.83.250.206 V6=2001:41d0:601:2000::8cc
 ovh10.ring.nlnog.net OWNER=ovh V4=139.99.223.64 V6=2402:1f00:8102:100::294
 ovh11.ring.nlnog.net OWNER=ovh V4=51.79.142.39 V6=2402:1f00:8002:100::e6
+ovh07.ring.nlnog.net OWNER=ovh V4=57.128.109.157 V6=2001:41d0:404:100::3c39
 
 [btireland]
 btireland01.ring.nlnog.net OWNER=btireland V4=193.95.190.213 V6=2001:7c8:1000:5::213
