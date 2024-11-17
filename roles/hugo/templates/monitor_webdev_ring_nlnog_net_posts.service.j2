@@ -3,7 +3,7 @@ Description=Hugo post monitor
 
 [Service]
 Type=simple
-ExecStart=/usr/local/sbin/monitor_hugo_posts /var/www/webdev.ring.nlnog.net/content/post "/usr/local/bin/tweet_hugo_post debug"
+ExecStart=/usr/local/sbin/monitor_hugo_posts /var/www/webdev.ring.nlnog.net/content/post "/usr/local/bin/toot_hugo_post debug"
 
 [Install]
 WantedBy=multi-user.target

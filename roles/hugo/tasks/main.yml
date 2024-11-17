@@ -35,17 +35,17 @@
   with_items: "{{ hugo_sites|default([]) }}"
   notify: hugo rebuild 
 
-- name: "Install post tweeting requirements"
-  apt:
+- name: "Install post tooting requirements"
+  pip:
     name:
-      - python3-pyinotify
-      - python3-tweepy
-    state: latest
+      - Mastodon.py
+    state: present
+    executable: pip3
 
-- name: "Install post tweeter"
+- name: "Install post tooter"
   template:
-    src=tweet_hugo_post.j2
-    dest=/usr/local/bin/tweet_hugo_post
+    src=toot_hugo_post.j2
+    dest=/usr/local/bin/toot_hugo_post
     owner=root
     group=root
     mode=0755
@@ -66,7 +66,7 @@
     owner: root
     group: root
     mode: 0644
-  when: item.twitter is defined
+  when: item.mastodon is defined
   with_items: "{{ hugo_sites|default([]) }}"
   notify:
     - reload systemd
@@ -76,5 +76,5 @@
   service:
     name: "monitor_{{ item.name|replace('.', '_') }}_posts"
     state: started
-  when: item.twitter is defined
+  when: item.mastodon is defined
   with_items: "{{ hugo_sites|default([]) }}"

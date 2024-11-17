@@ -15,12 +15,12 @@ hugo_sites:
     repo: https://github.com/NLNOG/ring-web
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis
-    twitter: true
+    mastodon: true
   - name: ring.nlnog.net
     repo: https://github.com/NLNOG/ring-web
     theme_name: ring-anubis
     theme_repo: https://github.com/NLNOG/hugo-theme-anubis
-    twitter: true
+    mastodon: true
 
 paste_sites:
   - name: paste.ring.nlnog.net

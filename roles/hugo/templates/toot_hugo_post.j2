@@ -1,28 +1,36 @@
 #!/usr/bin/env python3
 #
-# tweet_hugo_post - Read a hugo post and send a tweet about it
+# toot_hugo_post - Read a hugo post and send a toot about it
 #
 
 import datetime
 import re
 import sys
-import tweepy
+from mastodon import Mastodon
 
 # HUGO settings
 WEBROOT = "/var/www"
 HUGOCONF = "config.toml"
 
-# Twitter settings
-ACCOUNT_NAME = "NLNOG"
+# Mastodon settings
+ACCOUNT_NAME = "nlnogring"
+ACCOUNT_EMAIL = "ring-admins@nlnog.net"
+ACCOUNT_PASSWORD = "{{ mastodon_password }}"
 TIMELINE_LOOKBACK=100
-CALLBACK_URL = "https://ring.nlnog.net/"
-CONSUMER_KEY = "{{ twitter_consumer_key}}"
-CONSUMER_SECRET = "{{ twitter_consumer_secret }}"
-ACCESS_TOKEN = "{{ twitter_access_token }}"
-ACCESS_TOKEN_SECRET = "{{ twitter_access_token_secret }}"
+MSTDN_CLIENT_ID="{{ mastodon_client_id }}"
+MSTDN_SECRET="{{ mastodon_secret }}"
+MSTDN_SERVER = "https://mastodon.nl"
+# Register your app! This only needs to be done once (per server, or when
+# distributing rather than hosting an application, most likely per device and server).
+# Uncomment the code and substitute in your information:
+# Mastodon.create_app(
+#     ACCOUNT_NAME,
+#     api_base_url = MSTDN_SERVER,
+#     to_file = 'mastodon.secret'
+# )
 
 # Misc settings
-DEBUGFILE = "/tmp/tweet_hugo_posts.log"
+DEBUGFILE = "/tmp/toot_hugo_posts.log"
 
 # Find the base url for a hugo installation
 def h_base_url(webdir):
@@ -63,36 +71,38 @@ def h_parse_post(pathname):
         pass
     return post
 
-# Login on twitter
-def t_login():
-    auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
-    auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
-    api = tweepy.API(auth)
+# Login on Mastodon
+def m_login():
     try:
-        api.verify_credentials()
+        mastodon = Mastodon(client_id=MSTDN_CLIENT_ID,
+                            client_secret=MSTDN_SECRET,
+                            api_base_url=MSTDN_SERVER,
+                            user_agent=ACCOUNT_NAME)
+        mastodon.log_in(ACCOUNT_EMAIL,ACCOUNT_PASSWORD)
     except:
         return False
-    return api
+    return mastodon
 
-# Check if a tweet containing a string has already been posted recently
-def t_duplicate_tweet(api,text):
-    timeline = api.user_timeline(screen_name=ACCOUNT_NAME,count=TIMELINE_LOOKBACK)
+# Check if a toot containing a string has already been posted recently
+def m_duplicate_toot(api,text):
+    me = api.me()
+    timeline = api.account_statuses(id=me['id'],limit=TIMELINE_LOOKBACK)
     if not timeline:
         return True
-    for tweet in timeline:
-        if re.search(re.escape(text),tweet.text):
+    for toot in timeline:
+        if re.search(re.escape(text),toot['content']):
             return True
     return False
 
-def t_send_tweet(api,text):
+def m_send_toot(api,text):
     try:
-        print("Tweeting: {"+text+"}")
-        api.update_status(text)
+        print("Tooting: {"+text+"}")
+        api.toot(text)
     except:
         return False
     return True
 
-def f_write_tweet(text):
+def f_write_toot(text):
     try:
         f = open(DEBUGFILE,'a')
         print(datetime.datetime.now().isoformat()+": {"+text+"}",file=f)
@@ -105,7 +115,7 @@ if __name__ == "__main__":
 
     # Parse commandline
     if len(sys.argv) < 3:
-        sys.stderr.write("%s [tweet|debug] <pathname>\n" % (sys.argv[0]))
+        sys.stderr.write("%s [toot|debug] <pathname>\n" % (sys.argv[0]))
         sys.exit(1)
     action = sys.argv[1]
     pathname = sys.argv[2]
@@ -119,26 +129,26 @@ if __name__ == "__main__":
         sys.stderr.write("Unable to derive post url.\n")
         sys.exit(2)
 
-    # Send to Twitter
-    api = t_login()
+    # Send to Mastodon
+    api = m_login()
     if not api:
-        sys.stderr.write("Unable to connect to Twitter.\n")
+        sys.stderr.write("Unable to connect to Mastodon.\n")
         sys.exit(2)
-    if t_duplicate_tweet(api,post['title']):
-        sys.stderr.write("Duplicate tweet or check failed; not posting.\n")
+    if m_duplicate_toot(api,post['title']):
+        sys.stderr.write("Duplicate toot or check failed; not posting.\n")
         sys.exit(2)
-    tweet_text = "New post: " + post['title'] + " " + post['url']
-    if action == 'tweet':
-        if t_send_tweet(api,tweet_text):
-            print("Tweet sent.")
+    toot_text = "New post: " + post['title'] + " " + post['url']
+    if action == 'toot':
+        if m_send_toot(api,toot_text):
+            print("Toot sent.")
         else:
-            sys.stderr.write("Unable to send tweet.\n")
+            sys.stderr.write("Unable to send toot.\n")
             sys.exit(2)
     elif action == 'debug':
-        if f_write_tweet(tweet_text):
-            print("Tweet written to file.")
+        if f_write_toot(toot_text):
+            print("Toot written to file.")
         else:
-            sys.stderr.write("Unable to write tweet to file.\n")
+            sys.stderr.write("Unable to write toot to file.\n")
             sys.exit(2)
     else:
         sys.stderr.write("Unknown action %s.\n" % (action))
