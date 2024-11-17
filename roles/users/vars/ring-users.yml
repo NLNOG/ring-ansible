@@ -6329,3 +6329,11 @@ USERS:
     groups:
       - ring-users
 
+  qrator:
+    state: present
+    company: 'Qrator Labs'
+    email: 'noc@qrator.net'
+    uid: 5812
+    groups:
+      - ring-users
+

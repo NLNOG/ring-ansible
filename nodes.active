@@ -2985,3 +2985,5 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 
 [informatiq]
 informatiq01.ring.nlnog.net OWNER=informatiq V4=5.181.130.100 V6=2a0a:6044:8200::100
+
+[qrator]

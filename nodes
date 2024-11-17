@@ -3040,3 +3040,5 @@ marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
 informatiq01.ring.nlnog.net OWNER=informatiq V4=5.181.130.100 V6=2a0a:6044:8200::100
+
+[qrator]
