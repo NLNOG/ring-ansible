@@ -33,7 +33,6 @@ dataoppdrag01.ring.nlnog.net OWNER=dataoppdrag V4=95.141.83.106 V6=2a02:f58:5:5:
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
-rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1
 boxed-it01.ring.nlnog.net OWNER=boxed-it V4=195.200.224.123 V6=2001:67c:344:1010:5054:ff:feca:6f60
 spacenet01.ring.nlnog.net OWNER=spacenet V4=195.30.193.17 V6=2001:608:1:151::17
@@ -885,7 +884,6 @@ jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
 iway01.ring.nlnog.net OWNER=iway V4=212.25.27.3 V6=2001:8e0:40:318:0:abcd:dead:beef
 
 [rezopole]
-rezopole01.ring.nlnog.net OWNER=rezopole V4=77.95.64.150 V6=2a03:9180:1:20::96
 
 [solnet]
 solnet01.ring.nlnog.net OWNER=solnet V4=82.220.3.51 V6=2001:1680:2:100:5054:ff:fef8:73a1

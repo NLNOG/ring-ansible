@@ -448,7 +448,7 @@ USERS:
       - ring-users
 
   rezopole:
-    state: present
+    state: absent
     company: 'Rezopole'
     email: 'noc@rezopole.net'
     uid: 5067
