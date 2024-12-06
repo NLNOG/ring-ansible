@@ -6337,3 +6337,11 @@ USERS:
     groups:
       - ring-users
 
+  menhera:
+    state: present
+    company: 'Human-life Information Platforms Institute'
+    email: 'noc@menhera.org'
+    uid: 5813
+    groups:
+      - ring-users
+
