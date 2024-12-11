@@ -554,6 +554,7 @@ silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
+telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V4=23.143.82.4 V6=2602:fc26:12:2::3
 aussiebb01.ring.nlnog.net OWNER=aussiebb V4=203.129.26.145 V6=2403:5800:200:16::1
@@ -635,6 +636,7 @@ vultr29.ring.nlnog.net OWNER=vultr V4=70.34.194.69 V6=2a05:f480:2000:1034:5400:5
 vultr30.ring.nlnog.net OWNER=vultr V4=149.248.62.223 V6=2001:19f0:b002:f7f:5400:5ff:fe0a:7a73
 vultr31.ring.nlnog.net OWNER=vultr V4=167.179.83.235 V6=2001:19f0:7001:267a:5400:5ff:fe0a:7a84
 vultr32.ring.nlnog.net OWNER=vultr V4=64.176.70.243 V6=2a05:f480:2400:12ad:5400:5ff:fe0a:7a8d
+sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
@@ -2609,6 +2611,7 @@ fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
 
 [telerys]
+telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 
 [iphh]
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.249 V6=2001:868:100:4f10::1:1
@@ -2798,6 +2801,7 @@ vultr31.ring.nlnog.net OWNER=vultr V4=167.179.83.235 V6=2001:19f0:7001:267a:5400
 vultr32.ring.nlnog.net OWNER=vultr V4=64.176.70.243 V6=2a05:f480:2400:12ad:5400:5ff:fe0a:7a8d
 
 [sdnbucks]
+sdnbucks01.ring.nlnog.net OWNER=sdnbucks V4=185.207.192.13 V6=2a0b:2740:0:0::13
 
 [sys36net]
 sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423::29
