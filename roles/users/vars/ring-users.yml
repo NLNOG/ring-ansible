@@ -6345,3 +6345,11 @@ USERS:
     groups:
       - ring-users
 
+  criticalcore:
+    state: present
+    company: 'Critical Core B.V.'
+    email: 'noc@wanscale.com'
+    uid: 5814
+    groups:
+      - ring-users
+
