@@ -649,6 +649,7 @@ fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:5
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
+macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
@@ -712,6 +713,7 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
+criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
 
 [infranode]
 
@@ -2838,6 +2840,7 @@ oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411
 
 [macarne]
 macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
+macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 
 [ehiweb]
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
@@ -3009,3 +3012,4 @@ qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::c
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
 
 [criticalcore]
+criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
