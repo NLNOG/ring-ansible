@@ -100,7 +100,6 @@ nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:
 afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
-poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 rgnet01.ring.nlnog.net OWNER=rgnet V4=147.28.0.89 V6=2001:418:1::89
 bahnhof01.ring.nlnog.net OWNER=bahnhof V4=98.128.171.68 V6=2001:9b0:fff5:6::4
 nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:1:120:28
@@ -338,7 +337,6 @@ connectria03.ring.nlnog.net OWNER=connectria V4=208.74.28.6 V6=2607:f148:2000:5:
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
-kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
@@ -1048,7 +1046,6 @@ afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
 [merit]
 
 [poznan]
-poznan01.ring.nlnog.net OWNER=poznan V4=150.254.166.148 V6=2001:808:2:3003::5
 
 [bluezonejordan]
 
@@ -1872,7 +1869,6 @@ ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
 [unithost]
 
 [kracon]
-kracon01.ring.nlnog.net OWNER=kracon V4=185.38.24.57 V6=2a00:fbe0:12::57
 
 [elvisru]
 

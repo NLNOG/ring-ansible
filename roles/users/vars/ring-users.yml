@@ -3289,7 +3289,7 @@ USERS:
       - ring-users
 
   kracon:
-    state: present
+    state: absent
     company: 'Kracon Aps'
     email: 'noc@kracon.dk'
     uid: 5434
