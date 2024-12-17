@@ -6353,3 +6353,11 @@ USERS:
     groups:
       - ring-users
 
+  buijsit:
+    state: present
+    company: 'BuijsIT'
+    email: 'noc@buijsit.nl'
+    uid: 5815
+    groups:
+      - ring-users
+
