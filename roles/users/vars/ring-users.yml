@@ -5986,7 +5986,7 @@ USERS:
       - ring-users
 
   hypernology:
-    state: present
+    state: absent
     company: 'Hyper Group Network Ltd.'
     email: 'noc@hypernology.com'
     uid: 5769
