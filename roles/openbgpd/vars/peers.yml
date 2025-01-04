@@ -765,8 +765,8 @@ lg_peers:
     ipv6: '2c0f:6300:0:ff6::'
   WAVEX_NBO1_PE1:
     asn: 328977
-    ipv4: 102.217.156.1
-    ipv6: '2c0f:6300::'
+    ipv4: 102.217.156.3
+    ipv6: '2c0f:6300:0:ffb::'
   WAVEX_NBO1_PE2:
     asn: 328977
     ipv4: 102.217.156.2
