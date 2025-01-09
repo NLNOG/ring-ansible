@@ -643,7 +643,6 @@ fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:5
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
-macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
 macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40:1::2
@@ -706,6 +705,7 @@ dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
 ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
+marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
@@ -2831,7 +2831,6 @@ dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 
 [macarne]
-macarne01.ring.nlnog.net OWNER=macarne V4=23.155.72.17 V6=2602:2ea::1717
 macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 
 [ehiweb]
@@ -2994,6 +2993,7 @@ valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 
 [marlies]
+marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
 informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
