@@ -1618,7 +1618,7 @@ USERS:
   iplan:
     state: present
     company: 'IPLAN'
-    email: 'fcanales@iplan.com.ar'
+    email: 'ingenieria@iplan.com.ar'
     uid: 5221
     groups:
       - ring-users
