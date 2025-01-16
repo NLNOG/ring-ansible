@@ -620,6 +620,10 @@ lg_peers:
     asn: 16350
     ipv4: 217.119.226.1
     ipv6: 2a02:1398:800:5000::1:1
+  ROUTINGCAFE1:
+    asn: 207487
+    ipv4: 94.26.24.1
+    ipv6: 2a14:14c0::1
   RVDM:
     asn: 57048
     ipv6: 2a0e:f7c0::1
