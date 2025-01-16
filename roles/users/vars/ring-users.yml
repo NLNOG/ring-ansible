@@ -6361,3 +6361,11 @@ USERS:
     groups:
       - ring-users
 
+  routingcafe:
+    state: present
+    company: 'Routing Cafe'
+    email: 'noc@routing.cafe'
+    uid: 5816
+    groups:
+      - ring-users
+
