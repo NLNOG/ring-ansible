@@ -6369,3 +6369,11 @@ USERS:
     groups:
       - ring-users
 
+  fpnet:
+    state: present
+    company: 'FPNET'
+    email: 'noc@as214223.net'
+    uid: 5817
+    groups:
+      - ring-users
+
