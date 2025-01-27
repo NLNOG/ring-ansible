@@ -272,7 +272,7 @@ USERS:
       - ring-users
 
   netsign:
-    state: present
+    state: absent
     company: 'Netsign'
     email: 'noc@netsign.eu'
     uid: 5040
@@ -1616,7 +1616,7 @@ USERS:
       - ring-users
 
   iplan:
-    state: present
+    state: absent
     company: 'IPLAN'
     email: 'ingenieria@iplan.com.ar'
     uid: 5221
@@ -5410,7 +5410,7 @@ USERS:
       - ring-users
 
   accuris:
-    state: present
+    state: absent
     company: 'Accuris Technologies Ltd.'
     email: 'noc@accuristechnologies.ca'
     uid: 5697
