@@ -162,7 +162,7 @@ USERS:
   in2ip:
     state: present
     company: 'IN2IP'
-    email: 'noc@in2ip.nl'
+    email: 'support@in2ip.nl'
     uid: 5024
     groups:
       - ring-users
