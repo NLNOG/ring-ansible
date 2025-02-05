@@ -460,6 +460,10 @@ lg_peers:
     asn: 32554
     ipv4: 216.162.82.13
     ipv6: 2607:6b40:2000:ffff:401::2
+  MEDIACTIVE_FR:
+    asn: 197133
+    ipv4: 217.114.205.197
+    ipv6: 2a02:1740:0:1979::b14d
   MEDIALINE_FRA1:
     asn: 205614
     ipv4: 185.171.47.1
