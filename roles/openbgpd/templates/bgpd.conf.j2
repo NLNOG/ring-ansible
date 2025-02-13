@@ -10,7 +10,6 @@ rtr 127.0.0.1
 group "peers" {
     multihop 255
     export none
-    announce add-path recv yes
     role customer
 
 {% for peer in lg_peers %}
