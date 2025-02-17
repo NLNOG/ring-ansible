@@ -4409,7 +4409,7 @@ USERS:
       - ring-users
 
   7lnetworks:
-    state: present
+    state: absent
     company: '7L Networks Inc'
     email: 'noc@7l.com'
     uid: 5573
