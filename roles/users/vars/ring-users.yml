@@ -6377,3 +6377,11 @@ USERS:
     groups:
       - ring-users
 
+  perke:
+    state: present
+    company: 'Perke.Net'
+    email: 'servers@sox.rs'
+    uid: 5818
+    groups:
+      - ring-users
+
