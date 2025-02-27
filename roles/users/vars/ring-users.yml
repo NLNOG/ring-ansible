@@ -416,7 +416,7 @@ USERS:
       - ring-users
 
   dataoppdrag:
-    state: present
+    state: absent
     company: 'DataOppdrag AS'
     email: 'noc@dataoppdrag.no'
     uid: 5061
@@ -936,7 +936,7 @@ USERS:
       - ring-users
 
   merit:
-    state: present
+    state: absent
     company: 'Merit Network, Inc'
     email: 'msc@merit.edu'
     uid: 5137
