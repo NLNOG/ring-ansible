@@ -541,7 +541,6 @@ pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
 kapsi01.ring.nlnog.net OWNER=kapsi V4=91.232.156.99 V6=2001:67c:1be8:1::999
 uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
-august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
@@ -2585,7 +2584,6 @@ kapsi01.ring.nlnog.net OWNER=kapsi V4=91.232.156.99 V6=2001:67c:1be8:1::999
 uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
 
 [august]
-august01.ring.nlnog.net OWNER=august V4=165.140.142.104 V6=2602:fc23:18::19
 
 [silica]
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
