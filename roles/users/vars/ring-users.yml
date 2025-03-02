@@ -3857,7 +3857,7 @@ USERS:
       - ring-users
 
   noack:
-    state: present
+    state: absent
     company: 'No ack hosting AB'
     email: 'noc@no-ack.se'
     uid: 5505
