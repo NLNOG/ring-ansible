@@ -5146,7 +5146,7 @@ USERS:
       - ring-users
 
   kis:
-    state: present
+    state: absent
     company: 'KPN Internedservices'
     email: 'kisinfranetwerk@kpn.com'
     uid: 5664
