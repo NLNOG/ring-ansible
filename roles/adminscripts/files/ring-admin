@@ -2,6 +2,8 @@
 
 import datetime
 import getpass
+from dns import reversename
+from dns.resolver import resolve
 from string import Template
 from subprocess import check_output, CalledProcessError
 import MySQLdb as mdb
@@ -592,6 +594,29 @@ class commands(object):
         message = unidecode(message)
         server.sendmail(sender, recipients, message)
         server.quit()
+
+    def get_cymru_asns(self, addr, proto):
+        if proto == "v6":
+            rev = reversename.from_address(addr).to_text().replace("ip6.arpa", "origin6.asn.cymru.com")
+        else:
+            rev = reversename.from_address(addr).to_text().replace("in-addr.arpa", "origin.asn.cymru.com")
+        try:
+            result = resolve(rev,"TXT")
+            asns = [str(line).split(" | ")[0][1:] for line in result]
+            return asns
+        except Exception as e:
+            sys.stderr.write("%s failed ASN lookup: %s\n" % (addr,e))
+            return []
+
+    def check_ips_in_asn(self, hostname):
+        node = self.dbselectone('machines', hostname=hostname)
+        for proto in ('v4','v6'):
+            if node[proto]:
+                cymru_asns = self.get_cymru_asns(node[proto], proto)
+                if str(node['autnum']) not in cymru_asns:
+                    sys.stderr.write("Warning: IP %s(%s) is not in AS%s.\n" % (node[proto],
+                                                                               ','.join(cymru_asns),
+                                                                               node['autnum']))
 
     def ansible_checkout(self):
         ret = os.system("cd " + ANSIBLEDIR + " && git checkout")
@@ -1520,6 +1545,7 @@ class commands(object):
                                   tstamp=tstamp, active=0)
         print("Added machine %s ('%s' at '%s') for user %s" % \
               (machineid, hostname, country, username))
+        self.check_ips_in_asn(hostname)
 
     def cmd_delete_machine(self, hostname):
         """delete a machine"""
@@ -1548,6 +1574,8 @@ class commands(object):
             city = self.cityname(value)
             self.dbupdate('machines', machid, **{'city': city})
             print('attribute city for machine %s updated' % (hostname))
+        if attribute in ('v4', 'v6'):
+            self.check_ips_in_asn(hostname)
 
     def cmd_unset_machine(self, hostname, attribute):
         """unset machine data"""
