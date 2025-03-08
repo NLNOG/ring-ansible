@@ -4521,7 +4521,7 @@ USERS:
       - ring-users
 
   timico:
-    state: present
+    state: absent
     company: 'Timico Limited'
     email: 'networks@timico.net'
     uid: 5587
@@ -6382,6 +6382,14 @@ USERS:
     company: 'Perke.Net'
     email: 'servers@sox.rs'
     uid: 5818
+    groups:
+      - ring-users
+
+  digitalspace:
+    state: present
+    company: 'Digital Space Limited'
+    email: 'networks@timico.net'
+    uid: 5819
     groups:
       - ring-users
 

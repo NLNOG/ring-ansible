@@ -454,7 +454,6 @@ fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
-timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
 nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
 leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56ff:feaf:546
@@ -717,6 +716,7 @@ buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:2
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=94.26.24.5 V6=2a14:14c0::ff05
 fpnet01.ring.nlnog.net OWNER=fpnet V4=104.238.26.140 V6=2a0a:6044:aa10:ffff:104:238:26:140
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
+digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -2315,7 +2315,6 @@ mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102
 [elkaim]
 
 [timico]
-timico01.ring.nlnog.net OWNER=timico V4=62.121.13.4 V6=2001:40a0:41:1000::4
 
 [jacknet]
 
@@ -3042,3 +3041,6 @@ fpnet01.ring.nlnog.net OWNER=fpnet V4=104.238.26.140 V6=2a0a:6044:aa10:ffff:104:
 
 [perke]
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
+
+[digitalspace]
+digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
