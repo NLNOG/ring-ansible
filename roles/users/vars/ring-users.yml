@@ -6393,3 +6393,11 @@ USERS:
     groups:
       - ring-users
 
+  netalis:
+    state: present
+    company: 'Netalis'
+    email: 'noc@netalis.fr'
+    uid: 5820
+    groups:
+      - ring-users
+
