@@ -704,6 +704,8 @@ criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:
 buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:250
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=94.26.24.5 V6=2a14:14c0::ff05
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
+digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
+netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 
 [infranode]
 
@@ -3003,5 +3005,7 @@ routingcafe01.ring.nlnog.net OWNER=routingcafe V4=94.26.24.5 V6=2a14:14c0::ff05
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 
 [digitalspace]
+digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 
 [netalis]
+netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
