@@ -32,6 +32,15 @@
         msg: Could not ping ring.nlnog.net (IPv6)
       tags: check_v6
       when: check_v6.rc != 0 and hostvars[inventory_hostname]['V6'] is defined
+    - name: Check IPv6 address count
+      tags: check_v6_count
+      shell: "ip -6 addr show scope global | grep -c 'inet6'"
+      register: check_v6_count
+      when: hostvars[inventory_hostname]['V6'] is defined
+    - fail:
+        msg: Multiple global IPv6 addresses found on node
+      tags: check_v6_count
+      when: check_v6_count.stdout|int > 1 and hostvars[inventory_hostname]['V6'] is defined
     - name: Check CPU architecture
       fail:
         msg: Host is not an x86_64 system
