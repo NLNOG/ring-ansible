@@ -6401,3 +6401,11 @@ USERS:
     groups:
       - ring-users
 
+  atlasedge:
+    state: present
+    company: 'AE Technology Services Germany GmbH'
+    email: 'noc-bb@atlasedge.com'
+    uid: 5821
+    groups:
+      - ring-users
+
