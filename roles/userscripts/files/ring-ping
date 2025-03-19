@@ -171,8 +171,8 @@ while read line; do
     if [[ ${output} = *rtt* ]]; then
            time=`echo $output | cut -f6 -d/`
             if [ -n "${minfo}" ]; then
-                info=`echo $output | cut -f2 -d:`
-                hops=`echo $output | cut -f3 -d:`
+                info=`echo "$output" | cut -f2 -d:`
+                hops=`echo "$output" | cut -f3 -d:`
                 if [ -z "${info}" ]; then
                     info=" No Info"
                 fi
