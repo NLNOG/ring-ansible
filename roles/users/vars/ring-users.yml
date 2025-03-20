@@ -232,9 +232,9 @@ USERS:
       - ring-users
 
   cyso:
-    state: absent
+    state: present
     company: 'Cyso'
-    email: 'noc@cyso.net'
+    email: 'noc@cyso.com'
     uid: 5034
     groups:
       - ring-users
