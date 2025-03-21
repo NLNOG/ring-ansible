@@ -13,6 +13,7 @@ leaseweb03.ring.nlnog.net OWNER=leaseweb V4=192.96.206.13 V6=2604:9a00:2100:af05
 leaseweb04.ring.nlnog.net OWNER=leaseweb V4=185.17.144.154 V6=2a00:c98:2200:af0a:baaa::1
 surfnet01.ring.nlnog.net OWNER=surfnet V4=192.42.123.22 V6=2001:678:230:2123:192:42:123:22
 in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:fe9c:1e
+totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 signet01.ring.nlnog.net OWNER=signet V4=217.149.143.73 V6=2001:4cb9:fffe:ff03::10
 tripleit01.ring.nlnog.net OWNER=tripleit V4=93.187.8.20 V6=2a00:1f00:dc06:8::130
 jaguarnetwork01.ring.nlnog.net OWNER=jaguarnetwork V4=85.31.196.24 V6=2a01:240:101::24
@@ -706,6 +707,7 @@ perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
+hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 
 [infranode]
 
@@ -762,6 +764,7 @@ in2ip01.ring.nlnog.net OWNER=in2ip V4=217.198.20.135 V6=2a02:7d0:3:208:250:56ff:
 [netground]
 
 [totaalnet]
+totaalnet01.ring.nlnog.net OWNER=totaalnet V4=77.95.252.48 V6=2a00:1478:50:0:11:913:0:1
 
 [signet]
 signet01.ring.nlnog.net OWNER=signet V4=217.149.143.73 V6=2001:4cb9:fffe:ff03::10
@@ -3013,5 +3016,6 @@ netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
 
 [hopus]
+hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 
 [medianet]
