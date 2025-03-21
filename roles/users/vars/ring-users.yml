@@ -176,9 +176,9 @@ USERS:
       - ring-users
 
   totaalnet:
-    state: absent
+    state: present
     company: 'Totaalnet'
-    email: 'noc@gl-ix.net'
+    email: 'noc@tiw.nl'
     uid: 5026
     groups:
       - ring-users
