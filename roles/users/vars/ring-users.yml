@@ -6417,3 +6417,11 @@ USERS:
     groups:
       - ring-users
 
+  medianet:
+    state: present
+    company: 'ENTEGA Medianet GmbH'
+    email: 'nmc@entega-medianet.de'
+    uid: 5823
+    groups:
+      - ring-users
+
