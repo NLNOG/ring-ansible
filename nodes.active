@@ -3011,3 +3011,5 @@ netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 
 [atlasedge]
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
+
+[hopus]

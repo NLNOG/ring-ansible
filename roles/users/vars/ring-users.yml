@@ -6409,3 +6409,11 @@ USERS:
     groups:
       - ring-users
 
+  hopus:
+    state: present
+    company: 'Hopus'
+    email: 'tech@hopus.net'
+    uid: 5822
+    groups:
+      - ring-users
+
