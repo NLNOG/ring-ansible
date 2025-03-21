@@ -708,6 +708,7 @@ digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:
 netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
 hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
+medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
 
 [infranode]
 
@@ -3019,3 +3020,4 @@ atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff
 hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 
 [medianet]
+medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
