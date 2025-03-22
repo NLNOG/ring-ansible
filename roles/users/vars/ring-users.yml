@@ -6425,3 +6425,11 @@ USERS:
     groups:
       - ring-users
 
+  cavadore:
+    state: present
+    company: 'CAVADORE'
+    email: 'clement@cavadore.net'
+    uid: 5824
+    groups:
+      - ring-users
+

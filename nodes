@@ -723,6 +723,7 @@ netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
 hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
+cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::236
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3064,3 +3065,6 @@ hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 
 [medianet]
 medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
+
+[cavadore]
+cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::236

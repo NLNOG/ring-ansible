@@ -3021,3 +3021,5 @@ hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 
 [medianet]
 medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
+
+[cavadore]
