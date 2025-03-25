@@ -150,3 +150,15 @@ USERS:
       - ring-users
     sshkeys:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH+PqQxYK5l3E++iYBiEyF92ZYIirjhkCoQ5JR7rgePs haakjes'
+
+  nick:
+    state: present
+    company: "Nick Bouwhuis"
+    email: nick@bouwhuis.net
+    uid: 6014
+    shell: /bin/bash
+    groups:
+      - ring-users
+      - ring-admins
+    sshkeys:
+      - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGnnqjjUNpyh9w4K8OCinU/KpldpUzYLsR3wpMjCHX4U'
