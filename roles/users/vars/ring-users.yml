@@ -944,7 +944,7 @@ USERS:
       - ring-users
 
   poznan:
-    state: present
+    state: absent
     company: 'Poznan Supercomputing and Networking Center'
     email: 'nlnogring-support@psnc.pl'
     uid: 5138
