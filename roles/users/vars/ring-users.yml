@@ -6433,3 +6433,11 @@ USERS:
     groups:
       - ring-users
 
+  active24:
+    state: present
+    company: 'ACTIVE 24'
+    email: 'noc@active24.cz'
+    uid: 5825
+    groups:
+      - ring-users
+

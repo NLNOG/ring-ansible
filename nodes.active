@@ -3019,3 +3019,5 @@ medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
 
 [cavadore]
 cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::236
+
+[active24]
