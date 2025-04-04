@@ -648,6 +648,7 @@ edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
+hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
@@ -660,7 +661,6 @@ edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ff
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
-v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
@@ -694,6 +694,7 @@ dfri01.ring.nlnog.net OWNER=dfri V4=171.25.193.10 V6=2001:67c:289c::10
 ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
+marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
@@ -2847,6 +2848,7 @@ alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
 
 [hyehost]
+hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 
 [syslevel]
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
@@ -2891,7 +2893,6 @@ brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 
 [v4less]
-v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 
 [shift]
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
@@ -2979,6 +2980,7 @@ valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 
 [marlies]
+marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
 informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
