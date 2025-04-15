@@ -6441,3 +6441,11 @@ USERS:
     groups:
       - ring-users
 
+  ukrainehosting:
+    state: present
+    company: 'Ukraine'
+    email: 'noc@ukraine.com.ua'
+    uid: 5826
+    groups:
+      - ring-users
+
