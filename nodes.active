@@ -291,7 +291,6 @@ altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c10::155
@@ -678,7 +677,6 @@ converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
-skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
@@ -1674,7 +1672,6 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 
 [sabay]
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 
 [coreinternet]
 
@@ -2941,7 +2938,6 @@ xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
 
 [skhron]
-skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 
 [wavex]
