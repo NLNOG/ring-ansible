@@ -291,6 +291,7 @@ altibox01.ring.nlnog.net OWNER=altibox V4=109.247.116.75 V6=2a01:798:0:8050::75
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
+sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c10::155
@@ -464,7 +465,6 @@ merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
-homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
@@ -1672,6 +1672,7 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 
 [sabay]
+sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 
 [coreinternet]
 
@@ -2351,7 +2352,6 @@ ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 
 [homenoc]
-homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 
 [netnik]
 
