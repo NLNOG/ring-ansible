@@ -301,7 +301,6 @@ fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=135.129.101.3 V6=2607:6400
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
 gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.188 V6=2606:69c0:5120:5285:385:1039:0:2f
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
-dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
 intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
 pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=204.9.92.171 V6=2604:5e40:102:17::171
@@ -466,6 +465,7 @@ merlin01.ring.nlnog.net OWNER=merlin V4=216.73.73.230 V6=2620:b0:0:4::4
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
+homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
 rgi01.ring.nlnog.net OWNER=rgi V4=185.33.216.100 V6=2a04:5a00:5a00:10d3::500:1
 sharktech01.ring.nlnog.net OWNER=sharktech V4=198.148.92.142 V6=2610:150:8000:59::fb67:ae24
@@ -567,6 +567,7 @@ geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1
 rub01.ring.nlnog.net OWNER=rub V4=134.147.20.2 V6=2a05:3e00:f:2::2
 cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
+cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
 deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e::10
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
@@ -677,6 +678,7 @@ converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
+skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
@@ -1710,7 +1712,6 @@ communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc8
 [widenet]
 
 [dhiraagu]
-dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 
 [vivor]
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
@@ -2353,6 +2354,7 @@ ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 
 [homenoc]
+homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 
 [netnik]
 
@@ -2672,6 +2674,7 @@ cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
 
 [cmhmr]
+cmhmr01.ring.nlnog.net OWNER=cmhmr V6=2a0e:8f02:21d3:beef::10
 
 [witine]
 witine01.ring.nlnog.net OWNER=witine V4=194.8.28.4 V6=2a13:4380:10:1:4::1
@@ -2938,6 +2941,7 @@ xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
 
 [skhron]
+skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 
 [wavex]
