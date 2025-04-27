@@ -3193,7 +3193,7 @@ USERS:
       - ring-users
 
   netrouting:
-    state: present
+    state: absent
     company: 'Netrouting'
     email: 'noc@netrouting.com'
     uid: 5422
