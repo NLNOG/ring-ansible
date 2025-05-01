@@ -527,7 +527,7 @@ lg_peers:
   NEXTPERTISE1:
     asn: 41960
     ipv4: 77.73.224.2
-    ipv6: 2a02:690:0:10::2
+    ipv6: 2a02:690::2
   NEYRIAL-R2:
     asn: 203352
     ipv4: 185.131.83.244
