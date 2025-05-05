@@ -1428,6 +1428,8 @@ class commands(object):
                                   'admin IS NULL OR admin=0')
         if not userid:
             userid = 5000
+        if userid >= 5999 and userid < 30000:
+            userid = 30000
         userid = userid + 1
         uid = self.dbinsert('users', username=username,
                             participant=partid, userid=userid, active=1)
