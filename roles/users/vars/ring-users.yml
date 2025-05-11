@@ -6449,3 +6449,11 @@ USERS:
     groups:
       - ring-users
 
+  soraxus:
+    state: present
+    company: 'Soraxus Networks Inc.'
+    email: 'noc@soraxus.com'
+    uid: 5827
+    groups:
+      - ring-users
+
