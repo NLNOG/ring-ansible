@@ -5346,7 +5346,7 @@ USERS:
       - ring-users
 
   august:
-    state: present
+    state: absent
     company: 'August Internet'
     email: 'noc@august.tw'
     uid: 5689
