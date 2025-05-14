@@ -723,6 +723,7 @@ cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::23
 active2401.ring.nlnog.net OWNER=active24 V4=81.95.101.66 V6=2a02:4a8:ac24:115::101:66
 ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:c80:0:74d8::2
 soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
+skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3072,3 +3073,6 @@ ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:
 
 [soraxus]
 soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
+
+[skybest]
+skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230

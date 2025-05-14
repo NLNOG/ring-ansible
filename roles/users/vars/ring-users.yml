@@ -6457,3 +6457,11 @@ USERS:
     groups:
       - ring-users
 
+  skybest:
+    state: present
+    company: 'Skybest Communications'
+    email: 'BroadbandEngineering@skyline.org'
+    uid: 5828
+    groups:
+      - ring-users
+
