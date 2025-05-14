@@ -6465,3 +6465,11 @@ USERS:
     groups:
       - ring-users
 
+  itandtel:
+    state: present
+    company: 'eww ag | ITandTEL'
+    email: 'noc@itandtel.at'
+    uid: 5829
+    groups:
+      - ring-users
+
