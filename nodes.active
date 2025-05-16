@@ -711,6 +711,7 @@ medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
 cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::236
 active2401.ring.nlnog.net OWNER=active24 V4=81.95.101.66 V6=2a02:4a8:ac24:115::101:66
 ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:c80:0:74d8::2
+soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
 skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
 itandtel01.ring.nlnog.net OWNER=itandtel V4=212.52.195.161 V6=2a02:940:3999:2::25
 
@@ -3035,6 +3036,7 @@ active2401.ring.nlnog.net OWNER=active24 V4=81.95.101.66 V6=2a02:4a8:ac24:115::1
 ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:c80:0:74d8::2
 
 [soraxus]
+soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
 
 [skybest]
 skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
