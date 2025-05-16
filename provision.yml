@@ -71,6 +71,17 @@
         mode: 0400
         content: "{{ ringnode_vault_pw }}"
       tags: vault_pw
+    - name: Check for cloud-init
+      stat: path=/etc/netplan/50-cloud-init.yaml
+      register: cloud_init
+    - name: Disable cloud-init network config
+      copy:
+        dest: /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+        content: "network: {config: disabled}"
+        owner: root
+        group: root
+        mode: '0644'
+      when: cloud_init.stat.exists
 
 - hosts: infranode
   become: true
