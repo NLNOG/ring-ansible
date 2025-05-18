@@ -650,7 +650,6 @@ hyehost01.ring.nlnog.net OWNER=hyehost V4=23.172.120.213 V6=2602:f96d:35::a
 syslevel01.ring.nlnog.net OWNER=syslevel V6=2a12:8ac1:a0:de::face
 rsm01.ring.nlnog.net OWNER=rsm V4=185.58.30.154 V6=2a04:df80:1:530::1
 tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680::8c
-ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
 ferox01.ring.nlnog.net OWNER=ferox V4=45.136.141.54 V6=2a12:bec0:650:48::54
 rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
@@ -2867,7 +2866,6 @@ tyktech01.ring.nlnog.net OWNER=tyktech V4=85.209.118.140 V6=2a09:94c4:55d1:7680:
 [lvinformatique]
 
 [ichilton]
-ichilton01.ring.nlnog.net OWNER=ichilton V6=2001:678:f5c::a
 
 [bitency]
 bitency01.ring.nlnog.net OWNER=bitency V4=37.72.101.20 V6=2A00:8240:1235::1235
