@@ -100,6 +100,7 @@ iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
 hosting90systems01.ring.nlnog.net OWNER=hosting90systems V4=37.46.80.118 V6=2a03:b780:1:4:216:3eff:fe00:a76
 kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
+afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
 afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
@@ -1040,6 +1041,7 @@ kordia01.ring.nlnog.net OWNER=kordia V4=124.157.73.94 V6=2404:6c00:1:f::2
 nexellent01.ring.nlnog.net OWNER=nexellent V4=217.147.213.237 V6=2001:4168:babe:2::2
 
 [afilias]
+afilias01.ring.nlnog.net OWNER=afilias V4=199.10.66.229 V6=2001:500:f1:500::229
 afilias02.ring.nlnog.net OWNER=afilias V4=65.22.12.229 V6=2a01:8840:c:500::229
 afilias04.ring.nlnog.net OWNER=afilias V4=199.19.51.229 V6=2a01:8840:d:500::229
 afilias03.ring.nlnog.net OWNER=afilias V4=199.19.52.229 V6=2001:500:a:500::229
