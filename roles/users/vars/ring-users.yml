@@ -674,7 +674,7 @@ USERS:
   sixdegrees:
     state: present
     company: 'Six Degrees Group'
-    email: 'incidents@6dg.co.uk'
+    email: 'lob.data.technical@6dg.co.uk'
     uid: 5096
     groups:
       - ring-users
