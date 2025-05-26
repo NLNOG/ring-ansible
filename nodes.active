@@ -301,6 +301,7 @@ fasttrackcomm01.ring.nlnog.net OWNER=fasttrackcomm V4=135.129.101.3 V6=2607:6400
 amatis01.ring.nlnog.net OWNER=amatis V4=77.246.27.26 V6=2a00:1990:2727::2726
 gwu01.ring.nlnog.net OWNER=gwu V4=128.164.88.188 V6=2606:69c0:5120:5285:385:1039:0:2f
 communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc80:2:21::100
+dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
 intermax01.ring.nlnog.net OWNER=intermax V4=46.22.180.60 V6=2001:4c10::2:59:0:60
 pbwcomm01.ring.nlnog.net OWNER=pbwcomm V4=204.9.92.171 V6=2604:5e40:102:17::171
@@ -1712,6 +1713,7 @@ communityrack01.ring.nlnog.net OWNER=communityrack V4=185.95.216.100 V6=2a05:fc8
 [widenet]
 
 [dhiraagu]
+dhiraagu01.ring.nlnog.net OWNER=dhiraagu V4=103.31.84.12 V6=2406:e400:1:10::10
 
 [vivor]
 vivor01.ring.nlnog.net OWNER=vivor V4=193.189.139.240 V6=2a06:340::240
