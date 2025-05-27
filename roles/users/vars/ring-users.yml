@@ -3873,7 +3873,7 @@ USERS:
       - ring-users
 
   ipbde:
-    state: present
+    state: absent
     company: 'I/P/B/ Internet Provider in Berlin GmbH'
     email: 'noc@ipb.de'
     uid: 5507
@@ -5754,7 +5754,7 @@ USERS:
       - ring-users
 
   siacom:
-    state: present
+    state: absent
     company: 'SIACOM'
     email: 'noc@sia-com.com'
     uid: 5740
@@ -6074,7 +6074,7 @@ USERS:
       - ring-users
 
   tempest:
-    state: present
+    state: absent
     company: 'Tempest'
     email: 'noc@path.net'
     uid: 5780
