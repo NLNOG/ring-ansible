@@ -534,7 +534,6 @@ ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
 ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
-ninjaix05.ring.nlnog.net OWNER=ninjaix V4=23.175.16.27 V6=2604:6040:80:3::27
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
 pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
@@ -2573,7 +2572,6 @@ ninjaix01.ring.nlnog.net OWNER=ninjaix V4=192.33.139.29 V6=2604:6040:20:3003::29
 ninjaix02.ring.nlnog.net OWNER=ninjaix V4=23.174.128.21 V6=2604:6040:50:3::21
 ninjaix03.ring.nlnog.net OWNER=ninjaix V4=23.174.129.25 V6=2604:6040:70:5::25
 ninjaix04.ring.nlnog.net OWNER=ninjaix V4=23.152.192.246 V6=2604:6040:25:4::246
-ninjaix05.ring.nlnog.net OWNER=ninjaix V4=23.175.16.27 V6=2604:6040:80:3::27
 
 [unchained]
 unchained01.ring.nlnog.net OWNER=unchained V4=185.250.9.236 V6=2a0b:9400:1000:2::236
