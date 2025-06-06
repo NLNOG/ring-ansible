@@ -782,11 +782,11 @@ lg_peers:
   WAVEX_NBO1_PE1:
     asn: 328977
     ipv4: 102.217.156.3
-    ipv6: '2c0f:6300:0:ffb::'
+    ipv6: '2c0f:6300:eadc::3'
   WAVEX_NBO1_PE2:
     asn: 328977
     ipv4: 102.217.156.2
-    ipv6: '2c0f:6300:0:ffa::'
+    ipv6: '2c0f:6300:eadc::2'
   WD61:
     asn: 20495
     ipv4: 92.48.224.28
