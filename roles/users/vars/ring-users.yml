@@ -6473,3 +6473,11 @@ USERS:
     groups:
       - ring-users
 
+  kasenet:
+    state: present
+    company: 'KaseNet Oy'
+    email: 'verkko@kasenet.fi'
+    uid: 5830
+    groups:
+      - ring-users
+

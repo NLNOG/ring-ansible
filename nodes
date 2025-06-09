@@ -3074,3 +3074,5 @@ skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
 
 [itandtel]
 itandtel01.ring.nlnog.net OWNER=itandtel V4=212.52.195.161 V6=2a02:940:3999:2::25
+
+[kasenet]
