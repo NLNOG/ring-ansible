@@ -620,6 +620,9 @@ lg_peers:
     asn: 215296
     #ipv4: 103.147.153.15
     ipv6: 2001:67c:e3c::1
+  RAPDODGENET:
+    asn: 203868
+    ipv6: 2a0a:280:b00a:1::1
   ROOTNL:
     asn: 16350
     ipv4: 217.119.226.1
