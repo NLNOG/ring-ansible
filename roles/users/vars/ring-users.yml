@@ -5804,7 +5804,7 @@ USERS:
   sparkedhost:
     state: absent
     company: 'Sparked Host LLC'
-    email: 'sysadmin@sparkedhost.com'
+    email: 'noc@sparkedhost.com'
     uid: 5746
     groups:
       - ring-users
