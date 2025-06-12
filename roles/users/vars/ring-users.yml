@@ -6481,3 +6481,11 @@ USERS:
     groups:
       - ring-users
 
+  elcro:
+    state: present
+    company: 'Elcro Digital'
+    email: 'noc@elcrodigital.com'
+    uid: 5831
+    groups:
+      - ring-users
+
