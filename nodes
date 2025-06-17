@@ -242,7 +242,6 @@ ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 cloudvps04.ring.nlnog.net OWNER=cloudvps V4=83.96.202.8 V6=2a02:348:5e6:1::a480
-cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:239c:0:20::22
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719
 corebackbone01.ring.nlnog.net OWNER=corebackbone V4=82.199.134.114 V6=2a01:4a0:61::2
 upcloud01.ring.nlnog.net OWNER=upcloud V4=185.26.50.99 V6=2a04:3540:1000:310:a8aa:aaff:fea0:350d
@@ -1613,7 +1612,6 @@ cloudvps04.ring.nlnog.net OWNER=cloudvps V4=83.96.202.8 V6=2a02:348:5e6:1::a480
 [vellance]
 
 [cegeka]
-cegeka01.ring.nlnog.net OWNER=cegeka V4=212.113.66.22 V6=2a02:239c:0:20::22
 
 [elisa]
 elisa01.ring.nlnog.net OWNER=elisa V4=194.157.148.236 V6=2001:998:12:58::719

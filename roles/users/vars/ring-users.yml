@@ -2520,7 +2520,7 @@ USERS:
       - ring-users
 
   cegeka:
-    state: present
+    state: absent
     company: 'Cegeka'
     email: 'ns@cegeka.com'
     uid: 5338
