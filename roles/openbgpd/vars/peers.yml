@@ -703,7 +703,7 @@ lg_peers:
     ipv6: 2a09:b280:fe00::2
   SPARKED_MFL_01:
     asn: 397032
-    ipv4: 155.94.218.130
+    ipv4: 23.230.3.1
     ipv6: 2602:fa87:1::1
   SPARKED_PAR_01:
     asn: 397032
