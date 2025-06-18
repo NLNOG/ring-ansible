@@ -4537,7 +4537,7 @@ USERS:
       - ring-users
 
   nextconnex:
-    state: present
+    state: absent
     company: 'Next Connex'
     email: 'noc@nextconnex.com'
     uid: 5589

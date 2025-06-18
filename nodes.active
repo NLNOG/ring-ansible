@@ -445,7 +445,6 @@ fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
 ficolo01.ring.nlnog.net OWNER=ficolo V4=164.215.32.85 V6=2a03:e580:10::10
 mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102::b2f8:d102
-nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 skylonhost01.ring.nlnog.net OWNER=skylonhost V4=109.248.43.102 V6=2a04:ff07:d9:27::1
 leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56ff:feaf:546
 unixsolutions01.ring.nlnog.net OWNER=unixsolutions V4=185.111.204.122 V6=2a04:6480:204::122
@@ -2292,7 +2291,6 @@ mediactive01.ring.nlnog.net OWNER=mediactive V4=178.248.209.2 V6=2a02:1740:1:102
 [jacknet]
 
 [nextconnex]
-nextconnex01.ring.nlnog.net OWNER=nextconnex V4=31.210.24.41 V6=2a03:4300:3:0:20c:29ff:fe39:d4f8
 
 [flowvps]
 
