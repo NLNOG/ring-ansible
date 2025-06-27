@@ -5866,7 +5866,7 @@ USERS:
       - ring-users
 
   mciu:
-    state: present
+    state: absent
     company: 'Montgomery County Intermediate Unit'
     email: 'noc@mciu.org'
     uid: 5754
@@ -6370,7 +6370,7 @@ USERS:
       - ring-users
 
   fpnet:
-    state: present
+    state: absent
     company: 'FPNET'
     email: 'noc@as214223.net'
     uid: 5817

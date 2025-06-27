@@ -635,7 +635,6 @@ s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
 bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
-mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
@@ -710,7 +709,6 @@ menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:6
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
 buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:250
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=94.26.24.5 V6=2a14:14c0::ff05
-fpnet01.ring.nlnog.net OWNER=fpnet V4=104.238.26.140 V6=2a0a:6044:aa10:ffff:104:238:26:140
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
@@ -2840,7 +2838,6 @@ bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::7
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
 
 [mciu]
-mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 
 [cbws]
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
@@ -3041,7 +3038,6 @@ buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:2
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=94.26.24.5 V6=2a14:14c0::ff05
 
 [fpnet]
-fpnet01.ring.nlnog.net OWNER=fpnet V4=104.238.26.140 V6=2a0a:6044:aa10:ffff:104:238:26:140
 
 [perke]
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
