@@ -6489,3 +6489,11 @@ USERS:
     groups:
       - ring-users
 
+  angolacables:
+    state: present
+    company: 'Angola Cables'
+    email: 'noc@angolacables.co.ao'
+    uid: 5832
+    groups:
+      - ring-users
+
