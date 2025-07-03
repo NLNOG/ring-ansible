@@ -40,7 +40,6 @@ westnet01.ring.nlnog.net OWNER=westnet V4=88.81.100.88 V6=2a02:3d8:fffe:314::88
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
-amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -586,7 +585,6 @@ shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
-sparkedhost01.ring.nlnog.net OWNER=sparkedhost V4=216.173.77.160 V6=2602:fa87:1:58::a
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
 vultr04.ring.nlnog.net OWNER=vultr V4=149.28.178.229 V6=2401:c080:1800:4048:5400:4ff:fe9b:4808
@@ -888,7 +886,6 @@ filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 
 [amazon]
-amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -2750,7 +2747,6 @@ sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 
 [sparkedhost]
-sparkedhost01.ring.nlnog.net OWNER=sparkedhost V4=216.173.77.160 V6=2602:fa87:1:58::a
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
 
