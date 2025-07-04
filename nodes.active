@@ -420,6 +420,7 @@ salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
 hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
@@ -657,8 +658,6 @@ brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
-v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
-v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
@@ -2206,6 +2205,7 @@ lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
 
 [atom]
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 
 [mauve]
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
@@ -2893,8 +2893,6 @@ tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 [v4less]
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
-v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
-v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 
 [shift]
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
