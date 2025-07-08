@@ -111,7 +111,6 @@ itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
-ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=193.192.2.132 V6=2a10:6740::4:beef
 bredband201.ring.nlnog.net OWNER=bredband2 V4=83.233.23.119 V6=2a00:1598:bb2:c::61:2
@@ -1105,7 +1104,6 @@ nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 [entanet]
 
 [ripe]
-ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 
 [hosteurope]
 
