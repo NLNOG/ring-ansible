@@ -111,6 +111,7 @@ itmastaren01.ring.nlnog.net OWNER=itmastaren V4=81.94.161.36 V6=2a00:7800:8000::
 one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
+ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 nforce01.ring.nlnog.net OWNER=nforce V4=185.107.93.26 V6=2a00:1768:6000:2::5
 serverchoice01.ring.nlnog.net OWNER=serverchoice V4=193.192.2.132 V6=2a10:6740::4:beef
 bredband201.ring.nlnog.net OWNER=bredband2 V4=83.233.23.119 V6=2a00:1598:bb2:c::61:2
@@ -145,6 +146,7 @@ mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
 sapphire01.ring.nlnog.net OWNER=sapphire V4=195.166.195.252 V6=2a02:638:8:1::4
 octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
+ipvisie01.ring.nlnog.net OWNER=ipvisie V4=141.136.120.48 V6=2a01:8580:103:1::108
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
@@ -1104,6 +1106,7 @@ nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 [entanet]
 
 [ripe]
+ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
 
 [hosteurope]
 
@@ -1254,6 +1257,7 @@ octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
 [udomain]
 
 [ipvisie]
+ipvisie01.ring.nlnog.net OWNER=ipvisie V4=141.136.120.48 V6=2a01:8580:103:1::108
 
 [citynetwork]
 
