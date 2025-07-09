@@ -776,7 +776,7 @@ USERS:
       - ring-users
 
   go6lab:
-    state: present
+    state: absent
     company: 'Go6 Institute'
     email: 'jan@go6.si'
     uid: 5111
