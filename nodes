@@ -723,6 +723,7 @@ kasenet01.ring.nlnog.net OWNER=kasenet V4=89.190.3.26 V6=2a03:7c00:feed:cafe::26
 elcro01.ring.nlnog.net OWNER=elcro V4=5.56.24.156 V6=2602:f71e:41:96::a
 angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041:0:3000:185:148:112:233
 angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
+paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3084,3 +3085,4 @@ angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041
 angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
 
 [paocloud]
+paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
