@@ -6497,3 +6497,11 @@ USERS:
     groups:
       - ring-users
 
+  paocloud:
+    state: present
+    company: 'PAOCLOUD CO., LTD.'
+    email: 'noc@as133504.net'
+    uid: 5833
+    groups:
+      - ring-users
+

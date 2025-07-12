@@ -3047,3 +3047,5 @@ elcro01.ring.nlnog.net OWNER=elcro V4=5.56.24.156 V6=2602:f71e:41:96::a
 [angolacables]
 angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041:0:3000:185:148:112:233
 angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
+
+[paocloud]
