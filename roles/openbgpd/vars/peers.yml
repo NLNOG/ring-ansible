@@ -556,6 +556,10 @@ lg_peers:
     asn: 22512
     ipv4: 204.209.252.3
     ipv6: 2620:3d:c000:1230::34
+  PAOCLOUD01:
+    asn: 133504
+    ipv4: 103.230.123.219
+    ipv6: 2401:93e0:5:255:2::22
   PARADOXNETWORKS_MCI:
     asn: 52025
     ipv4: 192.209.63.17
