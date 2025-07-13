@@ -641,7 +641,7 @@ dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
-dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40:1::2
+dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
 edgoo03.ring.nlnog.net OWNER=edgoo V4=185.162.183.87 V6=2001:b18:1002:200::3a
@@ -2861,7 +2861,7 @@ macarne02.ring.nlnog.net OWNER=macarne V4=45.90.186.27 V6=2a14:3f87:6ba0:f::a
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 
 [dqn]
-dqn01.ring.nlnog.net OWNER=dqn V6=2602:fa43:40:1::2
+dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 
 [edgoo]
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
