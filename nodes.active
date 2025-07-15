@@ -40,6 +40,7 @@ westnet01.ring.nlnog.net OWNER=westnet V4=88.81.100.88 V6=2a02:3d8:fffe:314::88
 kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001:4b20:100:205::42
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
+amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -411,7 +412,6 @@ sentia01.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56f
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:500::1
-tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
 denic01.ring.nlnog.net OWNER=denic V4=81.91.160.190 V6=2a02:568:100:100::5
@@ -887,6 +887,7 @@ filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 
 [amazon]
+amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
@@ -2172,7 +2173,6 @@ wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
 brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:500::1
 
 [tnnet]
-tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 
 [xfone]
 
