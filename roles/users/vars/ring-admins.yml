@@ -113,7 +113,6 @@ USERS:
       - ring-admins
     sshkeys:
       - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA8g0Qj0jz324IqL63o5TF2j/5tvmbDtMj25XcOBpMMQ teun@nlnog'
-      - 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOmW3OjNAWY0HhnZDc1rwzb+RTeYV+dG/yDqCMHscPou9WCWAjXJqtQlGOK2ZOGlgg/kzHG/sKYrwJSD0/3nQjI= Teun-NLNOG@secretive.ishamael.local'
 
   niels:
     state: present
