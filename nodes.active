@@ -147,7 +147,6 @@ mythicbeasts03.ring.nlnog.net OWNER=mythicbeasts V4=185.101.97.120 V6=2a06:1c80:
 transip01.ring.nlnog.net OWNER=transip V4=149.210.130.136 V6=2a01:7c8:aab1:3f8::1
 sapphire01.ring.nlnog.net OWNER=sapphire V4=195.166.195.252 V6=2a02:638:8:1::4
 octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
-ipvisie01.ring.nlnog.net OWNER=ipvisie V4=141.136.120.48 V6=2a01:8580:103:1::108
 luna01.ring.nlnog.net OWNER=luna V4=217.77.130.230 V6=2001:9c0:1:4::130:230
 combell01.ring.nlnog.net OWNER=combell V4=37.148.176.54 V6=2a00:1c98:10:7::2
 dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
@@ -653,7 +652,6 @@ rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
-brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
@@ -1261,7 +1259,6 @@ octopuce01.ring.nlnog.net OWNER=octopuce V4=91.194.60.185 V6=2001:67c:288::185
 [udomain]
 
 [ipvisie]
-ipvisie01.ring.nlnog.net OWNER=ipvisie V4=141.136.120.48 V6=2a01:8580:103:1::108
 
 [citynetwork]
 
@@ -2887,7 +2884,6 @@ ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 [tempest]
 
 [brouns]
-brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 
 [tngnet]
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
