@@ -6505,3 +6505,11 @@ USERS:
     groups:
       - ring-users
 
+  krsa:
+    state: present
+    company: 'AS214757'
+    email: 'noc@as214757.net'
+    uid: 5834
+    groups:
+      - ring-users
+

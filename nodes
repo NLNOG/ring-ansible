@@ -3086,3 +3086,5 @@ angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674:
 
 [paocloud]
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
+
+[krsa]
