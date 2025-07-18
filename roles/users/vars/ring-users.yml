@@ -6513,3 +6513,11 @@ USERS:
     groups:
       - ring-users
 
+  fyfeweb:
+    state: present
+    company: 'FyfeWeb Ltd'
+    email: 'noc@fyfeweb.com'
+    uid: 5835
+    groups:
+      - ring-users
+
