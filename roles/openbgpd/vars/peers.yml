@@ -653,10 +653,14 @@ lg_peers:
     asn: 59715
     ipv4: 185.5.200.255
     ipv6: 2a02:cdc5:9715:0:185:5:200:255
-  SCN-RC01:
+  SCN-RC-LAF:
     asn: 53343
     ipv4: 23.131.12.68
     ipv6: 2602:f765:880::1:0:c0c0
+  SCN-RC-IAD:
+    asn: 53343
+    ipv4: 129.80.241.170
+    ipv6: 2603:c020:401b:feed:bbf6:db09:f135:1a01
   SECUREBIT_FRE01:
     asn: 58057
     ipv4: 185.102.84.251
