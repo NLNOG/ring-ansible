@@ -619,7 +619,6 @@ sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
-bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
@@ -649,6 +648,7 @@ rvdm01.ring.nlnog.net OWNER=rvdm V6=2a0e:f7c0::2
 moji01.ring.nlnog.net OWNER=moji V4=31.14.69.20 V6=2a06:c484:6:1:e::1
 edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ffff:ffff::2
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
+brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
@@ -2796,7 +2796,6 @@ s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::
 
 [bouwhuis]
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
-bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 
 [as8net]
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
@@ -2884,6 +2883,7 @@ ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 [tempest]
 
 [brouns]
+brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 
 [tngnet]
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
