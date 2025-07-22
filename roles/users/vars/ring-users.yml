@@ -6521,3 +6521,11 @@ USERS:
     groups:
       - ring-users
 
+  brink:
+    state: present
+    company: 'AS215248'
+    email: 'b@stiaanbr.ink'
+    uid: 5836
+    groups:
+      - ring-users
+
