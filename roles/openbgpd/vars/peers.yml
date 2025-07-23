@@ -626,7 +626,7 @@ lg_peers:
     ipv6: 2606:5040::249
   RAOULBROUNS:
     asn: 215296
-    #ipv4: 103.147.153.15
+    ipv4: 103.147.153.15
     ipv6: 2001:67c:e3c::1
   RAPDODGENET:
     asn: 203868
