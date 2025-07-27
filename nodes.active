@@ -620,6 +620,7 @@ sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
+bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
@@ -689,6 +690,7 @@ ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
+informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
@@ -2802,6 +2804,7 @@ s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::
 
 [bouwhuis]
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
+bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 
 [as8net]
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
@@ -2989,6 +2992,7 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
+informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 
 [qrator]
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
