@@ -85,6 +85,7 @@ i3d01.ring.nlnog.net OWNER=i3d V4=31.204.150.13 V6=2a00:1630:2:1c08::1
 obenetwork01.ring.nlnog.net OWNER=obenetwork V4=46.227.66.10 V6=2A03:8600:0:132::2
 infomaniak01.ring.nlnog.net OWNER=infomaniak V4=195.15.243.60 V6=2001:1600:10:100::6ab
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
+skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.3 V6=2001:9e0:400:53::3
 claranet01.ring.nlnog.net OWNER=claranet V4=195.157.9.4 V6=2001:a88:0:ff00::4
 claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
@@ -1017,6 +1018,7 @@ infomaniak01.ring.nlnog.net OWNER=infomaniak V4=195.15.243.60 V6=2001:1600:10:10
 teamix01.ring.nlnog.net OWNER=teamix V4=194.150.191.55 V6=2001:67c:14c:12f::55:1
 
 [skyway]
+skyway01.ring.nlnog.net OWNER=skyway V4=109.234.105.30 V6=2a00:18e0:0:dc:109:234:105:30
 
 [solcon]
 solcon01.ring.nlnog.net OWNER=solcon V4=212.45.52.3 V6=2001:9e0:400:53::3
