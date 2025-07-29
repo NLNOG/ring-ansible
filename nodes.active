@@ -364,7 +364,6 @@ elastx01.ring.nlnog.net OWNER=elastx V4=217.61.244.211 V6=2a07:2180::217:61:244:
 elastx02.ring.nlnog.net OWNER=elastx V4=217.61.244.212 V6=2a07:2180::217:61:244:212
 elastx03.ring.nlnog.net OWNER=elastx V4=212.237.146.133 V6=2a07:2180:0:6:212:237:146:133
 automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff:0000:0000:0000:2d79:b764
-retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 web2objects01.ring.nlnog.net OWNER=web2objects V4=167.160.40.65 V6=2602:ffd9:211:6::2
@@ -2009,7 +2008,6 @@ elastx03.ring.nlnog.net OWNER=elastx V4=212.237.146.133 V6=2a07:2180:0:6:212:237
 automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff:0000:0000:0000:2d79:b764
 
 [retarus]
-retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 
