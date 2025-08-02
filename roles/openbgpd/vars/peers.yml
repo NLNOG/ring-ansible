@@ -65,9 +65,11 @@ lg_peers:
     ipv6: 2a0c:e300:1::247
   AS199471_S5B_DUS:
     asn: 199471
+    ipv4: 185.83.87.2
     ipv6: 2a13:fc80:fffe::1
   AS199471_S5B_FRA:
     asn: 199471
+    ipv4: 185.83.87.0
     ipv6: 2a13:fc80:fffd::1
   AS203686_ILHAM_RR:
     asn: 203686
