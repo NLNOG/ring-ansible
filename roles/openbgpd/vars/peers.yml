@@ -822,6 +822,10 @@ lg_peers:
     asn: 19255
     ipv4: 163.237.247.99
     ipv6: 2001:4978:1000::2319:99
+  NetSyst:
+    asn: 209097
+    ipv4: 5.182.144.3
+    ipv6: 2a0e:5c00::3
 
 readonly_peers:
   SERNET2:
