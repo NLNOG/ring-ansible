@@ -6545,3 +6545,11 @@ USERS:
     groups:
       - ring-users
 
+  netsyst:
+    state: present
+    company: 'NetSyst'
+    email: 'noc@netsyst.fr'
+    uid: 5839
+    groups:
+      - ring-users
+

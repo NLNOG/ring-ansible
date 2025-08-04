@@ -739,6 +739,7 @@ fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:4
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fea1:a122
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
+netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3126,3 +3127,6 @@ jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fea1:a122
 
 [hackthebox]
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
+
+[netsyst]
+netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
