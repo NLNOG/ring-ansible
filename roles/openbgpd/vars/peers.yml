@@ -524,6 +524,10 @@ lg_peers:
     asn: 41047
     ipv4: 87.237.165.4
     ipv6: 2a0e:a6c0::100:66:1:2
+  NETSYST:
+    asn: 209097
+    ipv4: 5.182.144.3
+    ipv6: 2a0e:5c00::3
   NEXTHOP1:
     asn: 49788
     ipv4: 91.218.184.60
