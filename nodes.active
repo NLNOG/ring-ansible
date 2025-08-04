@@ -3071,3 +3071,7 @@ fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:4
 
 [brink]
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
+
+[jsmsr]
+
+[hackthebox]

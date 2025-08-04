@@ -6529,3 +6529,19 @@ USERS:
     groups:
       - ring-users
 
+  jsmsr:
+    state: present
+    company: 'JSMSR Network'
+    email: 'noc@jsmsr.com'
+    uid: 5837
+    groups:
+      - ring-users
+
+  hackthebox:
+    state: present
+    company: 'Hack The Box'
+    email: 'noc@hackthebox.eu'
+    uid: 5838
+    groups:
+      - ring-users
+
