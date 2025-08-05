@@ -424,6 +424,7 @@ milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
+fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
@@ -465,6 +466,7 @@ hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501:
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
+hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
@@ -2242,6 +2244,7 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 [mvix]
 
 [fetzer]
+fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]
 connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
@@ -2377,6 +2380,7 @@ hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501:
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
+hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 
 [ipfail]
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
