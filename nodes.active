@@ -466,7 +466,6 @@ hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501:
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
-hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
 sitehost01.ring.nlnog.net OWNER=sitehost V4=120.138.30.57 V6=2403:7000:8000:700::b6
 cybera01.ring.nlnog.net OWNER=cybera V4=162.246.158.103 V6=2605:fd00:1:1013::2
@@ -710,7 +709,6 @@ itandtel01.ring.nlnog.net OWNER=itandtel V4=212.52.195.161 V6=2a02:940:3999:2::2
 kasenet01.ring.nlnog.net OWNER=kasenet V4=89.190.3.26 V6=2a03:7c00:feed:cafe::26
 elcro01.ring.nlnog.net OWNER=elcro V4=5.56.24.156 V6=2602:f71e:41:96::a
 angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041:0:3000:185:148:112:233
-angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
 angolacables04.ring.nlnog.net OWNER=angolacables V4=185.148.112.151 V6=2a07:6041:0:2056::151
 angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2:4::26
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
@@ -2380,7 +2378,6 @@ hostuniversal04.ring.nlnog.net OWNER=hostuniversal V4=103.25.58.11 V6=2406:d501:
 hostuniversal05.ring.nlnog.net OWNER=hostuniversal V4=144.48.37.207 V6=2406:d501:f:950::739b:c708
 hostuniversal06.ring.nlnog.net OWNER=hostuniversal V4=103.25.56.18 V6=2406:d500:2::b167:ad4d
 hostuniversal07.ring.nlnog.net OWNER=hostuniversal V4=124.150.139.206 V6=2404:f780:8:503::9d9:1b15
-hostuniversal08.ring.nlnog.net OWNER=hostuniversal V4=103.216.223.22 V6=2406:d500:12:300::b7fc:def1
 
 [ipfail]
 ipfail01.ring.nlnog.net OWNER=ipfail V4=23.157.112.123 V6=2605:c640:dc1:10c8::123
@@ -3056,7 +3053,6 @@ elcro01.ring.nlnog.net OWNER=elcro V4=5.56.24.156 V6=2602:f71e:41:96::a
 
 [angolacables]
 angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041:0:3000:185:148:112:233
-angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
 angolacables04.ring.nlnog.net OWNER=angolacables V4=185.148.112.151 V6=2a07:6041:0:2056::151
 angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2:4::26
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
