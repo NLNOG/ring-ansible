@@ -417,6 +417,7 @@ salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
 hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gcore01.ring.nlnog.net OWNER=gcore V4=92.223.105.92 V6=2a03:90c0:83:2908::95
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
@@ -665,7 +666,6 @@ pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
 pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
-xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
 skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
@@ -2214,6 +2214,7 @@ lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
 
 [atom]
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 
 [mauve]
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
@@ -2934,7 +2935,6 @@ converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 
 [xyphen]
-xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 
 [frumentum]
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
