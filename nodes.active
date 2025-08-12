@@ -235,6 +235,7 @@ sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:0302:0007:0000:0000:0000:0002
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
+ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
 worldstream01.ring.nlnog.net OWNER=worldstream V4=212.8.252.107 V6=2a00:7c80:0:dd::107
 cloudvps04.ring.nlnog.net OWNER=cloudvps V4=83.96.202.8 V6=2a02:348:5e6:1::a480
@@ -364,6 +365,7 @@ elastx01.ring.nlnog.net OWNER=elastx V4=217.61.244.211 V6=2a07:2180::217:61:244:
 elastx02.ring.nlnog.net OWNER=elastx V4=217.61.244.212 V6=2a07:2180::217:61:244:212
 elastx03.ring.nlnog.net OWNER=elastx V4=212.237.146.133 V6=2a07:2180:0:6:212:237:146:133
 automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff:0000:0000:0000:2d79:b764
+retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
@@ -1571,6 +1573,7 @@ transtelco01.ring.nlnog.net OWNER=transtelco V4=201.174.85.6 V6=2604:d600:0302:0
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 
 [ucsc]
+ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
 
 [nordunet]
 nordunet01.ring.nlnog.net OWNER=nordunet V4=109.105.111.80 V6=2001:948:4:6::80
@@ -2008,6 +2011,7 @@ elastx03.ring.nlnog.net OWNER=elastx V4=212.237.146.133 V6=2a07:2180:0:6:212:237
 automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff:0000:0000:0000:2d79:b764
 
 [retarus]
+retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 
