@@ -388,6 +388,7 @@ rise01.ring.nlnog.net OWNER=rise V4=43.226.6.82 V6=2401:da80:1000:2::9
 datagrouptransit01.ring.nlnog.net OWNER=datagrouptransit V4=88.81.224.1 V6=2a01:758:fff4:2::21
 grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
+mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::beef
 pccw01.ring.nlnog.net OWNER=pccw V4=63.223.226.131 V6=2400:8800:4200:0:250:56ff:fe9e:a28d
 wilhelmtel01.ring.nlnog.net OWNER=wilhelmtel V4=213.209.102.95 V6=2a02:2028:d000::9
 telekomhu01.ring.nlnog.net OWNER=telekomhu V4=84.2.32.215 V6=2001:4c48:2:5:20c:29ff:fe98:e0ab
@@ -428,7 +429,6 @@ isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
-connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
 bakkerit01.ring.nlnog.net OWNER=bakkerit V4=45.146.4.19 V6=2a0e:fd40:a::ffec
 aplitt01.ring.nlnog.net OWNER=aplitt V4=91.212.242.244 V6=2001:67c:24c::244
@@ -704,7 +704,6 @@ medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
 cavadore01.ring.nlnog.net OWNER=cavadore V4=193.27.0.236 V6=2001:67c:ec:2022::236
 active2401.ring.nlnog.net OWNER=active24 V4=81.95.101.66 V6=2a02:4a8:ac24:115::101:66
 ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:c80:0:74d8::2
-soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
 skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
 itandtel01.ring.nlnog.net OWNER=itandtel V4=212.52.195.161 V6=2a02:940:3999:2::25
 kasenet01.ring.nlnog.net OWNER=kasenet V4=89.190.3.26 V6=2a03:7c00:feed:cafe::26
@@ -2096,6 +2095,7 @@ grenode01.ring.nlnog.net OWNER=grenode V4=91.216.110.61 V6=2001:912:800:212::61
 adista01.ring.nlnog.net OWNER=adista V4=62.102.235.194 V6=2a01:728:401:1c::194
 
 [mfiles]
+mfiles01.ring.nlnog.net OWNER=mfiles V4=185.255.247.14 V6=2a0c:61c0:ffff:fffd::beef
 
 [profitbricks]
 
@@ -2250,7 +2250,6 @@ prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::3
 fetzer02.ring.nlnog.net OWNER=fetzer V6=2a00:1908:fffe:fffe::1337
 
 [connectedpl]
-connectedpl01.ring.nlnog.net OWNER=connectedpl V4=93.159.158.251 V6=2a00:1578:cafe::666
 
 [teliadk]
 teliadk01.ring.nlnog.net OWNER=teliadk V4=212.97.216.247 V6=2001:2010:0:9::1
@@ -3040,7 +3039,6 @@ active2401.ring.nlnog.net OWNER=active24 V4=81.95.101.66 V6=2a02:4a8:ac24:115::1
 ukrainehosting01.ring.nlnog.net OWNER=ukrainehosting V4=185.233.116.216 V6=2a0c:c80:0:74d8::2
 
 [soraxus]
-soraxus01.ring.nlnog.net OWNER=soraxus V4=195.178.121.197 V6=2602:f743:119::197
 
 [skybest]
 skybest01.ring.nlnog.net OWNER=skybest V4=69.77.152.230 V6=2606:4600:0:1::230
