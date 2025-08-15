@@ -5866,7 +5866,7 @@ USERS:
       - ring-users
 
   mciu:
-    state: absent
+    state: present
     company: 'Montgomery County Intermediate Unit'
     email: 'noc@mciu.org'
     uid: 5754
