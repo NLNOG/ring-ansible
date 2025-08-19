@@ -1064,7 +1064,7 @@ USERS:
       - ring-users
 
   itmastaren:
-    state: present
+    state: absent
     company: 'IT-mastaren'
     email: 'registry@itmastaren.se'
     uid: 5150
@@ -6558,6 +6558,14 @@ USERS:
     company: 'Advania'
     email: 'com.itmastaren@visolit.se'
     uid: 5840
+    groups:
+      - ring-users
+
+  lucix:
+    state: present
+    company: 'LU-CIX'
+    email: 'support@lu-cix.lu'
+    uid: 5841
     groups:
       - ring-users
 

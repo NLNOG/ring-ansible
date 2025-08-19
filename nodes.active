@@ -3089,3 +3089,5 @@ hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f:
 netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 
 [advania]
+
+[lucix]
