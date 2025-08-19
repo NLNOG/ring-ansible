@@ -669,6 +669,7 @@ pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
 pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
+xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
 skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
@@ -2940,6 +2941,7 @@ converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 
 [xyphen]
+xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 
 [frumentum]
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
