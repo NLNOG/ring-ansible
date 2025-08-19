@@ -6553,3 +6553,11 @@ USERS:
     groups:
       - ring-users
 
+  advania:
+    state: present
+    company: 'Advania'
+    email: 'com.itmastaren@visolit.se'
+    uid: 5840
+    groups:
+      - ring-users
+
