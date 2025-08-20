@@ -726,6 +726,7 @@ brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
 netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
+lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 
 [infranode]
 
@@ -3091,3 +3092,4 @@ netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 [advania]
 
 [lucix]
+lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
