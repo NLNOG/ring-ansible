@@ -3093,3 +3093,5 @@ netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 
 [lucix]
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
+
+[noscito]

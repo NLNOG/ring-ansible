@@ -6569,3 +6569,11 @@ USERS:
     groups:
       - ring-users
 
+  noscito:
+    state: present
+    company: 'noscito network GmbH'
+    email: 'support@noscito.network'
+    uid: 5842
+    groups:
+      - ring-users
+
