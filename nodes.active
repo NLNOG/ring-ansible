@@ -571,7 +571,6 @@ scaleway02.ring.nlnog.net OWNER=scaleway V4=51.158.228.16 V6=2001:bc8:5008::a
 scaleway03.ring.nlnog.net OWNER=scaleway V4=151.115.68.32 V6=2001:bc8:1d08::9
 chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
-netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2001:67c:dec:195:95:177:5:a
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
 accenture01.ring.nlnog.net OWNER=accenture V4=85.222.193.228 V6=2a02:20b0:165::100
 bitterbal01.ring.nlnog.net OWNER=bitterbal V4=212.72.236.66 V6=2001:7bb:1000::66
@@ -689,7 +688,6 @@ ddfr01.ring.nlnog.net OWNER=ddfr V4=81.92.184.122 V6=2a02:5b0:0:f::2
 valoo01.ring.nlnog.net OWNER=valoo V4=185.128.18.66 V6=2a10:a5c1:1::66
 bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e51:30::e:cef7:1
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
-informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
@@ -2721,7 +2719,6 @@ chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
 
 [netone]
-netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2001:67c:dec:195:95:177:5:a
 
 [belnet]
 belnet01.ring.nlnog.net OWNER=belnet V4=193.191.68.50 V6=2001:6a8:3c80:4::50
@@ -2995,7 +2992,6 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 
 [informatiq]
-informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 
 [qrator]
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
