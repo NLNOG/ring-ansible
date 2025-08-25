@@ -5618,7 +5618,7 @@ USERS:
       - ring-users
 
   oneaccess:
-    state: present
+    state: absent
     company: '1access Sweden AB'
     email: 'noc@1o.se'
     uid: 5723
