@@ -692,6 +692,7 @@ qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::c
 menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
 buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:250
+routingcafe01.ring.nlnog.net OWNER=routingcafe V4=185.134.191.66 V6=2a14:14c0:1::ff05
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
@@ -3005,6 +3006,7 @@ criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:
 buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:250
 
 [routingcafe]
+routingcafe01.ring.nlnog.net OWNER=routingcafe V4=185.134.191.66 V6=2a14:14c0:1::ff05
 
 [fpnet]
 
