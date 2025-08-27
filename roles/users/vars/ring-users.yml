@@ -5586,7 +5586,7 @@ USERS:
       - ring-users
 
   witine:
-    state: present
+    state: absent
     company: 'Witine Limited'
     email: 'noc@witine.com'
     uid: 5719
@@ -5818,7 +5818,7 @@ USERS:
       - ring-users
 
   sdnbucks:
-    state: present
+    state: absent
     company: 'Sdnbucks BV'
     email: 'noc@sdnbucks.com'
     uid: 5748
