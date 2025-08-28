@@ -8,6 +8,8 @@
     repo: "{{ item.repo }}"
     dest: "/var/www/{{ item.name }}"
   with_items: "{{ hugo_sites|default([]) }}"
+  become: yes
+  become_user: www-data
   register: hugo_rebuild
   notify: hugo rebuild 
 
@@ -33,6 +35,8 @@
     repo: "{{ item.theme_repo }}"
     dest: "/var/www/{{ item.name }}/themes/{{ item.theme_name }}"
   with_items: "{{ hugo_sites|default([]) }}"
+  become: yes
+  become_user: www-data
   notify: hugo rebuild 
 
 - name: "Install post tooting requirements"
