@@ -714,7 +714,9 @@ angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
+angolacables09.ring.nlnog.net OWNER=angolacables V4=102.130.68.154 V6=2c0f:f828:2:203:102:130:68:154
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
+angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
@@ -3060,7 +3062,9 @@ angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
+angolacables09.ring.nlnog.net OWNER=angolacables V4=102.130.68.154 V6=2c0f:f828:2:203:102:130:68:154
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
+angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 
 [paocloud]
