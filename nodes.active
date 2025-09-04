@@ -528,6 +528,7 @@ pblin01.ring.nlnog.net OWNER=pblin V4=80.82.242.37 V6=2A01:248:FF40:500::2
 layerswitch01.ring.nlnog.net OWNER=layerswitch V4=23.188.16.42 V6=2602:fc4b:0:3::2
 kapsi01.ring.nlnog.net OWNER=kapsi V4=91.232.156.99 V6=2001:67c:1be8:1::999
 uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
+silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
@@ -718,6 +719,7 @@ angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
+krsa01.ring.nlnog.net OWNER=krsa V6=2a05:dfc3:f805:5150::2
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
@@ -2591,6 +2593,7 @@ uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
 [august]
 
 [silica]
+silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 
 [byteark]
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
@@ -3069,6 +3072,7 @@ angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 
 [krsa]
+krsa01.ring.nlnog.net OWNER=krsa V6=2a05:dfc3:f805:5150::2
 
 [fyfeweb]
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
