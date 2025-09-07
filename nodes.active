@@ -484,7 +484,6 @@ apernet01.ring.nlnog.net OWNER=apernet V4=103.152.35.127 V6=2406:4440::127
 i4networks01.ring.nlnog.net OWNER=i4networks V4=37.203.56.78 V6=2a00:dc8:0:11:37:203:56:78
 terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:193:200:238::41
 pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c:29ff:fe85:aff9
-qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2406:e940:0:10::10
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
 krystal01.ring.nlnog.net OWNER=krystal V4=185.53.57.183 V6=2a03:2800:500::70
 flexential01.ring.nlnog.net OWNER=flexential V4=206.196.5.164 V6=2607:f758:a080:0:250:56ff:fe85:3098
@@ -2447,7 +2446,6 @@ terrahost01.ring.nlnog.net OWNER=terrahost V4=193.200.238.41 V6=2a03:94e0:ffff:1
 pfalzkom01.ring.nlnog.net OWNER=pfalzkom V4=213.183.69.198 V6=2a02:24d8:7:1c:20c:29ff:fe85:aff9
 
 [qldvoip]
-qldvoip01.ring.nlnog.net OWNER=qldvoip V4=103.160.116.10 V6=2406:e940:0:10::10
 
 [epsilon]
 epsilon01.ring.nlnog.net OWNER=epsilon V4=159.127.40.236 V6=2606:ae80:1413:107::2360
