@@ -91,6 +91,7 @@ claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
+claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 arpnetworks01.ring.nlnog.net OWNER=arpnetworks V4=174.136.100.234 V6=2607:f2f8:ade8::2
 iabg01.ring.nlnog.net OWNER=iabg V4=83.170.60.36 V6=2001:1b10:1006::53aa:3c24
@@ -714,7 +715,6 @@ angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
-angolacables09.ring.nlnog.net OWNER=angolacables V4=102.130.68.154 V6=2c0f:f828:2:203:102:130:68:154
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
@@ -1032,6 +1032,7 @@ claranet02.ring.nlnog.net OWNER=claranet V4=195.38.140.4 V6=2a00:1798:fff0::4
 claranet03.ring.nlnog.net OWNER=claranet V4=212.61.158.6 V6=2a02:830:1:4::2
 claranet04.ring.nlnog.net OWNER=claranet V4=195.22.19.34 V6=2001:4cc0:cafe:babe::2
 claranet05.ring.nlnog.net OWNER=claranet V4=62.240.228.4 V6=2001:a70:ff:5::4
+claranet06.ring.nlnog.net OWNER=claranet V4=92.54.7.29 V6=2a02:a0:1:1::9
 claranet07.ring.nlnog.net OWNER=claranet V4=81.171.183.186 V6=2a00:ed0:2000:4800::2
 
 [arpnetworks]
@@ -3063,7 +3064,6 @@ angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
-angolacables09.ring.nlnog.net OWNER=angolacables V4=102.130.68.154 V6=2c0f:f828:2:203:102:130:68:154
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
