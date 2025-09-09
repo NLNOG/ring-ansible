@@ -6577,3 +6577,11 @@ USERS:
     groups:
       - ring-users
 
+  virtnet:
+    state: present
+    company: 'Virtnet.bond'
+    email: 'noc@virtnet.bond'
+    uid: 5843
+    groups:
+      - ring-users
+
