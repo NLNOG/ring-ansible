@@ -280,7 +280,7 @@ USERS:
       - ring-users
 
   rrbone:
-    state: present
+    state: absent
     company: 'rrbone'
     email: 'noc@rrbone.net'
     uid: 5041
