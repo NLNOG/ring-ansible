@@ -45,7 +45,7 @@ lg_peers:
     ipv6: 2a0e:b107:198::1
   ANDREWNET1:
     asn: 1003
-    ipv4: 192.189.65.162
+    ipv4: 23.143.82.1
     ipv6: 2602:fc26:12::1
   APERNET_HKG:
     asn: 38008
