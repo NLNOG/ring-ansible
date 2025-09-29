@@ -5484,7 +5484,7 @@ USERS:
   ewpratten:
     state: absent
     company: 'Evan Warren Pratten'
-    email: 'noc@ewpratten.com'
+    email: 'evan@ewpratten.com'
     uid: 5706
     groups:
       - ring-users
