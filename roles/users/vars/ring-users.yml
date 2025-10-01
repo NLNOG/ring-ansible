@@ -5482,7 +5482,7 @@ USERS:
       - ring-users
 
   ewpratten:
-    state: absent
+    state: present
     company: 'Evan Warren Pratten'
     email: 'evan@ewpratten.com'
     uid: 5706
