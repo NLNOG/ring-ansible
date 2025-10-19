@@ -738,6 +738,7 @@ advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
+lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::2
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3136,3 +3137,4 @@ noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 
 [lehmann]
+lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::2
