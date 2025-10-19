@@ -6585,3 +6585,11 @@ USERS:
     groups:
       - ring-users
 
+  lehmann:
+    state: present
+    company: 'Peter Lehmann'
+    email: 'noc@as213422.net'
+    uid: 5844
+    groups:
+      - ring-users
+
