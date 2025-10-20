@@ -430,6 +430,9 @@ lg_peers:
     asn: 204151
     ipv4: 185.107.12.53
     ipv6: 2a06:4000:0:4::5
+  LEHMANN_NBG00:
+    asn: 213422
+    ipv6: "2a0f:6283:1400::"
   LIBERTYGLOBAL1:
     asn: 6830
     ipv4: 213.136.1.137
