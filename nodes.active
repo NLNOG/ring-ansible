@@ -549,6 +549,7 @@ onas01.ring.nlnog.net OWNER=onas V4=93.190.126.18 V6=2a11:7980:1::1:0
 systemde01.ring.nlnog.net OWNER=systemde V4=193.111.213.214 V6=2001:678:9c0::446:6
 linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
+geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1:f208
 rub01.ring.nlnog.net OWNER=rub V4=134.147.20.2 V6=2a05:3e00:f:2::2
 cleura02.ring.nlnog.net OWNER=cleura V4=185.2.152.103 V6=2a03:b000:202:5::103
 cleura01.ring.nlnog.net OWNER=cleura V4=89.46.82.164 V6=2a03:b000:702:3::a4
@@ -2659,6 +2660,7 @@ linkor01.ring.nlnog.net OWNER=linkor V4=207.98.118.5 V6=2605:bc80:200f:b::2
 rzhas01.ring.nlnog.net OWNER=rzhas V4=93.88.227.10 V6=2a02:218:2:258::10
 
 [geant]
+geant01.ring.nlnog.net OWNER=geant V4=83.97.92.215 V6=2001:798:3:0:250:56ff:fea1:f208
 
 [eurofiber]
 
