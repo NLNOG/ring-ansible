@@ -697,7 +697,7 @@ bittenbytes01.ring.nlnog.net OWNER=bittenbytes V4=185.244.162.4 V6=2a12:4440:1e5
 marlies01.ring.nlnog.net OWNER=marlies V6=2a0e:fd45:2e80::179
 informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:8200::100
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
-menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
+menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2402:3160:1ee:53:62a4:34ff:fe4f:2ac0
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
 buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:250
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=185.134.191.66 V6=2a14:14c0:1::ff05
@@ -3034,7 +3034,7 @@ informatiq01.ring.nlnog.net OWNER=informatiq V4=103.204.195.100 V6=2a0a:6044:820
 qrator01.ring.nlnog.net OWNER=qrator V4=185.104.210.38 V6=2a06:3341:3e21:93cf::ca2f:c17f
 
 [menhera]
-menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2001:df3:14c0:e053:62a4:34ff:fe4f:2ac0
+menhera01.ring.nlnog.net OWNER=menhera V4=43.228.174.200 V6=2402:3160:1ee:53:62a4:34ff:fe4f:2ac0
 
 [criticalcore]
 criticalcore01.ring.nlnog.net OWNER=criticalcore V4=185.171.48.118 V6=2a0f:ddc0:0:1::
