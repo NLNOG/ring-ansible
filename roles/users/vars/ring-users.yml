@@ -6593,3 +6593,11 @@ USERS:
     groups:
       - ring-users
 
+  exoscale:
+    state: present
+    company: 'Exoscale'
+    email: 'peering@exoscale.net'
+    uid: 5845
+    groups:
+      - ring-users
+
