@@ -739,6 +739,9 @@ lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::2
+exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
+exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
+exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b:4ab:84ff:fe00:56
 
 [infranode]
 master01.infra.ring.nlnog.net OWNER=job V4=95.211.149.24 V6=2001:1AF8:4013::24
@@ -3140,3 +3143,6 @@ virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::2
 
 [exoscale]
+exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
+exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
+exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b:4ab:84ff:fe00:56
