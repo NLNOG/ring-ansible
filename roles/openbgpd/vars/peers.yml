@@ -718,14 +718,6 @@ lg_peers:
     asn: 215467
     ipv4: 88.218.206.2
     ipv6: 2a09:b280:fe00::2
-  SPARKED_MFL_01:
-    asn: 397032
-    ipv4: 23.230.3.1
-    ipv6: 2602:fa87:1::1
-  SPARKED_PAR_01:
-    asn: 397032
-    ipv4: 45.43.163.1
-    ipv6: 2602:fa87:6:100::1
   STOCADE_AMS_01:
     asn: 214809
     ipv6: 2a0a:6044:b304::1
