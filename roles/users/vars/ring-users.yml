@@ -6601,3 +6601,11 @@ USERS:
     groups:
       - ring-users
 
+  torena:
+    state: present
+    company: 'Torena'
+    email: 'noc@e-data.lt'
+    uid: 5846
+    groups:
+      - ring-users
+
