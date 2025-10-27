@@ -586,7 +586,6 @@ shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
-sparkedhost01.ring.nlnog.net OWNER=sparkedhost V4=216.173.77.160 V6=2602:fa87:1:58::a
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
 vultr04.ring.nlnog.net OWNER=vultr V4=149.28.178.229 V6=2401:c080:1800:4048:5400:4ff:fe9b:4808
@@ -2794,7 +2793,6 @@ sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 
 [sparkedhost]
-sparkedhost01.ring.nlnog.net OWNER=sparkedhost V4=216.173.77.160 V6=2602:fa87:1:58::a
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
 
