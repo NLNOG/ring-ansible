@@ -221,6 +221,7 @@ csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40b0:1:1122:ce5c:a007:0
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
+netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
 dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
@@ -376,6 +377,7 @@ comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
 gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
+ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104::9389:137
 sernet01.ring.nlnog.net OWNER=sernet V4=185.199.219.126 V6=2a0a:a3c0:0:d2c9::219:126
 ffam01.ring.nlnog.net OWNER=ffam V4=45.157.8.74 V6=2a0f:3786:11:1a::1
@@ -1531,6 +1533,7 @@ openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 [cablecom]
 
 [netnod]
+netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 
 [quadranet]
 
@@ -2070,6 +2073,7 @@ gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff
 gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 
 [ipbde]
+ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
 
 [cloudscale]
 cloudscale01.ring.nlnog.net OWNER=cloudscale V4=5.102.147.137 V6=2a06:c01:1:1104::9389:137
