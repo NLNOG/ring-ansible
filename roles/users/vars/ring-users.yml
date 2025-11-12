@@ -4874,7 +4874,7 @@ USERS:
 
   riepert:
     state: present
-    company: 'Riepert Informationstechnologie OG'
+    company: 'Riepert Informationstechnologie GmbH'
     email: 'noc@riepert.at'
     uid: 5631
     groups:
