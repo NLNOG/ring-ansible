@@ -4673,7 +4673,7 @@ USERS:
       - ring-users
 
   merlin:
-    state: present
+    state: absent
     company: 'MERLIN'
     email: 'noc@merlin.mb.ca'
     uid: 5606
