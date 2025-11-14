@@ -819,7 +819,10 @@ lg_peers:
     asn: 19255
     ipv4: 163.237.247.99
     ipv6: 2001:4978:1000::2319:99
-
+  WIIT:
+    asn: 24961
+    ipv4: 62.141.32.66
+    ipv6: 2001:4ba0:0:3::2
 readonly_peers:
   SERNET2:
     asn: 41955
