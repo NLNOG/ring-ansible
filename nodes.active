@@ -22,7 +22,6 @@ cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
 maverick01.ring.nlnog.net OWNER=maverick V4=195.110.48.110 V6=2a01:5e00:0:67::2
 blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
-rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
@@ -556,7 +555,6 @@ deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e:
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
-fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
 infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
@@ -832,7 +830,6 @@ blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 [digmia]
 
 [rootlu]
-rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 
 [globalaxs]
 
@@ -2692,7 +2689,6 @@ equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:
 [globedc]
 
 [fastjet]
-fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
 
 [alizer]
 
