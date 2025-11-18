@@ -1,0 +1,14 @@
+need_wsgi_py3: true
+#apache_vhosts:
+#  - lg
+#letsencrypt_certs:
+#  - lg.ring.nlnog.net
+
+nftables:
+  input:
+    - name: http (lg)
+      proto: tcp
+      dport: 80
+    - name: https (lg)
+      proto: tcp
+      dport: 443

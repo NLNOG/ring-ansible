@@ -113,6 +113,14 @@
     - { role: hugo, tags: hugo }
     - { role: paster, tags: paster }
 
+- hosts: public05.infra.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: letsencrypt, tags: letsencrypt }
+    - { role: apache2, tags: apache2 }
+#    - { role: nlnog-lg, tags: nlnog-lg }
+
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true
   become_user: root
