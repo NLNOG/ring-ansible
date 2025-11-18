@@ -101,7 +101,6 @@
     - { role: pdns-server, tags: pdns-server }
     - { role: map, tags: map }
     - { role: apt-repository, tags: apt-repository }
-    - { role: nlnog-lg, tags: nlnog-lg }
 
 - hosts: public04.infra.ring.nlnog.net
   become: true
@@ -119,7 +118,7 @@
   roles:
     - { role: letsencrypt, tags: letsencrypt }
     - { role: apache2, tags: apache2 }
-#    - { role: nlnog-lg, tags: nlnog-lg }
+    - { role: nlnog-lg, tags: nlnog-lg }
 
 - hosts: backup.infra.ring.nlnog.net:storage01.infra.ring.nlnog.net
   become: true

@@ -1,8 +1,8 @@
 need_wsgi_py3: true
-#apache_vhosts:
-#  - lg
-#letsencrypt_certs:
-#  - lg.ring.nlnog.net
+apache_vhosts:
+  - lg
+letsencrypt_certs:
+  - lg.ring.nlnog.net
 
 nftables:
   input:

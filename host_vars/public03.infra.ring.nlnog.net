@@ -2,10 +2,8 @@ pdnsmaster: true
 need_wsgi_py3: true
 apache_vhosts:
   - apt
-  - lg
   - map
 letsencrypt_certs:
-  - lg.ring.nlnog.net
   - map.ring.nlnog.net
 
 nftables:
@@ -16,9 +14,9 @@ nftables:
     - name: dns
       proto: tcp
       dport: 53
-    - name: http (lg, map)
+    - name: http (map)
       proto: tcp
       dport: 80
-    - name: https (lg, map)
+    - name: https (map)
       proto: tcp
       dport: 443
