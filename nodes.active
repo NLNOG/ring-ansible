@@ -116,7 +116,6 @@ serverchoice01.ring.nlnog.net OWNER=serverchoice V4=193.192.2.132 V6=2a10:6740::
 bredband201.ring.nlnog.net OWNER=bredband2 V4=83.233.23.119 V6=2a00:1598:bb2:c::61:2
 cdw02.ring.nlnog.net OWNER=cdw V4=64.73.80.140 V6=2607:FEE0:A001:d::10
 cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
-rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.196.130 V6=2607:F0C8:1:1::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
@@ -322,7 +321,6 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
-internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0::10
@@ -527,6 +525,7 @@ uepg01.ring.nlnog.net OWNER=uepg V4=143.208.160.9 V6=2804:1f04:3000:138::9
 silica01.ring.nlnog.net OWNER=silica V4=186.0.205.106 V6=2800:630:830:6::2
 byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
+serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
 telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
 iphh01.ring.nlnog.net OWNER=iphh V4=213.128.151.161 V6=2001:868:100:4f10::1:1
 andrewnet01.ring.nlnog.net OWNER=andrewnet V4=23.143.82.4 V6=2602:fc26:12:2::3
@@ -1152,7 +1151,6 @@ cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
 [videoplaza]
 
 [rnp]
-rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 
 [iij]
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
@@ -1838,7 +1836,6 @@ kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 [carnet]
 
 [internode]
-internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 
 [depaul]
 
@@ -2597,6 +2594,7 @@ byteark01.ring.nlnog.net OWNER=byteark V6=2400:c540:1:132:f:f:f:f
 fiebig01.ring.nlnog.net OWNER=fiebig V4=195.191.197.71 V6=2a06:d1c0:dead:5::71
 
 [serverion]
+serverion01.ring.nlnog.net OWNER=serverion V4=185.28.39.26 V6=2a10:1440:0000:6:0000:0000::100
 
 [telerys]
 telerys01.ring.nlnog.net OWNER=telerys V4=185.219.12.103 V6=2a0c:bc00:2::1:6aa8
