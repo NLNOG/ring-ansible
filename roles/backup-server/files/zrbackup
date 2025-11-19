@@ -85,72 +85,76 @@ function runbackups {
   runifexists "" $FILESYSTEM zrbackup-preflight
   for BACKUPHOST in $(cat /$FILESYSTEM/$BACKUPHOSTS)
   do
-    echo "Backing up host:" $BACKUPHOST
-    hostdefaults $FILESYSTEM $BACKUPHOST
-    runifexists "  " $FILESYSTEM $BACKUPHOST-preflight
-
-    if [ ! -d "/$FILESYSTEM/$BACKUPHOST" ]; then
-      echo "  Creating filesystem for host."
-      zfs create $ZPOOL/$FILESYSTEM/$BACKUPHOST
-      zfs set exec=off $ZPOOL/$FILESYSTEM/$BACKUPHOST
-      mkdir /$FILESYSTEM/$BACKUPHOST/mountpoints
-    fi
-
-
-    if [ "${BACKUPHOST}" == "storage01.infra.ring.nlnog.net" ]; then
-        MOUNTPOINTS=`ssh $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | grep -v tank/backups | cut -f 2 -d ' '`
-    else
-        MOUNTPOINTS=`ssh $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | cut -f 2 -d ' '`
-    fi
-
-    for MOUNTPOINT in $MOUNTPOINTS
-    do
-      echo "  Mountpoint:" $MOUNTPOINT
-      if [ $MOUNTPOINT = "/" ]; then
-        DESTDIR="root"
-      else
-        DESTDIR=`basename $MOUNTPOINT`
-      fi
-
-      if [ ! -d "/$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR" ]; then
-        echo "    Creating directory for mountpoint."
-        mkdir -p /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR
-      fi
-
-      if [ -d "/$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR" ]; then
-        EXCLUDEFROM=/$FILESYSTEM/$EXCLUDEBASE$BACKUPHOST
-        set +o errexit
-        if [ -f "$EXCLUDEFROM" ]; then
-          rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete --exclude-from $EXCLUDEFROM $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
-        else
-          rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
-        fi
-        RETVAL=$?
-        [ $RETVAL -ne 0 -a $RETVAL -ne 24 ] && exit $RETVAL
-        set -o errexit
-      fi
-    done
-
-    date > /$FILESYSTEM/$BACKUPHOST/mountpoints/last-backup
-    date +%s >> /$FILESYSTEM/$BACKUPHOST/mountpoints/last-backup
-
-    echo -n "  Creating 'Latest' snapshot..."
-    LATEST=`date +"%Y%m%d-%H%M%S"`
-    rm -f /$FILESYSTEM/$BACKUPHOST/Latest
-    zfs snapshot $ZPOOL/$FILESYSTEM/$BACKUPHOST@$LATEST
-    ln -s /$FILESYSTEM/$BACKUPHOST/.zfs/snapshot/$LATEST/mountpoints /$FILESYSTEM/$BACKUPHOST/Latest
-    echo " done."
-
-    SNAPSHOTS=$(zfs list -H -o name -t snapshot | grep "^$ZPOOL/$FILESYSTEM/$BACKUPHOST")
-    createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y"` FirstOfTheYear $ZPOOL
-    createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y%m"` FirstOfTheMonth $ZPOOL
-    createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y%m%d"` FirstOfTheDay $ZPOOL
-
-    trimsnapshots $FILESYSTEM $BACKUPHOST $ZPOOL
-
-    runifexists "  " $FILESYSTEM $BACKUPHOST-postflight
+    hostbackups $BACKUPHOST
   done
   runifexists "" $FILESYSTEM zrbackup-postflight
+}
+
+# $1 backuphost
+function hostbackups {
+  BACKUPHOST=$1
+  echo "Backing up host:" $BACKUPHOST
+  hostdefaults $FILESYSTEM $BACKUPHOST
+  runifexists "  " $FILESYSTEM $BACKUPHOST-preflight
+
+  if [ ! -d "/$FILESYSTEM/$BACKUPHOST" ]; then
+    echo "  Creating filesystem for host."
+    zfs create $ZPOOL/$FILESYSTEM/$BACKUPHOST
+    zfs set exec=off $ZPOOL/$FILESYSTEM/$BACKUPHOST
+    mkdir /$FILESYSTEM/$BACKUPHOST/mountpoints
+  fi
+
+  set +o errexit
+  MOUNTPOINTS=`ssh $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | cut -f 2 -d ' '`
+  [ "$MOUNTPOINTS" != "" ] || return
+  set -o errexit
+
+  for MOUNTPOINT in $MOUNTPOINTS
+  do
+    echo "  Mountpoint:" $MOUNTPOINT
+    if [ $MOUNTPOINT = "/" ]; then
+      DESTDIR="root"
+    else
+      DESTDIR=`basename $MOUNTPOINT`
+    fi
+
+    if [ ! -d "/$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR" ]; then
+      echo "    Creating directory for mountpoint."
+      mkdir -p /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR
+    fi
+
+    if [ -d "/$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR" ]; then
+      EXCLUDEFROM=/$FILESYSTEM/$EXCLUDEBASE$BACKUPHOST
+      set +o errexit
+      if [ -f "$EXCLUDEFROM" ]; then
+	rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete --exclude-from $EXCLUDEFROM $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
+      else
+	rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
+      fi
+      RETVAL=$?
+      [ $RETVAL -ne 0 -a $RETVAL -ne 24 ] && return
+      set -o errexit
+    fi
+  done
+
+  date > /$FILESYSTEM/$BACKUPHOST/mountpoints/last-backup
+  date +%s >> /$FILESYSTEM/$BACKUPHOST/mountpoints/last-backup
+
+  echo -n "  Creating 'Latest' snapshot..."
+  LATEST=`date +"%Y%m%d-%H%M%S"`
+  rm -f /$FILESYSTEM/$BACKUPHOST/Latest
+  zfs snapshot $ZPOOL/$FILESYSTEM/$BACKUPHOST@$LATEST
+  ln -s /$FILESYSTEM/$BACKUPHOST/.zfs/snapshot/$LATEST/mountpoints /$FILESYSTEM/$BACKUPHOST/Latest
+  echo " done."
+
+  SNAPSHOTS=$(zfs list -H -o name -t snapshot | grep "^$ZPOOL/$FILESYSTEM/$BACKUPHOST")
+  createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y"` FirstOfTheYear $ZPOOL
+  createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y%m"` FirstOfTheMonth $ZPOOL
+  createsnapshot $FILESYSTEM $BACKUPHOST `date +"%Y%m%d"` FirstOfTheDay $ZPOOL
+
+  trimsnapshots $FILESYSTEM $BACKUPHOST $ZPOOL
+
+  runifexists "  " $FILESYSTEM $BACKUPHOST-postflight
 }
 
 if [ ! -d $LOCKDIR ]; then
