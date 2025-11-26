@@ -553,6 +553,7 @@ deltafiber01.ring.nlnog.net OWNER=deltafiber V4=62.45.52.78 V6=2001:4c38:ff00:e:
 ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
+fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
 infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
@@ -2685,6 +2686,7 @@ equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:
 [globedc]
 
 [fastjet]
+fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
 
 [alizer]
 
