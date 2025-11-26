@@ -104,8 +104,14 @@ function hostbackups {
     mkdir /$FILESYSTEM/$BACKUPHOST/mountpoints
   fi
 
+  if [ "${BACKUPHOST}" == "master01.infra.ring.nlnog.net" ]; then
+    SSHCMD="ssh -o HostkeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa"
+  else
+    SSHCMD="ssh"
+  fi
+
   set +o errexit
-  MOUNTPOINTS=`ssh $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | cut -f 2 -d ' '`
+  MOUNTPOINTS=`$SSHCMD $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | cut -f 2 -d ' '`
   [ "$MOUNTPOINTS" != "" ] || return
   set -o errexit
 
@@ -127,9 +133,9 @@ function hostbackups {
       EXCLUDEFROM=/$FILESYSTEM/$EXCLUDEBASE$BACKUPHOST
       set +o errexit
       if [ -f "$EXCLUDEFROM" ]; then
-	rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete --exclude-from $EXCLUDEFROM $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
+	rsync -avx -e "$SSHCMD" --exclude /dev --exclude /sys --exclude /proc --delete --exclude-from $EXCLUDEFROM $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
       else
-	rsync -avx --exclude /dev --exclude /sys --exclude /proc --delete $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
+	rsync -avx -e "$SSHCMD" --exclude /dev --exclude /sys --exclude /proc --delete $BACKUPHOST:$MOUNTPOINT /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR > /$FILESYSTEM/$BACKUPHOST/mountpoints/$DESTDIR-rsync
       fi
       RETVAL=$?
       [ $RETVAL -ne 0 -a $RETVAL -ne 24 ] && return
