@@ -656,7 +656,7 @@ USERS:
       - ring-users
 
   strato:
-    state: present
+    state: absent
     company: 'STRATO AG'
     email: 'noc@strato-rz.de'
     uid: 5094
@@ -4393,7 +4393,7 @@ USERS:
       - ring-users
 
   connectedpl:
-    state: present
+    state: absent
     company: 'Connected Sp. z o. o.'
     email: 'noc@connected.pl'
     uid: 5571
@@ -6322,7 +6322,7 @@ USERS:
       - ring-users
 
   informatiq:
-    state: present
+    state: absent
     company: 'Informatiq'
     email: 'noc@astroman.dev'
     uid: 5811
@@ -6450,7 +6450,7 @@ USERS:
       - ring-users
 
   soraxus:
-    state: present
+    state: absent
     company: 'Soraxus Networks Inc.'
     email: 'noc@soraxus.com'
     uid: 5827
