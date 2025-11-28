@@ -3099,3 +3099,5 @@ exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b
 
 [torena]
 torena01.ring.nlnog.net OWNER=torena V4=88.216.146.63 V6=2001:4048:108:100::47
+
+[geely]

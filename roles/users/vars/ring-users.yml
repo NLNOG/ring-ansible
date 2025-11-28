@@ -6609,3 +6609,11 @@ USERS:
     groups:
       - ring-users
 
+  geely:
+    state: present
+    company: 'Geely'
+    email: 'noc@geelyeu.com'
+    uid: 5847
+    groups:
+      - ring-users
+
