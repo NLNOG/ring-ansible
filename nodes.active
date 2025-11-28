@@ -22,6 +22,7 @@ cyso01.ring.nlnog.net OWNER=cyso V4=93.94.224.87 V6=2a01:518:1:58:2::2
 unilogicnetworks01.ring.nlnog.net OWNER=unilogicnetworks V4=62.133.200.1 V6=2001:4128:6135:10:250:56ff:feb6:24
 maverick01.ring.nlnog.net OWNER=maverick V4=195.110.48.110 V6=2a01:5e00:0:67::2
 blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
+rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
@@ -829,6 +830,7 @@ blix01.ring.nlnog.net OWNER=blix V4=91.90.46.127 V6=2a02:20c8:1d:1::46:127
 [digmia]
 
 [rootlu]
+rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 
 [globalaxs]
 
