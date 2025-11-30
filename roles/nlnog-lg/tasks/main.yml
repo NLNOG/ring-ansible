@@ -1,10 +1,22 @@
----
-    - name: Checkout the lg.ring.nlnog.net repository
-      ansible.builtin.git:
-        repo: "https://github.com/NLNOG/lg.ring.nlnog.net"
-        dest: "/var/www/lg.ring.nlnog.net"
-        clone: yes
-        update: yes
-      become: yes
-      become_user: www-data
-      notify: restart apache2
+- name: Checkout the lg.ring.nlnog.net repository
+  ansible.builtin.git:
+    repo: "https://github.com/NLNOG/lg.ring.nlnog.net"
+    dest: "/var/www/lg.ring.nlnog.net"
+    clone: yes
+    update: yes
+  become: yes
+  become_user: www-data
+  notify: restart apache2
+
+- name: Set up virtualenv
+  ansible.builtin.pip:
+    requirements: "/var/www/lg.ring.nlnog.net/requirements.txt"
+    virtualenv: "/var/www/lg.ring.nlnog.net/venv"
+
+- name: Install configuration
+  template:
+    src: nlnog-lg.conf.j2
+    dest: /var/www/lg.ring.nlnog.net/nlnog-lg.conf
+    owner: www-data
+    group: root
+    mode: 0644
