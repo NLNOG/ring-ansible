@@ -13,14 +13,6 @@
     requirements: "/var/www/lg.ring.nlnog.net/requirements.txt"
     virtualenv: "/var/www/lg.ring.nlnog.net/venv"
 
-- name: Install configuration
-  template:
-    src: nlnog-lg.conf.j2
-    dest: /var/www/lg.ring.nlnog.net/nlnog-lg.conf
-    owner: www-data
-    group: root
-    mode: 0644
-
 - name: Install sqlite3
   apt:
     name: sqlite3
@@ -32,3 +24,12 @@
   become_user: www-data
   args:
     creates: /var/www/lg.ring.nlnog.net/nlnog-lg.sqlite
+
+- name: Install configuration
+  template:
+    src: nlnog-lg.conf.j2
+    dest: /var/www/lg.ring.nlnog.net/nlnog-lg.conf
+    owner: www-data
+    group: root
+    mode: 0644
+  notify: restart apache2
