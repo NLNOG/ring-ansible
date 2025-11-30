@@ -20,3 +20,15 @@
     owner: www-data
     group: root
     mode: 0644
+
+- name: Install sqlite3
+  apt:
+    name: sqlite3
+    state: latest
+
+- name: Initialize archive db
+  ansible.builtin.shell: "/usr/bin/sqlite3 /var/www/lg.ring.nlnog.net/nlnog-lg.sqlite < /var/www/lg.ring.nlnog.net/nlnog-lg.sql"
+  become: yes
+  become_user: www-data
+  args:
+    creates: /var/www/lg.ring.nlnog.net/nlnog-lg.sqlite
