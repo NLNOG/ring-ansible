@@ -362,7 +362,6 @@ automattic01.ring.nlnog.net OWNER=automattic V4=45.121.183.100 V6=2403:6b80:ffff
 retarus01.ring.nlnog.net OWNER=retarus V4=94.199.91.190 V6=2a02:7b01:ffe::190
 retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
-web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
@@ -2007,7 +2006,6 @@ retarus02.ring.nlnog.net OWNER=retarus V4=199.204.15.129 V6=2a02:7b02:fff::3
 retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 
 [web2objects]
-web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 
 [joeynetwork]
 
