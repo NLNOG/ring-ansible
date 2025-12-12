@@ -322,6 +322,7 @@ xantaro01.ring.nlnog.net OWNER=xantaro V4=185.16.196.68 V6=2a03:dfc0::b910:c444
 novoserve01.ring.nlnog.net OWNER=novoserve V4=89.105.199.74 V6=2001:968:2000::2
 plusline01.ring.nlnog.net OWNER=plusline V4=213.83.46.196 V6=2A02:02E0:0414:101::196
 kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
+internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 custodian01.ring.nlnog.net OWNER=custodian V4=109.74.240.242 V6=2a00:1c10:0:1002::242
 franceix01.ring.nlnog.net OWNER=franceix V4=37.49.234.137 V6=2a00:a4c0:2:1::137
 liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0::10
@@ -1832,6 +1833,7 @@ kviknet01.ring.nlnog.net OWNER=kviknet V4=212.237.176.70 V6=2a06:4000:0:9::a
 [carnet]
 
 [internode]
+internode01.ring.nlnog.net OWNER=internode V4=203.122.222.147 V6=2001:44b8:60:12::147
 
 [depaul]
 
