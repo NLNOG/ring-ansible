@@ -6617,3 +6617,11 @@ USERS:
     groups:
       - ring-users
 
+  midco:
+    state: present
+    company: 'Midco'
+    email: 'NOC@midco.com'
+    uid: 5848
+    groups:
+      - ring-users
+

@@ -3093,3 +3093,5 @@ torena01.ring.nlnog.net OWNER=torena V4=88.216.146.63 V6=2001:4048:108:100::47
 
 [geely]
 geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
+
+[midco]
