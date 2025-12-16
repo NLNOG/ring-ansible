@@ -26,7 +26,7 @@ rootlu01.ring.nlnog.net OWNER=rootlu V4=195.24.73.3 V6=2a01:608:ffff:6262::211
 tilaa01.ring.nlnog.net OWNER=tilaa V4=46.19.36.12 V6=2a02:2770::21a:4aff:feac:4576
 nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
-man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:fea1:5f4a
+man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.8 V6=2001:41b8:200:0:1266:6aff:feb3:b6bc
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
 tetaneutral01.ring.nlnog.net OWNER=tetaneutral V4=91.224.149.112 V6=2a03:7220:8081:7000::1
 jump01.ring.nlnog.net OWNER=jump V4=185.73.44.67 V6=2001:ba8:0:d975::
@@ -367,7 +367,7 @@ itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:5caf:67ff:fe2f:54e8
-mlab01.ring.nlnog.net OWNER=mlab V4=87.237.165.30 V6=2a0e:a6c1:0:2100:87:237:165:30
+mlab01.ring.nlnog.net OWNER=mlab V6=2a0e:a6c1:0:2100:87:237:165:30
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
@@ -846,7 +846,7 @@ nautile01.ring.nlnog.net OWNER=nautile V4=103.2.186.197 V6=2404:e400:2010::197
 apnic02.ring.nlnog.net OWNER=apnic V4=203.133.248.125 V6=2401:2000:6660::125
 
 [man-da]
-man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.4 V6=2001:41b8:200:0:250:56ff:fea1:5f4a
+man-da01.ring.nlnog.net OWNER=man-da V4=82.195.72.8 V6=2001:41b8:200:0:1266:6aff:feb3:b6bc
 
 [webair]
 webair01.ring.nlnog.net OWNER=webair V4=174.137.148.20 V6=2604:9e00:0001:010c:0000:0000:0000:0005
@@ -2037,7 +2037,7 @@ internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:
 [internetport]
 
 [mlab]
-mlab01.ring.nlnog.net OWNER=mlab V4=87.237.165.30 V6=2a0e:a6c1:0:2100:87:237:165:30
+mlab01.ring.nlnog.net OWNER=mlab V6=2a0e:a6c1:0:2100:87:237:165:30
 
 [axians]
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
