@@ -3147,3 +3147,5 @@ geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 
 [midco]
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
+
+[cwseychelles]

@@ -6625,3 +6625,11 @@ USERS:
     groups:
       - ring-users
 
+  cwseychelles:
+    state: present
+    company: 'C&W Seychelles'
+    email: 'netadmin@cwseychelles.com'
+    uid: 5849
+    groups:
+      - ring-users
+
