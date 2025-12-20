@@ -44,11 +44,9 @@ amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
-amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.68.56 V6=2406:da1a:1b5:8d00::12
-amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
@@ -901,11 +899,9 @@ amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
 amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
 amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
-amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
 amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.68.56 V6=2406:da1a:1b5:8d00::12
-amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
