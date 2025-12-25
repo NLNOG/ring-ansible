@@ -1,0 +1,27 @@
+- name: Checkout the ring-sqa-collector repository
+  ansible.builtin.git:
+    repo: "https://github.com/NLNOG/ring-sqa-collector"
+    dest: "/var/www/sqa-collector.infra.ring.nlnog.net"
+    clone: yes
+    update: yes
+  become: yes
+  become_user: www-data
+  notify: restart apache2
+
+- name: Install configuration
+  template:
+    src: sqa_collector.conf
+    dest: /var/www/sqa-collector.infra.ring.nlnog.net/sqa_collector.conf
+    owner: www-data
+    group: root
+    mode: 0644
+  notify: restart apache2
+
+- name: Install wsgi
+  template:
+    src: sqa.wsgi
+    dest: /var/www/sqa-collector.infra.ring.nlnog.net/sqa.wsgi
+    owner: www-data
+    group: root
+    mode: 0644
+  notify: restart apache2

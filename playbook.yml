@@ -149,3 +149,11 @@
     - { role: mysql, tags: mysql }
     - { role: apache2, tags: apache2 }
     - { role: ring_api, tags: ring_api }
+
+- hosts: staging02.ring.nlnog.net
+  become: true
+  become_user: root
+  roles:
+    - { role: mysql, tags: mysql }
+    - { role: apache2, tags: apache2 }
+    - { role: sqa-collector, tags: sqa-collector }

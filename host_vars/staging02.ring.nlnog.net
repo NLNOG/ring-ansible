@@ -1,1 +1,10 @@
 backups: disable
+need_wsgi_py3: true
+apache_vhosts:
+ - sqa-collector
+
+nftables:
+  input:
+    - name: http (lg)
+      proto: tcp
+      dport: 80
