@@ -8,6 +8,11 @@
   become_user: www-data
   notify: restart apache2
 
+- name: Set up virtualenv
+  ansible.builtin.pip:
+    requirements: "/var/www/sqa-collector.ring.nlnog.net/requirements.txt"
+    virtualenv: "/var/www/sqa-collector.ring.nlnog.net/venv"
+
 - name: Install configuration
   template:
     src: sqa_collector.conf
