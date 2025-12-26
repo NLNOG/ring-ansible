@@ -564,6 +564,7 @@ funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::13
 kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
 shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
+sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
@@ -713,7 +714,6 @@ advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
-lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
 exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
 exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b:4ab:84ff:fe00:56
@@ -2730,6 +2730,7 @@ shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 
 [sting]
+sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 
 [florisvdk]
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
@@ -3079,7 +3080,6 @@ noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 
 [lehmann]
-lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 
 [exoscale]
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
