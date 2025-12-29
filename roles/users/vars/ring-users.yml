@@ -248,7 +248,7 @@ USERS:
       - ring-users
 
   unilogicnetworks:
-    state: present
+    state: absent
     company: 'Unilogic Networks'
     email: 'noc@unilogicnetworks.net'
     uid: 5037
