@@ -150,7 +150,7 @@
     - { role: apache2, tags: apache2 }
     - { role: ring_api, tags: ring_api }
 
-- hosts: staging02.ring.nlnog.net
+- hosts: sqa-collector.infra.ring.nlnog.net
   become: true
   become_user: root
   roles:
