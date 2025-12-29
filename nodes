@@ -755,6 +755,7 @@ public04.infra.ring.nlnog.net OWNER=martin V4=185.66.250.169 V6=2a00:f10:121:a00
 container08.infra.ring.nlnog.net OWNER=martin V4=95.211.149.17 V6=2001:1af8:4013::1
 dbbackup.infra.ring.nlnog.net OWNER=martin V4=109.72.93.39 V6=2a00:f10:122::39
 public05.infra.ring.nlnog.net OWNER=martin V4=176.117.59.51 V6=2a05:1500:600:12:1c00:feff:fe00:5427
+sqa-collector.infra.ring.nlnog.net OWNER=martin V4=95.211.149.26 V6=2001:1af8:4013::26
 staging01.ring.nlnog.net OWNER=test V4=185.95.31.185 V6=2a00:f10:402:781:1c00:13ff:fe00:2564
 staging02.ring.nlnog.net OWNER=leopold V4=78.46.122.17 V6=2a01:4f8:c17:25c::1
 
