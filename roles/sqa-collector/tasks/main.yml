@@ -30,3 +30,8 @@
     group: root
     mode: 0644
   notify: restart apache2
+
+- name: "Install correlator cronjob"
+  template:
+    src: cron.d/sqa_correlator.j2
+    dest: /etc/cron.d/sqa_correlator

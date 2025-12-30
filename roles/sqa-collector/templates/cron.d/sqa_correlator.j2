@@ -1,0 +1,2 @@
+# Run SQA correlator
+*/3 * * * * root flock -xn /var/run/correlator.lock /var/www/sqa-collector.ring.nlnog.net/venv/bin/python3 /var/www/sqa-collector.ring.nlnog.net/sqa_correlator.py
