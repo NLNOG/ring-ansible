@@ -21,7 +21,7 @@
 
 - name: "Remove apache2 placeholder site"
   file:
-    path: /etc/apache2/sites-enabled/000-default
+    path: /etc/apache2/sites-enabled/000-default.conf
     state: absent
 
 - name: "Enable apache2 modules (1)"
