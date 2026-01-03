@@ -1,0 +1,3 @@
+{% if 'api' in apache_vhosts|default([]) %}
+WSGIDaemonProcess ring_api processes=2 threads=15
+{% endif %}

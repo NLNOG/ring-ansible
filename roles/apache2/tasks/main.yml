@@ -68,8 +68,8 @@
   notify: restart apache2
 
 - name: "Install wsgi daemon config"
-  copy:
-    src="wsgi_daemons.conf"
+  template:
+    src="wsgi_daemons.conf.j2"
     dest="/etc/apache2/wsgi_daemons.conf"
     owner=root
     group=root
