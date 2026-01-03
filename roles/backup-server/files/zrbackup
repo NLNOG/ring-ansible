@@ -104,12 +104,7 @@ function hostbackups {
     mkdir /$FILESYSTEM/$BACKUPHOST/mountpoints
   fi
 
-  if [ "${BACKUPHOST}" == "master01.infra.ring.nlnog.net" ]; then
-    SSHCMD="ssh -o HostkeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa"
-  else
-    SSHCMD="ssh"
-  fi
-
+  SSHCMD="ssh"
   set +o errexit
   MOUNTPOINTS=`$SSHCMD $BACKUPHOST cat /etc/mtab | grep " ext3 \| ext4 \| xfs \| zfs" | cut -f 2 -d ' '`
   [ "$MOUNTPOINTS" != "" ] || return

@@ -23,9 +23,6 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
-78.152.42.69 master01 master01.infra..ring.nlnog.net puppet
-2a02:d28:666::69    master01 master01.infra.ring.nlnog.net puppet
-
 """)
 
 for server in all_hosts:
