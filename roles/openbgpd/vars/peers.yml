@@ -635,8 +635,8 @@ lg_peers:
     ipv6: 2404:3a80:42::1
   QUXLABS1:
     asn: 203038
-    ipv4: 185.243.23.254
-    ipv6: 2a0d:bbc0:1::1
+    ipv4: 45.84.107.226
+    ipv6: 2a0d:bbc7::f816:3eff:fe47:719d
   RADISHNETWORKS1:
     asn: 399580
     ipv4: 209.209.88.249
