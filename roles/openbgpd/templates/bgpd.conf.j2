@@ -30,7 +30,7 @@ group "peers" {
 
 group "readonly_peers" {
     multihop 255
-    announce add-path send all
+    #announce add-path send all
 
 {% for peer in readonly_peers %}
 {% if readonly_peers[peer].ipv4|default(None) %}
@@ -50,7 +50,7 @@ group "readonly_peers" {
 
 group "aspa_test" {
     multihop 255
-    announce add-path send best plus 2
+    #announce add-path send best plus 2
     remote-as 15562
     neighbor 45.138.228.4
     neighbor 2a10:3781:276::1
