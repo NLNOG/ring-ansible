@@ -220,7 +220,6 @@ csuc01.ring.nlnog.net OWNER=csuc V4=84.88.14.228 V6=2001:40b0:1:1122:ce5c:a007:0
 jointtransit01.ring.nlnog.net OWNER=jointtransit V4=213.207.9.61 V6=2a02:10:0:1::90:10
 globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1:800::1b2
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
-openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 netnod01.ring.nlnog.net OWNER=netnod V4=185.42.136.5 V6=2a01:3f0:0:63::6
 xfernet01.ring.nlnog.net OWNER=xfernet V4=207.246.200.8 V6=2607:f350:1:aaaa::10
 speakup01.ring.nlnog.net OWNER=speakup V4=185.68.161.133 V6=2a03:2c60:0:700:246f:1fff:fe2f:6f
@@ -1549,7 +1548,6 @@ globalconnect01.ring.nlnog.net OWNER=globalconnect V4=212.98.93.10 V6=2a01:7e8:1
 globalconnect02.ring.nlnog.net OWNER=globalconnect V4=87.116.6.32 V6=2a02:188:2:d6::32
 
 [openit]
-openit01.ring.nlnog.net OWNER=openit V4=217.69.82.190 V6=2001:aa8:ffeb::2
 
 [fidonet]
 
