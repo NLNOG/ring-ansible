@@ -365,7 +365,6 @@ axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
-vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
 gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
@@ -526,6 +525,7 @@ fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
+telemark01.ring.nlnog.net OWNER=telemark V4=185.129.252.155 V6=2a06:d681::113
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
 ielo01.ring.nlnog.net OWNER=ielo V4=85.118.58.163 V6=2a00:1b88:21:200::2
 zencurity01.ring.nlnog.net OWNER=zencurity V4=185.129.63.131 V6=2a06:d380:0:102::11
@@ -2041,7 +2041,6 @@ cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 
 [vangulik]
-vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 
 [noack]
 
@@ -2606,6 +2605,7 @@ xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 
 [telemark]
+telemark01.ring.nlnog.net OWNER=telemark V4=185.129.252.155 V6=2a06:d681::113
 
 [titandc]
 titandc01.ring.nlnog.net OWNER=titandc V4=185.63.175.128 V6=2a04:f600:4454:48:8000:1856:3175:128
