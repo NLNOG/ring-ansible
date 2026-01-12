@@ -365,6 +365,7 @@ axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
+vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
 gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
@@ -394,7 +395,6 @@ misaka06.ring.nlnog.net OWNER=misaka V4=170.39.225.182 V6=2a0e:6901:301:3b:5054:
 c3noc01.ring.nlnog.net OWNER=c3noc V4=195.54.164.109 V6=2001:67c:20a0:13::109
 level66network01.ring.nlnog.net OWNER=level66network V4=141.98.136.68 V6=2a09:11c0:1200:210:ffff:ffff:8d62:8844
 inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019::4
-xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 sentia01.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
 a101.ring.nlnog.net OWNER=a1bg V4=217.9.226.25 V6=2a00:4800:20:6029::2
 wustl01.ring.nlnog.net OWNER=wustl V4=65.254.96.18 V6=2606:fd80:2::2
@@ -2041,6 +2041,7 @@ cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 
 [vangulik]
+vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 
 [noack]
 
@@ -2146,7 +2147,6 @@ inberlin01.ring.nlnog.net OWNER=inberlin V4=217.197.95.68 V6=2001:67c:1405:1019:
 [lnkro]
 
 [xtom]
-xtom01.ring.nlnog.net OWNER=xtom V4=62.133.33.44 V6=2a0c:59c0:2::44
 
 [sentia]
 sentia01.ring.nlnog.net OWNER=sentia V4=77.66.16.178 V6=2001:1448:0:a602:250:56ff:feb2:41ff
