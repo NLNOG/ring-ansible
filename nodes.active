@@ -40,9 +40,14 @@ kantonsschulezug01.ring.nlnog.net OWNER=kantonsschulezug V4=85.158.27.42 V6=2001
 filoo01.ring.nlnog.net OWNER=filoo V4=109.75.188.108 V6=2a00:12c0:1015:100:0:2:0:1
 nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
+amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
+amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
+amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
+amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.68.56 V6=2406:da1a:1b5:8d00::12
+amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
@@ -122,7 +127,6 @@ poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
-msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
@@ -888,9 +892,14 @@ nessus01.ring.nlnog.net OWNER=nessus V4=77.244.245.74 V6=2a02:1b8:10:16::2
 
 [amazon]
 amazon01.ring.nlnog.net OWNER=amazon V4=52.22.172.27 V6=2600:1f18:415a:7300::1:1
+amazon02.ring.nlnog.net OWNER=amazon V4=52.210.89.115 V6=2a05:d018:9f2:ed00::1:2
+amazon03.ring.nlnog.net OWNER=amazon V4=52.76.214.87 V6=2406:da18:df9:4d00::1:3
 amazon06.ring.nlnog.net OWNER=amazon V4=13.56.89.157 V6=2600:1f1c:eeb:8900::6
+amazon07.ring.nlnog.net OWNER=amazon V4=18.231.44.45 V6=2600:1f1e:d87:9300::7
+amazon08.ring.nlnog.net OWNER=amazon V4=13.210.46.145 V6=2406:da1c:1c0:fe00::8
 amazon10.ring.nlnog.net OWNER=amazon V4=54.223.49.236 V6=2400:7fc0:8d8f:5000::10
 amazon12.ring.nlnog.net OWNER=amazon V4=52.66.68.56 V6=2406:da1a:1b5:8d00::12
+amazon05.ring.nlnog.net OWNER=amazon V4=52.10.159.54 V6=2600:1f14:f57:e200::5
 amazon09.ring.nlnog.net OWNER=amazon V4=35.158.153.153 V6=2a05:d014:85b:7600::9
 amazon13.ring.nlnog.net OWNER=amazon V4=35.182.42.245 V6=2600:1f11:2d1:6d00::13
 amazon14.ring.nlnog.net OWNER=amazon V4=35.176.195.43 V6=2a05:d01c:dfb:ff00::14
@@ -1188,7 +1197,6 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 [onet]
 
 [msu]
-msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 
 [robtex]
 
