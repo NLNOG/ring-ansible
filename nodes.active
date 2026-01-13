@@ -276,6 +276,7 @@ linode26.ring.nlnog.net OWNER=linode V4=172.236.1.116 V6=2600:3c13::f03c:95ff:fe
 linode27.ring.nlnog.net OWNER=linode V4=172.236.156.20 V6=2600:3c15::f03c:95ff:fec4:c456
 linode28.ring.nlnog.net OWNER=linode V4=172.236.192.153 V6=2600:3c17::f03c:95ff:fe70:3485
 linode29.ring.nlnog.net OWNER=linode V4=172.237.11.65 V6=2600:3c18::f03c:95ff:fe18:f48a
+linode30.ring.nlnog.net OWNER=linode V4=172.239.28.49 V6=2600:3c1a::2000:83ff:feaf:6716
 fusix01.ring.nlnog.net OWNER=fusix V4=185.52.236.36 V6=2a00:a7c0:1000:1304::1304
 exanetworks01.ring.nlnog.net OWNER=exanetworks V4=82.219.48.9 V6=2a02:b80:2:7:1::1
 altibox01.ring.nlnog.net OWNER=altibox V4=84.234.155.70 V6=2a01:798:0:30:84:234:155:70
@@ -1634,6 +1635,7 @@ linode26.ring.nlnog.net OWNER=linode V4=172.236.1.116 V6=2600:3c13::f03c:95ff:fe
 linode27.ring.nlnog.net OWNER=linode V4=172.236.156.20 V6=2600:3c15::f03c:95ff:fec4:c456
 linode28.ring.nlnog.net OWNER=linode V4=172.236.192.153 V6=2600:3c17::f03c:95ff:fe70:3485
 linode29.ring.nlnog.net OWNER=linode V4=172.237.11.65 V6=2600:3c18::f03c:95ff:fe18:f48a
+linode30.ring.nlnog.net OWNER=linode V4=172.239.28.49 V6=2600:3c1a::2000:83ff:feaf:6716
 
 [openimp]
 
