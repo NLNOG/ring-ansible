@@ -6633,3 +6633,11 @@ USERS:
     groups:
       - ring-users
 
+  ssmidge:
+    state: present
+    company: 'Ssmidge Technologies'
+    email: 'noc@as60900.net'
+    uid: 5850
+    groups:
+      - ring-users
+
