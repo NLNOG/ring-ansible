@@ -438,7 +438,6 @@ leitwerk01.ring.nlnog.net OWNER=leitwerk V4=217.28.97.8 V6=2a02:ba8:97:0:250:56f
 unixsolutions01.ring.nlnog.net OWNER=unixsolutions V4=185.111.204.122 V6=2a04:6480:204::122
 unixsolutions02.ring.nlnog.net OWNER=unixsolutions V4=109.68.162.234 V6=2a02:2a08:214::234
 wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
-xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
@@ -720,6 +719,7 @@ torena01.ring.nlnog.net OWNER=torena V4=88.216.146.63 V6=2001:4048:108:100::47
 geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
 cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
+ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
 
 [infranode]
 
@@ -2303,7 +2303,6 @@ unixsolutions02.ring.nlnog.net OWNER=unixsolutions V4=109.68.162.234 V6=2a02:2a0
 wdsix01.ring.nlnog.net OWNER=wdsix V4=217.148.160.201 V6=2001:15c8:0:1::201
 
 [xplose]
-xplose01.ring.nlnog.net OWNER=xplose V4=2.59.64.36 V6=2a09:e940:0:1000:0020:5906:4036:1
 
 [aanet]
 aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
@@ -3097,3 +3096,4 @@ midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
 cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
 
 [ssmidge]
+ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
