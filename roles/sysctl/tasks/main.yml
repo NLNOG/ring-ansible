@@ -1,13 +1,13 @@
 - name: "Disable use_tempaddr (all)"
   sysctl:
     name: net.ipv6.conf.all.use_tempaddr
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/10-ipv6-privacy.conf
 
 - name: "Disable use_tempaddr (default)"
   sysctl:
     name: net.ipv6.conf.default.use_tempaddr
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/10-ipv6-privacy.conf
 
 - name: "Enable unprivileged ICMP sockets"
@@ -23,62 +23,62 @@
 - name: "Enable accept_ra_rtr_pref"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_rtr_pref
-    value: 1
+    value: "1"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
   when: accept_ra_rtr_pref.stat.exists
 
 - name: "Disable accept_ra_pinfo"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_pinfo
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Enable accept_ra_defrtr"
   sysctl:
     name: net.ipv6.conf.default.accept_ra_defrtr
-    value: 1
+    value: "1"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (default)"
   sysctl:
     name: net.ipv6.conf.default.autoconf
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (primary)"
   sysctl:
     name: net.ipv6.conf.{{ ansible_default_ipv6.interface|default(ansible_default_ipv4.interface)|regex_replace('\.','/') }}.autoconf
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable autoconf (all)"
   sysctl:
     name: net.ipv6.conf.all.autoconf
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Disable dad_transmits"
   sysctl:
     name: net.ipv6.conf.default.dad_transmits
-    value: 0
+    value: "0"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "Set max_addresses"
   sysctl:
     name: net.ipv6.conf.default.max_addresses
-    value: 1
+    value: "1"
     sysctl_file: /etc/sysctl.d/30-ipv6.conf
 
 - name: "IP forwarding on container hosts"
   sysctl:
     name: net.ipv4.ip_forward
-    value: 1
+    value: "1"
     sysctl_file: /etc/sysctl.d/35-container-settings.conf
   when: inventory_hostname | regex_search('^container')
 
 - name: "IPv6 forwarding on container hosts"
   sysctl:
     name: net.ipv6.conf.all.forwarding
-    value: 1
+    value: "1"
     sysctl_file: /etc/sysctl.d/35-container-settings.conf
   when: inventory_hostname | regex_search('^container')
