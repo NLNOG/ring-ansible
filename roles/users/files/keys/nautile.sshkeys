@@ -1,4 +1,5 @@
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBvSPNtIEX4SbCEzZJJqXLSncluLGPbUXo22aSicZcAa "Nicolas Aupetit - NLNOG Ring Key 20171211 <nicolas.aupetit@nautile.sarl>"
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICOplkaVPmld5ghB42tPFOqTRtTOu9fK1B2oxuipLorS "Nicolas Aupetit - NLNOG Ring 2026.01.22 <nicolas.aupetit@nautile.sarl>"
 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGKQKr8I9Z2FO0e254bPPxcZxm2DFPduW7kyXUDpBfi1SYKnvSQG0kOtmEcyCw+ElM1lk+LmHfjIEqmyau18T0Y= "Valentin Ouvrard - valentin.ouvrard@nautile.sarl"
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICR6TRKKds7OWPDrjwGBSdu1591fw47Mrf8Nq0mDEcVU "Sasha Lefebvre - sasha.lefebvre@nautile.sarl - 2024-05-06"
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM7lTjNQtYXG542UrZFsZ6Dz5HHsCfalFr7IMwKD4Soi "Jean-Gabryel Chanier - jean-gabryel.chanier@nautile.sarl - 2024-12-18"
