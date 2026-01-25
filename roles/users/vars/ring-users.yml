@@ -6641,3 +6641,11 @@ USERS:
     groups:
       - ring-users
 
+  shadowinternet:
+    state: present
+    company: 'Shadow Internet Ltd'
+    email: 'noc@shadowinternet.ca'
+    uid: 5851
+    groups:
+      - ring-users
+

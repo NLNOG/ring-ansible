@@ -739,6 +739,7 @@ geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
 cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
+shadowninternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
 
 [infranode]
 container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
@@ -3151,3 +3152,6 @@ cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:
 
 [ssmidge]
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
+
+[shadowinternet]
+shadowninternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
