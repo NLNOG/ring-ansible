@@ -3217,7 +3217,7 @@ USERS:
       - ring-users
 
   connectria:
-    state: present
+    state: absent
     company: 'Connectria Hosting'
     email: 'olivenoc@connectria.com'
     uid: 5425
@@ -5914,7 +5914,7 @@ USERS:
       - ring-users
 
   macarne:
-    state: present
+    state: absent
     company: 'Macarne LLC'
     email: 'noc@macarne.com'
     uid: 5760
