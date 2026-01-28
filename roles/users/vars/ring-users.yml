@@ -4586,8 +4586,8 @@ USERS:
 
   xplose:
     state: present
-    company: 'X-plose BV'
-    email: 'abuse@X-plose.be'
+    company: 'Level27'
+    email: 'support@x-plose.be'
     uid: 5595
     groups:
       - ring-users
