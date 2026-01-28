@@ -6649,3 +6649,11 @@ USERS:
     groups:
       - ring-users
 
+  zeroservices:
+    state: present
+    company: 'Zero Services GmbH'
+    email: 'noc@zeroservices.eu'
+    uid: 5852
+    groups:
+      - ring-users
+

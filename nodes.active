@@ -3103,3 +3103,5 @@ ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::10
 
 [shadowinternet]
 shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
+
+[zeroservices]
