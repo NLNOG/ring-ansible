@@ -167,6 +167,7 @@ funet01.ring.nlnog.net OWNER=funet V4=193.166.255.250 V6=2001:708:0:b::2
 dcenterpl01.ring.nlnog.net OWNER=dcenterpl V4=213.5.10.55 V6=2a00:e800:10::55
 cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::1337
 hivane01.ring.nlnog.net OWNER=hivane V4=193.106.119.59 V6=2001:67c:1740:9008::59
+hivane02.ring.nlnog.net OWNER=hivane V4=193.200.43.215 V6=2001:67c:1740:a120::215
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
 viatel01.ring.nlnog.net OWNER=viatel V4=212.126.37.204 V6=2a01:258:2000:3::4
 viatel03.ring.nlnog.net OWNER=viatel V4=212.126.61.70 V6=2a01:8aa0:0:ffff:20c:29ff:fe3f:d8e7
@@ -1393,6 +1394,7 @@ cybercom01.ring.nlnog.net OWNER=cybercom V4=178.217.129.212 V6=2001:67c:224:13::
 
 [hivane]
 hivane01.ring.nlnog.net OWNER=hivane V4=193.106.119.59 V6=2001:67c:1740:9008::59
+hivane02.ring.nlnog.net OWNER=hivane V4=193.200.43.215 V6=2001:67c:1740:a120::215
 
 [fullsave]
 fullsave01.ring.nlnog.net OWNER=fullsave V4=141.0.202.201 V6=2a01:6600:10c0:808::1
