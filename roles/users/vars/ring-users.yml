@@ -928,7 +928,7 @@ USERS:
       - ring-users
 
   ipmax:
-    state: absent
+    state: present
     company: 'IP-Max'
     email: 'noc@ip-max.net'
     uid: 5136
