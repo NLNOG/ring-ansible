@@ -3827,7 +3827,7 @@ USERS:
   cyberfusion:
     state: present
     company: 'Cyberfusion'
-    email: 'wedwards@cyberfusion.nl'
+    email: 'foundation@cyberfusion.io'
     uid: 5501
     groups:
       - ring-users
