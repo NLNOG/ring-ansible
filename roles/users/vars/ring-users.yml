@@ -3761,7 +3761,7 @@ USERS:
       - ring-users
 
   unet:
-    state: present
+    state: absent
     company: 'UNET'
     email: 'noc@unet.nl'
     uid: 5493

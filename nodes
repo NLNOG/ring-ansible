@@ -368,7 +368,6 @@ retarus03.ring.nlnog.net OWNER=retarus V4=207.126.136.113 V6=2a02:7b02:2fff::3
 web2objects02.ring.nlnog.net OWNER=web2objects V4=167.160.44.65 V6=2602:ffd9:411:6::2
 itgate01.ring.nlnog.net OWNER=itgate V4=213.254.1.30 V6=2001:1418:8:200::30
 gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
-unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:5caf:67ff:fe2f:54e8
 mlab01.ring.nlnog.net OWNER=mlab V6=2a0e:a6c1:0:2100:87:237:165:30
 axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::d
@@ -2062,7 +2061,6 @@ gitoyen01.ring.nlnog.net OWNER=gitoyen V4=80.67.163.250 V6=2001:910:0:39::250
 [xenosite]
 
 [unet]
-unet01.ring.nlnog.net OWNER=unet V4=84.53.65.133 V6=2a02:120:4009::133
 
 [internetag]
 internetag01.ring.nlnog.net OWNER=internetag V4=195.34.174.109 V6=2a01:130:8495:1001:5caf:67ff:fe2f:54e8
