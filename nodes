@@ -566,6 +566,7 @@ x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
 scaleway02.ring.nlnog.net OWNER=scaleway V4=51.158.228.16 V6=2001:bc8:5008::a
 scaleway03.ring.nlnog.net OWNER=scaleway V4=151.115.68.32 V6=2001:bc8:1d08::9
+scaleway04.ring.nlnog.net OWNER=scaleway V4=151.115.165.215 V6=2001:bc8:4064:f2:dc00:ff:fe00:4235
 chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
 pentanet01.ring.nlnog.net OWNER=pentanet V4=121.200.47.99 V6=2400:ec40:11:1::99
 netone01.ring.nlnog.net OWNER=netone V4=195.95.177.5 V6=2001:67c:dec:195:95:177:5:a
@@ -2737,6 +2738,7 @@ x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
 scaleway02.ring.nlnog.net OWNER=scaleway V4=51.158.228.16 V6=2001:bc8:5008::a
 scaleway03.ring.nlnog.net OWNER=scaleway V4=151.115.68.32 V6=2001:bc8:1d08::9
+scaleway04.ring.nlnog.net OWNER=scaleway V4=151.115.165.215 V6=2001:bc8:4064:f2:dc00:ff:fe00:4235
 
 [chrisrogers]
 chrisrogers01.ring.nlnog.net OWNER=chrisrogers V4=207.2.124.7 V6=2602:fd10:1a::2
