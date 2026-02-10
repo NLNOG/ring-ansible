@@ -11,3 +11,15 @@ nftables:
     - name: bgp
       proto: tcp
       dport: 179
+
+LOCAL_USERS:
+  claudio:
+    state: present
+    company: "OpenBGPD"
+    email: claudio@openbsd.org
+    uid: 62001
+    shell: /bin/bash
+    groups:
+      - ring-admins
+    ssh-keys:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBkDwfit6DyAK1Df2lo4QnlGPB/nq13ne5VjvGgL8C/ cjeker@dramaqueen.zyd.ch"
