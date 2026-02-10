@@ -21,5 +21,5 @@ LOCAL_USERS:
     shell: /bin/bash
     groups:
       - ring-admins
-    ssh-keys:
+    sshkeys:
       - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBkDwfit6DyAK1Df2lo4QnlGPB/nq13ne5VjvGgL8C/ cjeker@dramaqueen.zyd.ch"
