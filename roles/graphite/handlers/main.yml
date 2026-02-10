@@ -1,2 +1,0 @@
-- name: reload carbon
-  service: name=apache2 state=reloaded enabled=yes

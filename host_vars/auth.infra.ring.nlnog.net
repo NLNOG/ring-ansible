@@ -10,13 +10,3 @@ LOCAL_USERS:
       - ring-admins
     sshkeys:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjxxSXKCK9WEKjTZYHB036n5D2GQ0kQLsIupt/vFw5R/4tnsTWm9ohCXSIeIWI7pX9r5qQZDWFk4ZV5om6Ieqda+bFhhGuq6fNjxDL3YWWWkHh76rv+iOuVstwaUY/Ryj3aq+fzg5cR0iBhwlhg51Z6LgvdaFybPADp78oDTtbZ2O+SfKfCLvSxTIdZSoY3eNvtgI4LDavluMhwLt4rgb0B7yNVolj4lzooh2m3FfTKZxc6CSpKrUmPkcjDDSOyIj/0z53n7NisOXDzvjVx6GNifwwD7aWIt9665+2OrXakkz8sq6CrUx6DSokSSHqaU4jXfvWT3N9Gk2zMEPg7Ak3 ringforger@dbmaster.infra.ring.nlnog.net"
-  graphite:
-    state: present
-    company: 'NLNOG Ring Admins'
-    email: ring-admins@nlnog.net
-    uid: 62002
-    shell: /bin/bash
-    groups:
-      - graphite
-    sshkeys:
-      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjqXw2ElesNjWq+ZbFwWXHYeak4nkpp1iBKtCyhh8wYseGfn0IuX8p/ZNCVsNABMCoQtJ0UfdzFReJds8bri5M+wHbgE4HS0WN63y7QjaNfjlogWFa2Q20waoeqKTLyityXsOwA4tbqU5PLRpCsJWdi+fUL9dH3k7sbSr4rF+JdgmgjlkdvlVlssywjF4VHdSbY8K5fzvGnm0EV+UAHir/SmoRV3nZ7m3gRw+lXjRUOxbAEaBXxC/ZufX9IdNgfIuui7hQV5ysJ/r+LWPyB/R7FGCk1zg6+JQvBilgCBV6RRRAdohSHQWrZTikjR2Dw27eaQq38SIfespEdOC+XAf7 graphite@compute02.infra.ring.nlnog.net"
