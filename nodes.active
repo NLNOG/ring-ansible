@@ -283,7 +283,6 @@ altibox01.ring.nlnog.net OWNER=altibox V4=84.234.155.70 V6=2a01:798:0:30:84:234:
 zitcom01.ring.nlnog.net OWNER=zitcom V4=94.231.110.110 V6=2a02:2338:ff00::705:1
 bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 mtwentyfourseven01.ring.nlnog.net OWNER=mtwentyfourseven V4=194.187.248.66 V6=2001:ac8:21::d0
 mtwentyfourseven03.ring.nlnog.net OWNER=mtwentyfourseven V4=85.204.124.159 V6=2a04:9dc0:0:22::c0
 nodesdirect01.ring.nlnog.net OWNER=nodesdirect V4=184.175.213.14 V6=2604:4600:1c10::155
@@ -482,7 +481,6 @@ flexential03.ring.nlnog.net OWNER=flexential V4=68.71.96.252 V6=2607:f758:d040:0
 flexential04.ring.nlnog.net OWNER=flexential V4=68.64.40.68 V6=2607:f758:1280:0:250:56ff:feb2:759b
 eqxmetal01.ring.nlnog.net OWNER=eqxmetal V4=86.109.8.105 V6=2604:1380:ffd1:e00::1
 vorboss01.ring.nlnog.net OWNER=vorboss V4=193.0.176.67 V6=2a00:e345:ee:ff::1000
-vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
 globallayer01.ring.nlnog.net OWNER=globallayer V4=185.23.214.242 V6=2a00:1678:2470:da7a::2
 globallayer02.ring.nlnog.net OWNER=globallayer V4=134.19.182.14 V6=2a00:1678:da7a:247::2
@@ -1677,7 +1675,6 @@ bytemark01.ring.nlnog.net OWNER=bytemark V4=5.28.62.9 V6=2001:41c9:1:41c::9
 sonic01.ring.nlnog.net OWNER=sonic V4=70.36.170.6 V6=2001:5a8:201:4::2
 
 [sabay]
-sabay01.ring.nlnog.net OWNER=sabay V4=118.67.200.190 V6=2405:aa00:aa00:604::2
 
 [coreinternet]
 
@@ -2458,7 +2455,6 @@ vorboss01.ring.nlnog.net OWNER=vorboss V4=193.0.176.67 V6=2a00:e345:ee:ff::1000
 [onit]
 
 [vmcity]
-vmcity01.ring.nlnog.net OWNER=vmcity V4=185.108.16.206 V6=2a06:0300:B:B::2
 
 [honeycomb]
 honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:356::130
