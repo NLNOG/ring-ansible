@@ -3107,3 +3107,5 @@ shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb
 
 [zeroservices]
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
+
+[aartsen]

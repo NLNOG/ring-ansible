@@ -6657,3 +6657,11 @@ USERS:
     groups:
       - ring-users
 
+  aartsen:
+    state: present
+    company: 'Aartsen Breda B.V.'
+    email: 'noc@aartsen.com'
+    uid: 5853
+    groups:
+      - ring-users
+
