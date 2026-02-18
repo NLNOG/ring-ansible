@@ -3109,3 +3109,5 @@ zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e4
 
 [aartsen]
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
+
+[pendc]

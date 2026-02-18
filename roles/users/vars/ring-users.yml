@@ -6665,3 +6665,11 @@ USERS:
     groups:
       - ring-users
 
+  pendc:
+    state: present
+    company: 'PENDC'
+    email: 'noc@pendc.com'
+    uid: 5854
+    groups:
+      - ring-users
+
