@@ -740,7 +740,7 @@ ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::10
 shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
-pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:2
+pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
 
 [infranode]
 container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
@@ -3162,4 +3162,4 @@ zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e4
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 
 [pendc]
-pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:2
+pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
