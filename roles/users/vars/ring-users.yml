@@ -1880,7 +1880,7 @@ USERS:
       - ring-users
 
   dcenterpl:
-    state: present
+    state: absent
     company: 'dcenter.pl sp. z o. o.'
     email: 'noc@dcenter.pl'
     uid: 5257
@@ -5058,7 +5058,7 @@ USERS:
       - ring-users
 
   massar:
-    state: present
+    state: absent
     company: 'Massars Network'
     email: 'noc@massars.net'
     uid: 5653
@@ -5322,7 +5322,7 @@ USERS:
       - ring-users
 
   layerswitch:
-    state: present
+    state: absent
     company: 'LayerSwitch, Inc.'
     email: 'ipnoc@layerswitch.com'
     uid: 5686
@@ -5970,7 +5970,7 @@ USERS:
       - ring-users
 
   hyehost:
-    state: present
+    state: absent
     company: 'HYEHOST LTD'
     email: 'noc@hyehost.org'
     uid: 5767
