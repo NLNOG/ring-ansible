@@ -425,8 +425,6 @@ cloudcix01.ring.nlnog.net OWNER=cloudcix V4=84.39.233.185 V6=2a02:2078:105:1337:
 synapsecom01.ring.nlnog.net OWNER=synapsecom V4=78.108.46.118 V6=2001:1548:8000:1::25
 synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1::27
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
-arvancloud01.ring.nlnog.net OWNER=arvancloud V4=188.121.119.49
-arvancloud02.ring.nlnog.net OWNER=arvancloud V4=37.152.178.22
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
 fibia01.ring.nlnog.net OWNER=fibia V4=80.71.82.106 V6=2a02:17c0:14::2
 npo01.ring.nlnog.net OWNER=npo V4=145.58.125.190 V6=2a02:458:200:339::be
@@ -562,7 +560,6 @@ funkfeuer01.ring.nlnog.net OWNER=funkfeuer V4=78.41.116.135 V6=2a02:60:1:500::13
 kpn01.ring.nlnog.net OWNER=kpn V4=62.12.6.12 V6=2a02:a407:e004:1::4
 shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
-sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
 sparkedhost02.ring.nlnog.net OWNER=sparkedhost V4=208.87.101.91 V6=2602:fa87:6:106::a
 sparkedhost03.ring.nlnog.net OWNER=sparkedhost V4=136.0.251.252 V6=2602:fa87:5:418::a
@@ -654,7 +651,6 @@ skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
-internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.143.10 V6=2a01:9aa0:5:13:f816:3eff:fee7:36d3
@@ -2264,8 +2260,6 @@ synapsecom02.ring.nlnog.net OWNER=synapsecom V4=46.227.58.30 V6=2001:1548:8000:1
 infotechna01.ring.nlnog.net OWNER=infotechna V4=62.77.130.253 V6=2a02:2950:3:62:77:130:253:1
 
 [arvancloud]
-arvancloud01.ring.nlnog.net OWNER=arvancloud V4=188.121.119.49
-arvancloud02.ring.nlnog.net OWNER=arvancloud V4=37.152.178.22
 
 [bogons]
 bogons01.ring.nlnog.net OWNER=bogons V4=93.186.40.202 V6=2001:4b10:1:3::10
@@ -2731,7 +2725,6 @@ shapiro01.ring.nlnog.net OWNER=shapiro V6=2a0a:6040:ba5e:3301::101
 trouble01.ring.nlnog.net OWNER=trouble V4=103.206.98.8 V6=2400:e760:100::8
 
 [sting]
-sting01.ring.nlnog.net OWNER=sting V6=2a05:dfc1:8502:121::7269:6e67
 
 [florisvdk]
 florisvdk01.ring.nlnog.net OWNER=florisvdk V4=193.150.106.14 V6=2a0a:b400::19
@@ -2933,7 +2926,6 @@ wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
 
 [internetty]
-internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 
 [vnv]
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
