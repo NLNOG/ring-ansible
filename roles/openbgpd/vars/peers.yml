@@ -114,6 +114,18 @@ lg_peers:
     asn: 553
     ipv4: 129.143.4.66
     ipv6: 2001:7c0::179:1
+  BGPHERO1:
+    asn: 214223
+    ipv6: 2a02:247a:207:b00b:1::1
+  BGPHERO2:
+    asn: 214223
+    ipv6: 2a02:247b:205:600:1::1
+  BGPHERO3:
+    asn: 214223
+    ipv6: 2a02:247b:205:600:1::1
+  BGPHERO4:
+    asn: 214223
+    ipv6: 2a00:da00:f203:d200:1::1
   BIT1:
     asn: 12859
     ipv4: 213.136.1.132
