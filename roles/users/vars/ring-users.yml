@@ -6673,3 +6673,11 @@ USERS:
     groups:
       - ring-users
 
+  elevate:
+    state: present
+    company: 'Elevate UK'
+    email: 'iparchitecture@elevate.uk'
+    uid: 5855
+    groups:
+      - ring-users
+
