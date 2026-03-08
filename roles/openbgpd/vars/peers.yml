@@ -177,6 +177,9 @@ lg_peers:
     asn: 19529
     ipv4: 207.2.125.0
     ipv6: '2602:fd10:20::'
+  CLNEXUS_UK:
+    asn: 214420
+    ipv6: '2a14:7580:9010::'
   CLOUDIE1:
     asn: 924
     ipv4: 185.121.168.42
