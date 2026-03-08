@@ -722,6 +722,7 @@ zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e4
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
 elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
+blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 
 [infranode]
 
@@ -3113,3 +3114,4 @@ pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
 elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 
 [blahaj]
+blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
