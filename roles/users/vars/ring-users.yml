@@ -6681,3 +6681,11 @@ USERS:
     groups:
       - ring-users
 
+  blahaj:
+    state: present
+    company: 'Blahaj Cloud'
+    email: 'noc@blahajcloud.net'
+    uid: 5856
+    groups:
+      - ring-users
+
