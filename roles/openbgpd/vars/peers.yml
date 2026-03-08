@@ -126,6 +126,10 @@ lg_peers:
     asn: 200995
     ipv4: 212.72.236.1
     ipv6: 2001:7bb:b1ba::1
+  BLAHAJ_FRA1:
+    asn: 34854
+    ipv4: 2.56.11.1
+    ipv6: 2a0c:6500:100::1
   BOUWHUIS1:
     asn: 202585
     ipv4: 185.244.24.1
