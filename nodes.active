@@ -107,7 +107,6 @@ nicchile01.ring.nlnog.net OWNER=nicchile V4=200.1.120.28 V6=2001:1398:3:120:200:
 glesys01.ring.nlnog.net OWNER=glesys V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
-one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -407,6 +406,7 @@ brennercom01.ring.nlnog.net OWNER=brennercom V4=37.186.150.70 V6=2a02:490:2100:5
 tnnet01.ring.nlnog.net OWNER=tnnet V4=89.236.103.78 V6=2001:40e8:31:3:89:236:103:78
 kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:56ff:fe98:f800
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
+denic01.ring.nlnog.net OWNER=denic V4=81.91.160.190 V6=2a02:568:100:100::5
 salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
 hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
@@ -1099,7 +1099,6 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 [openminds]
 
 [one]
-one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 
 [rediris]
 
@@ -2191,6 +2190,7 @@ kamoike01.ring.nlnog.net OWNER=kamoike V4=103.113.56.151 V6=2402:b7c0:0:210:250:
 celya01.ring.nlnog.net OWNER=celya V4=185.122.101.168 V6=2a06:a400:3::168
 
 [denic]
+denic01.ring.nlnog.net OWNER=denic V4=81.91.160.190 V6=2a02:568:100:100::5
 
 [daknob]
 
