@@ -6689,3 +6689,11 @@ USERS:
     groups:
       - ring-users
 
+  conova:
+    state: present
+    company: 'conova communications GmbH'
+    email: 'networksupport@conova.com'
+    uid: 5857
+    groups:
+      - ring-users
+
