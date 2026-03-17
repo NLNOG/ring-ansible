@@ -1010,7 +1010,7 @@ USERS:
   glesys:
     state: present
     company: 'GleSYS AB'
-    email: 'noc@glesys.se'
+    email: 'noc@glesys.com'
     uid: 5147
     groups:
       - ring-users
@@ -4497,7 +4497,7 @@ USERS:
       - ring-users
 
   ficolo:
-    state: present
+    state: absent
     company: 'Ficolo Oy'
     email: 'noc@ficolo.com'
     uid: 5584
