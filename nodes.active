@@ -225,6 +225,7 @@ dna01.ring.nlnog.net OWNER=dna V4=62.78.96.149 V6=2001:14b8:1000:1::c:100
 tdc01.ring.nlnog.net OWNER=tdc V4=193.162.154.27 V6=2001:6c8:2:800::27
 nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
+sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 utwente01.ring.nlnog.net OWNER=utwente V4=130.89.6.17 V6=2001:67c:2564:a115:250:56ff:fe89:6d65
 lwlcom01.ring.nlnog.net OWNER=lwlcom V4=31.209.92.227 V6=2a00:c380:1000:2::227
 ucsc01.ring.nlnog.net OWNER=ucsc V4=128.114.126.2 V6=2607:f5f0:103:2::2
@@ -369,7 +370,6 @@ axians01.ring.nlnog.net OWNER=axians V4=217.151.198.151 V6=2a03:c300:ffff:fffe::
 freethought01.ring.nlnog.net OWNER=freethought V4=176.74.17.69 V6=2a00:b980:2:4::399:9b5c
 cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:f5:185:233:174:12
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
-vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 gandi01.ring.nlnog.net OWNER=gandi V4=92.243.16.165 V6=2001:4b98:dc0:43:216:3eff:fe18:c91a
 gandi02.ring.nlnog.net OWNER=gandi V4=46.226.109.152 V6=2001:4b98:dc2:41:216:3eff:feca:f683
 ipbde01.ring.nlnog.net OWNER=ipbde V4=91.102.8.206 V6=2a02:f28:2:4::2
@@ -723,6 +723,8 @@ aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
 elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
+conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
+conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 
 [infranode]
 
@@ -1547,6 +1549,7 @@ nicbr01.ring.nlnog.net OWNER=nicbr V4=200.160.6.171 V6=2001:12ff:0:6172::171
 exnetworks01.ring.nlnog.net OWNER=exnetworks V4=46.30.8.23 V6=2a01:b000:5:1::a
 
 [sggs]
+sggs01.ring.nlnog.net OWNER=sggs V4=203.175.175.197 V6=2405:4200:100:10::197
 
 [peakten]
 
@@ -2053,7 +2056,6 @@ cyberfusion01.ring.nlnog.net OWNER=cyberfusion V4=185.233.174.12 V6=2a0c:eb00:0:
 comvive01.ring.nlnog.net OWNER=comvive V4=93.93.68.99 V6=2a00:1d70:1::68:69
 
 [vangulik]
-vangulik01.ring.nlnog.net OWNER=vangulik V4=193.135.150.59 V6=2001:678:298:2000::59
 
 [noack]
 
@@ -3117,3 +3119,5 @@ elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 
 [conova]
+conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
+conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
