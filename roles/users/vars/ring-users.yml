@@ -6697,3 +6697,11 @@ USERS:
     groups:
       - ring-users
 
+  altstack01:
+    state: present
+    company: 'AltStack'
+    email: 'noc@0x4f.eu'
+    uid: 5858
+    groups:
+      - ring-users
+
