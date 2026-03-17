@@ -743,6 +743,7 @@ elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
+altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
 
 [infranode]
 container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
@@ -3175,3 +3176,4 @@ conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 
 [altstack]
+altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
