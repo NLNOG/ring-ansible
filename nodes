@@ -3174,4 +3174,4 @@ blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 
-[altstack01]
+[altstack]
