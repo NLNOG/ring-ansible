@@ -108,6 +108,7 @@ glesys01.ring.nlnog.net OWNER=glesys V4=46.246.31.250 V6=2a00:1a28:0:4::1342
 glesys02.ring.nlnog.net OWNER=glesys V4=164.215.32.85 V6=2a03:e580:10::10
 rcsrds01.ring.nlnog.net OWNER=rcsrds V4=82.76.255.222 V6=2a02:2f0c:d000:26::2
 belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
+one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 heanet01.ring.nlnog.net OWNER=heanet V4=193.1.9.50 V6=2001:770:1c:1809::c101:932
 nlnetlabs01.ring.nlnog.net OWNER=nlnetlabs V6=2a04:b904::7
 ripe01.ring.nlnog.net OWNER=ripe V4=193.0.0.180 V6=2001:67c:2e8:3::c100:b4
@@ -676,6 +677,7 @@ buijsit01.ring.nlnog.net OWNER=buijsit V4=185.36.229.250 V6=2a07:cd40:1:1::229:2
 routingcafe01.ring.nlnog.net OWNER=routingcafe V4=185.134.191.66 V6=2a14:14c0:1::ff05
 perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
+netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
 hopus01.ring.nlnog.net OWNER=hopus V4=185.97.141.7 V6=2a02:e58:2::7
 medianet01.ring.nlnog.net OWNER=medianet V4=213.157.6.2 V6=2a02:b98:0:107::fefe
@@ -1103,6 +1105,7 @@ belwue01.ring.nlnog.net OWNER=belwue V4=129.143.77.1 V6=2001:7c0:0:77::1
 [openminds]
 
 [one]
+one01.ring.nlnog.net OWNER=one V4=46.30.209.1 V6=2a02:2350:1:1201::1
 
 [rediris]
 
@@ -2999,6 +3002,7 @@ perke01.ring.nlnog.net OWNER=perke V6=2a09:ab81::8a
 digitalspace01.ring.nlnog.net OWNER=digitalspace V4=62.121.13.4 V6=2001:40a0:41:1000::4
 
 [netalis]
+netalis01.ring.nlnog.net OWNER=netalis V4=45.81.208.169 V6=2a06:6802:2002:3::7
 
 [atlasedge]
 atlasedge01.ring.nlnog.net OWNER=atlasedge V4=80.66.100.3 V6=2a0a:8ec0:4000:ffff::1
