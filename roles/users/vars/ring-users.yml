@@ -3697,7 +3697,7 @@ USERS:
       - ring-users
 
   web2objects:
-    state: present
+    state: absent
     company: 'web2objects GmbH'
     email: 'support@web2objects.com'
     uid: 5485
