@@ -4802,8 +4802,8 @@ USERS:
 
   itrelation:
     state: present
-    company: 'IT Relation A/S'
-    email: 'drift@itrelation.dk'
+    company: 'ITM8'
+    email: 'ipstaff@itm8.com'
     uid: 5622
     groups:
       - ring-users
