@@ -56,7 +56,6 @@ amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
 amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
 amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
-amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
@@ -416,7 +415,6 @@ freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:10
 atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
-milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
 neptune01.ring.nlnog.net OWNER=neptune V4=23.157.160.133 V6=2602:fe2e:1:a:42:82ff:fec4:401d
 prodigi01.ring.nlnog.net OWNER=prodigi V4=103.130.69.35 V6=2403:b4c0:9000:101::35
@@ -631,6 +629,8 @@ edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ff
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
+v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
@@ -911,7 +911,6 @@ amazon16.ring.nlnog.net OWNER=amazon V4=13.208.116.113 V6=2406:da16:27d:6100::16
 amazon18.ring.nlnog.net OWNER=amazon V4=15.236.111.211 V6=2a05:d012:97b:fb00::18
 amazon19.ring.nlnog.net OWNER=amazon V4=13.49.16.77 V6=2a05:d016:4e7:cc00::19
 amazon20.ring.nlnog.net OWNER=amazon V4=18.163.52.229 V6=2406:da1e:297:b300::20
-amazon21.ring.nlnog.net OWNER=amazon V4=157.175.30.70 V6=2a05:d01e:bc9:3400::21
 amazon22.ring.nlnog.net OWNER=amazon V4=70.224.199.231 V6=2600:1f1f:92d:8100::22
 amazon23.ring.nlnog.net OWNER=amazon V4=13.244.55.174 V6=2406:da11:e0a:6700::23
 amazon04.ring.nlnog.net OWNER=amazon V4=13.113.70.195 V6=2406:da14:c3a:4400::4
@@ -2223,7 +2222,6 @@ gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 [netshelter]
 
 [milkywan]
-milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
 
 [isc]
 isc01.ring.nlnog.net OWNER=isc V4=192.158.252.18 V6=2001:4f8:ffff::18
@@ -2876,6 +2874,8 @@ brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 
 [v4less]
+v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 
 [shift]
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
