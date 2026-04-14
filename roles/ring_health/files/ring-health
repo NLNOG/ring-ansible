@@ -299,7 +299,14 @@ def check_ipv4_gw():
         # Unnumbered gateway
         if route_vars[1] == 'dev':
             return True
-        gw = route_vars[2]
+        # Explicit IPv6 next-hop
+        if ':' in line:
+            gw = route_vars[3]
+            # Check for ll gw (needs Interface spec)
+            if gw.startswith('fe'):
+                gw = "{gw}%{intf}".format(gw=gw, intf=route_vars[-1])
+        else:
+            gw = route_vars[2]
         ping_result = subprocess.run(['ping', '-c', '3', gw],
                                      stdout=subprocess.PIPE)
         if ping_result.returncode == 0:
