@@ -626,7 +626,10 @@ edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ff
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
+v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
+v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
@@ -709,7 +712,6 @@ geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
 cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
-shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
@@ -717,7 +719,6 @@ elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
-altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
 
 [infranode]
 
@@ -2867,7 +2868,10 @@ brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 
 [v4less]
+v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
+v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 
 [shift]
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
@@ -3086,7 +3090,6 @@ cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
 
 [shadowinternet]
-shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
 
 [zeroservices]
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
@@ -3108,4 +3111,3 @@ conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 
 [altstack]
-altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
