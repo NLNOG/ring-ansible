@@ -543,6 +543,7 @@ ipng01.ring.nlnog.net OWNER=ipng V4=194.1.163.146 V6=2001:678:d78:7::146
 tin01.ring.nlnog.net OWNER=tin V4=188.117.58.137 V6=2001:1bc8:200:f::2
 equest01.ring.nlnog.net OWNER=equest V4=193.33.134.104 V6=2a00:5140:dc26:8000:0:4:2707:1
 fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103:90:238:6
+infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
 scaleway01.ring.nlnog.net OWNER=scaleway V4=51.159.51.164 V6=2001:bc8:1008:800::9
 scaleway02.ring.nlnog.net OWNER=scaleway V4=51.158.228.16 V6=2001:bc8:5008::a
@@ -720,6 +721,7 @@ elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
+altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
 
 [infranode]
 
@@ -2676,6 +2678,7 @@ fastjet01.ring.nlnog.net OWNER=fastjet V4=103.90.238.6 V6=2001:df1:2900:4120:103
 [alizer]
 
 [infracom]
+infracom01.ring.nlnog.net OWNER=infracom V4=89.189.198.14 V6=2a02:760:1000:f::2
 
 [x2com]
 x2com01.ring.nlnog.net OWNER=x2com V4=185.187.101.66 V6=2a0a:47c0::5
@@ -3113,3 +3116,4 @@ conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 
 [altstack]
+altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
