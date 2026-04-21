@@ -597,6 +597,7 @@ sys36net01.ring.nlnog.net OWNER=sys36net V4=23.148.232.29 V6=2602:fa9b:100:1:423
 s5b01.ring.nlnog.net OWNER=s5b V6=2a13:fc80:e000:1001:387f:96ff:fe23:ffaa
 s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::2
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
+bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
 mciu01.ring.nlnog.net OWNER=mciu V4=216.162.82.254 V6=2607:6b40:2001::2
 cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
@@ -648,6 +649,7 @@ skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
 skhron02.ring.nlnog.net OWNER=skhron V4=185.195.236.73 V6=2a09:b280:fe01:3d::a
 wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
+internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
 stocade01.ring.nlnog.net OWNER=stocade V6=2a0a:6044:b304::2b
 cloudferro01.ring.nlnog.net OWNER=cloudferro V4=64.225.143.10 V6=2a01:9aa0:5:13:f816:3eff:fee7:36d3
@@ -2780,6 +2782,7 @@ s1networks01.ring.nlnog.net OWNER=s1networks V4=45.8.131.126 V6=2a03:6f40:0:1f::
 
 [bouwhuis]
 bouwhuis01.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.45 V6=2001:678:d64:564d::7269:6e67
+bouwhuis02.ring.nlnog.net OWNER=bouwhuis V4=185.244.24.71 V6=2001:678:d64:555::71
 
 [as8net]
 as8net01.ring.nlnog.net OWNER=as8net V4=45.129.167.190 V6=2a13:40:3062:0:be24:11ff:fee7:b441
@@ -2925,6 +2928,7 @@ wavex01.ring.nlnog.net OWNER=wavex V4=102.217.156.84 V6=2c0f:6300:100:16::2
 kantonzug01.ring.nlnog.net OWNER=kantonzug V4=193.134.29.87 V6=2a10:8247:0:1013::87
 
 [internetty]
+internetty01.ring.nlnog.net OWNER=internetty V4=194.55.157.203 V6=2a0e:2e80::1004
 
 [vnv]
 vnv01.ring.nlnog.net OWNER=vnv V4=185.188.199.42 V6=2a0b:d080:2300:49::42
