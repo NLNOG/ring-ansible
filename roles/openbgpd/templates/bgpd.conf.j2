@@ -3,11 +3,13 @@ AS 199036
 socket "/var/run/bgpd.rsock.0" restricted
 
 fib-update no
+rde rib no-best no evaluate
 reject as-set no
 
 rtr 127.0.0.1
 
 group "peers" {
+    rib no-best
     multihop 255
     export none
     role customer
@@ -29,6 +31,7 @@ group "peers" {
 }
 
 group "readonly_peers" {
+    rib no-best
     multihop 255
     #announce add-path send all
 
@@ -49,6 +52,7 @@ group "readonly_peers" {
 }
 
 group "aspa_test" {
+    rib no-best
     multihop 255
     #announce add-path send best plus 2
     remote-as 15562
