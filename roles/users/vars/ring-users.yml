@@ -56,7 +56,7 @@ USERS:
       - ring-users
 
   cambrium:
-    state: present
+    state: absent
     company: 'Cambrium'
     email: 'noc@cambrium.nl'
     uid: 5007
@@ -4153,7 +4153,7 @@ USERS:
       - ring-users
 
   xtom:
-    state: present
+    state: absent
     company: 'xTom'
     email: 'noc@xtom.com'
     uid: 5542
