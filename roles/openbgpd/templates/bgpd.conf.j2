@@ -48,6 +48,14 @@ group "readonly_peers" {
 {% endfor %}
 }
 
+group "readonly_add" {
+    multihop 255
+    announce add-path send all
+    remote-as 57984
+    neighbor 91.207.120.39
+    neighbor 2a0b:2f07:abcd:234::39
+}
+
 group "aspa_test" {
     multihop 255
     #announce add-path send best plus 2
@@ -64,6 +72,10 @@ deny to group peers
 # send everything to firehose peers, accept nothing
 deny from group readonly_peers
 allow to group readonly_peers
+
+# send everything, accept nothing
+deny from group readonly_add
+allow to group readonly_add
 
 # # send to ASPA testbed
 deny from group aspa_test

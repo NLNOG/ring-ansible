@@ -858,10 +858,6 @@ readonly_peers:
     asn: 41955
     ipv4: 185.199.217.227
     ipv6: 2a0a:a3c0:0:d2ca::217:227
-  XINDI_RC0:
-    asn: 57984
-    ipv4: 91.207.120.39
-    ipv6: 2a0b:2f07:abcd:234::39
   BASED_RC0THTP:
     asn: 21991
     ipv4: 198.8.59.40
