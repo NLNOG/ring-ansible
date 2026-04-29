@@ -168,3 +168,11 @@
     owner=root
     group=root
     mode=0755
+
+- name: "Blacklist kernel modules"
+  copy:
+    src=blacklist-ring.conf
+    dest=/etc/modprobe.d/blacklist-ring.conf
+    owner=root
+    group=root
+    mode=0644
