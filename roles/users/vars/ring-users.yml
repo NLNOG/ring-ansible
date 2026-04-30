@@ -5714,7 +5714,7 @@ USERS:
       - ring-users
 
   accenture:
-    state: present
+    state: absent
     company: 'Accenture BV'
     email: 'noc@cie.ac'
     uid: 5735
