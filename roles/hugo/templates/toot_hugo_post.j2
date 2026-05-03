@@ -13,21 +13,9 @@ WEBROOT = "/var/www"
 HUGOCONF = "config.toml"
 
 # Mastodon settings
-ACCOUNT_NAME = "nlnogring"
-ACCOUNT_EMAIL = "ring-admins@nlnog.net"
-ACCOUNT_PASSWORD = "{{ mastodon_password }}"
-TIMELINE_LOOKBACK=100
-MSTDN_CLIENT_ID="{{ mastodon_client_id }}"
-MSTDN_SECRET="{{ mastodon_secret }}"
 MSTDN_SERVER = "https://mastodon.nl"
-# Register your app! This only needs to be done once (per server, or when
-# distributing rather than hosting an application, most likely per device and server).
-# Uncomment the code and substitute in your information:
-# Mastodon.create_app(
-#     ACCOUNT_NAME,
-#     api_base_url = MSTDN_SERVER,
-#     to_file = 'mastodon.secret'
-# )
+MSTDN_ACCESS_TOKEN = "{{ mastodon_token }}"
+TIMELINE_LOOKBACK=100
 
 # Misc settings
 DEBUGFILE = "/tmp/toot_hugo_posts.log"
@@ -74,12 +62,10 @@ def h_parse_post(pathname):
 # Login on Mastodon
 def m_login():
     try:
-        mastodon = Mastodon(client_id=MSTDN_CLIENT_ID,
-                            client_secret=MSTDN_SECRET,
-                            api_base_url=MSTDN_SERVER,
-                            user_agent=ACCOUNT_NAME)
-        mastodon.log_in(ACCOUNT_EMAIL,ACCOUNT_PASSWORD)
-    except:
+        mastodon = Mastodon(api_base_url=MSTDN_SERVER,
+                            access_token=MSTDN_ACCESS_TOKEN)
+    except Exception as e:
+        sys.stderr.write(f"{e}\n")
         return False
     return mastodon
 
