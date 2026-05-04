@@ -6140,7 +6140,7 @@ USERS:
   luje:
     state: present
     company: 'LUJE.net'
-    email: 'hostmaster@luje.net'
+    email: 'noc@luje.net'
     uid: 5788
     groups:
       - ring-users
