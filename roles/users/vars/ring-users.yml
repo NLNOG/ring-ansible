@@ -6705,3 +6705,11 @@ USERS:
     groups:
       - ring-users
 
+  gdregistry:
+    state: present
+    company: 'GoDaddy Registry'
+    email: 'spnotices@registry.godaddy'
+    uid: 5859
+    groups:
+      - ring-users
+
