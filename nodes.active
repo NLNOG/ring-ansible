@@ -153,6 +153,7 @@ atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980
 itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc6:3100:0000:185:5:202:122
+goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 nonattached01.ring.nlnog.net OWNER=nonattached V4=193.160.39.24 V6=2001:67c:26f4:16::24
 suomi01.ring.nlnog.net OWNER=suomi V4=217.119.42.194 V6=2a00:1190:0:1003::2
 maxitel01.ring.nlnog.net OWNER=maxitel V4=185.29.203.222 V6=2a04:4341:1:1::2
@@ -723,6 +724,7 @@ blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
+gdregistry01.ring.nlnog.net OWNER=gdregistry V4=68.178.160.58 V6=2407:1c00:6100:6d50::
 
 [infranode]
 
@@ -1319,6 +1321,7 @@ sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc6:3100:0000:185:5
 [amsio]
 
 [goscomb]
+goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
 
 [kinber]
 
@@ -3121,3 +3124,4 @@ conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
 altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000::219
 
 [gdregistry]
+gdregistry01.ring.nlnog.net OWNER=gdregistry V4=68.178.160.58 V6=2407:1c00:6100:6d50::
