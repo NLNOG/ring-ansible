@@ -6713,3 +6713,11 @@ USERS:
     groups:
       - ring-users
 
+  kaashosting:
+    state: present
+    company: 'KaasHosting'
+    email: 'noc@kaashosting.nl'
+    uid: 5860
+    groups:
+      - ring-users
+
