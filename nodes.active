@@ -727,6 +727,7 @@ altstack01.ring.nlnog.net OWNER=altstack V4=185.104.131.219 V6=2001:67c:f54:3000
 gdregistry01.ring.nlnog.net OWNER=gdregistry V4=68.178.160.58 V6=2407:1c00:6100:6d50::
 gdregistry02.ring.nlnog.net OWNER=gdregistry V4=37.148.204.85 V6=2a00:1169:111:9d70::
 gdregistry03.ring.nlnog.net OWNER=gdregistry V4=132.148.73.105 V6=2603:3:6102:490::
+kaashosting01.ring.nlnog.net OWNER=kaashosting V4=93.190.187.41 V6=2a10:92c0:1:0:f816:3eff:fe05:cdf8
 
 [infranode]
 
@@ -3131,3 +3132,4 @@ gdregistry02.ring.nlnog.net OWNER=gdregistry V4=37.148.204.85 V6=2a00:1169:111:9
 gdregistry03.ring.nlnog.net OWNER=gdregistry V4=132.148.73.105 V6=2603:3:6102:490::
 
 [kaashosting]
+kaashosting01.ring.nlnog.net OWNER=kaashosting V4=93.190.187.41 V6=2a10:92c0:1:0:f816:3eff:fe05:cdf8
