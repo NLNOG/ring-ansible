@@ -2440,7 +2440,7 @@ USERS:
       - ring-users
 
   transtelco:
-    state: present
+    state: absent
     company: 'Transtelco'
     email: 'noc@flo.net'
     uid: 5327
@@ -2680,7 +2680,7 @@ USERS:
       - ring-users
 
   sabay:
-    state: present
+    state: absent
     company: 'Sabay Digital Corporation'
     email: 'engineering.kh@sabay.com'
     uid: 5358
@@ -5010,7 +5010,7 @@ USERS:
       - ring-users
 
   vmcity:
-    state: present
+    state: absent
     company: 'VMCity'
     email: 'noc@vmcity.ru'
     uid: 5647
