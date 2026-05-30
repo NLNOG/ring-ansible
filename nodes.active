@@ -730,6 +730,7 @@ gdregistry01.ring.nlnog.net OWNER=gdregistry V4=68.178.160.58 V6=2407:1c00:6100:
 gdregistry02.ring.nlnog.net OWNER=gdregistry V4=37.148.204.85 V6=2a00:1169:111:9d70::
 gdregistry03.ring.nlnog.net OWNER=gdregistry V4=132.148.73.105 V6=2603:3:6102:490::
 kaashosting01.ring.nlnog.net OWNER=kaashosting V4=93.190.187.41 V6=2a10:92c0:1:0:f816:3eff:fe05:cdf8
+xcobean01.ring.nlnog.net OWNER=xcobean V4=102.212.230.39 V6=2c0f:4140:0:10ff:1:3ff:fe51:19
 
 [infranode]
 
@@ -3139,3 +3140,4 @@ gdregistry03.ring.nlnog.net OWNER=gdregistry V4=132.148.73.105 V6=2603:3:6102:49
 kaashosting01.ring.nlnog.net OWNER=kaashosting V4=93.190.187.41 V6=2a10:92c0:1:0:f816:3eff:fe05:cdf8
 
 [xcobean]
+xcobean01.ring.nlnog.net OWNER=xcobean V4=102.212.230.39 V6=2c0f:4140:0:10ff:1:3ff:fe51:19
