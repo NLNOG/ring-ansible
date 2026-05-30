@@ -118,6 +118,7 @@ cdw02.ring.nlnog.net OWNER=cdw V4=64.73.80.140 V6=2607:FEE0:A001:d::10
 cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
+beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.195.18 V6=2607:f0c8:103::1
 dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
@@ -607,7 +608,6 @@ cbws01.ring.nlnog.net OWNER=cbws V4=185.142.141.162 V6=2a0b:b602:1005::1ac
 newvm01.ring.nlnog.net OWNER=newvm V4=89.31.57.159 V6=2a05:52a0:66:399f::1
 fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:501::26
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
-dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
@@ -722,7 +722,6 @@ shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
 aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
-elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
 conova01.ring.nlnog.net OWNER=conova V4=195.192.208.29 V6=2a02:16a8:dd:3::dea
 conova02.ring.nlnog.net OWNER=conova V4=195.192.208.28 V6=2a02:16a8:dd:3::de0
@@ -1162,6 +1161,7 @@ rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 
 [beanfield]
+beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.195.18 V6=2607:f0c8:103::1
 
 [serioustubes]
 
@@ -2811,7 +2811,6 @@ fibertelecom01.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.26 V6=2a03:b020:0:5
 fibertelecom02.ring.nlnog.net OWNER=fibertelecom V4=93.94.94.27 V6=2a03:b020:0:501::27
 
 [dscw]
-dscw01.ring.nlnog.net OWNER=dscw V4=91.206.229.136 V6=2a09:5ec0:999::136
 
 [oranjekoek]
 oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=93.114.180.228 V6=2a10:e300:8411:0:185:219:6:254
@@ -3120,7 +3119,6 @@ aartsen01.ring.nlnog.net OWNER=aartsen V4=158.94.174.11 V6=2001:67c:a0:8401::9
 pendc01.ring.nlnog.net OWNER=pendc V4=62.106.94.8 V6=2a0c:6d40:1:1:1:1:2:8
 
 [elevate]
-elevate01.ring.nlnog.net OWNER=elevate V4=109.224.251.236 V6=2a06:e40:81::1:4
 
 [blahaj]
 blahaj01.ring.nlnog.net OWNER=blahaj V4=2.56.11.25 V6=2a0c:6500:100::25
