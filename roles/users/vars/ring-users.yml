@@ -6721,3 +6721,11 @@ USERS:
     groups:
       - ring-users
 
+  excobean:
+    state: present
+    company: 'Xcobean Systems Limited'
+    email: 'noc@xcobean.com'
+    uid: 5861
+    groups:
+      - ring-users
+
