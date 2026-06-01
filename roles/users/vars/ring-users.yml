@@ -6729,3 +6729,11 @@ USERS:
     groups:
       - ring-users
 
+  zappie:
+    state: present
+    company: 'Zappie Host LLC'
+    email: 'admin@zappiehost.com'
+    uid: 5862
+    groups:
+      - ring-users
+
