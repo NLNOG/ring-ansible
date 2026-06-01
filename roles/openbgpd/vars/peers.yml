@@ -861,6 +861,10 @@ lg_peers:
     asn: 24961
     ipv4: 62.141.32.66
     ipv6: 2001:4ba0:0:3::2
+  ZAPPIE-NZ-1:
+    asn: 61138
+    ipv4: 14.1.54.38
+    ipv6: 2401:7000:0:a6::2
 readonly_peers:
   SERNET2:
     asn: 41955
