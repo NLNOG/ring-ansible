@@ -384,7 +384,7 @@ USERS:
       - ring-users
 
   apnic:
-    state: present
+    state: absent
     company: 'APNIC'
     email: 'noc-notify@apnic.net'
     uid: 5057
