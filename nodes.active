@@ -118,7 +118,6 @@ cdw03.ring.nlnog.net OWNER=cdw V4=64.73.64.140 V6=2607:FEE0:2001:d::10
 rnp01.ring.nlnog.net OWNER=rnp V4=200.133.192.67 V6=2001:12f0:500:1dc::1916:12
 iij01.ring.nlnog.net OWNER=iij V4=202.32.157.84 V6=2001:240:10c:5:0:69:696a:3031
 beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.195.18 V6=2607:f0c8:103::1
-dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
@@ -634,10 +633,6 @@ edgeconnect01.ring.nlnog.net OWNER=edgeconnect V4=41.223.244.135 V6=2c0f:f178:ff
 ztvi01.ring.nlnog.net OWNER=ztvi V4=203.23.166.40 V6=2602:fc59:21:1::9
 brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
-v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
-v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
-v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
-v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
@@ -693,7 +688,6 @@ angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041
 angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
 angolacables03.ring.nlnog.net OWNER=angolacables V4=170.238.232.88 V6=2804:3674:0:6::88
 angolacables04.ring.nlnog.net OWNER=angolacables V4=185.148.112.151 V6=2a07:6041:0:2056::151
-angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2:4::26
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
@@ -1172,7 +1166,6 @@ beanfield01.ring.nlnog.net OWNER=beanfield V4=66.207.195.18 V6=2607:f0c8:103::1
 [direcpath]
 
 [dcsone]
-dcsone01.ring.nlnog.net OWNER=dcsone V4=203.123.48.14 V6=2405:fc00::a001
 
 [berkeley]
 
@@ -2892,10 +2885,6 @@ brouns01.ring.nlnog.net OWNER=brouns V4=103.147.153.163 V6=2001:67c:e3c:300::3
 tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 
 [v4less]
-v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
-v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
-v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
-v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 
 [shift]
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
@@ -3049,7 +3038,6 @@ angolacables01.ring.nlnog.net OWNER=angolacables V4=185.148.112.233 V6=2a07:6041
 angolacables02.ring.nlnog.net OWNER=angolacables V4=102.130.67.124 V6=2804:3674::400:212
 angolacables03.ring.nlnog.net OWNER=angolacables V4=170.238.232.88 V6=2804:3674:0:6::88
 angolacables04.ring.nlnog.net OWNER=angolacables V4=185.148.112.151 V6=2a07:6041:0:2056::151
-angolacables05.ring.nlnog.net OWNER=angolacables V4=102.130.67.26 V6=2c0f:f828:2:4::26
 angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674::400:316
 angolacables07.ring.nlnog.net OWNER=angolacables V4=185.148.115.26 V6=2a07:6041:0:3009:185:148:115:26
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
