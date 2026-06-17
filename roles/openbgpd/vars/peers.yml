@@ -846,10 +846,14 @@ lg_peers:
     asn: 3214
     ipv4: 185.255.55.19
     ipv6: 2a0c:59c0::19
-  XYPHENIT_CE_AMS:
+  XYPHENIT_NKH:
     asn: 211588
-    ipv4: 45.83.205.255
-    ipv6: 2a07:e345::255
+    ipv4: 45.83.205.253
+    ipv6: 2a0f:ff40::253
+  XYPHENIT_NTC:
+    asn: 211588
+    ipv4: 45.83.205.252
+    ipv6: 2a0f:ff40::252
   YOURORG_ORD1:
     asn: 19255
     ipv4: 163.237.247.99
