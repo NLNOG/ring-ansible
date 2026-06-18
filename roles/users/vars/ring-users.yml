@@ -6737,3 +6737,11 @@ USERS:
     groups:
       - ring-users
 
+  flume:
+    state: present
+    company: 'Flume Internet'
+    email: 'netops@flumeinternet.com'
+    uid: 5863
+    groups:
+      - ring-users
+
