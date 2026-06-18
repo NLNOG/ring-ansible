@@ -125,6 +125,7 @@ poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
+msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
 vancis01.ring.nlnog.net OWNER=vancis V4=85.90.94.148 V6=2001:4d60:10:1200::4
 es01.ring.nlnog.net OWNER=es V4=198.129.33.90 V6=2001:400:201:8000::2
@@ -707,6 +708,7 @@ netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
+virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
 exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
@@ -1207,6 +1209,7 @@ icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 [onet]
 
 [msu]
+msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 
 [robtex]
 
@@ -3081,6 +3084,7 @@ lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 
 [virtnet]
+virtnet01.ring.nlnog.net OWNER=virtnet V6=2a0b:4e07:8:1::1:7
 
 [lehmann]
 lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
