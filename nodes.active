@@ -3153,3 +3153,5 @@ zappie01.ring.nlnog.net OWNER=zappie V4=103.208.86.19 V6=2a06:1280:f0b1::2
 
 [flume]
 flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
+
+[sdnbros]

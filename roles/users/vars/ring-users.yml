@@ -6745,3 +6745,11 @@ USERS:
     groups:
       - ring-users
 
+  sdnbros:
+    state: present
+    company: 'SDNBROS'
+    email: 'anton@sdnbros.com'
+    uid: 5864
+    groups:
+      - ring-users
+
