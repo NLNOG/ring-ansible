@@ -409,6 +409,9 @@ lg_peers:
     asn: 8758
     ipv4: 212.25.27.56
     ipv6: 2001:8e0:ffff::56
+  JSMSR_JP1:
+    asn: 12198
+    ipv6: 2602:f919:931::1
   KAPSI1:
     asn: 57692
     ipv4: 91.232.154.62
