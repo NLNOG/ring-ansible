@@ -330,6 +330,7 @@ liteserver01.ring.nlnog.net OWNER=liteserver V4=5.2.79.223 V6=2a04:52c0:101:8e0:
 kampde01.ring.nlnog.net OWNER=kampde V4=82.141.39.25 V6=2a02:248:2:308a:5054:ff:fe80:a9
 ebox01.ring.nlnog.net OWNER=ebox V4=96.127.255.91 V6=2606:6d00:0:99::eb0a
 ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
+grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
 protectedca01.ring.nlnog.net OWNER=protectedca V4=205.173.255.242 V6=2607:4480:2:1:205:173:255:242
 casablanca01.ring.nlnog.net OWNER=casablanca V4=109.123.197.83 V6=2001:1528:1:2100:250:56ff:fea1:1b69
@@ -444,7 +445,6 @@ openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:201
 natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
-ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
 homenoc01.ring.nlnog.net OWNER=homenoc V4=103.202.216.11 V6=2403:bd80:c000::11
 securebit01.ring.nlnog.net OWNER=securebit V4=45.136.139.248 V6=2a09:4c0:100:2d88::8bf8
@@ -1889,6 +1889,7 @@ ebox02.ring.nlnog.net OWNER=ebox V4=67.221.48.38 V6=2606:6d00:0:302::2
 [elvisru]
 
 [grifon]
+grifon01.ring.nlnog.net OWNER=grifon V4=89.234.186.121 V6=2a00:5884:8204::1
 
 [feldsam]
 feldsam01.ring.nlnog.net OWNER=feldsam V4=185.174.170.115 V6=2a0b:a901::b9ff:feae:aa73
@@ -2349,7 +2350,6 @@ deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 
 [ericnet]
-ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
 
 [swisscenter]
 swisscenter01.ring.nlnog.net OWNER=swisscenter V4=94.103.96.97 V6=2a00:a500:0:93::97
