@@ -475,6 +475,10 @@ lg_peers:
     asn: 212855
     ipv4: 93.157.140.255
     ipv6: 2001:67c:f8c::255
+  MARLONALKAN-AS:
+    asn: 215665
+    ipv4: 93.114.181.53
+    ipv6: 2a07:54c1:4701:1::1
   MASSAR:
     asn: 57777
     ipv4: 185.173.128.2
