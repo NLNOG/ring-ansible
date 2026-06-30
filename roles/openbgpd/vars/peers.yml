@@ -180,7 +180,7 @@ lg_peers:
   CLNEXUS_UK:
     asn: 214420
     ipv4: 167.104.218.255
-    ipv6: 2a06:a000:1000::
+    ipv6: '2a06:a000:1000::'
   CLOUDIE1:
     asn: 924
     ipv4: 185.121.168.42
