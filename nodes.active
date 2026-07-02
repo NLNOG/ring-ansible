@@ -733,6 +733,7 @@ kaashosting01.ring.nlnog.net OWNER=kaashosting V4=93.190.187.41 V6=2a10:92c0:1:0
 xcobean01.ring.nlnog.net OWNER=xcobean V4=102.212.230.39 V6=2c0f:4140:0:10ff:1:3ff:fe51:19
 zappie01.ring.nlnog.net OWNER=zappie V4=103.208.86.19 V6=2a06:1280:f0b1::2
 flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
+uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::126
 
 [infranode]
 
@@ -3153,3 +3154,4 @@ flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
 [sdnbros]
 
 [uvensys]
+uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::126
