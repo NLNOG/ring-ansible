@@ -6753,3 +6753,11 @@ USERS:
     groups:
       - ring-users
 
+  uvensys:
+    state: present
+    company: 'uvensys'
+    email: 'noc@uvensys.de'
+    uid: 5865
+    groups:
+      - ring-users
+

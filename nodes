@@ -3183,3 +3183,5 @@ flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
 
 [sdnbros]
 sdnbros01.ring.nlnog.net OWNER=sdnbros V4=23.142.156.7 V6=2620:da:6000::15
+
+[uvensys]
