@@ -6,3 +6,5 @@ ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAC1y3vh
 ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBACAlV/DuwGvLyaW3py2xKjyt/p8sus4w9SfrtHtMk0RPurAeg7ilPnf6mFhe+1xd8PfTdIGkU8nnwjDjGu35coy+wAcLon/bLgF32+fsIR6vsslum240HlMo8bOpBgSP+BLB2JDrqLxuWvDyfJp5Y56S+bsHPp2KjvCJowftgfeba03pw== ar@alexs-mbp.sydenergi.root.local
 # Søren Andersen
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPnLzQgpqhGy9djRUtaZSyeoAHfRZGkbb+pRrJ/aqGAk
+# Niels Fristrup Christoffersen <niefri@sinal.dk>
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICnXMeIGalToRBxfqMlm91J+hsix+hriiQUHl3KCqyIL niefri@sinal.dk
