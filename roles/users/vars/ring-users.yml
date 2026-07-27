@@ -5786,7 +5786,7 @@ USERS:
       - ring-users
 
   sting:
-    state: present
+    state: absent
     company: 'Sting Alleman'
     email: 'noc@stingalleman.nl'
     uid: 5744
