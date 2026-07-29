@@ -267,6 +267,13 @@ class commands(object):
         _, rowid = self.dbdo(query)
         return rowid
     
+    def add_record_once(self,name,rtype,content,ttl,prio,zone=ZONE):
+        rtype = rtype.upper()
+        for row in self.dbselect('records',name=name,type=rtype,content=content):
+            print('record %s already exists (%s %s %s)' % (row['id'],name,rtype,content))
+            return None
+        return self.add_record(name,rtype,content,ttl,prio,zone)
+
     def del_record(self,pid):
         query = "delete from records where id=%s" % (pid)
         self.dbdo(query)
@@ -311,10 +318,10 @@ class commands(object):
 
         result = None
         if update is not None:
-            self.update_record(update,newtxt)
+            self.update_record(update,'"%s"' % newtxt)
             print("record %s updated" % id)
         else:
-            recid = self.add_record(recordname,'TXT',name,600,0);
+            recid = self.add_record(recordname,'TXT','"%s"' % name,600,0);
             print('record %s added' % (recid))
  
     def del_from_txt(self,name,subzone=None,zone=ZONE):
@@ -340,7 +347,7 @@ class commands(object):
         result = None
         if update is not None:
             if (len(newtxt) > 0):
-                self.update_record(update,newtxt)
+                self.update_record(update,'"%s"' % newtxt)
                 print("record %s updated" % id)
             else:
                 self.del_record(update);
@@ -442,17 +449,19 @@ class commands(object):
 
         v4=self.ring_getnodeattr(name,"ipv4")
         if v4:
-            recid=self.add_record(name=name,rtype='A',content=v4,
-                                  ttl=600,prio=0,zone=zone)
-            print('record %s added' % (recid))
+            recid=self.add_record_once(name=name,rtype='A',content=v4,
+                                       ttl=600,prio=0,zone=zone)
+            if recid:
+                print('record %s added' % (recid))
         else:
             sys.stderr.write("Unable to retrieve IPv4 address from ring db\n")
-            
+
         v6=self.ring_getnodeattr(name,"ipv6")
         if v6:
-            recid=self.add_record(name=name,rtype='AAAA',content=v6,
-                                  ttl=600,prio=0,zone=zone)
-            print('record %s added' % (recid))
+            recid=self.add_record_once(name=name,rtype='AAAA',content=v6,
+                                       ttl=600,prio=0,zone=zone)
+            if recid:
+                print('record %s added' % (recid))
         else:
             sys.stderr.write("Unable to retrieve IPv6 address from ring db\n")
         geo=self.ring_getnodeattr(name,"geo")
@@ -460,9 +469,10 @@ class commands(object):
         if geo:
             geocontent = self.getgeo(geo)
         if geocontent:
-            recid=self.add_record(name=name,rtype='LOC',content=geocontent,
-                                  ttl=600,prio=0,zone=zone)
-            print('record %s added' % (recid))
+            recid=self.add_record_once(name=name,rtype='LOC',content=geocontent,
+                                       ttl=600,prio=0,zone=zone)
+            if recid:
+                print('record %s added' % (recid))
         else:
             sys.stderr.write("Unable to retrieve geo information from ring db\n")
         print('node %s added' % (name))
