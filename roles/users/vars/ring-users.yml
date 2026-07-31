@@ -6761,3 +6761,11 @@ USERS:
     groups:
       - ring-users
 
+  fexxio:
+    state: present
+    company: 'Fexxio Digital'
+    email: 'noc@fexxio.nl'
+    uid: 5866
+    groups:
+      - ring-users
+
