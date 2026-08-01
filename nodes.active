@@ -683,6 +683,7 @@ angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674:
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
+angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
@@ -719,6 +720,7 @@ xcobean01.ring.nlnog.net OWNER=xcobean V4=102.212.230.39 V6=2c0f:4140:0:10ff:1:3
 zappie01.ring.nlnog.net OWNER=zappie V4=103.208.86.19 V6=2a06:1280:f0b1::2
 flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
 uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::126
+fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 
 [infranode]
 
@@ -3023,6 +3025,7 @@ angolacables06.ring.nlnog.net OWNER=angolacables V4=102.130.66.216 V6=2804:3674:
 angolacables08.ring.nlnog.net OWNER=angolacables V4=170.238.234.141 V6=2804:3674:0:2001::141
 angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674:0:10:170:238:233:242
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
+angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 
 [paocloud]
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
@@ -3127,3 +3130,4 @@ flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
 uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::126
 
 [fexxio]
+fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
