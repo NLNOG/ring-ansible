@@ -64,21 +64,21 @@
     state: present
     filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-security'
 
+- name: "Create apt keyring directory"
+  file:
+    path: /etc/apt/keyrings
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
 - name: "Install nlnog repo key"
-  apt_key:
-    id: B1BA5ACA
+  get_url:
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
-    state: present
-
-- name: "Remove Debian Bullseye/11 APT key"
-  apt_key:
-    id: 1F89983E0081FDE018F3CC9673A4F27B8DD47936
-    state: absent
-
-- name: "Remove Debian Buster/10 APT key"
-  apt_key:
-    id: 80D15823B7FD1561F9F7BCDDDC30D7C23CBBABEE
-    state: absent
+    dest: /etc/apt/keyrings/nlnog.asc
+    owner: root
+    group: root
+    mode: 0644
 
 - name: "Remove old nlnog apt repository"
   apt_repository:
@@ -88,7 +88,7 @@
 
 - name: "Add nlnog apt repository"
   apt_repository:
-    repo: 'deb [arch=amd64] http://apt.ring.nlnog.net/deb/ ring main'
+    repo: 'deb [arch=amd64 signed-by=/etc/apt/keyrings/nlnog.asc] http://apt.ring.nlnog.net/deb/ ring main'
     state: present
     filename: 'nlnog_ring_repo'
 

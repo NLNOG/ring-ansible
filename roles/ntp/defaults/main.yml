@@ -1,3 +1,7 @@
+ntpdate_package:
+  focal: ntpdate
+  jammy: ntpdate
+  resolute: ntpsec-ntpdate
 ntp_default_server_v4: 193.0.0.229
 ntp_default_server_v6: 2001:67c:2e8:14:ffff::229
 ntp_servers:

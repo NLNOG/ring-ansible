@@ -38,7 +38,7 @@
     dest: /opt/mitogen
     version: "{{ mitogen_version[ansible_distribution_release] }}"
     update: "{{ mitogen_update }}"
-  when: mitogen == true
+  when: mitogen == true and ansible_distribution_release in mitogen_version
 
 - name: "Install mitogen removal script"
   copy:

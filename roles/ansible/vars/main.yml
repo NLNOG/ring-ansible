@@ -2,6 +2,7 @@
 ansible_pin_version:
   focal: '2.9.6+dfsg-1'
   jammy: '2.10.7+merged+base+2.10.8+dfsg-1'
+  resolute: '13.1.0+dfsg-1ubuntu1'
 mitogen_version:
   jammy: stable
 ansible_pip_version: 2.1.1.0

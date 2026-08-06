@@ -1,0 +1,11 @@
+---
+# Releases enforcing PEP 668 need pip to be told it may install alongside
+# the distro-managed packages (installs land in /usr/local, not dist-packages).
+pip_extra_args:
+  resolute: --break-system-packages
+
+# resolute ships python3-dnspython 2.8.0 via apt, and pip cannot downgrade a
+# dpkg-managed package (no RECORD file), so accept what the distro provides.
+# ring-mtr, ring-trace and generate-hosts.py only use dns.resolver.resolve.
+dnspython_requirement:
+  resolute: dnspython

@@ -6,7 +6,7 @@
 
 - name: "Install ntpdate"
   apt:
-    name: ntpdate
+    name: "{{ ntpdate_package[ansible_distribution_release] | default('ntpdate') }}"
     state: latest
   register: ntpdate
 
