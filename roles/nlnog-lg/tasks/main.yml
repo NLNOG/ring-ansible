@@ -18,6 +18,16 @@
     name: sqlite3
     state: latest
 
+- name: Set up archive directory
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: 0755
+    owner: www-data
+    group: www-data
+  with_items:
+    /var/www/lg.ring.nlnog.net/archive
+
 - name: Initialize archive db
   ansible.builtin.shell: "/usr/bin/sqlite3 /var/www/lg.ring.nlnog.net/nlnog-lg.sqlite < /var/www/lg.ring.nlnog.net/nlnog-lg.sql"
   become: yes
