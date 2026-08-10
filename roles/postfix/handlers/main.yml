@@ -1,3 +1,6 @@
+- name: postmap sasl_passwd
+  command: /usr/sbin/postmap hash:/etc/postfix/sasl_passwd
+
 - name: postfix reload service
   service: name=postfix state=reloaded
 

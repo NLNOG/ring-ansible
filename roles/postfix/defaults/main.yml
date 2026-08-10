@@ -3,3 +3,10 @@ postfix_smtp_address_preference: ipv4
 postfix_packages:
   - postfix-pcre
   - postfix
+
+.
+postfix_relayhost: mail.nlnog.net
+postfix_relayhost_port: 587
+# Credentials set in the vault
+postfix_relay_username: ""
+postfix_relay_password: ""
