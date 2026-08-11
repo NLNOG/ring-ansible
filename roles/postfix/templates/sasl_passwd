@@ -1,0 +1,2 @@
+# {{ ansible_managed }}
+[{{ postfix_relayhost }}]:{{ postfix_relayhost_port }} {{ postfix_relay_username }}:{{ postfix_relay_password }}

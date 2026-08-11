@@ -9,8 +9,13 @@ home_mailbox = {{ postfix_home_mailbox }}
 mynetworks = 127.0.0.0/8 [::1]/128
 smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
 {% if postfix_relayhost | d() %}
-relayhost = [{{ postfix_relayhost }}]
+relayhost = [{{ postfix_relayhost }}]:{{ postfix_relayhost_port }}
+{% if postfix_relay_username | d() %}
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
+smtp_sasl_tls_security_options = noanonymous
+smtp_tls_security_level = encrypt
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+{% endif %}
 {% endif %}

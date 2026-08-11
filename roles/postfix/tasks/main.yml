@@ -18,6 +18,19 @@
     - master.cf
     - smtp_reply_filter
 
+- name: create relayhost sasl credentials
+  template:
+    src: sasl_passwd
+    dest: /etc/postfix/sasl_passwd
+    owner: root
+    group: root
+    mode: "0600"
+  no_log: true
+  notify:
+    - postmap sasl_passwd
+    - postfix reload service
+  when: postfix_relayhost | d() and postfix_relay_username | d()
+
 - name: stat /etc/postfix/postfix-files
   stat: path=/etc/postfix/postfix-files
   register: etc_postfix_postfix_files
