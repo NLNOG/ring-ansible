@@ -25,11 +25,11 @@ nftables:
       dport: 443
     - name: mysql from dbbackup
       proto: tcp
-      saddr: 109.72.93.39/32
+      saddr: 109.94.150.133/32
       dport: 3306
     - name: mysql from dbbackup
       proto: tcp
-      saddr: 2a00:f10:122::39/128
+      saddr: 2a02:fe9:c3a:c001::133/128
       dport: 3306
 
 LOCAL_USERS:
