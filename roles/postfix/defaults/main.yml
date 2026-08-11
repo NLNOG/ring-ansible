@@ -4,7 +4,6 @@ postfix_packages:
   - postfix-pcre
   - postfix
 
-.
 postfix_relayhost: mail.nlnog.net
 postfix_relayhost_port: 587
 # Credentials set in the vault
