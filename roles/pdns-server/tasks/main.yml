@@ -1,3 +1,9 @@
+- name: "Install pdns repo key"
+  apt_key:
+    id: FD380FBB
+    url: "https://repo.powerdns.com/FD380FBB-pub.asc"
+    state: present
+
 - name: "Add powerdns apt repository"
   apt_repository:
     repo: 'deb [arch=amd64] http://repo.powerdns.com/ubuntu jammy-auth-47 main'
