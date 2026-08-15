@@ -1,8 +1,14 @@
 - block:
+  - name: Check if pdns exists
+    ansible.builtin.getent:
+      database: group
+      key: pdns
+      fail_key: false
+    register: pdns_group
+
   - name: "Add user to pdns group - {{ item }}"
     user:
       name={{ item }}
       groups=pdns
       append=yes
-  when: user.state == "present"
-
+  when: user.state == "present" and pdns_group.ansible_facts.getent_group.pdns is defined
