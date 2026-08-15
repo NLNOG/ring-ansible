@@ -3,6 +3,15 @@
     name: hugo
     state: latest
 
+- name: "Create hugo checkout directories"
+  file:
+    path: "/var/www/{{ item.name }}"
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: 0755
+  with_items: "{{ hugo_sites|default([]) }}"
+
 - name: "Check out hugo source code repositories"
   git:
     repo: "{{ item.repo }}"
