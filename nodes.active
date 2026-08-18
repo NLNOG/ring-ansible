@@ -408,6 +408,7 @@ salkeld01.ring.nlnog.net OWNER=salkeld V4=103.219.7.241 V6=2001:df2:2e00:17::7
 hostin01.ring.nlnog.net OWNER=hostin V4=185.231.57.70 V6=2a10:b880:1:501::100
 lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
 gransy01.ring.nlnog.net OWNER=gransy V4=185.82.214.77 V6=2a03:6920:0:2::77
 milkywan01.ring.nlnog.net OWNER=milkywan V4=45.13.104.152 V6=2a0e:e701:1149::1
@@ -436,7 +437,6 @@ aanet01.ring.nlnog.net OWNER=aanet V4=90.155.62.240 V6=2001:8b0:0:62::240
 techfutures01.ring.nlnog.net OWNER=techfutures V4=192.30.89.86 V6=2606:9580:89::86
 norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
-natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
 freedomnet01.ring.nlnog.net OWNER=freedomnet V4=185.93.175.22 V6=2a10:3780:2:52:185:93:175:22
 ericnet01.ring.nlnog.net OWNER=ericnet V4=198.8.58.46 V6=2602:fd50:20:babe::
@@ -2209,6 +2209,7 @@ lonap01.ring.nlnog.net OWNER=lonap V4=5.57.94.168 V6=2a00:eb20:434::168
 freifunkkr01.ring.nlnog.net OWNER=freifunkkr V4=45.140.183.51 V6=2001:678:6e0:1006::f
 
 [atom]
+atom01.ring.nlnog.net OWNER=atom V4=95.142.96.108 V6=2a00:1188:4::050a
 
 [mauve]
 mauve01.ring.nlnog.net OWNER=mauve V4=185.138.55.231 V6=2a07:a40:102:1337::2
@@ -2325,7 +2326,6 @@ norlys01.ring.nlnog.net OWNER=norlys V4=212.10.11.214 V6=2a03:7400:2205:1::d6
 openfactory01.ring.nlnog.net OWNER=openfactory V4=5.226.144.239 V6=2a00:6340:2010:2800::239
 
 [natesales]
-natesales01.ring.nlnog.net OWNER=natesales V4=23.141.112.9 V6=2602:809:3009::9
 
 [deepmedia]
 deepmedia01.ring.nlnog.net OWNER=deepmedia V4=195.66.134.42 V6=2001:67c:2464:100::42
