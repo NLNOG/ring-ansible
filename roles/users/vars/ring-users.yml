@@ -3611,7 +3611,7 @@ USERS:
   myloc:
     state: present
     company: 'myLoc managed IT AG'
-    email: 'noc@myloc.de'
+    email: 'noc@wiit.cloud'
     uid: 5473
     groups:
       - ring-users
