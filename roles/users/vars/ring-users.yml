@@ -3000,7 +3000,7 @@ USERS:
       - ring-users
 
   hostwayde:
-    state: present
+    state: absent
     company: 'Hostway Deutschland GmbH'
     email: 'technik@hostway.de'
     uid: 5398
