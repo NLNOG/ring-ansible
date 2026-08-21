@@ -6769,3 +6769,11 @@ USERS:
     groups:
       - ring-users
 
+  kyberio:
+    state: present
+    company: 'Kyberio GmbH'
+    email: 'support@kyberio.com'
+    uid: 5867
+    groups:
+      - ring-users
+
