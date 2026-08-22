@@ -1,3 +1,4 @@
+backups: disabled
 dbbackup: true
 apache_vhosts:
   - api
