@@ -742,7 +742,6 @@ fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
 
 [infranode]
-container06.infra.ring.nlnog.net OWNER=job V4=109.72.82.182 V6=2a00:0f10:0103:010f::1
 dbmaster.infra.ring.nlnog.net OWNER=job V4=95.211.149.25 V6=2001:1AF8:4013::25
 public02.infra.ring.nlnog.net OWNER=job V4=95.211.149.18 V6=2001:1AF8:4013::18
 backup.infra.ring.nlnog.net OWNER=job V4=109.72.93.35 V6=2a00:f10:122::35
