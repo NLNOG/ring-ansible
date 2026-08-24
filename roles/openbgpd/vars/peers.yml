@@ -252,10 +252,14 @@ lg_peers:
     asn: 44854
     ipv4: 93.114.180.2
     ipv6: 2a10:e300:26::2
-  EUROFIBER-AS29396-1:
-    asn: 29396
-    ipv4: 90.145.153.56
-    ipv6: 2a02:120:0:200::c
+  EUROFIBER-NL:
+    asn: 39686
+    ipv4: 89.20.190.56
+    ipv6: 2a02:fe9:171d::1
+  EUROFIBER-BE:
+    asn: 39686
+    ipv4: 89.20.190.59
+    ipv6: 2a02:fe9:171d::1d
   EVINY:
     asn: 30950
     ipv4: 193.28.236.32
