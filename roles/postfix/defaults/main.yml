@@ -10,4 +10,4 @@ postfix_relayhost_port: 587
 postfix_relay_username: ""
 postfix_relay_password: ""
 
-postfix_sender_address: ring-node@ring.nlnog.net
+postfix_sender_address: ""
