@@ -2,6 +2,10 @@
 smtp_address_preference = {{ postfix_smtp_address_preference }}
 myorigin = {{ inventory_hostname }}
 alias_maps = hash:/etc/aliases
+{% if postfix_sender_address | d() %}
+sender_canonical_classes = envelope_sender, header_sender
+sender_canonical_maps = static:{{ postfix_sender_address }}
+{% endif %}
 smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter
 {% if postfix_home_mailbox | d() %}
 home_mailbox = {{ postfix_home_mailbox }}
