@@ -9,3 +9,5 @@ postfix_relayhost_port: 587
 # Credentials set in the vault
 postfix_relay_username: ""
 postfix_relay_password: ""
+
+postfix_sender_address: ""
