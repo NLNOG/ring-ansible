@@ -750,7 +750,7 @@ compute01.infra.ring.nlnog.net OWNER=job V4=52.17.9.249 V6=2a05:d018:9f2:ed01::2
 storage01.infra.ring.nlnog.net OWNER=job V4=35.174.70.43 V6=2600:1f18:415a:7301::102
 public03.infra.ring.nlnog.net OWNER=job V4=185.107.224.27 V6=2a00:f10:400:2:4b3:4aff:fe00:707
 lg02.infra.ring.nlnog.net OWNER=job V4=212.114.120.72 V6=2001:7b8:62b:1:0:d4ff:fe72:7848
-public04.infra.ring.nlnog.net OWNER=martin V4=185.66.250.169 V6=2a00:f10:121:a00:1c00:79ff:fe00:1826
+public04.infra.ring.nlnog.net OWNER=martin V4=109.94.150.135 V6=2a02:fe9:c3a:c001::135
 container08.infra.ring.nlnog.net OWNER=martin V4=95.211.149.17 V6=2001:1af8:4013::1
 dbbackup.infra.ring.nlnog.net OWNER=martin V4=109.94.150.133 V6=2a02:fe9:c3a:c001::133
 public05.infra.ring.nlnog.net OWNER=martin V4=109.94.150.131 V6=2a02:fe9:c3a:c001::5
