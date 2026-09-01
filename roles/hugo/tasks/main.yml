@@ -48,6 +48,15 @@
   become_user: www-data
   notify: hugo rebuild 
 
+- name: "Install token for restcountries"
+  template:
+    src=restcountries.token.j2
+    dest=/var/www/{{ item.name }}/restcountries.token
+    owner=root
+    group=root
+    mode=0755
+  with_items: "{{ hugo_sites|default([]) }}"
+
 - name: "Install post tooting requirements"
   pip:
     name:
