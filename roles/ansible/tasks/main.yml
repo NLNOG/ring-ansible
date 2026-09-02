@@ -34,7 +34,7 @@
 
 - name: "Install mitogen"
   git:
-    repo: 'git@github.com:mitogen-hq/mitogen.git'
+    repo: 'https://github.com/mitogen-hq/mitogen.git'
     dest: /opt/mitogen
     version: "{{ mitogen_version[ansible_distribution_release] }}"
     update: "{{ mitogen_update }}"
