@@ -672,7 +672,7 @@ USERS:
       - ring-users
 
   sixdegrees:
-    state: present
+    state: absent
     company: 'Six Degrees Group'
     email: 'lob.data.technical@6dg.co.uk'
     uid: 5096
