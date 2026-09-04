@@ -608,7 +608,6 @@ ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
-edgoo03.ring.nlnog.net OWNER=edgoo V4=185.162.183.87 V6=2001:b18:1002:200::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
@@ -632,7 +631,6 @@ v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
 v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
-dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
 luje01.ring.nlnog.net OWNER=luje V4=93.157.140.233 V6=2001:67c:f8c:214::233
 websupport01.ring.nlnog.net OWNER=websupport V4=195.210.29.226 V6=2a00:4b40:1000:510::141
@@ -706,7 +704,6 @@ exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b
 torena01.ring.nlnog.net OWNER=torena V4=88.216.146.63 V6=2001:4048:108:100::47
 geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
-cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
 shadowinternet01.ring.nlnog.net OWNER=shadowinternet V4=192.187.138.2 V6=2605:cb40:80b3::2
 zeroservices01.ring.nlnog.net OWNER=zeroservices V4=204.57.220.66 V6=2001:67c:e40:4000::66
@@ -726,6 +723,7 @@ zappie01.ring.nlnog.net OWNER=zappie V4=103.208.86.19 V6=2a06:1280:f0b1::2
 flume01.ring.nlnog.net OWNER=flume V4=206.109.124.17 V6=2606:dc0:4020:31::b
 uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::126
 fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
+kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
 
 [infranode]
 
@@ -2817,7 +2815,6 @@ dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 [edgoo]
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
-edgoo03.ring.nlnog.net OWNER=edgoo V4=185.162.183.87 V6=2001:b18:1002:200::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 
@@ -2887,7 +2884,6 @@ shift01.ring.nlnog.net OWNER=shift V4=170.39.177.153 V6=2607:29c0:1001:12::a
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 
 [dcspine]
-dcspine01.ring.nlnog.net OWNER=dcspine V4=185.152.85.250 V6=2a0d:8600:2::7
 
 [eurofibernl]
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
@@ -3087,7 +3083,6 @@ geely01.ring.nlnog.net OWNER=geely V4=194.26.96.5 V6=2a14:4e80:1004:2016::5
 midco01.ring.nlnog.net OWNER=midco V4=24.124.33.179 V6=2001:48f8:28:5:0:1:1232:1
 
 [cwseychelles]
-cwseychelles01.ring.nlnog.net OWNER=cwseychelles V4=41.86.34.234 V6=2c0f:fef0:0:a::2
 
 [ssmidge]
 ssmidge01.ring.nlnog.net OWNER=ssmidge V4=170.39.49.100 V6=2602:f50c:215:100::100
@@ -3143,3 +3138,4 @@ uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::12
 fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 
 [kyberio]
+kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
