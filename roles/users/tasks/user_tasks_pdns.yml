@@ -11,4 +11,4 @@
       name={{ item }}
       groups=pdns
       append=yes
-  when: user.state == "present" and pdns_group.ansible_facts.getent_group.pdns is defined
+    when: user.state == "present" and pdns_group.ansible_facts.getent_group.pdns is defined
