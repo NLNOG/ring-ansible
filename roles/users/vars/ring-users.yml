@@ -2369,7 +2369,7 @@ USERS:
 
   dna:
     state: present
-    company: 'DNA OY'
+    company: 'DNA'
     email: 'noc@dnaip.fi'
     uid: 5318
     groups:
