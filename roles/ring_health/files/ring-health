@@ -38,6 +38,10 @@ def create_report():
 
         # System information
         result['info']['ubuntu_release'] = get_ubuntu_release()
+        (updates, securityupdates) = get_ubuntu_updates()
+        result['info']['ubuntu_updates'] = updates
+        result['info']['ubuntu_security_updates'] = securityupdates
+        result['info']['reboot_required'] = get_reboot_required()
         result['info']['virtualization'] = get_virtualization_type()
 
         # Filesystem checks
@@ -135,9 +139,21 @@ def print_report(report):
         True: f"{Fore.GREEN}OK{Style.RESET_ALL}",
     }
     print()
-    print(f"  Ubuntu release: {report['info']['ubuntu_release']}")
-    print(f"  Status:         {Fore.WHITE}{status[report['info']['success']]}")
-    print(f"  Last check:     {report['info']['last_check']}")
+    print(f"  Ubuntu release:   {report['info']['ubuntu_release']}")
+    print(f"  Status:           {Fore.WHITE}{status[report['info']['success']]}")
+    print(f"  Last check:       {report['info']['last_check']}")
+    up = report['info']['ubuntu_updates']
+    secup = report['info']['ubuntu_security_updates']
+    if up > 0:
+        up = f"{Fore.RED}{up}{Style.RESET_ALL}"
+        secup = f"{Fore.RED}{secup}{Style.RESET_ALL}"
+    reboot = report['info']['reboot_required']
+    if reboot:
+        reboot = f"{Fore.RED}YES{Style.RESET_ALL}"
+    else:
+        reboot = "NO"
+    print(f"  Ubuntu updates:   {up} ({secup} security updates)")
+    print(f"  Reboot required:  {reboot}")
     print()
     for item in report["health"]:
         print(f""" {status[report["health"][item]]:^18} {report["descriptions"][item]}""")
@@ -168,6 +184,15 @@ def get_ubuntu_release():
        if m:
            return m.group(1)
     return None
+
+def get_ubuntu_updates():
+    result = subprocess.run(['/usr/lib/update-notifier/apt-check'],
+                            stderr=subprocess.PIPE)
+    values = [int(val) for val in result.stderr.decode('utf-8').split(';')]
+    return values
+
+def get_reboot_required():
+    return os.path.exists('/var/run/reboot-required')
 
 def get_virtualization_type():
     result = subprocess.run(['/usr/sbin/virt-what'],
