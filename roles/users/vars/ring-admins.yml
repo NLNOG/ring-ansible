@@ -81,7 +81,7 @@ USERS:
   arjen:
     state: present
     company: "Arjen Zonneveld"
-    email: arjen@bz2.nl
+    email: arjen-nlnog@bz2.nl
     uid: 6008
     shell: /bin/bash
     groups:
