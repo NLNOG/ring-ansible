@@ -3,6 +3,7 @@
     name: "{{ item }}"
     state: latest
   with_items:
+    - bsd-mailx
     - zfsutils-linux
 
 - name: "Create backup mountpoint"
