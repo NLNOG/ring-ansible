@@ -3184,3 +3184,5 @@ fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 
 [kyberio]
 kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
+
+[zonecloud]

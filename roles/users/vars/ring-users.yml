@@ -6777,3 +6777,11 @@ USERS:
     groups:
       - ring-users
 
+  zonecloud:
+    state: present
+    company: 'ZoneCloud JSC'
+    email: 'khanh.truong@zonecloud.vn'
+    uid: 5868
+    groups:
+      - ring-users
+
