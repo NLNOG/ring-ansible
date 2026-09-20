@@ -36,7 +36,7 @@ fi
 # ZFS will be have to randomly write blocks. This means ZFS can not create an
 # optimal set of sequential writes and write performance is severely impacted.
 
-maxCapacity=80
+maxCapacity=95
 
 if [ ${problems} -eq 0 ]; then
    capacity=$(/sbin/zpool list -H -o capacity)
