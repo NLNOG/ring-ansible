@@ -2,6 +2,7 @@
   gather_facts: false
   become: true
   become_user: root
+  become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
   pre_tasks:
     - name: Run apt-get update
       raw: sudo apt-get update -y
@@ -49,6 +50,7 @@
     - name: Check virtualization technology
       become: true
       become_user: root
+      become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
       tags: check_vm
       command: grep -q container /proc/1/environ
       register: check_vm
@@ -61,6 +63,7 @@
 - hosts: ringnode
   become: true
   become_user: root
+  become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
   tasks:
     - name: Load the vault passwords
       include_vars: "vault/vault.yml"
@@ -86,6 +89,7 @@
 - hosts: infranode
   become: true
   become_user: root
+  become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
   tasks:
     - name: Load the vault passwords
       include_vars: "vault/vault.yml"
@@ -108,6 +112,7 @@
 - hosts: all
   become: true
   become_user: root
+  become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
   tasks:
     - name: Remove apparmor
       apt:
@@ -131,6 +136,7 @@
 - hosts: all
   become: true
   become_user: root
+  become_exe: "{{ lookup('ansible.builtin.env', 'BECOME_EXE') | default('sudo.ws', true) }}"
   roles:
     - { role: etcfiles, tags: etcfiles }
     - { role: apt, tags: apt }
