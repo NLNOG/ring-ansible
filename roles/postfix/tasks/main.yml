@@ -29,7 +29,7 @@
   notify:
     - postmap sasl_passwd
     - postfix reload service
-  when: postfix_relayhost | d() and postfix_relay_username | d()
+  when: postfix_relayhost | d(None) is defined and postfix_relay_username | d(None) is defined
 
 - name: stat /etc/postfix/postfix-files
   stat: path=/etc/postfix/postfix-files
