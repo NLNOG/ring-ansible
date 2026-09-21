@@ -3,9 +3,15 @@
     name: nftables
     state: latest
 
+- name: nftables config (old)
+  template: src=nftables.conf.jammy.jinja dest=/etc/nftables.conf validate='/usr/sbin/nft -c -f %s'
+  notify: reload nftables
+  when: ansible_distribution_release != "resolute"
+
 - name: nftables config
   template: src=nftables.conf.jinja dest=/etc/nftables.conf validate='/usr/sbin/nft -c -f %s'
   notify: reload nftables
+  when: ansible_distribution_release == "resolute"
 
 - name: enable nftables
   service: name=nftables enabled=yes state=started
