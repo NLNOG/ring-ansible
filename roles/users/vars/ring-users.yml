@@ -4817,7 +4817,7 @@ USERS:
       - ring-users
 
   midnet:
-    state: absent
+    state: present
     company: 'MIDnet'
     email: 'noc@mid.net'
     uid: 5624
