@@ -1,8 +1,15 @@
+- name: Install gcc-11
+  apt:
+    name:
+      - gcc-11
+
 - name: Install SyslogLogger
   gem: name=SyslogLogger state=latest user_install=no
 
 - name: Install Sqlite3
   gem: name=sqlite3 version=1.4.2 user_install=no
+  environment:
+    CC: gcc-11
 
 - name: Install Sequel
   gem: name=sequel version=4.12.0 user_install=no
@@ -69,11 +76,11 @@
   vars:
     etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
   service: name=ring-sqa4 state=restarted
-  when: ansible_date_time.epoch < etc_hosts_check_age
+  when: ansible_date_time.epoch|float < etc_hosts_check_age|float
 
 - name: restart sqa6 on change in /etc/hosts
   vars:
     etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
   service: name=ring-sqa4 state=restarted
-  when: ansible_date_time.epoch < etc_hosts_check_age
+  when: ansible_date_time.epoch|float < etc_hosts_check_age|float
 
