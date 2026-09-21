@@ -37,7 +37,7 @@
 - name: "Install python3 modules for ring-mtr"
   pip:
     name:
-      - "dnspython{{ dnspython_requirement[ansible_distribution_release] | default(omit) }}"
+      - "dnspython=={{ dnspython_requirement[ansible_distribution_release] }}"
       - setuptools
       - wheel
       - parallel-ssh
