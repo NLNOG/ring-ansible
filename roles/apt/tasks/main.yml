@@ -64,21 +64,41 @@
     state: present
     filename: 'bit_ubuntu_archiv_{{ ansible_distribution_release }}-security'
 
-- name: "Install nlnog repo key"
+- name: "Create apt keyring directory"
+  file:
+    path: /etc/apt/keyrings
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: "Install nlnog repo key (old)"
   apt_key:
     id: B1BA5ACA
     url: "https://ring.nlnog.net/nlnogrepopublic.key"
     state: present
+  when: ansible_distribution_release != "resolute"
+
+- name: "Install nlnog repo key"
+  get_url:
+    url: "https://ring.nlnog.net/nlnogrepopublic.key"
+    dest: /etc/apt/keyrings/nlnog.asc
+    owner: root
+    group: root
+    mode: 0644
+  when: ansible_distribution_release == "resolute"
 
 - name: "Remove Debian Bullseye/11 APT key"
   apt_key:
     id: 1F89983E0081FDE018F3CC9673A4F27B8DD47936
     state: absent
+  when: ansible_distribution_release != "resolute"
 
 - name: "Remove Debian Buster/10 APT key"
   apt_key:
     id: 80D15823B7FD1561F9F7BCDDDC30D7C23CBBABEE
     state: absent
+  when: ansible_distribution_release != "resolute"
 
 - name: "Remove old nlnog apt repository"
   apt_repository:
@@ -86,11 +106,19 @@
     state: absent
     filename: 'nlnog_ring_repo'
 
-- name: "Add nlnog apt repository"
+- name: "Add nlnog apt repository (old)"
   apt_repository:
     repo: 'deb [arch=amd64] http://apt.ring.nlnog.net/deb/ ring main'
     state: present
     filename: 'nlnog_ring_repo'
+  when: ansible_distribution_release != "resolute"
+
+- name: "Add nlnog apt repository"
+  apt_repository:
+    repo: 'deb [arch=amd64 signed-by=/etc/apt/keyrings/nlnog.asc] http://apt.ring.nlnog.net/deb/ ring main'
+    state: present
+    filename: 'nlnog_ring_repo'
+  when: ansible_distribution_release == "resolute"
 
 - name: "Install unattended-upgrades"
   apt:
