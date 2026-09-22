@@ -561,6 +561,10 @@ lg_peers:
     asn: 36236
     ipv4: 104.225.4.202
     ipv6: 2607:fc50:2000:99::1eb
+  NETONE1:
+    asn: 200132
+    ipv4: 195.95.177.2
+    ipv6: 2001:67c:dec:195:95:177:2:a
   NETSHELTERDUS1:
     asn: 41047
     ipv4: 87.237.165.4
