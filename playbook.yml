@@ -57,11 +57,16 @@
     - { role: ripe-atlas, tags: ripe-atlas }
     - { role: ring_sqa, tags: ring_sqa }
 
-- hosts: infranode
+- hosts: infranode:!~staging[0-9]*\.ring\.nlnog\.net
   become: true
   become_user: root
   roles:
     - { role: nftables, tags: nftables }
+
+- hosts: infranode
+  become: true
+  become_user: root
+  roles:
     - { role: backup-client, tags: backup-client }
 
 - hosts: ~container[0-9]*\.infra\.ring\.nlnog.net
