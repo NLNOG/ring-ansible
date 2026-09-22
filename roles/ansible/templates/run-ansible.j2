@@ -4,6 +4,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 OPTIND=1
 quick=""
 
+export PYTHONUNBUFFERED=True
+
 while getopts "q" opt; do
     case "$opt" in
     q)
