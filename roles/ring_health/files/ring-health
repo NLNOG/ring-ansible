@@ -169,9 +169,9 @@ def get_infranodes(nodes_file=NODES):
         vars = line.split()
         if len(vars) < 3:
             continue
-        if re.match('^.+\.infra\.' + DOMAIN + '$',vars[0]):
+        if re.match(r'^.+\.infra\.' + DOMAIN + '$',vars[0]):
             for var in vars:
-                if re.match('V[46]=.+', var):
+                if re.match(r'V[46]=.+', var):
                     (k, v) = var.split('=')
                     infranodes[k].append(v)
     f.close()
@@ -180,7 +180,7 @@ def get_infranodes(nodes_file=NODES):
 def get_ubuntu_release():
     f = open('/etc/lsb-release','r')
     for line in f:
-       m = re.match('^DISTRIB_RELEASE=(.+)$',line)
+       m = re.match(r'^DISTRIB_RELEASE=(.+)$',line)
        if m:
            return m.group(1)
     return None
@@ -354,7 +354,7 @@ def get_nameservers():
     nameservers = []
     f = open('/etc/resolv.conf','r')
     for line in f:
-        if not re.match('^nameserver\s.+',line):
+        if not re.match(r'^nameserver\s.+',line):
             continue
         vars = line.split()
         if len(vars) < 2:
@@ -402,7 +402,7 @@ def check_sshd():
                                  stdout=subprocess.PIPE)
     if sshd_result.returncode != 0:
         return False
-    if re.search('Active: active \(running\)',sshd_result.stdout.decode('utf-8')):
+    if re.search(r'Active: active \(running\)',sshd_result.stdout.decode('utf-8')):
         return True
     return False
 
@@ -420,7 +420,7 @@ def check_ansible_cron():
     '''Ansible cron status'''
     f = open(CRONPATH, 'r')
     for line in f:
-        if re.match('^([*0-9/,]+\s){5}root\s/usr/local/sbin/ansible-cron\s.+$', line):
+        if re.match(r'^([*0-9/,]+\s){5}root\s/usr/local/sbin/ansible-cron\s.+$', line):
             return True
     return False
 
