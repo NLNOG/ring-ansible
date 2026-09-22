@@ -6,5 +6,5 @@ timeout -k 2450 2400 /usr/bin/sc_attach -p 23456 -c 'trace' -i /etc/ring/node-li
     mv /tmp/$$.${filename} /home/scamper/traces/${filename} && \
     gzip /home/scamper/traces/${filename}
 
-chown scamper.ring-users /home/scamper/traces/${filename}.gz
+chown scamper:ring-users /home/scamper/traces/${filename}.gz
 
