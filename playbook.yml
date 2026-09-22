@@ -13,8 +13,9 @@
   tags:
     - always
 
-- import_playbook: ubuntu_upgrade.yml
-  when: '"ringnode" in group_names and ansible_distribution_release != "jammy"'
+# Disable auto-upgrades for migration to precise
+#- import_playbook: ubuntu_upgrade.yml
+#  when: '"ringnode" in group_names and ansible_distribution_release != "jammy"'
 
 - hosts: all
   become: true
