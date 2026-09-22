@@ -1,5 +1,5 @@
 - name: "Install ringnode sshd_config"
-  copy:
+  template:
     src=sshd_config.ringnode
     dest=/etc/ssh/sshd_config
     owner=root

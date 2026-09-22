@@ -16,7 +16,9 @@ PermitRootLogin prohibit-password
 StrictModes yes
 
 PubkeyAuthentication yes
+{% if ansible_facts['distribution_release'] != "resolute" %}
 PubkeyAcceptedKeyTypes= +ssh-dss
+{% endif %}
 
 HostbasedAuthentication no
 
