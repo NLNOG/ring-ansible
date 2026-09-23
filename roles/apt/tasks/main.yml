@@ -58,7 +58,7 @@
     state: present
     filename: "bit_ubuntu_archiv_{{ ansible_facts['distribution_release'] }}-updates"
 
-- name: "Add ubuntu {{ ansible_distribution_release }} security repository"
+- name: "Add ubuntu {{ ansible_facts['distribution_release'] }} security repository"
   apt_repository:
     repo: "deb http://nl.archive.ubuntu.com/ubuntu {{ ansible_facts['distribution_release'] }}-security main restricted universe multiverse"
     state: present
