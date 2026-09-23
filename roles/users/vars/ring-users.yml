@@ -1240,7 +1240,7 @@ USERS:
       - ring-users
 
   rnp:
-    state: present
+    state: absent
     company: 'RNP'
     email: 'noc@rnp.br'
     uid: 5173
