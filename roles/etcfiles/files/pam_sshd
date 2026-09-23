@@ -24,7 +24,7 @@ account    required     pam_nologin.so
 @include common-session
 
 # Print the message of the day upon successful login.
-session    optional     pam_motd.so # [1]
+session    optional     pam_motd.so noupdate # [1]
 
 # Print the status of the user's mailbox upon successful login.
 session    optional     pam_mail.so standard noenv # [1]

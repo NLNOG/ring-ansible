@@ -71,7 +71,7 @@ session    optional   pam_lastlog.so
 
 # Prints the motd upon succesful login
 # (Replaces the `MOTD_FILE' option in login.defs)
-session    optional   pam_motd.so
+session    optional   pam_motd.so noupdate
 
 # Prints the status of the user's mailbox upon succesful login
 # (Replaces the `MAIL_CHECK_ENAB' option from login.defs). 
