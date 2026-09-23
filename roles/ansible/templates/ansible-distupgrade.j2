@@ -2,6 +2,6 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 echo "Upgrading... "
-/usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_nodename }} -c local ubuntu_upgrade.yml
+/usr/bin/nice /usr/bin/ansible-pull --full -d /etc/ansible/ring -U https://github.com/NLNOG/ring-ansible.git --vault-password-file=/root/.vaultpw -i nodes -l {{ ansible_facts['nodename'] }} -c local ubuntu_upgrade.yml
 
 echo "All done. In case of errors, contact a ring admin."

@@ -11,9 +11,9 @@
 #
 # By default this script does nothing.
 
-{% if ansible_virtualization_role|default(None) == "guest" and ansible_virtualization_type|default(None) == "openvz" %}
+{% if ansible_facts['virtualization_role']|default(None) == "guest" and ansible_facts['virtualization_type']|default(None) == "openvz" %}
 # Override hostname. Some VM systems (OpenVZ) mess this up
-echo "{{ ansible_nodename }}" > /etc/hostname
+echo "{{ ansible_facts['nodename'] }}" > /etc/hostname
 hostname -F /etc/hostname
 {% endif %}
 

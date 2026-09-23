@@ -15,9 +15,9 @@
     name: "{{ software.all|default([]) }}"
     state: latest
 
-- name: "Install various software packages ({{ ansible_distribution_release }})"
+- name: "Install various software packages ({{ ansible_facts['distribution_release'] }})"
   apt:
-    name: "{{ vars['software'][ansible_distribution_release]|default([]) }}"
+    name: "{{ vars['software'][ansible_facts['distribution_release']]|default([]) }}"
     state: latest
 
 - name: "Create symlink for lft"

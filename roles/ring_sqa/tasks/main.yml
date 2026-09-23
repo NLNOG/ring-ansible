@@ -13,11 +13,11 @@
 
 - name: Install Sequel (old)
   gem: name=sequel version=4.12.0 user_install=no
-  when: ansible_distribution_release != "resolute"
+  when: ansible_facts['distribution_release'] != "resolute"
 
 - name: Install Sequel
   gem: name=sequel version=5.108.0 user_install=no
-  when: ansible_distribution_release == "resolute"
+  when: ansible_facts['distribution_release'] == "resolute"
 
 - name: Install correct version of asetus
   gem: name=asetus version=0.3.0 user_install=no
@@ -27,14 +27,14 @@
   notify:
     - restart ring-sqa4
     - restart ring-sqa6
-  when: ansible_distribution_release != "resolute"
+  when: ansible_facts['distribution_release'] != "resolute"
 
 - name: Install RING SQA Gem
   gem: name=ring-sqa version=0.4.5 user_install=no
   notify:
     - restart ring-sqa4
     - restart ring-sqa6
-  when: ansible_distribution_release == "resolute"
+  when: ansible_facts['distribution_release'] == "resolute"
 
 - name: Ensure /etc/ring-sqa exists
   file: path=/etc/ring-sqa state=directory owner=root group=root mode=0755
@@ -89,11 +89,11 @@
   vars:
     etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
   service: name=ring-sqa4 state=restarted
-  when: ansible_date_time.epoch|float < etc_hosts_check_age|float
+  when: ansible_facts['date_time']['epoch']|float < etc_hosts_check_age|float
 
 - name: restart sqa6 on change in /etc/hosts
   vars:
     etc_hosts_check_age: "{{ etc_hosts_file.stat.mtime + 3600 }}"
   service: name=ring-sqa4 state=restarted
-  when: ansible_date_time.epoch|float < etc_hosts_check_age|float
+  when: ansible_facts['date_time']['epoch']|float < etc_hosts_check_age|float
 

@@ -20,7 +20,7 @@
 
 - name: "Ensure Ansible is installed"
   apt:
-    name: "ansible={{ ansible_pin_version[ansible_distribution_release] }}"
+    name: "ansible={{ ansible_pin_version[ansible_facts['distribution_release']] }}"
     state: present
 
 - name: "Create callback plugin dir"
@@ -36,7 +36,7 @@
   git:
     repo: 'https://github.com/mitogen-hq/mitogen.git'
     dest: /opt/mitogen
-    version: "{{ mitogen_version[ansible_distribution_release] }}"
+    version: "{{ mitogen_version[ansible_facts['distribution_release']] }}"
     update: "{{ mitogen_update }}"
   when: mitogen == true
 

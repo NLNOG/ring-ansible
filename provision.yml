@@ -46,7 +46,7 @@
       fail:
         msg: Host is not an x86_64 system
       tags: check_cpu
-      when: ansible_architecture != "x86_64"
+      when: ansible_facts['architecture'] != "x86_64"
     - name: Check virtualization technology
       become: true
       become_user: root

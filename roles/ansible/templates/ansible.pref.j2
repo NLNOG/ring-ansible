@@ -1,5 +1,5 @@
 # ansible
 Explanation: : ansible
 Package: ansible
-Pin: version {{ ansible_pin_version[ansible_distribution_release] }}
+Pin: version {{ ansible_pin_version[ansible_facts['distribution_release']] }}
 Pin-Priority: 1001
