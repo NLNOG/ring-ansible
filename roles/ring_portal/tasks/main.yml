@@ -1,0 +1,27 @@
+- name: Checkout the portal.ring.nlnog.net repository
+  ansible.builtin.git:
+    repo: "https://github.com/NLNOG/ring-portal"
+    dest: "/var/www/portal.ring.nlnog.net"
+    clone: yes
+    update: yes
+  become: yes
+  become_user: www-data
+  notify: restart apache2
+
+- name: Set up virtualenv
+  ansible.builtin.pip:
+    requirements: "/var/www/portal.ring.nlnog.net/requirements.txt"
+    virtualenv: "/var/www/portal.ring.nlnog.net/venv"
+
+- name: create data directory
+  file:
+    path: /var/ring/ring-portal/
+    state: directory
+    mode: 0755
+    owner: www-data
+    group: www-data
+
+- name: Set up virtualenv
+  ansible.builtin.pip:
+    requirements: "/var/www/portal.ring.nlnog.net/requirements.txt"
+    virtualenv: "/var/www/portal.ring.nlnog.net/venv"
