@@ -518,6 +518,7 @@ aussiebb03.ring.nlnog.net OWNER=aussiebb V4=159.196.91.171 V6=2403:5800:900:16::
 aussiebb04.ring.nlnog.net OWNER=aussiebb V4=103.115.210.31 V6=2403:5800:500:12::1
 aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::1
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
+enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
 tispa01.ring.nlnog.net OWNER=tispa V4=196.49.5.45 V6=2001:43F8:1:100::5
 telemark01.ring.nlnog.net OWNER=telemark V4=185.129.252.155 V6=2a06:d681::113
@@ -691,7 +692,6 @@ netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
-lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
 exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
 exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b:4ab:84ff:fe00:56
@@ -2597,6 +2597,7 @@ aussiebb05.ring.nlnog.net OWNER=aussiebb V4=180.150.59.171 V6=2403:5800:300:11::
 fibo01.ring.nlnog.net OWNER=fibo V4=45.145.108.80 V6=2a0e:fdc0:200:31::20
 
 [enix]
+enix01.ring.nlnog.net OWNER=enix V4=193.19.209.153 V6=2a07:4b00:1:7::4
 
 [xxlnet]
 xxlnet01.ring.nlnog.net OWNER=xxlnet V4=185.56.54.19 V6=2a06:900:3382::2
@@ -3056,7 +3057,6 @@ noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 [virtnet]
 
 [lehmann]
-lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 
 [exoscale]
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
