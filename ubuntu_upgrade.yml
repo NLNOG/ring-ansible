@@ -25,7 +25,7 @@
       lineinfile:
         path: /etc/apt/preferences.d/ansible.pref
         regexp: '^Pin: version (.*)$'
-        line: 'Pin: version 2.10.7+merged+base+2.10.8+dfsg-1'
+        line: 'Pin: version 13.1.0+dfsg-1ubuntu1'
       register: ansible_pin
 
     - name: "Run apt-get update"
@@ -50,19 +50,19 @@
         - /etc/apt/apt.conf.d/50unattended-upgrades
         - /etc/apt/apt.conf.d/50unattended-upgrades.dpkg-dist
 
-    - name: "Perform release upgrade (bionic -> focal)"
+    - name: "Perform release upgrade (jammy -> noble)"
       shell: |
         do-release-upgrade -f DistUpgradeViewNonInteractive
         /sbin/reboot
-      when: ansible_distribution_release == "bionic"
+      when: ansible_facts['distribution_release'] == "jammy"
       ignore_errors: True
 
-    - name: "Perform release upgrade (focal -> jammy)"
+    - name: "Perform release upgrade (noble -> resolute)"
       shell: |
         do-release-upgrade -f DistUpgradeViewNonInteractive
         /sbin/reboot
       ignore_errors: True
-      when: ansible_distribution_release == "focal"
+      when: ansible_facts['distribution_release'] == "noble"
   tags:
     - upgrade
 
