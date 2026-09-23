@@ -4,11 +4,13 @@ apache_vhosts:
   - api
   - api4
   - api6
+  - portal
 letsencrypt_certs:
   - api.ring.nlnog.net
   - api4.ring.nlnog.net
   - api6.ring.nlnog.net
   - dbmaster.infra.ring.nlnog.net
+  - portal.ring.nlnog.net
 mysqld_ssl: true
 mysqld_serverid: 1
 mysqld_replicate:
