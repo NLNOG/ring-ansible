@@ -127,7 +127,7 @@
 
 - name: "Ensure symlink to dynamic motd exists"
   file:
-    src: /var/run/motd.dynamic
+    src: /var/run/motd
     dest: /etc/motd
     owner: root
     group: root
