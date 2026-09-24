@@ -5,6 +5,7 @@ apache_vhosts:
   - api4
   - api6
   - portal
+  - dev-portal
 letsencrypt_certs:
   - api.ring.nlnog.net
   - api4.ring.nlnog.net
