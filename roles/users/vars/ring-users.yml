@@ -6793,11 +6793,3 @@ USERS:
     groups:
       - ring-users
 
-  demo:
-    state: present
-    company: 'ACME Test'
-    email: ''
-    uid: None
-    groups:
-      - ring-users
-
