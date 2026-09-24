@@ -6785,3 +6785,11 @@ USERS:
     groups:
       - ring-users
 
+  teleservice:
+    state: present
+    company: 'Teleservice Bredband AB'
+    email: 'noc@teleservice.net'
+    uid: 5869
+    groups:
+      - ring-users
+
