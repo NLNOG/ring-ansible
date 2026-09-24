@@ -6801,3 +6801,19 @@ USERS:
     groups:
       - ring-users
 
+  demo:
+    state: present
+    company: 'ACME Test'
+    email: ''
+    uid: None
+    groups:
+      - ring-users
+
+  testuser:
+    state: present
+    company: 'BITTERBAL'
+    email: 'test@teun.tv'
+    uid: None
+    groups:
+      - ring-users
+

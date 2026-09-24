@@ -741,6 +741,7 @@ fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
 zonecloud01.ring.nlnog.net OWNER=zonecloud V4=160.22.160.177 V6=2001:df3:ee40:111::10
 teleservice01.ring.nlnog.net OWNER=teleservice V4=85.30.130.190 V6=2a02:80:3fee:13::2
+demo.ring.nlnog.net OWNER=demo
 
 [infranode]
 dbmaster.infra.ring.nlnog.net OWNER=job V4=95.211.149.25 V6=2001:1AF8:4013::25
@@ -3194,3 +3195,8 @@ zonecloud01.ring.nlnog.net OWNER=zonecloud V4=160.22.160.177 V6=2001:df3:ee40:11
 teleservice01.ring.nlnog.net OWNER=teleservice V4=85.30.130.190 V6=2a02:80:3fee:13::2
 
 [teun.vink-2]
+
+[demo]
+demo.ring.nlnog.net OWNER=demo
+
+[testuser]
