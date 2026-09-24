@@ -719,6 +719,7 @@ uvensys01.ring.nlnog.net OWNER=uvensys V4=37.208.107.126 V6=2a00:d0c0:ffff:8::12
 fexxio01.ring.nlnog.net OWNER=fexxio V4=151.241.10.185 V6=2001:67c:d4:1::185
 kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
 zonecloud01.ring.nlnog.net OWNER=zonecloud V4=160.22.160.177 V6=2001:df3:ee40:111::10
+teleservice01.ring.nlnog.net OWNER=teleservice V4=85.30.130.190 V6=2a02:80:3fee:13::2
 
 [infranode]
 
@@ -3133,3 +3134,4 @@ kyberio01.ring.nlnog.net OWNER=kyberio V4=195.149.93.98 V6=2a02:790:6::b1
 zonecloud01.ring.nlnog.net OWNER=zonecloud V4=160.22.160.177 V6=2001:df3:ee40:111::10
 
 [teleservice]
+teleservice01.ring.nlnog.net OWNER=teleservice V4=85.30.130.190 V6=2a02:80:3fee:13::2
