@@ -11,6 +11,7 @@ letsencrypt_certs:
   - api6.ring.nlnog.net
   - dbmaster.infra.ring.nlnog.net
   - portal.ring.nlnog.net
+  - dev-portal.ring.nlnog.net
 mysqld_ssl: true
 mysqld_serverid: 1
 mysqld_replicate:

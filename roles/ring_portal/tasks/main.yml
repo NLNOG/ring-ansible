@@ -13,6 +13,12 @@
     requirements: "/var/www/portal.ring.nlnog.net/requirements.txt"
     virtualenv: "/var/www/portal.ring.nlnog.net/venv"
 
+- name: Create settings file
+  template:
+    src=settings.py.j2
+    dst=/var/www/portal.ring.nlnog.net/ringweb/settings.py
+  notify: restart apache2
+
 - name: create data directory
   file:
     path: /var/ring/ring-portal/
@@ -21,7 +27,23 @@
     owner: www-data
     group: www-data
 
-- name: Set up virtualenv
+- name: Checkout the portal.ring.nlnog.net repository devel branch
+  ansible.builtin.git:
+    repo: "https://github.com/NLNOG/ring-portal"
+    dest: "/var/www/dev-portal.ring.nlnog.net"
+    clone: yes
+    update: yes
+  become: yes
+  become_user: www-data
+  notify: restart apache2
+
+- name: Set up virtualenv for development
   ansible.builtin.pip:
-    requirements: "/var/www/portal.ring.nlnog.net/requirements.txt"
-    virtualenv: "/var/www/portal.ring.nlnog.net/venv"
+    requirements: "/var/www/dev-portal.ring.nlnog.net/requirements.txt"
+    virtualenv: "/var/www/dev-portal.ring.nlnog.net/venv"
+
+- name: Create settings file for development
+  template:
+    src=dev-settings.py.j2
+    dst=/var/www/dev-portal.ring.nlnog.net/ringweb/settings.py
+  notify: restart apache2
