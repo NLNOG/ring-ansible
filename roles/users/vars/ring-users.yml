@@ -6793,3 +6793,11 @@ USERS:
     groups:
       - ring-users
 
+  teun.vink-2:
+    state: present
+    company: 'BITTERBAL'
+    email: 'teun@bit.nl'
+    uid: None
+    groups:
+      - ring-users
+

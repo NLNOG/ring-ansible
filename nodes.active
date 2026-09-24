@@ -3135,3 +3135,5 @@ zonecloud01.ring.nlnog.net OWNER=zonecloud V4=160.22.160.177 V6=2001:df3:ee40:11
 
 [teleservice]
 teleservice01.ring.nlnog.net OWNER=teleservice V4=85.30.130.190 V6=2a02:80:3fee:13::2
+
+[teun.vink-2]
