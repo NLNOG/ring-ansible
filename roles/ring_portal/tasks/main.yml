@@ -15,8 +15,8 @@
 
 - name: Create settings file
   template:
-    src=settings.py.j2
-    dst=/var/www/portal.ring.nlnog.net/ringweb/settings.py
+    src: settings.py.j2
+    dst: /var/www/portal.ring.nlnog.net/ringweb/settings.py
   notify: restart apache2
 
 - name: create data directory
