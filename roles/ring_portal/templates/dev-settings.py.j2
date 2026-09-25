@@ -81,7 +81,7 @@ RING_LEGACY_DB = 1
 # PeeringDB OAuth (login via PeeringDB accounts). Login button shows only when
 # the client id is configured. Override in production.
 PDB_ENDPOINT = os.environ.get("PDB_ENDPOINT", "https://auth.peeringdb.com/")
-#PDB_CLIENT_ID = os.environ.get("PDB_CLIENT_ID", "{{peeringdb_dev_client_id}}")
+PDB_CLIENT_ID = os.environ.get("PDB_CLIENT_ID", "{{peeringdb_dev_client_id}}")
 PDB_CLIENT_SECRET = os.environ.get("PDB_CLIENT_SECRET", "{{peeringdb_dev_client_secret}}")
 PDB_REDIRECT_URL = os.environ.get("PDB_REDIRECT_URL", "https://dev-portal.ring.nlnog.net/accounts/peeringdb/callback/")
 
