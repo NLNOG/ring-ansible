@@ -16,7 +16,7 @@
 - name: Create settings file
   template:
     src: settings.py.j2
-    dst: /var/www/portal.ring.nlnog.net/ringweb/settings.py
+    dest: /var/www/portal.ring.nlnog.net/ringweb/settings.py
   notify: restart apache2
 
 - name: create data directory
@@ -44,6 +44,6 @@
 
 - name: Create settings file for development
   template:
-    src=dev-settings.py.j2
-    dst=/var/www/dev-portal.ring.nlnog.net/ringweb/settings.py
+    src: dev-settings.py.j2
+    dest: /var/www/dev-portal.ring.nlnog.net/ringweb/settings.py
   notify: restart apache2
