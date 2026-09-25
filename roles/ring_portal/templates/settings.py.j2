@@ -156,9 +156,9 @@ if os.environ.get("DB_ENGINE", "sqlite") == "mysql" or os.environ.get(
     pymysql.install_as_MySQLdb()
     DATABASES["legacy"] = {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": os.environ.get("DB_NAME", "ring"),
-        "USER": os.environ.get("DB_USER", "ring-admins"),
-        "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+        "NAME": os.environ.get("DB_NAME", "portal"),
+        "USER": os.environ.get("DB_USER", "portal"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", "{{portal_mysql_pass}"),
         "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
         "PORT": os.environ.get("DB_PORT", "3306"),
         "OPTIONS": {
