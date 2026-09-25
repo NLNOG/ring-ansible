@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-x3=^w3)_*h9#jtc6d9yqtdf$5otxlo3x7*)y69pc7s5c(vc+$y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["dev-portal.ring.nlnog.net"]
 
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
@@ -83,7 +83,7 @@ RING_LEGACY_DB = 1
 PDB_ENDPOINT = os.environ.get("PDB_ENDPOINT", "https://auth.peeringdb.com/")
 #PDB_CLIENT_ID = os.environ.get("PDB_CLIENT_ID", "{{peeringdb_dev_client_id}}")
 PDB_CLIENT_SECRET = os.environ.get("PDB_CLIENT_SECRET", "{{peeringdb_dev_client_secret}}")
-PDB_REDIRECT_URL = os.environ.get("PDB_REDIRECT_URL", "https://portal.ring.nlnog.net/accounts/peeringdb/callback/")
+PDB_REDIRECT_URL = os.environ.get("PDB_REDIRECT_URL", "https://dev-portal.ring.nlnog.net/accounts/peeringdb/callback/")
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
