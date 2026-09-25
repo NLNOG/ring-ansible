@@ -8,7 +8,7 @@
   notify: restart openssh
 
 - name: "Install ringnode ssh_config"
-  copy:
+  template:
     src=ssh_config.ringnode
     dest=/etc/ssh/ssh_config
     owner=root
