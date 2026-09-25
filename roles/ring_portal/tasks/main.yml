@@ -4,6 +4,7 @@
     dest: "/var/www/portal.ring.nlnog.net"
     clone: yes
     update: yes
+    version: main
   become: yes
   become_user: www-data
   notify: restart apache2
@@ -33,6 +34,7 @@
     dest: "/var/www/dev-portal.ring.nlnog.net"
     clone: yes
     update: yes
+    version: devel
   become: yes
   become_user: www-data
   notify: restart apache2
