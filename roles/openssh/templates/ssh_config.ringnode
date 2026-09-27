@@ -57,7 +57,7 @@ Host *
     # CVE-2016-0777
     UseRoaming no
 
-{% if ansible_facts['distribution_release'] != "resolute" %}
+{% if ansible_facts['distribution_release'] != "resolute" and ssh_disable_dss|default(False) == False %}
     # Allow DSA keys for now
     PubkeyAcceptedKeyTypes= +ssh-dss
 {% endif %}
