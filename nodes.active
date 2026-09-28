@@ -603,7 +603,6 @@ dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
-edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
 tritan01.ring.nlnog.net OWNER=tritan V4=23.142.248.61 V6=2602:291:69::61
@@ -631,6 +630,7 @@ helloly01.ring.nlnog.net OWNER=helloly V4=185.92.103.10 V6=2a13:6602:4::10
 pdxnet01.ring.nlnog.net OWNER=pdxnet V4=185.121.24.50 V6=2602:fa7e:11::4c
 pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
+royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
 frumentum01.ring.nlnog.net OWNER=frumentum V4=185.234.20.163 V6=2a05:dfc1:cb2:19:9036::
 skhron01.ring.nlnog.net OWNER=skhron V4=88.218.206.158 V6=2a09:b280:fe00:3e::a
@@ -687,6 +687,7 @@ netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
 lucix01.ring.nlnog.net OWNER=lucix V4=188.93.174.196 V6=2a0b:880:0:4::10
 noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
+lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
 exoscale02.ring.nlnog.net OWNER=exoscale V4=85.217.162.128 V6=2a04:c43:e00:ee8b:42b:98ff:fe00:1889
 exoscale03.ring.nlnog.net OWNER=exoscale V4=151.145.192.93 V6=2a07:6cc3:e00:ee8b:4ab:84ff:fe00:56
@@ -2802,7 +2803,6 @@ dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
 edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
-edgoo05.ring.nlnog.net OWNER=edgoo V4=185.112.251.200 V6=2001:b18:1001:400::3a
 
 [dutchis]
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
@@ -2890,6 +2890,7 @@ pdxnet02.ring.nlnog.net OWNER=pdxnet V4=23.156.200.110 V6=2602:fa7e:15:6E::a
 converged01.ring.nlnog.net OWNER=converged V4=89.104.249.101 V6=2a04:9b00:2::2
 
 [royale]
+royale01.ring.nlnog.net OWNER=royale V4=45.90.13.21 V6=2a0b:64c0:1::41
 
 [xyphen]
 xyphen01.ring.nlnog.net OWNER=xyphen V4=45.83.205.167 V6=2a07:e345:1:3004::2d53:cda7
@@ -3048,6 +3049,7 @@ noscito01.ring.nlnog.net OWNER=noscito V4=195.200.69.3 V6=2a14:8180::3
 [virtnet]
 
 [lehmann]
+lehmann01.ring.nlnog.net OWNER=lehmann V6=2a0f:6283:1400:1::6
 
 [exoscale]
 exoscale01.ring.nlnog.net OWNER=exoscale V4=194.182.177.228 V6=2a04:c47:e00:ee8b:49d:18ff:fe00:1b2
