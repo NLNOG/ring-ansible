@@ -132,7 +132,7 @@ lg_peers:
     ipv6: 2a0c:6500:100::1
   BOUWHUIS1:
     asn: 202585
-    ipv4: 185.244.24.1
+    ipv4: 157.173.75.1
     ipv6: 2001:678:d64::1
   BOXED_IT1:
     asn: 50156
