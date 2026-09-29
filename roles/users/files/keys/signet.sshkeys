@@ -35,3 +35,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCtinK5/CfhllCbWHwZ0zOnNZpNM8M6QcQpZfgi0YKd
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN1zhoFa9G0B6d7aI0K7n5bhievQQAARLYmy18iuoRZ5 davidtaverner@Davids-MacBook-Pro.local
 
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDtAkcAFN84hflhquWHZ48nma+H+awDj6id+KMJtsh1m rgaag@macbook
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVpuAEDnX8aj/MG51iWj8r5dj8eXrpAMxAadaNyWUDQ ervinspahic@MacBook-Pro-van-Ervin.local
