@@ -6793,3 +6793,11 @@ USERS:
     groups:
       - ring-users
 
+  nerzen:
+    state: present
+    company: 'NERZEN BILIŞIM TEKNOLOJILERI'
+    email: 'info@nerzen.com'
+    uid: 5870
+    groups:
+      - ring-users
+
