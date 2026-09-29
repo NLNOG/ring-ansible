@@ -6801,3 +6801,11 @@ USERS:
     groups:
       - ring-users
 
+  interedge:
+    state: present
+    company: 'InterEdge B.V.'
+    email: 'noc@interedge.com'
+    uid: 5871
+    groups:
+      - ring-users
+
