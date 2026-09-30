@@ -396,6 +396,10 @@ lg_peers:
     asn: 11071
     ipv4: 209.33.215.64
     ipv6: 2604:2c00::ff:2
+  INTEREDGE1:
+    asn: 213753
+    ipv4: 185.28.38.246
+    ipv6: 2a00:9c20::2
   INTERHOST1:
     asn: 61102
     ipv4: 185.37.148.232
