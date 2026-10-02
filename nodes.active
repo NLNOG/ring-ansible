@@ -3139,3 +3139,5 @@ nerzen01.ring.nlnog.net OWNER=nerzen V4=166.1.5.38 V6=2a0f:bf01:0:1::2
 
 [interedge]
 interedge01.ring.nlnog.net OWNER=interedge V4=185.28.38.246 V6=2a00:9c20::2
+
+[netlen]

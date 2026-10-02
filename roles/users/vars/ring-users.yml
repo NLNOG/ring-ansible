@@ -6809,3 +6809,11 @@ USERS:
     groups:
       - ring-users
 
+  netlen:
+    state: present
+    company: 'Netlen'
+    email: 'noc@netlen.com.tr'
+    uid: 5872
+    groups:
+      - ring-users
+
