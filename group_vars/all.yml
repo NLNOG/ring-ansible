@@ -8,6 +8,7 @@ syslog_servers:
 munin_masters:
   - 2a05:d018:9f2:ed01::2:1/128
   - 52.17.9.249/32
+  - 77.174.253.13/32
 
 use_proxies: False
 proxy_github: 2001:1af8:4013::101
