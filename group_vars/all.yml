@@ -6,9 +6,9 @@ syslog_servers:
   - storage01.infra.ring.nlnog.net
 
 munin_masters:
-  - 2a05:d018:9f2:ed01::2:1/128
+  - 2a05:d018:9f2:ed01::2:1/128 # munin.infra.ring.nlnog.net
   - 52.17.9.249/32
-  - 77.174.253.13/32
+  - 77.174.253.13/32            # Niels Bakker
 
 use_proxies: False
 proxy_github: 2001:1af8:4013::101
