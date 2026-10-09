@@ -118,6 +118,7 @@ switch01.ring.nlnog.net OWNER=switch V4=195.176.255.11 V6=2001:620:0:9::a3
 proserve01.ring.nlnog.net OWNER=proserve V4=83.96.195.104 V6=2001:828:100:82:11:104:0:1
 poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
+icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 msu01.ring.nlnog.net OWNER=msu V4=188.44.51.106 V6=2a00:f480:0:105::bc2c:336a
 nimag01.ring.nlnog.net OWNER=nimag V4=62.220.128.73 V6=2001:788:2:143::2
@@ -476,7 +477,6 @@ honeycomb01.ring.nlnog.net OWNER=honeycomb V4=204.246.114.130 V6=2607:4700:c128:
 globallayer01.ring.nlnog.net OWNER=globallayer V4=185.23.214.242 V6=2a00:1678:2470:da7a::2
 globallayer02.ring.nlnog.net OWNER=globallayer V4=134.19.182.14 V6=2a00:1678:da7a:247::2
 bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::179
-6connect01.ring.nlnog.net OWNER=6connect V4=67.221.244.126 V6=2607:fae0:a000:5::126
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
 veloxserv01.ring.nlnog.net OWNER=veloxserv V4=103.141.25.11 V6=2a03:ee40:23:200::11
 freifunkbr01.ring.nlnog.net OWNER=freifunkbr V4=185.117.213.230 V6=2a06:8782:ff02::e6
@@ -679,7 +679,6 @@ angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
-krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
@@ -1183,6 +1182,7 @@ poppr01.ring.nlnog.net OWNER=poppr V4=200.238.130.54 V6=2801:82:0:6::54
 masterinternet01.ring.nlnog.net OWNER=masterinternet V4=85.118.134.2 V6=2a01:430:100:2::2
 
 [icanndns]
+icanndns01.ring.nlnog.net OWNER=icanndns V4=192.0.33.158 V6=2620:0:2d0:203::158
 icanndns02.ring.nlnog.net OWNER=icanndns V4=192.0.46.158 V6=2620:0:2830:203::158
 
 [intellit]
@@ -2455,7 +2455,6 @@ globallayer02.ring.nlnog.net OWNER=globallayer V4=134.19.182.14 V6=2a00:1678:da7
 bytepark01.ring.nlnog.net OWNER=bytepark V4=45.150.40.179 V6=2a0f:9200:0:4000::179
 
 [6connect]
-6connect01.ring.nlnog.net OWNER=6connect V4=67.221.244.126 V6=2607:fae0:a000:5::126
 
 [nicat]
 nicat01.ring.nlnog.net OWNER=nicat V4=193.46.104.19 V6=2a02:850:f::19
@@ -3024,7 +3023,6 @@ angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 
 [krsa]
-krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 
 [fyfeweb]
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
