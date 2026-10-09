@@ -4177,7 +4177,7 @@ USERS:
       - ring-users
 
   wustl:
-    state: present
+    state: absent
     company: 'Washington University in St. Louis'
     email: 'noc@wustl.edu'
     uid: 5545
