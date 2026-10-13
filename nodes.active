@@ -3141,3 +3141,5 @@ interedge01.ring.nlnog.net OWNER=interedge V4=185.28.38.246 V6=2a00:9c20::2
 
 [netlen]
 netlen01.ring.nlnog.net OWNER=netlen V4=91.228.227.74 V6=2a01:f900:11:115::1
+
+[netnoerden]

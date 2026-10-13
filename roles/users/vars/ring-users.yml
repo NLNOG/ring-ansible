@@ -6817,3 +6817,11 @@ USERS:
     groups:
       - ring-users
 
+  netnoerden:
+    state: present
+    company: 'Netnørden'
+    email: 'noc@netnoerden.dk'
+    uid: 5873
+    groups:
+      - ring-users
+
