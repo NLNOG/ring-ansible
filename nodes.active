@@ -603,7 +603,6 @@ oranjekoek01.ring.nlnog.net OWNER=oranjekoek V4=103.251.156.34 V6=2a10:e300:8411
 ehiweb01.ring.nlnog.net OWNER=ehiweb V4=79.98.45.114 V6=2a01:b600:1:114::1
 dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
-edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 dutchis01.ring.nlnog.net OWNER=dutchis V4=93.185.163.20 V6=2001:67c:1330::b
 alwyzon01.ring.nlnog.net OWNER=alwyzon V4=83.138.55.30 V6=2a0d:f302:108:de5c::1
@@ -680,6 +679,7 @@ angolacables10.ring.nlnog.net OWNER=angolacables V4=170.238.233.242 V6=2804:3674
 angolacables11.ring.nlnog.net OWNER=angolacables V4=170.238.232.242 V6=2804:3674:0:4::242
 angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:2:100::182
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
+krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
@@ -2807,7 +2807,6 @@ dqn01.ring.nlnog.net OWNER=dqn V4=216.238.41.66 V6=2602:fa43:40:1::2
 
 [edgoo]
 edgoo01.ring.nlnog.net OWNER=edgoo V4=146.19.95.73 V6=2001:b18:1018:300::1d
-edgoo02.ring.nlnog.net OWNER=edgoo V4=193.163.151.112 V6=2a0e:5f00:1::3a
 edgoo04.ring.nlnog.net OWNER=edgoo V4=82.215.71.18 V6=2001:b18:1031:200::18
 
 [dutchis]
@@ -3026,6 +3025,7 @@ angolacables12.ring.nlnog.net OWNER=angolacables V4=102.130.68.182 V6=2c0f:f828:
 paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 
 [krsa]
+krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 
 [fyfeweb]
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
