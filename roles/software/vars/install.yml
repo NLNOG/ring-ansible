@@ -13,7 +13,7 @@ software:
     - cvs
     - datamash
     - dnsdiag
-    - dnsutils
+    - bind9-dnsutils
     - dnsviz
     - dsniff
     - flex
