@@ -6825,3 +6825,11 @@ USERS:
     groups:
       - ring-users
 
+  84grams:
+    state: present
+    company: '84 Grams AB'
+    email: 'noc@84grams.se'
+    uid: 5874
+    groups:
+      - ring-users
+

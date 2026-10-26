@@ -3135,3 +3135,5 @@ interedge01.ring.nlnog.net OWNER=interedge V4=185.28.38.246 V6=2a00:9c20::2
 
 [netnoerden]
 netnoerden01.ring.nlnog.net OWNER=netnoerden V4=192.129.50.79 V6=2a13:e740:25e:a746::2
+
+[84grams]
