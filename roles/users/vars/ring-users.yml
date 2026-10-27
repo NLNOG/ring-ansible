@@ -1496,7 +1496,7 @@ USERS:
       - ring-users
 
   doruknet:
-    state: present
+    state: absent
     company: 'Doruknet'
     email: 'noc@doruk.net.tr'
     uid: 5206
@@ -4401,7 +4401,7 @@ USERS:
       - ring-users
 
   teliadk:
-    state: present
+    state: absent
     company: 'Telia Company Denmark'
     email: 'ncc@telia.dk'
     uid: 5572
@@ -5378,7 +5378,7 @@ USERS:
       - ring-users
 
   serverion:
-    state: present
+    state: absent
     company: 'Serverion'
     email: 'noc@serverion.com'
     uid: 5693
@@ -6242,7 +6242,7 @@ USERS:
       - ring-users
 
   stocade:
-    state: present
+    state: absent
     company: 'Stocade'
     email: 'noc@stocade.com'
     uid: 5801
