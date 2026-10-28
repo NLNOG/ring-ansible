@@ -43,6 +43,7 @@ software:
     - lftp
     - libcache-cache-perl
     - libldns-dev
+    - libsasl2-modules
     - libsqlite3-dev
     - libxml2-dev
     - lsof
