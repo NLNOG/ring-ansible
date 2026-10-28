@@ -738,6 +738,7 @@ interedge01.ring.nlnog.net OWNER=interedge V4=185.28.38.246 V6=2a00:9c20::2
 netlen01.ring.nlnog.net OWNER=netlen V4=91.228.227.74 V6=2a01:f900:11:115::1
 netnoerden01.ring.nlnog.net OWNER=netnoerden V4=192.129.50.79 V6=2a13:e740:25e:a746::2
 84grams01.ring.nlnog.net OWNER=84grams V4=194.179.134.217 V6=2a02:7e00:1:103::217
+nxlayer01.ring.nlnog.net OWNER=nxlayer V4=165.65.192.205 V6=2a04:e87:2:101::2
 
 [infranode]
 dbmaster.infra.ring.nlnog.net OWNER=job V4=95.211.149.25 V6=2001:1AF8:4013::25
@@ -3198,3 +3199,4 @@ netnoerden01.ring.nlnog.net OWNER=netnoerden V4=192.129.50.79 V6=2a13:e740:25e:a
 84grams01.ring.nlnog.net OWNER=84grams V4=194.179.134.217 V6=2a02:7e00:1:103::217
 
 [nxlayer]
+nxlayer01.ring.nlnog.net OWNER=nxlayer V4=165.65.192.205 V6=2a04:e87:2:101::2
