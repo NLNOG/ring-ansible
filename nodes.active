@@ -3141,3 +3141,5 @@ netnoerden01.ring.nlnog.net OWNER=netnoerden V4=192.129.50.79 V6=2a13:e740:25e:a
 
 [84grams]
 84grams01.ring.nlnog.net OWNER=84grams V4=194.179.134.217 V6=2a02:7e00:1:103::217
+
+[nxlayer]

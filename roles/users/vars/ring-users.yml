@@ -6833,3 +6833,11 @@ USERS:
     groups:
       - ring-users
 
+  nxlayer:
+    state: present
+    company: 'NXLayer Ltd'
+    email: 'noc@nxlayer.net'
+    uid: 5875
+    groups:
+      - ring-users
+
