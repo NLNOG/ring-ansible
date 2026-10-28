@@ -3,7 +3,7 @@ need_wsgi_py3: true
 apache_vhosts:
   - webdev
   - www
-  #- paste
+  - paste
 letsencrypt_certs:
   - webdev.ring.nlnog.net
   - www.ring.nlnog.net
