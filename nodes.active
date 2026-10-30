@@ -147,7 +147,6 @@ dragon01.ring.nlnog.net OWNER=dragon V4=213.168.176.84 V6=2a02:13b8:7800::2
 syseleven01.ring.nlnog.net OWNER=syseleven V4=176.74.59.161 V6=2a04:d480:4402:1a:ffff::e5
 vertixo01.ring.nlnog.net OWNER=vertixo V4=92.63.161.60 V6=2a01:a680:a1:10:1:60::
 atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980:fc:3::2
-itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 sbtap01.ring.nlnog.net OWNER=sbtap V4=185.5.201.240 V6=2a02:cdc5:9715:0:185:5:201:240
 sbtap02.ring.nlnog.net OWNER=sbtap V4=185.5.202.122 V6=2a02:cdc6:3100:0000:185:5:202:122
 goscomb01.ring.nlnog.net OWNER=goscomb V4=46.17.60.106 V6=2a01:348:0:42::10
@@ -680,6 +679,7 @@ paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
+jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
 netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
@@ -1300,7 +1300,6 @@ atlanticmetro01.ring.nlnog.net OWNER=atlanticmetro V4=108.60.128.14 V6=2001:1980
 [esgob]
 
 [itsbrasil]
-itsbrasil01.ring.nlnog.net OWNER=itsbrasil V4=189.89.131.40 V6=2804:204:500::40
 
 [finecom]
 
@@ -3031,6 +3030,7 @@ fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:4
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 
 [jsmsr]
+jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
 
 [hackthebox]
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
