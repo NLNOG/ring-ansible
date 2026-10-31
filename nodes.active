@@ -620,6 +620,7 @@ tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
 v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 abicom01.ring.nlnog.net OWNER=abicom V4=185.135.238.227 V6=2a07:980:63:95::238:227
 eurofibernl01.ring.nlnog.net OWNER=eurofibernl V4=37.251.178.42 V6=2a02:fe9:a::1:4c7a
 luje01.ring.nlnog.net OWNER=luje V4=93.157.140.233 V6=2001:67c:f8c:214::233
@@ -679,7 +680,6 @@ paocloud01.ring.nlnog.net OWNER=paocloud V6=2401:93e0:5:ffff::253
 krsa01.ring.nlnog.net OWNER=krsa V6=2a14:6f44:100f:5000::1
 fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:496f:ee02:0001
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
-jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
 netsyst01.ring.nlnog.net OWNER=netsyst V4=5.182.144.166 V6=2a0e:5c00:1::166
 advania01.ring.nlnog.net OWNER=advania V4=81.94.161.36 V6=2a00:7800:8000::36
@@ -2863,6 +2863,7 @@ tngnet01.ring.nlnog.net OWNER=tngnet V4=45.88.5.250 V6=2a05:e4c1:1::2
 v4less01.ring.nlnog.net OWNER=v4less V4=45.91.12.32 V6=2a06:d1c3:2:2::1
 v4less02.ring.nlnog.net OWNER=v4less V4=45.91.12.160 V6=2a06:d1c3:3:2::1
 v4less03.ring.nlnog.net OWNER=v4less V4=45.91.12.223 V6=2a06:d1c3:4:2::1
+v4less04.ring.nlnog.net OWNER=v4less V4=45.91.12.95 V6=2a06:d1c3:5:2::1
 
 [shift]
 
@@ -3030,7 +3031,6 @@ fyfeweb01.ring.nlnog.net OWNER=fyfeweb V4=46.244.96.3 V6=2a03:ee40:7531:6:04db:4
 brink01.ring.nlnog.net OWNER=brink V4=103.149.168.244 V6=2a14:38c0:0001::244
 
 [jsmsr]
-jsmsr01.ring.nlnog.net OWNER=jsmsr V6=2602:f919:939:9999:be24:11ff:fe1f:28f3
 
 [hackthebox]
 hackthebox01.ring.nlnog.net OWNER=hackthebox V4=154.57.19.12 V6=2a14:7240:e03:f::12
