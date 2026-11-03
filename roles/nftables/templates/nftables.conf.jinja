@@ -8,7 +8,8 @@ table inet filter {
         policy drop;
         iifname lo accept;
         ct state established,related accept;
-        meta l4proto { icmp, ipv6-icmp } accept
+        meta l4proto { icmp, ipv6-icmp } accept;
+        ip hdrlength > 5 drop; # CVE-2026-98432
         udp dport 546 ip6 saddr fe80::/64 accept; # dhcpv6
         tcp dport ssh accept;
 {% for master in munin_masters|ansible.utils.ipv4|default([]) %}
