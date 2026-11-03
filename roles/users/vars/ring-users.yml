@@ -6841,3 +6841,11 @@ USERS:
     groups:
       - ring-users
 
+  viarezo:
+    state: present
+    company: 'ViaRézo'
+    email: 'noc@ml.viarezo.fr'
+    uid: 5876
+    groups:
+      - ring-users
+
