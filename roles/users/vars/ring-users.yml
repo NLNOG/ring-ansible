@@ -6849,3 +6849,11 @@ USERS:
     groups:
       - ring-users
 
+  lungu:
+    state: present
+    company: 'Lungu Stefan-Gabriel (under Austin Hadley, SP)'
+    email: 'hi@lungustefan.com'
+    uid: 5877
+    groups:
+      - ring-users
+

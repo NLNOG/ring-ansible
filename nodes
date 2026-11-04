@@ -3204,3 +3204,5 @@ nxlayer01.ring.nlnog.net OWNER=nxlayer V4=165.65.192.205 V6=2a04:e87:2:101::2
 
 [viarezo]
 viarezo01.ring.nlnog.net OWNER=viarezo V4=138.195.136.2 V6=2a0c:b641:2f0:51::2
+
+[lungu]
