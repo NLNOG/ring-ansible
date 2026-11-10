@@ -5586,7 +5586,7 @@ USERS:
       - ring-users
 
   witine:
-    state: absent
+    state: present
     company: 'Witine Limited'
     email: 'noc@witine.com'
     uid: 5719
