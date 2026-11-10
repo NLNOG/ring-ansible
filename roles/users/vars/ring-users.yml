@@ -6857,3 +6857,11 @@ USERS:
     groups:
       - ring-users
 
+  ondiversity:
+    state: present
+    company: 'ON DIVERSITY CLOUD EUROPE, S.L. (DIVERSITY)'
+    email: 'noc@ondiversity.eu'
+    uid: 5878
+    groups:
+      - ring-users
+
