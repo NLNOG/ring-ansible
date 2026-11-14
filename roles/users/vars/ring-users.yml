@@ -6865,3 +6865,11 @@ USERS:
     groups:
       - ring-users
 
+  v6node:
+    state: present
+    company: 'v6Node'
+    email: 'support@v6node.com'
+    uid: 5879
+    groups:
+      - ring-users
+
