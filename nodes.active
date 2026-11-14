@@ -725,6 +725,7 @@ nxlayer01.ring.nlnog.net OWNER=nxlayer V4=165.65.192.205 V6=2a04:e87:2:101::2
 viarezo01.ring.nlnog.net OWNER=viarezo V4=138.195.136.2 V6=2a0c:b641:2f0:51::2
 lungu01.ring.nlnog.net OWNER=lungu V4=142.249.174.54 V6=2a13:c8c4:5a9::1
 ondiversity01.ring.nlnog.net OWNER=ondiversity V4=91.124.96.58 V6=2a0c:b641:19a:198::2
+v6node01.ring.nlnog.net OWNER=v6node V4=178.251.228.50 V6=2a09:bfc7:3000:b800::1
 
 [infranode]
 
@@ -3165,3 +3166,4 @@ lungu01.ring.nlnog.net OWNER=lungu V4=142.249.174.54 V6=2a13:c8c4:5a9::1
 ondiversity01.ring.nlnog.net OWNER=ondiversity V4=91.124.96.58 V6=2a0c:b641:19a:198::2
 
 [v6node]
+v6node01.ring.nlnog.net OWNER=v6node V4=178.251.228.50 V6=2a09:bfc7:3000:b800::1
