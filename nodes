@@ -3218,3 +3218,5 @@ ondiversity01.ring.nlnog.net OWNER=ondiversity V4=91.124.96.58 V6=2a0c:b641:19a:
 
 [v6node]
 v6node01.ring.nlnog.net OWNER=v6node V4=178.251.228.50 V6=2a09:bfc7:3000:b800::1
+
+[lipta]

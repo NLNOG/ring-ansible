@@ -6873,3 +6873,11 @@ USERS:
     groups:
       - ring-users
 
+  lipta:
+    state: present
+    company: 'LIPTA'
+    email: 'noc@lipta.lt'
+    uid: 5880
+    groups:
+      - ring-users
+
