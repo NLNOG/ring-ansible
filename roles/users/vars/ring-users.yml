@@ -4649,7 +4649,7 @@ USERS:
       - ring-users
 
   natesales:
-    state: present
+    state: absent
     company: 'Nathan Sales'
     email: 'nate@natesales.net'
     uid: 5603
@@ -6482,7 +6482,7 @@ USERS:
       - ring-users
 
   elcro:
-    state: present
+    state: absent
     company: 'Elcro Digital'
     email: 'noc@elcrodigital.com'
     uid: 5831
